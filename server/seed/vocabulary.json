@@ -1,0 +1,3068 @@
+[
+  {
+    "polish": "zima",
+    "english": "winter",
+    "category": "time/seasons",
+    "level": "A1"
+  },
+  {
+    "polish": "rzeka",
+    "english": "river",
+    "category": "places/nature",
+    "level": "A1"
+  },
+  {
+    "polish": "żabka",
+    "english": "little frog",
+    "category": "animals",
+    "level": "A2"
+  },
+  {
+    "polish": "dzwonek",
+    "english": "door bell",
+    "category": "objects",
+    "level": "A2"
+  },
+  {
+    "polish": "dźwięk",
+    "english": "sound",
+    "category": "nouns",
+    "level": "B1"
+  },
+  {
+    "polish": "dżinsy",
+    "english": "jeans",
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "polish": "dżentelmen",
+    "english": "gentleman",
+    "category": "people",
+    "level": "B1"
+  },
+  {
+    "polish": "dżdżownica",
+    "english": "earthworm",
+    "category": "animals",
+    "level": "B2"
+  },
+  {
+    "polish": "przepraszam",
+    "english": "I'm sorry / excuse me",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "wczoraj",
+    "english": "yesterday",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "polish": "liczba",
+    "english": "number (1, 2, 3...)",
+    "category": "grammar",
+    "level": "A1"
+  },
+  {
+    "polish": "się",
+    "english": "oneself (reflexive particle)",
+    "category": "grammar",
+    "level": "A1"
+  },
+  {
+    "polish": "Nazywam się",
+    "english": "I call myself / My name is",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "miło",
+    "english": "nice",
+    "category": "adjectives",
+    "level": "A1"
+  },
+  {
+    "polish": "bardzo",
+    "english": "very",
+    "category": "adverbs",
+    "level": "A1"
+  },
+  {
+    "polish": "poznać",
+    "english": "to get to know (for the first time)",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "pan",
+    "english": "sir, Mr., gentleman",
+    "category": "people",
+    "level": "A1"
+  },
+  {
+    "polish": "pani",
+    "english": "ma'am, Mrs., Ms., lady",
+    "category": "people",
+    "level": "A1"
+  },
+  {
+    "polish": "do jutra",
+    "english": "until tomorrow",
+    "category": "phrases/time",
+    "level": "A1"
+  },
+  {
+    "polish": "do zobaczenia",
+    "english": "see you (do widzenia)",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "mieć",
+    "english": "to have",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "imię",
+    "english": "name",
+    "category": "nouns",
+    "level": "A1"
+  },
+  {
+    "polish": "Jak masz na imię?",
+    "english": "What's your name?",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "proszę",
+    "english": "please / here you go / you're welcome / come in",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "prosić",
+    "english": "to ask",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "poproszę",
+    "english": "please (nicer)",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "przedstawić się",
+    "english": "to introduce oneself",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "ojej",
+    "english": "oh, no",
+    "category": "interjections",
+    "level": "A1"
+  },
+  {
+    "polish": "znaczyć",
+    "english": "to mean",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "Co to znaczy ... po polsku?",
+    "english": "What does ... mean in Polish?",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "iść",
+    "english": "to go (on foot)",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "wy-",
+    "english": "out- (prefix)",
+    "category": "grammar",
+    "level": "B1"
+  },
+  {
+    "polish": "wyrzucić",
+    "english": "to throw out",
+    "category": "verbs",
+    "level": "B1"
+  },
+  {
+    "polish": "wyjść",
+    "english": "to go out",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "wynieść",
+    "english": "to take out",
+    "category": "verbs",
+    "level": "B1"
+  },
+  {
+    "polish": "nieść",
+    "english": "to carry",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "on zna (się)",
+    "english": "he knows",
+    "category": "phrases/verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "Znam się na językach",
+    "english": "I know languages well",
+    "category": "phrases",
+    "level": "B1"
+  },
+  {
+    "polish": "Znam Polskę",
+    "english": "I know Poland",
+    "category": "phrases",
+    "level": "A2"
+  },
+  {
+    "polish": "znać się na",
+    "english": "to have expertise in",
+    "category": "verbs",
+    "level": "B1"
+  },
+  {
+    "polish": "kochać",
+    "english": "to love",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "czytać",
+    "english": "to read",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "one czytają",
+    "english": "they read",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "oni, one",
+    "english": "they",
+    "category": "pronouns",
+    "level": "A1"
+  },
+  {
+    "polish": "on stawia (się)",
+    "english": "he shows up",
+    "category": "phrases",
+    "level": "B1"
+  },
+  {
+    "polish": "ubierać się",
+    "english": "to get dressed",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "pani ubiera się",
+    "english": "the lady gets dressed",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "my ubieramy się",
+    "english": "we get dressed",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "żegnacie się",
+    "english": "you (plural) are saying goodbye",
+    "category": "phrases",
+    "level": "A2"
+  },
+  {
+    "polish": "powtarzamy",
+    "english": "we repeat",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "powtarzacie",
+    "english": "you (plural) repeat",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "czekać",
+    "english": "to wait",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "czekają",
+    "english": "they are waiting",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "wiedzieć",
+    "english": "to know (factually)",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "jeść",
+    "english": "to eat",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "zaczynać",
+    "english": "to start",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "Zaczynam rozumieć język polski",
+    "english": "I'm starting to understand the Polish language",
+    "category": "phrases",
+    "level": "A2"
+  },
+  {
+    "polish": "Jem jabłko",
+    "english": "I'm eating an apple",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "spotykać się",
+    "english": "to meet (each other)",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "oglądać",
+    "english": "to watch",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "znać się",
+    "english": "to know one another / to be versed in",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "mieszkać",
+    "english": "to live (reside)",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "przepraszać",
+    "english": "to apologize",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "pamiętać",
+    "english": "to remember",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "mieszkają",
+    "english": "they live",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "kobiety",
+    "english": "women (nominative)",
+    "category": "people",
+    "level": "A1"
+  },
+  {
+    "polish": "kobietami",
+    "english": "women (instrumental)",
+    "category": "grammar",
+    "level": "A2"
+  },
+  {
+    "polish": "Jesteśmy kobietami",
+    "english": "We are women",
+    "category": "phrases",
+    "level": "A2"
+  },
+  {
+    "polish": "To są kobiety",
+    "english": "These are women",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "kolega",
+    "english": "friend (male)",
+    "category": "people",
+    "level": "A1"
+  },
+  {
+    "polish": "koleżanka",
+    "english": "friend (female)",
+    "category": "people",
+    "level": "A1"
+  },
+  {
+    "polish": "lekarz",
+    "english": "doctor (male)",
+    "category": "people",
+    "level": "A1"
+  },
+  {
+    "polish": "lekarka",
+    "english": "doctor (female)",
+    "category": "people",
+    "level": "A1"
+  },
+  {
+    "polish": "wideem",
+    "english": "video (note: maybe 'wideo')",
+    "category": "media",
+    "level": "A1"
+  },
+  {
+    "polish": "inżynier",
+    "english": "engineer",
+    "category": "people",
+    "level": "A2"
+  },
+  {
+    "polish": "pilny",
+    "english": "attentive / urgent",
+    "category": "adjectives",
+    "level": "B1"
+  },
+  {
+    "polish": "interesować się",
+    "english": "to be interested in",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "malarstwo",
+    "english": "painting (the art)",
+    "category": "nouns/art",
+    "level": "B1"
+  },
+  {
+    "polish": "współczesny",
+    "english": "contemporary",
+    "category": "adjectives",
+    "level": "B2"
+  },
+  {
+    "polish": "sztuka",
+    "english": "art",
+    "category": "nouns/art",
+    "level": "A2"
+  },
+  {
+    "polish": "improwizacja",
+    "english": "improvisation",
+    "category": "nouns/art",
+    "level": "B2"
+  },
+  {
+    "polish": "gotowanie",
+    "english": "cooking",
+    "category": "nouns/food",
+    "level": "A2"
+  },
+  {
+    "polish": "Ona jest naczelną pielęgniarką",
+    "english": "She is a head nurse",
+    "category": "phrases/people",
+    "level": "B1"
+  },
+  {
+    "polish": "naczelny",
+    "english": "head / main (masculine)",
+    "category": "adjectives",
+    "level": "B1"
+  },
+  {
+    "polish": "pielęgniarka",
+    "english": "female nurse",
+    "category": "people",
+    "level": "A2"
+  },
+  {
+    "polish": "ratownik",
+    "english": "paramedic / rescuer",
+    "category": "people",
+    "level": "B1"
+  },
+  {
+    "polish": "ratować",
+    "english": "to save / to rescue",
+    "category": "verbs",
+    "level": "B1"
+  },
+  {
+    "polish": "siódma",
+    "english": "seventh (7th, hour)",
+    "category": "numbers/time",
+    "level": "A1"
+  },
+  {
+    "polish": "ósma",
+    "english": "eighth (8th, hour)",
+    "category": "numbers/time",
+    "level": "A1"
+  },
+  {
+    "polish": "chodzę na spotkania",
+    "english": "I go to meetings",
+    "category": "phrases",
+    "level": "A2"
+  },
+  {
+    "polish": "popołudniu",
+    "english": "in the afternoon",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "polish": "lunch [lancz]",
+    "english": "lunch",
+    "category": "food",
+    "level": "A1"
+  },
+  {
+    "polish": "kolację",
+    "english": "dinner (accusative)",
+    "category": "food",
+    "level": "A1"
+  },
+  {
+    "polish": "relaksuję się",
+    "english": "I relax",
+    "category": "phrases",
+    "level": "A2"
+  },
+  {
+    "polish": "czasem",
+    "english": "sometimes",
+    "category": "adverbs",
+    "level": "A1"
+  },
+  {
+    "polish": "rozmawiam",
+    "english": "I talk / I speak",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "zabawny",
+    "english": "funny",
+    "category": "adjectives",
+    "level": "A2"
+  },
+  {
+    "polish": "zawsze",
+    "english": "always",
+    "category": "adverbs",
+    "level": "A1"
+  },
+  {
+    "polish": "mieszkanie",
+    "english": "apartment",
+    "category": "places",
+    "level": "A1"
+  },
+  {
+    "polish": "szachy",
+    "english": "chess",
+    "category": "hobbies/games",
+    "level": "A2"
+  },
+  {
+    "polish": "odpoczywać",
+    "english": "to rest",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "miasto",
+    "english": "city",
+    "category": "places",
+    "level": "A1"
+  },
+  {
+    "polish": "opalać się",
+    "english": "to sunbathe",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "rozrywka",
+    "english": "entertainment / pastime / hobby",
+    "category": "nouns",
+    "level": "B1"
+  },
+  {
+    "polish": "cieszyć się",
+    "english": "to be happy / to enjoy",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "że",
+    "english": "that (conjunction)",
+    "category": "grammar",
+    "level": "A1"
+  },
+  {
+    "polish": "spóźnienie",
+    "english": "being late / delay",
+    "category": "nouns/time",
+    "level": "B1"
+  },
+  {
+    "polish": "siadać",
+    "english": "to sit down",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "mieć ochotę na",
+    "english": "to feel like (doing something)",
+    "category": "phrases",
+    "level": "B1"
+  },
+  {
+    "polish": "ochota",
+    "english": "desire / appetite",
+    "category": "nouns",
+    "level": "B1"
+  },
+  {
+    "polish": "czarny",
+    "english": "black (m)",
+    "category": "adjectives",
+    "level": "A1"
+  },
+  {
+    "polish": "Proszę",
+    "english": "I ask / please / here you go",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "Poproszę",
+    "english": "I'll ask / I'd like (please)",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "Poprosiłbym",
+    "english": "I would ask (conditional)",
+    "category": "phrases",
+    "level": "B1"
+  },
+  {
+    "polish": "woda gazowana",
+    "english": "sparkling water",
+    "category": "food/drink",
+    "level": "A2"
+  },
+  {
+    "polish": "Co dla pana?",
+    "english": "What for you, sir?",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "Co dla ciebie?",
+    "english": "What for you?",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "Coś jeszcze?",
+    "english": "Anything else?",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "bar mleczny",
+    "english": "traditional milk bar (cheap cafeteria)",
+    "category": "places/food",
+    "level": "B1"
+  },
+  {
+    "polish": "bawić się",
+    "english": "to play / to have fun",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "nienawidzić",
+    "english": "to hate",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "Smacznego!",
+    "english": "Have a good meal!",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "smaczny",
+    "english": "tasty / delicious (m)",
+    "category": "adjectives/food",
+    "level": "A2"
+  },
+  {
+    "polish": "Na zdrowie",
+    "english": "Cheers / Bless you",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "kapcie",
+    "english": "slippers (Warsaw)",
+    "category": "clothes",
+    "level": "A2"
+  },
+  {
+    "polish": "pantofle",
+    "english": "slippers (Kraków)",
+    "category": "clothes",
+    "level": "A2"
+  },
+  {
+    "polish": "Idę spać",
+    "english": "I'm going to sleep",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "Siedzisz spać",
+    "english": "You are sitting to sleep (literal)",
+    "category": "phrases",
+    "level": "A2"
+  },
+  {
+    "polish": "W życiu trzeba sobie radzić, jak powiedział rolnik wiążąc buty glizdą",
+    "english": "You have to get through life somehow, said the farmer tying his shoes with a worm",
+    "category": "expressions",
+    "level": "C1"
+  },
+  {
+    "polish": "masakra",
+    "english": "massacre (slang: disaster, pathetic)",
+    "category": "slang",
+    "level": "B2"
+  },
+  {
+    "polish": "Odpukaj",
+    "english": "Knock on wood",
+    "category": "phrases",
+    "level": "B1"
+  },
+  {
+    "polish": "Boże",
+    "english": "Oh God",
+    "category": "interjections",
+    "level": "A2"
+  },
+  {
+    "polish": "O Jezu",
+    "english": "Jesus (Oh Jesus)",
+    "category": "interjections",
+    "level": "A2"
+  },
+  {
+    "polish": "Pan Jezus",
+    "english": "Mr. Jesus",
+    "category": "phrases",
+    "level": "B1"
+  },
+  {
+    "polish": "Panie Boże",
+    "english": "Dear Mr. God",
+    "category": "phrases",
+    "level": "B1"
+  },
+  {
+    "polish": "dworzec główny",
+    "english": "main station",
+    "category": "places",
+    "level": "A2"
+  },
+  {
+    "polish": "kupa",
+    "english": "poop (vulgar)",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "polish": "przeszłość",
+    "english": "past",
+    "category": "time",
+    "level": "B1"
+  },
+  {
+    "polish": "przyszłość",
+    "english": "future",
+    "category": "time",
+    "level": "B1"
+  },
+  {
+    "polish": "przylot",
+    "english": "arrival (airport)",
+    "category": "travel",
+    "level": "A2"
+  },
+  {
+    "polish": "odlot",
+    "english": "departure (airport)",
+    "category": "travel",
+    "level": "A2"
+  },
+  {
+    "polish": "lot",
+    "english": "flight",
+    "category": "travel",
+    "level": "A1"
+  },
+  {
+    "polish": "jazda",
+    "english": "ride / going (on ground)",
+    "category": "travel",
+    "level": "A2"
+  },
+  {
+    "polish": "Pan",
+    "english": "Mr. / Lord / sir",
+    "category": "people",
+    "level": "A1"
+  },
+  {
+    "polish": "modlitwa",
+    "english": "prayer",
+    "category": "nouns",
+    "level": "B1"
+  },
+  {
+    "polish": "cukiernia",
+    "english": "pastry / dessert bakery",
+    "category": "places/food",
+    "level": "A2"
+  },
+  {
+    "polish": "cukier",
+    "english": "sugar",
+    "category": "food",
+    "level": "A1"
+  },
+  {
+    "polish": "róża",
+    "english": "rose",
+    "category": "nouns/flowers",
+    "level": "A2"
+  },
+  {
+    "polish": "różane",
+    "english": "rose (adjective)",
+    "category": "adjectives",
+    "level": "B1"
+  },
+  {
+    "polish": "pomagać",
+    "english": "to help",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "Pomocy!",
+    "english": "Help me!",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "spacer",
+    "english": "a walk",
+    "category": "nouns",
+    "level": "A2"
+  },
+  {
+    "polish": "spacerować",
+    "english": "to walk / stroll",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "często",
+    "english": "often",
+    "category": "adverbs",
+    "level": "A1"
+  },
+  {
+    "polish": "jeździć",
+    "english": "to go by vehicle habitually",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "sen",
+    "english": "sleep / dream",
+    "category": "nouns",
+    "level": "A2"
+  },
+  {
+    "polish": "przygoda",
+    "english": "adventure",
+    "category": "nouns",
+    "level": "A2"
+  },
+  {
+    "polish": "ćwiczyć",
+    "english": "to exercise / practice",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "chodzić",
+    "english": "to go habitually / to walk",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "wielbić",
+    "english": "to worship",
+    "category": "verbs",
+    "level": "B2"
+  },
+  {
+    "polish": "uwielbiać",
+    "english": "to adore / like very much",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "królik",
+    "english": "rabbit / bunny",
+    "category": "animals",
+    "level": "A1"
+  },
+  {
+    "polish": "karmić",
+    "english": "to feed",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "przedmiot, rzecz",
+    "english": "thing / item",
+    "category": "nouns",
+    "level": "A2"
+  },
+  {
+    "polish": "przedmiot",
+    "english": "subject (at school)",
+    "category": "nouns",
+    "level": "A2"
+  },
+  {
+    "polish": "nauka",
+    "english": "learning / science",
+    "category": "nouns",
+    "level": "A2"
+  },
+  {
+    "polish": "przyroda",
+    "english": "nature",
+    "category": "nouns",
+    "level": "A2"
+  },
+  {
+    "polish": "przynosić",
+    "english": "to bring",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "nożyczki",
+    "english": "scissors",
+    "category": "objects",
+    "level": "A1"
+  },
+  {
+    "polish": "noga",
+    "english": "leg / foot",
+    "category": "body",
+    "level": "A1"
+  },
+  {
+    "polish": "pierdzieć",
+    "english": "to fart",
+    "category": "verbs/slang",
+    "level": "B1"
+  },
+  {
+    "polish": "ugotować",
+    "english": "to cook (completed)",
+    "category": "verbs/food",
+    "level": "A2"
+  },
+  {
+    "polish": "pyszny",
+    "english": "delicious (m)",
+    "category": "adjectives/food",
+    "level": "A2"
+  },
+  {
+    "polish": "w zeszłym roku",
+    "english": "last year",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "swój, swoja, swoje",
+    "english": "one's own",
+    "category": "pronouns",
+    "level": "B1"
+  },
+  {
+    "polish": "padać",
+    "english": "to fall (rain, snow)",
+    "category": "verbs/weather",
+    "level": "A2"
+  },
+  {
+    "polish": "zmęczony",
+    "english": "tired",
+    "category": "adjectives",
+    "level": "A2"
+  },
+  {
+    "polish": "najpierw",
+    "english": "first / firstly",
+    "category": "adverbs",
+    "level": "A2"
+  },
+  {
+    "polish": "o dwudziestej trzeciej",
+    "english": "at 23:00",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "przedwczoraj",
+    "english": "the day before yesterday",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "czarna czekolada",
+    "english": "dark chocolate",
+    "category": "food",
+    "level": "A2"
+  },
+  {
+    "polish": "osiemnaście",
+    "english": "eighteen (18)",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "w Libanie",
+    "english": "in Lebanon",
+    "category": "places",
+    "level": "A2"
+  },
+  {
+    "polish": "Liban",
+    "english": "Lebanon",
+    "category": "places",
+    "level": "A1"
+  },
+  {
+    "polish": "tygodnie",
+    "english": "weeks",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "polish": "pierwszy",
+    "english": "first (m)",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "słyszeć + accusative",
+    "english": "to hear (requires accusative)",
+    "category": "grammar",
+    "level": "B1"
+  },
+  {
+    "polish": "słuchać + genitive",
+    "english": "to listen (requires genitive)",
+    "category": "grammar",
+    "level": "B1"
+  },
+  {
+    "polish": "Słyszę muzykę",
+    "english": "I hear music",
+    "category": "phrases",
+    "level": "A2"
+  },
+  {
+    "polish": "Słucham muzyki",
+    "english": "I listen to music",
+    "category": "phrases",
+    "level": "A2"
+  },
+  {
+    "polish": "Życzę Ci wszystkiego najlepszego",
+    "english": "I wish you all the best",
+    "category": "phrases",
+    "level": "B1"
+  },
+  {
+    "polish": "bać się",
+    "english": "to be afraid",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "burza",
+    "english": "storm / thunderstorm",
+    "category": "weather",
+    "level": "A2"
+  },
+  {
+    "polish": "lodówka",
+    "english": "fridge",
+    "category": "objects",
+    "level": "A1"
+  },
+  {
+    "polish": "Słoiki jadą",
+    "english": "The jars are going (away)",
+    "category": "phrases",
+    "level": "B1"
+  },
+  {
+    "polish": "co -> czego (genitive)",
+    "english": "what -> of what (genitive)",
+    "category": "grammar",
+    "level": "A2"
+  },
+  {
+    "polish": "kto -> kogo (genitive)",
+    "english": "who -> whom (genitive)",
+    "category": "grammar",
+    "level": "A2"
+  },
+  {
+    "polish": "Czego nie lubisz?",
+    "english": "What do you not like?",
+    "category": "phrases",
+    "level": "A2"
+  },
+  {
+    "polish": "Kogo nie lubisz?",
+    "english": "Who do you not like?",
+    "category": "phrases",
+    "level": "A2"
+  },
+  {
+    "polish": "poczta",
+    "english": "post office",
+    "category": "places",
+    "level": "A1"
+  },
+  {
+    "polish": "sporo",
+    "english": "quite a lot / plenty",
+    "category": "adverbs",
+    "level": "B1"
+  },
+  {
+    "polish": "powszechny",
+    "english": "common",
+    "category": "adjectives",
+    "level": "B2"
+  },
+  {
+    "polish": "wszech-",
+    "english": "all- (prefix)",
+    "category": "grammar",
+    "level": "C1"
+  },
+  {
+    "polish": "Zamknij mordę",
+    "english": "Shut your ugly face (strong vulgar)",
+    "category": "slang",
+    "level": "C1"
+  },
+  {
+    "polish": "ciemność",
+    "english": "darkness",
+    "category": "nouns",
+    "level": "B1"
+  },
+  {
+    "polish": "unikać",
+    "english": "to avoid",
+    "category": "verbs",
+    "level": "B1"
+  },
+  {
+    "polish": "gwiazda",
+    "english": "star",
+    "category": "nouns",
+    "level": "A1"
+  },
+  {
+    "polish": "siatkówka",
+    "english": "volleyball",
+    "category": "sports",
+    "level": "A2"
+  },
+  {
+    "polish": "impreza",
+    "english": "party",
+    "category": "events",
+    "level": "A2"
+  },
+  {
+    "polish": "odwołać",
+    "english": "to cancel",
+    "category": "verbs",
+    "level": "B1"
+  },
+  {
+    "polish": "wizyta",
+    "english": "visit",
+    "category": "nouns",
+    "level": "A2"
+  },
+  {
+    "polish": "wiele",
+    "english": "many / a lot",
+    "category": "quantifiers",
+    "level": "A2"
+  },
+  {
+    "polish": "zapomnieć",
+    "english": "to forget",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "jutro",
+    "english": "tomorrow",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "polish": "cały",
+    "english": "entire / whole",
+    "category": "adjectives",
+    "level": "A2"
+  },
+  {
+    "polish": "w następnym tygodniu",
+    "english": "next week",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "dostać",
+    "english": "to get / receive",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "uczyć się",
+    "english": "to learn",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "powiedzieć",
+    "english": "to say",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "pić",
+    "english": "to drink",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "wychodzić",
+    "english": "to go out / leave (habitual)",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "pojechać",
+    "english": "to go by transport (one-time)",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "zrobić",
+    "english": "to do / to make (completed)",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "przeczytać",
+    "english": "to read (completed)",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "pójść",
+    "english": "to go (one-time)",
+    "category": "verbs",
+    "level": "A2"
+  },
+  {
+    "polish": "kał",
+    "english": "feces (medical)",
+    "category": "slang",
+    "level": "C1"
+  },
+  {
+    "polish": "ząb zupa ząb, dąb zupa dąb",
+    "english": "(funny/phonetic phrases mixing words)",
+    "category": "phrases",
+    "level": "B2"
+  },
+  {
+    "polish": "umrzeć",
+    "english": "to die",
+    "category": "verbs",
+    "level": "B1"
+  },
+  {
+    "polish": "zdechnąć",
+    "english": "to die (vulgar/no respect)",
+    "category": "slang",
+    "level": "C1"
+  },
+  {
+    "polish": "odejść",
+    "english": "to depart / die (depart)",
+    "category": "verbs",
+    "level": "B2"
+  },
+  {
+    "polish": "zajęcia",
+    "english": "class / lessons",
+    "category": "nouns",
+    "level": "A2"
+  },
+  {
+    "polish": "dupa",
+    "english": "ass / butt (vulgar)",
+    "category": "slang",
+    "level": "B2"
+  },
+  {
+    "polish": "środa",
+    "english": "Wednesday",
+    "category": "time/days",
+    "level": "A1"
+  },
+  {
+    "polish": "czwartek",
+    "english": "Thursday",
+    "category": "time/days",
+    "level": "A1"
+  },
+  {
+    "polish": "piątek",
+    "english": "Friday",
+    "category": "time/days",
+    "level": "A1"
+  },
+  {
+    "polish": "sobota",
+    "english": "Saturday",
+    "category": "time/days",
+    "level": "A1"
+  },
+  {
+    "polish": "niedziela",
+    "english": "Sunday",
+    "category": "time/days",
+    "level": "A1"
+  },
+  {
+    "polish": "słońce",
+    "english": "sun",
+    "category": "nature/weather",
+    "level": "A1"
+  },
+  {
+    "polish": "księżyc",
+    "english": "moon",
+    "category": "nature/weather",
+    "level": "A1"
+  },
+  {
+    "polish": "gwiazdy",
+    "english": "stars",
+    "category": "nature/weather",
+    "level": "A1"
+  },
+  {
+    "polish": "deszcz",
+    "english": "rain",
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "polish": "śnieg",
+    "english": "snow",
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "polish": "wiatr",
+    "english": "wind",
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "polish": "ciepło",
+    "english": "warm",
+    "category": "adjectives/weather",
+    "level": "A1"
+  },
+  {
+    "polish": "zimno",
+    "english": "cold",
+    "category": "adjectives/weather",
+    "level": "A1"
+  },
+  {
+    "polish": "mięso",
+    "english": "meat",
+    "category": "food",
+    "level": "A1"
+  },
+  {
+    "polish": "ryba",
+    "english": "fish",
+    "category": "food",
+    "level": "A1"
+  },
+  {
+    "polish": "warzywa",
+    "english": "vegetables",
+    "category": "food",
+    "level": "A1"
+  },
+  {
+    "polish": "owoce",
+    "english": "fruits",
+    "category": "food",
+    "level": "A1"
+  },
+  {
+    "polish": "herbata",
+    "english": "tea",
+    "category": "food/drink",
+    "level": "A1"
+  },
+  {
+    "polish": "kawa",
+    "english": "coffee",
+    "category": "food/drink",
+    "level": "A1"
+  },
+  {
+    "polish": "mleko",
+    "english": "milk",
+    "category": "food/drink",
+    "level": "A1"
+  },
+  {
+    "polish": "but",
+    "english": "shoe",
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "polish": "koszula",
+    "english": "shirt",
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "polish": "spódnica",
+    "english": "skirt",
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "polish": "bluza",
+    "english": "hoodie / sweatshirt",
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "polish": "kapelusz",
+    "english": "hat",
+    "category": "clothes",
+    "level": "A2"
+  },
+  {
+    "polish": "okulary",
+    "english": "glasses",
+    "category": "clothes/objects",
+    "level": "A1"
+  },
+  {
+    "polish": "talerz",
+    "english": "plate",
+    "category": "objects",
+    "level": "A1"
+  },
+  {
+    "polish": "kubek",
+    "english": "mug / cup",
+    "category": "objects",
+    "level": "A1"
+  },
+  {
+    "polish": "nóż",
+    "english": "knife",
+    "category": "objects",
+    "level": "A1"
+  },
+  {
+    "polish": "widelec",
+    "english": "fork",
+    "category": "objects",
+    "level": "A1"
+  },
+  {
+    "polish": "łyżka",
+    "english": "spoon",
+    "category": "objects",
+    "level": "A1"
+  },
+  {
+    "polish": "łóżko",
+    "english": "bed",
+    "category": "places/furniture",
+    "level": "A1"
+  },
+  {
+    "polish": "krzesło",
+    "english": "chair",
+    "category": "places/furniture",
+    "level": "A1"
+  },
+  {
+    "polish": "stół",
+    "english": "table",
+    "category": "places/furniture",
+    "level": "A1"
+  },
+  {
+    "polish": "szkoła",
+    "english": "school",
+    "category": "places",
+    "level": "A1"
+  },
+  {
+    "polish": "uczelnia",
+    "english": "university",
+    "category": "places",
+    "level": "B1"
+  },
+  {
+    "polish": "praca",
+    "english": "work / job",
+    "category": "places/nouns",
+    "level": "A1"
+  },
+  {
+    "polish": "sklep",
+    "english": "shop / store",
+    "category": "places",
+    "level": "A1"
+  },
+  {
+    "polish": "restauracja",
+    "english": "restaurant",
+    "category": "places/food",
+    "level": "A1"
+  },
+  {
+    "polish": "wiosna",
+    "english": "spring",
+    "category": "time/seasons",
+    "level": "A1"
+  },
+  {
+    "polish": "lato",
+    "english": "summer",
+    "category": "time/seasons",
+    "level": "A1"
+  },
+  {
+    "polish": "jesień",
+    "english": "autumn / fall",
+    "category": "time/seasons",
+    "level": "A1"
+  },
+  {
+    "polish": "styczeń",
+    "english": "January",
+    "category": "time/months",
+    "level": "A1"
+  },
+  {
+    "polish": "luty",
+    "english": "February",
+    "category": "time/months",
+    "level": "A1"
+  },
+  {
+    "polish": "marzec",
+    "english": "March",
+    "category": "time/months",
+    "level": "A1"
+  },
+  {
+    "polish": "kwiecień",
+    "english": "April",
+    "category": "time/months",
+    "level": "A1"
+  },
+  {
+    "polish": "maj",
+    "english": "May",
+    "category": "time/months",
+    "level": "A1"
+  },
+  {
+    "polish": "czerwiec",
+    "english": "June",
+    "category": "time/months",
+    "level": "A1"
+  },
+  {
+    "polish": "lipiec",
+    "english": "July",
+    "category": "time/months",
+    "level": "A1"
+  },
+  {
+    "polish": "sierpień",
+    "english": "August",
+    "category": "time/months",
+    "level": "A1"
+  },
+  {
+    "polish": "wrzesień",
+    "english": "September",
+    "category": "time/months",
+    "level": "A1"
+  },
+  {
+    "polish": "październik",
+    "english": "October",
+    "category": "time/months",
+    "level": "A1"
+  },
+  {
+    "polish": "listopad",
+    "english": "November",
+    "category": "time/months",
+    "level": "A1"
+  },
+  {
+    "polish": "grudzień",
+    "english": "December",
+    "category": "time/months",
+    "level": "A1"
+  },
+  {
+    "polish": "ja",
+    "english": "I",
+    "category": "pronouns",
+    "level": "A1"
+  },
+  {
+    "polish": "ty",
+    "english": "you (singular informal)",
+    "category": "pronouns",
+    "level": "A1"
+  },
+  {
+    "polish": "on",
+    "english": "he",
+    "category": "pronouns",
+    "level": "A1"
+  },
+  {
+    "polish": "ona",
+    "english": "she",
+    "category": "pronouns",
+    "level": "A1"
+  },
+  {
+    "polish": "ono",
+    "english": "it",
+    "category": "pronouns",
+    "level": "A1"
+  },
+  {
+    "polish": "my",
+    "english": "we",
+    "category": "pronouns",
+    "level": "A1"
+  },
+  {
+    "polish": "wy",
+    "english": "you (plural)",
+    "category": "pronouns",
+    "level": "A1"
+  },
+  {
+    "polish": "oni",
+    "english": "they (male/mixed)",
+    "category": "pronouns",
+    "level": "A1"
+  },
+  {
+    "polish": "one",
+    "english": "they (female)",
+    "category": "pronouns",
+    "level": "A1"
+  },
+  {
+    "polish": "i",
+    "english": "and",
+    "category": "grammar",
+    "level": "A1"
+  },
+  {
+    "polish": "lub",
+    "english": "or",
+    "category": "grammar",
+    "level": "A2"
+  },
+  {
+    "polish": "ale",
+    "english": "but",
+    "category": "grammar",
+    "level": "A1"
+  },
+  {
+    "polish": "ponieważ",
+    "english": "because",
+    "category": "grammar",
+    "level": "A2"
+  },
+  {
+    "polish": "móc",
+    "english": "can / to be able to",
+    "category": "verbs/modal",
+    "level": "A1"
+  },
+  {
+    "polish": "chcieć",
+    "english": "to want",
+    "category": "verbs/modal",
+    "level": "A1"
+  },
+  {
+    "polish": "musieć",
+    "english": "must / to have to",
+    "category": "verbs/modal",
+    "level": "A1"
+  },
+  {
+    "polish": "spać",
+    "english": "to sleep",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "kupować",
+    "english": "to buy",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "pisać",
+    "english": "to write",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "mówić",
+    "english": "to speak / talk",
+    "category": "verbs",
+    "level": "A1"
+  },
+  {
+    "polish": "myć się",
+    "english": "to wash oneself",
+    "category": "verbs/reflexive",
+    "level": "A1"
+  },
+  {
+    "polish": "bawić się",
+    "english": "to play / have fun",
+    "category": "verbs/reflexive",
+    "level": "A1"
+  },
+  {
+    "polish": "chleb",
+    "english": "bread",
+    "category": "food",
+    "level": "A1"
+  },
+  {
+    "polish": "ser",
+    "english": "cheese",
+    "category": "food",
+    "level": "A1"
+  },
+  {
+    "polish": "jajko",
+    "english": "egg",
+    "category": "food",
+    "level": "A1"
+  },
+  {
+    "polish": "jabłko",
+    "english": "apple",
+    "category": "food",
+    "level": "A1"
+  },
+  {
+    "polish": "pomarańcza",
+    "english": "orange",
+    "category": "food",
+    "level": "A1"
+  },
+  {
+    "polish": "banan",
+    "english": "banana",
+    "category": "food",
+    "level": "A1"
+  },
+  {
+    "polish": "okno",
+    "english": "window",
+    "category": "objects",
+    "level": "A1"
+  },
+  {
+    "polish": "drzwi",
+    "english": "door",
+    "category": "objects",
+    "level": "A1"
+  },
+  {
+    "polish": "lampa",
+    "english": "lamp",
+    "category": "objects",
+    "level": "A1"
+  },
+  {
+    "polish": "komputer",
+    "english": "computer",
+    "category": "objects",
+    "level": "A1"
+  },
+  {
+    "polish": "ulica",
+    "english": "street",
+    "category": "places",
+    "level": "A1"
+  },
+  {
+    "polish": "hotel",
+    "english": "hotel",
+    "category": "places",
+    "level": "A1"
+  },
+  {
+    "polish": "samochód",
+    "english": "car",
+    "category": "transport",
+    "level": "A1"
+  },
+  {
+    "polish": "autobus",
+    "english": "bus",
+    "category": "transport",
+    "level": "A1"
+  },
+  {
+    "polish": "tramwaj",
+    "english": "tram",
+    "category": "transport",
+    "level": "A1"
+  },
+  {
+    "polish": "metro",
+    "english": "subway / metro",
+    "category": "transport",
+    "level": "A1"
+  },
+  {
+    "polish": "duży",
+    "english": "big / large",
+    "category": "adjectives",
+    "level": "A1"
+  },
+  {
+    "polish": "mały",
+    "english": "small",
+    "category": "adjectives",
+    "level": "A1"
+  },
+  {
+    "polish": "dobry",
+    "english": "good",
+    "category": "adjectives",
+    "level": "A1"
+  },
+  {
+    "polish": "zły",
+    "english": "bad",
+    "category": "adjectives",
+    "level": "A1"
+  },
+  {
+    "polish": "szybki",
+    "english": "fast",
+    "category": "adjectives",
+    "level": "A1"
+  },
+  {
+    "polish": "wolny",
+    "english": "slow / free",
+    "category": "adjectives",
+    "level": "A2"
+  },
+  {
+    "polish": "nowy",
+    "english": "new",
+    "category": "adjectives",
+    "level": "A1"
+  },
+  {
+    "polish": "stary",
+    "english": "old",
+    "category": "adjectives",
+    "level": "A1"
+  },
+  {
+    "polish": "kot",
+    "english": "cat",
+    "category": "animals",
+    "level": "A1"
+  },
+  {
+    "polish": "pies",
+    "english": "dog",
+    "category": "animals",
+    "level": "A1"
+  },
+  {
+    "polish": "koń",
+    "english": "horse",
+    "category": "animals",
+    "level": "A1"
+  },
+  {
+    "polish": "krowa",
+    "english": "cow",
+    "category": "animals",
+    "level": "A1"
+  },
+  {
+    "polish": "świnia",
+    "english": "pig",
+    "category": "animals",
+    "level": "A1"
+  },
+  {
+    "polish": "ptak",
+    "english": "bird",
+    "category": "animals",
+    "level": "A1"
+  },
+  {
+    "polish": "Dzień dobry",
+    "english": "Good morning / hello",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "Dobry wieczór",
+    "english": "Good evening",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "Dobranoc",
+    "english": "Good night",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "Jak się masz?",
+    "english": "How are you?",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "Co słychać?",
+    "english": "What's up?",
+    "category": "phrases",
+    "level": "A2"
+  },
+  {
+    "polish": "Dziękuję",
+    "english": "Thank you",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "Dziękuję bardzo",
+    "english": "Thank you very much",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "Proszę bardzo",
+    "english": "You're welcome",
+    "category": "phrases",
+    "level": "A1"
+  },
+  {
+    "polish": "dwa",
+    "english": "two",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "trzy",
+    "english": "three",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "cztery",
+    "english": "four",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "pięć",
+    "english": "five",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "sześć",
+    "english": "six",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "siedem",
+    "english": "seven",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "osiem",
+    "english": "eight",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "dziewięć",
+    "english": "nine",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "dziesięć",
+    "english": "ten",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "jedenaście",
+    "english": "eleven",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "dwanaście",
+    "english": "twelve",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "trzynaście",
+    "english": "thirteen",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "czternaście",
+    "english": "fourteen",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "piętnaście",
+    "english": "fifteen",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "szesnaście",
+    "english": "sixteen",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "siedemnaście",
+    "english": "seventeen",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "osiemnaście",
+    "english": "eighteen",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "dziewiętnaście",
+    "english": "nineteen",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "dwadzieścia",
+    "english": "twenty",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "trzydzieści",
+    "english": "thirty",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "czterdzieści",
+    "english": "forty",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "pięćdziesiąt",
+    "english": "fifty",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "sześćdziesiąt",
+    "english": "sixty",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "siedemdziesiąt",
+    "english": "seventy",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "osiemdziesiąt",
+    "english": "eighty",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "dziewięćdziesiąt",
+    "english": "ninety",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "sto",
+    "english": "one hundred",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "pierwszy",
+    "english": "first",
+    "category": "ordinal numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "drugi",
+    "english": "second",
+    "category": "ordinal numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "trzeci",
+    "english": "third",
+    "category": "ordinal numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "czwarty",
+    "english": "fourth",
+    "category": "ordinal numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "piąty",
+    "english": "fifth",
+    "category": "ordinal numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "szósty",
+    "english": "sixth",
+    "category": "ordinal numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "siódmy",
+    "english": "seventh",
+    "category": "ordinal numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "ósmy",
+    "english": "eighth",
+    "category": "ordinal numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "dziewiąty",
+    "english": "ninth",
+    "category": "ordinal numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "dziesiąty",
+    "english": "tenth",
+    "category": "ordinal numbers",
+    "level": "A1"
+  },
+  {
+    "polish": "wczoraj",
+    "english": "yesterday",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "polish": "dzisiaj",
+    "english": "today",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "polish": "jutro",
+    "english": "tomorrow",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "polish": "za tydzień",
+    "english": "in a week",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "za miesiąc",
+    "english": "in a month",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "za rok",
+    "english": "in a year",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "dzisiaj rano",
+    "english": "this morning",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "dzisiaj wieczorem",
+    "english": "this evening",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "o północy",
+    "english": "at midnight",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "w południe",
+    "english": "at noon",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "co godzinę",
+    "english": "every hour",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "co dzień",
+    "english": "every day",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "co tydzień",
+    "english": "every week",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "co miesiąc",
+    "english": "every month",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "co rok",
+    "english": "every year",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "jedenasty",
+    "english": "eleventh",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dwunasty",
+    "english": "twelfth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "trzynasty",
+    "english": "thirteenth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "czternasty",
+    "english": "fourteenth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "piętnasty",
+    "english": "fifteenth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "szesnasty",
+    "english": "sixteenth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "siedemnasty",
+    "english": "seventeenth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "osiemnasty",
+    "english": "eighteenth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dziewiętnasty",
+    "english": "nineteenth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dwudziesty",
+    "english": "twentieth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "trzydziesty",
+    "english": "thirtieth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "czterdziesty",
+    "english": "fortieth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "pięćdziesiąty",
+    "english": "fiftieth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "sześćdziesiąty",
+    "english": "sixtieth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "siedemdziesiąty",
+    "english": "seventieth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "osiemdziesiąty",
+    "english": "eightieth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dziewięćdziesiąty",
+    "english": "ninetieth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "setny",
+    "english": "one hundredth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "poniedziałek",
+    "english": "Monday",
+    "category": "days of the week",
+    "level": "A1"
+  },
+  {
+    "polish": "wtorek",
+    "english": "Tuesday",
+    "category": "days of the week",
+    "level": "A1"
+  },
+  {
+    "polish": "środa",
+    "english": "Wednesday",
+    "category": "days of the week",
+    "level": "A1"
+  },
+  {
+    "polish": "czwartek",
+    "english": "Thursday",
+    "category": "days of the week",
+    "level": "A1"
+  },
+  {
+    "polish": "piątek",
+    "english": "Friday",
+    "category": "days of the week",
+    "level": "A1"
+  },
+  {
+    "polish": "sobota",
+    "english": "Saturday",
+    "category": "days of the week",
+    "level": "A1"
+  },
+  {
+    "polish": "niedziela",
+    "english": "Sunday",
+    "category": "days of the week",
+    "level": "A1"
+  },
+  {
+    "polish": "rano",
+    "english": "morning",
+    "category": "parts of the day",
+    "level": "A1"
+  },
+  {
+    "polish": "przed południem",
+    "english": "before noon",
+    "category": "parts of the day",
+    "level": "A2"
+  },
+  {
+    "polish": "po południu",
+    "english": "afternoon",
+    "category": "parts of the day",
+    "level": "A1"
+  },
+  {
+    "polish": "wieczorem",
+    "english": "in the evening",
+    "category": "parts of the day",
+    "level": "A1"
+  },
+  {
+    "polish": "w nocy",
+    "english": "at night",
+    "category": "parts of the day",
+    "level": "A1"
+  },
+  {
+    "polish": "w tym tygodniu",
+    "english": "this week",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "w przyszłym tygodniu",
+    "english": "next week",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "w zeszłym tygodniu",
+    "english": "last week",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "w tym miesiącu",
+    "english": "this month",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "w przyszłym miesiącu",
+    "english": "next month",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "w zeszłym miesiącu",
+    "english": "last month",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "w tym roku",
+    "english": "this year",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "w przyszłym roku",
+    "english": "next year",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "w zeszłym roku",
+    "english": "last year",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "dzisiaj w nocy",
+    "english": "tonight",
+    "category": "time",
+    "level": "A2"
+  },
+  {
+    "polish": "dwudziesty pierwszy",
+    "english": "twenty-first",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dwudziesty drugi",
+    "english": "twenty-second",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dwudziesty trzeci",
+    "english": "twenty-third",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dwudziesty czwarty",
+    "english": "twenty-fourth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dwudziesty piąty",
+    "english": "twenty-fifth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dwudziesty szósty",
+    "english": "twenty-sixth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dwudziesty siódmy",
+    "english": "twenty-seventh",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dwudziesty ósmy",
+    "english": "twenty-eighth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dwudziesty dziewiąty",
+    "english": "twenty-ninth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "trzydziesty pierwszy",
+    "english": "thirty-first",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "trzydziesty drugi",
+    "english": "thirty-second",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "trzydziesty trzeci",
+    "english": "thirty-third",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "trzydziesty czwarty",
+    "english": "thirty-fourth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "trzydziesty piąty",
+    "english": "thirty-fifth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "trzydziesty szósty",
+    "english": "thirty-sixth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "trzydziesty siódmy",
+    "english": "thirty-seventh",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "trzydziesty ósmy",
+    "english": "thirty-eighth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "trzydziesty dziewiąty",
+    "english": "thirty-ninth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "czterdziesty pierwszy",
+    "english": "forty-first",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "czterdziesty drugi",
+    "english": "forty-second",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "czterdziesty trzeci",
+    "english": "forty-third",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "czterdziesty czwarty",
+    "english": "forty-fourth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "czterdziesty piąty",
+    "english": "forty-fifth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "czterdziesty szósty",
+    "english": "forty-sixth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "czterdziesty siódmy",
+    "english": "forty-seventh",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "czterdziesty ósmy",
+    "english": "forty-eighth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "czterdziesty dziewiąty",
+    "english": "forty-ninth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "pięćdziesiąty pierwszy",
+    "english": "fifty-first",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "pięćdziesiąty drugi",
+    "english": "fifty-second",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "pięćdziesiąty trzeci",
+    "english": "fifty-third",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "pięćdziesiąty czwarty",
+    "english": "fifty-fourth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "pięćdziesiąty piąty",
+    "english": "fifty-fifth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "pięćdziesiąty szósty",
+    "english": "fifty-sixth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "pięćdziesiąty siódmy",
+    "english": "fifty-seventh",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "pięćdziesiąty ósmy",
+    "english": "fifty-eighth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "pięćdziesiąty dziewiąty",
+    "english": "fifty-ninth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "sześćdziesiąty pierwszy",
+    "english": "sixty-first",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "sześćdziesiąty drugi",
+    "english": "sixty-second",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "sześćdziesiąty trzeci",
+    "english": "sixty-third",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "sześćdziesiąty czwarty",
+    "english": "sixty-fourth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "sześćdziesiąty piąty",
+    "english": "sixty-fifth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "sześćdziesiąty szósty",
+    "english": "sixty-sixth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "sześćdziesiąty siódmy",
+    "english": "sixty-seventh",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "sześćdziesiąty ósmy",
+    "english": "sixty-eighth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "sześćdziesiąty dziewiąty",
+    "english": "sixty-ninth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "siedemdziesiąty pierwszy",
+    "english": "seventy-first",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "siedemdziesiąty drugi",
+    "english": "seventy-second",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "siedemdziesiąty trzeci",
+    "english": "seventy-third",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "siedemdziesiąty czwarty",
+    "english": "seventy-fourth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "siedemdziesiąty piąty",
+    "english": "seventy-fifth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "siedemdziesiąty szósty",
+    "english": "seventy-sixth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "siedemdziesiąty siódmy",
+    "english": "seventy-seventh",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "siedemdziesiąty ósmy",
+    "english": "seventy-eighth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "siedemdziesiąty dziewiąty",
+    "english": "seventy-ninth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "osiemdziesiąty pierwszy",
+    "english": "eighty-first",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "osiemdziesiąty drugi",
+    "english": "eighty-second",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "osiemdziesiąty trzeci",
+    "english": "eighty-third",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "osiemdziesiąty czwarty",
+    "english": "eighty-fourth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "osiemdziesiąty piąty",
+    "english": "eighty-fifth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "osiemdziesiąty szósty",
+    "english": "eighty-sixth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "osiemdziesiąty siódmy",
+    "english": "eighty-seventh",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "osiemdziesiąty ósmy",
+    "english": "eighty-eighth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "osiemdziesiąty dziewiąty",
+    "english": "eighty-ninth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dziewięćdziesiąty pierwszy",
+    "english": "ninety-first",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dziewięćdziesiąty drugi",
+    "english": "ninety-second",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dziewięćdziesiąty trzeci",
+    "english": "ninety-third",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dziewięćdziesiąty czwarty",
+    "english": "ninety-fourth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dziewięćdziesiąty piąty",
+    "english": "ninety-fifth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dziewięćdziesiąty szósty",
+    "english": "ninety-sixth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dziewięćdziesiąty siódmy",
+    "english": "ninety-seventh",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dziewięćdziesiąty ósmy",
+    "english": "ninety-eighth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "dziewięćdziesiąty dziewiąty",
+    "english": "ninety-ninth",
+    "category": "ordinal numbers",
+    "level": "A2"
+  },
+  {
+    "polish": "rower",
+    "english": "bycicle",
+    "category": "transport",
+    "level": "A1"
+  }
+]
