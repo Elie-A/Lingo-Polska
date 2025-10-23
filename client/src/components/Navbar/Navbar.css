@@ -1,0 +1,139 @@
+/* === BASE NAVBAR === */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Scrolled state - subtle shadow */
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* === BRAND === */
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.05);
+}
+
+.highlight-red {
+    color: #e63946;
+}
+
+/* === LINKS === */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e63946;
+}
+
+/* === MOBILE TOGGLE === */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    padding: 0.5rem;
+}
+
+/* === MOBILE STYLES === */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(12px);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-links.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-links li {
+        animation: fadeIn 0.3s ease forwards;
+        opacity: 0;
+    }
+
+    .nav-links.open li:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    .nav-links.open li:nth-child(2) {
+        animation-delay: 0.15s;
+    }
+
+    .nav-links.open li:nth-child(3) {
+        animation-delay: 0.2s;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .nav-links a {
+        font-size: 1.1rem;
+    }
+}

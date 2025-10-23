@@ -1,5 +1,5 @@
 import Contact from "../models/Contact.js";
-import transporter from "../config/email.js";
+import resend from "../config/email.js";
 
 export const sendContactEmail = async (req, res) => {
   try {
@@ -19,10 +19,10 @@ export const sendContactEmail = async (req, res) => {
     const contact = await Contact.create({ name, email, message });
     console.log("✅ Saved to database");
 
-    // Email to admin
+    // Admin email
     console.log("📨 Sending email to admin...");
-    await transporter.sendMail({
-      from: process.env.EMAIL_USER,
+    await resend.emails.send({
+      from: "LingoPolska <onboarding@resend.dev>",
       to: process.env.ADMIN_EMAIL,
       subject: `New Contact Form - ${name}`,
       html: `
@@ -43,10 +43,10 @@ export const sendContactEmail = async (req, res) => {
     });
     console.log("✅ Admin email sent");
 
-    // Auto-reply to user
+    // User confirmation
     console.log("📨 Sending auto-reply to user...");
-    await transporter.sendMail({
-      from: process.env.EMAIL_USER,
+    await resend.emails.send({
+      from: "LingoPolska <onboarding@resend.dev>",
       to: email,
       subject: "Dziękujemy! Thanks for contacting LingoPolska 🇵🇱",
       html: `
@@ -76,7 +76,7 @@ export const sendContactEmail = async (req, res) => {
     console.error("❌ Contact form error:", error);
     res.status(500).json({
       success: false,
-      message: "Failed to send message. Please try again.",
+      message: "Failed to send message. Please try again later.",
     });
   }
 };

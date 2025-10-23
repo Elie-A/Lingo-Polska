@@ -1,9 +1,10 @@
 import express from "express";
 import { sendContactEmail } from "../controllers/contactController.js";
+import cors from "cors";
 
 const router = express.Router();
 
-// POST /api/contact
-router.post("/", sendContactEmail);
+router.options("/", cors()); // preflight
+router.post("/", cors(), sendContactEmail);
 
 export default router;

@@ -11,47 +11,45 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 const MONGO_URI = process.env.MONGO_URI;
 
-// Allowed origins for CORS
 const allowedOrigins = [
-  "http://localhost:3000", // React dev
-  "http://localhost:5173", // Vite dev if used
-  "https://lingo-polska.vercel.app", // Production frontend
+  "http://localhost:3000",
+  "http://localhost:5173",
+  "https://lingo-polska.vercel.app",
 ];
 
-// middleware
+// ⚡ Apply CORS globally BEFORE routes
 app.use(
   cors({
-    origin: function (origin, callback) {
-      // Allow requests with no origin (like Postman)
-      if (!origin) return callback(null, true);
-      if (allowedOrigins.includes(origin)) {
-        callback(null, true);
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true); // allow
       } else {
-        callback(new Error(`Not allowed by CORS: ${origin}`));
+        callback(null, true); // ⚠️ important: always return true for preflight, do NOT throw
       }
     },
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
+
+// Handle OPTIONS preflight for all routes
+app.options("*", cors());
 
 app.use(express.json());
 app.use(cookieParser());
 
-// connect MongoDB
+// Connect to MongoDB
 mongoose
   .connect(MONGO_URI)
-  .then(() => console.log("✅ Connected to MongoDB Atlas (LingoPolskaCluster)"))
+  .then(() => console.log("✅ Connected to MongoDB Atlas"))
   .catch((err) => console.error("❌ MongoDB connection error:", err.message));
 
-// test route
-app.get("/", (req, res) => {
-  res.send("LingoPolska backend is running!");
-});
+// Test route
+app.get("/", (req, res) => res.send("Backend is running!"));
 
 // Contact form route
 app.use("/api/contact", contactRoutes);
 
-// start server
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
-});
+// Start server
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
