@@ -64,8 +64,8 @@
     font-size: 1.5rem;
     color: #fff;
     background: #dc2626;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -82,7 +82,6 @@
     overflow: hidden;
     transition: max-height 0.5s ease, padding 0.3s ease;
     padding: 0 2rem;
-    /* small padding when collapsed */
 }
 
 .explanation-content.open {
@@ -126,13 +125,13 @@
 
 .class-block:hover {
     transform: translateY(-3px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
 }
 
 .class-title {
     font-size: 1.5rem;
     font-weight: 700;
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1rem;
     margin: 0;
     background: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(10px);
@@ -155,7 +154,7 @@
 
 .toggle-btn {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #fff;
     background: #dc2626;
     width: 28px;
@@ -213,28 +212,11 @@
     }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .lesson-page {
-        padding: 1rem;
-    }
-
-    .lesson-explanation-header h2 {
-        font-size: 1.5rem;
-    }
-
-    .explanation-section h3 {
-        font-size: 1.2rem;
-    }
-}
-
+/* Error */
 .error {
     background: #fee2e2;
-    /* light red background */
     border-left: 5px solid #dc2626;
-    /* red accent */
     color: #b91c1c;
-    /* dark red text */
     padding: 1rem 2rem;
     border-radius: 1rem;
     margin-bottom: 2rem;
@@ -248,7 +230,6 @@
     font-size: 1rem;
 }
 
-/* Retry button */
 .error button {
     background: #dc2626;
     color: #fff;
@@ -264,4 +245,48 @@
 .error button:hover {
     background: #b91c1c;
     transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .lesson-page {
+        padding: 1rem;
+    }
+
+    .lesson-title {
+        font-size: 1.4rem;
+    }
+
+    .lesson-subtitle {
+        font-size: 1rem;
+    }
+
+    .lesson-explanation-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .lesson-explanation .toggle-btn {
+        width: 24px;
+        height: 24px;
+        font-size: 1.1rem;
+    }
+
+    .explanation-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .class-title {
+        font-size: 1.2rem;
+        padding: 0.6rem 0.8rem;
+    }
+
+    .class-content {
+        padding: 0.8rem;
+    }
+
+    .toggle-btn {
+        width: 24px;
+        height: 24px;
+        font-size: 1.1rem;
+    }
 }
