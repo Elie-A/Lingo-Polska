@@ -10,11 +10,6 @@ export default function Contact() {
     // Use environment variable for API URL
     const API_URL = import.meta.env.VITE_API_URL;
 
-    // Debug: check if API_URL is defined
-    useEffect(() => {
-        console.log("REACT_APP_API_URL:", API_URL);
-    }, [API_URL]);
-
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };

@@ -1,0 +1,71 @@
+.exercise-card {
+    position: relative;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #dc2626;
+}
+
+.exercise-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.exercise-card-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, #dc2626, transparent 70%);
+    border-radius: 1rem;
+    opacity: 0;
+    filter: blur(25px);
+    transition: opacity 0.5s ease;
+    z-index: 0;
+}
+
+.exercise-card:hover .exercise-card-glow {
+    opacity: 0.15;
+}
+
+.card-decorative-bg {
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: #fee2e2;
+    border-radius: 50%;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.exercise-card-content {
+    position: relative;
+    z-index: 10;
+}
+
+.exercise-icon-container {
+    display: inline-block;
+    background-color: #fee2e2;
+    color: #dc2626;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.exercise-card:hover .exercise-icon-container {
+    transform: scale(1.1) rotate(3deg);
+    color: #b91c1c;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.exercise-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}

@@ -1,0 +1,455 @@
+{
+    "class": "Complete sentences (random verbs)",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "polish": "Czekamy na samolot na lotnisku.",
+                    "english": "We are waiting for the plane at the airport.",
+                    "infinitive": "czekać – to wait"
+                },
+                {
+                    "polish": "Wydaje mi się, że chodzimy w kółko.",
+                    "english": "It seems to me that we go around in circles.",
+                    "infinitive": "chodzić – to walk"
+                },
+                {
+                    "polish": "Goście śmieją się z mojego żartu.",
+                    "english": "The guests laugh at my joke.",
+                    "infinitive": "śmiać się – to laugh"
+                },
+                {
+                    "polish": "Rozumiesz co mam na myśli?",
+                    "english": "Do you (Sg) understand what I mean?",
+                    "infinitive": "rozumieć – to understand"
+                },
+                {
+                    "polish": "Czy umiesz mówić po polsku?",
+                    "english": "Can you (Sg) speak Polish?",
+                    "infinitive": "umieć – can"
+                },
+                {
+                    "polish": "Czy chcesz pójść ze mną do kina?",
+                    "english": "Do you (Sg) want to go to the cinema with me?",
+                    "infinitive": "chcieć – to want"
+                },
+                {
+                    "polish": "Czy czytasz książkę, którą Ci poleciłem?",
+                    "english": "Do you (Sg) read the book that I recommended to you?",
+                    "infinitive": "czytać – to read"
+                },
+                {
+                    "polish": "Moi rodzice bez przerwy mówią mi, co mam robić.",
+                    "english": "My parents are constantly telling me what to do.",
+                    "infinitive": "mówić – to speak"
+                },
+                {
+                    "polish": "Moje dzieci jadą na wycieczkę do Hiszpanii.",
+                    "english": "My children are going on a trip to Spain.",
+                    "infinitive": "jechać – to drive"
+                },
+                {
+                    "polish": "Witamy w Polsce!",
+                    "english": "Welcome (Pl) to Poland!",
+                    "infinitive": "witać – to welcome"
+                },
+                {
+                    "polish": "Żyjemy w dziwnych czasach.",
+                    "english": "We live in strange times.",
+                    "infinitive": "żyć – to live"
+                },
+                {
+                    "polish": "Od wczoraj policjanci szukają złodziei.",
+                    "english": "Police officers have been looking for thieves since yesterday.",
+                    "infinitive": "szukać – to search"
+                },
+                {
+                    "polish": "Czy lubisz słuchać muzyki?",
+                    "english": "Do you (Sg) like listening to the music?",
+                    "infinitive": "lubić – to like"
+                },
+                {
+                    "polish": "Marzymy by polecieć do Stanów Zjednoczonych.",
+                    "english": "We dream to fly to the United States.",
+                    "infinitive": "marzyć – to dream"
+                },
+                {
+                    "polish": "Polacy często narzekają.",
+                    "english": "Poles often complain.",
+                    "infinitive": "narzekać – to complain"
+                },
+                {
+                    "polish": "Dyskutuję właśnie z moją mamą kwestię naszego wyjazdu.",
+                    "english": "I am discussing the issue of our trip with my mother.",
+                    "infinitive": "dyskutować – to discuss"
+                },
+                {
+                    "polish": "Właśnie leżymy na plaży.",
+                    "english": "We're just lying on the beach.",
+                    "infinitive": "leżeć – to lie"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "polish": "Co rysujesz?",
+                    "english": "What are you (Sg) drawing?",
+                    "infinitive": "rysować – to draw"
+                },
+                {
+                    "polish": "Robię kanapki na kolację.",
+                    "english": "I make sandwiches for supper.",
+                    "infinitive": "robić – to make"
+                },
+                {
+                    "polish": "Uczniowie jedzą śniadanie.",
+                    "english": "Pupils eat breakfast.",
+                    "infinitive": "jeść – to eat"
+                },
+                {
+                    "polish": "Nie słyszę co mówisz.",
+                    "english": "I can not hear what you're saying.",
+                    "infinitive": "słyszeć – to hear"
+                },
+                {
+                    "polish": "Twoja siostra pomaga mi dokończyć projekt.",
+                    "english": "Your (Sg) sister helps me finish the project.",
+                    "infinitive": "pomagać – to help"
+                },
+                {
+                    "polish": "Dlaczego nigdy nie zamykasz drzwi?",
+                    "english": "Why do not you (Sg) ever close the door?",
+                    "infinitive": "zamykać – to close"
+                },
+                {
+                    "polish": "Obserwujemy dzikie zwierzęta w puszczy.",
+                    "english": "We observe wild animals in the wilderness.",
+                    "infinitive": "obserwować – to observe"
+                },
+                {
+                    "polish": "Robimy zadanie domowe.",
+                    "english": "We do homework.",
+                    "infinitive": "robić – to do"
+                },
+                {
+                    "polish": "Wiem, że jest ci trudno.",
+                    "english": "I know it is difficult for you.",
+                    "infinitive": "wiedzieć – to know"
+                },
+                {
+                    "polish": "Właśnie biegnę na przystanek.",
+                    "english": "I'm just running to the bus stop.",
+                    "infinitive": "biegnąć – to run"
+                },
+                {
+                    "polish": "Kładę twoje książki na stole.",
+                    "english": "I put your books on the table.",
+                    "infinitive": "kłaść – to put"
+                },
+                {
+                    "polish": "Przepraszam za to, co powiedziałem.",
+                    "english": "I apologize for what I said.",
+                    "infinitive": "przepraszać – to apologize"
+                },
+                {
+                    "polish": "Piszę list do swojej dziewczyny.",
+                    "english": "I am writing a letter to my girlfriend.",
+                    "infinitive": "pisać – to write"
+                },
+                {
+                    "polish": "Jestem chory i leżę w łóżku.",
+                    "english": "I'm sick and I'm lying in bed.",
+                    "infinitive": "leżeć – to lie"
+                },
+                {
+                    "polish": "Muszę już iść do domu.",
+                    "english": "I have to go home.",
+                    "infinitive": "musieć – must"
+                },
+                {
+                    "polish": "Pływamy w basenie.",
+                    "english": "We swim in the pool.",
+                    "infinitive": "pływać – to swim"
+                },
+                {
+                    "polish": "Dam Ci ostatnią szansę.",
+                    "english": "I will give you the last chance.",
+                    "infinitive": "dać – to give"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03",
+            "rows": [
+                {
+                    "polish": "Czy wiesz ile czasu nam potrzeba?",
+                    "english": "Do you (Sg) know how much time we need?",
+                    "infinitive": "wiedzieć – to know"
+                },
+                {
+                    "polish": "Dzieci płaczą, bo zgubiły swoje zabawki.",
+                    "english": "Children cry because they lost their toys.",
+                    "infinitive": "płakać – to cry"
+                },
+                {
+                    "polish": "Od rana planujemy nasz wyjazd na Wyspy Kanaryjskie.",
+                    "english": "From the morning, we plan our trip to the Canary Islands.",
+                    "infinitive": "planować – to plan"
+                },
+                {
+                    "polish": "Czy palicie papierosy?",
+                    "english": "Do you (Pl) smoke cigarettes?",
+                    "infinitive": "palić – to smoke"
+                },
+                {
+                    "polish": "Czy budujecie nowy hotel?",
+                    "english": "Do you (Pl) build a new hotel?",
+                    "infinitive": "budować – to build"
+                },
+                {
+                    "polish": "Sprzątaczki sprzątają biuro.",
+                    "english": "Cleaning ladies are cleaning the office.",
+                    "infinitive": "sprzątać – to tidy up"
+                },
+                {
+                    "polish": "Szef pyta, czy przygotowaliśmy już raport.",
+                    "english": "The boss asks if we have already prepared the report.",
+                    "infinitive": "pytać – to ask"
+                },
+                {
+                    "polish": "Gramy dzisiaj wieczorem w pokera?",
+                    "english": "Do we play poker this evening?",
+                    "infinitive": "grać – to play"
+                },
+                {
+                    "polish": "Rozmawiam z twoim bratem.",
+                    "english": "I'm talking to your brother.",
+                    "infinitive": "rozmawiać – to talk"
+                },
+                {
+                    "polish": "Nasz pies śpi pod stołem.",
+                    "english": "Our dog is sleeping under the table.",
+                    "infinitive": "spać – to sleep"
+                },
+                {
+                    "polish": "Czy możemy się trochę spóźnić?",
+                    "english": "Can we be a little late?",
+                    "infinitive": "móc – can"
+                },
+                {
+                    "polish": "Czy widzisz gdzieś swoją siostrę?",
+                    "english": "Do you (Sg) see your sister somewhere?",
+                    "infinitive": "widzieć – to see"
+                },
+                {
+                    "polish": "Mój kot myśli, że jest psem.",
+                    "english": "My cat thinks he is a dog.",
+                    "infinitive": "myśleć – to think"
+                },
+                {
+                    "polish": "Za tydzień lecę do Hiszpanii.",
+                    "english": "I'm flying to Spain next week.",
+                    "infinitive": "lecieć – to fly"
+                },
+                {
+                    "polish": "Kocham Cię!",
+                    "english": "I love you!",
+                    "infinitive": "kochać – to love"
+                },
+                {
+                    "polish": "Rozumiemy twój problem.",
+                    "english": "We understand your problem.",
+                    "infinitive": "rozumieć – to understand"
+                },
+                {
+                    "polish": "Czy pracujecie nad nowym rozwiązaniem?",
+                    "english": "Do you (Pl) work on a new solution?",
+                    "infinitive": "pracować – to work"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04",
+            "rows": [
+                {
+                    "polish": "Proszę Cię od samego rana, żebyś posprzątał.",
+                    "english": "Since morning I am asking you to tidy up.",
+                    "infinitive": "prosić – to ask"
+                },
+                {
+                    "polish": "Pijemy piwo nad jeziorem.",
+                    "english": "We drink beer by the lake.",
+                    "infinitive": "pić – to drink"
+                },
+                {
+                    "polish": "Chodzimy ze sobą od roku.",
+                    "english": "We've been together for a year.",
+                    "infinitive": "chodzić – to walk"
+                },
+                {
+                    "polish": "Właśnie naprawiamy nasz samochód.",
+                    "english": "We are just repairing our car.",
+                    "infinitive": "naprawiać – to repair"
+                },
+                {
+                    "polish": "Magda jest w łazience i myje się.",
+                    "english": "Magda is in the bathroom and washes herself.",
+                    "infinitive": "myć się – to wash oneself"
+                },
+                {
+                    "polish": "Powiemy wszystko twojej mamie!",
+                    "english": "We will tell everything to your mother!",
+                    "infinitive": "powiedzieć – to say"
+                },
+                {
+                    "polish": "Czy słyszycie ten dziwny dźwięk?",
+                    "english": "Do you (Pl) hear this strange sound?",
+                    "infinitive": "słyszeć – to hear"
+                },
+                {
+                    "polish": "Czy uczysz się na egzamin z matematyki?",
+                    "english": "Do you (Sg) study for the math exam?",
+                    "infinitive": "uczyć się – to learn"
+                },
+                {
+                    "polish": "Tato, biorę twój samochód na zakupy.",
+                    "english": "Dad, I'm taking your car for shopping.",
+                    "infinitive": "brać – to take"
+                },
+                {
+                    "polish": "Gotujemy obiad na jutro.",
+                    "english": "We're cooking dinner for tomorrow.",
+                    "infinitive": "gotować – to cook"
+                },
+                {
+                    "polish": "Wygląda na to, że słuchasz tej samej muzyki co ja!",
+                    "english": "It looks like you're (Sg) listening to the same music as me!",
+                    "infinitive": "słuchać – to listen"
+                },
+                {
+                    "polish": "Dlaczego używasz mojej szczoteczki?",
+                    "english": "Why do you (Sg) use my toothbrush?",
+                    "infinitive": "używać – to use"
+                },
+                {
+                    "polish": "Moi rodzice zmuszają mnie do chodzenia spać wcześnie.",
+                    "english": "My parents are forcing me to go to bed early.",
+                    "infinitive": "zmuszać – to force"
+                },
+                {
+                    "polish": "Sprzedawcy liczą ile zarobili pieniędzy.",
+                    "english": "Sellers count how much money they have earned.",
+                    "infinitive": "liczyć – to count"
+                },
+                {
+                    "polish": "Dzisiaj wieczorem idziemy na imprezę.",
+                    "english": "Tonight we are going to a party.",
+                    "infinitive": "iść – to go"
+                },
+                {
+                    "polish": "Moja siostra od godziny żegna się ze swoim chłopakiem.",
+                    "english": "My sister says goodbye to her boyfriend for an hour.",
+                    "infinitive": "żegnać – to bid goodbye"
+                },
+                {
+                    "polish": "Powiesz bratu, by zrobił zakupy?",
+                    "english": "Will you (Sg) tell your brother to go shopping?",
+                    "infinitive": "powiedzieć – to say"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 05",
+            "rows": [
+                {
+                    "polish": "Czy masz pożyczyć mi trochę pieniędzy?",
+                    "english": "Do you (Sg) have some money to lend me?",
+                    "infinitive": "mieć – to have"
+                },
+                {
+                    "polish": "A więc mówisz, że to nie twoja wina?",
+                    "english": "So you (Sg) say it's not your fault?",
+                    "infinitive": "mówić – to speak"
+                },
+                {
+                    "polish": "Szukam nowego mieszkania.",
+                    "english": "I am looking for a new flat.",
+                    "infinitive": "szukać – to search"
+                },
+                {
+                    "polish": "Nie umiem pisać lewą ręką.",
+                    "english": "I can not write with my left hand.",
+                    "infinitive": "umieć – can"
+                },
+                {
+                    "polish": "Rodzice pytają, kiedy wrócisz.",
+                    "english": "Parents ask when you will be back.",
+                    "infinitive": "pytać – to ask"
+                },
+                {
+                    "polish": "Czy możesz mi pomóc?",
+                    "english": "Can you (Sg) help me?",
+                    "infinitive": "móc – can"
+                },
+                {
+                    "polish": "Dlaczego zawsze na siebie wrzeszczymy?",
+                    "english": "Why are we always yelling at each other?",
+                    "infinitive": "wrzeszczeć – to yell"
+                },
+                {
+                    "polish": "Czy nadal kupujesz tylko ekologiczne produkty?",
+                    "english": "Are you (Sg) still buying only organic products?",
+                    "infinitive": "kupować – to buy"
+                },
+                {
+                    "polish": "Nie mogę rozmawiać, bo gram na komputerze.",
+                    "english": "I can not talk because I play on a computer.",
+                    "infinitive": "grać – to play"
+                },
+                {
+                    "polish": "Płacicie razem czy osobno?",
+                    "english": "Do you (Pl) pay together or separately?",
+                    "infinitive": "płacić – to pay"
+                },
+                {
+                    "polish": "Do jutra musimy skończyć ten projekt.",
+                    "english": "We have to finish this project by tomorrow.",
+                    "infinitive": "musieć – must"
+                },
+                {
+                    "polish": "Mamy szczęście, że nikt nas nie złapał!",
+                    "english": "We're lucky that nobody caught us!",
+                    "infinitive": "mieć – to have"
+                },
+                {
+                    "polish": "Moja siostra je teraz obiad.",
+                    "english": "My sister is having dinner now.",
+                    "infinitive": "jeść – to eat"
+                },
+                {
+                    "polish": "Mój dziadek pisze książkę o Drugiej Wojnie Światowej.",
+                    "english": "My grandfather is writing a book about the Second World War.",
+                    "infinitive": "pisać – to write"
+                },
+                {
+                    "polish": "Patrzymy przez okno jak pada deszcz.",
+                    "english": "We look out the window as it rains.",
+                    "infinitive": "patrzeć – to look"
+                },
+                {
+                    "polish": "Całuję się z moją dziewczyną.",
+                    "english": "I kiss my girlfriend.",
+                    "infinitive": "całować – to kiss"
+                },
+                {
+                    "polish": "Nie mogę rozmawiać, bo właśnie gotuję obiad.",
+                    "english": "I can not talk because I'm cooking dinner right now.",
+                    "infinitive": "gotować – to cook"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "class": "Present Tense (verbs -em -esz)",
+    "exercises": [
+        {
+            "name": "Exercise 01",
+            "rows": [
+                {
+                    "polish": "Czy umiesz mówić po polsku?",
+                    "stem": "umie",
+                    "ending": "sz",
+                    "english": "Can you (Sg) speak Polish?",
+                    "infinitive": "umieć – can"
+                },
+                {
+                    "polish": "Wiem, że jest ci trudno.",
+                    "stem": "Wi",
+                    "ending": "em",
+                    "english": "I know it is difficult for you.",
+                    "infinitive": "wiedzieć – to know"
+                },
+                {
+                    "polish": "Rozumiemy twój problem.",
+                    "stem": "Rozumi",
+                    "ending": "emy",
+                    "english": "We understand your problem.",
+                    "infinitive": "rozumieć – to understand"
+                },
+                {
+                    "polish": "Powiesz bratu, by zrobił zakupy?",
+                    "stem": "Pow",
+                    "ending": "iesz",
+                    "english": "Will you (Sg) tell your brother to go shopping?",
+                    "infinitive": "powiedzieć – to tell"
+                },
+                {
+                    "polish": "Moja siostra je teraz obiad.",
+                    "stem": "j",
+                    "ending": "e",
+                    "english": "My sister is having dinner now.",
+                    "infinitive": "jeść – to eat"
+                }
+            ]
+        },
+        {
+            "name": "Exercise 02",
+            "rows": [
+                {
+                    "polish": "Rozumiesz co mam na myśli?",
+                    "stem": "Rozum",
+                    "ending": "iesz",
+                    "english": "Do you (Sg) understand what I mean?",
+                    "infinitive": "rozumieć – to understand"
+                },
+                {
+                    "polish": "Uczniowie jedzą śniadanie.",
+                    "stem": "jedz",
+                    "ending": "ą",
+                    "english": "Pupils eat breakfast.",
+                    "infinitive": "jeść – to eat"
+                },
+                {
+                    "polish": "Czy wiesz ile czasu nam potrzeba?",
+                    "stem": "w",
+                    "ending": "iesz",
+                    "english": "Do you (Sg) know how much time we need?",
+                    "infinitive": "wiedzieć – to know"
+                },
+                {
+                    "polish": "Powiemy wszystko twojej mamie!",
+                    "stem": "Powi",
+                    "ending": "emy",
+                    "english": "We will tell everything to your mother!",
+                    "infinitive": "powiedzieć – to tell"
+                },
+                {
+                    "polish": "Nie umiem pisać lewą ręką.",
+                    "stem": "umie",
+                    "ending": "m",
+                    "english": "I can not write with my left hand.",
+                    "infinitive": "umieć – can"
+                }
+            ]
+        }
+    ]
+}

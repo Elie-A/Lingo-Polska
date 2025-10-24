@@ -1,0 +1,267 @@
+/* General Page */
+.lesson-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+.lesson-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.lesson-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #dc2626;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.lesson-title:hover {
+    color: #b91c1c;
+}
+
+.lesson-subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4b5563;
+}
+
+/* Lesson Explanation */
+.lesson-explanation {
+    background: #fff;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #dc2626;
+    overflow: hidden;
+}
+
+/* Explanation Header */
+.lesson-explanation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.lesson-explanation-header h2 {
+    font-size: 1.75rem;
+    color: #b91c1c;
+    margin: 0;
+}
+
+/* Toggle button */
+.lesson-explanation .toggle-btn {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #dc2626;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.lesson-explanation.open .toggle-btn {
+    transform: rotate(180deg);
+}
+
+/* Explanation content */
+.explanation-content {
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+    padding: 0 2rem;
+    /* small padding when collapsed */
+}
+
+.explanation-content.open {
+    padding: 1rem 2rem 1.5rem 2rem;
+}
+
+.explanation-section+.explanation-section {
+    margin-top: 1.5rem;
+}
+
+.explanation-section h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #dc2626;
+    margin-bottom: 0.5rem;
+}
+
+.explanation-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+}
+
+.explanation-section ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.explanation-section li {
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+}
+
+/* Classes */
+.class-block {
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.class-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+    border-left: 5px solid #dc2626;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.class-title:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.class-title.active {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.toggle-btn {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #dc2626;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.class-title.active .toggle-btn {
+    transform: rotate(180deg);
+}
+
+.class-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.3s ease, padding 0.3s ease;
+    padding: 0 1rem;
+}
+
+.class-content.active {
+    max-height: 2000px;
+    opacity: 1;
+    padding: 1rem;
+}
+
+/* Loading */
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 5px solid #eee;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .lesson-page {
+        padding: 1rem;
+    }
+
+    .lesson-explanation-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .explanation-section h3 {
+        font-size: 1.2rem;
+    }
+}
+
+.error {
+    background: #fee2e2;
+    /* light red background */
+    border-left: 5px solid #dc2626;
+    /* red accent */
+    color: #b91c1c;
+    /* dark red text */
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.error p {
+    margin: 0 0 1rem 0;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Retry button */
+.error button {
+    background: #dc2626;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.error button:hover {
+    background: #b91c1c;
+    transform: translateY(-2px);
+}

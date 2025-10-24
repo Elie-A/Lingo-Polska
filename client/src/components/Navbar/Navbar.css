@@ -9,7 +9,6 @@
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Scrolled state - subtle shadow */
 .navbar.scrolled {
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -60,6 +59,52 @@
 
 .nav-links a:hover {
     color: #e63946;
+}
+
+/* === DROPDOWN MENU === */
+.nav-item-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    min-width: 150px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    flex-direction: column;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+}
+
+.dropdown-menu.open {
+    display: flex;
+    max-height: 500px;
+    /* large enough for all items */
+    opacity: 1;
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+    transition: background 0.2s ease;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
 }
 
 /* === MOBILE TOGGLE === */
@@ -136,4 +181,42 @@
     .nav-links a {
         font-size: 1.1rem;
     }
+
+    /* Mobile dropdown menu styling */
+    .nav-links .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        width: 100%;
+        padding-left: 1rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    .nav-links .dropdown-menu.open {
+        max-height: 1000px;
+        /* large enough for all items */
+        opacity: 1;
+    }
+
+    .nav-links .dropdown-menu li {
+        padding: 0.8rem 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.nav-item-dropdown .dropdown-title {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-item-dropdown .dropdown-title:hover {
+    color: #e63946;
 }

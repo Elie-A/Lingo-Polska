@@ -1,0 +1,65 @@
+{
+    "class": "Verb To Be",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "polish": "Co to jest?",
+                    "english": "What is this?",
+                    "infinitive": "być – to be"
+                },
+                {
+                    "polish": "Czy jesteś w domu?",
+                    "english": "Are you (Sg) at home?",
+                    "infinitive": "być – to be"
+                },
+                {
+                    "polish": "Jesteśmy w drodze.",
+                    "english": "We are on the way.",
+                    "infinitive": "być – to be"
+                },
+                {
+                    "polish": "Czy to są twoje książki?",
+                    "english": "Are these your books?",
+                    "infinitive": "być – to be"
+                },
+                {
+                    "polish": "Jaka jest dzisiaj pogoda?",
+                    "english": "What is the weather today?",
+                    "infinitive": "być – to be"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "polish": "Jestem z zagranicy.",
+                    "english": "I'm from abroad.",
+                    "infinitive": "być – to be"
+                },
+                {
+                    "polish": "Dlaczego jesteście tacy zmęczeni?",
+                    "english": "Why are you (Pl) so tired?",
+                    "infinitive": "być – to be"
+                },
+                {
+                    "polish": "Jesteśmy na wakacjach.",
+                    "english": "We're on vacation.",
+                    "infinitive": "być – to be"
+                },
+                {
+                    "polish": "Twoi rodzice są bardzo mili.",
+                    "english": "Your parents are very nice.",
+                    "infinitive": "być – to be"
+                },
+                {
+                    "polish": "Czy jesteś z Polski?",
+                    "english": "Are you (Sg) from Poland?",
+                    "infinitive": "być – to be"
+                }
+            ]
+        }
+    ]
+}
