@@ -19,55 +19,53 @@ const Collapse = ({ data }) => {
                 return (
                     <div className="collapse" key={idx}>
                         <h2
-                            className="collapse-header"
+                            className={`collapse-header ${openIndex === idx ? "active" : ""}`}
                             onClick={() => toggleCollapse(idx)}
                         >
                             {exerciseData.exercise || `Exercise ${idx + 1}`}{" "}
                             <span className="toggle-btn">{openIndex === idx ? "−" : "+"}</span>
                         </h2>
 
-                        {openIndex === idx && (
-                            <div className="collapse-content">
-                                <div className="exercise-card">
-                                    <div className="exercise-card-glow"></div>
-                                    <div className="card-decorative-bg"></div>
-                                    <div className="exercise-card-content">
-                                        <div className="table-wrapper">
-                                            <table className="exercise-table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Polish</th>
-                                                        <th>English</th>
-                                                        <th>Infinitive</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    {rows.length > 0 ? (
-                                                        rows.map((row, rIdx) => (
-                                                            <tr key={rIdx}>
-                                                                <td className="polish">
-                                                                    <span className="stem">{row.stem}</span>
-                                                                    <span className="ending-present">{row.ending}</span>
-                                                                    {row.polishRest}
-                                                                </td>
-                                                                <td>{row.english}</td>
-                                                                <td>{row.infinitive}</td>
-                                                            </tr>
-                                                        ))
-                                                    ) : (
-                                                        <tr>
-                                                            <td colSpan={3} style={{ textAlign: "center" }}>
-                                                                No rows available
+                        <div className={`collapse-content ${openIndex === idx ? "open" : ""}`}>
+                            <div className="exercise-card">
+                                <div className="exercise-card-glow"></div>
+                                <div className="card-decorative-bg"></div>
+                                <div className="exercise-card-content">
+                                    <div className="table-wrapper">
+                                        <table className="exercise-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Polish</th>
+                                                    <th>English</th>
+                                                    <th>Infinitive</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {rows.length > 0 ? (
+                                                    rows.map((row, rIdx) => (
+                                                        <tr key={rIdx}>
+                                                            <td className="polish">
+                                                                <span className="stem">{row.stem}</span>
+                                                                <span className="ending-present">{row.ending}</span>
+                                                                {row.polishRest}
                                                             </td>
+                                                            <td>{row.english}</td>
+                                                            <td>{row.infinitive}</td>
                                                         </tr>
-                                                    )}
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                                    ))
+                                                ) : (
+                                                    <tr>
+                                                        <td colSpan={3} style={{ textAlign: "center" }}>
+                                                            No rows available
+                                                        </td>
+                                                    </tr>
+                                                )}
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
-                        )}
+                        </div>
                     </div>
                 );
             })}
