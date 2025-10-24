@@ -1,36 +1,38 @@
-import React from 'react';
-import './LessonCard.css';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./LessonCard.css";
 
-// Import your SVG flags here
-import PolandFlag from '../../assets/poland-flag.svg';
-// Add other flags as needed, e.g., import UKFlag from '../../assets/uk-flag.svg';
+// Optional: import SVG flags if needed
+import PolandFlag from "../../assets/poland-flag.svg";
 
 const FLAGS = {
     PL: PolandFlag,
-    // Add more country codes mapping to SVGs here
-    // GB: UKFlag,
 };
 
-export default function LessonCard({ title, description, icon, delay, link }) {
-    let displayIcon;
+export default function LessonCard({ title, description, icon, delay, classes, path }) {
+    const navigate = useNavigate();
 
+    // Auto-generate path if not provided
+    const lessonPath =
+        path || `/lesson/${title.toLowerCase().replace(/\s+/g, "-")}`;
+
+    let displayIcon;
     if (React.isValidElement(icon)) {
-        // Already JSX or SVG element
         displayIcon = icon;
-    } else if (typeof icon === 'string' && icon.length === 2 && FLAGS[icon.toUpperCase()]) {
-        // 2-letter country code mapped to SVG
+    } else if (typeof icon === "string" && icon.length === 2 && FLAGS[icon.toUpperCase()]) {
         const FlagSVG = FLAGS[icon.toUpperCase()];
-        displayIcon = <img src={FlagSVG} alt={`${icon.toUpperCase()} flag`} className="lesson-card-flag" />;
+        displayIcon = (
+            <img src={FlagSVG} alt={`${icon.toUpperCase()} flag`} className="lesson-card-flag" />
+        );
     } else {
-        // Fallback: emoji or text
         displayIcon = icon;
     }
 
     return (
-        <a
-            href={link}
+        <div
             className="card-container"
             style={{ animationDelay: `${delay}ms` }}
+            onClick={() => navigate(lessonPath)}
         >
             <div className="card-glow-hover"></div>
             <div className="card-base">
@@ -47,6 +49,6 @@ export default function LessonCard({ title, description, icon, delay, link }) {
                     <span className="card-button-arrow">→</span>
                 </button>
             </div>
-        </a>
+        </div>
     );
 }

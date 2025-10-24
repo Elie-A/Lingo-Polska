@@ -17,7 +17,7 @@ export default function Hero() {
                     alt="Polish Flag"
                     className="hero-flag"
                 />
-                <h1 className="hero-title">Lingo Polska / Learn Polish</h1>
+                <h1 className="hero-title">Lingo Polska | Speak Polish Today</h1>
                 <p className="hero-subtitle">
                     Master the Polish language with <strong>interactive lessons</strong> designed for{' '}
                     <span>grammar</span>, <span>vocabulary</span>, and <span>conversation</span> skills.

@@ -1,0 +1,117 @@
+import presentFirstClass from "../data/lessons/present/present-tense-first-class.json";
+import presentSecondClass from "../data/lessons/present/present-tense-second-class.json";
+import presentThirdClass from "../data/lessons/present/present-tense-third-class.json";
+import presentFourthClass from "../data/lessons/present/present-tense-fourth-class.json";
+import presentVerbToBe from "../data/lessons/present/present-tense-verb-to-be.json";
+import presentRandomVerbs from "../data/lessons/present/present-tense-random-verbs.json";
+
+const lessons = [
+  {
+    title: "Present Tense",
+    description: "Instantly talk about daily life and current activities.",
+    icon: "📝",
+    path: "lessons/present",
+    folder: "present",
+    intro: `Welcome to the Present Tense lesson! Here, you'll explore the fundamentals of the present tense in Polish. 
+You'll learn how to conjugate both regular and irregular verbs, describe your daily activities, and talk about actions happening right now or routines you perform regularly. 
+Through practical examples, mini-dialogues, and exercises, you'll gain confidence in forming clear, grammatically correct sentences. 
+By the end of this lesson, you'll be able to confidently describe your daily life, express your thoughts, and engage in simple conversations naturally and accurately.`,
+    classes: [
+      presentFirstClass,
+      presentSecondClass,
+      presentThirdClass,
+      presentFourthClass,
+      presentVerbToBe,
+      presentRandomVerbs,
+    ],
+  },
+  {
+    title: "Past Tense",
+    description: "Unlock the ability to share stories and recall memories.",
+    icon: "⏰",
+    path: "lessons/past",
+    folder: "past",
+    intro: `In the Past Tense lesson, you'll learn to narrate events and describe actions that have already happened in Polish. 
+You'll discover how to conjugate regular and irregular verbs in the past tense, express completed actions, and tell simple stories about your day, past experiences, or historical events. 
+Through exercises and practical examples, you'll gain the skills to communicate confidently and recount events naturally in Polish.`,
+    classes: [],
+  },
+  {
+    title: "Future Tense",
+    description: "Master the methods for discussing upcoming plans.",
+    icon: "🚀",
+    path: "lessons/future",
+    folder: "future",
+    intro: `The Future Tense lesson will teach you how to talk about actions and events that are going to happen. 
+You'll learn the conjugation patterns for regular and irregular verbs, how to form future tense sentences, and how to discuss upcoming plans, intentions, and predictions. 
+With clear examples and interactive exercises, you'll gain the ability to speak about the future with clarity and confidence in everyday conversations.`,
+    classes: [],
+  },
+  {
+    title: "Conjugation",
+    description:
+      "Decode the crucial rules and patterns to correctly inflect any Polish verb.",
+    icon: "🔄",
+    path: "lessons/conjugation",
+    folder: "conjugation",
+    intro: `In this lesson, you'll explore the essential rules of Polish verb conjugation. 
+You'll learn how verbs change according to tense, person, and number, and understand the patterns behind both regular and irregular verbs. 
+This foundational knowledge will allow you to form sentences correctly in any tense and build a strong grammatical base for all your Polish communication.`,
+  },
+  {
+    title: "Cases",
+    description:
+      "Demystify the 7 Polish grammatical cases and learn how they change nouns, adjectives, and pronouns.",
+    icon: "📚",
+    path: "lessons/cases",
+    folder: "cases",
+    intro: `This lesson will guide you through the 7 grammatical cases in Polish, showing how they affect nouns, adjectives, pronouns, and sentence structure. 
+You'll learn to identify cases, understand their rules, and apply them in practical contexts. 
+By mastering cases, you'll be able to form correct sentences and communicate more naturally, gaining a deeper understanding of Polish grammar.`,
+  },
+  {
+    title: "Vocabulary",
+    description:
+      "Dramatically expand your practical Polish words and phrases for everyday conversations.",
+    icon: "💬",
+    path: "lessons/vocabulary",
+    folder: "vocabulary",
+    intro: `In the Vocabulary lesson, you'll acquire essential Polish words and phrases for daily life, travel, and social interactions. 
+Through thematic lists, examples, and exercises, you'll learn how to use new words in context, improve your comprehension, and confidently express yourself in everyday situations. 
+Building a strong vocabulary will allow you to communicate effectively and enrich your conversations in Polish.`,
+  },
+  {
+    title: "Grammar & Gender",
+    description:
+      "Build a strong foundation by understanding sentence structure, noun genders, and core grammatical rules.",
+    icon: "⚖️",
+    path: "lessons/grammar",
+    folder: "grammar",
+    intro: `This lesson covers the essential principles of Polish grammar, including sentence structure, noun genders, adjective agreement, and key rules for constructing correct sentences. 
+You'll gain a solid understanding of how words interact in a sentence and develop the ability to form grammatically accurate phrases. 
+A strong grammar foundation will make learning verbs, cases, and more advanced topics much easier and more intuitive.`,
+  },
+  {
+    title: "Practice",
+    description:
+      "Apply what you've learned with interactive exercises and real-life examples.",
+    icon: "✍🏻",
+    path: "lessons/practice",
+    folder: "practice",
+    intro: `The Practice lesson provides hands-on exercises, dialogues, and scenarios to help you apply what you've learned in previous lessons. 
+You'll practice conjugating verbs, forming sentences, and using vocabulary in context, reinforcing your knowledge and building confidence. 
+Through consistent practice, you'll improve both your comprehension and fluency, preparing you for real-life communication in Polish.`,
+  },
+  {
+    title: "References",
+    description:
+      "Access a curated list of external resources, dictionaries, and tools to continue your Polish learning journey.",
+    icon: "🔗",
+    path: "lessons/references",
+    folder: "references",
+    intro: `In the References lesson, you'll find a carefully curated collection of dictionaries, online resources, grammar guides, and learning tools to support your continued study of Polish. 
+These resources will help you deepen your understanding, expand your vocabulary, and refine your skills, providing a roadmap for lifelong learning and practice beyond the course.`,
+  },
+];
+
+export default lessons;

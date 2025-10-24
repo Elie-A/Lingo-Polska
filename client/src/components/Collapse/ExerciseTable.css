@@ -1,0 +1,49 @@
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 1rem;
+    border-radius: 0.75rem;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(6px);
+    padding: 0.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.exercise-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.95rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.exercise-table th,
+.exercise-table td {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.exercise-table th {
+    background-color: rgba(220, 38, 38, 0.1);
+    font-weight: 600;
+    color: #1f2937;
+    position: sticky;
+    top: 0;
+}
+
+.exercise-table tr:nth-child(even) {
+    background-color: rgba(220, 38, 38, 0.05);
+}
+
+.exercise-table tr:hover {
+    background-color: rgba(220, 38, 38, 0.12);
+}
+
+.polish .stem {
+    font-weight: 700;
+}
+
+.polish .ending-present {
+    font-style: italic;
+    color: #dc2626;
+}

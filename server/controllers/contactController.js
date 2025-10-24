@@ -5,8 +5,6 @@ export const sendContactEmail = async (req, res) => {
   try {
     const { name, email, message } = req.body;
 
-    console.log("📧 Contact form received:", { name, email });
-
     if (!name || !email || !message) {
       return res.status(400).json({
         success: false,
@@ -15,12 +13,9 @@ export const sendContactEmail = async (req, res) => {
     }
 
     // Save to database
-    console.log("💾 Saving to database...");
     const contact = await Contact.create({ name, email, message });
-    console.log("✅ Saved to database");
 
     // Admin email
-    console.log("📨 Sending email to admin...");
     await resend.emails.send({
       from: "LingoPolska <onboarding@resend.dev>",
       to: process.env.ADMIN_EMAIL,
@@ -41,10 +36,8 @@ export const sendContactEmail = async (req, res) => {
         </div>
       `,
     });
-    console.log("✅ Admin email sent");
 
     // User confirmation
-    console.log("📨 Sending auto-reply to user...");
     await resend.emails.send({
       from: "LingoPolska <onboarding@resend.dev>",
       to: email,
@@ -66,7 +59,6 @@ export const sendContactEmail = async (req, res) => {
         </div>
       `,
     });
-    console.log("✅ User email sent");
 
     res.status(200).json({
       success: true,

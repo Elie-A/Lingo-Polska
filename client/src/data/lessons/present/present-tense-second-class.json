@@ -1,0 +1,205 @@
+{
+    "class": "Present Tense (verbs -ię/ę -isz/ysz)",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "stem": "lubi",
+                    "ending": "sz",
+                    "polishRest": " słuchać muzyki?",
+                    "english": "Do you (Sg) like listening to music?",
+                    "infinitive": "lubić – to like"
+                },
+                {
+                    "stem": "leż",
+                    "ending": "ę",
+                    "polishRest": " w łóżku.",
+                    "english": "I'm sick and lying in bed.",
+                    "infinitive": "leżeć – to lay down"
+                },
+                {
+                    "stem": "widz",
+                    "ending": "isz",
+                    "polishRest": " gdzieś swoją siostrę?",
+                    "english": "Do you (Sg) see your sister somewhere?",
+                    "infinitive": "widzieć – to see"
+                },
+                {
+                    "stem": "Chodz",
+                    "ending": "imy",
+                    "polishRest": " ze sobą od roku.",
+                    "english": "We've been together for a year.",
+                    "infinitive": "chodzić – to walk"
+                },
+                {
+                    "stem": "płac",
+                    "ending": "icie",
+                    "polishRest": " razem czy osobno?",
+                    "english": "Do you (Pl) pay together or separately?",
+                    "infinitive": "płacić – to pay"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "stem": "mus",
+                    "ending": "imy",
+                    "polishRest": " skończyć ten projekt.",
+                    "english": "We have to finish this project by tomorrow.",
+                    "infinitive": "musieć – must"
+                },
+                {
+                    "stem": "uczysz",
+                    "ending": " się",
+                    "polishRest": " na egzamin z matematyki?",
+                    "english": "Do you (Sg) study for the math exam?",
+                    "infinitive": "uczyć się – to study"
+                },
+                {
+                    "stem": "myśl",
+                    "ending": "i",
+                    "polishRest": ", że jest psem.",
+                    "english": "My cat thinks he is a dog.",
+                    "infinitive": "myśleć – to think"
+                },
+                {
+                    "stem": "Rob",
+                    "ending": "ię",
+                    "polishRest": " kanapki na kolację.",
+                    "english": "I make sandwiches for supper.",
+                    "infinitive": "robić – to do"
+                },
+                {
+                    "stem": "Marz",
+                    "ending": "ymy",
+                    "polishRest": " by polecieć do Stanów Zjednoczonych.",
+                    "english": "We dream to fly to the United States.",
+                    "infinitive": "marzyć – to dream"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03",
+            "rows": [
+                {
+                    "stem": "Patr",
+                    "ending": "zymy",
+                    "polishRest": " przez okno jak pada deszcz.",
+                    "english": "We look out the window as it rains.",
+                    "infinitive": "patrzeć – to look"
+                },
+                {
+                    "stem": "mów",
+                    "ending": "isz",
+                    "polishRest": ", że to nie twoja wina?",
+                    "english": "So you (Sg) say it's not your fault?",
+                    "infinitive": "mówić – to speak"
+                },
+                {
+                    "stem": "wrzeszcz",
+                    "ending": "ymy",
+                    "polishRest": "?",
+                    "english": "Why are we always yelling at each other?",
+                    "infinitive": "wrzeszczeć – to scream"
+                },
+                {
+                    "stem": "licz",
+                    "ending": "ą",
+                    "polishRest": " ile zarobili pieniędzy.",
+                    "english": "Sellers count how much money they have earned.",
+                    "infinitive": "liczyć – to count"
+                },
+                {
+                    "stem": "słyszy",
+                    "ending": "cie",
+                    "polishRest": " ten dziwny dźwięk?",
+                    "english": "Do you (Pl) hear this strange sound?",
+                    "infinitive": "słyszeć – to hear"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04",
+            "rows": [
+                {
+                    "stem": "posprzątał",
+                    "ending": "",
+                    "polishRest": ".",
+                    "english": "Since morning I am asking you to tidy up.",
+                    "infinitive": "prosić – to please / to request"
+                },
+                {
+                    "stem": "Lec",
+                    "ending": "ę",
+                    "polishRest": " za tydzień do Hiszpanii.",
+                    "english": "I'm flying to Spain next week.",
+                    "infinitive": "lecieć – to fly"
+                },
+                {
+                    "stem": "pali",
+                    "ending": "cie",
+                    "polishRest": " papierosy?",
+                    "english": "Do you (Pl) smoke cigarettes?",
+                    "infinitive": "palić – to burn / to smoke"
+                },
+                {
+                    "stem": "śpi",
+                    "ending": "",
+                    "polishRest": " pod stołem.",
+                    "english": "Our dog is sleeping under the table.",
+                    "infinitive": "spać – to sleep"
+                },
+                {
+                    "stem": "Rob",
+                    "ending": "imy",
+                    "polishRest": " zadanie domowe.",
+                    "english": "We do homework.",
+                    "infinitive": "robić – to do"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 05",
+            "rows": [
+                {
+                    "stem": "Musz",
+                    "ending": "ę",
+                    "polishRest": " już iść do domu.",
+                    "english": "I have to go home.",
+                    "infinitive": "musieć – must"
+                },
+                {
+                    "stem": "słyszę",
+                    "ending": "",
+                    "polishRest": " co mówisz.",
+                    "english": "I can not hear what you're saying.",
+                    "infinitive": "słyszeć – to hear"
+                },
+                {
+                    "stem": "leż",
+                    "ending": "ymy",
+                    "polishRest": " na plaży.",
+                    "english": "We're just lying on the beach.",
+                    "infinitive": "leżeć – to lie"
+                },
+                {
+                    "stem": "chodz",
+                    "ending": "imy",
+                    "polishRest": " w kółko.",
+                    "english": "It seems to me that we go around in circles.",
+                    "infinitive": "chodzić – to walk"
+                },
+                {
+                    "stem": "mówi",
+                    "ending": "ą",
+                    "polishRest": " mi, co mam robić.",
+                    "english": "My parents are constantly telling me what to do.",
+                    "infinitive": "mówić – to speak"
+                }
+            ]
+        }
+    ]
+}
