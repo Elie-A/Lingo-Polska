@@ -5,6 +5,13 @@ import presentFourthClass from "../data/lessons/present/present-tense-fourth-cla
 import presentVerbToBe from "../data/lessons/present/present-tense-verb-to-be.json";
 import presentRandomVerbs from "../data/lessons/present/present-tense-random-verbs.json";
 
+import pastTestMasculine from "../data/lessons/past/past-tesnse-masculine.json";
+import pastTestFeminine from "../data/lessons/past/past-tesnse-feminine.json";
+
+import futureTensePerfective from "../data/lessons/future/future-tense-perfective.json";
+import futureTenseImperfectiveCompound from "../data/lessons/future/future-tense-imperfective-compound.json";
+import futureTenseIrregular from "../data/lessons/future/future-tense-irregular.json";
+
 const lessons = [
   {
     title: "Present Tense",
@@ -34,7 +41,7 @@ By the end of this lesson, you'll be able to confidently describe your daily lif
     intro: `In the Past Tense lesson, you'll learn to narrate events and describe actions that have already happened in Polish. 
 You'll discover how to conjugate regular and irregular verbs in the past tense, express completed actions, and tell simple stories about your day, past experiences, or historical events. 
 Through exercises and practical examples, you'll gain the skills to communicate confidently and recount events naturally in Polish.`,
-    classes: [],
+    classes: [pastTestMasculine, pastTestFeminine],
   },
   {
     title: "Future Tense",
@@ -45,7 +52,11 @@ Through exercises and practical examples, you'll gain the skills to communicate 
     intro: `The Future Tense lesson will teach you how to talk about actions and events that are going to happen. 
 You'll learn the conjugation patterns for regular and irregular verbs, how to form future tense sentences, and how to discuss upcoming plans, intentions, and predictions. 
 With clear examples and interactive exercises, you'll gain the ability to speak about the future with clarity and confidence in everyday conversations.`,
-    classes: [],
+    classes: [
+      futureTensePerfective,
+      futureTenseImperfectiveCompound,
+      futureTenseIrregular,
+    ],
   },
   {
     title: "Conjugation",

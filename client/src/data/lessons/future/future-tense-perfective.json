@@ -1,0 +1,205 @@
+{
+    "class": "Perfective — Simple Future",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "stem": "Zj",
+                    "ending": "em",
+                    "polishRest": " śniadanie wkrótce.",
+                    "english": "I will eat breakfast soon.",
+                    "infinitive": "zjeść – to eat"
+                },
+                {
+                    "stem": "napis",
+                    "ending": "ze",
+                    "polishRest": " raport jutro.",
+                    "english": "He will write a report tomorrow.",
+                    "infinitive": "napisać – to write"
+                },
+                {
+                    "stem": "Kup",
+                    "ending": "imy",
+                    "polishRest": " bilety dzisiaj.",
+                    "english": "We will buy tickets today.",
+                    "infinitive": "kupić – to buy"
+                },
+                {
+                    "stem": "zrobi",
+                    "ending": "ą",
+                    "polishRest": " projekt w przyszłym tygodniu.",
+                    "english": "They will do the project next week.",
+                    "infinitive": "zrobić – to do"
+                },
+                {
+                    "stem": "zobacz",
+                    "ending": "ysz",
+                    "polishRest": " ten film dzisiaj wieczorem?",
+                    "english": "Will you (sg) see this movie tonight?",
+                    "infinitive": "zobaczyć – to see"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "stem": "Przeczyt",
+                    "ending": "am",
+                    "polishRest": " tę książkę.",
+                    "english": "I will read this book.",
+                    "infinitive": "przeczytać – to read"
+                },
+                {
+                    "stem": "Obejrz",
+                    "ending": "ymy",
+                    "polishRest": " mecz w niedzielę.",
+                    "english": "We will watch the match on Sunday.",
+                    "infinitive": "obejrzeć – to watch"
+                },
+                {
+                    "stem": "Powi",
+                    "ending": "em",
+                    "polishRest": " jej wszystko.",
+                    "english": "I will tell her everything.",
+                    "infinitive": "powiedzieć – to tell"
+                },
+                {
+                    "stem": "znajdz",
+                    "ending": "ie",
+                    "polishRest": " klucz jutro.",
+                    "english": "He will find the key tomorrow.",
+                    "infinitive": "znaleźć – to find"
+                },
+                {
+                    "stem": "przyniesi",
+                    "ending": "ecie",
+                    "polishRest": " trochę jedzenia?",
+                    "english": "Will you (pl) bring some food?",
+                    "infinitive": "przynieść – to bring"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03",
+            "rows": [
+                {
+                    "stem": "Pojad",
+                    "ending": "ę",
+                    "polishRest": " do Warszawy w przyszły weekend.",
+                    "english": "I will go to Warsaw next weekend.",
+                    "infinitive": "pojechać – to go"
+                },
+                {
+                    "stem": "Pójdzi",
+                    "ending": "emy",
+                    "polishRest": " na zakupy jutro.",
+                    "english": "We will go shopping tomorrow.",
+                    "infinitive": "pójść – to go"
+                },
+                {
+                    "stem": "zamieszkaj",
+                    "ending": "ą",
+                    "polishRest": " w Paryżu.",
+                    "english": "They will move to Paris.",
+                    "infinitive": "zamieszkać – to move (in)"
+                },
+                {
+                    "stem": "przyjad",
+                    "ending": "ą",
+                    "polishRest": " o 10:00.",
+                    "english": "My friends will arrive at 10.",
+                    "infinitive": "przyjechać – to arrive"
+                },
+                {
+                    "stem": "odwiedz",
+                    "ending": "i",
+                    "polishRest": " babcię.",
+                    "english": "She will visit her grandmother.",
+                    "infinitive": "odwiedzić – to visit"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04",
+            "rows": [
+                {
+                    "stem": "zapyt",
+                    "ending": "asz",
+                    "polishRest": " nauczyciela?",
+                    "english": "Will you (sg) ask the teacher?",
+                    "infinitive": "zapytać – to ask"
+                },
+                {
+                    "stem": "Odpowi",
+                    "ending": "em",
+                    "polishRest": " jutro.",
+                    "english": "I will answer tomorrow.",
+                    "infinitive": "odpowiedzieć – to answer"
+                },
+                {
+                    "stem": "posprzątaj",
+                    "ending": "ą",
+                    "polishRest": " dom.",
+                    "english": "They will clean the house.",
+                    "infinitive": "posprzątać – to clean"
+                },
+                {
+                    "stem": "naucz",
+                    "ending": "ysz",
+                    "polishRest": " się polskiego szybko?",
+                    "english": "Will you (sg) learn Polish quickly?",
+                    "infinitive": "nauczyć się – to learn"
+                },
+                {
+                    "stem": "Spędz",
+                    "ending": "imy",
+                    "polishRest": " wieczór razem.",
+                    "english": "We will spend the evening together.",
+                    "infinitive": "spędzić – to spend"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 05",
+            "rows": [
+                {
+                    "stem": "Otworz",
+                    "ending": "ę",
+                    "polishRest": " okno.",
+                    "english": "I will open the window.",
+                    "infinitive": "otworzyć – to open"
+                },
+                {
+                    "stem": "zamkni",
+                    "ending": "e",
+                    "polishRest": " sklep.",
+                    "english": "He will close the shop.",
+                    "infinitive": "zamknąć – to close"
+                },
+                {
+                    "stem": "wyśle",
+                    "ending": "cie",
+                    "polishRest": " e-mail?",
+                    "english": "Will you (pl) send the email?",
+                    "infinitive": "wysłać – to send"
+                },
+                {
+                    "stem": "wygr",
+                    "ending": "a",
+                    "polishRest": " .",
+                    "english": "Our team will win.",
+                    "infinitive": "wygrać – to win"
+                },
+                {
+                    "stem": "zobacz",
+                    "ending": "ysz",
+                    "polishRest": " wyniki jutro.",
+                    "english": "You (sg) will see the results tomorrow.",
+                    "infinitive": "zobaczyć – to see"
+                }
+            ]
+        }
+    ]
+}

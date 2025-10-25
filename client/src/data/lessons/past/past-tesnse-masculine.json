@@ -1,0 +1,405 @@
+{
+    "class": "Past Tense (Masculine Form)",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "stem": "zjed",
+                    "ending": "liście",
+                    "polishRest": " Czy już śniadanie?",
+                    "english": "Have you (pl) eaten breakfast already?",
+                    "infinitive": "zjeść – to eat"
+                },
+                {
+                    "stem": "by",
+                    "ending": "łeś",
+                    "polishRest": " Kiedy w Londynie?",
+                    "english": "When have you (sg) been to London?",
+                    "infinitive": "być – to be"
+                },
+                {
+                    "stem": "wsta",
+                    "ending": "łeś",
+                    "polishRest": " O której wczoraj?",
+                    "english": "What time did you (sg) wake up yesterday?",
+                    "infinitive": "wstać – to wake up"
+                },
+                {
+                    "stem": "Wynają",
+                    "ending": "łem",
+                    "polishRest": " mieszkanie w centrum.",
+                    "english": "I rented a flat in the city center.",
+                    "infinitive": "wynająć – to rent"
+                },
+                {
+                    "stem": "Pisa",
+                    "ending": "łem",
+                    "polishRest": " artykuły dla lokalnej gazety.",
+                    "english": "I was writing articles for a local newspaper.",
+                    "infinitive": "pisać – to write"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "stem": "Kupi",
+                    "ending": "liśmy",
+                    "polishRest": " nowy samochód.",
+                    "english": "We've bought a new car.",
+                    "infinitive": "kupić – to buy"
+                },
+                {
+                    "stem": "Mieszka",
+                    "ending": "łem",
+                    "polishRest": " przez 10 lat w Japonii.",
+                    "english": "I've lived in Japan for 10 years.",
+                    "infinitive": "mieszkać – to live"
+                },
+                {
+                    "stem": "Zapisa",
+                    "ending": "łem się",
+                    "polishRest": " na kurs karate.",
+                    "english": "I signed up for a karate course.",
+                    "infinitive": "zapisać się – to sign up"
+                },
+                {
+                    "stem": "Zrobi",
+                    "ending": "ł",
+                    "polishRest": " sobie krzywdę.",
+                    "english": "He hurt himself.",
+                    "infinitive": "zrobić – to do / to make"
+                },
+                {
+                    "stem": "Zjad",
+                    "ending": "łem",
+                    "polishRest": " za dużo lodów.",
+                    "english": "I ate too much ice cream.",
+                    "infinitive": "zjeść – to eat"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03",
+            "rows": [
+                {
+                    "stem": "Wyjecha",
+                    "ending": "łem",
+                    "polishRest": " na wakacje.",
+                    "english": "I've gone on vacation.",
+                    "infinitive": "wyjechać – to leave / to go away"
+                },
+                {
+                    "stem": "Umy",
+                    "ending": "łem",
+                    "polishRest": " samochód.",
+                    "english": "I've washed the car.",
+                    "infinitive": "umyć – to wash"
+                },
+                {
+                    "stem": "Zrobi",
+                    "ending": "liśmy",
+                    "polishRest": " zakupy na cały tydzień.",
+                    "english": "We did shopping for the entire week.",
+                    "infinitive": "zrobić – to do / to make"
+                },
+                {
+                    "stem": "Zasłuży",
+                    "ending": "liśmy",
+                    "polishRest": " na nagrodę.",
+                    "english": "We've earned the prize.",
+                    "infinitive": "zasłużyć – to deserve"
+                },
+                {
+                    "stem": "Nauczy",
+                    "ending": "łam się",
+                    "polishRest": " grać na gitarze elektrycznej.",
+                    "english": "I've learned to play electric guitar.",
+                    "infinitive": "nauczyć się – to learn"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04",
+            "rows": [
+                {
+                    "stem": "gra",
+                    "ending": "łem",
+                    "polishRest": " Kiedyś w badmintona dwa razy w tygodniu.",
+                    "english": "I used to play badminton two times a week.",
+                    "infinitive": "grać – to play"
+                },
+                {
+                    "stem": "dosta",
+                    "ending": "łeś",
+                    "polishRest": " Co na urodziny?",
+                    "english": "What did you (sg) get for Christmas?",
+                    "infinitive": "dostać – to get"
+                },
+                {
+                    "stem": "widzia",
+                    "ending": "łeś",
+                    "polishRest": " Czy film Narodziny Gwiazdy?",
+                    "english": "Have you (sg) seen the movie A Star is Born?",
+                    "infinitive": "widzieć – to see"
+                },
+                {
+                    "stem": "Wysied",
+                    "ending": "li",
+                    "polishRest": " na przystanku autobusowym.",
+                    "english": "They got off at the bus stop.",
+                    "infinitive": "wysiadać – to get off"
+                },
+                {
+                    "stem": "By",
+                    "ending": "liście",
+                    "polishRest": " razem w kinie?",
+                    "english": "Have you (pl) been to the cinema together?",
+                    "infinitive": "być – to be"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 05",
+            "rows": [
+                {
+                    "stem": "Wychowa",
+                    "ending": "łem",
+                    "polishRest": " troje dzieci.",
+                    "english": "I raised three children.",
+                    "infinitive": "wychować – to raise"
+                },
+                {
+                    "stem": "Lecia",
+                    "ending": "łeś",
+                    "polishRest": " kiedyś samolotem?",
+                    "english": "Have you (sg) ever flown by plane?",
+                    "infinitive": "lecieć – to fly"
+                },
+                {
+                    "stem": "Śmia",
+                    "ending": "liśmy",
+                    "polishRest": " się z jego żartów.",
+                    "english": "We laughed at his jokes.",
+                    "infinitive": "śmiać się – to laugh"
+                },
+                {
+                    "stem": "Upuści",
+                    "ending": "ł",
+                    "polishRest": " szklankę z wrażenia.",
+                    "english": "He dropped the glass in surprise.",
+                    "infinitive": "upuścić – to drop"
+                },
+                {
+                    "stem": "Poszed",
+                    "ending": "ł",
+                    "polishRest": " rano pobiegać do parku.",
+                    "english": "He went to the park for a run in the morning.",
+                    "infinitive": "pójść – to go"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 06",
+            "rows": [
+                {
+                    "stem": "Zgubi",
+                    "ending": "li",
+                    "polishRest": " się w Szanghaju.",
+                    "english": "They got lost in Shanghai.",
+                    "infinitive": "zgubić się – to get lost"
+                },
+                {
+                    "stem": "Pracowa",
+                    "ending": "liśmy",
+                    "polishRest": " razem nad tym projektem.",
+                    "english": "We worked together on this project.",
+                    "infinitive": "pracować – to work"
+                },
+                {
+                    "stem": "li",
+                    "ending": "By",
+                    "polishRest": " na wakacjach w Hiszpanii.",
+                    "english": "They were on holiday in Spain.",
+                    "infinitive": "być – to be"
+                },
+                {
+                    "stem": "Zarezerwowa",
+                    "ending": "liśmy",
+                    "polishRest": " miejsca w teatrze.",
+                    "english": "We booked seats in the theater.",
+                    "infinitive": "zarezerwować – to book"
+                },
+                {
+                    "stem": "Da",
+                    "ending": "łem",
+                    "polishRest": " Ci ostatnią szansę.",
+                    "english": "I gave you your last chance.",
+                    "infinitive": "dać – to give"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 07",
+            "rows": [
+                {
+                    "stem": "Wyjecha",
+                    "ending": "łem",
+                    "polishRest": " na wakacje.",
+                    "english": "I've gone on vacation.",
+                    "infinitive": "wyjechać – to leave"
+                },
+                {
+                    "stem": "Umy",
+                    "ending": "łem",
+                    "polishRest": " samochód.",
+                    "english": "I've washed the car.",
+                    "infinitive": "umyć – to wash"
+                },
+                {
+                    "stem": "Zrobi",
+                    "ending": "liśmy",
+                    "polishRest": " zakupy na cały tydzień.",
+                    "english": "We did shopping for the entire week.",
+                    "infinitive": "zrobić – to do"
+                },
+                {
+                    "stem": "Zasłuży",
+                    "ending": "liśmy",
+                    "polishRest": " na nagrodę.",
+                    "english": "We've earned the prize.",
+                    "infinitive": "zasłużyć – to deserve"
+                },
+                {
+                    "stem": "Nauczy",
+                    "ending": "łem się",
+                    "polishRest": " grać na gitarze elektrycznej.",
+                    "english": "I've learned to play electric guitar.",
+                    "infinitive": "nauczyć się – to learn"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 08",
+            "rows": [
+                {
+                    "stem": "Odwiedzi",
+                    "ending": "liśmy",
+                    "polishRest": " naszą babcię.",
+                    "english": "We visited our grandma.",
+                    "infinitive": "odwiedzić – to visit"
+                },
+                {
+                    "stem": "Śpiewa",
+                    "ending": "liśmy",
+                    "polishRest": " w 'Mam Talent'.",
+                    "english": "We sang in 'Got Talent'.",
+                    "infinitive": "śpiewać – to sing"
+                },
+                {
+                    "stem": "Kupi",
+                    "ending": "liśmy",
+                    "polishRest": " dzieciom rower.",
+                    "english": "We bought a bicycle for the children.",
+                    "infinitive": "kupić – to buy"
+                },
+                {
+                    "stem": "pi",
+                    "ending": "łem",
+                    "polishRest": " Nie wczoraj piwa.",
+                    "english": "I didn't drink any beer.",
+                    "infinitive": "pić – to drink"
+                },
+                {
+                    "stem": "mieszka",
+                    "ending": "łeś",
+                    "polishRest": " Gdzie w dzieciństwie?",
+                    "english": "Where did you (sg) live during childhood?",
+                    "infinitive": "mieszkać – to live"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 09",
+            "rows": [
+                {
+                    "stem": "chodzi",
+                    "ending": "liśmy",
+                    "polishRest": " Przez dwa dni po górach.",
+                    "english": "We were hiking for two days.",
+                    "infinitive": "chodzić – to walk"
+                },
+                {
+                    "stem": "Zapomnia",
+                    "ending": "łem",
+                    "polishRest": " podlać kwiatki.",
+                    "english": "I've forgotten to water the flowers.",
+                    "infinitive": "zapomnieć – to forget"
+                },
+                {
+                    "stem": "posz",
+                    "ending": "liśmy",
+                    "polishRest": " Wczoraj późno spać.",
+                    "english": "We went to sleep very late yesterday.",
+                    "infinitive": "pójść – to go"
+                },
+                {
+                    "stem": "wypi",
+                    "ending": "łaś",
+                    "polishRest": " Czy już dzisiaj kawę?",
+                    "english": "Have you (sg) already drunk coffee today?",
+                    "infinitive": "pić – to drink"
+                },
+                {
+                    "stem": "wróci",
+                    "ending": "łem",
+                    "polishRest": " Późno z pracy do domu.",
+                    "english": "I came back home from work late.",
+                    "infinitive": "wrócić – to come back"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 10",
+            "rows": [
+                {
+                    "stem": "bra",
+                    "ending": "łem",
+                    "polishRest": " W zeszłym roku udział w wyścigu konnym.",
+                    "english": "Last year I took part in a horse riding contest.",
+                    "infinitive": "brać – to take"
+                },
+                {
+                    "stem": "Zamówi",
+                    "ending": "ł",
+                    "polishRest": " obiad do domu.",
+                    "english": "He ordered dinner at home.",
+                    "infinitive": "zamówić – to order"
+                },
+                {
+                    "stem": "Zrobi",
+                    "ending": "liśmy",
+                    "polishRest": " zadanie domowe z matematyki.",
+                    "english": "We did math homework.",
+                    "infinitive": "zrobić – to do"
+                },
+                {
+                    "stem": "spłaci",
+                    "ending": "łem",
+                    "polishRest": " W końcu wszystkie raty kredytu.",
+                    "english": "In the end I repaid all the loan installments.",
+                    "infinitive": "spłacić – to repay"
+                },
+                {
+                    "stem": "Wysła",
+                    "ending": "łem",
+                    "polishRest": " wiadomość do znajomej.",
+                    "english": "I've sent a message to a friend.",
+                    "infinitive": "wysłać – to send"
+                }
+            ]
+        }
+    ]
+}

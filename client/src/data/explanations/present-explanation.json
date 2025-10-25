@@ -3,43 +3,101 @@
     "sections": [
         {
             "heading": "Introduction",
-            "content": "The present tense is used to describe actions happening right now, daily routines, habits, and general truths. Mastering it is essential for everyday communication in Polish. By learning the present tense, you can describe your life, ask questions, narrate events, and interact naturally in conversations."
+            "content": [
+                "The present tense is used to describe actions happening right now, daily routines, habits, and general truths.",
+                "Mastering it is essential for everyday communication in Polish.",
+                "By learning the present tense, you can describe your life, ask questions, narrate events, and interact naturally in conversations.",
+                "It also forms the foundation for learning past and future tenses effectively."
+            ]
         },
         {
             "heading": "Regular Verbs",
-            "content": "Regular verbs follow predictable conjugation patterns depending on the subject. Polish verbs are grouped into conjugation classes, which determine their endings. Example conjugation of 'jeść' (to eat):\n- Ja jem → I eat\n- Ty jesz → You eat\n- On/ona/ono je → He/she/it eats\n- My jemy → We eat\n- Wy jecie → You all eat\n- Oni/one jedzą → They eat\nPracticing regular verbs will help you quickly form sentences."
+            "content": [
+                "Regular verbs follow predictable conjugation patterns depending on the subject.",
+                "Polish verbs are grouped into conjugation classes, which determine their endings.",
+                "**Example – 'jeść' (to eat):**",
+                "- Ja jem → I eat",
+                "- Ty jesz → You eat",
+                "- On/ona/ono je → He/she/it eats",
+                "- My jemy → We eat",
+                "- Wy jecie → You all eat",
+                "- Oni/one jedzą → They eat",
+                "💡 Tip: Practice each conjugation class separately to internalize patterns."
+            ]
         },
         {
             "heading": "Irregular Verbs",
-            "content": "Some of the most common verbs in Polish are irregular and do not follow standard patterns. Examples include:\n- Być (to be): Ja jestem, Ty jesteś, On/ona/ono jest, My jesteśmy, Wy jesteście, Oni/one są\n- Iść (to go): Idę, Idziesz, Idzie, Idziemy, Idziecie, Idą\n- Mieć (to have): Mam, Masz, Ma, Mamy, Macie, Mają\nMemorizing these is essential because they are used in daily conversations constantly."
+            "content": [
+                "Some of the most common verbs are irregular and do not follow standard conjugation rules.",
+                "**Examples:**",
+                "- **Być (to be):** Ja jestem, Ty jesteś, On/ona/ono jest, My jesteśmy, Wy jesteście, Oni/one są",
+                "- **Iść (to go):** Idę, Idziesz, Idzie, Idziemy, Idziecie, Idą",
+                "- **Mieć (to have):** Mam, Masz, Ma, Mamy, Macie, Mają",
+                "💡 Tip: These verbs appear frequently in everyday speech, so memorization is crucial."
+            ]
         },
         {
             "heading": "Reflexive Verbs",
-            "content": "Reflexive verbs include the particle 'się' and describe actions done to oneself. Examples:\n- Myję się → I am washing myself\n- Ubierasz się → You get dressed\n- On się budzi → He wakes up\nReflexive verbs are extremely common, so practicing them will improve fluency."
+            "content": [
+                "Reflexive verbs include the particle 'się' and describe actions done to oneself.",
+                "**Examples:**",
+                "- Myję się → I am washing myself",
+                "- Ubierasz się → You get dressed",
+                "- On się budzi → He wakes up",
+                "- Ona się uczy → She is studying",
+                "💡 Reflexive verbs are extremely common in Polish; practicing them improves fluency and natural conversation skills."
+            ]
         },
         {
             "heading": "Time Expressions",
-            "content": "Time expressions help clarify when an action happens. Common expressions include:\n- teraz → now\n- codziennie → every day\n- w każdą sobotę → every Saturday\n- zawsze → always\n- czasami → sometimes\nCombining time expressions with verbs makes your sentences more precise."
+            "content": [
+                "Time expressions help clarify when an action occurs and add precision to your sentences.",
+                "**Common expressions:**",
+                "- teraz → now",
+                "- codziennie → every day",
+                "- w każdą sobotę → every Saturday",
+                "- zawsze → always",
+                "- czasami → sometimes",
+                "- często → often",
+                "- teraz właśnie → right now",
+                "💡 Combining time expressions with present tense verbs improves clarity in conversations."
+            ]
         },
         {
             "heading": "Questions and Negation",
-            "content": "Forming questions in the present tense usually involves intonation or the particle 'czy'. Example:\n- Czy ty jesz obiad? → Are you eating lunch?\nNegation is formed with 'nie':\n- Nie jem obiadu. → I am not eating lunch."
+            "content": [
+                "Forming questions usually involves intonation or the particle 'czy'.",
+                "**Example:**",
+                "- Czy ty jesz obiad? → Are you eating lunch?",
+                "Negation is formed with 'nie':",
+                "- Nie jem obiadu. → I am not eating lunch",
+                "💡 Tip: In spoken Polish, intonation alone often signals a question; in written Polish, 'czy' is commonly used."
+            ]
         },
         {
             "heading": "Common Mistakes",
             "content": [
-                "Forgetting the correct ending for the subject (e.g., 'Ja czytasz' is wrong; it should be 'Ja czytam').",
+                "Forgetting the correct ending for the subject (e.g., 'Ja czytasz' is wrong; correct: 'Ja czytam').",
                 "Mixing present tense with past or future incorrectly.",
-                "Ignoring reflexive particle 'się' when required."
+                "Ignoring reflexive particle 'się' when required.",
+                "Using incorrect conjugation class endings for regular verbs."
             ]
         },
         {
             "heading": "Connections with Other Lessons",
-            "content": "For a deeper understanding, see the Conjugation lesson for detailed verb forms, the Cases lesson for noun and pronoun endings, and the Grammar & Gender lesson for sentence structure and agreement rules. Knowing these connections will help you build accurate sentences."
+            "content": [
+                "See the Conjugation lesson for verb forms, the Cases lesson for noun and pronoun endings, and the Grammar & Gender lesson for sentence structure and agreement rules.",
+                "Understanding these connections will help you build accurate sentences and communicate effectively."
+            ]
         },
         {
             "heading": "Usage Tips",
-            "content": "Use present tense to describe daily routines, ongoing actions, habitual activities, and general truths. Always match verbs with the correct subject. Practice speaking aloud and writing short paragraphs to reinforce your skills."
+            "content": [
+                "Use the present tense to describe daily routines, ongoing actions, habitual activities, and general truths.",
+                "Always match verbs with the correct subject and conjugation class.",
+                "Include reflexive verbs and time expressions when describing personal routines.",
+                "Practice speaking aloud and writing short paragraphs to reinforce your skills."
+            ]
         },
         {
             "heading": "Examples",
@@ -51,25 +109,29 @@
                 "Ona ubiera się szybko rano. → She gets dressed quickly in the morning.",
                 "Zawsze piję herbatę o poranku. → I always drink tea in the morning.",
                 "Czy oni pracują teraz? → Are they working now?",
-                "Nie jem mięsa. → I don’t eat meat."
+                "Nie jem mięsa. → I don’t eat meat.",
+                "On się uczy w bibliotece. → He is studying in the library.",
+                "Często spacerujemy w parku. → We often walk in the park."
             ]
         },
         {
             "heading": "Practice Exercises",
             "content": [
                 "Write 5 sentences describing what you do every day using the present tense.",
-                "Convert 5 sentences from English to Polish.",
-                "Form questions and negatives for the sentences you wrote.",
-                "Try to include reflexive verbs and time expressions in your sentences."
+                "Convert 5 sentences from English to Polish using present tense.",
+                "Form questions and negative sentences for the examples you wrote.",
+                "Include at least one reflexive verb and one time expression in each sentence.",
+                "Create a short paragraph describing your daily routine using present tense verbs."
             ]
         },
         {
             "heading": "Tips for Fluency",
             "content": [
-                "Speak aloud and describe your day in Polish.",
+                "Speak aloud and describe your day in Polish daily.",
                 "Listen to native speakers and pay attention to verb endings.",
                 "Practice forming both affirmative and negative sentences.",
-                "Combine present tense verbs with vocabulary from the Vocabulary lesson."
+                "Combine present tense verbs with vocabulary from other lessons.",
+                "Use real-life contexts: e.g., talking about school, work, meals, or daily activities."
             ]
         }
     ]

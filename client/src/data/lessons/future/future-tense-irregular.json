@@ -1,0 +1,205 @@
+{
+    "class": "Future Tense - Irregular Verbs",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "stem": "będ",
+                    "ending": "zie",
+                    "polishRest": " w szkole do 17:00.",
+                    "english": "He will be at school until 5.",
+                    "infinitive": "być – to be (impf.)"
+                },
+                {
+                    "stem": "pójd",
+                    "ending": "ziesz",
+                    "polishRest": " do sklepu?",
+                    "english": "Will you (Sg) go to the shop tomorrow?",
+                    "infinitive": "pójść – to go (on foot) (pf.)"
+                },
+                {
+                    "stem": "będ",
+                    "ending": "ziemy",
+                    "polishRest": " mieszkać w Gdańsku przez dwa lata.",
+                    "english": "We will be living in Gdańsk for two years.",
+                    "infinitive": "mieszkać – to live (impf.)"
+                },
+                {
+                    "stem": "Rozpoczn",
+                    "ending": "ie",
+                    "polishRest": " się spotkanie o 9:00.",
+                    "english": "The meeting will start at 9.",
+                    "infinitive": "rozpocząć się – to start (pf.)"
+                },
+                {
+                    "stem": "Skończ",
+                    "ending": "y",
+                    "polishRest": " studia w przyszłym roku.",
+                    "english": "She will finish her studies next year.",
+                    "infinitive": "skończyć – to finish (pf.)"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "stem": "przychodz",
+                    "ending": "imy",
+                    "polishRest": " tutaj codziennie.",
+                    "english": "He will be coming here every day.",
+                    "infinitive": "przychodzić – to come (impf.)"
+                },
+                {
+                    "stem": "Przyjd",
+                    "ending": "zie",
+                    "polishRest": " o 18:00.",
+                    "english": "She will come at 6.",
+                    "infinitive": "przyjść – to come (pf.)"
+                },
+                {
+                    "stem": "Jeźdz",
+                    "ending": "imy",
+                    "polishRest": " do szkoły autobusem.",
+                    "english": "They will be going to school by bus.",
+                    "infinitive": "jeździć – to go regularly (impf.)"
+                },
+                {
+                    "stem": "Pojedź",
+                    "ending": "emy",
+                    "polishRest": " nad morze w lipcu.",
+                    "english": "We will go to the seaside in July.",
+                    "infinitive": "pojechać – to go by vehicle (pf.)"
+                },
+                {
+                    "stem": "chodz",
+                    "ending": "imy",
+                    "polishRest": " w parku codziennie rano.",
+                    "english": "I will be walking in the park every morning.",
+                    "infinitive": "chodzić – to walk regularly (impf.)"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03",
+            "rows": [
+                {
+                    "stem": "będ",
+                    "ending": "ę umieć",
+                    "polishRest": " pływać.",
+                    "english": "I will be able to swim soon.",
+                    "infinitive": "umieć – to know how (impf.)"
+                },
+                {
+                    "stem": "będ",
+                    "ending": "ziesz móc",
+                    "polishRest": " mi pomóc?",
+                    "english": "Will you (Sg) be able to help me tomorrow?",
+                    "infinitive": "móc – can (impf.)"
+                },
+                {
+                    "stem": "Będ",
+                    "ending": "ziemy musieć",
+                    "polishRest": " wyjść wcześnie.",
+                    "english": "We will have to leave early.",
+                    "infinitive": "musieć – must (impf.)"
+                },
+                {
+                    "stem": "Będzie",
+                    "ending": " chciała",
+                    "polishRest": " cię zobaczyć.",
+                    "english": "She will want to see you.",
+                    "infinitive": "chcieć – to want (pf.)"
+                },
+                {
+                    "stem": "Będ",
+                    "ending": "ą wiedzieć",
+                    "polishRest": " odpowiedź.",
+                    "english": "They will know the answer.",
+                    "infinitive": "wiedzieć – to know (a fact) (impf.)"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04",
+            "rows": [
+                {
+                    "stem": "Będ",
+                    "ending": "ę pamiętać",
+                    "polishRest": " ten dzień na zawsze.",
+                    "english": "I will remember this day forever.",
+                    "infinitive": "pamiętać – to remember (impf.)"
+                },
+                {
+                    "stem": "zapomnisz",
+                    "ending": "",
+                    "polishRest": " o tym?",
+                    "english": "Will you (Sg) forget about it?",
+                    "infinitive": "zapomnieć – to forget (pf.)"
+                },
+                {
+                    "stem": "Będzie",
+                    "ending": " rozumieć",
+                    "polishRest": " wszystko.",
+                    "english": "She will understand everything.",
+                    "infinitive": "rozumieć – to understand (impf.)"
+                },
+                {
+                    "stem": "Będą",
+                    "ending": " wierzyć",
+                    "polishRest": " w ciebie.",
+                    "english": "They will believe in you.",
+                    "infinitive": "wierzyć – to believe (impf.)"
+                },
+                {
+                    "stem": "Będę",
+                    "ending": " znać",
+                    "polishRest": " wielu ludzi na imprezie.",
+                    "english": "I will know many people at the party.",
+                    "infinitive": "znać – to know (someone) (impf.)"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 05",
+            "rows": [
+                {
+                    "stem": "stanie",
+                    "ending": "",
+                    "polishRest": " się?",
+                    "english": "What will happen tomorrow?",
+                    "infinitive": "stać się – to happen (pf.)"
+                },
+                {
+                    "stem": "będzie",
+                    "ending": " dziać się",
+                    "polishRest": " tutaj?",
+                    "english": "What will be happening here?",
+                    "infinitive": "dziać się – to happen (impf.)"
+                },
+                {
+                    "stem": "wydarzy",
+                    "ending": " się",
+                    "polishRest": ".",
+                    "english": "Something unexpected will happen.",
+                    "infinitive": "wydarzyć się – to occur (pf.)"
+                },
+                {
+                    "stem": "Będę",
+                    "ending": " czekać",
+                    "polishRest": " na ciebie.",
+                    "english": "I will be waiting for you.",
+                    "infinitive": "czekać – to wait (impf.)"
+                },
+                {
+                    "stem": "Spróbuję",
+                    "ending": "",
+                    "polishRest": " jeszcze raz jutro.",
+                    "english": "I will try again tomorrow.",
+                    "infinitive": "spróbować – to try (pf.)"
+                }
+            ]
+        }
+    ]
+}
