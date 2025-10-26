@@ -1,0 +1,561 @@
+{
+    "title": "Polish Cases - Full Lesson",
+    "sections": [
+        {
+            "heading": "Introduction",
+            "content": [
+                "Polish nouns, pronouns, adjectives, numbers, and possessives change depending on the case.",
+                "There are 7 cases: Nominative, Genitive, Dative, Accusative, Instrumental, Locative, and Vocative.",
+                "Cases indicate the grammatical role of a word in a sentence.",
+                "In this lesson, you'll learn the main uses of cases with examples and references to full declension tables."
+            ]
+        },
+        {
+            "heading": "Overview of Cases",
+            "content": [
+                "Each case in Polish has a specific function and affects how nouns, pronouns, adjectives, and numbers are declined.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Case",
+                        "Polish Name",
+                        "Function / Usage"
+                    ],
+                    "rows": [
+                        [
+                            "Nominative",
+                            "Mianownik",
+                            "Subject; answers 'who?' or 'what?'"
+                        ],
+                        [
+                            "Genitive",
+                            "Dopełniacz",
+                            "Possession, after certain prepositions; 'of whom?' or 'of what?'"
+                        ],
+                        [
+                            "Dative",
+                            "Celownik",
+                            "Indirect object; 'to whom?' or 'to what?'"
+                        ],
+                        [
+                            "Accusative",
+                            "Biernik",
+                            "Direct object; 'whom?' or 'what?'"
+                        ],
+                        [
+                            "Instrumental",
+                            "Narzędnik",
+                            "Means or instrument; 'with whom?' or 'with what?'"
+                        ],
+                        [
+                            "Locative",
+                            "Miejscownik",
+                            "Location; used with prepositions; 'about whom?' or 'about what?'"
+                        ],
+                        [
+                            "Vocative",
+                            "Wołacz",
+                            "Direct address; 'O!' or 'Hey!'"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Singular Noun Endings - Examples",
+            "content": [
+                "Singular nouns change their endings depending on the case.",
+                "Example nouns: kot (cat, masculine), kawa (coffee, feminine), okno (window, neuter).",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Case",
+                        "Masculine (kot)",
+                        "Feminine (kawa)",
+                        "Neuter (okno)"
+                    ],
+                    "rows": [
+                        [
+                            "Nominative",
+                            "kot",
+                            "kawa",
+                            "okno"
+                        ],
+                        [
+                            "Genitive",
+                            "kota",
+                            "kawy",
+                            "okna"
+                        ],
+                        [
+                            "Dative",
+                            "kotu",
+                            "kawie",
+                            "oknu"
+                        ],
+                        [
+                            "Accusative",
+                            "kota",
+                            "kawę",
+                            "okno"
+                        ],
+                        [
+                            "Instrumental",
+                            "kotem",
+                            "kawą",
+                            "oknem"
+                        ],
+                        [
+                            "Locative",
+                            "kocie",
+                            "kawie",
+                            "oknie"
+                        ],
+                        [
+                            "Vocative",
+                            "kocie",
+                            "kawo",
+                            "okno"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Plural Noun Endings - Examples",
+            "content": [
+                "Plural nouns have different endings from singular forms and depend on gender.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Case",
+                        "Masculine (koty)",
+                        "Feminine (kawy)",
+                        "Neuter (okna)"
+                    ],
+                    "rows": [
+                        [
+                            "Nominative",
+                            "koty",
+                            "kawy",
+                            "okna"
+                        ],
+                        [
+                            "Genitive",
+                            "kotów",
+                            "kaw",
+                            "okien"
+                        ],
+                        [
+                            "Dative",
+                            "kotom",
+                            "kawom",
+                            "oknom"
+                        ],
+                        [
+                            "Accusative",
+                            "koty",
+                            "kawy",
+                            "okna"
+                        ],
+                        [
+                            "Instrumental",
+                            "kotami",
+                            "kawami",
+                            "oknami"
+                        ],
+                        [
+                            "Locative",
+                            "kotach",
+                            "kawach",
+                            "oknach"
+                        ],
+                        [
+                            "Vocative",
+                            "koty",
+                            "kawy",
+                            "okna"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Adjective Endings - Singular & Plural",
+            "content": [
+                "Adjectives must match the gender, number, and case of the noun they describe.",
+                "Examples with the adjective 'dobry' (good):",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Case",
+                        "Masculine",
+                        "Feminine",
+                        "Neuter"
+                    ],
+                    "rows": [
+                        [
+                            "Nominative",
+                            "dobry",
+                            "dobra",
+                            "dobre"
+                        ],
+                        [
+                            "Genitive",
+                            "dobrego",
+                            "dobrej",
+                            "dobrego"
+                        ],
+                        [
+                            "Dative",
+                            "dobremu",
+                            "dobrej",
+                            "dobremu"
+                        ],
+                        [
+                            "Accusative",
+                            "dobrego / dobry",
+                            "dobrą",
+                            "dobre"
+                        ],
+                        [
+                            "Instrumental",
+                            "dobrym",
+                            "dobrą",
+                            "dobrym"
+                        ],
+                        [
+                            "Locative",
+                            "dobrym",
+                            "dobrej",
+                            "dobrym"
+                        ],
+                        [
+                            "Vocative",
+                            "dobry",
+                            "dobra",
+                            "dobre"
+                        ]
+                    ],
+                    "border": true
+                },
+                {
+                    "type": "table",
+                    "headers": [
+                        "Case",
+                        "Masculine personal",
+                        "Non-masculine",
+                        "Feminine/Neuter"
+                    ],
+                    "rows": [
+                        [
+                            "Nominative",
+                            "dobrzy",
+                            "dobre",
+                            "dobre"
+                        ],
+                        [
+                            "Genitive",
+                            "dobrych",
+                            "dobrych",
+                            "dobrych"
+                        ],
+                        [
+                            "Dative",
+                            "dobrym",
+                            "dobrym",
+                            "dobrym"
+                        ],
+                        [
+                            "Accusative",
+                            "dobrych / dobrzy",
+                            "dobre",
+                            "dobre"
+                        ],
+                        [
+                            "Instrumental",
+                            "dobrymi",
+                            "dobrymi",
+                            "dobrymi"
+                        ],
+                        [
+                            "Locative",
+                            "dobrych",
+                            "dobrych",
+                            "dobrych"
+                        ],
+                        [
+                            "Vocative",
+                            "dobrzy",
+                            "dobre",
+                            "dobre"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Pronouns - Singular & Plural",
+            "content": [
+                "Pronouns also change depending on the case and number.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Case",
+                        "Ja (I)",
+                        "Ty (You)",
+                        "On/Ona/Ono (He/She/It)"
+                    ],
+                    "rows": [
+                        [
+                            "Nominative",
+                            "ja",
+                            "ty",
+                            "on / ona / ono"
+                        ],
+                        [
+                            "Genitive",
+                            "mnie",
+                            "ciebie",
+                            "jego / jej / jego"
+                        ],
+                        [
+                            "Dative",
+                            "mnie",
+                            "tobie",
+                            "jemu / jej / jemu"
+                        ],
+                        [
+                            "Accusative",
+                            "mnie",
+                            "ciebie",
+                            "jego / ją / je"
+                        ],
+                        [
+                            "Instrumental",
+                            "mną",
+                            "tobą",
+                            "nim / nią / nim"
+                        ],
+                        [
+                            "Locative",
+                            "mnie",
+                            "tobie",
+                            "nim / niej / nim"
+                        ],
+                        [
+                            "Vocative",
+                            "-",
+                            "-",
+                            "-"
+                        ]
+                    ],
+                    "border": true
+                },
+                {
+                    "type": "table",
+                    "headers": [
+                        "Case",
+                        "My (We)",
+                        "Wy (You all)",
+                        "Oni/One (They)"
+                    ],
+                    "rows": [
+                        [
+                            "Nominative",
+                            "my",
+                            "wy",
+                            "oni / one"
+                        ],
+                        [
+                            "Genitive",
+                            "nas",
+                            "was",
+                            "ich / ich"
+                        ],
+                        [
+                            "Dative",
+                            "nam",
+                            "wam",
+                            "im / im"
+                        ],
+                        [
+                            "Accusative",
+                            "nas",
+                            "was",
+                            "ich / je"
+                        ],
+                        [
+                            "Instrumental",
+                            "nami",
+                            "wami",
+                            "nimi / nimi"
+                        ],
+                        [
+                            "Locative",
+                            "nas",
+                            "was",
+                            "nich / nich"
+                        ],
+                        [
+                            "Vocative",
+                            "-",
+                            "-",
+                            "-"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Numbers and Demonstratives",
+            "content": [
+                "Numbers and demonstratives also decline according to cases.",
+                "Example: 1 jeden, 2 dwa, 5 pięć",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Case",
+                        "1 jeden",
+                        "2 dwa",
+                        "5 pięć"
+                    ],
+                    "rows": [
+                        [
+                            "Nominative",
+                            "jeden",
+                            "dwa",
+                            "pięć"
+                        ],
+                        [
+                            "Genitive",
+                            "jednego",
+                            "dwóch",
+                            "pięciu"
+                        ],
+                        [
+                            "Dative",
+                            "jednemu",
+                            "dwóm",
+                            "pięciu"
+                        ],
+                        [
+                            "Accusative",
+                            "jednego / jeden",
+                            "dwa",
+                            "pięć"
+                        ],
+                        [
+                            "Instrumental",
+                            "jednym",
+                            "dwoma",
+                            "pięcioma"
+                        ],
+                        [
+                            "Locative",
+                            "jednym",
+                            "dwóch",
+                            "pięciu"
+                        ],
+                        [
+                            "Vocative",
+                            "-",
+                            "-",
+                            "-"
+                        ]
+                    ],
+                    "border": true
+                },
+                {
+                    "type": "table",
+                    "headers": [
+                        "Case",
+                        "Ten (this, m)",
+                        "Ta (this, f)",
+                        "To (this, n)"
+                    ],
+                    "rows": [
+                        [
+                            "Nominative",
+                            "ten",
+                            "ta",
+                            "to"
+                        ],
+                        [
+                            "Genitive",
+                            "tego",
+                            "tej",
+                            "tego"
+                        ],
+                        [
+                            "Dative",
+                            "temu",
+                            "tej",
+                            "temu"
+                        ],
+                        [
+                            "Accusative",
+                            "tego / ten",
+                            "tą",
+                            "to"
+                        ],
+                        [
+                            "Instrumental",
+                            "tym",
+                            "tą",
+                            "tym"
+                        ],
+                        [
+                            "Locative",
+                            "tym",
+                            "tej",
+                            "tym"
+                        ],
+                        [
+                            "Vocative",
+                            "ten",
+                            "ta",
+                            "to"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Practice Exercises",
+            "content": [
+                "Decline nouns, adjectives, pronouns, numbers, and demonstratives for all 7 cases.",
+                "Write sentences using different cases and forms.",
+                "Form questions and negative sentences using correct case endings.",
+                "Use demonstratives and numbers in sentences to reinforce case usage.",
+                "Refer to the [Polish Cases Reference] page for complete endings tables."
+            ]
+        },
+        {
+            "heading": "Usage Tips",
+            "content": [
+                "Always match the ending to the gender, number, and case of the noun or pronoun.",
+                "Pay attention to prepositions as they often determine the required case.",
+                "Practice regularly by forming sentences with different nouns, pronouns, and adjectives.",
+                "Use time expressions to clarify the context of sentences.",
+                "💡 Tip: Focus on patterns first (e.g., masculine nouns often end with -a in Genitive singular)."
+            ]
+        },
+        {
+            "heading": "Common Mistakes",
+            "content": [
+                "Confusing similar case endings (e.g., Accusative vs. Nominative).",
+                "Mixing singular and plural endings incorrectly.",
+                "Forgetting to adjust adjectives and pronouns to match nouns.",
+                "Ignoring prepositions that require specific cases.",
+                "Using wrong endings for irregular nouns or pronouns."
+            ]
+        }
+    ]
+}

@@ -11,39 +11,32 @@ const Collapse = ({ data }) => {
         setOpenIndex(openIndex === index ? null : index);
     };
 
-    // Helper to normalize Polish diacritics for reliable matching
-    const normalize = (str) =>
-        str
-            .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "")
-            .toLowerCase();
+    const normalize = (str = "") =>
+        str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
-    // Highlight the stem + ending wherever it occurs in the full Polish sentence even if followed by " się"
+    // Highlight stem + ending wherever it occurs in the Polish sentence
     const highlightStemEnding = (polish = "", stem = "", ending = "") => {
-        if (!stem) return polish;
+        if (!polish || !stem) return polish;
 
         const fullVerb = stem + ending;
-
-        // Escape regex special characters in stem/ending
         const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-        // Match fullVerb optionally followed by " się", case-insensitive
+        // Use normalized strings for matching
         const regex = new RegExp(`(${escapeRegex(fullVerb)})( się)?`, "i");
 
-        const match = polish.match(regex);
-        if (!match) return polish;
+        // Find the match manually using normalized strings
+        const normalizedPolish = normalize(polish);
+        const normalizedFullVerb = normalize(fullVerb);
 
-        const startIdx = match.index;
-        const matchedVerb = match[1];
-        const reflexive = match[2] || "";
+        const matchIndex = normalizedPolish.indexOf(normalizedFullVerb);
+        if (matchIndex === -1) return polish;
 
         return (
             <>
-                {polish.slice(0, startIdx)}
+                {polish.slice(0, matchIndex)}
                 <span className="stem">{stem}</span>
                 {ending && <span className="ending">{ending}</span>}
-                {reflexive}
-                {polish.slice(startIdx + matchedVerb.length + reflexive.length)}
+                {polish.slice(matchIndex + fullVerb.length)}
             </>
         );
     };
@@ -52,6 +45,11 @@ const Collapse = ({ data }) => {
         <div className="collapse-container">
             {exercises.map((exerciseData, idx) => {
                 const rows = Array.isArray(exerciseData.rows) ? exerciseData.rows : [];
+
+                // Dynamically determine additional fields (infinitive, pronoun, etc.)
+                const extraColumns = rows.length > 0
+                    ? Object.keys(rows[0]).filter(key => !["polish", "stem", "ending", "english"].includes(key))
+                    : [];
 
                 return (
                     <div className="collapse" key={idx}>
@@ -72,7 +70,9 @@ const Collapse = ({ data }) => {
                                                 <tr>
                                                     <th>Polish</th>
                                                     <th>English</th>
-                                                    <th>Infinitive</th>
+                                                    {extraColumns.map((col) => (
+                                                        <th key={col}>{col[0].toUpperCase() + col.slice(1)}</th>
+                                                    ))}
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -81,18 +81,20 @@ const Collapse = ({ data }) => {
                                                         <tr key={rIdx}>
                                                             <td className="polish">
                                                                 {highlightStemEnding(
-                                                                    row.polish,
-                                                                    row.stem,
-                                                                    row.ending
+                                                                    row.polish || "",
+                                                                    row.stem || "",
+                                                                    row.ending || ""
                                                                 )}
                                                             </td>
-                                                            <td>{row.english}</td>
-                                                            <td>{row.infinitive}</td>
+                                                            <td>{row.english || "-"}</td>
+                                                            {extraColumns.map((col) => (
+                                                                <td key={col}>{row[col] || "-"}</td>
+                                                            ))}
                                                         </tr>
                                                     ))
                                                 ) : (
                                                     <tr>
-                                                        <td colSpan={3} style={{ textAlign: "center" }}>
+                                                        <td colSpan={2 + extraColumns.length} style={{ textAlign: "center" }}>
                                                             No rows available
                                                         </td>
                                                     </tr>

@@ -24,7 +24,6 @@ const LessonPage = ({ lessonTitle, classes, lessonFolder }) => {
 
     const toggleExplanation = () => setOpenExplanation(!openExplanation);
 
-    // Only load explanation for lessons that are NOT practice or vocabulary
     const shouldLoadExplanation = lessonFolder !== "practice" && lessonFolder !== "vocabulary" && lessonFolder !== "references";
 
     const loadLessonExplanation = useCallback(() => {
@@ -84,18 +83,48 @@ const LessonPage = ({ lessonTitle, classes, lessonFolder }) => {
                                 ref={explanationRef}
                                 style={{ maxHeight: openExplanation ? explanationRef.current?.scrollHeight + "px" : "0px" }}
                             >
-                                {lessonExplanation.sections.map((section, idx) => (
+                                {lessonExplanation.sections?.map((section, idx) => (
                                     <div key={idx} className="explanation-section">
                                         <h3>{section.heading}</h3>
-                                        {Array.isArray(section.content) ? (
-                                            <ul>
-                                                {section.content.map((line, i) => (
-                                                    <li key={i}>{line}</li>
-                                                ))}
-                                            </ul>
-                                        ) : (
-                                            <p>{section.content}</p>
-                                        )}
+                                        {section.content?.map((item, i) => {
+                                            if (typeof item === "string") {
+                                                return <p key={i}>{item}</p>;
+                                            } else if (Array.isArray(item)) {
+                                                return (
+                                                    <ul key={i}>
+                                                        {item.map((line, j) => (
+                                                            <li key={j}>{line}</li>
+                                                        ))}
+                                                    </ul>
+                                                );
+                                            } else if (item?.type === "table" && Array.isArray(item.rows)) {
+                                                return (
+                                                    <table key={i} className="lesson-table">
+                                                        {item.caption && <caption>{item.caption}</caption>}
+                                                        {item.headers && (
+                                                            <thead>
+                                                                <tr>
+                                                                    {item.headers.map((head, h) => (
+                                                                        <th key={h}>{head}</th>
+                                                                    ))}
+                                                                </tr>
+                                                            </thead>
+                                                        )}
+                                                        <tbody>
+                                                            {item.rows.map((row, r) => (
+                                                                <tr key={r}>
+                                                                    {row.map((cell, c) => (
+                                                                        <td key={c}>{cell}</td>
+                                                                    ))}
+                                                                </tr>
+                                                            ))}
+                                                        </tbody>
+                                                    </table>
+                                                );
+                                            } else {
+                                                return null;
+                                            }
+                                        })}
                                     </div>
                                 ))}
                             </div>

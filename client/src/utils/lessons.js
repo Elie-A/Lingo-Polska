@@ -14,6 +14,10 @@ import futureTenseIrregular from "../data/lessons/future/future-tense-irregular.
 
 import casesNominativePossessivePronouns from "../data/lessons/cases/nominative-possessive-pronouns.json";
 import casesGenitiveCompleteTheSentences from "../data/lessons/cases/genitive-complete-the-sentences.json";
+import casesGenitiveTranslateThePossessivePronouns from "../data/lessons/cases/genitive-translate-the-possessive-pronouns.json";
+import dativeCompleteTheSentences from "../data/lessons/cases/dative-complete-the-sentences.json";
+import accusativeCompleteTheSentences from "../data/lessons/cases/accusative-complete-the-sentences.json";
+import nominativeCompleteTheSentences from "../data/lessons/cases/nominative-complete-the-sentences.json";
 
 const lessons = [
   {
@@ -85,6 +89,10 @@ By mastering cases, you'll be able to form correct sentences and communicate mor
     classes: [
       casesNominativePossessivePronouns,
       casesGenitiveCompleteTheSentences,
+      casesGenitiveTranslateThePossessivePronouns,
+      dativeCompleteTheSentences,
+      accusativeCompleteTheSentences,
+      nominativeCompleteTheSentences,
     ],
   },
   {

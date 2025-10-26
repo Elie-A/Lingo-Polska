@@ -1,0 +1,355 @@
+{
+    "class": "Dative - Complete The Sentences",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "stem": "tubylc",
+                    "ending": "om",
+                    "polish": "Osadnicy odebrali tubylcom ich ziemię.",
+                    "english": "Settlers took the land from the natives."
+                },
+                {
+                    "stem": "sprzedawc",
+                    "ending": "y",
+                    "polish": "Zamknąłem sprzedawcy drzwi przed nosem.",
+                    "english": "I closed the door in the seller's face."
+                },
+                {
+                    "stem": "przestępc",
+                    "ending": "u",
+                    "polish": "Odebrano przestępcu prawo głosu.",
+                    "english": "The criminal's right to speak was taken."
+                },
+                {
+                    "stem": "sąsiad",
+                    "ending": "owi",
+                    "polish": "Pożyczyłem sąsiadowi pieniądze na remont mieszkania.",
+                    "english": "I lent my neighbour money for apartment renovations."
+                },
+                {
+                    "stem": "dzieci",
+                    "ending": "om",
+                    "polish": "Zabraliśmy dzieciom zabawki, bo źle się zachowywały.",
+                    "english": "We took the toys from children, because of their misbehaviour."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "stem": "brat",
+                    "ending": "owi",
+                    "polish": "Wyjaśniłem młodszemu bratowi jak włączyć komputer.",
+                    "english": "I've explained to my younger brother how to turn on the computer."
+                },
+                {
+                    "stem": "ta",
+                    "ending": "cie",
+                    "polish": "Powiedziałeś tacie, że wrócisz o 22 do domu.",
+                    "english": "You told your father that you'll be back by 22:00."
+                },
+                {
+                    "stem": "kucharz",
+                    "ending": "owi",
+                    "polish": "Pogratulowałem kucharzowi przepysznego dania.",
+                    "english": "I congratulated the cook for the great meal."
+                },
+                {
+                    "stem": "morderc",
+                    "ending": "y",
+                    "polish": "Policja nie może pozwolić mordercy uciec z kraju.",
+                    "english": "The police shouldn't allow the murderer to escape from the country."
+                },
+                {
+                    "stem": "ptak",
+                    "ending": "om",
+                    "polish": "Pomagaliśmy ptakom przetrwać zimę.",
+                    "english": "We were helping the birds survive the winter."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03",
+            "rows": [
+                {
+                    "stem": "kuzyn",
+                    "ending": "owi",
+                    "polish": "Wysłałam zaproszenie mojemu kuzynowi na mój ślub.",
+                    "english": "I've sent an invitation for my wedding to my cousin."
+                },
+                {
+                    "stem": "telewizj",
+                    "ending": "i",
+                    "polish": "Nie można bezgranicznie ufać telewizji.",
+                    "english": "You cannot trust the television boundlessly."
+                },
+                {
+                    "stem": "mam",
+                    "ending": "ie",
+                    "polish": "Kupiliśmy naszyjnik mojej mamie.",
+                    "english": "We bought a necklace for our mother."
+                },
+                {
+                    "stem": "gość",
+                    "ending": "iom",
+                    "polish": "Otwórz proszę drzwi gościom!",
+                    "english": "Open the door for the guests, please!"
+                },
+                {
+                    "stem": "świat",
+                    "ending": "u",
+                    "polish": "Pokazaliśmy światu, na co nas stać.",
+                    "english": "We've showed to the world what we are capable of."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04",
+            "rows": [
+                {
+                    "stem": "pracownik",
+                    "ending": "owi",
+                    "polish": "Pokazuję nowemu pracownikowi jego miejsce pracy.",
+                    "english": "I'm showing to the new worker his workspace."
+                },
+                {
+                    "stem": "miast",
+                    "ending": "u",
+                    "polish": "Temu miastu brakuje miejsc parkingowych.",
+                    "english": "This city lacks parking spots."
+                },
+                {
+                    "stem": "pies",
+                    "ending": "kowi",
+                    "polish": "Daliśmy pieskowi jeść.",
+                    "english": "We gave the dog food."
+                },
+                {
+                    "stem": "student",
+                    "ending": "owi",
+                    "polish": "Profesor zadał studentowi trudne pytanie.",
+                    "english": "The professor asked the student a difficult question."
+                },
+                {
+                    "stem": "żon",
+                    "ending": "ie",
+                    "polish": "Złamał obietnicę daną żonie i poszedł z kolegami na piwo.",
+                    "english": "He broke the promise given to his wife and went for a beer with friends."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 05",
+            "rows": [
+                {
+                    "stem": "brat",
+                    "ending": "u",
+                    "polish": "Zrobiłem niespodziankę mojemu bratu.",
+                    "english": "I made a surprise for my brother."
+                },
+                {
+                    "stem": "dyrektor",
+                    "ending": "owi",
+                    "polish": "Dziennikarze przerwali przemówienie dyrektorowi i zaczęli zasypywać go pytaniami.",
+                    "english": "The paparazzi interrupted the director's speech and started to ask questions."
+                },
+                {
+                    "stem": "cioc",
+                    "ending": "i",
+                    "polish": "Wujek kupił nowy telefon mojej cioci.",
+                    "english": "My uncle bought a new phone for my aunt."
+                },
+                {
+                    "stem": "kot",
+                    "ending": "u",
+                    "polish": "Magda kupiła nową zabawkę kotu.",
+                    "english": "Magda has bought a new toy for the cat."
+                },
+                {
+                    "stem": "pisarz",
+                    "ending": "owi",
+                    "polish": "Brakło weny twórczej pisarzowi.",
+                    "english": "The writer lacked the creative vein."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 06",
+            "rows": [
+                {
+                    "stem": "chłopak",
+                    "ending": "owi",
+                    "polish": "Odmówiłam chłopakowi pójścia na randkę.",
+                    "english": "I refused to go on a date with the boy."
+                },
+                {
+                    "stem": "zakaz",
+                    "ending": "owi",
+                    "polish": "Wbrew zakazowi przeszli przez ogrodzenie.",
+                    "english": "Contrary to the prohibition, they've crossed the fence."
+                },
+                {
+                    "stem": "polityk",
+                    "ending": "owi",
+                    "polish": "Nie wierzę temu politykowi w ani jedno jego słowo.",
+                    "english": "I don't believe any word from this politician."
+                },
+                {
+                    "stem": "kole",
+                    "ending": "dze",
+                    "polish": "Pomogłem koledze w przeprowadzce.",
+                    "english": "I've helped my friend move."
+                },
+                {
+                    "stem": "koleżanc",
+                    "ending": "e",
+                    "polish": "Podobasz się mojej koleżance.",
+                    "english": "My friend likes you."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 07",
+            "rows": [
+                {
+                    "stem": "ludzi",
+                    "ending": "om",
+                    "polish": "Lubimy pomagać innym ludziom.",
+                    "english": "We like to help other people."
+                },
+                {
+                    "stem": "ogrodnik",
+                    "ending": "owi",
+                    "polish": "Jej rodzice dali podwyżkę ogrodnikowi.",
+                    "english": "Her parents gave a pay raise to their gardener."
+                },
+                {
+                    "stem": "nauczycielc",
+                    "ending": "e",
+                    "polish": "Uczniowie ukradli telefon nauczycielce.",
+                    "english": "The students stole the teacher's phone."
+                },
+                {
+                    "stem": "wnuk",
+                    "ending": "owi",
+                    "polish": "Dziadek opowiedział wnukowi historię z czasów wojennych.",
+                    "english": "Grandpa told his grandson a war time story."
+                },
+                {
+                    "stem": "kierowc",
+                    "ending": "y",
+                    "polish": "Pasażerowie zabrali kluczyki do samochodu kierowcy, gdyż był bardzo pijany.",
+                    "english": "The passengers took the driver's car keys, because he was very drunk."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 08",
+            "rows": [
+                {
+                    "stem": "sędz",
+                    "ending": "i",
+                    "polish": "Świadkowie powiedzieli prawdę sędzi.",
+                    "english": "The witnesses told the truth to the judge."
+                },
+                {
+                    "stem": "uczennic",
+                    "ending": "y",
+                    "polish": "Wszyscy gratulowali uczennicy wspaniałego wyniku w konkursie.",
+                    "english": "Everyone congratulates the pupil’s wonderful results in the contest."
+                },
+                {
+                    "stem": "szef",
+                    "ending": "owi",
+                    "polish": "Odpisał szefowi na wiadomość.",
+                    "english": "He answered his boss's message."
+                },
+                {
+                    "stem": "znajom",
+                    "ending": "ym",
+                    "polish": "Wysyłamy pocztówki znajomym z wakacji.",
+                    "english": "We're sending postcards to our friends from vacation."
+                },
+                {
+                    "stem": "sąsiadc",
+                    "ending": "e",
+                    "polish": "Mężczyzna pomógł sąsiadce wnieść zakupy.",
+                    "english": "A man helped the neighbour bring the shopping bags."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 09",
+            "rows": [
+                {
+                    "stem": "piosenkark",
+                    "ending": "e",
+                    "polish": "Wyłączyli mikrofon piosenkarce w czasie jej ważnego występu.",
+                    "english": "They turned off the singer's microphone during her important performance."
+                },
+                {
+                    "stem": "dziewczyn",
+                    "ending": "ie",
+                    "polish": "Podarowałem kwiaty dziewczynie na Dzień Kobiet.",
+                    "english": "I gave my girlfriend flowers for Women’s Day."
+                },
+                {
+                    "stem": "prawnik",
+                    "ending": "owi",
+                    "polish": "Wyjaśniłem mojemu prawnikowi moją sytuację.",
+                    "english": "I've explained my situation to the lawyer."
+                },
+                {
+                    "stem": "zdolności",
+                    "ending": "om",
+                    "polish": "Dzięki zdolnościom językowym łatwo znalazłem pracę.",
+                    "english": "Thanks to the language skills, I've found a job."
+                },
+                {
+                    "stem": "myśliw",
+                    "ending": "emu",
+                    "polish": "Sarna uciekła myśliwemu.",
+                    "english": "The deer escaped from the hunter."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 10",
+            "rows": [
+                {
+                    "stem": "dzieci",
+                    "ending": "om",
+                    "polish": "Czytam bajkę na dobranoc moim dzieciom.",
+                    "english": "I'm reading a bedtime story for my children."
+                },
+                {
+                    "stem": "robotnik",
+                    "ending": "owi",
+                    "polish": "Pracodawca nie zapłacił robotnikowi za jego pracę.",
+                    "english": "The employer didn't pay to the worker for his job."
+                },
+                {
+                    "stem": "męż",
+                    "ending": "owi",
+                    "polish": "Wybaczyłam mężowi zdradę.",
+                    "english": "I forgave my husband for his treason."
+                },
+                {
+                    "stem": "siostr",
+                    "ending": "ze",
+                    "polish": "Zmieniliśmy hasło do komputera naszej siostrze.",
+                    "english": "We've changed our sister's computer password."
+                },
+                {
+                    "stem": "książc",
+                    "ending": "e",
+                    "polish": "Tej książce brakuje wyraźnej puenty.",
+                    "english": "This book lacks a clear punch line."
+                }
+            ]
+        }
+    ]
+}

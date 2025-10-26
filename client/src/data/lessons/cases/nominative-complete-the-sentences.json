@@ -1,0 +1,420 @@
+{
+    "class": "Nominative - Complete The Sentences",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "stem": "brat",
+                    "ending": "em",
+                    "polish": "Bawię się z bratem klockami LEGO.",
+                    "english": "I'm playing LEGO with my brother."
+                },
+                {
+                    "stem": "nog",
+                    "ending": "ą",
+                    "polish": "Otworzył drzwi nogą.",
+                    "english": "He opened the door using his leg."
+                },
+                {
+                    "stem": "pociąg",
+                    "ending": "iem",
+                    "polish": "Studenci jadą pociągiem na protest do Warszawy.",
+                    "english": "Students go by train to a protest in Warsaw."
+                },
+                {
+                    "stem": "nauczycielka",
+                    "ending": "ą",
+                    "polish": "Jej ciocia jest nauczycielką.",
+                    "english": "Her aunt is a teacher."
+                },
+                {
+                    "stem": "głowa",
+                    "ending": "ą",
+                    "polish": "Nauczyciel pokiwał głową.",
+                    "english": "The teacher nodded his head."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "stem": "prawnik",
+                    "ending": "iem",
+                    "polish": "Znajoma idzie na spotkanie ze swoim prawnikiem.",
+                    "english": "A friend goes for a meeting with her lawyer."
+                },
+                {
+                    "stem": "ręka",
+                    "ending": "ą",
+                    "polish": "Podrapał się ręką po tyłku.",
+                    "english": "He scratched his hand over his backside."
+                },
+                {
+                    "stem": "nóż",
+                    "ending": "em",
+                    "polish": "Rzucił nożem w tarczę.",
+                    "english": "He threw the knife into the shield."
+                },
+                {
+                    "stem": "sztuka",
+                    "ending": "ą",
+                    "polish": "Moja mama interesuje się sztuką.",
+                    "english": "My mother is interested in art."
+                },
+                {
+                    "stem": "ruch",
+                    "ending": "em",
+                    "polish": "Policjant kieruje ruchem.",
+                    "english": "The policeman directs traffic."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03",
+            "rows": [
+                {
+                    "stem": "przeciwnik",
+                    "ending": "iem",
+                    "polish": "Armia walczy z silniejszym przeciwnikiem.",
+                    "english": "The army fights with stronger enemy."
+                },
+                {
+                    "stem": "myszka",
+                    "ending": "ą",
+                    "polish": "Moja mama nie może trafić myszką w przycisk.",
+                    "english": "My mother cannot hit the button with the mouse."
+                },
+                {
+                    "stem": "rodzina",
+                    "ending": "ą",
+                    "polish": "Jadę z rodziną na wakacje nad morze.",
+                    "english": "I'm going on holiday to the sea with my family."
+                },
+                {
+                    "stem": "palec",
+                    "ending": "em",
+                    "polish": "Pogroził mi palcem.",
+                    "english": "He pointed his finger at me threatenly."
+                },
+                {
+                    "stem": "pole",
+                    "ending": "m",
+                    "polish": "Nad polem kukurydzy przeleciał statek UFO.",
+                    "english": "A UFO ship flew over the cornfield."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04",
+            "rows": [
+                {
+                    "stem": "okno",
+                    "ending": "m",
+                    "polish": "Kot wyskoczył z mieszkania oknem.",
+                    "english": "The cat jumped through the window."
+                },
+                {
+                    "stem": "szkoła",
+                    "ending": "ą",
+                    "polish": "Dzieci bawią się przed szkołą.",
+                    "english": "The children play in front of the school."
+                },
+                {
+                    "stem": "miecz",
+                    "ending": "em",
+                    "polish": "Rycerz zranił mieczem przeciwnika.",
+                    "english": "The knight hurt his opponent with his sword."
+                },
+                {
+                    "stem": "ranek",
+                    "ending": "iem",
+                    "polish": "Wczesnym rankiem poszedłem na siłownię.",
+                    "english": "Early in the morning I went to the gym."
+                },
+                {
+                    "stem": "samochód",
+                    "ending": "em",
+                    "polish": "Kto kieruje samochodem?",
+                    "english": "Who drives the car?"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 05",
+            "rows": [
+                {
+                    "stem": "sprawy",
+                    "ending": "mi",
+                    "polish": "Każdy zajmuje się swoimi sprawami.",
+                    "english": "Everyone deals with their own affairs."
+                },
+                {
+                    "stem": "dom",
+                    "ending": "em",
+                    "polish": "Drzewa są domem dla wielu zwierząt.",
+                    "english": "Trees are home to many animals."
+                },
+                {
+                    "stem": "smok",
+                    "ending": "iem",
+                    "polish": "Dzielny wojownik walczy ze smokiem.",
+                    "english": "A brave warrior fights with a dragon."
+                },
+                {
+                    "stem": "klucze",
+                    "ending": "mi",
+                    "polish": "On potrafi otwierać piwo kluczami.",
+                    "english": "He can open the beer bottle using keys."
+                },
+                {
+                    "stem": "stół",
+                    "ending": "em",
+                    "polish": "Pod stołem śpi pies.",
+                    "english": "The dog is sleeping under the table."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 06",
+            "rows": [
+                {
+                    "stem": "siostra",
+                    "ending": "ą",
+                    "polish": "Widzieliśmy się z twoją siostrą.",
+                    "english": "We've met your sister."
+                },
+                {
+                    "stem": "łyżka",
+                    "ending": "ą",
+                    "polish": "Pomieszaj łyżką zupę.",
+                    "english": "Mix the soup with spoon."
+                },
+                {
+                    "stem": "Noc",
+                    "ending": "ą",
+                    "polish": "W nocy nocą spadł śnieg.",
+                    "english": "It snowed at night."
+                },
+                {
+                    "stem": "pies",
+                    "ending": "em",
+                    "polish": "Starsza pani idzie z psem na spacer.",
+                    "english": "An old lady goes for a walk with her dog."
+                },
+                {
+                    "stem": "drzwi",
+                    "ending": "ami",
+                    "polish": "Ktoś stoi za drzwiami.",
+                    "english": "Someone is standing behind the door."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 07",
+            "rows": [
+                {
+                    "stem": "kochanka",
+                    "ending": "ą",
+                    "polish": "Mężczyzna spotkał się ze swoją kochanką.",
+                    "english": "The man met with his paramour."
+                },
+                {
+                    "stem": "prostokąt",
+                    "ending": "em",
+                    "polish": "Kwadrat jest prostokątem.",
+                    "english": "The square is a rectangle."
+                },
+                {
+                    "stem": "chłopak",
+                    "ending": "em",
+                    "polish": "Idę z chłopakiem na randkę.",
+                    "english": "I'm going out with my boyfriend on a date."
+                },
+                {
+                    "stem": "bestseller",
+                    "ending": "em",
+                    "polish": "Ta książka jest światowym bestsellerem.",
+                    "english": "This book is a world bestseller."
+                },
+                {
+                    "stem": "droga",
+                    "ending": "ch",
+                    "polish": "Niedźwiedź biegnie po drogach.",
+                    "english": "A bear runs on the street."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 08",
+            "rows": [
+                {
+                    "stem": "nog",
+                    "ending": "ą",
+                    "polish": "Piłkarz kopnął nogą piłkę.",
+                    "english": "The player kicked the ball with his leg."
+                },
+                {
+                    "stem": "lekarze",
+                    "ending": "mi",
+                    "polish": "Jesteśmy lekarzami.",
+                    "english": "We are doctors."
+                },
+                {
+                    "stem": "pięść",
+                    "ending": "ą",
+                    "polish": "Więzień uderzył pięścią w stół.",
+                    "english": "The prisoner punched the table with his fist."
+                },
+                {
+                    "stem": "uczniowie",
+                    "ending": "mi",
+                    "polish": "Oni byli moimi uczniami.",
+                    "english": "They were my pupils."
+                },
+                {
+                    "stem": "piła",
+                    "ending": "mi",
+                    "polish": "Drwale tną piłami drzewa.",
+                    "english": "Lumberjacks cut trees using saw."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 09",
+            "rows": [
+                {
+                    "stem": "winda",
+                    "ending": "ą",
+                    "polish": "Przepraszam, jechałem windą i straciłem zasięg.",
+                    "english": "Sorry, I was in the elevator and lost signal."
+                },
+                {
+                    "stem": "potwór",
+                    "ending": "em",
+                    "polish": "Przez złe zaklęcie stał się potworem.",
+                    "english": "Because of a bad curse, he became a monster."
+                },
+                {
+                    "stem": "legenda",
+                    "ending": "ą",
+                    "polish": "Lady Gaga stała się za życia legendą popu.",
+                    "english": "Lady Gaga has become a pop legend during her lifetime."
+                },
+                {
+                    "stem": "piosenkarka",
+                    "ending": "ą",
+                    "polish": "Jego córka zawsze chciała zostać piosenkarką.",
+                    "english": "His daughter always wanted to become a singer."
+                },
+                {
+                    "stem": "nożyczki",
+                    "ending": "mi",
+                    "polish": "Fryzjerka ścina klientowi włosy nożyczkami.",
+                    "english": "The hairdresser cuts client's hair with scissors."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 10",
+            "rows": [
+                {
+                    "stem": "problem",
+                    "ending": "ami",
+                    "polish": "Ludzie często nie radzą sobie ze swoimi problemami.",
+                    "english": "People often cannot cope with their problems."
+                },
+                {
+                    "stem": "długopis",
+                    "ending": "em",
+                    "polish": "Nie lubię pisać długopisem.",
+                    "english": "I don't like to write using pen."
+                },
+                {
+                    "stem": "burmistrz",
+                    "ending": "em",
+                    "polish": "Po wyborach nasz dziadek został nowym burmistrzem.",
+                    "english": "After the election our grandpa became a mayor."
+                },
+                {
+                    "stem": "ochron",
+                    "ending": "ą",
+                    "polish": "Kiedyś zajmowałem się ochroną środowiska.",
+                    "english": "I once dealt with the environmental protection."
+                },
+                {
+                    "stem": "",
+                    "ending": "",
+                    "polish": "Latem mamy burze w Polsce.",
+                    "english": "In the summer we have thunderstorms in Poland."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 11",
+            "rows": [
+                {
+                    "stem": "tramwaj",
+                    "ending": "em",
+                    "polish": "Jadę tramwajem na uczelnię.",
+                    "english": "I'm going by tram to the university."
+                },
+                {
+                    "stem": "długopis",
+                    "ending": "em",
+                    "polish": "Urzędniczka wypełnia długopisem formularz.",
+                    "english": "The clerkess fills in the form with a pen."
+                },
+                {
+                    "stem": "lekarz",
+                    "ending": "ami",
+                    "polish": "Rodzice rozmawiają z lekarzami o stanie ich dziecka.",
+                    "english": "Parents talk to the doctors about the condition of their child."
+                },
+                {
+                    "stem": "piosenkarz",
+                    "ending": "em",
+                    "polish": "Mój kuzyn jest znanym piosenkarzem.",
+                    "english": "My cousin is a famous singer."
+                },
+                {
+                    "stem": "aktor",
+                    "ending": "ami",
+                    "polish": "Mam na ścianie plakat z moimi ulubionymi aktorami.",
+                    "english": "I have a poster on the wall with my favorite actors."
+                },
+                {
+                    "stem": "telefon",
+                    "ending": "em",
+                    "polish": "W dzisiejszych czasach nastolatkowie nie rozstają się z telefonem.",
+                    "english": "Nowadays teenagers do not part with the phone."
+                },
+                {
+                    "stem": "występ",
+                    "ending": "em",
+                    "polish": "Aktor odgrywający rolę Romeo zachorował przed występem.",
+                    "english": "The actor playing the role of Romeo fell ill before the show."
+                },
+                {
+                    "stem": "dach",
+                    "ending": "em",
+                    "polish": "Podczas wczorajszej ulewy woda zaczęła przeciekać pod dachem.",
+                    "english": "During the downpour yesterday the water began to leak in the roof."
+                },
+                {
+                    "stem": "autobus",
+                    "ending": "em",
+                    "polish": "Jak dojechać autobusem do Warszawy?",
+                    "english": "How to get a bus to Warsaw?"
+                },
+                {
+                    "stem": "samolot",
+                    "ending": "em",
+                    "polish": "Moi rodzice boją się latać samolotem.",
+                    "english": "My parents are afraid of flying by plane."
+                }
+            ]
+        }
+    ]
+}

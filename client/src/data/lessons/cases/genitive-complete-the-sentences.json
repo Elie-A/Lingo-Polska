@@ -7,37 +7,32 @@
                 {
                     "stem": "muzyk",
                     "ending": "i",
-                    "polishRest": ".",
-                    "english": "The neighbours listen to music loudly.",
-                    "pronoun": "they"
+                    "polish": "Sąsiedzi głośno słuchają muzyki.",
+                    "english": "The neighbours listen to music loudly."
                 },
                 {
                     "stem": "rzecz",
                     "ending": "y",
-                    "polishRest": ".",
-                    "english": "The children learn new things quickly.",
-                    "pronoun": "they"
+                    "polish": "Dzieci szybko uczą się nowych rzeczy.",
+                    "english": "The children learn new things quickly."
                 },
                 {
                     "stem": "kin",
                     "ending": "a",
-                    "polishRest": " z dziewczyną.",
-                    "english": "My brother goes to the cinema with his girlfriend.",
-                    "pronoun": "my"
+                    "polish": "Mój brat idzie do kina z dziewczyną.",
+                    "english": "My brother goes to the cinema with his girlfriend."
                 },
                 {
                     "stem": "gitar",
                     "ending": "y",
-                    "polishRest": " w sklepie muzycznym.",
-                    "english": "I've been looking for a new guitar in a music shop.",
-                    "pronoun": "I"
+                    "polish": "Szukałem nowej gitary w sklepie muzycznym.",
+                    "english": "I've been looking for a new guitar in a music shop."
                 },
                 {
                     "stem": "dziec",
                     "ending": "i",
-                    "polishRest": " w czasie przerwy na korytarzu.",
-                    "english": "Teachers watch over the children during the break on the corridor.",
-                    "pronoun": "they"
+                    "polish": "Nauczyciele pilnują dzieci w czasie przerwy na korytarzu.",
+                    "english": "Teachers watch over the children during the break on the corridor."
                 }
             ]
         },
@@ -47,37 +42,32 @@
                 {
                     "stem": "zemst",
                     "ending": "y",
-                    "polishRest": " na swoich wrogach.",
-                    "english": "The pirates had a thirst for revenge.",
-                    "pronoun": "they"
+                    "polish": "Piraci pragnęli zemsty na swoich wrogach.",
+                    "english": "The pirates had a thirst for revenge."
                 },
                 {
                     "stem": "chorob",
                     "ending": "y",
-                    "polishRest": " profesora odwołano wykład.",
-                    "english": "Due to the professor's illness the lecture has been cancelled.",
-                    "pronoun": "it"
+                    "polish": "Z powodu choroby profesora odwołano wykład.",
+                    "english": "Due to the professor's illness the lecture has been cancelled."
                 },
                 {
                     "stem": "sol",
                     "ending": "i",
-                    "polishRest": ".",
-                    "english": "I think this soup is lacking salt.",
-                    "pronoun": "it"
+                    "polish": "Myślę, że tej zupie brakuje soli.",
+                    "english": "I think this soup is lacking salt."
                 },
                 {
                     "stem": "dom",
                     "ending": "u",
-                    "polishRest": " rośnie wysokie drzewo.",
-                    "english": "There is a tall tree near my house.",
-                    "pronoun": "my"
+                    "polish": "W pobliżu mojego domu rośnie wysokie drzewo.",
+                    "english": "There is a tall tree near my house."
                 },
                 {
                     "stem": "czas",
                     "ending": "u",
-                    "polishRest": " tego naprawić.",
-                    "english": "We've got no time to fix it.",
-                    "pronoun": "we"
+                    "polish": "Nie mamy czasu tego naprawić.",
+                    "english": "We've got no time to fix it."
                 }
             ]
         },
@@ -87,37 +77,32 @@
                 {
                     "stem": "lad",
                     "ending": "y",
-                    "polishRest": ".",
-                    "english": "The seller took the goods from under the counter.",
-                    "pronoun": "he"
+                    "polish": "Sprzedawca wyjął towar spod lady.",
+                    "english": "The seller took the goods from under the counter."
                 },
                 {
                     "stem": "rodzic",
                     "ending": "ów",
-                    "polishRest": " ostatnie ostrzeżenie.",
-                    "english": "My parents gave me the last warning.",
-                    "pronoun": "they"
+                    "polish": "Otrzymałem od rodziców ostatnie ostrzeżenie.",
+                    "english": "My parents gave me the last warning."
                 },
                 {
                     "stem": "sklep",
                     "ending": "u",
-                    "polishRest": ".",
-                    "english": "Michał went to the shop.",
-                    "pronoun": "he"
+                    "polish": "Michał poszedł do sklepu.",
+                    "english": "Michał went to the shop."
                 },
                 {
                     "stem": "zamk",
                     "ending": "u",
-                    "polishRest": ".",
-                    "english": "The knights are defending the castle.",
-                    "pronoun": "they"
+                    "polish": "Rycerze bronią zamku.",
+                    "english": "The knights are defending the castle."
                 },
                 {
                     "stem": "wiersz",
                     "ending": "a",
-                    "polishRest": " na pamięć.",
-                    "english": "The children are learning the poem by heart.",
-                    "pronoun": "they"
+                    "polish": "Dzieci uczą się wiersza na pamięć.",
+                    "english": "The children are learning the poem by heart."
                 }
             ]
         },
@@ -127,37 +112,32 @@
                 {
                     "stem": "dn",
                     "ending": "a",
-                    "polishRest": ".",
-                    "english": "The anchor touched the bottom.",
-                    "pronoun": "it"
+                    "polish": "Kotwica dotknęła dna.",
+                    "english": "The anchor touched the bottom."
                 },
                 {
                     "stem": "stoł",
                     "ending": "u",
-                    "polishRest": " wyszedł pies.",
-                    "english": "The dog came out from under the table.",
-                    "pronoun": "it"
+                    "polish": "Spod stołu wyszedł pies.",
+                    "english": "The dog came out from under the table."
                 },
                 {
                     "stem": "muzyk",
                     "ending": "i",
-                    "polishRest": " jazzowej.",
-                    "english": "I like listening to jazz music.",
-                    "pronoun": "I"
+                    "polish": "Lubię słuchać muzyki jazzowej.",
+                    "english": "I like listening to jazz music."
                 },
                 {
                     "stem": "śniadan",
                     "ending": "ia",
-                    "polishRest": " do szkoły.",
-                    "english": "The pupil forgot her breakfast for school.",
-                    "pronoun": "she"
+                    "polish": "Uczennica zapomniała śniadania do szkoły.",
+                    "english": "The pupil forgot her breakfast for school."
                 },
                 {
                     "stem": "powodzen",
                     "ending": "ia",
-                    "polishRest": " na maturze.",
-                    "english": "The teacher wishes his students good luck at the final exams.",
-                    "pronoun": "he"
+                    "polish": "Nauczyciel życzy swoim uczniom powodzenia na maturze.",
+                    "english": "The teacher wishes his students good luck at the final exams."
                 }
             ]
         },
@@ -167,37 +147,32 @@
                 {
                     "stem": "szkł",
                     "ending": "a",
-                    "polishRest": ".",
-                    "english": "This bottle is made out of glass.",
-                    "pronoun": "it"
+                    "polish": "Ta butelka jest zrobiona ze szkła.",
+                    "english": "This bottle is made out of glass."
                 },
                 {
                     "stem": "jabłk",
                     "ending": "a",
-                    "polishRest": " w koszyku.",
-                    "english": "There are no apples in the basket.",
-                    "pronoun": "they"
+                    "polish": "Brakuje jabłka w koszyku.",
+                    "english": "There are no apples in the basket."
                 },
                 {
                     "stem": "pr",
                     "ending": "aw",
-                    "polishRest": " człowieka.",
-                    "english": "We defend human rights.",
-                    "pronoun": "we"
+                    "polish": "Stoimy w obronie praw człowieka.",
+                    "english": "We defend human rights."
                 },
                 {
                     "stem": "odpowiedź",
                     "ending": "",
-                    "polishRest": " po rozmowie o pracę.",
-                    "english": "My dad expects the answer after the job interview.",
-                    "pronoun": "my"
+                    "polish": "Mój tata oczekuje odpowiedź po rozmowie o pracę.",
+                    "english": "My dad expects the answer after the job interview."
                 },
                 {
                     "stem": "laptop",
                     "ending": "a",
-                    "polishRest": ".",
-                    "english": "Our grandpa learns to use laptop.",
-                    "pronoun": "our"
+                    "polish": "Nasz dziadek uczy się używać laptopa.",
+                    "english": "Our grandpa learns to use laptop."
                 }
             ]
         },
@@ -207,37 +182,32 @@
                 {
                     "stem": "wyścig",
                     "ending": "u",
-                    "polishRest": ".",
-                    "english": "Her brother broke his leg during the race.",
-                    "pronoun": "her"
+                    "polish": "Jej brat złamał nogę podczas wyścigu.",
+                    "english": "Her brother broke his leg during the race."
                 },
                 {
                     "stem": "dziec",
                     "ending": "ka",
-                    "polishRest": ".",
-                    "english": "A babysitter looks after the child.",
-                    "pronoun": "he/she"
+                    "polish": "Opiekunka pilnuje dziecka.",
+                    "english": "A babysitter looks after the child."
                 },
                 {
                     "stem": "przepis",
                     "ending": "u",
-                    "polishRest": " na ciasto z jabłkami.",
-                    "english": "His grandma tried a new apple pie recipe.",
-                    "pronoun": "his"
+                    "polish": "Jego babcia spróbowała nowego przepisu na ciasto z jabłkami.",
+                    "english": "His grandma tried a new apple pie recipe."
                 },
                 {
                     "stem": "pościel",
                     "ending": "i",
-                    "polishRest": ".",
-                    "english": "Our beds in hotel don't have the bedding.",
-                    "pronoun": "our"
+                    "polish": "Nasze hotelowe łóżka nie mają pościeli.",
+                    "english": "Our beds in hotel don't have the bedding."
                 },
                 {
                     "stem": "park",
                     "ending": "u",
-                    "polishRest": " wybudowano centrum handlowe.",
-                    "english": "A shopping center has been built opposite to the park.",
-                    "pronoun": "it"
+                    "polish": "Naprzeciwko parku wybudowano centrum handlowe.",
+                    "english": "A shopping center has been built opposite to the park."
                 }
             ]
         },
@@ -247,37 +217,32 @@
                 {
                     "stem": "nauczyciel",
                     "ending": "a",
-                    "polishRest": " o zgodę?",
-                    "english": "Why are you asking the teacher for permission?",
-                    "pronoun": "you (pl)"
+                    "polish": "Dlaczego pytacie nauczyciela o zgodę?",
+                    "english": "Why are you asking the teacher for permission?"
                 },
                 {
                     "stem": "awari",
                     "ending": "i",
-                    "polishRest": " w całym mieście nie było prądu.",
-                    "english": "As a result of the breakdown, there was no electricity in the whole city.",
-                    "pronoun": "it"
+                    "polish": "Wskutek awarii w całym mieście nie było prądu.",
+                    "english": "As a result of the breakdown, there was no electricity in the whole city."
                 },
                 {
                     "stem": "matematyk",
                     "ending": "i",
-                    "polishRest": " w szkole.",
-                    "english": "My children learn math at school.",
-                    "pronoun": "they"
+                    "polish": "Moje dzieci uczą się matematyki w szkole.",
+                    "english": "My children learn math at school."
                 },
                 {
                     "stem": "punktualnośc",
                     "ending": "i",
-                    "polishRest": " od swoich pracowników.",
-                    "english": "The boss requires punctuality from his employees.",
-                    "pronoun": "he"
+                    "polish": "Szef wymaga punktualności od swoich pracowników.",
+                    "english": "The boss requires punctuality from his employees."
                 },
                 {
                     "stem": "pomoc",
                     "ending": "y",
-                    "polishRest": " pielęgniarki.",
-                    "english": "The doctor needs sister's help.",
-                    "pronoun": "he"
+                    "polish": "Doktor potrzebuje pomocy pielęgniarki.",
+                    "english": "The doctor needs sister's help."
                 }
             ]
         },
@@ -287,37 +252,32 @@
                 {
                     "stem": "samochod",
                     "ending": "u",
-                    "polishRest": ".",
-                    "english": "A friend has bought a bike instead of a car.",
-                    "pronoun": "he"
+                    "polish": "Kolega kupił rower zamiast samochodu.",
+                    "english": "A friend has bought a bike instead of a car."
                 },
                 {
                     "stem": "wujk",
                     "ending": "a",
-                    "polishRest": " komputer na urodziny.",
-                    "english": "I received from uncle a computer for my birthday.",
-                    "pronoun": "I"
+                    "polish": "Dostałem od wujka komputer na urodziny.",
+                    "english": "I received from uncle a computer for my birthday."
                 },
                 {
                     "stem": "zwrot",
                     "ending": "u",
-                    "polishRest": " pieniędzy za niedziałający toster.",
-                    "english": "The client demands a refund for the broken toaster.",
-                    "pronoun": "he"
+                    "polish": "Klient żąda zwrotu pieniędzy za niedziałający toster.",
+                    "english": "The client demands a refund for the broken toaster."
                 },
                 {
                     "stem": "zachowan",
                     "ending": "ia",
-                    "polishRest": ".",
-                    "english": "You should be ashamed of your behaviour.",
-                    "pronoun": "you (sg)"
+                    "polish": "Powinieneś się wstydzić swojego zachowania.",
+                    "english": "You should be ashamed of your behaviour."
                 },
                 {
                     "stem": "drog",
                     "ending": "i",
-                    "polishRest": " rosną drzewa.",
-                    "english": "The trees grow along the road.",
-                    "pronoun": "they"
+                    "polish": "Wzdłuż drogi rosną drzewa.",
+                    "english": "The trees grow along the road."
                 }
             ]
         }

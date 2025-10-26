@@ -1,0 +1,355 @@
+{
+    "class": "Accusative - Complete The Sentences",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "stem": "ps",
+                    "ending": "a",
+                    "polish": "Mam psa i trzy koty.",
+                    "english": "I have a dog and three cats."
+                },
+                {
+                    "stem": "prezent",
+                    "ending": "",
+                    "polish": "Mikołaj podarował dziecku prezent.",
+                    "english": "Santa Claus gave a present to a child."
+                },
+                {
+                    "stem": "laptop",
+                    "ending": "a",
+                    "polish": "Położyłem laptopa na stole.",
+                    "english": "I put the laptop on the table."
+                },
+                {
+                    "stem": "kot",
+                    "ending": "a",
+                    "polish": "Sąsiadka przygarnęła bezdomnego kota.",
+                    "english": "The neighbor took care of a homeless cat."
+                },
+                {
+                    "stem": "słow",
+                    "ending": "o",
+                    "polish": "Mam to słowo na końcu języka.",
+                    "english": "I have this word on the tip of my tongue."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "stem": "obiad",
+                    "ending": "",
+                    "polish": "Mama gotuje obiad na jutro.",
+                    "english": "Mom is cooking dinner for tomorrow."
+                },
+                {
+                    "stem": "papieros",
+                    "ending": "a",
+                    "polish": "Mężczyzna nerwowo pali papierosa.",
+                    "english": "The man smokes the cigarette nervously."
+                },
+                {
+                    "stem": "much",
+                    "ending": "ę",
+                    "polish": "Gdy się śmiała przez przypadek połknęła muchę.",
+                    "english": "While she laughed, she accidentally swallowed a fly."
+                },
+                {
+                    "stem": "podręcznik",
+                    "ending": "",
+                    "polish": "Uczeń zostawił podręcznik z domu.",
+                    "english": "The student left the textbook at home."
+                },
+                {
+                    "stem": "jeleń",
+                    "ending": "a",
+                    "polish": "Kierowca w ostatniej chwili zauważył jelenia na drodze.",
+                    "english": "The driver noticed the deer on the street at the last moment."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03",
+            "rows": [
+                {
+                    "stem": "piłk",
+                    "ending": "ę",
+                    "polish": "Piłkarze muszą precyzyjnie kopać piłkę.",
+                    "english": "The football players must kick the ball precisely."
+                },
+                {
+                    "stem": "wiadomość",
+                    "ending": "",
+                    "polish": "Czy wysłałeś wiadomość do siostry?",
+                    "english": "Have you sent the message to your sister?"
+                },
+                {
+                    "stem": "hasł",
+                    "ending": "o",
+                    "polish": "Zmieniłem hasło do facebooka, bo ktoś mi się włamał na moje konto.",
+                    "english": "I've changed the password for my Facebook account because somebody broke into it."
+                },
+                {
+                    "stem": "Ameryk",
+                    "ending": "ę",
+                    "polish": "Krzysztof Kolumb odkrył Amerykę.",
+                    "english": "Christopher Columbus discovered America."
+                },
+                {
+                    "stem": "książk",
+                    "ending": "ę",
+                    "polish": "Dziewczyna czyta książkę w parku.",
+                    "english": "A girl is reading a book in the park."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04",
+            "rows": [
+                {
+                    "stem": "zadanie domowe",
+                    "ending": "",
+                    "polish": "Zaczynam robić zadanie domowe.",
+                    "english": "I'm starting to do the homework."
+                },
+                {
+                    "stem": "herbat",
+                    "ending": "ę",
+                    "polish": "Lubię pić herbatę.",
+                    "english": "I like to drink tea."
+                },
+                {
+                    "stem": "kogut",
+                    "ending": "a",
+                    "polish": "Na wsi nad ranem słychać koguta.",
+                    "english": "In the village in the morning one can hear a rooster."
+                },
+                {
+                    "stem": "jacht",
+                    "ending": "",
+                    "polish": "Biznesmen kupił nowy jacht.",
+                    "english": "A businessman has bought a new yacht."
+                },
+                {
+                    "stem": "kaw",
+                    "ending": "ę",
+                    "polish": "Jego żona codziennie rano pije kawę.",
+                    "english": "His wife drinks coffee every morning."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 05",
+            "rows": [
+                {
+                    "stem": "kolacj",
+                    "ending": "ę",
+                    "polish": "Dzieci grzecznie jedzą kolację.",
+                    "english": "The children eat the supper politely."
+                },
+                {
+                    "stem": "paczk",
+                    "ending": "ę",
+                    "polish": "Wysłał paczkę do kuzynki z Anglii.",
+                    "english": "He sent a parcel to a cousin from England."
+                },
+                {
+                    "stem": "drzwi",
+                    "ending": "",
+                    "polish": "Proszę zamknij drzwi.",
+                    "english": "Please, close the door."
+                },
+                {
+                    "stem": "czekolad",
+                    "ending": "ę",
+                    "polish": "Moja dziewczyna uwielbia czekoladę.",
+                    "english": "My girlfriend loves chocolate."
+                },
+                {
+                    "stem": "odgłos",
+                    "ending": "y",
+                    "polish": "Słyszymy dziwne odgłosy.",
+                    "english": "We hear strange noises."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 06",
+            "rows": [
+                {
+                    "stem": "papieros",
+                    "ending": "a",
+                    "polish": "Nasz tata pali tylko jednego papierosa dziennie.",
+                    "english": "Our dad smokes only one cigarette a day."
+                },
+                {
+                    "stem": "śmieci",
+                    "ending": "",
+                    "polish": "Proszę, wynieś śmieci.",
+                    "english": "Please, take out the rubbish."
+                },
+                {
+                    "stem": "ptak",
+                    "ending": "a",
+                    "polish": "Widzimy na niebie ogromnego ptaka.",
+                    "english": "We see a huge bird in the sky."
+                },
+                {
+                    "stem": "telefon",
+                    "ending": "",
+                    "polish": "Masz przy sobie telefon?",
+                    "english": "Do you have the phone with you?"
+                },
+                {
+                    "stem": "rodzic",
+                    "ending": "ów",
+                    "polish": "Okłamałem rodziców, że nie piłem alkoholu.",
+                    "english": "I lied to my parents, saying that I didn’t drink the alcohol."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 07",
+            "rows": [
+                {
+                    "stem": "przeciwnik",
+                    "ending": "a",
+                    "polish": "Wojownik zranił przeciwnika prosto w serce.",
+                    "english": "The warrior wounded his enemy straight in the heart."
+                },
+                {
+                    "stem": "roślin",
+                    "ending": "y",
+                    "polish": "Sadzę rośliny w ogrodzie.",
+                    "english": "I'm planting the plants in the garden."
+                },
+                {
+                    "stem": "zapach",
+                    "ending": "",
+                    "polish": "Czuję zapach truskawek.",
+                    "english": "I smell some strawberries."
+                },
+                {
+                    "stem": "praca",
+                    "ending": "ę",
+                    "polish": "Programiści często zmieniają pracę.",
+                    "english": "The programmers change the work often."
+                },
+                {
+                    "stem": "dokument",
+                    "ending": "y",
+                    "polish": "Znalazłem na chodniku czyjeś dokumenty.",
+                    "english": "I've found someone's documents on the pavement."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 08",
+            "rows": [
+                {
+                    "stem": "artykuł",
+                    "ending": "",
+                    "polish": "Czytamy artykuł na temat globalnego ocieplenia.",
+                    "english": "We are reading an article about global warming."
+                },
+                {
+                    "stem": "lekarz",
+                    "ending": "a",
+                    "polish": "Znam lekarza, który może Ci pomóc.",
+                    "english": "I know a doctor, that might help you."
+                },
+                {
+                    "stem": "metod",
+                    "ending": "ę",
+                    "polish": "Naukowcy odkryli nową metodę do walki z rakiem.",
+                    "english": "Scientists discovered a new method to fight cancer."
+                },
+                {
+                    "stem": "zmiana",
+                    "ending": "ę",
+                    "polish": "Zauważyliśmy zmianę w jego zachowaniu.",
+                    "english": "We've perceived a change in his behaviour."
+                },
+                {
+                    "stem": "czas",
+                    "ending": "",
+                    "polish": "Czy znajdziesz czas dla mnie?",
+                    "english": "Will you find time for me?"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 09",
+            "rows": [
+                {
+                    "stem": "serial",
+                    "ending": "e",
+                    "polish": "Wszyscy moi znajomi oglądają seriale na Netfliksie.",
+                    "english": "All my friends are watching series on Netflix."
+                },
+                {
+                    "stem": "dziecko",
+                    "ending": "",
+                    "polish": "Matka trzyma dziecko za rękę przechodząc przez drogę.",
+                    "english": "The mother holds her child's hand while crossing the street."
+                },
+                {
+                    "stem": "gość",
+                    "ending": "i",
+                    "polish": "Gospodarz wita nowych gości.",
+                    "english": "The host is welcoming new guests."
+                },
+                {
+                    "stem": "obraz",
+                    "ending": "y",
+                    "polish": "Ten artysta maluje abstrakcyjne obrazy.",
+                    "english": "This artist draws abstract paintings."
+                },
+                {
+                    "stem": "wieżowiec",
+                    "ending": "",
+                    "polish": "Robotnicy budują nowy wieżowiec w centrum miasta.",
+                    "english": "The workers are building a new skyscraper in the city center."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 10",
+            "rows": [
+                {
+                    "stem": "park",
+                    "ending": "",
+                    "polish": "Jeżdżę do pracy na rowerze przez park.",
+                    "english": "I'm going to work by bike through the park."
+                },
+                {
+                    "stem": "chłopak",
+                    "ending": "a",
+                    "polish": "Spotkałam przystojnego chłopaka na kursie tańca.",
+                    "english": "I've met a handsome boy at a dance class."
+                },
+                {
+                    "stem": "nawyk",
+                    "ending": "i",
+                    "polish": "Zmieniliśmy swoje poranne nawyki.",
+                    "english": "We've changed our morning routine."
+                },
+                {
+                    "stem": "notatk",
+                    "ending": "i",
+                    "polish": "Wykładowca zostawił notatki w domu.",
+                    "english": "The lecturer left his notes at home."
+                },
+                {
+                    "stem": "odpoczynek",
+                    "ending": "",
+                    "polish": "Trener nie pozwala na odpoczynek.",
+                    "english": "The coach doesn't allow you to rest."
+                }
+            ]
+        }
+    ]
+}
