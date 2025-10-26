@@ -1,41 +1,46 @@
 {
-    "class": "Future Imperfective — Compound Future",
+    "class": "Future Imperfective - Compound Future",
     "exercises": [
         {
             "exercise": "Exercise 01",
             "rows": [
                 {
-                    "stem": "będę jed",
-                    "ending": "ł/a",
+                    "stem": "będę",
+                    "ending": " jadł/a",
                     "polishRest": " obiad o 19:00.",
+                    "polish": "Jutro będę jadł/a obiad o 19:00.",
                     "english": "Tomorrow I will be eating dinner at 7.",
                     "infinitive": "jeść – to eat"
                 },
                 {
-                    "stem": "będę czyta",
-                    "ending": "ł/a",
+                    "stem": "będę",
+                    "ending": " czytał/a",
                     "polishRest": ".",
+                    "polish": "Cały wieczór będę czytał/a.",
                     "english": "I will be reading the whole evening.",
                     "infinitive": "czytać – to read"
                 },
                 {
-                    "stem": "będzie pisa",
-                    "ending": "ł/a",
+                    "stem": "będzie",
+                    "ending": " pisał/a",
                     "polishRest": " listy.",
+                    "polish": "Jutro będzie pisał/a listy.",
                     "english": "He/She will be writing letters tomorrow.",
                     "infinitive": "pisać – to write"
                 },
                 {
-                    "stem": "Będą kupowa",
-                    "ending": "ć",
+                    "stem": "Będą",
+                    "ending": " kupować",
                     "polishRest": " jedzenie na imprezę.",
+                    "polish": "Będą kupować jedzenie na imprezę.",
                     "english": "They will be buying food for the party.",
                     "infinitive": "kupować – to buy"
                 },
                 {
-                    "stem": "będziemy ogląda",
-                    "ending": "ć",
+                    "stem": "będziemy",
+                    "ending": " oglądać",
                     "polishRest": " TV.",
+                    "polish": "W nocy będziemy oglądać TV.",
                     "english": "We will be watching TV at night.",
                     "infinitive": "oglądać – to watch"
                 }
@@ -45,37 +50,42 @@
             "exercise": "Exercise 02",
             "rows": [
                 {
-                    "stem": "Będę chodzi",
-                    "ending": "ł/a",
+                    "stem": "Będę",
+                    "ending": " chodził/a",
                     "polishRest": " na siłownię trzy razy w tygodniu.",
+                    "polish": "Będę chodził/a na siłownię trzy razy w tygodniu.",
                     "english": "I will be going to the gym three times a week.",
                     "infinitive": "chodzić – to go"
                 },
                 {
-                    "stem": "będzie robi",
-                    "ending": "ł/a",
+                    "stem": "będzie",
+                    "ending": " robił/a",
                     "polishRest": " zadanie domowe.",
+                    "polish": "Wieczorem będzie robił/a zadanie domowe.",
                     "english": "He/She will be doing homework in the evening.",
                     "infinitive": "robić – to do"
                 },
                 {
-                    "stem": "będę dzwoni",
-                    "ending": "ł/a",
+                    "stem": "będę",
+                    "ending": " dzwonił/a",
                     "polishRest": " do ciebie.",
+                    "polish": "Codziennie będę dzwonił/a do ciebie.",
                     "english": "I will be calling you every day.",
                     "infinitive": "dzwonić – to call"
                 },
                 {
-                    "stem": "będzie otwiera",
-                    "ending": "ł/a",
+                    "stem": "będzie",
+                    "ending": " otwierał/a",
                     "polishRest": " sklep o 9:00.",
+                    "polish": "O 9:00 będzie otwierał/a sklep",
                     "english": "He/She will be opening the shop at 9.",
                     "infinitive": "otwierać – to open"
                 },
                 {
-                    "stem": "Będziemy pomag",
-                    "ending": "ać",
+                    "stem": "Będziemy",
+                    "ending": " pomagać",
                     "polishRest": " kolegom w projekcie.",
+                    "polish": "Będziemy pomagać kolegom w projekcie.",
                     "english": "We will be helping our colleagues with the project.",
                     "infinitive": "pomagać – to help"
                 }
@@ -85,37 +95,42 @@
             "exercise": "Exercise 03",
             "rows": [
                 {
-                    "stem": "będę spa",
-                    "ending": "ł/a",
+                    "stem": "będę",
+                    "ending": " spał/a",
                     "polishRest": " do 10:00.",
+                    "polish": "Jutro będę spał/a do 10:00.",
                     "english": "Tomorrow I will be sleeping until 10.",
                     "infinitive": "spać – to sleep"
                 },
                 {
-                    "stem": "będę ucz",
-                    "ending": "ył/a",
+                    "stem": "będę",
+                    "ending": " uczył/a",
                     "polishRest": " się gramatyki.",
+                    "polish": "W tym tygodniu będę uczył/a się gramatyki.",
                     "english": "I will be studying grammar this week.",
                     "infinitive": "uczyć się – to study"
                 },
                 {
-                    "stem": "będą gra",
-                    "ending": "ć",
+                    "stem": "będą",
+                    "ending": " grać",
                     "polishRest": " w piłkę nożną po południu.",
+                    "polish": "Po południu będą grać w piłkę nożną.",
                     "english": "They will be playing football in the afternoon.",
                     "infinitive": "grać – to play"
                 },
                 {
-                    "stem": "będę gotowa",
-                    "ending": "ł/a",
+                    "stem": "będę",
+                    "ending": " gotował/a",
                     "polishRest": " obiad.",
+                    "polish": "Wieczorem będę gotował/a obiad.",
                     "english": "I will be cooking dinner in the evening.",
                     "infinitive": "gotować – to cook"
                 },
                 {
-                    "stem": "będziecie rozmawia",
-                    "ending": "ć",
+                    "stem": "będziecie",
+                    "ending": " rozmawiać",
                     "polishRest": " podczas spotkania?",
+                    "polish": "Czy będziecie rozmawiać podczas spotkania?",
                     "english": "Will you (pl) be talking during the meeting?",
                     "infinitive": "rozmawiać – to talk"
                 }
@@ -125,37 +140,42 @@
             "exercise": "Exercise 04",
             "rows": [
                 {
-                    "stem": "będę pracowa",
-                    "ending": "ł/a",
+                    "stem": "będę",
+                    "ending": " pracował/a",
                     "polishRest": " jutro rano.",
+                    "polish": "Jutro rano będę pracował/a jutro rano.",
                     "english": "I will be working tomorrow morning.",
                     "infinitive": "pracować – to work"
                 },
                 {
-                    "stem": "będzie czyta",
-                    "ending": "ł/a",
+                    "stem": "będzie",
+                    "ending": " czytał/a",
                     "polishRest": " w bibliotece.",
+                    "polish": "W bibliotece będzie czytał/a.",
                     "english": "He/She will be reading at the library.",
                     "infinitive": "czytać – to read"
                 },
                 {
-                    "stem": "będzie malowa",
-                    "ending": "ł/a",
+                    "stem": "będzie",
+                    "ending": " malował/a",
                     "polishRest": " pokój.",
+                    "polish": "Będzie malował/a pokój.",
                     "english": "He/She will be painting the room.",
                     "infinitive": "malować – to paint"
                 },
                 {
-                    "stem": "Będą tańcz",
-                    "ending": "yć",
+                    "stem": "Będą",
+                    "ending": " tańczyć",
                     "polishRest": " na imprezie.",
+                    "polish": "Będą tańczyć na imprezie.",
                     "english": "They will be dancing at the party.",
                     "infinitive": "tańczyć – to dance"
                 },
                 {
-                    "stem": "Będziemy pi",
-                    "ending": "ć",
+                    "stem": "Będziemy",
+                    "ending": " pić",
                     "polishRest": " kawę.",
+                    "polish": "Będziemy pić kawę.",
                     "english": "We will be drinking coffee.",
                     "infinitive": "pić – to drink"
                 }
@@ -165,37 +185,42 @@
             "exercise": "Exercise 05",
             "rows": [
                 {
-                    "stem": "Będę jech",
-                    "ending": "ał/a",
+                    "stem": "Będę",
+                    "ending": " jechał/a",
                     "polishRest": " do pracy autobusem.",
+                    "polish": "Będę jechał/a do pracy autobusem.",
                     "english": "I will be going to work by bus.",
                     "infinitive": "jechać – to go"
                 },
                 {
-                    "stem": "Będzie wraca",
-                    "ending": "ł/a",
+                    "stem": "Będzie",
+                    "ending": " wracał/a",
                     "polishRest": " późno.",
+                    "polish": "Będzie wracał/a późno.",
                     "english": "He/She will be coming back late.",
                     "infinitive": "wracać – to return"
                 },
                 {
-                    "stem": "będę myśla",
-                    "ending": "ł/a",
+                    "stem": "będę",
+                    "ending": " myślał/a",
                     "polishRest": " o tym cały dzień.",
+                    "polish": "Cały dzień będę myślał/a o tym cały dzień.",
                     "english": "I will be thinking about it all day.",
                     "infinitive": "myśleć – to think"
                 },
                 {
-                    "stem": "Będzie słucha",
-                    "ending": "ł/a",
+                    "stem": "Będzie",
+                    "ending": " słuchał/a",
                     "polishRest": " muzyki.",
+                    "polish": "Będzie słuchał/a muzyki.",
                     "english": "He/She will be listening to music.",
                     "infinitive": "słuchać – to listen"
                 },
                 {
-                    "stem": "Będą patrze",
-                    "ending": "ć",
+                    "stem": "Będą",
+                    "ending": " patrzeć",
                     "polishRest": " w niebo.",
+                    "polish": "Będą patrzeć w niebo.",
                     "english": "They will be looking at the sky.",
                     "infinitive": "patrzeć – to look"
                 }

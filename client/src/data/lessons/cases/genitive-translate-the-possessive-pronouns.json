@@ -1,0 +1,245 @@
+{
+    "class": "Genitive - Complete The Sentences",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "stem": "moj",
+                    "ending": "ego",
+                    "polishRest": " sąsiada na balkonie.",
+                    "english": "I cannot see my neighbour on the balcony.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "siostr",
+                    "ending": "y",
+                    "polishRest": " chce mleka.",
+                    "english": "My sister's cat wants some milk.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "nasz",
+                    "ending": "ego",
+                    "polishRest": " obiadu.",
+                    "english": "We haven't eaten our dinner.",
+                    "pronoun": "our"
+                },
+                {
+                    "stem": "tw",
+                    "ending": "ego",
+                    "polishRest": " domu?",
+                    "english": "Maybe we will go to your (Sg) house?",
+                    "pronoun": "your"
+                },
+                {
+                    "stem": "nasz",
+                    "ending": "ej",
+                    "polishRest": " babci.",
+                    "english": "We go to our grandma's birthday.",
+                    "pronoun": "our"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "stem": "tw",
+                    "ending": "ej",
+                    "polishRest": " pomocy nie dam rady.",
+                    "english": "Without your (Sg) help I cannot do that.",
+                    "pronoun": "your"
+                },
+                {
+                    "stem": "wasz",
+                    "ending": "ego",
+                    "polishRest": " psa.",
+                    "english": "I'm afraid of your (Pl) dog.",
+                    "pronoun": "your"
+                },
+                {
+                    "stem": "moj",
+                    "ending": "ych",
+                    "polishRest": " dzieci co robiły dzisiaj w szkole.",
+                    "english": "I'm asking my children what they've been doing at school today.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "tw",
+                    "ending": "ego",
+                    "polishRest": " długopisu?",
+                    "english": "Can I use your (Sg) pen?",
+                    "pronoun": "your"
+                },
+                {
+                    "stem": "wasz",
+                    "ending": "ych",
+                    "polishRest": " braci.",
+                    "english": "I avoid your (Pl) brothers.",
+                    "pronoun": "your"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03",
+            "rows": [
+                {
+                    "stem": "moj",
+                    "ending": "ego",
+                    "polishRest": " krzesła w pokoju.",
+                    "english": "My chair is missing in the room.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "moj",
+                    "ending": "ych",
+                    "polishRest": " wnuków.",
+                    "english": "I look after my grandchildren.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "moj",
+                    "ending": "ej",
+                    "polishRest": " roli.",
+                    "english": "I'm learning my role.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "tw",
+                    "ending": "ych",
+                    "polishRest": " dokumentów z domu.",
+                    "english": "I forgot your (Sg) documents from home.",
+                    "pronoun": "your"
+                },
+                {
+                    "stem": "nasz",
+                    "ending": "ej",
+                    "polishRest": " piłki w krzakach.",
+                    "english": "I'm looking for our ball in the bushes.",
+                    "pronoun": "our"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04",
+            "rows": [
+                {
+                    "stem": "tw",
+                    "ending": "ego",
+                    "polishRest": " roweru, by dostać się do szkoły.",
+                    "english": "I needed your (Sg) bike to get to school.",
+                    "pronoun": "your"
+                },
+                {
+                    "stem": "nasz",
+                    "ending": "ego",
+                    "polishRest": " występu zabrakło prądu.",
+                    "english": "During our performance there was no electricity.",
+                    "pronoun": "our"
+                },
+                {
+                    "stem": "tw",
+                    "ending": "ego",
+                    "polishRest": " domu stoi czarny samochód.",
+                    "english": "Next to your (Sg) house there is a black car.",
+                    "pronoun": "your"
+                },
+                {
+                    "stem": "ich",
+                    "ending": "ej",
+                    "polishRest": " wioski.",
+                    "english": "There is nothing left of their village.",
+                    "pronoun": "their"
+                },
+                {
+                    "stem": "tw",
+                    "ending": "ego",
+                    "polishRest": " chłopaka.",
+                    "english": "I have a message for your (Sg) boyfriend.",
+                    "pronoun": "your"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 05",
+            "rows": [
+                {
+                    "stem": "nasz",
+                    "ending": "ych",
+                    "polishRest": " uczniów panuje zdrowa rywalizacja.",
+                    "english": "There is healthy competition among our students.",
+                    "pronoun": "our"
+                },
+                {
+                    "stem": "moj",
+                    "ending": "ej",
+                    "polishRest": " koleżanki.",
+                    "english": "This is my friend's pencil.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "twoj",
+                    "ending": "ej",
+                    "polishRest": " mamy leżą w przedpokoju.",
+                    "english": "Your (Sg) mom's shoes are in the hallway.",
+                    "pronoun": "your"
+                },
+                {
+                    "stem": "wasz",
+                    "ending": "ych",
+                    "polishRest": " pieniędzy!",
+                    "english": "I don't have your (Pl) money!",
+                    "pronoun": "your"
+                },
+                {
+                    "stem": "jej",
+                    "ending": " ulubionej",
+                    "polishRest": " muzyki.",
+                    "english": "I'm listening to her favourite music.",
+                    "pronoun": "her"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 06",
+            "rows": [
+                {
+                    "stem": "twoj",
+                    "ending": "ej",
+                    "polishRest": " szkoły.",
+                    "english": "I'm near your (Sg) school.",
+                    "pronoun": "your"
+                },
+                {
+                    "stem": "wasz",
+                    "ending": "ej",
+                    "polishRest": " ulubionej herbaty.",
+                    "english": "I'll prepare a glass of your (Pl) favorite tea.",
+                    "pronoun": "your"
+                },
+                {
+                    "stem": "twoj",
+                    "ending": "ych",
+                    "polishRest": " książek!",
+                    "english": "I have all your (Sg) five books!",
+                    "pronoun": "your"
+                },
+                {
+                    "stem": "wasz",
+                    "ending": "ych",
+                    "polishRest": " wiadomości.",
+                    "english": "I don't read your (Pl) messages.",
+                    "pronoun": "your"
+                },
+                {
+                    "stem": "twoj",
+                    "ending": "ych",
+                    "polishRest": " wymówek!",
+                    "english": "I hate your (Sg) excuses!",
+                    "pronoun": "your"
+                }
+            ]
+        }
+    ]
+}

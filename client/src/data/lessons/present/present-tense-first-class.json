@@ -8,6 +8,7 @@
                     "stem": "chc",
                     "ending": "esz",
                     "polishRest": " pójść ze mną do kina?",
+                    "polish": "Czy chcesz pójść ze mną do kina?",
                     "english": "Do you (Sg) want to go to the cinema with me?",
                     "infinitive": "chcieć – to want"
                 },
@@ -15,6 +16,7 @@
                     "stem": "Pisz",
                     "ending": "ę",
                     "polishRest": " list do swojej dziewczyny.",
+                    "polish": "Piszę list do swojej dziewczyny.",
                     "english": "I am writing a letter to my girlfriend.",
                     "infinitive": "pisać – to write"
                 },
@@ -22,6 +24,7 @@
                     "stem": "płacz",
                     "ending": "ą",
                     "polishRest": ", bo zgubiły swoje zabawki.",
+                    "polish": "Dzieci płaczą, bo zgubiły swoje zabawki.",
                     "english": "Children cry because they lost their toys.",
                     "infinitive": "płakać – to cry"
                 },
@@ -29,6 +32,7 @@
                     "stem": "Pij",
                     "ending": "emy",
                     "polishRest": " piwo nad jeziorem.",
+                    "polish": "Pijemy piwo nad jeziorem.",
                     "english": "We drink beer by the lake.",
                     "infinitive": "pić – to drink"
                 },
@@ -36,6 +40,7 @@
                     "stem": "kupuj",
                     "ending": "esz",
                     "polishRest": " tylko ekologiczne produkty?",
+                    "polish": "Czy nadal kupujesz tylko ekologiczne produkty?",
                     "english": "Are you (Sg) still buying only organic products?",
                     "infinitive": "kupować – to buy"
                 }
@@ -48,6 +53,7 @@
                     "stem": "Całuj",
                     "ending": "ę",
                     "polishRest": " się z moją dziewczyną.",
+                    "polish": "Całuję się z moją dziewczyną.",
                     "english": "I'm kissing my girlfriend.",
                     "infinitive": "całować – to kiss"
                 },
@@ -55,6 +61,7 @@
                     "stem": "Gotuj",
                     "ending": "emy",
                     "polishRest": " obiad na jutro.",
+                    "polish": "Gotujemy obiad na jutro.",
                     "english": "We're cooking dinner for tomorrow.",
                     "infinitive": "gotować – to cook"
                 },
@@ -62,6 +69,7 @@
                     "stem": "pracuj",
                     "ending": "ecie",
                     "polishRest": " nad nowym rozwiązaniem?",
+                    "polish": "Czy pracujecie nad nowym rozwiązaniem?",
                     "english": "Do you (Pl) work on a new solution?",
                     "infinitive": "pracować – to work"
                 },
@@ -69,6 +77,7 @@
                     "stem": "Kład",
                     "ending": "ę",
                     "polishRest": " twoje książki na stole.",
+                    "polish": "Kładę twoje książki na stole.",
                     "english": "I put your books on the table.",
                     "infinitive": "kłaść – to put"
                 },
@@ -76,6 +85,7 @@
                     "stem": "jad",
                     "ending": "ą",
                     "polishRest": " na wycieczkę do Hiszpanii.",
+                    "polish": "Dzieci jadą na wycieczkę do Hiszpanii.",
                     "english": "My children are going on a trip to Spain.",
                     "infinitive": "jechać – to go/drive"
                 }
@@ -88,6 +98,7 @@
                     "stem": "śmiej",
                     "ending": "ą",
                     "polishRest": " się z mojego żartu.",
+                    "polish": "Goście śmieją się z mojego żartu.",
                     "english": "The guests laugh at my joke.",
                     "infinitive": "śmiać się – to laugh"
                 },
@@ -95,6 +106,7 @@
                     "stem": "Żyj",
                     "ending": "emy",
                     "polishRest": " w dziwnych czasach.",
+                    "polish": "Żyjemy w dziwnych czasach.",
                     "english": "We live in strange times.",
                     "infinitive": "żyć – to live"
                 },
@@ -102,6 +114,7 @@
                     "stem": "Dyskutuj",
                     "ending": "ę",
                     "polishRest": " z moją mamą kwestię naszego wyjazdu.",
+                    "polish": "Dyskutuję z moją mamą kwestię naszego wyjazdu.",
                     "english": "I am discussing the issue of our trip with my mother.",
                     "infinitive": "dyskutować – to discuss"
                 },
@@ -109,6 +122,7 @@
                     "stem": "Obserwuj",
                     "ending": "emy",
                     "polishRest": " dzikie zwierzęta w puszczy.",
+                    "polish": "Obserwujemy dzikie zwierzęta w puszczy.",
                     "english": "We observe wild animals in the wilderness.",
                     "infinitive": "obserwować – to observe"
                 },
@@ -116,6 +130,7 @@
                     "stem": "rysuj",
                     "ending": "esz",
                     "polishRest": "?",
+                    "polish": "Co rysujesz?",
                     "english": "What are you (Sg) drawing?",
                     "infinitive": "rysować – to draw"
                 }
@@ -128,6 +143,7 @@
                     "stem": "biegn",
                     "ending": "ę",
                     "polishRest": " na przystanek.",
+                    "polish": "Właśnie biegnę na przystanek.",
                     "english": "I'm just running to the bus stop.",
                     "infinitive": "biegnąć – to run"
                 },
@@ -135,6 +151,7 @@
                     "stem": "buduj",
                     "ending": "ecie",
                     "polishRest": " nowy hotel?",
+                    "polish": "Czy budujecie nowy hotel?",
                     "english": "Do you (Pl) build a new hotel?",
                     "infinitive": "budować – to build"
                 },
@@ -142,20 +159,23 @@
                     "stem": "planuj",
                     "ending": "emy",
                     "polishRest": " nasz wyjazd na Wyspy Kanaryjskie.",
+                    "polish": "Od rana planujemy nasz wyjazd na Wyspy Kanaryjskie.",
                     "english": "From the morning, we plan our trip to the Canary Islands.",
                     "infinitive": "planować – to plan"
                 },
                 {
                     "stem": "moż",
                     "ending": "emy",
-                    "polishRest": " się trochę spóźnić?",
+                    "polishRest": " się",
+                    "polish": "Czy możemy się trochę spóźnić?",
                     "english": "Can we be a little late?",
                     "infinitive": "móc – can"
                 },
                 {
                     "stem": "myj",
                     "ending": "e",
-                    "polishRest": " się.",
+                    "polishRest": " się",
+                    "polish": "Magda jest w łazience i myję się.",
                     "english": "Magda is in the bathroom and washes herself.",
                     "infinitive": "myć się – to wash oneself"
                 }
@@ -168,6 +188,7 @@
                     "stem": "bior",
                     "ending": "ę",
                     "polishRest": " twój samochód na zakupy.",
+                    "polish": "Tato, biorę twój samochód na zakupy.",
                     "english": "Dad, I'm taking your car for shopping.",
                     "infinitive": "brać – to take"
                 },
@@ -175,6 +196,7 @@
                     "stem": "idzi",
                     "ending": "emy",
                     "polishRest": " na imprezę.",
+                    "polish": "Idziemy na imprezę.",
                     "english": "Tonight we are going to a party.",
                     "infinitive": "iść – to go"
                 },
@@ -182,6 +204,7 @@
                     "stem": "moż",
                     "ending": "esz",
                     "polishRest": " mi pomóc?",
+                    "polish": "Czy możesz mi pomóc?",
                     "english": "Can you (Sg) help me?",
                     "infinitive": "móc – can"
                 },
@@ -189,6 +212,7 @@
                     "stem": "pisz",
                     "ending": "e",
                     "polishRest": " książkę o Drugiej Wojnie Światowej.",
+                    "polish": "Mój dziadek pisze książkę o Drugiej Wojnie Światowej.",
                     "english": "My grandfather is writing a book about the Second World War.",
                     "infinitive": "pisać – to write"
                 },
@@ -196,6 +220,7 @@
                     "stem": "gotuj",
                     "ending": "ę",
                     "polishRest": " obiad.",
+                    "polish": "Nie mogę rozmawiać, bo właśnie gotuję obiad.",
                     "english": "I cannot talk because I'm cooking dinner right now.",
                     "infinitive": "gotować – to cook"
                 }

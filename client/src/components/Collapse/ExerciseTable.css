@@ -1,3 +1,4 @@
+/* Wrapper for horizontal scroll and card styling */
 .table-wrapper {
     overflow-x: auto;
     margin-top: 0.8rem;
@@ -8,6 +9,7 @@
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
 
+/* Table styling */
 .exercise-table {
     width: 100%;
     border-collapse: separate;
@@ -17,6 +19,7 @@
     overflow: hidden;
 }
 
+/* Table header */
 .exercise-table th,
 .exercise-table td {
     padding: 0.65rem;
@@ -31,6 +34,7 @@
     top: 0;
 }
 
+/* Table row styling */
 .exercise-table tr:nth-child(even) {
     background-color: rgba(220, 38, 38, 0.05);
 }
@@ -39,11 +43,81 @@
     background-color: rgba(220, 38, 38, 0.12);
 }
 
-.polish .stem {
-    font-weight: 700;
+/* Polish cell styling */
+.polish {
+    font-size: 0.95rem;
+    line-height: 1.4;
 }
 
-.polish .ending-present {
-    font-style: italic;
+/* Stem + ending highlight */
+.stem {
     color: #dc2626;
+    /* red stem */
+    font-weight: bold;
+    cursor: help;
+}
+
+.ending {
+    color: #2563eb;
+    /* blue ending */
+    font-weight: bold;
+    font-style: italic;
+    cursor: help;
+}
+
+/* Optional: subtle glow for card content */
+.exercise-card-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Collapse header styling */
+.collapse-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+    background-color: rgba(220, 38, 38, 0.05);
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collapse-header.active {
+    background-color: rgba(220, 38, 38, 0.15);
+}
+
+.collapse-header:hover {
+    background-color: rgba(220, 38, 38, 0.12);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.toggle-btn {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #dc2626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    transition: transform 0.3s ease;
+}
+
+.collapse-header.active .toggle-btn {
+    transform: rotate(180deg);
+}
+
+/* Collapse content animation */
+.collapse-content {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.collapse-content.open {
+    max-height: 2000px;
+    opacity: 1;
 }

@@ -8,6 +8,7 @@
                     "stem": "Czek",
                     "ending": "amy",
                     "polishRest": " na samolot na lotnisku.",
+                    "polish": "Czekamy na samolot na lotnisku.",
                     "english": "We are waiting for the plane at the airport.",
                     "infinitive": "czekać – to wait"
                 },
@@ -15,6 +16,7 @@
                     "stem": "czyt",
                     "ending": "asz",
                     "polishRest": " książkę, którą Ci poleciłem?",
+                    "polish": "Czytasz książkę, którą Ci poleciłem?",
                     "english": "Do you (Sg) read the book that I recommended to you?",
                     "infinitive": "czytać – to read"
                 },
@@ -22,6 +24,7 @@
                     "stem": "Wit",
                     "ending": "amy",
                     "polishRest": " w Polsce!",
+                    "polish": "Witamy w Polsce!",
                     "english": "Welcome (Pl) to Poland!",
                     "infinitive": "witać – to welcome"
                 },
@@ -29,6 +32,7 @@
                     "stem": "szuk",
                     "ending": "ają",
                     "polishRest": " złodziei.",
+                    "polish": "Szukają złodziei.",
                     "english": "Police officers have been looking for thieves since yesterday.",
                     "infinitive": "szukać – to search"
                 },
@@ -36,6 +40,7 @@
                     "stem": "narzek",
                     "ending": "ają",
                     "polishRest": ".",
+                    "polish": "Narzekają.",
                     "english": "Poles often complain.",
                     "infinitive": "narzekać – to complain"
                 }
@@ -48,6 +53,7 @@
                     "stem": "pomag",
                     "ending": "a",
                     "polishRest": " mi dokończyć projekt.",
+                    "polish": "Pomaga mi dokończyć projekt.",
                     "english": "Your (Sg) sister helps me finish the project.",
                     "infinitive": "pomagać – to help"
                 },
@@ -55,6 +61,7 @@
                     "stem": "zamyk",
                     "ending": "asz",
                     "polishRest": " drzwi?",
+                    "polish": "Zamykasz drzwi?",
                     "english": "Why do not you (Sg) ever close the door?",
                     "infinitive": "zamykać – to close"
                 },
@@ -62,6 +69,7 @@
                     "stem": "przeprasza",
                     "ending": "łem",
                     "polishRest": ".",
+                    "polish": "Przepraszałem.",
                     "english": "I apologize for what I said.",
                     "infinitive": "przepraszać – to apologize"
                 },
@@ -69,6 +77,7 @@
                     "stem": "Pływ",
                     "ending": "amy",
                     "polishRest": " w basenie.",
+                    "polish": "Pływamy w basenie.",
                     "english": "We swim in the pool.",
                     "infinitive": "pływać – to swim"
                 },
@@ -76,6 +85,7 @@
                     "stem": "D",
                     "ending": "am",
                     "polishRest": " Ci ostatnią szansę.",
+                    "polish": "Dam Ci ostatnią szansę.",
                     "english": "I will give you the last chance.",
                     "infinitive": "dać – to give"
                 }
@@ -88,6 +98,7 @@
                     "stem": "sprząt",
                     "ending": "ają",
                     "polishRest": " biuro.",
+                    "polish": "Sprzątają biuro.",
                     "english": "Cleaning ladies are cleaning the office.",
                     "infinitive": "sprzątać – to tidy up"
                 },
@@ -95,6 +106,7 @@
                     "stem": "pyt",
                     "ending": "a",
                     "polishRest": ", czy przygotowaliśmy już raport.",
+                    "polish": "Pyta, czy przygotowaliśmy już raport.",
                     "english": "The boss asks if we have already prepared the report.",
                     "infinitive": "pytać – to ask"
                 },
@@ -102,6 +114,7 @@
                     "stem": "Gr",
                     "ending": "amy",
                     "polishRest": " dzisiaj wieczorem w pokera?",
+                    "polish": "Gramy dzisiaj wieczorem w pokera?",
                     "english": "Do we play poker this evening?",
                     "infinitive": "grać – to play"
                 },
@@ -109,6 +122,7 @@
                     "stem": "Rozmawia",
                     "ending": "m",
                     "polishRest": " z twoim bratem.",
+                    "polish": "Rozmawiam z twoim bratem.",
                     "english": "I'm talking to your brother.",
                     "infinitive": "rozmawiać – to talk"
                 },
@@ -116,6 +130,7 @@
                     "stem": "Koch",
                     "ending": "am",
                     "polishRest": " Cię!",
+                    "polish": "Kocham Cię!",
                     "english": "I love you!",
                     "infinitive": "kochać – to love"
                 }
@@ -128,6 +143,7 @@
                     "stem": "napraw",
                     "ending": "iamy",
                     "polishRest": " nasz samochód.",
+                    "polish": "Naprawiamy nasz samochód.",
                     "english": "We are just repairing our car.",
                     "infinitive": "naprawiać – to repair"
                 },
@@ -135,6 +151,7 @@
                     "stem": "słuch",
                     "ending": "asz",
                     "polishRest": " tej samej muzyki co ja!",
+                    "polish": "Słuchasz tej samej muzyki co ja!",
                     "english": "It looks like you're (Sg) listening to the same music as me!",
                     "infinitive": "słuchać – to listen"
                 },
@@ -142,6 +159,7 @@
                     "stem": "używ",
                     "ending": "asz",
                     "polishRest": " mojej szczoteczki?",
+                    "polish": "Używasz mojej szczoteczki?",
                     "english": "Why do you (Sg) use my toothbrush?",
                     "infinitive": "używać – to use"
                 },
@@ -149,6 +167,7 @@
                     "stem": "zmusz",
                     "ending": "ają",
                     "polishRest": " mnie do chodzenia spać wcześnie.",
+                    "polish": "Zmuszają mnie do chodzenia spać wcześnie.",
                     "english": "My parents are forcing me to go to bed early.",
                     "infinitive": "zmuszać – to force"
                 },
@@ -156,6 +175,7 @@
                     "stem": "żegn",
                     "ending": "a się",
                     "polishRest": " ze swoim chłopakiem.",
+                    "polish": "Żegna się ze swoim chłopakiem.",
                     "english": "My sister says goodbye to her boyfriend for an hour.",
                     "infinitive": "żegnać – to say goodbye"
                 }
@@ -168,6 +188,7 @@
                     "stem": "mas",
                     "ending": "z",
                     "polishRest": " pożyczyć mi trochę pieniędzy?",
+                    "polish": "Masz pożyczyć mi trochę pieniędzy?",
                     "english": "Do you (Sg) have some money to lend me?",
                     "infinitive": "mieć – to have"
                 },
@@ -175,6 +196,7 @@
                     "stem": "Szuk",
                     "ending": "am",
                     "polishRest": " nowego mieszkania.",
+                    "polish": "Szukam nowego mieszkania.",
                     "english": "I am looking for a new flat.",
                     "infinitive": "szukać – to search"
                 },
@@ -182,13 +204,15 @@
                     "stem": "pyt",
                     "ending": "ają",
                     "polishRest": ", kiedy wrócisz.",
+                    "polish": "Pytają, kiedy wrócisz.",
                     "english": "Parents ask when you will be back.",
                     "infinitive": "pytać – to ask"
                 },
                 {
                     "stem": "rozmawi",
                     "ending": "ać",
-                    "polishRest": ", bo gr am na komputerze.",
+                    "polishRest": ", bo gram na komputerze.",
+                    "polish": "Rozmawiam, bo gram na komputerze.",
                     "english": "I cannot talk because I play on a computer.",
                     "infinitive": "grać – to play"
                 },
@@ -196,6 +220,7 @@
                     "stem": "M",
                     "ending": "amy",
                     "polishRest": " szczęście, że nikt nas nie złapał!",
+                    "polish": "Mamy szczęście, że nikt nas nie złapał!",
                     "english": "We're lucky that nobody caught us!",
                     "infinitive": "mieć – to have"
                 }

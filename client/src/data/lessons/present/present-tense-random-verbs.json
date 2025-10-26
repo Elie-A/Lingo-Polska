@@ -5,86 +5,137 @@
             "exercise": "Exercise 01",
             "rows": [
                 {
+                    "stem": "Czek",
+                    "ending": "amy",
+                    "polishRest": " na samolot na lotnisku.",
                     "polish": "Czekamy na samolot na lotnisku.",
                     "english": "We are waiting for the plane at the airport.",
                     "infinitive": "czekać – to wait"
                 },
                 {
+                    "stem": "Wydaj",
+                    "ending": "e",
+                    "polishRest": " mi się, że chodzimy w kółko.",
                     "polish": "Wydaje mi się, że chodzimy w kółko.",
                     "english": "It seems to me that we go around in circles.",
                     "infinitive": "chodzić – to walk"
                 },
                 {
+                    "stem": "śmiej",
+                    "ending": "ą",
+                    "polishRest": " się z mojego żartu.",
                     "polish": "Goście śmieją się z mojego żartu.",
                     "english": "The guests laugh at my joke.",
                     "infinitive": "śmiać się – to laugh"
                 },
                 {
+                    "stem": "Rozum",
+                    "ending": "iesz",
+                    "polishRest": " co mam na myśli?",
                     "polish": "Rozumiesz co mam na myśli?",
                     "english": "Do you (Sg) understand what I mean?",
                     "infinitive": "rozumieć – to understand"
                 },
                 {
+                    "stem": "Um",
+                    "ending": "iesz",
+                    "polishRest": " mówić po polsku?",
                     "polish": "Czy umiesz mówić po polsku?",
                     "english": "Can you (Sg) speak Polish?",
                     "infinitive": "umieć – can"
                 },
                 {
+                    "stem": "chc",
+                    "ending": "esz",
+                    "polishRest": " pójść ze mną do kina?",
                     "polish": "Czy chcesz pójść ze mną do kina?",
                     "english": "Do you (Sg) want to go to the cinema with me?",
                     "infinitive": "chcieć – to want"
                 },
                 {
+                    "stem": "Czyt",
+                    "ending": "asz",
+                    "polishRest": " książkę, którą Ci poleciłem?",
                     "polish": "Czy czytasz książkę, którą Ci poleciłem?",
                     "english": "Do you (Sg) read the book that I recommended to you?",
                     "infinitive": "czytać – to read"
                 },
                 {
+                    "stem": "Mów",
+                    "ending": "ią",
+                    "polishRest": " mi, co mam robić.",
                     "polish": "Moi rodzice bez przerwy mówią mi, co mam robić.",
                     "english": "My parents are constantly telling me what to do.",
                     "infinitive": "mówić – to speak"
                 },
                 {
+                    "stem": "jad",
+                    "ending": "ą",
+                    "polishRest": " na wycieczkę do Hiszpanii.",
                     "polish": "Moje dzieci jadą na wycieczkę do Hiszpanii.",
                     "english": "My children are going on a trip to Spain.",
                     "infinitive": "jechać – to drive"
                 },
                 {
+                    "stem": "Wit",
+                    "ending": "amy",
+                    "polishRest": " w Polsce!",
                     "polish": "Witamy w Polsce!",
                     "english": "Welcome (Pl) to Poland!",
                     "infinitive": "witać – to welcome"
                 },
                 {
+                    "stem": "Żyj",
+                    "ending": "emy",
+                    "polishRest": " w dziwnych czasach.",
                     "polish": "Żyjemy w dziwnych czasach.",
                     "english": "We live in strange times.",
                     "infinitive": "żyć – to live"
                 },
                 {
+                    "stem": "Szuk",
+                    "ending": "ają",
+                    "polishRest": " złodziei od wczoraj.",
                     "polish": "Od wczoraj policjanci szukają złodziei.",
                     "english": "Police officers have been looking for thieves since yesterday.",
                     "infinitive": "szukać – to search"
                 },
                 {
+                    "stem": "Lub",
+                    "ending": "isz",
+                    "polishRest": " słuchać muzyki?",
                     "polish": "Czy lubisz słuchać muzyki?",
                     "english": "Do you (Sg) like listening to the music?",
                     "infinitive": "lubić – to like"
                 },
                 {
+                    "stem": "Marz",
+                    "ending": "ymy",
+                    "polishRest": " by polecieć do Stanów Zjednoczonych.",
                     "polish": "Marzymy by polecieć do Stanów Zjednoczonych.",
                     "english": "We dream to fly to the United States.",
                     "infinitive": "marzyć – to dream"
                 },
                 {
+                    "stem": "Narzek",
+                    "ending": "ają",
+                    "polishRest": ".",
                     "polish": "Polacy często narzekają.",
                     "english": "Poles often complain.",
                     "infinitive": "narzekać – to complain"
                 },
                 {
+                    "stem": "Dyskutuj",
+                    "ending": "ę",
+                    "polishRest": " właśnie z moją mamą kwestię naszego wyjazdu.",
                     "polish": "Dyskutuję właśnie z moją mamą kwestię naszego wyjazdu.",
                     "english": "I am discussing the issue of our trip with my mother.",
                     "infinitive": "dyskutować – to discuss"
                 },
                 {
+                    "stem": "Leż",
+                    "ending": "ymy",
+                    "polishRest": " na plaży.",
                     "polish": "Właśnie leżymy na plaży.",
                     "english": "We're just lying on the beach.",
                     "infinitive": "leżeć – to lie"
@@ -95,86 +146,137 @@
             "exercise": "Exercise 02",
             "rows": [
                 {
+                    "stem": "Rys",
+                    "ending": "ujesz",
+                    "polishRest": "?",
                     "polish": "Co rysujesz?",
                     "english": "What are you (Sg) drawing?",
                     "infinitive": "rysować – to draw"
                 },
                 {
+                    "stem": "Rob",
+                    "ending": "ię",
+                    "polishRest": " kanapki na kolację.",
                     "polish": "Robię kanapki na kolację.",
                     "english": "I make sandwiches for supper.",
                     "infinitive": "robić – to make"
                 },
                 {
+                    "stem": "Jedz",
+                    "ending": "ą",
+                    "polishRest": " śniadanie.",
                     "polish": "Uczniowie jedzą śniadanie.",
                     "english": "Pupils eat breakfast.",
                     "infinitive": "jeść – to eat"
                 },
                 {
+                    "stem": "Słys",
+                    "ending": "ę",
+                    "polishRest": " co mówisz.",
                     "polish": "Nie słyszę co mówisz.",
                     "english": "I can not hear what you're saying.",
                     "infinitive": "słyszeć – to hear"
                 },
                 {
+                    "stem": "Pomag",
+                    "ending": "a",
+                    "polishRest": " mi dokończyć projekt.",
                     "polish": "Twoja siostra pomaga mi dokończyć projekt.",
                     "english": "Your (Sg) sister helps me finish the project.",
                     "infinitive": "pomagać – to help"
                 },
                 {
+                    "stem": "Zamyk",
+                    "ending": "asz",
+                    "polishRest": " drzwi?",
                     "polish": "Dlaczego nigdy nie zamykasz drzwi?",
                     "english": "Why do not you (Sg) ever close the door?",
                     "infinitive": "zamykać – to close"
                 },
                 {
+                    "stem": "Obserwuj",
+                    "ending": "emy",
+                    "polishRest": " dzikie zwierzęta w puszczy.",
                     "polish": "Obserwujemy dzikie zwierzęta w puszczy.",
                     "english": "We observe wild animals in the wilderness.",
                     "infinitive": "obserwować – to observe"
                 },
                 {
+                    "stem": "Rob",
+                    "ending": "imy",
+                    "polishRest": " zadanie domowe.",
                     "polish": "Robimy zadanie domowe.",
                     "english": "We do homework.",
                     "infinitive": "robić – to do"
                 },
                 {
+                    "stem": "Wiem",
+                    "ending": "",
+                    "polishRest": ", że jest ci trudno.",
                     "polish": "Wiem, że jest ci trudno.",
                     "english": "I know it is difficult for you.",
                     "infinitive": "wiedzieć – to know"
                 },
                 {
+                    "stem": "Biegn",
+                    "ending": "ę",
+                    "polishRest": " na przystanek.",
                     "polish": "Właśnie biegnę na przystanek.",
                     "english": "I'm just running to the bus stop.",
                     "infinitive": "biegnąć – to run"
                 },
                 {
+                    "stem": "Kład",
+                    "ending": "ę",
+                    "polishRest": " twoje książki na stole.",
                     "polish": "Kładę twoje książki na stole.",
                     "english": "I put your books on the table.",
                     "infinitive": "kłaść – to put"
                 },
                 {
+                    "stem": "Przeprasz",
+                    "ending": "am",
+                    "polishRest": " za to, co powiedziałem.",
                     "polish": "Przepraszam za to, co powiedziałem.",
                     "english": "I apologize for what I said.",
                     "infinitive": "przepraszać – to apologize"
                 },
                 {
+                    "stem": "Pisz",
+                    "ending": "ę",
+                    "polishRest": " list do swojej dziewczyny.",
                     "polish": "Piszę list do swojej dziewczyny.",
                     "english": "I am writing a letter to my girlfriend.",
                     "infinitive": "pisać – to write"
                 },
                 {
+                    "stem": "Leż",
+                    "ending": "ę",
+                    "polishRest": " w łóżku.",
                     "polish": "Jestem chory i leżę w łóżku.",
                     "english": "I'm sick and I'm lying in bed.",
                     "infinitive": "leżeć – to lie"
                 },
                 {
+                    "stem": "Musz",
+                    "ending": "ę",
+                    "polishRest": " już iść do domu.",
                     "polish": "Muszę już iść do domu.",
                     "english": "I have to go home.",
                     "infinitive": "musieć – must"
                 },
                 {
+                    "stem": "Pływ",
+                    "ending": "amy",
+                    "polishRest": " w basenie.",
                     "polish": "Pływamy w basenie.",
                     "english": "We swim in the pool.",
                     "infinitive": "pływać – to swim"
                 },
                 {
+                    "stem": "Da",
+                    "ending": "m",
+                    "polishRest": " Ci ostatnią szansę.",
                     "polish": "Dam Ci ostatnią szansę.",
                     "english": "I will give you the last chance.",
                     "infinitive": "dać – to give"
@@ -185,86 +287,137 @@
             "exercise": "Exercise 03",
             "rows": [
                 {
+                    "stem": "Wiesz",
+                    "ending": "",
+                    "polishRest": " ile czasu nam potrzeba?",
                     "polish": "Czy wiesz ile czasu nam potrzeba?",
                     "english": "Do you (Sg) know how much time we need?",
                     "infinitive": "wiedzieć – to know"
                 },
                 {
+                    "stem": "Płacz",
+                    "ending": "ą",
+                    "polishRest": ", bo zgubiły swoje zabawki.",
                     "polish": "Dzieci płaczą, bo zgubiły swoje zabawki.",
                     "english": "Children cry because they lost their toys.",
                     "infinitive": "płakać – to cry"
                 },
                 {
+                    "stem": "Planuj",
+                    "ending": "emy",
+                    "polishRest": " nasz wyjazd na Wyspy Kanaryjskie.",
                     "polish": "Od rana planujemy nasz wyjazd na Wyspy Kanaryjskie.",
                     "english": "From the morning, we plan our trip to the Canary Islands.",
                     "infinitive": "planować – to plan"
                 },
                 {
+                    "stem": "Pal",
+                    "ending": "icie",
+                    "polishRest": " papierosy?",
                     "polish": "Czy palicie papierosy?",
                     "english": "Do you (Pl) smoke cigarettes?",
                     "infinitive": "palić – to smoke"
                 },
                 {
+                    "stem": "Buduj",
+                    "ending": "ecie",
+                    "polishRest": " nowy hotel?",
                     "polish": "Czy budujecie nowy hotel?",
                     "english": "Do you (Pl) build a new hotel?",
                     "infinitive": "budować – to build"
                 },
                 {
+                    "stem": "Sprząta",
+                    "ending": "ją",
+                    "polishRest": " biuro.",
                     "polish": "Sprzątaczki sprzątają biuro.",
                     "english": "Cleaning ladies are cleaning the office.",
                     "infinitive": "sprzątać – to tidy up"
                 },
                 {
+                    "stem": "Pyt",
+                    "ending": "a",
+                    "polishRest": ", czy przygotowaliśmy już raport.",
                     "polish": "Szef pyta, czy przygotowaliśmy już raport.",
                     "english": "The boss asks if we have already prepared the report.",
                     "infinitive": "pytać – to ask"
                 },
                 {
+                    "stem": "Gr",
+                    "ending": "amy",
+                    "polishRest": " dzisiaj wieczorem w pokera?",
                     "polish": "Gramy dzisiaj wieczorem w pokera?",
                     "english": "Do we play poker this evening?",
                     "infinitive": "grać – to play"
                 },
                 {
+                    "stem": "Rozmaw",
+                    "ending": "iam",
+                    "polishRest": " z twoim bratem.",
                     "polish": "Rozmawiam z twoim bratem.",
                     "english": "I'm talking to your brother.",
                     "infinitive": "rozmawiać – to talk"
                 },
                 {
+                    "stem": "Śpi",
+                    "ending": "i",
+                    "polishRest": " pod stołem.",
                     "polish": "Nasz pies śpi pod stołem.",
                     "english": "Our dog is sleeping under the table.",
                     "infinitive": "spać – to sleep"
                 },
                 {
+                    "stem": "Moż",
+                    "ending": "emy",
+                    "polishRest": " się trochę spóźnić?",
                     "polish": "Czy możemy się trochę spóźnić?",
                     "english": "Can we be a little late?",
                     "infinitive": "móc – can"
                 },
                 {
+                    "stem": "Widz",
+                    "ending": "isz",
+                    "polishRest": " gdzieś swoją siostrę?",
                     "polish": "Czy widzisz gdzieś swoją siostrę?",
                     "english": "Do you (Sg) see your sister somewhere?",
                     "infinitive": "widzieć – to see"
                 },
                 {
+                    "stem": "Myśl",
+                    "ending": "i",
+                    "polishRest": ", że jest psem.",
                     "polish": "Mój kot myśli, że jest psem.",
                     "english": "My cat thinks he is a dog.",
                     "infinitive": "myśleć – to think"
                 },
                 {
+                    "stem": "Lec",
+                    "ending": "ę",
+                    "polishRest": " do Hiszpanii.",
                     "polish": "Za tydzień lecę do Hiszpanii.",
                     "english": "I'm flying to Spain next week.",
                     "infinitive": "lecieć – to fly"
                 },
                 {
+                    "stem": "Koch",
+                    "ending": "am",
+                    "polishRest": " Ci!",
                     "polish": "Kocham Cię!",
                     "english": "I love you!",
                     "infinitive": "kochać – to love"
                 },
                 {
+                    "stem": "Rozum",
+                    "ending": "iemy",
+                    "polishRest": " twój problem.",
                     "polish": "Rozumiemy twój problem.",
                     "english": "We understand your problem.",
                     "infinitive": "rozumieć – to understand"
                 },
                 {
+                    "stem": "Pracuj",
+                    "ending": "ecie",
+                    "polishRest": " nad nowym rozwiązaniem?",
                     "polish": "Czy pracujecie nad nowym rozwiązaniem?",
                     "english": "Do you (Pl) work on a new solution?",
                     "infinitive": "pracować – to work"
@@ -275,86 +428,137 @@
             "exercise": "Exercise 04",
             "rows": [
                 {
+                    "stem": "Prosz",
+                    "ending": "ę",
+                    "polishRest": " Ci od samego rana, żebyś posprzątał.",
                     "polish": "Proszę Cię od samego rana, żebyś posprzątał.",
                     "english": "Since morning I am asking you to tidy up.",
                     "infinitive": "prosić – to ask"
                 },
                 {
+                    "stem": "Pij",
+                    "ending": "emy",
+                    "polishRest": " piwo nad jeziorem.",
                     "polish": "Pijemy piwo nad jeziorem.",
                     "english": "We drink beer by the lake.",
                     "infinitive": "pić – to drink"
                 },
                 {
+                    "stem": "Chodz",
+                    "ending": "imy",
+                    "polishRest": " ze sobą od roku.",
                     "polish": "Chodzimy ze sobą od roku.",
                     "english": "We've been together for a year.",
                     "infinitive": "chodzić – to walk"
                 },
                 {
+                    "stem": "Napraw",
+                    "ending": "iamy",
+                    "polishRest": " nasz samochód.",
                     "polish": "Właśnie naprawiamy nasz samochód.",
                     "english": "We are just repairing our car.",
                     "infinitive": "naprawiać – to repair"
                 },
                 {
+                    "stem": "Myj",
+                    "ending": "ę",
+                    "polishRest": " się",
                     "polish": "Magda jest w łazience i myje się.",
                     "english": "Magda is in the bathroom and washes herself.",
                     "infinitive": "myć się – to wash oneself"
                 },
                 {
+                    "stem": "Powiedz",
+                    "ending": "emy",
+                    "polishRest": " wszystko twojej mamie!",
                     "polish": "Powiemy wszystko twojej mamie!",
                     "english": "We will tell everything to your mother!",
                     "infinitive": "powiedzieć – to say"
                 },
                 {
+                    "stem": "Słysz",
+                    "ending": "ycie",
+                    "polishRest": " ten dziwny dźwięk?",
                     "polish": "Czy słyszycie ten dziwny dźwięk?",
                     "english": "Do you (Pl) hear this strange sound?",
                     "infinitive": "słyszeć – to hear"
                 },
                 {
+                    "stem": "Ucz",
+                    "ending": "ysz",
+                    "polishRest": " się na egzamin z matematyki?",
                     "polish": "Czy uczysz się na egzamin z matematyki?",
                     "english": "Do you (Sg) study for the math exam?",
                     "infinitive": "uczyć się – to learn"
                 },
                 {
+                    "stem": "Bior",
+                    "ending": "ę",
+                    "polishRest": " twój samochód na zakupy.",
                     "polish": "Tato, biorę twój samochód na zakupy.",
                     "english": "Dad, I'm taking your car for shopping.",
                     "infinitive": "brać – to take"
                 },
                 {
+                    "stem": "Gotuj",
+                    "ending": "emy",
+                    "polishRest": " obiad na jutro.",
                     "polish": "Gotujemy obiad na jutro.",
                     "english": "We're cooking dinner for tomorrow.",
                     "infinitive": "gotować – to cook"
                 },
                 {
+                    "stem": "Słuch",
+                    "ending": "asz",
+                    "polishRest": " tej samej muzyki co ja!",
                     "polish": "Wygląda na to, że słuchasz tej samej muzyki co ja!",
                     "english": "It looks like you're (Sg) listening to the same music as me!",
                     "infinitive": "słuchać – to listen"
                 },
                 {
+                    "stem": "Używ",
+                    "ending": "asz",
+                    "polishRest": " mojej szczoteczki?",
                     "polish": "Dlaczego używasz mojej szczoteczki?",
                     "english": "Why do you (Sg) use my toothbrush?",
                     "infinitive": "używać – to use"
                 },
                 {
+                    "stem": "Zmusz",
+                    "ending": "ają",
+                    "polishRest": " mnie do chodzenia spać wcześnie.",
                     "polish": "Moi rodzice zmuszają mnie do chodzenia spać wcześnie.",
                     "english": "My parents are forcing me to go to bed early.",
                     "infinitive": "zmuszać – to force"
                 },
                 {
+                    "stem": "Lic",
+                    "ending": "zą",
+                    "polishRest": " ile zarobili pieniędzy.",
                     "polish": "Sprzedawcy liczą ile zarobili pieniędzy.",
                     "english": "Sellers count how much money they have earned.",
                     "infinitive": "liczyć – to count"
                 },
                 {
+                    "stem": "Id",
+                    "ending": "ziemy",
+                    "polishRest": " na imprezę.",
                     "polish": "Dzisiaj wieczorem idziemy na imprezę.",
                     "english": "Tonight we are going to a party.",
                     "infinitive": "iść – to go"
                 },
                 {
+                    "stem": "Żegn",
+                    "ending": "a",
+                    "polishRest": " się ze swoim chłopakiem.",
                     "polish": "Moja siostra od godziny żegna się ze swoim chłopakiem.",
                     "english": "My sister says goodbye to her boyfriend for an hour.",
                     "infinitive": "żegnać – to bid goodbye"
                 },
                 {
+                    "stem": "Powiesz",
+                    "ending": "",
+                    "polishRest": " bratu, by zrobił zakupy?",
                     "polish": "Powiesz bratu, by zrobił zakupy?",
                     "english": "Will you (Sg) tell your brother to go shopping?",
                     "infinitive": "powiedzieć – to say"
@@ -365,86 +569,137 @@
             "exercise": "Exercise 05",
             "rows": [
                 {
+                    "stem": "Masz",
+                    "ending": "",
+                    "polishRest": " pożyczyć mi trochę pieniędzy?",
                     "polish": "Czy masz pożyczyć mi trochę pieniędzy?",
                     "english": "Do you (Sg) have some money to lend me?",
                     "infinitive": "mieć – to have"
                 },
                 {
+                    "stem": "Mów",
+                    "ending": "isz",
+                    "polishRest": ", że to nie twoja wina?",
                     "polish": "A więc mówisz, że to nie twoja wina?",
                     "english": "So you (Sg) say it's not your fault?",
                     "infinitive": "mówić – to speak"
                 },
                 {
+                    "stem": "Szuk",
+                    "ending": "am",
+                    "polishRest": " nowego mieszkania.",
                     "polish": "Szukam nowego mieszkania.",
                     "english": "I am looking for a new flat.",
                     "infinitive": "szukać – to search"
                 },
                 {
+                    "stem": "Um",
+                    "ending": "iem",
+                    "polishRest": " pisać lewą ręką.",
                     "polish": "Nie umiem pisać lewą ręką.",
                     "english": "I can not write with my left hand.",
                     "infinitive": "umieć – can"
                 },
                 {
+                    "stem": "Pyt",
+                    "ending": "ają",
+                    "polishRest": ", kiedy wrócisz.",
                     "polish": "Rodzice pytają, kiedy wrócisz.",
                     "english": "Parents ask when you will be back.",
                     "infinitive": "pytać – to ask"
                 },
                 {
+                    "stem": "Moż",
+                    "ending": "esz",
+                    "polishRest": " mi pomóc?",
                     "polish": "Czy możesz mi pomóc?",
                     "english": "Can you (Sg) help me?",
                     "infinitive": "móc – can"
                 },
                 {
+                    "stem": "Wrzeszcz",
+                    "ending": "ymy",
+                    "polishRest": " na siebie?",
                     "polish": "Dlaczego zawsze na siebie wrzeszczymy?",
                     "english": "Why are we always yelling at each other?",
                     "infinitive": "wrzeszczeć – to yell"
                 },
                 {
+                    "stem": "Kupuj",
+                    "ending": "esz",
+                    "polishRest": " tylko ekologiczne produkty?",
                     "polish": "Czy nadal kupujesz tylko ekologiczne produkty?",
                     "english": "Are you (Sg) still buying only organic products?",
                     "infinitive": "kupować – to buy"
                 },
                 {
+                    "stem": "Gram",
+                    "ending": "",
+                    "polishRest": " na komputerze.",
                     "polish": "Nie mogę rozmawiać, bo gram na komputerze.",
                     "english": "I can not talk because I play on a computer.",
                     "infinitive": "grać – to play"
                 },
                 {
+                    "stem": "Płac",
+                    "ending": "icie",
+                    "polishRest": " razem czy osobno?",
                     "polish": "Płacicie razem czy osobno?",
                     "english": "Do you (Pl) pay together or separately?",
                     "infinitive": "płacić – to pay"
                 },
                 {
+                    "stem": "Mus",
+                    "ending": "imy",
+                    "polishRest": " skończyć ten projekt do jutra.",
                     "polish": "Do jutra musimy skończyć ten projekt.",
                     "english": "We have to finish this project by tomorrow.",
                     "infinitive": "musieć – must"
                 },
                 {
+                    "stem": "Mamy",
+                    "ending": "",
+                    "polishRest": " szczęście, że nikt nas nie złapał!",
                     "polish": "Mamy szczęście, że nikt nas nie złapał!",
                     "english": "We're lucky that nobody caught us!",
                     "infinitive": "mieć – to have"
                 },
                 {
+                    "stem": "Jedz",
+                    "ending": "e",
+                    "polishRest": " teraz obiad.",
                     "polish": "Moja siostra je teraz obiad.",
                     "english": "My sister is having dinner now.",
                     "infinitive": "jeść – to eat"
                 },
                 {
+                    "stem": "Pisz",
+                    "ending": "e",
+                    "polishRest": " książkę o Drugiej Wojnie Światowej.",
                     "polish": "Mój dziadek pisze książkę o Drugiej Wojnie Światowej.",
                     "english": "My grandfather is writing a book about the Second World War.",
                     "infinitive": "pisać – to write"
                 },
                 {
+                    "stem": "Patrz",
+                    "ending": "ymy",
+                    "polishRest": " przez okno jak pada deszcz.",
                     "polish": "Patrzymy przez okno jak pada deszcz.",
                     "english": "We look out the window as it rains.",
                     "infinitive": "patrzeć – to look"
                 },
                 {
+                    "stem": "Całuj",
+                    "ending": "ę",
+                    "polishRest": " się z moją dziewczyną.",
                     "polish": "Całuję się z moją dziewczyną.",
                     "english": "I kiss my girlfriend.",
                     "infinitive": "całować – to kiss"
                 },
                 {
+                    "stem": "Gotuj",
+                    "ending": "ę",
+                    "polishRest": " obiad.",
                     "polish": "Nie mogę rozmawiać, bo właśnie gotuję obiad.",
                     "english": "I can not talk because I'm cooking dinner right now.",
                     "infinitive": "gotować – to cook"

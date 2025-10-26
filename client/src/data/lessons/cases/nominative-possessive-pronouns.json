@@ -1,0 +1,405 @@
+{
+    "class": "Nominative Case - Possessive Pronouns",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "stem": "moj",
+                    "ending": "a",
+                    "polish": "To jest moja piłka.",
+                    "english": "This is my ball.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "tw",
+                    "ending": "ój",
+                    "polish": "Czy to jest twój pies?",
+                    "english": "Is it your (sg) dog?",
+                    "pronoun": "your (sg)"
+                },
+                {
+                    "stem": "M",
+                    "ending": "ój",
+                    "polish": "Mój tata jest lekarzem.",
+                    "english": "My father is a doctor.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "wasz",
+                    "ending": "e",
+                    "polish": "Czy to są wasze mamy?",
+                    "english": "Are there your (pl) mothers?",
+                    "pronoun": "your (pl)"
+                },
+                {
+                    "stem": "jej",
+                    "ending": "",
+                    "polish": "To jest jej plecak.",
+                    "english": "This is her backpack.",
+                    "pronoun": "her"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "stem": "Wasz",
+                    "ending": "e",
+                    "polish": "Wasze rodzice już po was jadą.",
+                    "english": "Your (pl) parents are on their way to pick you up.",
+                    "pronoun": "your (pl)"
+                },
+                {
+                    "stem": "Mo",
+                    "ending": "i",
+                    "polish": "Moi dziadkowie świętują 60 rocznicę.",
+                    "english": "My grandparents celebrate 60th anniversary.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "Ich",
+                    "ending": "",
+                    "polish": "Ich zachowanie jest karygodne.",
+                    "english": "Their behaviour is reprehensible.",
+                    "pronoun": "their"
+                },
+                {
+                    "stem": "Nas",
+                    "ending": "i",
+                    "polish": "Nasi sportowcy pokazali klasę na mistrzostwach.",
+                    "english": "Our sportsmen showed the class at the championships.",
+                    "pronoun": "our"
+                },
+                {
+                    "stem": "wasz",
+                    "ending": "",
+                    "polish": "Czy to jest wasz kot?",
+                    "english": "Is it your (pl) cat?",
+                    "pronoun": "your (pl)"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03",
+            "rows": [
+                {
+                    "stem": "nasz",
+                    "ending": "a",
+                    "polish": "Teraz jest nasza kolej by zagrać.",
+                    "english": "Now it is our turn to play.",
+                    "pronoun": "our"
+                },
+                {
+                    "stem": "j",
+                    "ending": "ego",
+                    "polish": "Czy to jest jego telefon?",
+                    "english": "Is it his phone?",
+                    "pronoun": "his"
+                },
+                {
+                    "stem": "m",
+                    "ending": "ój",
+                    "polish": "To jest mój długopis.",
+                    "english": "This is my pen.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "moj",
+                    "ending": "e",
+                    "polish": "Gdzie jest moje dziecko?",
+                    "english": "Where is my baby?",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "Moj",
+                    "ending": "a",
+                    "polish": "Moj mama jest wspaniała!",
+                    "english": "My mom is awesome!",
+                    "pronoun": "my"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04",
+            "rows": [
+                {
+                    "stem": "Twoj",
+                    "ending": "e",
+                    "polish": "Twoje mieszkanie jest cudowne!",
+                    "english": "Your (Sg) flat is wonderful!",
+                    "pronoun": "your (sg)"
+                },
+                {
+                    "stem": "Wasz",
+                    "ending": "",
+                    "polish": "Wasz pies zrobił kupę w moim ogrodzie.",
+                    "english": "Your (Pl) dog made a pile in my garden.",
+                    "pronoun": "your (pl)"
+                },
+                {
+                    "stem": "twoj",
+                    "ending": "a",
+                    "polish": "To jest twoja wina!",
+                    "english": "This is your (Sg) fault!",
+                    "pronoun": "your (sg)"
+                },
+                {
+                    "stem": "Twój",
+                    "ending": "",
+                    "polish": "Twój tata nas zabije.",
+                    "english": "Your (Sg) dad will kill us.",
+                    "pronoun": "your (sg)"
+                },
+                {
+                    "stem": "twój",
+                    "ending": "",
+                    "polish": "Czy tam leży twój laptop?",
+                    "english": "Is your (Sg) lying there?",
+                    "pronoun": "your (sg)"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 05",
+            "rows": [
+                {
+                    "stem": "Nasz",
+                    "ending": "e",
+                    "polish": "Nasze dzieci bawią się na placu zabaw.",
+                    "english": "Our children are playing in the playground.",
+                    "pronoun": "our"
+                },
+                {
+                    "stem": "Nasz",
+                    "ending": "",
+                    "polish": "Nasz chomik uciekł.",
+                    "english": "Our hamster has escaped.",
+                    "pronoun": "our"
+                },
+                {
+                    "stem": "Moj",
+                    "ending": "e",
+                    "polish": "Moje kotki bawią się piłką.",
+                    "english": "My kitties play with the ball.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "wasz",
+                    "ending": "e",
+                    "polish": "Czy to są wasze buty?",
+                    "english": "Are these your (Pl) shoes?",
+                    "pronoun": "your (pl)"
+                },
+                {
+                    "stem": "Nasz",
+                    "ending": "e",
+                    "polish": "Nasze radary wykryły wrogie jednostki.",
+                    "english": "Our radars have detected enemy units.",
+                    "pronoun": "our"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 06",
+            "rows": [
+                {
+                    "stem": "Twoj",
+                    "ending": "a",
+                    "polish": "Twoja dziewczyna podrywa mnie!",
+                    "english": "Your (Sg) girlfriend is picking me up!",
+                    "pronoun": "your (sg)"
+                },
+                {
+                    "stem": "Wasz",
+                    "ending": "a",
+                    "polish": "Wasza drużyna jest najlepsza na świecie!",
+                    "english": "Your (Pl) team is the best in the world!",
+                    "pronoun": "your (pl)"
+                },
+                {
+                    "stem": "Two",
+                    "ending": "i",
+                    "polish": "Twoi dziadkowie są na górze.",
+                    "english": "Your (Sg) grandparents are upstairs.",
+                    "pronoun": "your (sg)"
+                },
+                {
+                    "stem": "J",
+                    "ending": "ego",
+                    "polish": "Jego siostra jest aktorką.",
+                    "english": "His sister is an actress.",
+                    "pronoun": "his"
+                },
+                {
+                    "stem": "Nasz",
+                    "ending": "a",
+                    "polish": "Nasza rozmowa nie ma żadnego sensu.",
+                    "english": "Our conversation does not make any sense.",
+                    "pronoun": "our"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 07",
+            "rows": [
+                {
+                    "stem": "J",
+                    "ending": "ej",
+                    "polish": "Jej poglądy są bardzo kontrowersyjne.",
+                    "english": "Her views are very controversial.",
+                    "pronoun": "her"
+                },
+                {
+                    "stem": "Twoj",
+                    "ending": "e",
+                    "polish": "Twoje dzieci są niegrzeczne.",
+                    "english": "Your (Sg) children are naughty.",
+                    "pronoun": "your (sg)"
+                },
+                {
+                    "stem": "Nas",
+                    "ending": "i",
+                    "polish": "Nasi uczniowie są bardzo utalentowani.",
+                    "english": "Our pupils are very talented.",
+                    "pronoun": "our"
+                },
+                {
+                    "stem": "Wasz",
+                    "ending": "a",
+                    "polish": "Wasza ciocia upiekła pyszne ciasto.",
+                    "english": "Your (Pl) aunt has baked a tasty cake.",
+                    "pronoun": "your (pl)"
+                },
+                {
+                    "stem": "Wasz",
+                    "ending": "e",
+                    "polish": "Wasze sąsiedzi są bardzo mili.",
+                    "english": "Your (Pl) neighbours are very kind.",
+                    "pronoun": "your (pl)"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 08",
+            "rows": [
+                {
+                    "stem": "ich",
+                    "ending": "",
+                    "polish": "Czy to są ich zabawki?",
+                    "english": "Are these their toys?",
+                    "pronoun": "their"
+                },
+                {
+                    "stem": "Moj",
+                    "ending": "e",
+                    "polish": "Moje serce należy do ciebie.",
+                    "english": "My heart belongs to you.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "Two",
+                    "ending": "i",
+                    "polish": "Twoi bracia są do siebie bardzo podobni.",
+                    "english": "Your (Sg) brothers are very similar to each other.",
+                    "pronoun": "your (sg)"
+                },
+                {
+                    "stem": "Twoj",
+                    "ending": "e",
+                    "polish": "Twoje rozwiązanie jest niepoprawne.",
+                    "english": "Your (Sg) solution is incorrect.",
+                    "pronoun": "your (sg)"
+                },
+                {
+                    "stem": "Twoj",
+                    "ending": "a",
+                    "polish": "Twoja książka stała się światowym bestsellerem!",
+                    "english": "Your (Sg) book has become a worldwide bestseller!",
+                    "pronoun": "your (sg)"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 09",
+            "rows": [
+                {
+                    "stem": "Mó",
+                    "ending": "j",
+                    "polish": "Mój brat zapomniał o moich urodzinach.",
+                    "english": "My brother has forgotten about my birthday.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "Mo",
+                    "ending": "i",
+                    "polish": "Moi przodkowie pochodzą z Azji.",
+                    "english": "My ancestors come from Asia.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "moj",
+                    "ending": "e",
+                    "polish": "Dzisiaj są moje urodziny.",
+                    "english": "Today is my birthday.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "Mó",
+                    "ending": "j",
+                    "polish": "Mój samochód został skradziony.",
+                    "english": "My car has been stolen.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "Wasz",
+                    "ending": "",
+                    "polish": "Wasz kot nie może zejść z drzewa.",
+                    "english": "Your (Pl) cat cannot go down from the tree.",
+                    "pronoun": "your (pl)"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 10",
+            "rows": [
+                {
+                    "stem": "Mó",
+                    "ending": "j",
+                    "polish": "Mój lekarz kazał mi zostać w domu.",
+                    "english": "My doctor told me to stay home.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "Wasz",
+                    "ending": "a",
+                    "polish": "Wasza siostra tu była.",
+                    "english": "Your (Pl) sister was here.",
+                    "pronoun": "your (pl)"
+                },
+                {
+                    "stem": "Wasz",
+                    "ending": "",
+                    "polish": "Wasz pies zabił moje kury!",
+                    "english": "Your (Pl) dog killed my hens.",
+                    "pronoun": "your (pl)"
+                },
+                {
+                    "stem": "J",
+                    "ending": "ej",
+                    "polish": "Jej brat miał wypadek.",
+                    "english": "Her brother had an accident.",
+                    "pronoun": "her"
+                },
+                {
+                    "stem": "Moj",
+                    "ending": "a",
+                    "polish": "Moja ambicja nie pozwala mi się poddać.",
+                    "english": "My ambition does not allow me to give up.",
+                    "pronoun": "my"
+                }
+            ]
+        }
+    ]
+}

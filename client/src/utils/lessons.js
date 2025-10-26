@@ -12,6 +12,9 @@ import futureTensePerfective from "../data/lessons/future/future-tense-perfectiv
 import futureTenseImperfectiveCompound from "../data/lessons/future/future-tense-imperfective-compound.json";
 import futureTenseIrregular from "../data/lessons/future/future-tense-irregular.json";
 
+import casesNominativePossessivePronouns from "../data/lessons/cases/nominative-possessive-pronouns.json";
+import casesGenitiveCompleteTheSentences from "../data/lessons/cases/genitive-complete-the-sentences.json";
+
 const lessons = [
   {
     title: "Present Tense",
@@ -79,6 +82,10 @@ This foundational knowledge will allow you to form sentences correctly in any te
     intro: `This lesson will guide you through the 7 grammatical cases in Polish, showing how they affect nouns, adjectives, pronouns, and sentence structure. 
 You'll learn to identify cases, understand their rules, and apply them in practical contexts. 
 By mastering cases, you'll be able to form correct sentences and communicate more naturally, gaining a deeper understanding of Polish grammar.`,
+    classes: [
+      casesNominativePossessivePronouns,
+      casesGenitiveCompleteTheSentences,
+    ],
   },
   {
     title: "Vocabulary",

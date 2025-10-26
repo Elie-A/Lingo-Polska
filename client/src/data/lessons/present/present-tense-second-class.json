@@ -8,6 +8,7 @@
                     "stem": "lubi",
                     "ending": "sz",
                     "polishRest": " słuchać muzyki?",
+                    "polish": "Czy lubisz słuchać muzyki?",
                     "english": "Do you (Sg) like listening to music?",
                     "infinitive": "lubić – to like"
                 },
@@ -15,6 +16,7 @@
                     "stem": "leż",
                     "ending": "ę",
                     "polishRest": " w łóżku.",
+                    "polish": "Jestem chory i leżę w łóżku.",
                     "english": "I'm sick and lying in bed.",
                     "infinitive": "leżeć – to lay down"
                 },
@@ -22,6 +24,7 @@
                     "stem": "widz",
                     "ending": "isz",
                     "polishRest": " gdzieś swoją siostrę?",
+                    "polish": "Czy widzisz gdzieś swoją siostrę?",
                     "english": "Do you (Sg) see your sister somewhere?",
                     "infinitive": "widzieć – to see"
                 },
@@ -29,6 +32,7 @@
                     "stem": "Chodz",
                     "ending": "imy",
                     "polishRest": " ze sobą od roku.",
+                    "polish": "Chodzimy ze sobą od roku.",
                     "english": "We've been together for a year.",
                     "infinitive": "chodzić – to walk"
                 },
@@ -36,6 +40,7 @@
                     "stem": "płac",
                     "ending": "icie",
                     "polishRest": " razem czy osobno?",
+                    "polish": "Czy płacicie razem czy osobno?",
                     "english": "Do you (Pl) pay together or separately?",
                     "infinitive": "płacić – to pay"
                 }
@@ -48,6 +53,7 @@
                     "stem": "mus",
                     "ending": "imy",
                     "polishRest": " skończyć ten projekt.",
+                    "polish": "Do jutra musimy skończyć ten projekt.",
                     "english": "We have to finish this project by tomorrow.",
                     "infinitive": "musieć – must"
                 },
@@ -55,6 +61,7 @@
                     "stem": "uczysz",
                     "ending": " się",
                     "polishRest": " na egzamin z matematyki?",
+                    "polish": "Czy uczysz się na egzamin z matematyki?",
                     "english": "Do you (Sg) study for the math exam?",
                     "infinitive": "uczyć się – to study"
                 },
@@ -62,6 +69,7 @@
                     "stem": "myśl",
                     "ending": "i",
                     "polishRest": ", że jest psem.",
+                    "polish": "Mój kot myśli, że jest psem.",
                     "english": "My cat thinks he is a dog.",
                     "infinitive": "myśleć – to think"
                 },
@@ -69,6 +77,7 @@
                     "stem": "Rob",
                     "ending": "ię",
                     "polishRest": " kanapki na kolację.",
+                    "polish": "Robię kanapki na kolację.",
                     "english": "I make sandwiches for supper.",
                     "infinitive": "robić – to do"
                 },
@@ -76,6 +85,7 @@
                     "stem": "Marz",
                     "ending": "ymy",
                     "polishRest": " by polecieć do Stanów Zjednoczonych.",
+                    "polish": "Marzymy by polecieć do Stanów Zjednoczonych.",
                     "english": "We dream to fly to the United States.",
                     "infinitive": "marzyć – to dream"
                 }
@@ -88,6 +98,7 @@
                     "stem": "Patr",
                     "ending": "zymy",
                     "polishRest": " przez okno jak pada deszcz.",
+                    "polish": "Patrzymy przez okno jak pada deszcz.",
                     "english": "We look out the window as it rains.",
                     "infinitive": "patrzeć – to look"
                 },
@@ -95,6 +106,7 @@
                     "stem": "mów",
                     "ending": "isz",
                     "polishRest": ", że to nie twoja wina?",
+                    "polish": "A więc mówisz, że to nie twoja wina?",
                     "english": "So you (Sg) say it's not your fault?",
                     "infinitive": "mówić – to speak"
                 },
@@ -102,6 +114,7 @@
                     "stem": "wrzeszcz",
                     "ending": "ymy",
                     "polishRest": "?",
+                    "polish": "Dlaczego zawsze na siebie wrzeszczymy?",
                     "english": "Why are we always yelling at each other?",
                     "infinitive": "wrzeszczeć – to scream"
                 },
@@ -109,6 +122,7 @@
                     "stem": "licz",
                     "ending": "ą",
                     "polishRest": " ile zarobili pieniędzy.",
+                    "polish": "Sprzedawcy liczą ile zarobili pieniędzy.",
                     "english": "Sellers count how much money they have earned.",
                     "infinitive": "liczyć – to count"
                 },
@@ -116,6 +130,7 @@
                     "stem": "słyszy",
                     "ending": "cie",
                     "polishRest": " ten dziwny dźwięk?",
+                    "polish": "Czy słyszycie ten dziwny dźwięk?",
                     "english": "Do you (Pl) hear this strange sound?",
                     "infinitive": "słyszeć – to hear"
                 }
@@ -125,16 +140,10 @@
             "exercise": "Exercise 04",
             "rows": [
                 {
-                    "stem": "posprzątał",
-                    "ending": "",
-                    "polishRest": ".",
-                    "english": "Since morning I am asking you to tidy up.",
-                    "infinitive": "prosić – to please / to request"
-                },
-                {
                     "stem": "Lec",
                     "ending": "ę",
                     "polishRest": " za tydzień do Hiszpanii.",
+                    "polish": "Lecę za tydzień do Hiszpanii.",
                     "english": "I'm flying to Spain next week.",
                     "infinitive": "lecieć – to fly"
                 },
@@ -142,6 +151,7 @@
                     "stem": "pali",
                     "ending": "cie",
                     "polishRest": " papierosy?",
+                    "polish": "Czy palicie papierosy?",
                     "english": "Do you (Pl) smoke cigarettes?",
                     "infinitive": "palić – to burn / to smoke"
                 },
@@ -149,6 +159,7 @@
                     "stem": "śpi",
                     "ending": "",
                     "polishRest": " pod stołem.",
+                    "polish": "Nasz pies śpi pod stołem.",
                     "english": "Our dog is sleeping under the table.",
                     "infinitive": "spać – to sleep"
                 },
@@ -156,6 +167,7 @@
                     "stem": "Rob",
                     "ending": "imy",
                     "polishRest": " zadanie domowe.",
+                    "polish": "Robimy zadanie domowe.",
                     "english": "We do homework.",
                     "infinitive": "robić – to do"
                 }
@@ -168,20 +180,23 @@
                     "stem": "Musz",
                     "ending": "ę",
                     "polishRest": " już iść do domu.",
+                    "polish": "Muszę już iść do domu.",
                     "english": "I have to go home.",
                     "infinitive": "musieć – must"
                 },
                 {
-                    "stem": "słyszę",
-                    "ending": "",
+                    "stem": "słysz",
+                    "ending": "ę",
                     "polishRest": " co mówisz.",
-                    "english": "I can not hear what you're saying.",
+                    "polish": "Nie słyszę co mówisz.",
+                    "english": "I cannot hear what you're saying.",
                     "infinitive": "słyszeć – to hear"
                 },
                 {
                     "stem": "leż",
                     "ending": "ymy",
                     "polishRest": " na plaży.",
+                    "polish": "Właśnie leżymy na plaży.",
                     "english": "We're just lying on the beach.",
                     "infinitive": "leżeć – to lie"
                 },
@@ -189,6 +204,7 @@
                     "stem": "chodz",
                     "ending": "imy",
                     "polishRest": " w kółko.",
+                    "polish": "Wydaje mi się, że chodzimy w kółko.",
                     "english": "It seems to me that we go around in circles.",
                     "infinitive": "chodzić – to walk"
                 },
@@ -196,6 +212,7 @@
                     "stem": "mówi",
                     "ending": "ą",
                     "polishRest": " mi, co mam robić.",
+                    "polish": "Moi rodzice bez przerwy mówią mi, co mam robić.",
                     "english": "My parents are constantly telling me what to do.",
                     "infinitive": "mówić – to speak"
                 }

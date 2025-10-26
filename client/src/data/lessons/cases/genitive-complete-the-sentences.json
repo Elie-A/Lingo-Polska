@@ -1,0 +1,325 @@
+{
+    "class": "Genitive - Complete The Sentences",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "stem": "muzyk",
+                    "ending": "i",
+                    "polishRest": ".",
+                    "english": "The neighbours listen to music loudly.",
+                    "pronoun": "they"
+                },
+                {
+                    "stem": "rzecz",
+                    "ending": "y",
+                    "polishRest": ".",
+                    "english": "The children learn new things quickly.",
+                    "pronoun": "they"
+                },
+                {
+                    "stem": "kin",
+                    "ending": "a",
+                    "polishRest": " z dziewczyną.",
+                    "english": "My brother goes to the cinema with his girlfriend.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "gitar",
+                    "ending": "y",
+                    "polishRest": " w sklepie muzycznym.",
+                    "english": "I've been looking for a new guitar in a music shop.",
+                    "pronoun": "I"
+                },
+                {
+                    "stem": "dziec",
+                    "ending": "i",
+                    "polishRest": " w czasie przerwy na korytarzu.",
+                    "english": "Teachers watch over the children during the break on the corridor.",
+                    "pronoun": "they"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "stem": "zemst",
+                    "ending": "y",
+                    "polishRest": " na swoich wrogach.",
+                    "english": "The pirates had a thirst for revenge.",
+                    "pronoun": "they"
+                },
+                {
+                    "stem": "chorob",
+                    "ending": "y",
+                    "polishRest": " profesora odwołano wykład.",
+                    "english": "Due to the professor's illness the lecture has been cancelled.",
+                    "pronoun": "it"
+                },
+                {
+                    "stem": "sol",
+                    "ending": "i",
+                    "polishRest": ".",
+                    "english": "I think this soup is lacking salt.",
+                    "pronoun": "it"
+                },
+                {
+                    "stem": "dom",
+                    "ending": "u",
+                    "polishRest": " rośnie wysokie drzewo.",
+                    "english": "There is a tall tree near my house.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "czas",
+                    "ending": "u",
+                    "polishRest": " tego naprawić.",
+                    "english": "We've got no time to fix it.",
+                    "pronoun": "we"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03",
+            "rows": [
+                {
+                    "stem": "lad",
+                    "ending": "y",
+                    "polishRest": ".",
+                    "english": "The seller took the goods from under the counter.",
+                    "pronoun": "he"
+                },
+                {
+                    "stem": "rodzic",
+                    "ending": "ów",
+                    "polishRest": " ostatnie ostrzeżenie.",
+                    "english": "My parents gave me the last warning.",
+                    "pronoun": "they"
+                },
+                {
+                    "stem": "sklep",
+                    "ending": "u",
+                    "polishRest": ".",
+                    "english": "Michał went to the shop.",
+                    "pronoun": "he"
+                },
+                {
+                    "stem": "zamk",
+                    "ending": "u",
+                    "polishRest": ".",
+                    "english": "The knights are defending the castle.",
+                    "pronoun": "they"
+                },
+                {
+                    "stem": "wiersz",
+                    "ending": "a",
+                    "polishRest": " na pamięć.",
+                    "english": "The children are learning the poem by heart.",
+                    "pronoun": "they"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04",
+            "rows": [
+                {
+                    "stem": "dn",
+                    "ending": "a",
+                    "polishRest": ".",
+                    "english": "The anchor touched the bottom.",
+                    "pronoun": "it"
+                },
+                {
+                    "stem": "stoł",
+                    "ending": "u",
+                    "polishRest": " wyszedł pies.",
+                    "english": "The dog came out from under the table.",
+                    "pronoun": "it"
+                },
+                {
+                    "stem": "muzyk",
+                    "ending": "i",
+                    "polishRest": " jazzowej.",
+                    "english": "I like listening to jazz music.",
+                    "pronoun": "I"
+                },
+                {
+                    "stem": "śniadan",
+                    "ending": "ia",
+                    "polishRest": " do szkoły.",
+                    "english": "The pupil forgot her breakfast for school.",
+                    "pronoun": "she"
+                },
+                {
+                    "stem": "powodzen",
+                    "ending": "ia",
+                    "polishRest": " na maturze.",
+                    "english": "The teacher wishes his students good luck at the final exams.",
+                    "pronoun": "he"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 05",
+            "rows": [
+                {
+                    "stem": "szkł",
+                    "ending": "a",
+                    "polishRest": ".",
+                    "english": "This bottle is made out of glass.",
+                    "pronoun": "it"
+                },
+                {
+                    "stem": "jabłk",
+                    "ending": "a",
+                    "polishRest": " w koszyku.",
+                    "english": "There are no apples in the basket.",
+                    "pronoun": "they"
+                },
+                {
+                    "stem": "pr",
+                    "ending": "aw",
+                    "polishRest": " człowieka.",
+                    "english": "We defend human rights.",
+                    "pronoun": "we"
+                },
+                {
+                    "stem": "odpowiedź",
+                    "ending": "",
+                    "polishRest": " po rozmowie o pracę.",
+                    "english": "My dad expects the answer after the job interview.",
+                    "pronoun": "my"
+                },
+                {
+                    "stem": "laptop",
+                    "ending": "a",
+                    "polishRest": ".",
+                    "english": "Our grandpa learns to use laptop.",
+                    "pronoun": "our"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 06",
+            "rows": [
+                {
+                    "stem": "wyścig",
+                    "ending": "u",
+                    "polishRest": ".",
+                    "english": "Her brother broke his leg during the race.",
+                    "pronoun": "her"
+                },
+                {
+                    "stem": "dziec",
+                    "ending": "ka",
+                    "polishRest": ".",
+                    "english": "A babysitter looks after the child.",
+                    "pronoun": "he/she"
+                },
+                {
+                    "stem": "przepis",
+                    "ending": "u",
+                    "polishRest": " na ciasto z jabłkami.",
+                    "english": "His grandma tried a new apple pie recipe.",
+                    "pronoun": "his"
+                },
+                {
+                    "stem": "pościel",
+                    "ending": "i",
+                    "polishRest": ".",
+                    "english": "Our beds in hotel don't have the bedding.",
+                    "pronoun": "our"
+                },
+                {
+                    "stem": "park",
+                    "ending": "u",
+                    "polishRest": " wybudowano centrum handlowe.",
+                    "english": "A shopping center has been built opposite to the park.",
+                    "pronoun": "it"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 07",
+            "rows": [
+                {
+                    "stem": "nauczyciel",
+                    "ending": "a",
+                    "polishRest": " o zgodę?",
+                    "english": "Why are you asking the teacher for permission?",
+                    "pronoun": "you (pl)"
+                },
+                {
+                    "stem": "awari",
+                    "ending": "i",
+                    "polishRest": " w całym mieście nie było prądu.",
+                    "english": "As a result of the breakdown, there was no electricity in the whole city.",
+                    "pronoun": "it"
+                },
+                {
+                    "stem": "matematyk",
+                    "ending": "i",
+                    "polishRest": " w szkole.",
+                    "english": "My children learn math at school.",
+                    "pronoun": "they"
+                },
+                {
+                    "stem": "punktualnośc",
+                    "ending": "i",
+                    "polishRest": " od swoich pracowników.",
+                    "english": "The boss requires punctuality from his employees.",
+                    "pronoun": "he"
+                },
+                {
+                    "stem": "pomoc",
+                    "ending": "y",
+                    "polishRest": " pielęgniarki.",
+                    "english": "The doctor needs sister's help.",
+                    "pronoun": "he"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 08",
+            "rows": [
+                {
+                    "stem": "samochod",
+                    "ending": "u",
+                    "polishRest": ".",
+                    "english": "A friend has bought a bike instead of a car.",
+                    "pronoun": "he"
+                },
+                {
+                    "stem": "wujk",
+                    "ending": "a",
+                    "polishRest": " komputer na urodziny.",
+                    "english": "I received from uncle a computer for my birthday.",
+                    "pronoun": "I"
+                },
+                {
+                    "stem": "zwrot",
+                    "ending": "u",
+                    "polishRest": " pieniędzy za niedziałający toster.",
+                    "english": "The client demands a refund for the broken toaster.",
+                    "pronoun": "he"
+                },
+                {
+                    "stem": "zachowan",
+                    "ending": "ia",
+                    "polishRest": ".",
+                    "english": "You should be ashamed of your behaviour.",
+                    "pronoun": "you (sg)"
+                },
+                {
+                    "stem": "drog",
+                    "ending": "i",
+                    "polishRest": " rosną drzewa.",
+                    "english": "The trees grow along the road.",
+                    "pronoun": "they"
+                }
+            ]
+        }
+    ]
+}
