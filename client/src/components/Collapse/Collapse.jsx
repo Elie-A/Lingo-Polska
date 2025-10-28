@@ -24,7 +24,6 @@ const Collapse = ({ data }) => {
         // Use normalized strings for matching
         const regex = new RegExp(`(${escapeRegex(fullVerb)})( się)?`, "i");
 
-        // Find the match manually using normalized strings
         const normalizedPolish = normalize(polish);
         const normalizedFullVerb = normalize(fullVerb);
 
@@ -46,9 +45,11 @@ const Collapse = ({ data }) => {
             {exercises.map((exerciseData, idx) => {
                 const rows = Array.isArray(exerciseData.rows) ? exerciseData.rows : [];
 
-                // Dynamically determine additional fields (infinitive, pronoun, etc.)
+                // Dynamically determine additional fields, excluding "polishRest"
                 const extraColumns = rows.length > 0
-                    ? Object.keys(rows[0]).filter(key => !["polish", "stem", "ending", "english"].includes(key))
+                    ? Object.keys(rows[0]).filter(
+                        key => !["polish", "stem", "ending", "english", "polishRest"].includes(key)
+                    )
                     : [];
 
                 return (

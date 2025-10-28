@@ -15,16 +15,16 @@
                 {
                     "stem": "by",
                     "ending": "łeś",
-                    "polishRest": " Kiedy w Londynie?",
-                    "polish": "Byłeś kiedy w Londynie?",
+                    "polishRest": " kiedy w Londynie?",
+                    "polish": "Kiedy byłeś w Londynie?",
                     "english": "When have you (sg) been to London?",
                     "infinitive": "być – to be"
                 },
                 {
                     "stem": "wsta",
                     "ending": "łeś",
-                    "polishRest": " O której wczoraj?",
-                    "polish": "Wstałeś o której wczoraj?",
+                    "polishRest": "O której wczoraj?",
+                    "polish": "O której wczoraj wstałeś?",
                     "english": "What time did you (sg) wake up yesterday?",
                     "infinitive": "wstać – to wake up"
                 },
@@ -128,7 +128,7 @@
                 },
                 {
                     "stem": "Nauczy",
-                    "ending": "łam się",
+                    "ending": "łem się",
                     "polishRest": " grać na gitarze elektrycznej.",
                     "polish": "Nauczyłem się grać na gitarze elektrycznej.",
                     "english": "I've learned to play electric guitar.",
