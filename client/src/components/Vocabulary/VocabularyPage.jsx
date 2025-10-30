@@ -58,11 +58,14 @@ const VocabularyPage = () => {
 
     // Filtering logic
     const filteredVocab = vocabularies.filter((v) => {
+        const polish = v.polish || "";
+        const english = v.english || "";
         const matchesLevel = level ? v.level === level : true;
         const matchesCategory = category ? v.category === category : true;
         const matchesSearch =
-            v.polish.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            v.english.toLowerCase().includes(searchTerm.toLowerCase());
+            polish.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            english.toLowerCase().includes(searchTerm.toLowerCase());
+
         return matchesLevel && matchesCategory && matchesSearch;
     });
 
