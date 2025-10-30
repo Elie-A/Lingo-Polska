@@ -11,7 +11,6 @@ const VocabularyPage = () => {
     const [error, setError] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
 
-    // Custom dropdowns state & refs
     const [isCategoryDropdownOpen, setIsCategoryDropdownOpen] = useState(false);
     const [isLevelDropdownOpen, setIsLevelDropdownOpen] = useState(false);
     const categoryDropdownRef = useRef(null);
@@ -24,16 +23,10 @@ const VocabularyPage = () => {
         fetchVocabularies();
 
         const handleClickOutside = (e) => {
-            if (
-                categoryDropdownRef.current &&
-                !categoryDropdownRef.current.contains(e.target)
-            ) {
+            if (categoryDropdownRef.current && !categoryDropdownRef.current.contains(e.target)) {
                 setIsCategoryDropdownOpen(false);
             }
-            if (
-                levelDropdownRef.current &&
-                !levelDropdownRef.current.contains(e.target)
-            ) {
+            if (levelDropdownRef.current && !levelDropdownRef.current.contains(e.target)) {
                 setIsLevelDropdownOpen(false);
             }
         };
@@ -56,16 +49,21 @@ const VocabularyPage = () => {
         }
     };
 
+    // Flatten all words for filtering
+    const allWords = vocabularies.flatMap((v) =>
+        (v.words || []).map((word) => ({ ...word, category: v._id }))
+    );
+
     // Filtering logic
-    const filteredVocab = vocabularies.filter((v) => {
-        const polish = v.polish || "";
-        const english = v.english || "";
+    const filteredVocab = allWords.filter((v) => {
+        if (!v) return false;
+        const polish = v.polish ?? "";
+        const english = v.english ?? "";
         const matchesLevel = level ? v.level === level : true;
         const matchesCategory = category ? v.category === category : true;
         const matchesSearch =
             polish.toLowerCase().includes(searchTerm.toLowerCase()) ||
             english.toLowerCase().includes(searchTerm.toLowerCase());
-
         return matchesLevel && matchesCategory && matchesSearch;
     });
 
@@ -76,17 +74,15 @@ const VocabularyPage = () => {
 
     // Group by category
     const groupedVocab = paginatedVocab.reduce((acc, v) => {
-        const category = v.category || "Uncategorized";
-        if (!acc[category]) acc[category] = [];
-        acc[category].push(v);
+        const categoryName = v.category?.trim() || "Uncategorized";
+        if (!acc[categoryName]) acc[categoryName] = [];
+        acc[categoryName].push(v);
         return acc;
     }, {});
 
-    const toggleCategory = (category) => {
+    const toggleCategory = (cat) => {
         setExpandedCategories((prev) =>
-            prev.includes(category)
-                ? prev.filter((c) => c !== category)
-                : [...prev, category]
+            prev.includes(cat) ? prev.filter((c) => c !== cat) : [...prev, cat]
         );
     };
 
@@ -95,7 +91,6 @@ const VocabularyPage = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    // Dropdown change handlers
     const handleCustomCategoryChange = (newCategory) => {
         setCategory(newCategory);
         setCurrentPage(1);
@@ -108,10 +103,9 @@ const VocabularyPage = () => {
         setIsLevelDropdownOpen(false);
     };
 
-    // Unique categories and levels
     const uniqueCategories = [
         "",
-        ...new Set(vocabularies.map((v) => v.category || "Uncategorized")),
+        ...new Set(allWords.map((v) => v.category?.trim() || "Uncategorized")),
     ].sort((a, b) => {
         if (a === "") return -1;
         if (b === "") return 1;
@@ -152,7 +146,6 @@ const VocabularyPage = () => {
             </header>
 
             <div className="vocab-controls">
-                {/* Search */}
                 <input
                     type="text"
                     placeholder="🔍 Search Polish or English..."
@@ -169,7 +162,7 @@ const VocabularyPage = () => {
                         onClick={() => setIsCategoryDropdownOpen((prev) => !prev)}
                     >
                         {category || "All Categories"}
-                        <span style={{ marginLeft: "8px" }}>
+                        <span style={{ marginLeft: 8 }}>
                             {isCategoryDropdownOpen ? "▲" : "▼"}
                         </span>
                     </button>
@@ -178,8 +171,7 @@ const VocabularyPage = () => {
                             {uniqueCategories.map((cat) => (
                                 <div
                                     key={cat || "all"}
-                                    className={`custom-dropdown-item ${cat === category ? "selected" : ""
-                                        }`}
+                                    className={`custom-dropdown-item ${cat === category ? "selected" : ""}`}
                                     onClick={() => handleCustomCategoryChange(cat)}
                                 >
                                     {cat || "All Categories"}
@@ -189,25 +181,21 @@ const VocabularyPage = () => {
                     )}
                 </div>
 
-                {/* Level Dropdown (same design) */}
+                {/* Level Dropdown */}
                 <div className="custom-select-wrapper" ref={levelDropdownRef}>
                     <button
-                        className={`vocab-filter custom-select-button ${isLevelDropdownOpen ? "open" : ""
-                            }`}
+                        className={`vocab-filter custom-select-button ${isLevelDropdownOpen ? "open" : ""}`}
                         onClick={() => setIsLevelDropdownOpen((prev) => !prev)}
                     >
                         {level || "All Levels"}
-                        <span style={{ marginLeft: "8px" }}>
-                            {isLevelDropdownOpen ? "▲" : "▼"}
-                        </span>
+                        <span style={{ marginLeft: 8 }}>{isLevelDropdownOpen ? "▲" : "▼"}</span>
                     </button>
                     {isLevelDropdownOpen && (
                         <div className="custom-dropdown-list" role="listbox">
                             {uniqueLevels.map((lvl) => (
                                 <div
                                     key={lvl || "all"}
-                                    className={`custom-dropdown-item ${lvl === level ? "selected" : ""
-                                        }`}
+                                    className={`custom-dropdown-item ${lvl === level ? "selected" : ""}`}
                                     onClick={() => handleCustomLevelChange(lvl)}
                                 >
                                     {lvl || "All Levels"}
@@ -223,25 +211,19 @@ const VocabularyPage = () => {
                     <p>No vocabulary found for this filter.</p>
                 </div>
             ) : (
-                Object.entries(groupedVocab).map(([category, words]) => (
-                    <section key={category} className="vocab-category-section">
+                Object.entries(groupedVocab).map(([cat, words]) => (
+                    <section key={cat} className="vocab-category-section">
                         <button
-                            className={`category-toggle ${expandedCategories.includes(category) ? "open" : ""
-                                }`}
-                            onClick={() => toggleCategory(category)}
+                            className={`category-toggle ${expandedCategories.includes(cat) ? "open" : ""}`}
+                            onClick={() => toggleCategory(cat)}
                         >
                             <span>
-                                {category} ({words.length})
+                                {cat} ({words.length})
                             </span>
-                            <span className="arrow">
-                                {expandedCategories.includes(category) ? "▲" : "▼"}
-                            </span>
+                            <span className="arrow">{expandedCategories.includes(cat) ? "▲" : "▼"}</span>
                         </button>
 
-                        <div
-                            className={`category-container ${expandedCategories.includes(category) ? "expanded" : ""
-                                }`}
-                        >
+                        <div className={`category-container ${expandedCategories.includes(cat) ? "expanded" : ""}`}>
                             <div className="vocab-grid">
                                 {words.map((v) => (
                                     <article key={v._id} className="vocab-card">
