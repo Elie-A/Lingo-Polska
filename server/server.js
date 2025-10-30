@@ -3,7 +3,8 @@ import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
-import contactRoutes from "./routes/contact.js";
+import contactRoutes from "./routes/contactRoutes.js";
+import vocabularyRoutes from "./routes/vocabularyRoutes.js";
 
 dotenv.config();
 
@@ -50,6 +51,9 @@ app.get("/", (req, res) => res.send("Backend is running!"));
 
 // Contact form route
 app.use("/api/contact", contactRoutes);
+
+// Vocabulary form route
+app.use("/api/vocabulary", vocabularyRoutes);
 
 // Start server
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));

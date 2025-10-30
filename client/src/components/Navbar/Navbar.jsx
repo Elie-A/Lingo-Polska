@@ -29,7 +29,7 @@ export default function Navbar({ lessons }) {
 
     // Filter lessons for dropdown
     const dropdownLessons = lessons.filter((lesson) =>
-        ["Present Tense", "Past Tense", "Future Tense", "Cases"].includes(lesson.title)
+        ["Present Tense", "Past Tense", "Future Tense", "Cases", "Vocabulary"].includes(lesson.title)
     );
 
     return (

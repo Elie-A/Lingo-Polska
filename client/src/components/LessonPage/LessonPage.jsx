@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import Collapse from "../Collapse/Collapse";
+import VocabularyPage from "../Vocabulary/VocabularyPage";
 
 import "./LessonPage.css";
 
@@ -22,9 +23,13 @@ const LessonPage = ({ lessonTitle, classes, lessonFolder }) => {
         });
     };
 
-    const toggleExplanation = () => setOpenExplanation(!openExplanation);
+    const toggleExplanation = () => setOpenExplanation((prev) => !prev);
 
-    const shouldLoadExplanation = lessonFolder !== "practice" && lessonFolder !== "vocabulary" && lessonFolder !== "references";
+    // Only load explanation if lesson type is not special
+    const shouldLoadExplanation =
+        lessonFolder !== "practice" &&
+        lessonFolder !== "vocabulary" &&
+        lessonFolder !== "references";
 
     const loadLessonExplanation = useCallback(() => {
         if (!lessonFolder || !shouldLoadExplanation) return;
@@ -50,6 +55,11 @@ const LessonPage = ({ lessonTitle, classes, lessonFolder }) => {
         loadLessonExplanation();
     }, [lessonFolder, loadLessonExplanation]);
 
+    // Render VocabularyPage if this lesson is vocabulary
+    if (lessonFolder === "vocabulary") {
+        return <VocabularyPage />;
+    }
+
     return (
         <div className="lesson-page">
             {/* Header */}
@@ -66,12 +76,14 @@ const LessonPage = ({ lessonTitle, classes, lessonFolder }) => {
                             <p>Loading lesson explanation...</p>
                         </div>
                     )}
+
                     {error && (
                         <div className="error">
                             <p>{error}</p>
                             <button onClick={loadLessonExplanation}>Retry</button>
                         </div>
                     )}
+
                     {lessonExplanation && (
                         <div className={`lesson-explanation ${openExplanation ? "open" : ""}`}>
                             <div className="lesson-explanation-header" onClick={toggleExplanation}>
@@ -81,7 +93,11 @@ const LessonPage = ({ lessonTitle, classes, lessonFolder }) => {
                             <div
                                 className="explanation-content"
                                 ref={explanationRef}
-                                style={{ maxHeight: openExplanation ? explanationRef.current?.scrollHeight + "px" : "0px" }}
+                                style={{
+                                    maxHeight: openExplanation
+                                        ? explanationRef.current?.scrollHeight + "px"
+                                        : "0px",
+                                }}
                             >
                                 {lessonExplanation.sections?.map((section, idx) => (
                                     <div key={idx} className="explanation-section">

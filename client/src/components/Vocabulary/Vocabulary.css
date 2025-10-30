@@ -1,0 +1,442 @@
+/* ------------------------------
+    Page Layout
+------------------------------ */
+.vocab-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* ------------------------------
+    Header
+------------------------------ */
+.vocab-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.vocab-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #dc2626;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.vocab-title:hover {
+    color: #b91c1c;
+}
+
+.vocab-subtitle {
+    font-size: 1.1rem;
+    color: #4b5563;
+}
+
+/* ------------------------------
+    Controls
+------------------------------ */
+.vocab-controls {
+    display: grid;
+    /* Grid for desktop: Search (2 parts), Category (1 part), Level (1 part) */
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.vocab-search,
+.vocab-filter {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.4s ease;
+    background: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+.vocab-search:focus,
+.vocab-filter:focus {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.15);
+}
+
+.vocab-filter:hover {
+    border-color: #dc2626;
+    color: #dc2626;
+}
+
+/* ------------------------------
+    Custom Select Dropdown Styles (New for Category Filter)
+------------------------------ */
+.custom-select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.custom-select-button {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    background: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.custom-select-button:hover,
+.custom-select-button.open {
+    border-color: #dc2626;
+    color: #dc2626;
+    box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.15);
+}
+
+.custom-dropdown-list {
+    position: absolute;
+    top: 100%;
+    /* Position right below the button */
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #dc2626;
+    border-top: none;
+    border-radius: 0 0 0.75rem 0.75rem;
+
+    /* CRITICAL for fixing the mobile height issue */
+    max-height: 250px;
+    overflow-y: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0;
+}
+
+.custom-dropdown-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #4b5563;
+    transition: background-color 0.2s;
+    font-size: 1rem;
+}
+
+.custom-dropdown-item:hover {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+.custom-dropdown-item.selected {
+    background: #fee2e2;
+    font-weight: 600;
+    color: #b91c1c;
+}
+
+
+/* ------------------------------
+    Category Section
+------------------------------ */
+.vocab-category-section {
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    transition: box-shadow 0.3s ease;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.vocab-category-section:nth-child(odd) {
+    background: #fff5f5;
+}
+
+.vocab-category-section:nth-child(even) {
+    background: #f9fafb;
+}
+
+.vocab-category-section:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.category-toggle {
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.category-toggle:hover {
+    background: #fee2e2;
+    border-color: #dc2626;
+}
+
+.category-toggle .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.category-toggle.open .arrow {
+    transform: rotate(180deg);
+}
+
+/* ------------------------------
+    Category Container Animation
+------------------------------ */
+.category-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.category-container.expanded {
+    max-height: 5000px;
+}
+
+/* ------------------------------
+    Vocabulary Grid (Desktop Only)
+------------------------------ */
+.vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.vocab-card {
+    background: #fff;
+    border-radius: 0.75rem;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    border-left: 4px solid #dc2626;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.vocab-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.vocab-word {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #b91c1c;
+    margin-bottom: 0.4rem;
+    word-break: break-word;
+}
+
+.vocab-translation {
+    font-size: 1.1rem;
+    color: #374151;
+    margin-bottom: 0.6rem;
+    word-break: break-word;
+}
+
+.vocab-level {
+    display: inline-block;
+    background: #f3f4f6;
+    color: #4b5563;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* ------------------------------
+    Vocabulary Table (Mobile Only)
+------------------------------ */
+.table-wrapper {
+    display: none;
+    overflow-x: auto;
+    padding: 0.5rem;
+}
+
+.vocab-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: 350px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.vocab-table thead th {
+    background: #dc2626;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.vocab-table th:first-child {
+    border-top-left-radius: 0.5rem;
+}
+
+.vocab-table th:last-child {
+    border-top-right-radius: 0.5rem;
+}
+
+.vocab-table td {
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    word-break: break-word;
+}
+
+.vocab-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.vocab-table tbody tr:nth-child(odd) {
+    background: #fff;
+}
+
+.vocab-table tbody tr:nth-child(even) {
+    background: #fef2f2;
+}
+
+.vocab-table tbody tr:hover {
+    background: #fee2e2;
+}
+
+/* ------------------------------
+    Pagination
+------------------------------ */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.page-btn {
+    padding: 0.5rem 0.9rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.page-btn:hover {
+    border-color: #dc2626;
+    background: #fee2e2;
+}
+
+.page-btn.active {
+    background: #dc2626;
+    color: #fff;
+    border-color: #dc2626;
+}
+
+/* ------------------------------
+    Loading & Error
+------------------------------ */
+.loading,
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    padding: 2rem;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 5px solid #eee;
+    border-top: 5px solid #dc2626;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.error p {
+    color: #dc2626;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.retry-btn {
+    padding: 0.5rem 1rem;
+    background: #dc2626;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.retry-btn:hover {
+    background: #b91c1c;
+}
+
+.no-results {
+    text-align: center;
+    padding: 2rem;
+    color: #6b7280;
+    font-size: 1.1rem;
+}
+
+/* ------------------------------
+    Responsive 
+------------------------------ */
+@media (max-width: 768px) {
+    .vocab-page {
+        padding: 1rem;
+    }
+
+    .vocab-title {
+        font-size: 1.75rem;
+    }
+
+    /* Change to a single column layout: Search, then Category, then Level, all full width */
+    .vocab-controls {
+        grid-template-columns: 1fr;
+        /* Single column, full width */
+        gap: 0.75rem;
+        /* Reduce gap slightly for better vertical stacking look */
+    }
+
+    .vocab-search,
+    .vocab-filter {
+        grid-column: auto;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .vocab-grid {
+        display: none;
+    }
+
+    .table-wrapper {
+        display: block;
+    }
+
+    .category-toggle {
+        font-size: 1rem;
+        padding: 0.6rem 0.8rem;
+    }
+}
