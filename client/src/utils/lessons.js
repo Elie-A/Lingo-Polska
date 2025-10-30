@@ -66,6 +66,18 @@ With clear examples and interactive exercises, you'll gain the ability to speak 
     ],
   },
   {
+    title: "Conditional Tense",
+    description:
+      "Learn to express hypothetical situations, wishes, and polite requests in Polish.",
+    icon: "🔮",
+    path: "lessons/conditional",
+    folder: "conditional",
+    intro: `The Conditional Tense lesson will teach you how to talk about hypothetical scenarios, wishes, possibilities, and polite requests in Polish. 
+You'll learn the formation of conditional sentences, how to conjugate verbs appropriately, and the nuances of expressing “would” and “could” in different contexts. 
+With examples and exercises, you'll gain confidence in speaking about situations that are not real but imagined, enhancing your fluency and expressive range.`,
+    classes: [],
+  },
+  {
     title: "Conjugation",
     description:
       "Decode the crucial rules and patterns to correctly inflect any Polish verb.",

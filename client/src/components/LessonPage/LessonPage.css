@@ -8,6 +8,19 @@
     font-family: 'Inter', sans-serif;
 }
 
+.lesson-icon {
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.lesson-page-flag {
+    width: 32px;
+    height: 20px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
 /* Header */
 .lesson-header {
     text-align: center;

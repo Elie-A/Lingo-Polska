@@ -13,8 +13,7 @@ export default function LessonCard({ title, description, icon, delay, classes, p
     const navigate = useNavigate();
 
     // Auto-generate path if not provided
-    const lessonPath =
-        path || `/lesson/${title.toLowerCase().replace(/\s+/g, "-")}`;
+    const lessonPath = path || `/lesson/${title.toLowerCase().replace(/\s+/g, "-")}`;
 
     let displayIcon;
     if (React.isValidElement(icon)) {
@@ -32,7 +31,7 @@ export default function LessonCard({ title, description, icon, delay, classes, p
         <div
             className="card-container"
             style={{ animationDelay: `${delay}ms` }}
-            onClick={() => navigate(lessonPath)}
+            onClick={() => navigate(lessonPath, { state: { icon } })}
         >
             <div className="card-glow-hover"></div>
             <div className="card-base">

@@ -1,10 +1,22 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import Collapse from "../Collapse/Collapse";
 import VocabularyPage from "../Vocabulary/VocabularyPage";
 
 import "./LessonPage.css";
 
+import PolandFlag from "../../assets/poland-flag.svg";
+
+import "./LessonPage.css";
+
+const FLAGS = {
+    PL: PolandFlag,
+};
+
 const LessonPage = ({ lessonTitle, classes, lessonFolder }) => {
+    const location = useLocation();
+    const passedIcon = location.state?.icon; // 👈 emoji or flag code passed from LessonCard
+
     const [lessonExplanation, setLessonExplanation] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -60,11 +72,23 @@ const LessonPage = ({ lessonTitle, classes, lessonFolder }) => {
         return <VocabularyPage />;
     }
 
+    // Determine how to display the icon
+    const renderIcon = () => {
+        if (!passedIcon) return null;
+        if (typeof passedIcon === "string" && passedIcon.length === 2 && FLAGS[passedIcon.toUpperCase()]) {
+            const FlagSVG = FLAGS[passedIcon.toUpperCase()];
+            return <img src={FlagSVG} alt={`${passedIcon} flag`} className="lesson-page-flag" />;
+        }
+        return <span className="lesson-icon">{passedIcon}</span>;
+    };
+
     return (
         <div className="lesson-page">
             {/* Header */}
             <div className="lesson-header">
-                <h1 className="lesson-title">{lessonTitle}</h1>
+                <h1 className="lesson-title">
+                    {renderIcon()} {lessonTitle}
+                </h1>
             </div>
 
             {/* Lesson Explanation */}
