@@ -1,276 +1,240 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useMemo } from "react";
+import axios from "axios";
+import FilterDropdown from "../FilterDropdown/FilterDropdown";
 import "./Vocabulary.css";
+
+const pageSize = 50;
 
 const VocabularyPage = () => {
     const [vocabularies, setVocabularies] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
     const [category, setCategory] = useState("");
     const [level, setLevel] = useState("");
-    const [expandedCategories, setExpandedCategories] = useState([]);
+    const [currentPage, setCurrentPage] = useState(1);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
-    const [currentPage, setCurrentPage] = useState(1);
+    const [expandedCategories, setExpandedCategories] = useState({});
+    const [allExpanded, setAllExpanded] = useState(true);
 
-    const [isCategoryDropdownOpen, setIsCategoryDropdownOpen] = useState(false);
-    const [isLevelDropdownOpen, setIsLevelDropdownOpen] = useState(false);
-    const categoryDropdownRef = useRef(null);
-    const levelDropdownRef = useRef(null);
-
-    const pageSize = 100;
-
-    // Fetch data
     useEffect(() => {
-        fetchVocabularies();
-
-        const handleClickOutside = (e) => {
-            if (categoryDropdownRef.current && !categoryDropdownRef.current.contains(e.target)) {
-                setIsCategoryDropdownOpen(false);
-            }
-            if (levelDropdownRef.current && !levelDropdownRef.current.contains(e.target)) {
-                setIsLevelDropdownOpen(false);
+        const fetchVocabularies = async () => {
+            setLoading(true);
+            setError("");
+            try {
+                const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/api/vocabulary`);
+                setVocabularies(data);
+            } catch (err) {
+                setError(err.response?.data?.message || err.message || "Failed to load vocabulary");
+            } finally {
+                setLoading(false);
             }
         };
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => document.removeEventListener("mousedown", handleClickOutside);
+        fetchVocabularies();
     }, []);
 
-    const fetchVocabularies = async () => {
-        setLoading(true);
-        setError("");
-        try {
-            const res = await fetch(`${import.meta.env.VITE_API_URL}/api/vocabulary`);
-            if (!res.ok) throw new Error("Failed to load vocabulary");
-            const data = await res.json();
-            setVocabularies(data);
-        } catch (err) {
-            setError(err.message);
-        } finally {
-            setLoading(false);
-        }
-    };
-
-    // Flatten all words for filtering
-    const allWords = vocabularies.flatMap((v) =>
-        (v.words || []).map((word) => ({ ...word, category: v._id }))
+    const allWords = useMemo(() =>
+        vocabularies.flatMap(v => (v.words || []).map(w => ({ ...w, category: v._id }))),
+        [vocabularies]
     );
 
-    // Filtering logic
-    const filteredVocab = allWords.filter((v) => {
-        if (!v) return false;
-        const polish = v.polish ?? "";
-        const english = v.english ?? "";
-        const matchesLevel = level ? v.level === level : true;
-        const matchesCategory = category ? v.category === category : true;
-        const matchesSearch =
-            polish.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            english.toLowerCase().includes(searchTerm.toLowerCase());
-        return matchesLevel && matchesCategory && matchesSearch;
-    });
-
-    const totalPages = Math.ceil(filteredVocab.length / pageSize);
-    const startIdx = (currentPage - 1) * pageSize;
-    const endIdx = startIdx + pageSize;
-    const paginatedVocab = filteredVocab.slice(startIdx, endIdx);
-
-    // Group by category
-    const groupedVocab = paginatedVocab.reduce((acc, v) => {
-        const categoryName = v.category?.trim() || "Uncategorized";
-        if (!acc[categoryName]) acc[categoryName] = [];
-        acc[categoryName].push(v);
-        return acc;
-    }, {});
-
-    const toggleCategory = (cat) => {
-        setExpandedCategories((prev) =>
-            prev.includes(cat) ? prev.filter((c) => c !== cat) : [...prev, cat]
-        );
-    };
-
-    const handlePageChange = (page) => {
-        setCurrentPage(page);
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-
-    const handleCustomCategoryChange = (newCategory) => {
-        setCategory(newCategory);
-        setCurrentPage(1);
-        setIsCategoryDropdownOpen(false);
-    };
-
-    const handleCustomLevelChange = (newLevel) => {
-        setLevel(newLevel);
-        setCurrentPage(1);
-        setIsLevelDropdownOpen(false);
-    };
-
-    const uniqueCategories = [
-        "",
-        ...new Set(allWords.map((v) => v.category?.trim() || "Uncategorized")),
-    ].sort((a, b) => {
-        if (a === "") return -1;
-        if (b === "") return 1;
-        return a.localeCompare(b);
-    });
+    const uniqueCategories = useMemo(() =>
+        ["", ...new Set(allWords.map(w => w.category?.trim() || "Uncategorized"))].sort(),
+        [allWords]
+    );
 
     const uniqueLevels = ["", "A1", "A2", "B1", "B2", "C1", "C2"];
 
-    if (loading)
-        return (
-            <div className="vocab-page">
-                <div className="loading">
-                    <div className="spinner"></div>
-                    <p>Loading vocabulary...</p>
-                </div>
-            </div>
-        );
+    const filteredWords = useMemo(() =>
+        allWords.filter(w => {
+            const matchesSearch = w.polish.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                w.english.toLowerCase().includes(searchTerm.toLowerCase());
+            const matchesCategory = category ? w.category === category : true;
+            const matchesLevel = level ? w.level === level : true;
+            return matchesSearch && matchesCategory && matchesLevel;
+        }),
+        [allWords, searchTerm, category, level]
+    );
 
-    if (error)
-        return (
-            <div className="vocab-page">
-                <div className="error">
-                    <p>Error: {error}</p>
-                    <button className="retry-btn" onClick={fetchVocabularies}>
-                        Retry
-                    </button>
-                </div>
-            </div>
-        );
+    const totalPages = Math.ceil(filteredWords.length / pageSize);
+
+    const paginatedWords = useMemo(() =>
+        filteredWords.slice((currentPage - 1) * pageSize, currentPage * pageSize),
+        [filteredWords, currentPage]
+    );
+
+    useEffect(() => {
+        if (currentPage > totalPages && totalPages > 0) {
+            setCurrentPage(1);
+        }
+    }, [currentPage, totalPages]);
+
+    const groupedWords = useMemo(() =>
+        paginatedWords.reduce((acc, w) => {
+            const cat = w.category || "Uncategorized";
+            if (!acc[cat]) acc[cat] = [];
+            acc[cat].push(w);
+            return acc;
+        }, {}),
+        [paginatedWords]
+    );
+
+    // Initialize all categories as expanded/collapsed based on screen size
+    useEffect(() => {
+        const categories = Object.keys(groupedWords);
+        if (categories.length > 0) {
+            const initialState = {};
+            const isDesktop = window.innerWidth > 768;
+            categories.forEach(cat => {
+                initialState[cat] = isDesktop;
+            });
+            setExpandedCategories(initialState);
+            setAllExpanded(isDesktop);
+        }
+    }, [groupedWords]);
+
+    const toggleCategory = (cat) => {
+        setExpandedCategories(prev => {
+            const newState = {
+                ...prev,
+                [cat]: !prev[cat]
+            };
+            // Check if all categories have the same state
+            const allSame = Object.values(newState).every(val => val === newState[cat]);
+            if (allSame) {
+                setAllExpanded(newState[cat]);
+            }
+            return newState;
+        });
+    };
+
+    const toggleAllCategories = () => {
+        const newState = !allExpanded;
+        const categories = Object.keys(groupedWords);
+        const updatedState = {};
+        categories.forEach(cat => {
+            updatedState[cat] = newState;
+        });
+        setExpandedCategories(updatedState);
+        setAllExpanded(newState);
+    };
+
+    if (loading) {
+        return <div className="loading">Loading vocabulary...</div>;
+    }
+
+    if (error) {
+        return <div className="error">{error}</div>;
+    }
 
     return (
         <div className="vocab-page">
-            <header className="vocab-header">
-                <h1 className="vocab-title">📚 Polish Vocabulary</h1>
-                <p className="vocab-subtitle">
-                    Explore and filter vocabulary by category or CEFR level.
-                </p>
+            <header>
+                <h1>📚 Polish Vocabulary</h1>
+                <p>Explore and filter vocabulary by category or CEFR level.</p>
             </header>
 
-            <div className="vocab-controls">
+            <div className="filters">
                 <input
                     type="text"
                     placeholder="🔍 Search Polish or English..."
-                    className="vocab-search"
                     value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
+                    onChange={(e) => {
+                        setSearchTerm(e.target.value);
+                        setCurrentPage(1);
+                    }}
                 />
-
-                {/* Category Dropdown */}
-                <div className="custom-select-wrapper" ref={categoryDropdownRef}>
-                    <button
-                        className={`vocab-filter custom-select-button ${isCategoryDropdownOpen ? "open" : ""
-                            }`}
-                        onClick={() => setIsCategoryDropdownOpen((prev) => !prev)}
-                    >
-                        {category || "All Categories"}
-                        <span style={{ marginLeft: 8 }}>
-                            {isCategoryDropdownOpen ? "▲" : "▼"}
-                        </span>
-                    </button>
-                    {isCategoryDropdownOpen && (
-                        <div className="custom-dropdown-list" role="listbox">
-                            {uniqueCategories.map((cat) => (
-                                <div
-                                    key={cat || "all"}
-                                    className={`custom-dropdown-item ${cat === category ? "selected" : ""}`}
-                                    onClick={() => handleCustomCategoryChange(cat)}
-                                >
-                                    {cat || "All Categories"}
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                </div>
-
-                {/* Level Dropdown */}
-                <div className="custom-select-wrapper" ref={levelDropdownRef}>
-                    <button
-                        className={`vocab-filter custom-select-button ${isLevelDropdownOpen ? "open" : ""}`}
-                        onClick={() => setIsLevelDropdownOpen((prev) => !prev)}
-                    >
-                        {level || "All Levels"}
-                        <span style={{ marginLeft: 8 }}>{isLevelDropdownOpen ? "▲" : "▼"}</span>
-                    </button>
-                    {isLevelDropdownOpen && (
-                        <div className="custom-dropdown-list" role="listbox">
-                            {uniqueLevels.map((lvl) => (
-                                <div
-                                    key={lvl || "all"}
-                                    className={`custom-dropdown-item ${lvl === level ? "selected" : ""}`}
-                                    onClick={() => handleCustomLevelChange(lvl)}
-                                >
-                                    {lvl || "All Levels"}
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                </div>
+                <FilterDropdown
+                    options={uniqueCategories}
+                    selected={category}
+                    onChange={(value) => {
+                        setCategory(value);
+                        setCurrentPage(1);
+                    }}
+                    placeholder="All Categories"
+                />
+                <FilterDropdown
+                    options={uniqueLevels}
+                    selected={level}
+                    onChange={(value) => {
+                        setLevel(value);
+                        setCurrentPage(1);
+                    }}
+                    placeholder="All Levels"
+                />
             </div>
 
-            {Object.keys(groupedVocab).length === 0 ? (
-                <div className="no-results">
-                    <p>No vocabulary found for this filter.</p>
+            {Object.keys(groupedWords).length > 1 && (
+                <div className="expand-collapse-controls">
+                    <button
+                        className="expand-collapse-btn"
+                        onClick={toggleAllCategories}
+                        aria-label={allExpanded ? "Collapse all categories" : "Expand all categories"}
+                    >
+                        {allExpanded ? "▼ Collapse All" : "▶ Expand All"}
+                    </button>
+                    <span className="vocab-count">
+                        {filteredWords.length} word{filteredWords.length !== 1 ? 's' : ''} found
+                    </span>
                 </div>
-            ) : (
-                Object.entries(groupedVocab).map(([cat, words]) => (
-                    <section key={cat} className="vocab-category-section">
-                        <button
-                            className={`category-toggle ${expandedCategories.includes(cat) ? "open" : ""}`}
-                            onClick={() => toggleCategory(cat)}
-                        >
-                            <span>
-                                {cat} ({words.length})
-                            </span>
-                            <span className="arrow">{expandedCategories.includes(cat) ? "▲" : "▼"}</span>
-                        </button>
-
-                        <div className={`category-container ${expandedCategories.includes(cat) ? "expanded" : ""}`}>
-                            <div className="vocab-grid">
-                                {words.map((v) => (
-                                    <article key={v._id} className="vocab-card">
-                                        <div className="vocab-word">{v.polish}</div>
-                                        <div className="vocab-translation">{v.english}</div>
-                                        <div className="vocab-level">{v.level}</div>
-                                    </article>
-                                ))}
-                            </div>
-
-                            <div className="table-wrapper">
-                                <table className="vocab-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Polish</th>
-                                            <th>English</th>
-                                            <th>Level</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {words.map((v) => (
-                                            <tr key={v._id}>
-                                                <td>{v.polish}</td>
-                                                <td>{v.english}</td>
-                                                <td>{v.level}</td>
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </section>
-                ))
             )}
 
+            <div className="vocab-list">
+                {Object.keys(groupedWords).length === 0 ? (
+                    <div className="no-results">
+                        <p>No vocabulary found matching your filters.</p>
+                    </div>
+                ) : (
+                    Object.entries(groupedWords).map(([cat, words]) => (
+                        <div key={cat} className="vocab-group">
+                            <h2
+                                className={`category-toggle ${expandedCategories[cat] ? 'open' : ''}`}
+                                onClick={() => toggleCategory(cat)}
+                                role="button"
+                                tabIndex={0}
+                                onKeyPress={(e) => {
+                                    if (e.key === 'Enter' || e.key === ' ') {
+                                        toggleCategory(cat);
+                                    }
+                                }}
+                                aria-expanded={expandedCategories[cat]}
+                                aria-label={`${cat} category with ${words.length} words`}
+                            >
+                                <span>{cat} ({words.length})</span>
+                                <span className="arrow">
+                                    {expandedCategories[cat] ? '▼' : '▶'}
+                                </span>
+                            </h2>
+                            <ul className={`category-container ${expandedCategories[cat] ? 'expanded' : ''}`}>
+                                {words.map((w) => (
+                                    <li key={w._id || `${w.polish}-${w.english}`}>
+                                        <span className="word-pair">
+                                            <strong>{w.polish}</strong> — {w.english}
+                                        </span>
+                                        <span className="word-level">
+                                            {w.level || "–"}
+                                        </span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))
+                )}
+            </div>
+
             {totalPages > 1 && (
-                <nav className="pagination" aria-label="Pagination">
-                    {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                <div className="pagination">
+                    {Array.from({ length: totalPages }, (_, i) => (
                         <button
-                            key={page}
-                            className={`page-btn ${currentPage === page ? "active" : ""}`}
-                            onClick={() => handlePageChange(page)}
+                            key={i + 1}
+                            className={currentPage === i + 1 ? "active" : ""}
+                            onClick={() => setCurrentPage(i + 1)}
+                            aria-label={`Go to page ${i + 1}`}
+                            aria-current={currentPage === i + 1 ? "page" : undefined}
                         >
-                            {page}
+                            {i + 1}
                         </button>
                     ))}
-                </nav>
+                </div>
             )}
         </div>
     );
