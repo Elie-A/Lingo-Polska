@@ -1,4 +1,5 @@
-.exercise-card {
+/* Collapse-specific exercise card styling */
+.collapse-container .exercise-card {
     position: relative;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
     border-radius: 1rem;
@@ -9,12 +10,12 @@
     border-left: 5px solid #dc2626;
 }
 
-.exercise-card:hover {
+.collapse-container .exercise-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
 }
 
-.exercise-card-glow {
+.collapse-container .exercise-card-glow {
     position: absolute;
     inset: 0;
     background: radial-gradient(circle at top right, #dc2626, transparent 70%);
@@ -25,11 +26,11 @@
     z-index: 0;
 }
 
-.exercise-card:hover .exercise-card-glow {
+.collapse-container .exercise-card:hover .exercise-card-glow {
     opacity: 0.15;
 }
 
-.card-decorative-bg {
+.collapse-container .card-decorative-bg {
     position: absolute;
     top: -2rem;
     right: -2rem;
@@ -41,12 +42,12 @@
     z-index: 0;
 }
 
-.exercise-card-content {
+.collapse-container .exercise-card-content {
     position: relative;
     z-index: 10;
 }
 
-.exercise-icon-container {
+.collapse-container .exercise-icon-container {
     display: inline-block;
     background-color: #fee2e2;
     color: #dc2626;
@@ -57,13 +58,13 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
-.exercise-card:hover .exercise-icon-container {
+.collapse-container .exercise-card:hover .exercise-icon-container {
     transform: scale(1.1) rotate(3deg);
     color: #b91c1c;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.exercise-card-title {
+.collapse-container .exercise-card-title {
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 1rem;

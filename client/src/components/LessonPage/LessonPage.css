@@ -6,6 +6,7 @@
     padding: 1rem 2rem;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    overflow: visible !important; /* Force visibility */
 }
 
 .lesson-icon {
@@ -132,7 +133,7 @@
 .class-block {
     margin-bottom: 1.5rem;
     border-radius: 1rem;
-    overflow: hidden;
+    overflow: visible !important; /* Force visibility on large screens */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -187,14 +188,15 @@
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease, opacity 0.3s ease, padding 0.3s ease;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease, padding 0.3s ease;
     padding: 0 1rem;
 }
 
 .class-content.active {
-    max-height: 2000px;
+    max-height: 50000px !important; /* Very large value to ensure content is never cut off on any screen */
     opacity: 1;
     padding: 1rem;
+    overflow: visible !important; /* Force visibility on large screens */
 }
 
 /* Loading */
