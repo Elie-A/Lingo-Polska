@@ -1,15 +1,19 @@
-/* Wrapper for horizontal scroll and card styling */
+/* Exercise-specific table wrapper - scoped to collapse container */
+.collapse-container .table-wrapper,
 .table-wrapper {
-    overflow-x: auto;
-    margin-top: 0.8rem;
-    border-radius: 0.6rem;
-    background: rgba(255, 255, 255, 0.25);
+    overflow-x: auto !important;
+    margin-top: 0.8rem !important;
+    border-radius: 0.6rem !important;
+    background: rgba(255, 255, 255, 0.9) !important;
     backdrop-filter: blur(6px);
-    padding: 0.4rem;
+    padding: 20px !important;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    min-height: auto;
+    min-width: auto;
 }
 
-/* Table styling */
+/* Exercise table styling - scoped to collapse container */
+.collapse-container .exercise-table,
 .exercise-table {
     width: 100%;
     border-collapse: separate;
@@ -17,107 +21,72 @@
     font-size: 0.9rem;
     border-radius: 0.5rem;
     overflow: hidden;
+    background: white !important;
 }
 
-/* Table header */
+/* Table header - scoped to collapse container */
+.collapse-container .exercise-table th,
+.collapse-container .exercise-table td,
 .exercise-table th,
 .exercise-table td {
-    padding: 0.65rem;
-    text-align: left;
+    padding: 0.65rem !important;
+    text-align: left !important;
+    color: #1f2937 !important;
+    background-color: white !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: table-cell !important;
 }
 
+.collapse-container .exercise-table th,
 .exercise-table th {
-    background-color: rgba(220, 38, 38, 0.1);
-    font-weight: 600;
-    color: #1f2937;
+    background-color: rgba(220, 38, 38, 0.1) !important;
+    font-weight: 700 !important;
+    color: #1f2937 !important;
     position: sticky;
     top: 0;
+    font-size: 16px !important;
 }
 
-/* Table row styling */
+/* Table row styling - scoped to collapse container */
+.collapse-container .exercise-table tbody tr,
+.exercise-table tbody tr {
+    background-color: white !important;
+}
+
+.collapse-container .exercise-table tr:nth-child(even),
 .exercise-table tr:nth-child(even) {
-    background-color: rgba(220, 38, 38, 0.05);
+    background-color: rgba(220, 38, 38, 0.05) !important;
 }
 
+.collapse-container .exercise-table tr:hover,
 .exercise-table tr:hover {
-    background-color: rgba(220, 38, 38, 0.12);
+    background-color: rgba(220, 38, 38, 0.12) !important;
 }
 
-/* Polish cell styling */
-.polish {
+/* Polish cell styling - scoped to collapse container */
+.collapse-container .exercise-table .polish,
+.exercise-table .polish {
     font-size: 0.95rem;
     line-height: 1.4;
+    color: #1f2937 !important; /* Force visible text */
 }
 
-/* Stem + ending highlight */
-.stem {
-    color: #dc2626;
-    /* red stem */
+/* Stem + ending highlight - scoped to collapse container */
+.collapse-container .exercise-table .stem,
+.exercise-table .stem {
+    color: #dc2626 !important;
     font-weight: bold;
     cursor: help;
 }
 
-.ending {
-    color: #2563eb;
-    /* blue ending */
+.collapse-container .exercise-table .ending,
+.exercise-table .ending {
+    color: #2563eb !important;
     font-weight: bold;
     font-style: italic;
     cursor: help;
 }
 
-/* Optional: subtle glow for card content */
-.exercise-card-content {
-    position: relative;
-    z-index: 1;
-}
-
-/* Collapse header styling */
-.collapse-header {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.6rem 1rem;
-    background-color: rgba(220, 38, 38, 0.05);
-    border-radius: 0.5rem;
-    margin-top: 0.5rem;
-    font-weight: 600;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.collapse-header.active {
-    background-color: rgba(220, 38, 38, 0.15);
-}
-
-.collapse-header:hover {
-    background-color: rgba(220, 38, 38, 0.12);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.toggle-btn {
-    font-weight: bold;
-    font-size: 1.4rem;
-    color: #dc2626;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.8rem;
-    height: 1.8rem;
-    transition: transform 0.3s ease;
-}
-
-.collapse-header.active .toggle-btn {
-    transform: rotate(180deg);
-}
-
-/* Collapse content animation */
-.collapse-content {
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transition: max-height 0.4s ease, opacity 0.4s ease;
-}
-
-.collapse-content.open {
-    max-height: 2000px;
-    opacity: 1;
-}
