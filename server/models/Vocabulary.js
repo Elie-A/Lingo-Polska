@@ -1,4 +1,3 @@
-// models/Vocabulary.js
 import mongoose from "mongoose";
 
 const vocabularySchema = new mongoose.Schema(
@@ -15,6 +14,4 @@ const vocabularySchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const Vocabulary = mongoose.model("Vocabulary", vocabularySchema);
-
-export default Vocabulary;
+export default mongoose.model("Vocabulary", vocabularySchema);
