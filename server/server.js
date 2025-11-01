@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import contactRoutes from "./routes/contactRoutes.js";
 import vocabularyRoutes from "./routes/vocabularyRoutes.js";
+import practiceRoutes from "./routes/practiceRoutes.js";
 
 dotenv.config();
 
@@ -54,6 +55,9 @@ app.use("/api/contact", contactRoutes);
 
 // Vocabulary form route
 app.use("/api/vocabulary", vocabularyRoutes);
+
+// Practice from route
+app.use("/api/practice", practiceRoutes);
 
 // Start server
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));

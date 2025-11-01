@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import Collapse from "../Collapse/Collapse";
 import VocabularyPage from "../Vocabulary/VocabularyPage";
+import PracticePage from "../Practice/PracticePage";
 
 import "./LessonPage.css";
 
@@ -70,6 +71,11 @@ const LessonPage = ({ lessonTitle, classes, lessonFolder }) => {
     // Render VocabularyPage if this lesson is vocabulary
     if (lessonFolder === "vocabulary") {
         return <VocabularyPage />;
+    }
+
+    // Render PracticePage if this lesson is practice
+    if (lessonFolder === "practice") {
+        return <PracticePage />;
     }
 
     // Determine how to display the icon

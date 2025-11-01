@@ -1,0 +1,431 @@
+@import "../../variables.css";
+
+/* ===========================
+Question Card Container
+=========================== */
+.question-card {
+    margin-bottom: 2rem;
+    animation: slideIn 0.3s ease;
+}
+
+/* ===========================
+Question Type Badge
+=========================== */
+.question-type-badge {
+    margin-bottom: 1rem;
+}
+
+.question-type-badge .badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: #dc2626;
+    color: #f0f0f0;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* ===========================
+Question Title
+=========================== */
+.question-title {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: var(--text);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* ===========================
+Reading Comprehension Text
+=========================== */
+.reading-text {
+    background-color: #f9fafb;
+    padding: 1rem;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid var(--border);
+}
+
+.reading-text p {
+    white-space: pre-wrap;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0;
+}
+
+/* ===========================
+Multiple Choice Answers
+=========================== */
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.answer-btn {
+    padding: 0.75rem 1rem;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: var(--radius);
+    cursor: pointer;
+    color: #000;
+    text-align: left;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.answer-btn:hover:not(:disabled) {
+    background-color: #e5e7eb;
+    border-color: var(--primary);
+}
+
+.answer-btn:disabled {
+    cursor: not-allowed;
+}
+
+.answer-correct {
+    background-color: #22c55e !important;
+    color: #fff !important;
+    border-color: #16a34a !important;
+}
+
+.answer-incorrect {
+    background-color: #ef4444 !important;
+    color: #fff !important;
+    border-color: #dc2626 !important;
+}
+
+.answer-revealed {
+    background-color: #86efac !important;
+    color: #fff !important;
+    border-color: #22c55e !important;
+}
+
+.answer-disabled {
+    background-color: #f0f0f0;
+}
+
+/* ===========================
+Text Answer Form
+=========================== */
+.text-answer-form {
+    margin-top: 1rem;
+}
+
+.text-answer-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #d1d5db;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #fff;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.text-answer-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.text-answer-input:disabled {
+    background-color: #f3f4f6;
+    cursor: not-allowed;
+}
+
+.input-correct {
+    background-color: #d1fae5 !important;
+    border-color: #22c55e !important;
+}
+
+.input-incorrect {
+    background-color: #fee2e2 !important;
+    border-color: #ef4444 !important;
+}
+
+.submit-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background var(--transition);
+}
+
+.submit-btn:hover:not(:disabled) {
+    background-color: var(--primary-dark);
+}
+
+.submit-btn:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+.submit-disabled {
+    background-color: #9ca3af !important;
+}
+
+/* ===========================
+Feedback Messages
+=========================== */
+.feedback {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: var(--radius);
+    animation: fadeIn 0.3s ease;
+}
+
+.feedback-correct {
+    background-color: #d1fae5;
+    border: 1px solid #22c55e;
+}
+
+.feedback-incorrect {
+    background-color: #fee2e2;
+    border: 1px solid #ef4444;
+}
+
+.feedback-icon {
+    font-weight: 600;
+    display: block;
+}
+
+.feedback-correct .feedback-icon {
+    color: #059669;
+}
+
+.feedback-incorrect .feedback-icon {
+    color: #dc2626;
+}
+
+.correct-answer {
+    margin-top: 0.5rem;
+    color: var(--text);
+}
+
+.correct-answer strong {
+    color: #059669;
+}
+
+/* ===========================
+Hints Section
+=========================== */
+.hints-container {
+    margin-top: 1rem;
+}
+
+.hint-toggle-btn {
+    padding: 0.5rem 1rem;
+    background-color: #f3f4f6;
+    border: 1px solid #dc2626;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+    color: #dc2626;
+}
+
+.hint-toggle-btn:hover {
+    background-color: #dc2626;
+    border-color: #f3f3f3;
+    color: #f3f3f3;
+}
+
+.hints-content {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    background-color: #fef3c7;
+    border: 1px solid #fbbf24;
+    border-radius: var(--radius);
+    font-size: 0.875rem;
+    animation: fadeIn 0.2s ease;
+}
+
+.hint-item {
+    color: #78350f;
+    line-height: 1.5;
+    margin-bottom: 0.25rem;
+}
+
+.hint-item:last-child {
+    margin-bottom: 0;
+}
+
+.question-of {
+    text-align: center;
+    margin-top: 0.8rem;
+    color: #dc2626;
+    font-size: 0.95rem;
+    word-wrap: break-word;
+}
+
+/* ===========================
+Animations
+=========================== */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ===========================
+Responsive Design
+=========================== */
+@media (max-width: 1024px) {
+    .question-title {
+        font-size: 1.2rem;
+    }
+
+    .answer-btn {
+        padding: 0.7rem 0.95rem;
+        font-size: 0.95rem;
+    }
+
+    .text-answer-input {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+
+    .submit-btn {
+        padding: 0.7rem 1.4rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .question-title {
+        font-size: 1.15rem;
+    }
+
+    .question-type-badge .badge {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    .answer-btn {
+        padding: 0.65rem 0.9rem;
+        font-size: 0.9rem;
+    }
+
+    .text-answer-input {
+        padding: 0.65rem;
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        padding: 0.65rem 1.3rem;
+        font-size: 0.9rem;
+    }
+
+    .reading-text {
+        max-height: 180px;
+        padding: 0.85rem;
+    }
+
+    .question-of {
+        font-size: 0.9rem;
+        margin-top: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .question-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .question-title {
+        font-size: 1.1rem;
+    }
+
+    .question-type-badge .badge {
+        font-size: 0.65rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .answer-btn {
+        padding: 0.6rem 0.85rem;
+        font-size: 0.85rem;
+    }
+
+    .text-answer-input {
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+
+    .submit-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    .reading-text {
+        max-height: 160px;
+        padding: 0.75rem;
+    }
+
+    .hint-toggle-btn {
+        padding: 0.45rem 0.9rem;
+        font-size: 0.8rem;
+    }
+
+    .hints-content {
+        font-size: 0.8rem;
+        padding: 0.65rem;
+    }
+
+    .question-of {
+        font-size: 0.85rem;
+        margin-top: 1.2rem;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .question-title {
+        font-size: 1rem;
+    }
+
+    .answer-btn {
+        padding: 0.55rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .text-answer-input {
+        padding: 0.55rem;
+        font-size: 0.8rem;
+    }
+
+    .submit-btn {
+        padding: 0.55rem 1.1rem;
+        font-size: 0.8rem;
+    }
+
+    .reading-text {
+        max-height: 140px;
+        padding: 0.7rem;
+    }
+}

@@ -1,0 +1,326 @@
+@import "../../variables.css";
+
+/* ===========================
+Practice Session Card
+=========================== */
+.practice-session {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    animation: fadeIn 0.4s ease;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.practice-session h2 {
+    color: #b91c1c;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+/* ===========================
+Progress Bar
+=========================== */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #f3f4f6;
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: var(--primary);
+    transition: width 0.4s ease;
+    border-radius: var(--radius);
+}
+
+.question-progress {
+    text-align: center;
+    margin-top: 0.8rem;
+    color: var(--gray);
+    font-size: 0.95rem;
+    word-wrap: break-word;
+}
+
+/* ===========================
+Session Result
+=========================== */
+.session-result {
+    text-align: center;
+    color: var(--text);
+    padding: 1rem 0;
+}
+
+.session-result h2 {
+    color: var(--primary-dark);
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+/* ===========================
+Quiz Finished
+=========================== */
+.quiz-finished {
+    text-align: center;
+    padding: 2rem;
+    animation: fadeIn 0.4s ease;
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.quiz-finished h2 {
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-finished p {
+    color: var(--text);
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+}
+
+.quiz-finished-btn {
+    background: #b91c1c;
+    color: #fef2f2;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.quiz-finished-btn:hover {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.quiz-finished-p {
+    font-weight: bold;
+}
+
+/* ===========================
+Buttons
+=========================== */
+.result-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.practice-btn {
+    background: var(--primary-dark);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background var(--transition);
+    min-width: 120px;
+    text-align: center;
+}
+
+.practice-btn:hover {
+    background: var(--primary);
+}
+
+.practice-btn.outline {
+    background: #fef2f2;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.practice-btn.outline:hover {
+    background: #fee2e2;
+}
+
+/* ===========================
+Animations
+=========================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===========================
+Responsive Adjustments
+=========================== */
+@media (max-width: 1024px) {
+    .practice-session {
+        padding: 1.4rem;
+    }
+
+    .session-result h2 {
+        font-size: 1.25rem;
+    }
+
+    .quiz-finished h2 {
+        font-size: 1.4rem;
+    }
+
+    .quiz-finished p {
+        font-size: 1.05rem;
+    }
+
+    .practice-btn {
+        padding: 0.55rem 1.1rem;
+        font-size: 0.95rem;
+        min-width: 110px;
+    }
+
+    .practice-session {
+        padding: 1.2rem;
+    }
+
+    .practice-session h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .practice-session {
+        padding: 1.2rem;
+    }
+
+    .practice-session h2 {
+        font-size: 1.2rem;
+    }
+
+    .session-result h2 {
+        font-size: 1.2rem;
+    }
+
+    .quiz-finished {
+        padding: 1.5rem;
+    }
+
+    .quiz-finished h2 {
+        font-size: 1.3rem;
+    }
+
+    .quiz-finished p {
+        font-size: 1rem;
+    }
+
+    .quiz-finished button {
+        padding: 0.7rem 1.4rem;
+        font-size: 0.95rem;
+    }
+
+    .question-progress {
+        font-size: 0.9rem;
+    }
+
+    .practice-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .practice-session {
+        padding: 1rem;
+    }
+
+    .session-result h2 {
+        font-size: 1.1rem;
+    }
+
+    .quiz-finished {
+        padding: 1.2rem;
+    }
+
+    .quiz-finished h2 {
+        font-size: 1.2rem;
+    }
+
+    .quiz-finished p {
+        font-size: 0.95rem;
+    }
+
+    .quiz-finished button {
+        padding: 0.65rem 1.3rem;
+        font-size: 0.9rem;
+    }
+
+    .question-progress {
+        font-size: 0.85rem;
+    }
+
+    .practice-btn {
+        padding: 0.45rem 0.9rem;
+        font-size: 0.85rem;
+        min-width: 90px;
+    }
+
+    .progress-bar {
+        height: 6px;
+    }
+}
+
+/* Smooth progress bar scaling on small devices */
+@media (max-width: 360px) {
+    .quiz-finished {
+        padding: 1rem;
+    }
+
+    .quiz-finished h2 {
+        font-size: 1.1rem;
+    }
+
+    .quiz-finished p {
+        font-size: 0.9rem;
+    }
+
+    .quiz-finished button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    .practice-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+        min-width: 80px;
+    }
+
+    .progress-bar {
+        height: 5px;
+    }
+
+    .question-progress {
+        font-size: 0.8rem;
+    }
+
+    .practice-session {
+        padding: 1rem;
+    }
+
+    .practice-session h2 {
+        font-size: 1rem;
+    }
+}
