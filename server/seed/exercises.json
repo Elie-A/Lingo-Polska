@@ -3,1018 +3,2822 @@
         {
             "question": "Ja ___ (to eat) jabłko.",
             "answer": "jem",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A1",
+            "hints": [
+                "First person singular present tense",
+                "Verb stem: je-"
+            ]
         },
         {
             "question": "Ty ___ (to read) książkę.",
             "answer": "czytasz",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A1",
+            "hints": [
+                "Second person singular",
+                "Verb ending: -sz"
+            ]
         },
         {
             "question": "On ___ (to write) list.",
             "answer": "pisze",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A1",
+            "hints": [
+                "Third person singular",
+                "Verb stem: pis-"
+            ]
         },
         {
             "question": "My ___ (to speak) po polsku.",
             "answer": "mówimy",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A1",
+            "hints": [
+                "First person plural",
+                "Plural ending: -my"
+            ]
         },
         {
             "question": "Oni ___ (to have) dom.",
             "answer": "mają",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A1",
+            "hints": [
+                "Third person plural",
+                "Irregular verb 'mieć'"
+            ]
         },
         {
-            "question": "Ja ___ (to sleep) dobrze.",
+            "question": "Complete the sentence: Ja ___ dobrze.",
             "answer": "śpię",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "śpię",
+                "śpisz",
+                "śpi",
+                "śpimy"
+            ],
+            "hints": [
+                "The verb is 'spać' (to sleep)",
+                "First person singular"
+            ]
         },
         {
             "question": "Ona ___ (to drink) wodę.",
             "answer": "pije",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A1",
+            "hints": [
+                "Third person singular",
+                "Verb: pić"
+            ]
         },
         {
             "question": "Wy ___ (to know) odpowiedź.",
             "answer": "wiecie",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Second person plural",
+                "Irregular verb 'wiedzieć'"
+            ]
         },
         {
             "question": "Ja ___ (to love) muzykę.",
             "answer": "kocham",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A1",
+            "hints": [
+                "First person singular",
+                "Regular -ać verb"
+            ]
         },
         {
-            "question": "Ty ___ (to work) w biurze.",
+            "question": "Which form is correct? Ty ___ w biurze.",
             "answer": "pracujesz",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "pracuję",
+                "pracujesz",
+                "pracuje",
+                "pracujemy"
+            ],
+            "hints": [
+                "The verb is 'pracować' (to work)",
+                "Second person singular"
+            ]
         },
         {
             "question": "Ona ___ (to study) medycynę.",
             "answer": "studiuje",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Third person singular",
+                "-ować verb pattern"
+            ]
         },
         {
             "question": "My ___ (to go) do kina.",
             "answer": "idziemy",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "First person plural",
+                "Irregular verb 'iść'"
+            ]
         },
         {
             "question": "Oni ___ (to play) w piłkę.",
             "answer": "grają",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A1",
+            "hints": [
+                "Third person plural",
+                "Verb: grać"
+            ]
         },
         {
             "question": "Ja ___ (to want) kawę.",
             "answer": "chcę",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "First person singular",
+                "Irregular verb 'chcieć'"
+            ]
         },
         {
             "question": "Ty ___ (to understand) to?",
             "answer": "rozumiesz",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Second person singular",
+                "Verb: rozumieć"
+            ]
         },
         {
-            "question": "Ona ___ (to run) szybko.",
+            "question": "Select the correct form: Ona ___ szybko.",
             "answer": "biega",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "biegam",
+                "biegasz",
+                "biega",
+                "biegamy"
+            ],
+            "hints": [
+                "The verb is 'biegać' (to run)",
+                "Third person singular"
+            ]
         },
         {
             "question": "My ___ (to see) film.",
             "answer": "widzimy",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "First person plural",
+                "Verb: widzieć"
+            ]
         },
         {
             "question": "Oni ___ (to buy) chleb.",
             "answer": "kupują",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A1",
+            "hints": [
+                "Third person plural",
+                "-ować verb"
+            ]
         },
         {
             "question": "Ja ___ (to live) w Warszawie.",
             "answer": "mieszkam",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A1",
+            "hints": [
+                "First person singular",
+                "Regular -ać verb"
+            ]
         },
         {
             "question": "Ty ___ (to listen) muzyki.",
             "answer": "słuchasz",
-            "topic": "grammar"
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Second person singular",
+                "Genitive case after this verb"
+            ]
+        },
+        {
+            "question": "Gdybym ___ (to have - conditional) czas, poszedłbym tam.",
+            "answer": "miał",
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Conditional mood",
+                "Masculine past form with conditional particle"
+            ]
+        },
+        {
+            "question": "Film, który wczoraj ___ (to see - past), był interesujący.",
+            "answer": "widziałem",
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Past tense",
+                "Masculine form"
+            ]
+        },
+        {
+            "question": "Książka została ___ (to write - passive) przez znanego autora.",
+            "answer": "napisana",
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "B2",
+            "hints": [
+                "Passive voice",
+                "Feminine past participle"
+            ]
+        },
+        {
+            "question": "Zanim on ___ (to arrive - future perfective), wszystko będzie gotowe.",
+            "answer": "przyjedzie",
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "B2",
+            "hints": [
+                "Perfective future",
+                "Motion verb"
+            ]
+        },
+        {
+            "question": "Mimo że ___ (to rain - imperfective past), wyszliśmy na spacer.",
+            "answer": "padało",
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Imperfective past",
+                "Neuter form for weather"
+            ]
+        },
+        {
+            "question": "Nie zdążyłbym na pociąg, gdyby nie to, że ona mnie ___ (to drive - past perfective).",
+            "answer": "podwiozła",
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "C1",
+            "hints": [
+                "Complex conditional sentence",
+                "Perfective past, feminine"
+            ]
+        },
+        {
+            "question": "To najciekawsza książka, jaką kiedykolwiek ___ (to read - past perfective).",
+            "answer": "przeczytałem",
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "C1",
+            "hints": [
+                "Superlative construction",
+                "Perfective past tense"
+            ]
+        },
+        {
+            "question": "Niechby sobie ___ (to do - imperative 3rd person), co chcą.",
+            "answer": "robili",
+            "topic": "grammar",
+            "type": "fill-in-the-blank",
+            "level": "C2",
+            "hints": [
+                "Rare imperative form",
+                "Third person plural masculine-personal"
+            ]
         }
     ],
     "numbers": [
         {
             "question": "Write 5 in Polish (ordinal)",
             "answer": "piąty",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Ordinal means 'fifth'",
+                "Ends in -y"
+            ]
         },
         {
             "question": "Write 10 in Polish (cardinal)",
             "answer": "dziesięć",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Cardinal means the number itself",
+                "Starts with dzie-"
+            ]
         },
         {
             "question": "Write 23 in Polish (cardinal)",
             "answer": "dwadzieścia trzy",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Two words",
+                "Twenty and three"
+            ]
         },
         {
             "question": "Write 1st in Polish",
             "answer": "pierwszy",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Ordinal number",
+                "Masculine form"
+            ]
         },
         {
-            "question": "Write 100 in Polish",
+            "question": "Select the correct form: How do you write 100?",
             "answer": "sto",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "sto",
+                "stó",
+                "sta",
+                "stów"
+            ],
+            "hints": [
+                "One hundred in Polish",
+                "Three letters"
+            ]
         },
         {
             "question": "Write 3rd in Polish",
             "answer": "trzeci",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Ordinal for 'third'",
+                "From the word 'trzy'"
+            ]
         },
         {
             "question": "Write 7 in Polish (cardinal)",
             "answer": "siedem",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Starts with sie-",
+                "Two syllables"
+            ]
         },
         {
             "question": "Write 2nd in Polish",
             "answer": "drugi",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Ordinal for 'second'",
+                "Masculine form"
+            ]
         },
         {
             "question": "Write 15 in Polish (cardinal)",
             "answer": "piętnaście",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Teen number",
+                "Contains 'naście'"
+            ]
         },
         {
-            "question": "Write 50 in Polish (cardinal)",
+            "question": "What is 50 in Polish?",
             "answer": "pięćdziesiąt",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "pięćdziesiąt",
+                "pięćset",
+                "piętnaście",
+                "pięćdziesiąty"
+            ],
+            "hints": [
+                "Fifty (cardinal)",
+                "Contains 'dziesiąt'"
+            ]
         },
         {
             "question": "Write 4th in Polish",
             "answer": "czwarty",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Ordinal for 'fourth'",
+                "From 'cztery'"
+            ]
         },
         {
             "question": "Write 12 in Polish (cardinal)",
             "answer": "dwanaście",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Teen number",
+                "Starts with dwa-"
+            ]
         },
         {
             "question": "Write 20 in Polish (cardinal)",
             "answer": "dwadzieścia",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Twenty",
+                "Related to 'dwa'"
+            ]
         },
         {
             "question": "Write 6th in Polish",
             "answer": "szósty",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Ordinal for 'sixth'",
+                "Note the ó"
+            ]
         },
         {
             "question": "Write 1000 in Polish",
             "answer": "tysiąc",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "One thousand",
+                "Starts with ty-"
+            ]
         },
         {
             "question": "Write 8 in Polish (cardinal)",
             "answer": "osiem",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Starts with o-",
+                "Two syllables"
+            ]
         },
         {
             "question": "Write 9 in Polish (cardinal)",
             "answer": "dziewięć",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Contains 'ę'",
+                "Starts with dzie-"
+            ]
         },
         {
             "question": "Write 11 in Polish (cardinal)",
             "answer": "jedenaście",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Teen number",
+                "Starts with jeden-"
+            ]
         },
         {
             "question": "Write 30 in Polish (cardinal)",
             "answer": "trzydzieści",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Thirty",
+                "Related to 'trzy'"
+            ]
         },
         {
             "question": "Write 7th in Polish",
             "answer": "siódmy",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Ordinal for 'seventh'",
+                "Note the ó"
+            ]
         },
         {
             "question": "Write 8th in Polish",
             "answer": "ósmy",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Ordinal for 'eighth'",
+                "Very short word"
+            ]
         },
         {
             "question": "Write 9th in Polish",
             "answer": "dziewiąty",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Ordinal for 'ninth'",
+                "From 'dziewięć'"
+            ]
         },
         {
             "question": "Write 10th in Polish",
             "answer": "dziesiąty",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Ordinal for 'tenth'",
+                "From 'dziesięć'"
+            ]
         },
         {
             "question": "Write 40 in Polish (cardinal)",
             "answer": "czterdzieści",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Forty",
+                "Related to 'cztery'"
+            ]
         },
         {
             "question": "Write 200 in Polish",
             "answer": "dwieście",
-            "topic": "numbers"
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Two hundred",
+                "Related to 'dwa'"
+            ]
+        },
+        {
+            "question": "Write 5,347 in Polish",
+            "answer": "pięć tysięcy trzysta czterdzieści siedem",
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "B2",
+            "hints": [
+                "Complex number",
+                "Thousands require genitive"
+            ]
+        },
+        {
+            "question": "Write 1,000,000 in Polish",
+            "answer": "milion",
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "B1",
+            "hints": [
+                "One million",
+                "Similar to English"
+            ]
+        },
+        {
+            "question": "Express 2.5 (two and a half) in Polish",
+            "answer": "dwa i pół",
+            "topic": "numbers",
+            "type": "short-answer",
+            "level": "B1",
+            "hints": [
+                "Decimal/fraction",
+                "Uses 'pół' for half"
+            ]
         }
     ],
     "cases": [
         {
             "question": "I see a ___ (dog - accusative)",
             "answer": "psa",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Accusative case for masculine animate noun",
+                "Nominative: pies"
+            ]
         },
         {
             "question": "I give to ___ (mother - dative)",
             "answer": "matce",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Dative case",
+                "Nominative: matka"
+            ]
         },
         {
             "question": "With ___ (friend - instrumental)",
             "answer": "przyjacielem",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Instrumental case",
+                "Ends in -em"
+            ]
         },
         {
             "question": "About ___ (book - locative)",
             "answer": "książce",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Locative case",
+                "Nominative: książka"
+            ]
         },
         {
             "question": "Without ___ (water - genitive)",
             "answer": "wody",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Genitive case",
+                "Nominative: woda"
+            ]
         },
         {
-            "question": "___ (cat - nominative) is sleeping",
+            "question": "Choose the correct form: ___ (cat - nominative) is sleeping",
             "answer": "kot",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "kot",
+                "kota",
+                "kotem",
+                "kocie"
+            ],
+            "hints": [
+                "Subject of the sentence",
+                "Nominative case"
+            ]
         },
         {
             "question": "I see ___ (woman - accusative)",
             "answer": "kobietę",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Accusative case",
+                "Ends in -ę"
+            ]
         },
         {
             "question": "I give to ___ (father - dative)",
             "answer": "ojcu",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Dative case",
+                "Nominative: ojciec"
+            ]
         },
         {
             "question": "With ___ (pen - instrumental)",
             "answer": "długopisem",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Instrumental case",
+                "Masculine inanimate"
+            ]
         },
         {
             "question": "About ___ (city - locative)",
             "answer": "mieście",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Locative case",
+                "Nominative: miasto"
+            ]
         },
         {
             "question": "Without ___ (money - genitive)",
             "answer": "pieniędzy",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Genitive plural",
+                "Nominative: pieniądze"
+            ]
         },
         {
             "question": "I have ___ (brother - accusative)",
             "answer": "brata",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Accusative case",
+                "Masculine animate"
+            ]
         },
         {
             "question": "I write ___ (sister - dative)",
             "answer": "siostrze",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Dative case",
+                "Nominative: siostra"
+            ]
         },
         {
             "question": "I eat with ___ (fork - instrumental)",
             "answer": "widelcem",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Instrumental case",
+                "Ends in -em"
+            ]
         },
         {
-            "question": "In ___ (school - locative)",
+            "question": "Select the correct form: In ___ (school - locative)",
             "answer": "szkole",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "szkoła",
+                "szkole",
+                "szkoły",
+                "szkołą"
+            ],
+            "hints": [
+                "Locative case",
+                "Used with 'w' (in)"
+            ]
         },
         {
             "question": "I read ___ (newspaper - accusative)",
             "answer": "gazetę",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Accusative case",
+                "Feminine noun"
+            ]
         },
         {
             "question": "Thanks to ___ (teacher - dative)",
             "answer": "nauczycielowi",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Dative case",
+                "Masculine person"
+            ]
         },
         {
             "question": "With ___ (knife - instrumental)",
             "answer": "nożem",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Instrumental case",
+                "Nominative: nóż"
+            ]
         },
         {
             "question": "In ___ (park - locative)",
             "answer": "parku",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Locative case",
+                "Masculine inanimate"
+            ]
         },
         {
             "question": "Without ___ (help - genitive)",
             "answer": "pomocy",
-            "topic": "cases"
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Genitive case",
+                "Feminine noun"
+            ]
+        },
+        {
+            "question": "Concerning ___ (future generations - genitive plural)",
+            "answer": "przyszłych pokoleń",
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "B2",
+            "hints": [
+                "Genitive plural",
+                "Adjective must agree"
+            ]
+        },
+        {
+            "question": "By means of ___ (various methods - instrumental plural)",
+            "answer": "różnymi metodami",
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "C1",
+            "hints": [
+                "Instrumental plural",
+                "Both adjective and noun"
+            ]
+        },
+        {
+            "question": "In ___ (those circumstances - locative plural)",
+            "answer": "tamtych okolicznościach",
+            "topic": "cases",
+            "type": "fill-in-the-blank",
+            "level": "C1",
+            "hints": [
+                "Locative plural",
+                "Demonstrative pronoun must agree"
+            ]
         }
     ],
     "vocabulary": [
         {
             "question": "Translate: kot",
             "answer": "cat",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Common pet",
+                "Says 'meow'"
+            ]
         },
         {
             "question": "Translate: dom",
             "answer": "house",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Place where people live",
+                "Building"
+            ]
         },
         {
-            "question": "Translate: woda",
+            "question": "What does 'woda' mean?",
             "answer": "water",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "water",
+                "wind",
+                "food",
+                "weather"
+            ],
+            "hints": [
+                "Essential liquid",
+                "H2O"
+            ]
         },
         {
             "question": "Translate: książka",
             "answer": "book",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "You read it",
+                "Made of paper"
+            ]
         },
         {
             "question": "Translate: dzień",
             "answer": "day",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Opposite of night",
+                "24 hours"
+            ]
         },
         {
             "question": "Translate: noc",
             "answer": "night",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Dark time",
+                "When you sleep"
+            ]
         },
         {
             "question": "Translate: miłość",
             "answer": "love",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Strong emotion",
+                "Feeling of affection"
+            ]
         },
         {
-            "question": "Translate: przyjaźń",
+            "question": "What does 'przyjaźń' mean?",
             "answer": "friendship",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "friendship",
+                "family",
+                "kindness",
+                "relationship"
+            ],
+            "hints": [
+                "Bond between friends",
+                "Close relationship"
+            ]
         },
         {
             "question": "Translate: pies",
             "answer": "dog",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Common pet",
+                "Says 'woof'"
+            ]
         },
         {
             "question": "Translate: okno",
             "answer": "window",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "You look through it",
+                "Made of glass"
+            ]
         },
         {
             "question": "Translate: drzwi",
             "answer": "door",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Entrance",
+                "You open and close it"
+            ]
         },
         {
             "question": "Translate: stół",
             "answer": "table",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Furniture",
+                "You eat on it"
+            ]
         },
         {
             "question": "Translate: krzesło",
             "answer": "chair",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Furniture",
+                "You sit on it"
+            ]
         },
         {
-            "question": "Translate: samochód",
+            "question": "What does 'samochód' mean?",
             "answer": "car",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "car",
+                "bus",
+                "train",
+                "bicycle"
+            ],
+            "hints": [
+                "Vehicle",
+                "Has four wheels"
+            ]
         },
         {
             "question": "Translate: rower",
             "answer": "bicycle",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Two wheels",
+                "You pedal it"
+            ]
         },
         {
             "question": "Translate: szkoła",
             "answer": "school",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Place of learning",
+                "Students go there"
+            ]
         },
         {
             "question": "Translate: praca",
             "answer": "work",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Job",
+                "What you do for money"
+            ]
         },
         {
             "question": "Translate: rodzina",
             "answer": "family",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Parents and children",
+                "Relatives"
+            ]
         },
         {
             "question": "Translate: matka",
             "answer": "mother",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Female parent",
+                "Mom"
+            ]
         },
         {
-            "question": "Translate: ojciec",
+            "question": "What does 'ojciec' mean?",
             "answer": "father",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "father",
+                "brother",
+                "uncle",
+                "grandfather"
+            ],
+            "hints": [
+                "Male parent",
+                "Dad"
+            ]
         },
         {
             "question": "Translate: dziecko",
             "answer": "child",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Young person",
+                "Son or daughter"
+            ]
         },
         {
             "question": "Translate: miasto",
             "answer": "city",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Urban area",
+                "Larger than a village"
+            ]
         },
         {
             "question": "Translate: ulica",
             "answer": "street",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Road in city",
+                "Has buildings on both sides"
+            ]
         },
         {
             "question": "Translate: pogoda",
             "answer": "weather",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Rain, sun, snow",
+                "Atmospheric conditions"
+            ]
         },
         {
             "question": "Translate: słońce",
             "answer": "sun",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Star",
+                "Gives us light"
+            ]
         },
         {
             "question": "Translate: deszcz",
             "answer": "rain",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Water from sky",
+                "You need umbrella"
+            ]
         },
         {
             "question": "Translate: śnieg",
             "answer": "snow",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "White, cold",
+                "Falls in winter"
+            ]
         },
         {
             "question": "Translate: wiatr",
             "answer": "wind",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Moving air",
+                "Makes trees sway"
+            ]
         },
         {
             "question": "Translate: las",
             "answer": "forest",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Many trees",
+                "Woods"
+            ]
         },
         {
             "question": "Translate: góra",
             "answer": "mountain",
-            "topic": "vocabulary"
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Very high land",
+                "Peak"
+            ]
+        },
+        {
+            "question": "Translate: źródło",
+            "answer": "source",
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "B1",
+            "hints": [
+                "Origin of something",
+                "Beginning point"
+            ]
+        },
+        {
+            "question": "Translate: rzeczywistość",
+            "answer": "reality",
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "B2",
+            "hints": [
+                "What is real",
+                "Actual existence"
+            ]
+        },
+        {
+            "question": "Translate: osiągnięcie",
+            "answer": "achievement",
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "B2",
+            "hints": [
+                "Accomplishment",
+                "Success"
+            ]
+        },
+        {
+            "question": "Translate: świadomość",
+            "answer": "consciousness",
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "C1",
+            "hints": [
+                "Awareness",
+                "State of being aware"
+            ]
+        },
+        {
+            "question": "Translate: niejednoznaczny",
+            "answer": "ambiguous",
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "C1",
+            "hints": [
+                "Not clear",
+                "Has multiple meanings"
+            ]
+        },
+        {
+            "question": "Translate: przezwyciężyć",
+            "answer": "overcome",
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "C1",
+            "hints": [
+                "To defeat or surmount",
+                "To get past difficulty"
+            ]
+        },
+        {
+            "question": "Translate: nieodzowny",
+            "answer": "indispensable",
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "C2",
+            "hints": [
+                "Absolutely necessary",
+                "Essential"
+            ]
+        },
+        {
+            "question": "Translate: zawikłany",
+            "answer": "intricate",
+            "topic": "vocabulary",
+            "type": "short-answer",
+            "level": "C2",
+            "hints": [
+                "Very complicated",
+                "Complex and detailed"
+            ]
         }
     ],
     "verbs": [
         {
             "question": "Conjugate 'być' (to be) for 'ja'",
             "answer": "jestem",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "First person singular",
+                "Irregular verb"
+            ]
         },
         {
             "question": "Conjugate 'mieć' (to have) for 'ty'",
             "answer": "masz",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Second person singular",
+                "Ends in -sz"
+            ]
         },
         {
-            "question": "Conjugate 'iść' (to go) for 'on'",
+            "question": "Select the correct conjugation: 'iść' (to go) for 'on'",
             "answer": "idzie",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "idę",
+                "idziesz",
+                "idzie",
+                "idziemy"
+            ],
+            "hints": [
+                "Third person singular",
+                "Irregular verb"
+            ]
         },
         {
             "question": "Conjugate 'robić' (to do) for 'my'",
             "answer": "robimy",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "First person plural",
+                "Ends in -my"
+            ]
         },
         {
             "question": "Conjugate 'wiedzieć' (to know) for 'wy'",
             "answer": "wiecie",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Second person plural",
+                "Irregular verb"
+            ]
         },
         {
             "question": "Conjugate 'chcieć' (to want) for 'oni'",
             "answer": "chcą",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Third person plural",
+                "Ends in -ą"
+            ]
         },
         {
             "question": "Conjugate 'móc' (can) for 'ja'",
             "answer": "mogę",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "First person singular",
+                "Modal verb"
+            ]
         },
         {
             "question": "Conjugate 'musieć' (must) for 'ty'",
             "answer": "musisz",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Second person singular",
+                "Modal verb"
+            ]
         },
         {
             "question": "Conjugate 'jeść' (to eat) for 'ona'",
             "answer": "je",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Third person singular",
+                "Very short form"
+            ]
         },
         {
-            "question": "Conjugate 'pić' (to drink) for 'my'",
+            "question": "Select: 'pić' (to drink) for 'my'",
             "answer": "pijemy",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "piję",
+                "pijesz",
+                "pije",
+                "pijemy"
+            ],
+            "hints": [
+                "First person plural",
+                "Stem: pi-"
+            ]
         },
         {
             "question": "Conjugate 'spać' (to sleep) for 'ja'",
             "answer": "śpię",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "First person singular",
+                "Note the ś"
+            ]
         },
         {
             "question": "Conjugate 'czytać' (to read) for 'ty'",
             "answer": "czytasz",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Second person singular",
+                "Regular -ać verb"
+            ]
         },
         {
             "question": "Conjugate 'pisać' (to write) for 'on'",
             "answer": "pisze",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Third person singular",
+                "Stem: pis-"
+            ]
         },
         {
             "question": "Conjugate 'mówić' (to speak) for 'my'",
             "answer": "mówimy",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "First person plural",
+                "Note the ó"
+            ]
         },
         {
             "question": "Conjugate 'uczyć się' (to learn) for 'ja'",
             "answer": "uczę się",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "First person singular",
+                "Reflexive verb"
+            ]
         },
         {
             "question": "Conjugate 'pracować' (to work) for 'ona'",
             "answer": "pracuje",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Third person singular",
+                "-ować verb"
+            ]
         },
         {
-            "question": "Conjugate 'kupować' (to buy) for 'oni'",
+            "question": "Select: 'kupować' (to buy) for 'oni'",
             "answer": "kupują",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "kupuję",
+                "kupujesz",
+                "kupuje",
+                "kupują"
+            ],
+            "hints": [
+                "Third person plural",
+                "-ować verb"
+            ]
         },
         {
             "question": "Conjugate 'grać' (to play) for 'ja'",
             "answer": "gram",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "First person singular",
+                "Short ending"
+            ]
         },
         {
             "question": "Conjugate 'śpiewać' (to sing) for 'ty'",
             "answer": "śpiewasz",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Second person singular",
+                "Regular -ać verb"
+            ]
         },
         {
             "question": "Conjugate 'tańczyć' (to dance) for 'my'",
             "answer": "tańczymy",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "First person plural",
+                "Note the ń"
+            ]
         },
         {
             "question": "Conjugate 'biegać' (to run) for 'on'",
             "answer": "biega",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Third person singular",
+                "Imperfective aspect"
+            ]
         },
         {
             "question": "Conjugate 'płakać' (to cry) for 'ona'",
             "answer": "płacze",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Third person singular",
+                "Consonant change"
+            ]
         },
         {
             "question": "Conjugate 'śmiać się' (to laugh) for 'ja'",
             "answer": "śmieję się",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "First person singular",
+                "Reflexive verb"
+            ]
         },
         {
             "question": "Conjugate 'kochać' (to love) for 'ty'",
             "answer": "kochasz",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Second person singular",
+                "Regular -ać verb"
+            ]
         },
         {
             "question": "Conjugate 'mieszkać' (to live) for 'wy'",
             "answer": "mieszkacie",
-            "topic": "verbs"
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Second person plural",
+                "Ends in -cie"
+            ]
+        },
+        {
+            "question": "Conjugate 'przeczytać' (to read - perfective) for 'ja' in past tense",
+            "answer": "przeczytałem",
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "B1",
+            "hints": [
+                "Perfective past",
+                "Masculine form",
+                "Add -em ending"
+            ]
+        },
+        {
+            "question": "Conjugate 'zobaczyć' (to see - perfective) for 'oni' in future tense",
+            "answer": "zobaczą",
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "B1",
+            "hints": [
+                "Perfective future",
+                "Simple form",
+                "Third person plural"
+            ]
+        },
+        {
+            "question": "Conjugate 'rozumieć' (to understand) in conditional for 'ja'",
+            "answer": "rozumiałbym",
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "B2",
+            "hints": [
+                "Conditional mood",
+                "Past form + bym",
+                "Masculine"
+            ]
+        },
+        {
+            "question": "Form the imperative: 'powiedzieć' (to say) - 2nd person singular",
+            "answer": "powiedz",
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "B2",
+            "hints": [
+                "Command form",
+                "Perfective aspect",
+                "Informal you"
+            ]
+        },
+        {
+            "question": "Conjugate 'zastanawiać się' (to wonder) for 'ja' in present tense",
+            "answer": "zastanawiam się",
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "C1",
+            "hints": [
+                "Reflexive verb",
+                "Imperfective aspect",
+                "First person"
+            ]
+        },
+        {
+            "question": "Form the transgressive: 'czytać' (while reading)",
+            "answer": "czytając",
+            "topic": "verbs",
+            "type": "short-answer",
+            "level": "C2",
+            "hints": [
+                "Adverbial participle",
+                "Simultaneous action",
+                "Ends in -ąc"
+            ]
         }
     ],
     "pronouns": [
         {
             "question": "What is 'I' in Polish?",
             "answer": "ja",
-            "topic": "pronouns"
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "First person singular",
+                "Two letters"
+            ]
         },
         {
             "question": "What is 'you' (informal) in Polish?",
             "answer": "ty",
-            "topic": "pronouns"
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Second person singular",
+                "Two letters"
+            ]
         },
         {
             "question": "What is 'he' in Polish?",
             "answer": "on",
-            "topic": "pronouns"
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Third person masculine",
+                "Two letters"
+            ]
         },
         {
             "question": "What is 'she' in Polish?",
             "answer": "ona",
-            "topic": "pronouns"
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Third person feminine",
+                "Three letters"
+            ]
         },
         {
             "question": "What is 'we' in Polish?",
             "answer": "my",
-            "topic": "pronouns"
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "First person plural",
+                "Two letters"
+            ]
         },
         {
             "question": "What is 'you' (plural/formal) in Polish?",
             "answer": "wy",
-            "topic": "pronouns"
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Second person plural",
+                "Two letters"
+            ]
         },
         {
             "question": "What is 'they' (masculine) in Polish?",
             "answer": "oni",
-            "topic": "pronouns"
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Third person plural",
+                "Masculine personal"
+            ]
         },
         {
             "question": "What is 'they' (feminine) in Polish?",
             "answer": "one",
-            "topic": "pronouns"
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Third person plural",
+                "Non-masculine personal"
+            ]
         },
         {
             "question": "What is 'it' in Polish?",
             "answer": "ono",
-            "topic": "pronouns"
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Third person neuter",
+                "Three letters"
+            ]
         },
         {
             "question": "Translate 'my' (possessive) in Polish",
             "answer": "mój",
-            "topic": "pronouns"
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Possessive pronoun",
+                "Masculine form",
+                "Note the ó"
+            ]
         },
         {
             "question": "Translate 'your' (informal) in Polish",
             "answer": "twój",
-            "topic": "pronouns"
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Possessive pronoun",
+                "Masculine form",
+                "Note the ó"
+            ]
         },
         {
             "question": "Translate 'our' in Polish",
             "answer": "nasz",
-            "topic": "pronouns"
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Possessive pronoun",
+                "Masculine form"
+            ]
         },
         {
             "question": "Translate 'their' in Polish",
             "answer": "ich",
-            "topic": "pronouns"
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Possessive pronoun",
+                "Doesn't change form"
+            ]
         },
         {
             "question": "Translate 'his' in Polish",
             "answer": "jego",
-            "topic": "pronouns"
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Possessive pronoun",
+                "Doesn't change form"
+            ]
         },
         {
             "question": "Translate 'her' (possessive) in Polish",
             "answer": "jej",
-            "topic": "pronouns"
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Possessive pronoun",
+                "Doesn't change form"
+            ]
+        },
+        {
+            "question": "Translate 'himself/herself' (reflexive) in Polish - accusative",
+            "answer": "się",
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "B1",
+            "hints": [
+                "Reflexive pronoun",
+                "Used with reflexive verbs"
+            ]
+        },
+        {
+            "question": "What is 'something' in Polish?",
+            "answer": "coś",
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "B1",
+            "hints": [
+                "Indefinite pronoun",
+                "Related to 'co'"
+            ]
+        },
+        {
+            "question": "What is 'nothing' in Polish?",
+            "answer": "nic",
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "B1",
+            "hints": [
+                "Negative pronoun",
+                "Three letters"
+            ]
+        },
+        {
+            "question": "What is 'everyone' in Polish?",
+            "answer": "wszyscy",
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "B2",
+            "hints": [
+                "Universal pronoun",
+                "Masculine personal plural"
+            ]
+        },
+        {
+            "question": "Translate 'one another' (reciprocal) in Polish - accusative",
+            "answer": "siebie",
+            "topic": "pronouns",
+            "type": "short-answer",
+            "level": "C1",
+            "hints": [
+                "Reciprocal pronoun",
+                "Full form",
+                "Accusative/genitive case"
+            ]
         }
     ],
     "adjectives": [
         {
             "question": "Translate 'big' (masculine) in Polish",
             "answer": "duży",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Size adjective",
+                "Opposite of small"
+            ]
         },
         {
             "question": "Translate 'small' (masculine) in Polish",
             "answer": "mały",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Size adjective",
+                "Opposite of big"
+            ]
         },
         {
             "question": "Translate 'good' (masculine) in Polish",
             "answer": "dobry",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Quality adjective",
+                "Opposite of bad"
+            ]
         },
         {
             "question": "Translate 'bad' (masculine) in Polish",
             "answer": "zły",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Quality adjective",
+                "Opposite of good"
+            ]
         },
         {
             "question": "Translate 'beautiful' (feminine) in Polish",
             "answer": "piękna",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Appearance adjective",
+                "Very attractive"
+            ]
         },
         {
             "question": "Translate 'new' (masculine) in Polish",
             "answer": "nowy",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Age adjective",
+                "Opposite of old"
+            ]
         },
         {
             "question": "Translate 'old' (masculine) in Polish",
             "answer": "stary",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Age adjective",
+                "Opposite of new"
+            ]
         },
         {
             "question": "Translate 'young' (masculine) in Polish",
             "answer": "młody",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Age adjective",
+                "Not old"
+            ]
         },
         {
             "question": "Translate 'happy' (masculine) in Polish",
             "answer": "szczęśliwy",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Emotion adjective",
+                "Feeling joy"
+            ]
         },
         {
             "question": "Translate 'sad' (masculine) in Polish",
             "answer": "smutny",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Emotion adjective",
+                "Feeling sorrow"
+            ]
         },
         {
             "question": "Translate 'hot' (masculine) in Polish",
             "answer": "gorący",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Temperature adjective",
+                "Very warm"
+            ]
         },
         {
             "question": "Translate 'cold' (masculine) in Polish",
             "answer": "zimny",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Temperature adjective",
+                "Not warm"
+            ]
         },
         {
             "question": "Translate 'fast' (masculine) in Polish",
             "answer": "szybki",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Speed adjective",
+                "Quick"
+            ]
         },
         {
             "question": "Translate 'slow' (masculine) in Polish",
             "answer": "wolny",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Speed adjective",
+                "Not fast"
+            ]
         },
         {
             "question": "Translate 'easy' (masculine) in Polish",
             "answer": "łatwy",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Difficulty adjective",
+                "Not hard"
+            ]
         },
         {
             "question": "Translate 'difficult' (masculine) in Polish",
             "answer": "trudny",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Difficulty adjective",
+                "Hard"
+            ]
         },
         {
             "question": "Translate 'expensive' (masculine) in Polish",
             "answer": "drogi",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Price adjective",
+                "Costs a lot"
+            ]
         },
         {
             "question": "Translate 'cheap' (masculine) in Polish",
             "answer": "tani",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Price adjective",
+                "Inexpensive"
+            ]
         },
         {
             "question": "Translate 'long' (masculine) in Polish",
             "answer": "długi",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Length adjective",
+                "Not short"
+            ]
         },
         {
             "question": "Translate 'short' (masculine) in Polish",
             "answer": "krótki",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Length adjective",
+                "Not long"
+            ]
         },
         {
             "question": "Translate 'strong' (masculine) in Polish",
             "answer": "silny",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Strength adjective",
+                "Powerful"
+            ]
         },
         {
             "question": "Translate 'weak' (masculine) in Polish",
             "answer": "słaby",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Strength adjective",
+                "Not strong"
+            ]
         },
         {
             "question": "Translate 'clean' (masculine) in Polish",
             "answer": "czysty",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Cleanliness adjective",
+                "Not dirty"
+            ]
         },
         {
             "question": "Translate 'dirty' (masculine) in Polish",
             "answer": "brudny",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Cleanliness adjective",
+                "Not clean"
+            ]
         },
         {
             "question": "Translate 'loud' (masculine) in Polish",
             "answer": "głośny",
-            "topic": "adjectives"
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Sound adjective",
+                "Noisy"
+            ]
+        },
+        {
+            "question": "Form the comparative: 'mądry' (wise) - wiser",
+            "answer": "mądrzejszy",
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "B1",
+            "hints": [
+                "Comparative form",
+                "More wise"
+            ]
+        },
+        {
+            "question": "Form the superlative: 'interesujący' (interesting) - most interesting",
+            "answer": "najciekawszy",
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "B2",
+            "hints": [
+                "Superlative form",
+                "naj- prefix",
+                "Irregular form"
+            ]
+        },
+        {
+            "question": "Translate 'comprehensive' (masculine) in Polish",
+            "answer": "wyczerpujący",
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "C1",
+            "hints": [
+                "Complex adjective",
+                "Thorough, complete"
+            ]
+        },
+        {
+            "question": "Translate 'ubiquitous' (masculine) in Polish",
+            "answer": "wszechobecny",
+            "topic": "adjectives",
+            "type": "short-answer",
+            "level": "C2",
+            "hints": [
+                "Advanced vocabulary",
+                "Present everywhere"
+            ]
         }
     ],
     "phrases": [
         {
             "question": "How do you say 'Hello' in Polish?",
             "answer": "cześć",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Informal greeting",
+                "Very common"
+            ]
         },
         {
             "question": "How do you say 'Goodbye' in Polish?",
             "answer": "do widzenia",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Formal goodbye",
+                "Two words"
+            ]
         },
         {
             "question": "How do you say 'Please' in Polish?",
             "answer": "proszę",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Polite request",
+                "Also means 'you're welcome'"
+            ]
         },
         {
             "question": "How do you say 'Thank you' in Polish?",
             "answer": "dziękuję",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Expression of gratitude",
+                "Starts with dzie-"
+            ]
         },
         {
             "question": "How do you say 'Yes' in Polish?",
             "answer": "tak",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Affirmative response",
+                "Three letters"
+            ]
         },
         {
             "question": "How do you say 'No' in Polish?",
             "answer": "nie",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Negative response",
+                "Three letters"
+            ]
         },
         {
             "question": "How do you say 'Excuse me' in Polish?",
             "answer": "przepraszam",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Apology or to get attention",
+                "Also means 'I'm sorry'"
+            ]
         },
         {
             "question": "How do you say 'I don't understand' in Polish?",
             "answer": "nie rozumiem",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Useful phrase for learners",
+                "Two words"
+            ]
         },
         {
             "question": "How do you say 'Good morning' in Polish?",
             "answer": "dzień dobry",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Formal greeting",
+                "Literally 'good day'"
+            ]
         },
         {
             "question": "How do you say 'Good night' in Polish?",
             "answer": "dobranoc",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Evening farewell",
+                "One word"
+            ]
         },
         {
             "question": "How do you say 'How are you?' in Polish?",
             "answer": "jak się masz",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Common question",
+                "Informal form"
+            ]
         },
         {
             "question": "How do you say 'My name is...' in Polish?",
             "answer": "nazywam się",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Introduction phrase",
+                "Reflexive verb"
+            ]
         },
         {
             "question": "How do you say 'Nice to meet you' in Polish?",
             "answer": "miło mi cię poznać",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Greeting phrase",
+                "Informal version"
+            ]
         },
         {
             "question": "How do you say 'I love you' in Polish?",
             "answer": "kocham cię",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Expression of love",
+                "Two words"
+            ]
         },
         {
             "question": "How do you say 'Help!' in Polish?",
             "answer": "pomocy",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Emergency call",
+                "Genitive case"
+            ]
         },
         {
             "question": "How do you say 'See you later' in Polish?",
             "answer": "do zobaczenia",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Informal goodbye",
+                "Two words"
+            ]
         },
         {
             "question": "How do you say 'You're welcome' in Polish?",
             "answer": "proszę bardzo",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Response to 'thank you'",
+                "Two words"
+            ]
         },
         {
             "question": "How do you say 'I'm sorry' in Polish?",
             "answer": "przepraszam",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Apology",
+                "Same as 'excuse me'"
+            ]
         },
         {
             "question": "How do you say 'Where is...?' in Polish?",
             "answer": "gdzie jest",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Question about location",
+                "Two words"
+            ]
         },
         {
             "question": "How do you say 'How much?' in Polish?",
             "answer": "ile",
-            "topic": "phrases"
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Question about quantity/price",
+                "Three letters"
+            ]
+        },
+        {
+            "question": "How do you say 'I would like...' in Polish?",
+            "answer": "chciałbym",
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "B1",
+            "hints": [
+                "Polite request",
+                "Conditional mood",
+                "Masculine form"
+            ]
+        },
+        {
+            "question": "How do you say 'It doesn't matter' in Polish?",
+            "answer": "nie szkodzi",
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "B1",
+            "hints": [
+                "Dismissive phrase",
+                "Two words"
+            ]
+        },
+        {
+            "question": "How do you say 'In my opinion' in Polish?",
+            "answer": "moim zdaniem",
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "B2",
+            "hints": [
+                "Opinion phrase",
+                "Instrumental case"
+            ]
+        },
+        {
+            "question": "How do you say 'As a matter of fact' in Polish?",
+            "answer": "w rzeczywistości",
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "C1",
+            "hints": [
+                "Formal expression",
+                "Emphasizes reality"
+            ]
+        },
+        {
+            "question": "How do you say 'Be that as it may' in Polish?",
+            "answer": "tak czy inaczej",
+            "topic": "phrases",
+            "type": "short-answer",
+            "level": "C2",
+            "hints": [
+                "Idiomatic expression",
+                "Regardless of circumstances"
+            ]
         }
     ],
     "prepositions": [
         {
             "question": "Translate 'in' (location) in Polish",
             "answer": "w",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Inside something",
+                "One letter"
+            ]
         },
         {
             "question": "Translate 'on' in Polish",
             "answer": "na",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Surface position",
+                "Two letters"
+            ]
         },
         {
             "question": "Translate 'under' in Polish",
             "answer": "pod",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Below something",
+                "Three letters"
+            ]
         },
         {
             "question": "Translate 'above' in Polish",
             "answer": "nad",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Over something",
+                "Three letters"
+            ]
         },
         {
             "question": "Translate 'with' in Polish",
             "answer": "z",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Accompaniment",
+                "One letter",
+                "Takes instrumental"
+            ]
         },
         {
             "question": "Translate 'without' in Polish",
             "answer": "bez",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Absence of something",
+                "Takes genitive"
+            ]
         },
         {
             "question": "Translate 'to' (direction) in Polish",
             "answer": "do",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Motion towards",
+                "Takes genitive"
+            ]
         },
         {
             "question": "Translate 'from' in Polish",
             "answer": "z",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Origin point",
+                "One letter",
+                "Takes genitive"
+            ]
         },
         {
             "question": "Translate 'for' in Polish",
             "answer": "dla",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Beneficiary",
+                "Takes genitive"
+            ]
         },
         {
             "question": "Translate 'about' in Polish",
             "answer": "o",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A1",
+            "hints": [
+                "Concerning",
+                "One letter",
+                "Takes locative"
+            ]
         },
         {
             "question": "Translate 'before' in Polish",
             "answer": "przed",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "In front of or earlier than",
+                "Takes instrumental/accusative"
+            ]
         },
         {
             "question": "Translate 'after' in Polish",
             "answer": "po",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Following something",
+                "Takes locative"
+            ]
         },
         {
             "question": "Translate 'between' in Polish",
             "answer": "między",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "B1",
+            "hints": [
+                "In the middle of two things",
+                "Takes instrumental"
+            ]
         },
         {
             "question": "Translate 'near' in Polish",
             "answer": "przy",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Close to",
+                "Takes locative"
+            ]
         },
         {
             "question": "Translate 'behind' in Polish",
             "answer": "za",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "At the back of",
+                "Takes instrumental/accusative"
+            ]
         },
         {
             "question": "Translate 'in front of' in Polish",
             "answer": "przed",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Facing something",
+                "Takes instrumental"
+            ]
         },
         {
             "question": "Translate 'next to' in Polish",
             "answer": "obok",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "A2",
+            "hints": [
+                "Adjacent to",
+                "Takes genitive"
+            ]
         },
         {
             "question": "Translate 'through' in Polish",
             "answer": "przez",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "B1",
+            "hints": [
+                "Via or across",
+                "Takes accusative"
+            ]
         },
         {
             "question": "Translate 'against' in Polish",
             "answer": "przeciw",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "B1",
+            "hints": [
+                "Opposition",
+                "Takes dative"
+            ]
         },
         {
             "question": "Translate 'during' in Polish",
             "answer": "podczas",
-            "topic": "prepositions"
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "B1",
+            "hints": [
+                "In the course of",
+                "Takes genitive"
+            ]
+        },
+        {
+            "question": "Translate 'according to' in Polish",
+            "answer": "według",
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "B2",
+            "hints": [
+                "In agreement with",
+                "Takes genitive"
+            ]
+        },
+        {
+            "question": "Translate 'owing to' in Polish",
+            "answer": "dzięki",
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "B2",
+            "hints": [
+                "Thanks to",
+                "Takes dative"
+            ]
+        },
+        {
+            "question": "Translate 'notwithstanding' in Polish",
+            "answer": "pomimo",
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "C1",
+            "hints": [
+                "Despite",
+                "Takes genitive"
+            ]
+        },
+        {
+            "question": "Translate 'by virtue of' in Polish",
+            "answer": "w mocy",
+            "topic": "prepositions",
+            "type": "short-answer",
+            "level": "C2",
+            "hints": [
+                "By means of",
+                "Complex prepositional phrase"
+            ]
         }
     ]
 }

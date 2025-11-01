@@ -1,0 +1,12 @@
+:root {
+    --primary: #b91c1c;
+    --primary-dark: #991b1b;
+    --background: #fafafa;
+    --text: #1f2937;
+    --border: #e5e7eb;
+    --gray: #6b7280;
+    --radius: 0.5rem;
+    --transition: 0.25s ease;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    font-family: "Inter", sans-serif;
+}

@@ -1,0 +1,59 @@
+@import "../../variables.css";
+
+.hint-box {
+    margin-top: 1rem;
+    background: #fef2f2;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.8rem;
+    transition: all var(--transition);
+}
+
+.hint-toggle {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background var(--transition);
+}
+
+.hint-toggle:hover {
+    background: var(--primary-dark);
+}
+
+.hint-list {
+    margin-top: 0.8rem;
+    animation: fadeIn 0.4s ease;
+}
+
+.hint-title {
+    font-weight: 600;
+    color: var(--primary-dark);
+    margin-bottom: 0.4rem;
+}
+
+.hint-item {
+    background: #fff;
+    padding: 0.4rem 0.6rem;
+    margin-bottom: 0.3rem;
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    color: var(--text);
+    border-left: 3px solid var(--primary);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

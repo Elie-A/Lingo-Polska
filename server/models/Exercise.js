@@ -14,6 +14,7 @@ const exerciseSchema = new mongoose.Schema(
     },
     options: [{ type: String }],
     hints: [{ type: String }],
+    text: { type: String },
   },
   { timestamps: true }
 );
