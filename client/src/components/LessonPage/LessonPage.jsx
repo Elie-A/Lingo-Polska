@@ -3,12 +3,11 @@ import { useLocation } from "react-router-dom";
 import Collapse from "../Collapse/Collapse";
 import VocabularyPage from "../Vocabulary/VocabularyPage";
 import PracticePage from "../Practice/PracticePage";
+import ConjugationPage from "../Conjugation/ConjugationPage";
 
 import "./LessonPage.css";
 
 import PolandFlag from "../../assets/poland-flag.svg";
-
-import "./LessonPage.css";
 
 const FLAGS = {
     PL: PolandFlag,
@@ -76,6 +75,10 @@ const LessonPage = ({ lessonTitle, classes, lessonFolder }) => {
     // Render PracticePage if this lesson is practice
     if (lessonFolder === "practice") {
         return <PracticePage />;
+    }
+
+    if (lessonFolder == "conjugation") {
+        return <ConjugationPage />;
     }
 
     // Determine how to display the icon
