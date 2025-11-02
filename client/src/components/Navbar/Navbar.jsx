@@ -18,6 +18,7 @@ export default function Navbar({ lessons }) {
     const [isAboutOpen, setIsAboutOpen] = useState(false);
     const dropdownRef = useRef(null);
     const tensesRef = useRef(null);
+    const closeTimeout = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -53,6 +54,17 @@ export default function Navbar({ lessons }) {
         (l) => !["Present Tense", "Past Tense", "Future Tense", "Conditional Tense"].includes(l.title)
     );
 
+    const handleMouseEnterTenses = () => {
+        if (closeTimeout.current) clearTimeout(closeTimeout.current);
+        setTensesOpen(true);
+    };
+
+    const handleMouseLeaveTenses = () => {
+        closeTimeout.current = setTimeout(() => {
+            setTensesOpen(false);
+        }, 200);
+    };
+
     return (
         <>
             <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
@@ -73,9 +85,9 @@ export default function Navbar({ lessons }) {
                         <li
                             className="nav-item-dropdown"
                             ref={dropdownRef}
-                            onMouseEnter={() => window.innerWidth > 768 && setLessonsOpen(true)}
+                            onMouseEnter={() => window.innerWidth > 768 && setLessonsOpen(true) && handleMouseEnterTenses()}
                             onMouseLeave={() => {
-                                if (window.innerWidth > 768) {
+                                if (window.innerWidth > 768 && handleMouseLeaveTenses()) {
                                     setLessonsOpen(false);
                                     setTensesOpen(false);
                                 }

@@ -166,7 +166,7 @@ Submenu (Tenses)
     flex-direction: column;
     position: absolute;
     top: 0;
-    left: 100%;
+    left: 95%;
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 8px;
@@ -174,7 +174,7 @@ Submenu (Tenses)
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     z-index: 101;
     padding: 0.5rem 0;
-    margin-left: 0.5rem;
+    margin-left: 0;
 }
 
 .dropdown-submenu.open {
