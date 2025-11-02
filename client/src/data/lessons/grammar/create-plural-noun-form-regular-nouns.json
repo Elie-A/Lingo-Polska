@@ -1,0 +1,785 @@
+{
+    "class": "Create Plural Noun Form - Regular Nouns",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "polish": "radio",
+                    "english": "radio",
+                    "stem": "radi",
+                    "ending": "a"
+                },
+                {
+                    "polish": "koło",
+                    "english": "wheel",
+                    "stem": "koł",
+                    "ending": "a"
+                },
+                {
+                    "polish": "fala",
+                    "english": "wave",
+                    "stem": "fal",
+                    "ending": "y"
+                },
+                {
+                    "polish": "widok",
+                    "english": "view",
+                    "stem": "widok",
+                    "ending": "i"
+                },
+                {
+                    "polish": "ognisko",
+                    "english": "fire",
+                    "stem": "ognisk",
+                    "ending": "a"
+                },
+                {
+                    "polish": "kartka",
+                    "english": "card",
+                    "stem": "kartk",
+                    "ending": "i"
+                },
+                {
+                    "polish": "naczynie",
+                    "english": "vessel",
+                    "stem": "naczyni",
+                    "ending": "a"
+                },
+                {
+                    "polish": "droga",
+                    "english": "road",
+                    "stem": "drog",
+                    "ending": "i"
+                },
+                {
+                    "polish": "żelazko",
+                    "english": "iron",
+                    "stem": "żelazk",
+                    "ending": "a"
+                },
+                {
+                    "polish": "pralka",
+                    "english": "washing machine",
+                    "stem": "pralk",
+                    "ending": "i"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "polish": "zlew",
+                    "english": "sink",
+                    "stem": "zlew",
+                    "ending": "y"
+                },
+                {
+                    "polish": "piłka",
+                    "english": "ball",
+                    "stem": "piłk",
+                    "ending": "i"
+                },
+                {
+                    "polish": "odkurzacz",
+                    "english": "vacuum cleaner",
+                    "stem": "odkurzacz",
+                    "ending": "e"
+                },
+                {
+                    "polish": "ciężarówka",
+                    "english": "truck",
+                    "stem": "ciężarówk",
+                    "ending": "i"
+                },
+                {
+                    "polish": "gospodarka",
+                    "english": "economy",
+                    "stem": "gospodark",
+                    "ending": "i"
+                },
+                {
+                    "polish": "talerz",
+                    "english": "plate",
+                    "stem": "talerz",
+                    "ending": "e"
+                },
+                {
+                    "polish": "walka",
+                    "english": "fight",
+                    "stem": "walk",
+                    "ending": "i"
+                },
+                {
+                    "polish": "morze",
+                    "english": "sea",
+                    "stem": "mor",
+                    "ending": "za"
+                },
+                {
+                    "polish": "mrowisko",
+                    "english": "anthill",
+                    "stem": "mrowisk",
+                    "ending": "a"
+                },
+                {
+                    "polish": "ankieta",
+                    "english": "survey",
+                    "stem": "ankiet",
+                    "ending": "y"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03",
+            "rows": [
+                {
+                    "polish": "gniazdo",
+                    "english": "nest",
+                    "stem": "gniazd",
+                    "ending": "a"
+                },
+                {
+                    "polish": "koc",
+                    "english": "blanket",
+                    "stem": "koc",
+                    "ending": "e"
+                },
+                {
+                    "polish": "książka",
+                    "english": "book",
+                    "stem": "książk",
+                    "ending": "i"
+                },
+                {
+                    "polish": "ręcznik",
+                    "english": "towel",
+                    "stem": "ręcznik",
+                    "ending": "i"
+                },
+                {
+                    "polish": "morderca",
+                    "english": "murderer",
+                    "stem": "morderc",
+                    "ending": "y"
+                },
+                {
+                    "polish": "noga",
+                    "english": "leg",
+                    "stem": "nog",
+                    "ending": "i"
+                },
+                {
+                    "polish": "garaż",
+                    "english": "garage",
+                    "stem": "garaż",
+                    "ending": "e"
+                },
+                {
+                    "polish": "okno",
+                    "english": "window",
+                    "stem": "okn",
+                    "ending": "a"
+                },
+                {
+                    "polish": "komin",
+                    "english": "chimney",
+                    "stem": "komin",
+                    "ending": "y"
+                },
+                {
+                    "polish": "pytanie",
+                    "english": "question",
+                    "stem": "pytan",
+                    "ending": "ia"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04",
+            "rows": [
+                {
+                    "polish": "torba",
+                    "english": "bag",
+                    "stem": "torb",
+                    "ending": "y"
+                },
+                {
+                    "polish": "odkrycie",
+                    "english": "discovery",
+                    "stem": "odkryci",
+                    "ending": "a"
+                },
+                {
+                    "polish": "ziemniak",
+                    "english": "potato",
+                    "stem": "ziemniak",
+                    "ending": "i"
+                },
+                {
+                    "polish": "zmiana",
+                    "english": "change",
+                    "stem": "zmian",
+                    "ending": "y"
+                },
+                {
+                    "polish": "wiadro",
+                    "english": "bucket",
+                    "stem": "wiadr",
+                    "ending": "a"
+                },
+                {
+                    "polish": "ściana",
+                    "english": "wall",
+                    "stem": "ścian",
+                    "ending": "y"
+                },
+                {
+                    "polish": "wieszak",
+                    "english": "hanger",
+                    "stem": "wieszak",
+                    "ending": "i"
+                },
+                {
+                    "polish": "jabłko",
+                    "english": "apple",
+                    "stem": "jabłk",
+                    "ending": "a"
+                },
+                {
+                    "polish": "krem",
+                    "english": "cream",
+                    "stem": "krem",
+                    "ending": "y"
+                },
+                {
+                    "polish": "strona",
+                    "english": "page",
+                    "stem": "stron",
+                    "ending": "y"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 05",
+            "rows": [
+                {
+                    "polish": "głośnik",
+                    "english": "speaker",
+                    "stem": "głośnik",
+                    "ending": "i"
+                },
+                {
+                    "polish": "konstytucja",
+                    "english": "constitution",
+                    "stem": "konstytucj",
+                    "ending": "e"
+                },
+                {
+                    "polish": "zadanie",
+                    "english": "task",
+                    "stem": "zadan",
+                    "ending": "ia"
+                },
+                {
+                    "polish": "gwiazda",
+                    "english": "star",
+                    "stem": "gwiazd",
+                    "ending": "y"
+                },
+                {
+                    "polish": "tablica",
+                    "english": "table",
+                    "stem": "tablic",
+                    "ending": "e"
+                },
+                {
+                    "polish": "rakieta",
+                    "english": "rocket",
+                    "stem": "rakiet",
+                    "ending": "y"
+                },
+                {
+                    "polish": "lampa",
+                    "english": "lamp",
+                    "stem": "lamp",
+                    "ending": "y"
+                },
+                {
+                    "polish": "dom",
+                    "english": "house",
+                    "stem": "dom",
+                    "ending": "y"
+                },
+                {
+                    "polish": "masło",
+                    "english": "butter",
+                    "stem": "masł",
+                    "ending": "a"
+                },
+                {
+                    "polish": "dziewczyna",
+                    "english": "girl",
+                    "stem": "dziewczyn",
+                    "ending": "y"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 06",
+            "rows": [
+                {
+                    "polish": "maszyna",
+                    "english": "machine",
+                    "stem": "maszyn",
+                    "ending": "y"
+                },
+                {
+                    "polish": "kot",
+                    "english": "cat",
+                    "stem": "kot",
+                    "ending": "y"
+                },
+                {
+                    "polish": "tornado",
+                    "english": "tornado",
+                    "stem": "tornad",
+                    "ending": "a"
+                },
+                {
+                    "polish": "piętro",
+                    "english": "floor",
+                    "stem": "piętr",
+                    "ending": "a"
+                },
+                {
+                    "polish": "wojna",
+                    "english": "war",
+                    "stem": "wojn",
+                    "ending": "y"
+                },
+                {
+                    "polish": "grzyb",
+                    "english": "mushroom",
+                    "stem": "grzyb",
+                    "ending": "y"
+                },
+                {
+                    "polish": "wino",
+                    "english": "wine",
+                    "stem": "win",
+                    "ending": "a"
+                },
+                {
+                    "polish": "mózg",
+                    "english": "brain",
+                    "stem": "mózg",
+                    "ending": "i"
+                },
+                {
+                    "polish": "chmura",
+                    "english": "cloud",
+                    "stem": "chmur",
+                    "ending": "y"
+                },
+                {
+                    "polish": "czek",
+                    "english": "check",
+                    "stem": "czek",
+                    "ending": "i"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 07",
+            "rows": [
+                {
+                    "polish": "lustro",
+                    "english": "mirror",
+                    "stem": "lustr",
+                    "ending": "a"
+                },
+                {
+                    "polish": "stoisko",
+                    "english": "stand",
+                    "stem": "stoisk",
+                    "ending": "a"
+                },
+                {
+                    "polish": "hotel",
+                    "english": "hotel",
+                    "stem": "hotel",
+                    "ending": "e"
+                },
+                {
+                    "polish": "telefon",
+                    "english": "phone",
+                    "stem": "telefon",
+                    "ending": "y"
+                },
+                {
+                    "polish": "roślina",
+                    "english": "plant",
+                    "stem": "roślin",
+                    "ending": "y"
+                },
+                {
+                    "polish": "plakat",
+                    "english": "poster",
+                    "stem": "plakat",
+                    "ending": "y"
+                },
+                {
+                    "polish": "obiad",
+                    "english": "dinner",
+                    "stem": "obiad",
+                    "ending": "y"
+                },
+                {
+                    "polish": "pranie",
+                    "english": "laundry",
+                    "stem": "pran",
+                    "ending": "ia"
+                },
+                {
+                    "polish": "metro",
+                    "english": "subway",
+                    "stem": "metr",
+                    "ending": "a"
+                },
+                {
+                    "polish": "paliwo",
+                    "english": "fuel",
+                    "stem": "paliw",
+                    "ending": "a"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 08",
+            "rows": [
+                {
+                    "polish": "ciasto",
+                    "english": "cake",
+                    "stem": "ciast",
+                    "ending": "a"
+                },
+                {
+                    "polish": "mydło",
+                    "english": "soap",
+                    "stem": "mydł",
+                    "ending": "a"
+                },
+                {
+                    "polish": "zegar",
+                    "english": "clock",
+                    "stem": "zegar",
+                    "ending": "e"
+                },
+                {
+                    "polish": "aplikacja",
+                    "english": "application",
+                    "stem": "aplikacj",
+                    "ending": "e"
+                },
+                {
+                    "polish": "twarz",
+                    "english": "face",
+                    "stem": "twarze",
+                    "ending": ""
+                },
+                {
+                    "polish": "krowa",
+                    "english": "cow",
+                    "stem": "krow",
+                    "ending": "y"
+                },
+                {
+                    "polish": "informacja",
+                    "english": "information",
+                    "stem": "informacj",
+                    "ending": "e"
+                },
+                {
+                    "polish": "ulica",
+                    "english": "street",
+                    "stem": "ulic",
+                    "ending": "e"
+                },
+                {
+                    "polish": "przygoda",
+                    "english": "adventure",
+                    "stem": "przygod",
+                    "ending": "y"
+                },
+                {
+                    "polish": "siostra",
+                    "english": "sister",
+                    "stem": "siostr",
+                    "ending": "y"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 09",
+            "rows": [
+                {
+                    "polish": "zdanie",
+                    "english": "sentence",
+                    "stem": "zdan",
+                    "ending": "ia"
+                },
+                {
+                    "polish": "szklanka",
+                    "english": "glass",
+                    "stem": "szklank",
+                    "ending": "i"
+                },
+                {
+                    "polish": "telewizor",
+                    "english": "TV",
+                    "stem": "telewizor",
+                    "ending": "y"
+                },
+                {
+                    "polish": "stacja",
+                    "english": "station",
+                    "stem": "stacj",
+                    "ending": "e"
+                },
+                {
+                    "polish": "musztarda",
+                    "english": "mustard",
+                    "stem": "musztard",
+                    "ending": "y"
+                },
+                {
+                    "polish": "portfel",
+                    "english": "wallet",
+                    "stem": "portfel",
+                    "ending": "e"
+                },
+                {
+                    "polish": "piec",
+                    "english": "oven",
+                    "stem": "piec",
+                    "ending": "e"
+                },
+                {
+                    "polish": "spotkanie",
+                    "english": "meeting",
+                    "stem": "spotkan",
+                    "ending": "ia"
+                },
+                {
+                    "polish": "wydarzenie",
+                    "english": "event",
+                    "stem": "wydarzen",
+                    "ending": "ia"
+                },
+                {
+                    "polish": "klucz",
+                    "english": "key",
+                    "stem": "klucz",
+                    "ending": "e"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 10",
+            "rows": [
+                {
+                    "polish": "łóżko",
+                    "english": "bed",
+                    "stem": "łóżk",
+                    "ending": "a"
+                },
+                {
+                    "polish": "but",
+                    "english": "shoe",
+                    "stem": "but",
+                    "ending": "y"
+                },
+                {
+                    "polish": "nauczycielka",
+                    "english": "teacher",
+                    "stem": "nauczycielk",
+                    "ending": "i"
+                },
+                {
+                    "polish": "rzeka",
+                    "english": "river",
+                    "stem": "rzek",
+                    "ending": "i"
+                },
+                {
+                    "polish": "wyspa",
+                    "english": "island",
+                    "stem": "wysp",
+                    "ending": "y"
+                },
+                {
+                    "polish": "stowarzyszenie",
+                    "english": "association",
+                    "stem": "stowarzyszen",
+                    "ending": "ia"
+                },
+                {
+                    "polish": "lodówka",
+                    "english": "fridge",
+                    "stem": "lodówk",
+                    "ending": "i"
+                },
+                {
+                    "polish": "notatka",
+                    "english": "note",
+                    "stem": "notatk",
+                    "ending": "i"
+                },
+                {
+                    "polish": "lekcja",
+                    "english": "lesson",
+                    "stem": "lekcj",
+                    "ending": "e"
+                },
+                {
+                    "polish": "piosenkarka",
+                    "english": "singer",
+                    "stem": "piosenkark",
+                    "ending": "i"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 11",
+            "rows": [
+                {
+                    "polish": "budzik",
+                    "english": "alarm clock",
+                    "stem": "budzik",
+                    "ending": "i"
+                },
+                {
+                    "polish": "mieszkanie",
+                    "english": "flat",
+                    "stem": "mieszkan",
+                    "ending": "ia"
+                },
+                {
+                    "polish": "lodowisko",
+                    "english": "icerink",
+                    "stem": "lodowisk",
+                    "ending": "a"
+                },
+                {
+                    "polish": "sklep",
+                    "english": "shop",
+                    "stem": "sklep",
+                    "ending": "y"
+                },
+                {
+                    "polish": "ptak",
+                    "english": "bird",
+                    "stem": "ptak",
+                    "ending": "i"
+                },
+                {
+                    "polish": "kobieta",
+                    "english": "woman",
+                    "stem": "kobiet",
+                    "ending": "y"
+                },
+                {
+                    "polish": "arbuz",
+                    "english": "watermelon",
+                    "stem": "arbuz",
+                    "ending": "y"
+                },
+                {
+                    "polish": "sprzedawca",
+                    "english": "seller",
+                    "stem": "sprzedawc",
+                    "ending": "y"
+                },
+                {
+                    "polish": "piwo",
+                    "english": "beer",
+                    "stem": "piw",
+                    "ending": "a"
+                },
+                {
+                    "polish": "monitor",
+                    "english": "monitor",
+                    "stem": "monitor",
+                    "ending": "y"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 12",
+            "rows": [
+                {
+                    "polish": "maska",
+                    "english": "mask",
+                    "stem": "mask",
+                    "ending": "i"
+                },
+                {
+                    "polish": "mucha",
+                    "english": "housefly",
+                    "stem": "much",
+                    "ending": "y"
+                },
+                {
+                    "polish": "rzecz",
+                    "english": "thing",
+                    "stem": "rzecz",
+                    "ending": "y"
+                },
+                {
+                    "polish": "źródło",
+                    "english": "source",
+                    "stem": "źródł",
+                    "ending": "a"
+                },
+                {
+                    "polish": "balkon",
+                    "english": "balcony",
+                    "stem": "balkon",
+                    "ending": "y"
+                },
+                {
+                    "polish": "planeta",
+                    "english": "planet",
+                    "stem": "planet",
+                    "ending": "y"
+                },
+                {
+                    "polish": "numer",
+                    "english": "number",
+                    "stem": "numer",
+                    "ending": "y"
+                },
+                {
+                    "polish": "podwórko",
+                    "english": "backyard",
+                    "stem": "podwórk",
+                    "ending": "a"
+                },
+                {
+                    "polish": "urządzenie",
+                    "english": "device",
+                    "stem": "urządzen",
+                    "ending": "ia"
+                },
+                {
+                    "polish": "obraz",
+                    "english": "image",
+                    "stem": "obraz",
+                    "ending": "y"
+                }
+            ]
+        }
+    ]
+}

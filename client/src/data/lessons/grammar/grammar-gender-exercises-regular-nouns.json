@@ -1,0 +1,555 @@
+{
+    "class": "Grammar Gender Exercises - Regular Nouns",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "english": "house",
+                    "polish": "dom",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "window",
+                    "polish": "okno",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "chair",
+                    "polish": "krzesło",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "suitcase",
+                    "polish": "walizka",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "desk",
+                    "polish": "biurko",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "garden",
+                    "polish": "ogród",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "rock",
+                    "polish": "skała",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "pencil",
+                    "polish": "ołówek",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "dog",
+                    "polish": "pies",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "table",
+                    "polish": "stół",
+                    "gender": "męski/masculine"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "english": "TV",
+                    "polish": "telewizor",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "table",
+                    "polish": "stół",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "cake",
+                    "polish": "ciasto",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "economy",
+                    "polish": "gospodarka",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "island",
+                    "polish": "wyspa",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "backyard",
+                    "polish": "podwórko",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "shop",
+                    "polish": "sklep",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "iron",
+                    "polish": "żelazko",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "vessel",
+                    "polish": "naczynie",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "housefly",
+                    "polish": "mucha",
+                    "gender": "żeński/feminine"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03",
+            "rows": [
+                {
+                    "english": "subway",
+                    "polish": "metro",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "sink",
+                    "polish": "zlew",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "lesson",
+                    "polish": "lekcja",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "river",
+                    "polish": "rzeka",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "alarm clock",
+                    "polish": "budzik",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "adventure",
+                    "polish": "przygoda",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "bucket",
+                    "polish": "wiadro",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "building",
+                    "polish": "budynek",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "remote control",
+                    "polish": "pilot",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "image",
+                    "polish": "obraz",
+                    "gender": "męski/masculine"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04",
+            "rows": [
+                {
+                    "english": "mustard",
+                    "polish": "musztarda",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "war",
+                    "polish": "wojna",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "radio",
+                    "polish": "radio",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "monitor",
+                    "polish": "monitor",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "source",
+                    "polish": "źródło",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "wave",
+                    "polish": "fala",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "beer",
+                    "polish": "piwo",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "nest",
+                    "polish": "gniazdo",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "dinner",
+                    "polish": "obiad",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "blanket",
+                    "polish": "koc",
+                    "gender": "męski/masculine"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 05",
+            "rows": [
+                {
+                    "english": "phone",
+                    "polish": "telefon",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "device",
+                    "polish": "urządzenie",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "pressure",
+                    "polish": "ciśnienie",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "sky",
+                    "polish": "niebo",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "question",
+                    "polish": "pytanie",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "flower",
+                    "polish": "kwiatek",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "ice rink",
+                    "polish": "lodowisko",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "laundry",
+                    "polish": "pranie",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "potato",
+                    "polish": "ziemniak",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "collection",
+                    "polish": "zbiór",
+                    "gender": "męski/masculine"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 06",
+            "rows": [
+                {
+                    "english": "comb",
+                    "polish": "grzebień",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "balcony",
+                    "polish": "balkon",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "church",
+                    "polish": "kościół",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "leaf",
+                    "polish": "liść",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "fight",
+                    "polish": "walka",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "hanger",
+                    "polish": "wieszak",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "rocket",
+                    "polish": "rakieta",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "girl",
+                    "polish": "dziewczyna",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "apple",
+                    "polish": "jabłko",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "towel",
+                    "polish": "ręcznik",
+                    "gender": "męski/masculine"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 07",
+            "rows": [
+                {
+                    "english": "application",
+                    "polish": "aplikacja",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "air",
+                    "polish": "powietrze",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "sailing",
+                    "polish": "żeglarstwo",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "mask",
+                    "polish": "maska",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "child",
+                    "polish": "dziecko",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "floor",
+                    "polish": "piętro",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "street",
+                    "polish": "ulica",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "information",
+                    "polish": "informacja",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "brain",
+                    "polish": "mózg",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "note",
+                    "polish": "notatka",
+                    "gender": "żeński/feminine"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 08",
+            "rows": [
+                {
+                    "english": "card",
+                    "polish": "kartka",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "machine",
+                    "polish": "maszyna",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "fuel",
+                    "polish": "paliwo",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "bird",
+                    "polish": "ptak",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "discovery",
+                    "polish": "odkrycie",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "ear",
+                    "polish": "ucho",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "plant",
+                    "polish": "roślina",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "table",
+                    "polish": "tablica",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "eye",
+                    "polish": "oko",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "clock",
+                    "polish": "zegar",
+                    "gender": "męski/masculine"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 09",
+            "rows": [
+                {
+                    "english": "wall",
+                    "polish": "ściana",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "Sun",
+                    "polish": "Słońce",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "pot",
+                    "polish": "garnek",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "cream",
+                    "polish": "krem",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "association",
+                    "polish": "stowarzyszenie",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "music",
+                    "polish": "muzyka",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "car",
+                    "polish": "samochód",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "singer",
+                    "polish": "piosenkarka",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "boy",
+                    "polish": "chłopiec",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "mushroom",
+                    "polish": "grzyb",
+                    "gender": "męski/masculine"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 10",
+            "rows": [
+                {
+                    "english": "butter",
+                    "polish": "masło",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "washing machine",
+                    "polish": "pralka",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "sister",
+                    "polish": "siostra",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "number",
+                    "polish": "numer",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "wine",
+                    "polish": "wino",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "player",
+                    "polish": "zawodnik",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "english": "flat",
+                    "polish": "mieszkanie",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "english": "questionnaire",
+                    "polish": "ankieta",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "hand",
+                    "polish": "ręka",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "english": "garage",
+                    "polish": "garaż",
+                    "gender": "męski/masculine"
+                }
+            ]
+        }
+    ]
+}

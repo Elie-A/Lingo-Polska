@@ -1,0 +1,265 @@
+{
+    "class": "Create Plural Noun Form - Irregular Nouns",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "polish": "mężczyzna",
+                    "english": "man",
+                    "stem": "mężczyzn",
+                    "ending": "i"
+                },
+                {
+                    "polish": "zawodnik",
+                    "english": "player",
+                    "stem": "zawodnik",
+                    "ending": "i"
+                },
+                {
+                    "polish": "student",
+                    "english": "student",
+                    "stem": "student",
+                    "ending": "i"
+                },
+                {
+                    "polish": "pies",
+                    "english": "dog",
+                    "stem": "ps",
+                    "ending": "y"
+                },
+                {
+                    "polish": "wieżowiec",
+                    "english": "skyscraper",
+                    "stem": "wieżowc",
+                    "ending": "e"
+                },
+                {
+                    "polish": "człowiek",
+                    "english": "person",
+                    "stem": "lud",
+                    "ending": "zie"
+                },
+                {
+                    "polish": "grzebień",
+                    "english": "comb",
+                    "stem": "grzebieni",
+                    "ending": ""
+                },
+                {
+                    "polish": "ogórek",
+                    "english": "cucumber",
+                    "stem": "ogórk",
+                    "ending": "i"
+                },
+                {
+                    "polish": "zwierzę",
+                    "english": "animal",
+                    "stem": "zwierząt",
+                    "ending": ""
+                },
+                {
+                    "polish": "zbiór",
+                    "english": "collection",
+                    "stem": "zbior",
+                    "ending": "y"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "polish": "koń",
+                    "english": "horse",
+                    "stem": "kon",
+                    "ending": "ie"
+                },
+                {
+                    "polish": "broń",
+                    "english": "weapon",
+                    "stem": "broni",
+                    "ending": ""
+                },
+                {
+                    "polish": "ręka",
+                    "english": "arm",
+                    "stem": "ręk",
+                    "ending": "i"
+                },
+                {
+                    "polish": "syn",
+                    "english": "son",
+                    "stem": "syn",
+                    "ending": "owie"
+                },
+                {
+                    "polish": "kość",
+                    "english": "bone",
+                    "stem": "kośc",
+                    "ending": "i"
+                },
+                {
+                    "polish": "myśl",
+                    "english": "thought",
+                    "stem": "myśl",
+                    "ending": "i"
+                },
+                {
+                    "polish": "kościół",
+                    "english": "church",
+                    "stem": "kościoł",
+                    "ending": "y"
+                },
+                {
+                    "polish": "brat",
+                    "english": "brother",
+                    "stem": "brat",
+                    "ending": "y"
+                },
+                {
+                    "polish": "przystanek",
+                    "english": "bus stop",
+                    "stem": "przystank",
+                    "ending": "i"
+                },
+                {
+                    "polish": "dziecko",
+                    "english": "child",
+                    "stem": "dziec",
+                    "ending": "i"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03",
+            "rows": [
+                {
+                    "polish": "dziadek",
+                    "english": "grandfather",
+                    "stem": "dziadk",
+                    "ending": "owie"
+                },
+                {
+                    "polish": "muzeum",
+                    "english": "museum",
+                    "stem": "muze",
+                    "ending": "a"
+                },
+                {
+                    "polish": "chłopiec",
+                    "english": "boy",
+                    "stem": "chłopc",
+                    "ending": "y"
+                },
+                {
+                    "polish": "dłoń",
+                    "english": "hand",
+                    "stem": "dłoni",
+                    "ending": ""
+                },
+                {
+                    "polish": "mąż",
+                    "english": "husband",
+                    "stem": "męż",
+                    "ending": "owie"
+                },
+                {
+                    "polish": "samochód",
+                    "english": "car",
+                    "stem": "samochod",
+                    "ending": "y"
+                },
+                {
+                    "polish": "ogród",
+                    "english": "garden",
+                    "stem": "ogrod",
+                    "ending": "y"
+                },
+                {
+                    "polish": "pan",
+                    "english": "gentleman",
+                    "stem": "pan",
+                    "ending": "owie"
+                },
+                {
+                    "polish": "ucho",
+                    "english": "ear",
+                    "stem": "usz",
+                    "ending": "a"
+                },
+                {
+                    "polish": "oko",
+                    "english": "eye",
+                    "stem": "ocz",
+                    "ending": "a"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04",
+            "rows": [
+                {
+                    "polish": "garnek",
+                    "english": "pot",
+                    "stem": "garnk",
+                    "ending": "i"
+                },
+                {
+                    "polish": "sąsiad",
+                    "english": "neighbor",
+                    "stem": "sąsiad",
+                    "ending": "zi"
+                },
+                {
+                    "polish": "imię",
+                    "english": "name",
+                    "stem": "imion",
+                    "ending": "a"
+                },
+                {
+                    "polish": "professor",
+                    "english": "professor",
+                    "stem": "professor",
+                    "ending": "s"
+                },
+                {
+                    "polish": "Polak",
+                    "english": "Pole",
+                    "stem": "Polak",
+                    "ending": "i"
+                },
+                {
+                    "polish": "wujek",
+                    "english": "uncle",
+                    "stem": "wujk",
+                    "ending": "i"
+                },
+                {
+                    "polish": "pilot",
+                    "english": "pilot",
+                    "stem": "pilot",
+                    "ending": "y"
+                },
+                {
+                    "polish": "stół",
+                    "english": "table",
+                    "stem": "stoł",
+                    "ending": "y"
+                },
+                {
+                    "polish": "budynek",
+                    "english": "building",
+                    "stem": "budynk",
+                    "ending": "i"
+                },
+                {
+                    "polish": "ojciec",
+                    "english": "father",
+                    "stem": "ojc",
+                    "ending": "owie"
+                }
+            ]
+        }
+    ]
+}

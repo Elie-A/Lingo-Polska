@@ -1,0 +1,469 @@
+{
+    "class": "Personal and Reflexive Pronouns",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "polish": "1. To jest Anna. Ona jest naszą (nasz/swój) siostrą.",
+                    "english": "This is Anna. She is our sister.",
+                    "stem": "nasz",
+                    "ending": "ą",
+                    "case": "Instr. F.",
+                    "explanation": "The possessor ('we', implied by nasz) is different from the subject (Ona 'She'). Use the non-reflexive form."
+                },
+                {
+                    "polish": "2. Adam wziął swoją (jego/swój) teczkę i pobiegł na autobus, bo jego (jego/swój) samochód był zepsuty.",
+                    "english": "Adam took his own briefcase... because his car was broken.",
+                    "stem": "swoj / jego",
+                    "ending": "ą",
+                    "case": "Acc. F. / Nom. M.",
+                    "explanation": "1st clause: Possessor = Subject (Adam), use swój 2nd clause: Possessor (Adam) ≠ Subject (samochód 'car'), use jego."
+                },
+                {
+                    "polish": "3. Zapomniałam swojej (mój/swój) książki, czy mogę pożyczyć twoją (twój/swój)?",
+                    "english": "I forgot my own book, can I borrow yours?",
+                    "stem": "swoj / twoj",
+                    "ending": "ej / ą",
+                    "case": "Gen. F. / Acc. F.",
+                    "explanation": "1st part: Possessor = Subject (ja 'I'), use swój. 2nd part: Possessor (ty 'you') ≠ Subject (ja 'I'), use twój."
+                },
+                {
+                    "polish": "4. Ich (ich/swój) dom jest większy niż nasz (nasz/swój).",
+                    "english": "Their house is bigger than ours.",
+                    "stem": "Ich / nasz",
+                    "ending": "",
+                    "case": "Undeclined / Nom. M.",
+                    "explanation": "In both phrases, the possessor is not the subject (dom 'house' or nasz 'ours'). Non-reflexive forms ich and nasz are used. In addition, ich is nominative, because it' part of the bigger subject ich dom"
+                },
+                {
+                    "polish": "5. Czy widziałeś gdzieś mój (mój/swój) telefon? Nie mogę go nigdzie znaleźć!",
+                    "english": "Have you seen my phone anywhere? I can't find it anywhere!",
+                    "stem": "mój",
+                    "ending": "",
+                    "case": "Acc. M.",
+                    "explanation": "The possessor (ja 'I') is different from the subject (ty 'you'). Use the non-reflexive form."
+                },
+                {
+                    "polish": "6. Wieczorem idę do kina ze swoją (mój/swój) siostrą.",
+                    "english": "In the evening I'm going to the cinema with my own sister.",
+                    "stem": "swoj",
+                    "ending": "ą",
+                    "case": "Instr. F.",
+                    "explanation": "The possessor = Subject (*ja* 'I' is implied by *idę*). Use the reflexive form swój."
+                },
+                {
+                    "polish": "7. Przyjechałeś autobusem? Gdzie masz swój (twój/swój) samochód.",
+                    "english": "Did you come by bus? Where do you have your own car?",
+                    "stem": "swój",
+                    "ending": "",
+                    "case": "Acc. M.",
+                    "explanation": "The possessor = Subject (ty 'you' is implied by *masz*). Use the reflexive form swój."
+                },
+                {
+                    "polish": "8. Poznałem swoją (mój/swój) żonę w kawiarni, którą prowadzi moja (mój/swój) koleżanka.",
+                    "english": "I met my own wife... that my friend runs.",
+                    "stem": "swoj / moj",
+                    "ending": "ą / a",
+                    "case": "Acc. F. / Nom. F.",
+                    "explanation": "1st part: Possessor = Subject (ja), use swój. 2nd part: Possessor (*ja*) ≠ Subject (koleżanka 'friend'), use mój."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02 - Ja",
+            "rows": [
+                {
+                    "polish": "1. Kocham mnie",
+                    "english": "I love myself",
+                    "stem": "mnie",
+                    "ending": "",
+                    "case": "Acc. Sg.",
+                    "explanation": "The action reflects back on the subject (ja 'I'), so the reflexive form mnie is used."
+                },
+                {
+                    "polish": "2. Dlaczego mnie nie słuchasz?",
+                    "english": "Why aren't you listening to me?",
+                    "stem": "mnie",
+                    "ending": "",
+                    "case": "Acc. Sg.",
+                    "explanation": "The action (listening) is directed at the speaker (ja 'I'), so the first-person singular object form mnie is used. \"Nie\" negates the verb słuchasz, which agrees with ty (you singular)."
+                },
+                {
+                    "polish": "3. Smutno mi bez ciebie",
+                    "english": "I feel sad without you",
+                    "stem": "mi",
+                    "ending": "",
+                    "case": "Dat. Sg.",
+                    "explanation": "The feeling (sadness) affects the speaker (ja 'I'), so the first-person singular dative form mi is used. \"Bez ciebie\" means \"without you,\" where ciebie is the second-person singular object form of ty."
+                },
+                {
+                    "polish": "4. I ty, Brutusie, przeciwko mnie?",
+                    "english": "And you, Brutus, against me?",
+                    "stem": "mnie",
+                    "ending": "",
+                    "case": "Gen. Sg.",
+                    "explanation": "The pronoun mnie is used as the object of the preposition przeciwko ('against'). Przeciwko requires the **Genitive** case, which is why mnie (Gen./Acc. form of ja) is used."
+                },
+                {
+                    "polish": "5. Chodź ze mną na lunch",
+                    "english": "Come with me to lunch",
+                    "stem": "mną",
+                    "ending": "",
+                    "case": "Instr. Sg.",
+                    "explanation": "The pronoun mną is in the instrumental case because it follows the preposition ze ('with'). It refers to the speaker (ja)."
+                },
+                {
+                    "polish": "6. Czy czasem o mnie myślisz?",
+                    "english": "Do you sometimes think about me?",
+                    "stem": "mnie",
+                    "ending": "",
+                    "case": "Loc. Sg.",
+                    "explanation": "The pronoun mnie is used as the object of the preposition o ('about'). The verb myśleć o takes the **Locative** case, and the locative form of ja is mnie."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03 - Ty",
+            "rows": [
+                {
+                    "polish": "1. Dawno cię nie widziałem. Świetnie wyglądasz.",
+                    "english": "I haven't seen you in a long time. You look great.",
+                    "stem": "cię",
+                    "ending": "",
+                    "case": "Acc. Sg.",
+                    "explanation": "The pronoun cię is the accusative form of ty used as the direct object of the verb widzieć ('to see'). It refers to the person being addressed."
+                },
+                {
+                    "polish": "2. Przyjdę do ciebie jutro o ósmej",
+                    "english": "I will come to you tomorrow at eight",
+                    "stem": "ciebie",
+                    "ending": "",
+                    "case": "Gen. Sg.",
+                    "explanation": "The pronoun ciebie is used after the preposition do ('to') and is in the genitive case. It refers to the person being addressed (ty)."
+                },
+                {
+                    "polish": "3. Nigdy nie myślałem o tobie w ten sposób",
+                    "english": "I never thought about you that way",
+                    "stem": "tobie",
+                    "ending": "",
+                    "case": "Loc. Sg.",
+                    "explanation": "The pronoun tobie is used as the object of the preposition o ('about'). The verb myśleć o requires the **Locative** case, and the locative form of ty is tobie."
+                },
+                {
+                    "polish": "4. Jutro nie mogę się z tobą spotkać, bo pracuję",
+                    "english": "I can't meet with you tomorrow because I'm working",
+                    "stem": "się / tobą",
+                    "ending": "",
+                    "case": "Reflexive / Instr. Sg.",
+                    "explanation": "się is the reflexive pronoun used with spotkać się ('to meet [each other]'). tobą is the instrumental form of ty used after the preposition z ('with')."
+                },
+                {
+                    "polish": "5. Kocham cię",
+                    "english": "I love you",
+                    "stem": "cię",
+                    "ending": "",
+                    "case": "Acc. Sg.",
+                    "explanation": "The pronoun cię is the accusative form of ty used as the direct object of the verb kochać ('to love'). It refers to the person being addressed."
+                },
+                {
+                    "polish": "6. Przez ciebie spóźniłam się na autobus",
+                    "english": "Because of you, I was late for the bus",
+                    "stem": "ciebie / się",
+                    "ending": "",
+                    "case": "Acc. Sg. / Reflexive",
+                    "explanation": "ciebie is the accusative form of ty used as the object of the preposition przez ('because of'). się is the reflexive pronoun used with spóźnić się ('to be late')."
+                },
+                {
+                    "polish": "7. Zimno ci",
+                    "english": "You are cold / You feel cold",
+                    "stem": "ci",
+                    "ending": "",
+                    "case": "Dat. Sg.",
+                    "explanation": "The pronoun ci is the dative form of ty used to indicate the person experiencing the state (here, feeling cold). It functions as an indirect object."
+                },
+                {
+                    "polish": "8. Jemu nie dam numeru telefonu, ale tobie mogę dać",
+                    "english": "I won't give him the phone number, but I can give it to you",
+                    "stem": "jemu / tobie",
+                    "ending": "",
+                    "case": "Dat. Sg. / Dat. Sg.",
+                    "explanation": "jemu and tobie are both in the dative case to indicate the indirect objects (the recipients of the phone number). They refer to 'him' and 'you' respectively."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04 - On",
+            "rows": [
+                {
+                    "polish": "1. Brakuje mi go",
+                    "english": "I miss him",
+                    "stem": "mi / go",
+                    "ending": "",
+                    "case": "Dat. Sg. / Gen. Sg.",
+                    "explanation": "mi is the dative form of ja indicating the person experiencing the lack. go is the genitive form of on/ono because the verb brakuje ('to miss/lack') requires the **Genitive** case for what is missing."
+                },
+                {
+                    "polish": "2. Bez niego jest pusto",
+                    "english": "It's empty without him",
+                    "stem": "niego",
+                    "ending": "",
+                    "case": "Gen. Sg.",
+                    "explanation": "The pronoun niego is in the genitive form of on because it follows the preposition bez ('without'). It indicates the person whose absence is being expressed."
+                },
+                {
+                    "polish": "3. Jego nie oszukasz",
+                    "english": "You won't deceive him",
+                    "stem": "jego",
+                    "ending": "",
+                    "case": "Gen. Sg.",
+                    "explanation": "The pronoun jego is the genitive form of on used as the object of the verb oszukać in a negative sentence. It refers to 'him' and is not reflexive."
+                },
+                {
+                    "polish": "4. Czy czasem jeszcze o nim myślisz?",
+                    "english": "Do you still sometimes think about him?",
+                    "stem": "nim",
+                    "ending": "",
+                    "case": "Loc. Sg.",
+                    "explanation": "The pronoun nim is used as the object of the preposition o ('about'). The verb myśleć o requires the **Locative** case, and nim is the locative form of on."
+                },
+                {
+                    "polish": "5. Umówiłam się z nim na kawę jutro",
+                    "english": "I arranged to meet him for coffee tomorrow",
+                    "stem": "się / nim",
+                    "ending": "",
+                    "case": "Reflexive / Instr. Sg.",
+                    "explanation": "się is the reflexive pronoun used with umówić się ('to arrange a meeting'). nim is the instrumental form of on used after the preposition z ('with')."
+                },
+                {
+                    "polish": "6. Znam go. To brat Adama",
+                    "english": "I know him. He's Adam's brother",
+                    "stem": "go",
+                    "ending": "",
+                    "case": "Acc. Sg.",
+                    "explanation": "The pronoun go is the accusative form of on used as the direct object of the verb znać ('to know'). It refers to the person being known and is not reflexive."
+                },
+                {
+                    "polish": "7. Jemu na niej nie zależy",
+                    "english": "He doesn't care about her",
+                    "stem": "jemu / niej",
+                    "ending": "",
+                    "case": "Dat. Sg. / Loc. Sg.",
+                    "explanation": "Jemu is the dative form of on indicating the person for whom something matters. niej is the locative form of ona used with the expression zależeć na kimś ('to care about someone')."
+                },
+                {
+                    "polish": "8. Daj mu mój numer telefonu, proszę",
+                    "english": "Give him my phone number, please",
+                    "stem": "mu",
+                    "ending": "",
+                    "case": "Dat. Sg.",
+                    "explanation": "The pronoun mu is the dative form of on used as the indirect object (the recipient) of the verb dać ('to give'). It is not reflexive."
+                },
+                {
+                    "polish": "9. Dzięki niemu mam pracę",
+                    "english": "Thanks to him, I have a job",
+                    "stem": "niemu",
+                    "ending": "",
+                    "case": "Dat. Sg.",
+                    "explanation": "The pronoun niemu is the dative form of on used after the preposition dzięki ('thanks to'). It indicates the person responsible for the positive outcome and is not reflexive."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 05 - Fill In The Pronouns",
+            "rows": [
+                {
+                    "polish": "1. Czy masz coś dla nas? Nie, nic dla was nie mam",
+                    "english": "Do you have something for us? No, I don't have anything for you (plural)",
+                    "stem": "nas / was",
+                    "ending": "",
+                    "case": "Gen. Pl. / Gen. Pl.",
+                    "explanation": "nas is the genitive form of my (we) used after the preposition dla ('for'). The preposition dla always requires the genitive case. was is the genitive form of wy (you plural) also used with dla. The genitive is reinforced by the negative construction in the second clause."
+                },
+                {
+                    "polish": "2. Dzięki niemu mam bardzo dobrą pracę. Jestem mu wdzięczny",
+                    "english": "Thanks to him I have a very good job. I am grateful to him",
+                    "stem": "niemu / mu",
+                    "ending": "",
+                    "case": "Dat. Sg. / Dat. Sg.",
+                    "explanation": "niemu is the dative form of on used after the preposition dzięki ('thanks to'). The 'n-' prefix is added because it follows a preposition. mu is the short (clitic) dative form of on used with the adjective wdzięczny ('grateful'), which requires the dative case."
+                },
+                {
+                    "polish": "3. Kto jest u niej? Jest z nią Adam",
+                    "english": "Who is at her place? Adam is with her",
+                    "stem": "niej / nią",
+                    "ending": "",
+                    "case": "Gen. Sg. / Instr. Sg.",
+                    "explanation": "niej is the genitive form of ona (she) used after the preposition u ('at someone's place'). The 'n-' prefix is added: jej → niej. nią is the instrumental form of ona used after the preposition z ('with'). The 'n-' prefix is added: ją → nią."
+                },
+                {
+                    "polish": "4. Czy mogę pożyczyć od ciebie samochód? Tak, tylko zwróć go do jutra",
+                    "english": "Can I borrow a car from you? Yes, just return it by tomorrow",
+                    "stem": "ciebie / go",
+                    "ending": "",
+                    "case": "Gen. Sg. / Acc. Sg.",
+                    "explanation": "ciebie is the genitive form of ty (you singular) used after the preposition od ('from'). go is the accusative form of on/ono referring to the car (samochód - masculine object), used as the direct object of zwrócić ('to return')."
+                },
+                {
+                    "polish": "5. Wy też jesteście przeciwko mnie? Już was nie lubię!",
+                    "english": "You're also against me? I don't like you anymore!",
+                    "stem": "mnie / was",
+                    "ending": "",
+                    "case": "Gen. Sg. / Acc. Pl.",
+                    "explanation": "mnie is the genitive form of ja (I) used after the preposition przeciwko ('against'). was is the accusative form of wy (you plural) used as the direct object of lubić ('to like')."
+                },
+                {
+                    "polish": "6. Z nimi jest zawsze jakiś problem. Nie ufam im",
+                    "english": "There's always some problem with them. I don't trust them",
+                    "stem": "nimi / im",
+                    "ending": "",
+                    "case": "Instr. Pl. / Dat. Pl.",
+                    "explanation": "nimi is the instrumental form of oni used after the preposition z ('with'). The 'n-' prefix is added: imi → nimi. im is the dative form of oni used as the indirect object of the verb ufać ('to trust'), which requires the dative case."
+                },
+                {
+                    "polish": "7. Czemu poszliście do kina beze mnie? Nie wiedzieliśmy, że chcesz z nami iść",
+                    "english": "Why did you go to the cinema without me? We didn't know you wanted to go with us",
+                    "stem": "mnie / nami",
+                    "ending": "",
+                    "case": "Gen. Sg. / Instr. Pl.",
+                    "explanation": "mnie is the genitive form of ja used after the preposition bez(e) ('without'). nami is the instrumental form of my (we) used after the preposition z ('with'). The 'n-' prefix is added: ami → nami when following a preposition."
+                },
+                {
+                    "polish": "8. Właśnie rozmawialiśmy o tobie. Dlaczego rozmawiacie o mnie?",
+                    "english": "We were just talking about you. Why are you talking about me?",
+                    "stem": "tobie / mnie",
+                    "ending": "",
+                    "case": "Loc. Sg. / Loc. Sg.",
+                    "explanation": "tobie is the locative form of ty and mnie is the locative form of ja. Both forms are used after the preposition o ('about'), which requires the locative case when expressing the topic of conversation."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 06 - Pronoun Transformations (Sing. - Pl.)",
+            "rows": [
+                {
+                    "polish": "1. To dla mnie?",
+                    "polishTransformed": "To dla nas?",
+                    "english": "Is this for us?",
+                    "stem": "nas",
+                    "ending": "",
+                    "explanation": "The pronoun changes from mnie (genitive of ja - I) to nas (genitive of my - we). Both forms use the genitive case because they follow the preposition dla ('for')."
+                },
+                {
+                    "polish": "2. List do ciebie.",
+                    "polishTransformed": "List do was.",
+                    "english": "A letter to you (plural)",
+                    "stem": "was",
+                    "ending": "",
+                    "explanation": "The pronoun changes from ciebie (genitive of ty - you singular) to was (genitive of wy - you plural). Both forms use the genitive case because they follow the preposition do ('to')."
+                },
+                {
+                    "polish": "3. Smutno mi.",
+                    "polishTransformed": "Smutno nam.",
+                    "english": "We're sad",
+                    "stem": "nam",
+                    "ending": "",
+                    "explanation": "The pronoun changes from mi (dative of ja - I) to nam (dative of my - we). Both forms use the dative case in this impersonal construction to express emotional or physical states."
+                },
+                {
+                    "polish": "4. Czekasz na nią?",
+                    "polishTransformed": "Czekasz na nie?",
+                    "english": "Are you waiting for them?",
+                    "stem": "nie",
+                    "ending": "",
+                    "explanation": "The singular object pronoun **nią** (accusative of *ona*, referring to 'her') changes to the plural object pronoun **nie** (accusative of *one*, referring to 'them' non-masculine personal/things). The verb *czekać* takes the preposition *na* + **Accusative** case for the object."
+                },
+                {
+                    "polish": "5. Nie chodź za mną!",
+                    "polishTransformed": "Nie chodź za nami!",
+                    "english": "Don't follow us!",
+                    "stem": "nami",
+                    "ending": "",
+                    "case": "Instr. Pl.",
+                    "explanation": "The pronoun changes from mną (instrumental of ja - I) to nami (instrumental of my - we). Both forms use the instrumental case because they follow the preposition za ('after/behind')."
+                },
+                {
+                    "polish": "6. Zimno jej?",
+                    "polishTransformed": "Zimno im?",
+                    "english": "Are they cold?",
+                    "stem": "im",
+                    "ending": "",
+                    "case": "Dat. Pl.",
+                    "explanation": "The pronoun changes from jej (dative of ona - she) to im (dative of oni/one - they). Both forms use the dative case in this impersonal construction expressing physical sensations."
+                },
+                {
+                    "polish": "7. To dzięki niemu.",
+                    "polishTransformed": "To dzięki nim.",
+                    "english": "It's thanks to them",
+                    "stem": "nim",
+                    "ending": "",
+                    "case": "Dat. Pl.",
+                    "explanation": "The pronoun changes from niemu (dative of on - he) to nim (dative of oni/one - they). Both forms use the dative case because they follow the preposition dzięki ('thanks to'). The 'n-' prefix is added to both forms."
+                },
+                {
+                    "polish": "8. Myślę o nim.",
+                    "polishTransformed": "Myślę o nich.",
+                    "english": "I'm thinking about them",
+                    "stem": "nich",
+                    "ending": "",
+                    "case": "Loc. Pl.",
+                    "explanation": "The pronoun changes from nim (locative of on - he) to nich (locative of oni/one - they). Both forms use the locative case because they follow the preposition o ('about'). The 'n-' prefix is added to both forms."
+                },
+                {
+                    "polish": "9. Widzę cię!",
+                    "polishTransformed": "Widzę was!",
+                    "english": "I see you (plural)!",
+                    "stem": "was",
+                    "ending": "",
+                    "case": "Acc. Pl.",
+                    "explanation": "The pronoun changes from cię (accusative of ty - you singular) to was (accusative of wy - you plural). Both forms use the accusative case as the direct objects of the verb widzieć ('to see')."
+                },
+                {
+                    "polish": "10. Marzę o niej.",
+                    "polishTransformed": "Marzę o nich.",
+                    "english": "I dream about them",
+                    "stem": "nich",
+                    "ending": "",
+                    "case": "Loc. Pl.",
+                    "explanation": "The pronoun changes from niej (locative of ona - she) to nich (locative of oni/one - they). Both forms use the locative case because they follow the preposition o ('about'). The 'n-' prefix is added to both."
+                },
+                {
+                    "polish": "11. To on!",
+                    "polishTransformed": "To oni!",
+                    "english": "It's them!",
+                    "stem": "oni",
+                    "ending": "",
+                    "case": "Nom. Pl. M.P.",
+                    "explanation": "The pronoun changes from on (nominative singular masculine) to oni (nominative plural masculine personal). Both forms use the nominative case for identification."
+                },
+                {
+                    "polish": "12. Nie idę bez niej.",
+                    "polishTransformed": "Nie idę bez nich.",
+                    "english": "I'm not going without them",
+                    "stem": "nich",
+                    "ending": "",
+                    "case": "Gen. Pl.",
+                    "explanation": "The pronoun changes from niej (genitive of ona - she) to nich (genitive of oni/one - they). Both forms use the genitive case because they follow the preposition bez ('without'). The 'n-' prefix is added to both forms."
+                },
+                {
+                    "polish": "Ufam ci.",
+                    "polishTransformed": "Ufam wam.",
+                    "english": "I trust you (plural)",
+                    "stem": "wy",
+                    "ending": "wam",
+                    "case": "Dative",
+                    "explanation": "The pronoun changes from ci (short dative of ty - you singular) to wam (dative of wy - you plural). Both forms use the Dative case, governed by the verb ufać ('to trust'). The dative form wam is used for the plural 'you'. Verbs that take dative include: pomagać, dziękować, przeszkadzać."
+                },
+                {
+                    "polish": "Jadę z tobą.",
+                    "polishTransformed": "Jadę z wami.",
+                    "english": "I'm going with you (plural)",
+                    "stem": "wy",
+                    "ending": "wami",
+                    "case": "Instrumental",
+                    "explanation": "The pronoun changes from tobą (instrumental of ty - you singular) to wami (instrumental of wy - you plural). Both forms use the Instrumental case, governed by the preposition z ('with'), which requires instrumental to express accompaniment. Tobą is the long (emphatic) instrumental of ty, and wami is the instrumental of wy. The verb jechać means 'to go/travel' (by vehicle)."
+                }
+            ]
+        }
+    ]
+}

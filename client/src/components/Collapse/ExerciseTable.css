@@ -1,3 +1,24 @@
+.collapse-container .exercise-table .gender-masculine,
+.exercise-table .gender-masculine {
+    background-color: #e3f2fd !important;
+    color: #1976d2 !important;
+    font-weight: 600 !important;
+}
+
+.collapse-container .exercise-table .gender-feminine,
+.exercise-table .gender-feminine {
+    background-color: #fce4ec !important;
+    color: #c2185b !important;
+    font-weight: 600 !important;
+}
+
+.collapse-container .exercise-table .gender-neuter,
+.exercise-table .gender-neuter {
+    background-color: #e8f5e9 !important;
+    color: #388e3c !important;
+    font-weight: 600 !important;
+}
+
 /* Exercise-specific table wrapper - scoped to collapse container */
 .collapse-container .table-wrapper,
 .table-wrapper {
@@ -71,7 +92,8 @@
 .exercise-table .polish {
     font-size: 0.95rem;
     line-height: 1.4;
-    color: #1f2937 !important; /* Force visible text */
+    color: #1f2937 !important;
+    /* Force visible text */
 }
 
 /* Stem + ending highlight - scoped to collapse container */
@@ -89,4 +111,3 @@
     font-style: italic;
     cursor: help;
 }
-

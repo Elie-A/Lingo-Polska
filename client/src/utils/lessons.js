@@ -19,6 +19,12 @@ import dativeCompleteTheSentences from "../data/lessons/cases/dative-complete-th
 import accusativeCompleteTheSentences from "../data/lessons/cases/accusative-complete-the-sentences.json";
 import nominativeCompleteTheSentences from "../data/lessons/cases/nominative-complete-the-sentences.json";
 
+import grammarGenderExercisesRegularNouns from "../data/lessons/grammar/grammar-gender-exercises-regular-nouns.json";
+import chooseGenderIrregularNouns from "../data/lessons/grammar/choose-gender-irregular-nouns.json";
+import createPluralNounFormRegularNouns from "../data/lessons/grammar/create-plural-noun-form-regular-nouns.json";
+import createPluralNounFormIrregularNouns from "../data/lessons/grammar/create-plural-noun-form-irregular-nouns.json";
+import personalAndReflexivePronouns from "../data/lessons/grammar/personal-and-reflexive-pronouns.json";
+
 const lessons = [
   {
     title: "Present Tense",
@@ -128,6 +134,13 @@ Building a strong vocabulary will allow you to communicate effectively and enric
     intro: `This lesson covers the essential principles of Polish grammar, including sentence structure, noun genders, adjective agreement, and key rules for constructing correct sentences. 
 You'll gain a solid understanding of how words interact in a sentence and develop the ability to form grammatically accurate phrases. 
 A strong grammar foundation will make learning verbs, cases, and more advanced topics much easier and more intuitive.`,
+    classes: [
+      grammarGenderExercisesRegularNouns,
+      chooseGenderIrregularNouns,
+      createPluralNounFormRegularNouns,
+      createPluralNounFormIrregularNouns,
+      personalAndReflexivePronouns,
+    ],
   },
   {
     title: "Practice",

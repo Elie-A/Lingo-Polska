@@ -1,0 +1,414 @@
+{
+    "title": "Polish Grammar and Gender - Full Lesson",
+    "sections": [
+        {
+            "heading": "Introduction",
+            "content": [
+                "Polish nouns have three grammatical genders: masculine, feminine, and neuter.",
+                "Gender affects how nouns, adjectives, verbs, and pronouns are formed and used.",
+                "Understanding gender is essential for correct case declensions and sentence construction.",
+                "In this lesson, you'll learn how to identify gender, how it affects grammar, and patterns to recognize gender by noun endings."
+            ]
+        },
+        {
+            "heading": "Overview of Grammatical Gender",
+            "content": [
+                "Every Polish noun belongs to one of three genders, which determines its grammatical behavior.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Gender",
+                        "Polish Name",
+                        "Typical Endings",
+                        "Examples"
+                    ],
+                    "rows": [
+                        [
+                            "Masculine",
+                            "Rodzaj męski",
+                            "consonant, -o (archaic)",
+                            "kot (cat), dom (house), stół (table)"
+                        ],
+                        [
+                            "Feminine",
+                            "Rodzaj żeński",
+                            "-a, -i, consonant (some)",
+                            "kawa (coffee), książka (book), noc (night)"
+                        ],
+                        [
+                            "Neuter",
+                            "Rodzaj nijaki",
+                            "-o, -e, -ę, -um",
+                            "okno (window), pole (field), imię (name)"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Masculine Gender",
+            "content": [
+                "Masculine nouns are further divided into three subcategories that affect declension patterns.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Subcategory",
+                        "Description",
+                        "Examples"
+                    ],
+                    "rows": [
+                        [
+                            "Masculine Personal (virile)",
+                            "Male humans and groups of mixed/male people",
+                            "mężczyzna (man), student (student), lekarz (doctor)"
+                        ],
+                        [
+                            "Masculine Animate",
+                            "Male animals and living beings (non-human)",
+                            "kot (cat), pies (dog), koń (horse)"
+                        ],
+                        [
+                            "Masculine Inanimate",
+                            "Objects, concepts, non-living things",
+                            "dom (house), stół (table), telefon (phone)"
+                        ]
+                    ],
+                    "border": true
+                },
+                "💡 Tip: Masculine personal plural forms differ significantly from other masculine nouns in Nominative and Accusative cases."
+            ]
+        },
+        {
+            "heading": "Feminine Gender",
+            "content": [
+                "Most feminine nouns end in -a, but there are important exceptions.",
+                "Common feminine noun endings:",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Ending",
+                        "Examples",
+                        "Notes"
+                    ],
+                    "rows": [
+                        [
+                            "-a",
+                            "kobieta (woman), kawa (coffee), szkoła (school)",
+                            "Most common feminine ending"
+                        ],
+                        [
+                            "-i",
+                            "pani (lady/Mrs.), gospodyni (hostess)",
+                            "Often denotes female roles or professions"
+                        ],
+                        [
+                            "consonant",
+                            "noc (night), rzecz (thing), miłość (love)",
+                            "Abstract concepts and some concrete nouns"
+                        ],
+                        [
+                            "-ść",
+                            "radość (joy), młodość (youth), wiadomość (news)",
+                            "Often abstract nouns"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Neuter Gender",
+            "content": [
+                "Neuter nouns are generally easy to identify by their characteristic endings.",
+                "Common neuter noun endings:",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Ending",
+                        "Examples",
+                        "Notes"
+                    ],
+                    "rows": [
+                        [
+                            "-o",
+                            "okno (window), dziecko (child), biuro (office)",
+                            "Most common neuter ending"
+                        ],
+                        [
+                            "-e",
+                            "pole (field), morze (sea), pytanie (question)",
+                            "Common with nouns ending in -nie, -cie"
+                        ],
+                        [
+                            "-ę",
+                            "imię (name), cielę (calf), zwierzę (animal)",
+                            "Less common, often young animals or special nouns"
+                        ],
+                        [
+                            "-um",
+                            "muzeum (museum), liceum (high school), centrum (center)",
+                            "Borrowed words, mainly from Latin"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Gender and Verb Agreement",
+            "content": [
+                "Past tense verbs in Polish change their endings based on the gender and number of the subject.",
+                "Examples with 'czytać' (to read) - past tense:",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Subject",
+                        "Singular",
+                        "Plural"
+                    ],
+                    "rows": [
+                        [
+                            "Masculine personal",
+                            "czytałem (I, male) / czytał (he)",
+                            "czytali / czytaliśmy (we, males or mixed)"
+                        ],
+                        [
+                            "Feminine",
+                            "czytałam (I, female) / czytała (she)",
+                            "czytały / czytałyśmy (we, females)"
+                        ],
+                        [
+                            "Neuter",
+                            "czytało (it)",
+                            "czytały (they, neuter)"
+                        ]
+                    ],
+                    "border": true
+                },
+                "💡 Tip: When the subject includes at least one male person, use masculine personal forms."
+            ]
+        },
+        {
+            "heading": "Gender and Adjective Agreement",
+            "content": [
+                "Adjectives must agree with the noun they modify in gender, number, and case.",
+                "Examples with 'nowy' (new) in Nominative case:",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Gender",
+                        "Singular",
+                        "Plural"
+                    ],
+                    "rows": [
+                        [
+                            "Masculine",
+                            "nowy dom (new house)",
+                            "nowe domy (new houses)"
+                        ],
+                        [
+                            "Masculine personal",
+                            "nowy student (new student)",
+                            "nowi studenci (new students)"
+                        ],
+                        [
+                            "Feminine",
+                            "nowa książka (new book)",
+                            "nowe książki (new books)"
+                        ],
+                        [
+                            "Neuter",
+                            "nowe okno (new window)",
+                            "nowe okna (new windows)"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Gender and Past Participles",
+            "content": [
+                "Past participles used as adjectives also agree with the noun's gender.",
+                "Examples with 'napisany' (written):",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Gender",
+                        "Singular Form",
+                        "Example"
+                    ],
+                    "rows": [
+                        [
+                            "Masculine",
+                            "napisany",
+                            "napisany list (written letter)"
+                        ],
+                        [
+                            "Feminine",
+                            "napisana",
+                            "napisana książka (written book)"
+                        ],
+                        [
+                            "Neuter",
+                            "napisane",
+                            "napisane słowo (written word)"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Identifying Gender by Meaning",
+            "content": [
+                "Some nouns can be identified by their meaning rather than just their ending.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Category",
+                        "Gender",
+                        "Examples"
+                    ],
+                    "rows": [
+                        [
+                            "Male people/professions",
+                            "Masculine",
+                            "ojciec (father), brat (brother), nauczyciel (teacher, male)"
+                        ],
+                        [
+                            "Female people/professions",
+                            "Feminine",
+                            "matka (mother), siostra (sister), nauczycielka (teacher, female)"
+                        ],
+                        [
+                            "Young animals",
+                            "Neuter",
+                            "dziecko (child), cielę (calf), pisklę (chick)"
+                        ],
+                        [
+                            "Months",
+                            "Masculine",
+                            "styczeń (January), luty (February), marzec (March)"
+                        ],
+                        [
+                            "Letters of alphabet",
+                            "Neuter",
+                            "a, be, ce (names of letters)"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Irregular and Exception Cases",
+            "content": [
+                "Some nouns don't follow standard gender patterns and must be memorized.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Noun",
+                        "Expected Gender",
+                        "Actual Gender",
+                        "Reason"
+                    ],
+                    "rows": [
+                        [
+                            "mężczyzna (man)",
+                            "Feminine (-a ending)",
+                            "Masculine",
+                            "Refers to male person"
+                        ],
+                        [
+                            "poeta (poet)",
+                            "Feminine (-a ending)",
+                            "Masculine",
+                            "Refers to male person"
+                        ],
+                        [
+                            "dziewczę (girl)",
+                            "Feminine (meaning)",
+                            "Neuter",
+                            "Ending pattern"
+                        ],
+                        [
+                            "kawaler (bachelor)",
+                            "Feminine (-er can be fem.)",
+                            "Masculine",
+                            "Refers to male person"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Gender in Compound Nouns",
+            "content": [
+                "Compound nouns typically take the gender of their main (usually last) component.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Compound Noun",
+                        "Components",
+                        "Gender",
+                        "Explanation"
+                    ],
+                    "rows": [
+                        [
+                            "samochód (car)",
+                            "sam + chód",
+                            "Masculine",
+                            "Main component 'chód' (motion) is masculine"
+                        ],
+                        [
+                            "lodówka (refrigerator)",
+                            "lód + ówka",
+                            "Feminine",
+                            "Diminutive suffix -ówka creates feminine"
+                        ],
+                        [
+                            "lotnisko (airport)",
+                            "lot + isko",
+                            "Neuter",
+                            "Suffix -isko creates neuter"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Practice Exercises",
+            "content": [
+                "Identify the gender of nouns based on their endings and meanings.",
+                "Match adjectives to nouns ensuring proper gender agreement.",
+                "Conjugate past tense verbs to agree with subjects of different genders.",
+                "Create sentences using nouns of all three genders with appropriate modifiers.",
+                "Practice with exceptions and irregular gender assignments."
+            ]
+        },
+        {
+            "heading": "Usage Tips",
+            "content": [
+                "Learn nouns with their articles or adjectives to reinforce gender memory.",
+                "Pay attention to endings, but always verify meaning-based exceptions.",
+                "Practice masculine personal vs. other masculine distinctions in plural forms.",
+                "Remember that gender affects not just nouns but all related words in the sentence.",
+                "💡 Tip: Create flashcards with nouns grouped by gender to build pattern recognition."
+            ]
+        },
+        {
+            "heading": "Common Mistakes",
+            "content": [
+                "Assuming all nouns ending in -a are feminine (e.g., mężczyzna is masculine).",
+                "Forgetting to distinguish masculine personal plural from other forms.",
+                "Using wrong verb endings in past tense due to gender confusion.",
+                "Not adjusting adjectives to match noun gender in all cases.",
+                "Overlooking that some abstract nouns ending in consonants are feminine."
+            ]
+        }
+    ]
+}

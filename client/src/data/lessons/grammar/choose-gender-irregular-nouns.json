@@ -1,0 +1,170 @@
+{
+    "class": "Gender Exercises - Irregular Nouns",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "polish": "kolega",
+                    "english": "colleague",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "polish": "dłoń",
+                    "english": "hand",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "polish": "kiwi",
+                    "english": "kiwi",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "polish": "forum",
+                    "english": "forum",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "polish": "muzeum",
+                    "english": "museum",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "polish": "imię",
+                    "english": "name",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "polish": "kość",
+                    "english": "bone",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "polish": "sędzia",
+                    "english": "judge",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "polish": "plemię",
+                    "english": "tribe",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "polish": "gospodyni",
+                    "english": "hostess",
+                    "gender": "żeński/feminine"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02",
+            "rows": [
+                {
+                    "polish": "zwierzę",
+                    "english": "animal",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "polish": "sól",
+                    "english": "salt",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "polish": "kierowca",
+                    "english": "driver",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "polish": "pani",
+                    "english": "madam",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "polish": "pracodawca",
+                    "english": "employer",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "polish": "sprzedawca",
+                    "english": "seller",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "polish": "poeta",
+                    "english": "poet",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "polish": "rzecz",
+                    "english": "thing",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "polish": "akwarium",
+                    "english": "aquarium",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "polish": "menu",
+                    "english": "menu",
+                    "gender": "nijaki/neuter"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03",
+            "rows": [
+                {
+                    "polish": "centrum",
+                    "english": "center",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "polish": "książę",
+                    "english": "prince",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "polish": "morderca",
+                    "english": "murderer",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "polish": "myśl",
+                    "english": "thought",
+                    "gender": "żeński/feminine"
+                },
+                {
+                    "polish": "tata",
+                    "english": "dad",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "polish": "artysta",
+                    "english": "artist",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "polish": "odbiorca",
+                    "english": "recipient",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "polish": "archiwum",
+                    "english": "archives",
+                    "gender": "nijaki/neuter"
+                },
+                {
+                    "polish": "mężczyzna",
+                    "english": "man",
+                    "gender": "męski/masculine"
+                },
+                {
+                    "polish": "broń",
+                    "english": "weapon",
+                    "gender": "żeński/feminine"
+                }
+            ]
+        }
+    ]
+}
