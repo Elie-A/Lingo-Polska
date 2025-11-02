@@ -3,99 +3,109 @@ import "../ConjugationTense.css";
 
 const futureTenseData = {
     simpleFuture: {
+        name: "Perfective Verbs (Simple Future)",
         description:
-            "The **Simple Future** is used for <span class='pf'>perfective</span> verbs. It is formed by conjugating the perfective verb (e.g., *zrobić* — 'to do/make' once) using a set of present tense-like endings.",
-        exampleVerb: {
-            infinitive: "zrobić",
-            meaning: "to do/make (perfective)",
-            forms: ["zrobię", "zrobisz", "zrobi", "zrobimy", "zrobicie", "zrobią"],
-            endings: [
-                { pronoun: "ja", ending: "-ę" },
-                { pronoun: "ty", ending: "-isz" },
-                { pronoun: "on/ona/ono", ending: "-i" },
-                { pronoun: "my", ending: "-imy" },
-                { pronoun: "wy", ending: "-icie" },
-                { pronoun: "oni/one", ending: "-ią" },
-            ],
-        },
-    },
-    compoundFuture: {
-        description:
-            "The **Compound Future** is used for <span class='impf'>imperfective</span> verbs. It is formed using a conjugated form of **będę** ('I will be') plus the infinitive of the main verb or its past participle.",
-        będęForms: [
-            { pronoun: "ja", form: "będę", example: "będę czytać" },
-            { pronoun: "ty", form: "będziesz", example: "będziesz pracować" },
-            { pronoun: "on/ona/ono", form: "będzie", example: "będzie pisać" },
-            { pronoun: "my", form: "będziemy", example: "będziemy gotować" },
-            { pronoun: "wy", form: "będziecie", example: "będziecie rozmawiać" },
-            { pronoun: "oni/one", form: "będą", example: "będą chodzić" },
+            "The **Simple Future** is used for perfective verbs. It is formed by conjugating the perfective verb (e.g., *zrobić* — 'to do/make' once) using a set of present tense-like endings.",
+        endings: [
+            { pronoun: "ja", ending: "-ę" },
+            { pronoun: "ty", ending: "-isz" },
+            { pronoun: "on/ona/ono", ending: "-i" },
+            { pronoun: "my", ending: "-imy" },
+            { pronoun: "wy", ending: "-icie" },
+            { pronoun: "oni/one", ending: "-ią" },
+        ],
+        examples: [
+            {
+                verb: "zrobić",
+                forms: ["zrobię", "zrobisz", "zrobi", "zrobimy", "zrobicie", "zrobią"],
+            },
         ],
     },
-    motionVerbs: {
-        simpleFuture: {
-            title: "Perfective Motion Verbs (Simple Future)",
-            note: "These forms are used for one-time, directed future actions of going. They use present tense-like endings of the perfective verb.",
-            verbs: [
-                {
-                    infinitive: "pójść",
-                    meaning: "(will go on foot)",
-                    forms: ["pójdę", "pójdziesz", "pójdzie", "pójdzemy", "pójdzicie", "pójdą"],
-                    endings: [
-                        { pronoun: "ja", ending: "-ę" },
-                        { pronoun: "ty", ending: "-iesz" },
-                        { pronoun: "on/ona/ono", ending: "-ie" },
-                        { pronoun: "my", ending: "-iemy" },
-                        { pronoun: "wy", ending: "-iecie" },
-                        { pronoun: "oni/one", ending: "-ą" },
-                    ],
-                },
-                {
-                    infinitive: "pojechać",
-                    meaning: "(will go by vehicle)",
-                    forms: ["pojadę", "pojedziesz", "pojedzie", "pojedziemy", "pojedziecie", "pojadą"],
-                    endings: [
-                        { pronoun: "ja", ending: "-ę" },
-                        { pronoun: "ty", ending: "-iesz" },
-                        { pronoun: "on/ona/ono", ending: "-ie" },
-                        { pronoun: "my", ending: "-iemy" },
-                        { pronoun: "wy", ending: "-iecie" },
-                        { pronoun: "oni/one", ending: "-ą" },
-                    ],
-                },
-            ],
-        },
-        compoundFuture: {
-            title: "Imperfective Motion Verbs (Compound Future)",
-            note: "These forms are used for habitual or repeated future actions of going. They are formed with **będę** + infinitive.",
-            examples: [
-                { pronoun: "ja", example: "będę chodzić / jeździć" },
-                { pronoun: "ty", example: "będziesz chodzić / jeździć" },
-                { pronoun: "on/ona/ono", example: "będzie chodzić / jeździć" },
-                { pronoun: "my", example: "będziemy chodzić / jeździć" },
-                { pronoun: "wy", example: "będziecie chodzić / jeździć" },
-                { pronoun: "oni/one", example: "będą chodzić / jeździć" },
-            ],
-            będęForms: [
-                { pronoun: "ja", form: "będę" },
-                { pronoun: "ty", form: "będziesz" },
-                { pronoun: "on/ona/ono", form: "będzie" },
-                { pronoun: "my", form: "będziemy" },
-                { pronoun: "wy", form: "będziecie" },
-                { pronoun: "oni/one", form: "będą" },
-            ]
-        }
+    compoundFuture: {
+        name: "Imperfective Verbs (Compound Future)",
+        description:
+            "The **Compound Future** is used for imperfective verbs. It is formed using a conjugated form of **będę** ('I will be') plus the infinitive of the main verb.",
+        endings: [
+            { pronoun: "ja", ending: "będę" },
+            { pronoun: "ty", ending: "będziesz" },
+            { pronoun: "on/ona/ono", ending: "będzie" },
+            { pronoun: "my", ending: "będziemy" },
+            { pronoun: "wy", ending: "będziecie" },
+            { pronoun: "oni/one", ending: "będą" },
+        ],
+        examples: [
+            {
+                verb: "czytać",
+                forms: ["będę czytać", "będziesz czytać", "będzie czytać", "będziemy czytać", "będziecie czytać", "będą czytać"],
+            },
+            {
+                verb: "pracować",
+                forms: ["będę pracować", "będziesz pracować", "będzie pracować", "będziemy pracować", "będziecie pracować", "będą pracować"],
+            },
+        ],
     },
-    notes: [
-        { text: "<strong>iść</strong> and <strong>jechać</strong> describe **one-time** or single actions (imperfective)." },
-        { text: "<strong>pójść</strong> and <strong>pojechać</strong> are the **perfective** forms, used for future single actions." },
-        { text: "<strong>chodzić</strong> and <strong>jeździć</strong> describe **habitual** or repeated actions (imperfective)." },
-        { text: "Perfective verbs do not have a true present tense — their “present” forms are actually **future tense**." },
-        { text: "Imperfective verbs can form both the present tense and the compound future tense." },
-    ]
 };
 
-const FutureTense = () => {
+const motionVerbs = [
+    {
+        verb: "pójść (perfective)",
+        forms: ["pójdę", "pójdziesz", "pójdzie", "pójdziemy", "pójdziecie", "pójdą"],
+        endings: [
+            { pronoun: "ja", ending: "-ę" },
+            { pronoun: "ty", ending: "-iesz" },
+            { pronoun: "on/ona/ono", ending: "-ie" },
+            { pronoun: "my", ending: "-iemy" },
+            { pronoun: "wy", ending: "-iecie" },
+            { pronoun: "oni/one", ending: "-ą" },
+        ],
+    },
+    {
+        verb: "pojechać (perfective)",
+        forms: ["pojadę", "pojedziesz", "pojedzie", "pojedziemy", "pojedziecie", "pojadą"],
+        endings: [
+            { pronoun: "ja", ending: "-ę" },
+            { pronoun: "ty", ending: "-iesz" },
+            { pronoun: "on/ona/ono", ending: "-ie" },
+            { pronoun: "my", ending: "-iemy" },
+            { pronoun: "wy", ending: "-iecie" },
+            { pronoun: "oni/one", ending: "-ą" },
+        ],
+    },
+    {
+        verb: "chodzić (imperfective)",
+        forms: ["będę chodzić", "będziesz chodzić", "będzie chodzić", "będziemy chodzić", "będziecie chodzić", "będą chodzić"],
+        endings: [
+            { pronoun: "ja", ending: "będę" },
+            { pronoun: "ty", ending: "będziesz" },
+            { pronoun: "on/ona/ono", ending: "będzie" },
+            { pronoun: "my", ending: "będziemy" },
+            { pronoun: "wy", ending: "będziecie" },
+            { pronoun: "oni/one", ending: "będą" },
+        ],
+    },
+    {
+        verb: "jeździć (imperfective)",
+        forms: ["będę jeździć", "będziesz jeździć", "będzie jeździć", "będziemy jeździć", "będziecie jeździć", "będą jeździć"],
+        endings: [
+            { pronoun: "ja", ending: "będę" },
+            { pronoun: "ty", ending: "będziesz" },
+            { pronoun: "on/ona/ono", ending: "będzie" },
+            { pronoun: "my", ending: "będziemy" },
+            { pronoun: "wy", ending: "będziecie" },
+            { pronoun: "oni/one", ending: "będą" },
+        ],
+    },
+];
 
+const notes = [
+    "**iść** and **jechać** describe one-time or single actions (imperfective).",
+    "**pójść** and **pojechać** are the perfective forms, used for future single actions.",
+    "**chodzić** and **jeździć** describe habitual or repeated actions (imperfective).",
+    "Perfective verbs do not have a true present tense — their present forms are actually future tense.",
+    "Imperfective verbs can form both the present tense and the compound future tense.",
+];
+
+const FutureTense = () => {
     const renderHighlightedForm = (fullForm, ending) => {
         const cleanEnding = ending.replace("-", "").split("/")[0].trim();
         let index = -1;
@@ -106,10 +116,22 @@ const FutureTense = () => {
             index = fullForm.lastIndexOf(cleanEnding);
         }
 
+        // Special case for "zrobi" with ending "-i"
         if (fullForm === "zrobi" && cleanEnding === "i") {
             index = fullForm.length - 1;
         }
 
+        // For compound future, highlight the auxiliary verb
+        if (fullForm.includes("będę") || fullForm.includes("będziesz") ||
+            fullForm.includes("będzie") || fullForm.includes("będziemy") ||
+            fullForm.includes("będziecie") || fullForm.includes("będą")) {
+            const parts = fullForm.split(" ");
+            return (
+                <>
+                    <span className="ending">{parts[0]}</span> {parts[1]}
+                </>
+            );
+        }
 
         if (index === -1) return fullForm;
         return (
@@ -119,118 +141,38 @@ const FutureTense = () => {
         );
     };
 
-    const renderSimpleFutureTable = (verbData) => (
-        <table className="verb-table">
+    const renderExampleTable = (verbName, forms, endings) => (
+        <table className="example-table">
             <thead>
                 <tr>
-                    <th>Pronoun</th>
-                    <th>Ending</th>
-                    <th>Example</th>
+                    <th colSpan="2">{verbName}</th>
                 </tr>
             </thead>
             <tbody>
-                {verbData.endings.map((row, j) => {
-                    const form = verbData.forms[j];
-                    return (
-                        <tr key={j}>
-                            <td>{row.pronoun}</td>
-                            <td className="ending">{row.ending}</td>
-                            <td>
-                                {renderHighlightedForm(form, row.ending)}
-                            </td>
-                        </tr>
-                    );
-                })}
-            </tbody>
-        </table>
-    );
-
-    const renderCompoundFutureTable = (data) => (
-        <table className="verb-table">
-            <thead>
-                <tr>
-                    <th>Pronoun</th>
-                    <th>Form of "być"</th>
-                    <th>Example</th>
-                </tr>
-            </thead>
-            <tbody>
-                {data.będęForms.map((row, j) => {
-                    const exampleParts = row.example.split(" ");
-                    const highlightedExample = exampleParts.map((part, index) => {
-                        if (index === 0) {
-                            return <span className="ending" key={index}>{part}</span>;
-                        }
-                        return part;
-                    }).reduce((prev, curr) => [prev, " ", curr]);
-
-                    return (
-                        <tr key={j}>
-                            <td>{row.pronoun}</td>
-                            <td className="ending">{row.form}</td>
-                            <td>{highlightedExample}</td>
-                        </tr>
-                    );
-                })}
-            </tbody>
-        </table>
-    );
-
-    const renderPerfectiveMotionTable = (verbs) => (
-        <table className="verb-table motion-table-wide">
-            <thead>
-                <tr>
-                    <th>Verb</th>
-                    <th>ja</th>
-                    <th>ty</th>
-                    <th>on/ona/ono</th>
-                    <th>my</th>
-                    <th>wy</th>
-                    <th>oni/one</th>
-                </tr>
-            </thead>
-            <tbody>
-                {verbs.map((verbObj, i) => (
-                    <tr key={i}>
-                        <td>
-                            <strong>{verbObj.infinitive}</strong> ({verbObj.meaning})
-                        </td>
-                        {verbObj.forms.map((form, k) => (
-                            <td key={k}>
-                                {renderHighlightedForm(form, verbObj.endings[k].ending)}
-                            </td>
-                        ))}
+                {forms.map((form, k) => (
+                    <tr key={k}>
+                        <td className="pronoun-col">{endings[k].pronoun}</td>
+                        <td className="form-col">{renderHighlightedForm(form, endings[k].ending)}</td>
                     </tr>
                 ))}
             </tbody>
         </table>
     );
 
-    const renderImperfectiveMotionTable = (data) => (
-        <table className="verb-table">
+    const renderMotionVerbTable = (verbName, forms, endings) => (
+        <table className="example-table">
             <thead>
                 <tr>
-                    <th>Pronoun</th>
-                    <th>Example</th>
+                    <th colSpan="2">{verbName}</th>
                 </tr>
             </thead>
             <tbody>
-                {data.examples.map((row, j) => {
-                    const exampleParts = row.example.split(" ");
-                    const highlightedExample = exampleParts.map((part, index) => {
-                        if (index === 0) {
-                            return <span className="ending" key={index}>{part}</span>;
-                        }
-                        return part;
-                    }).reduce((prev, curr) => [prev, " ", curr]);
-
-                    return (
-                        <tr key={j}>
-                            <td>{row.pronoun}</td>
-                            <td>{highlightedExample}</td>
-                        </tr>
-                    );
-                })}
+                {forms.map((form, k) => (
+                    <tr key={k}>
+                        <td className="pronoun-col">{endings[k].pronoun}</td>
+                        <td className="form-col">{renderHighlightedForm(form, endings[k].ending)}</td>
+                    </tr>
+                ))}
             </tbody>
         </table>
     );
@@ -238,69 +180,116 @@ const FutureTense = () => {
     return (
         <section className="tense-container">
             <h2>Future Tense Conjugation Rules</h2>
-            <p>
+            <p style={{ marginBottom: '25px' }}>
                 The <strong>future tense</strong> can be formed in two ways: for{" "}
-                <span className="pf">perfective</span> verbs (simple future) and for{" "}
-                <span className="impf">imperfective</span> verbs (compound future).
+                <span style={{ color: '#059669', fontWeight: 600 }}>perfective</span> verbs (simple future) and for{" "}
+                <span style={{ color: '#d97706', fontWeight: 600 }}>imperfective</span> verbs (compound future).
             </p>
 
             {/* Simple Future Section */}
             <div className="tense-conjugation-section">
-                <div className="table-group">
-                    <h3>1. Perfective Verbs (Simple Future)</h3>
-                    <p dangerouslySetInnerHTML={{ __html: futureTenseData.simpleFuture.description }} />
-                    <div className="table-wrapper">
-                        {renderSimpleFutureTable(futureTenseData.simpleFuture.exampleVerb)}
+                <h3>{futureTenseData.simpleFuture.name}</h3>
+                <p style={{ marginBottom: '15px' }}>{futureTenseData.simpleFuture.description}</p>
+
+                <div className="conjugation-and-examples-grid">
+                    <div className="conjugation-table-wrapper">
+                        <h4>Endings</h4>
+                        <table className="verb-table">
+                            <thead>
+                                <tr>
+                                    <th>Pronoun</th>
+                                    <th>Ending</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {futureTenseData.simpleFuture.endings.map((row, j) => (
+                                    <tr key={j}>
+                                        <td>{row.pronoun}</td>
+                                        <td className="ending">{row.ending}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div className="examples-container">
+                        <h4>Examples ({futureTenseData.simpleFuture.examples[0].verb})</h4>
+                        <div className="example-cards-grid">
+                            {futureTenseData.simpleFuture.examples.map((ex, idx) => (
+                                <div key={idx} className="example-card">
+                                    {renderExampleTable(ex.verb, ex.forms, futureTenseData.simpleFuture.endings)}
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <hr />
 
             {/* Compound Future Section */}
             <div className="tense-conjugation-section">
-                <div className="table-group">
-                    <h3>2. Imperfective Verbs (Compound Future)</h3>
-                    <p>Formed with <b>będę</b> + <b>infinitive or past participle</b>. The table below shows the conjugation of the auxiliary verb.</p>
-                    <div className="table-wrapper">
-                        {renderCompoundFutureTable(futureTenseData.compoundFuture)}
+                <h3>{futureTenseData.compoundFuture.name}</h3>
+                <p style={{ marginBottom: '15px' }}>{futureTenseData.compoundFuture.description}</p>
+
+                <div className="conjugation-and-examples-grid">
+                    <div className="conjugation-table-wrapper">
+                        <h4>Form of "być"</h4>
+                        <table className="verb-table">
+                            <thead>
+                                <tr>
+                                    <th>Pronoun</th>
+                                    <th>Auxiliary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {futureTenseData.compoundFuture.endings.map((row, j) => (
+                                    <tr key={j}>
+                                        <td>{row.pronoun}</td>
+                                        <td className="ending">{row.ending}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
                     </div>
-                </div>
-            </div >
 
-            <hr />
-
-            {/* Motion Verbs Section */}
-            <div className="tense-conjugation-section">
-                <div className="table-group">
-                    <h3>{futureTenseData.motionVerbs.simpleFuture.title}</h3>
-                    <p>{futureTenseData.motionVerbs.simpleFuture.note}</p>
-                    <div className="table-wrapper">
-                        {renderPerfectiveMotionTable(futureTenseData.motionVerbs.simpleFuture.verbs)}
-                    </div>
-                </div>
-
-                <div className="table-group">
-                    <h3>{futureTenseData.motionVerbs.compoundFuture.title}</h3>
-                    <p>{futureTenseData.motionVerbs.compoundFuture.note}</p>
-                    <div className="table-wrapper">
-                        {renderImperfectiveMotionTable(futureTenseData.motionVerbs.compoundFuture)}
+                    <div className="examples-container">
+                        <h4>Examples</h4>
+                        <div className="example-cards-grid">
+                            {futureTenseData.compoundFuture.examples.map((ex, idx) => (
+                                <div key={idx} className="example-card">
+                                    {renderExampleTable(ex.verb, ex.forms, futureTenseData.compoundFuture.endings)}
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <hr />
+            {/* Motion Verbs Section */}
+            <div className="motion-verbs-section">
+                <h3>Verbs of Motion (Future Tense)</h3>
+                <div className="motion-verbs-grid">
+                    {motionVerbs.map((verbObj, i) => (
+                        <div key={i} className="example-card">
+                            {renderMotionVerbTable(verbObj.verb, verbObj.forms, verbObj.endings)}
+                        </div>
+                    ))}
+                </div>
+            </div>
 
             {/* Notes Section */}
-            <div className="tense-notes-section">
-                <h3>Notes</h3>
-                <ul>
-                    {futureTenseData.notes.map((note, i) => (
-                        <li key={i} dangerouslySetInnerHTML={{ __html: note.text }} />
+            <div style={{ marginTop: '30px', padding: '15px', backgroundColor: '#f9fafb', borderRadius: '8px' }}>
+                <h3 style={{ fontSize: '1.4rem', color: '#dc2626', marginBottom: '12px' }}>Notes</h3>
+                <ul style={{ listStylePosition: 'inside', paddingLeft: '10px' }}>
+                    {notes.map((note, i) => (
+                        <li key={i} style={{ marginBottom: '8px', lineHeight: '1.6' }}>
+                            {note.split('**').map((part, idx) =>
+                                idx % 2 === 1 ? <strong key={idx}>{part}</strong> : part
+                            )}
+                        </li>
                     ))}
                 </ul>
             </div>
-        </section >
+        </section>
     );
 };
 
