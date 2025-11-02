@@ -4,7 +4,10 @@ import compression from "compression";
 import helmet from "helmet";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import vocabularyRoutes from "./routes/vocabularyRoutes.js"; // ✅ Keep only one
+import path from "path";
+import { fileURLToPath } from "url";
+
+import vocabularyRoutes from "./routes/vocabularyRoutes.js";
 import contactRoutes from "./routes/contactRoutes.js";
 import practiceRoutes from "./routes/practiceRoutes.js";
 
@@ -13,18 +16,16 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Security middleware
-app.use(helmet());
+// For __dirname in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-// Compression middleware
+// Security & Compression
+app.use(helmet());
 app.use(
   compression({
-    filter: (req, res) => {
-      if (req.headers["x-no-compression"]) {
-        return false;
-      }
-      return compression.filter(req, res);
-    },
+    filter: (req, res) =>
+      req.headers["x-no-compression"] ? false : compression.filter(req, res),
     level: 6,
   })
 );
@@ -35,17 +36,9 @@ const allowedOrigins = [
   "http://localhost:5173",
   process.env.FRONTEND_URL,
 ].filter(Boolean);
-
 app.use(
   cors({
-    origin: (origin, callback) => {
-      if (!origin) return callback(null, true);
-      if (allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(null, true);
-      }
-    },
+    origin: (origin, callback) => callback(null, true),
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -58,13 +51,7 @@ app.options("*", cors());
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 
-// Add debug logging for practice routes
-app.use("/api/practice", (req, res, next) => {
-  console.log(`📍 Practice route: ${req.method} ${req.url}`);
-  next();
-});
-
-// API Routes
+// API routes
 app.use("/api/vocabulary", vocabularyRoutes);
 app.use("/api/practice", practiceRoutes);
 app.use("/api/contact", contactRoutes);
@@ -74,7 +61,20 @@ app.get("/health", (req, res) => {
   res.status(200).json({ status: "OK", timestamp: new Date().toISOString() });
 });
 
-// 404 handler
+// Serve React in production
+if (process.env.NODE_ENV === "production") {
+  const clientBuildPath = path.join(__dirname, "../client/dist");
+  app.use(express.static(clientBuildPath));
+
+  // Catch-all route for React (exclude /api)
+  app.get("*", (req, res) => {
+    if (req.path.startsWith("/api"))
+      return res.status(404).json({ message: "API route not found" });
+    res.sendFile(path.join(clientBuildPath, "index.html"));
+  });
+}
+
+// 404 for unmatched API routes
 app.use((req, res) => {
   res.status(404).json({ message: "Route not found", path: req.path });
 });
@@ -88,7 +88,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-// MongoDB Connection
+// MongoDB connection
 mongoose
   .connect(process.env.MONGO_URI || process.env.MONGODB_URI, {
     maxPoolSize: 10,
@@ -98,10 +98,7 @@ mongoose
   })
   .then(() => {
     console.log("✅ Connected to MongoDB");
-
-    app.listen(PORT, () => {
-      console.log(`🚀 Server running on port ${PORT}`);
-    });
+    app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
   })
   .catch((err) => {
     console.error("❌ MongoDB connection error:", err);
