@@ -1,9 +1,26 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState, useMemo, useCallback } from "react";
 import axios from "axios";
 import FilterDropdown from "../FilterDropdown/FilterDropdown";
 import "./Vocabulary.css";
 
 const pageSize = 50;
+
+// Debounce hook
+const useDebounce = (value, delay) => {
+    const [debouncedValue, setDebouncedValue] = useState(value);
+
+    useEffect(() => {
+        const handler = setTimeout(() => {
+            setDebouncedValue(value);
+        }, delay);
+
+        return () => {
+            clearTimeout(handler);
+        };
+    }, [value, delay]);
+
+    return debouncedValue;
+};
 
 const VocabularyPage = () => {
     const [vocabularies, setVocabularies] = useState([]);
@@ -14,7 +31,10 @@ const VocabularyPage = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
     const [expandedCategories, setExpandedCategories] = useState({});
-    const [allExpanded, setAllExpanded] = useState(true);
+    const [allExpanded, setAllExpanded] = useState(false);
+
+    // Debounce search term for better performance
+    const debouncedSearchTerm = useDebounce(searchTerm, 300);
 
     useEffect(() => {
         const fetchVocabularies = async () => {
@@ -37,23 +57,34 @@ const VocabularyPage = () => {
         [vocabularies]
     );
 
-    const uniqueCategories = useMemo(() =>
-        ["", ...new Set(allWords.map(w => w.category?.trim() || "Uncategorized"))].sort(),
-        [allWords]
-    );
+    const uniqueCategories = useMemo(() => {
+        const cats = new Set(allWords.map(w => w.category?.trim() || "Uncategorized"));
+        return ["", ...Array.from(cats).sort()];
+    }, [allWords]);
 
     const uniqueLevels = ["", "A1", "A2", "B1", "B2", "C1", "C2"];
 
-    const filteredWords = useMemo(() =>
-        allWords.filter(w => {
-            const matchesSearch = w.polish.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                w.english.toLowerCase().includes(searchTerm.toLowerCase());
-            const matchesCategory = category ? w.category === category : true;
-            const matchesLevel = level ? w.level === level : true;
-            return matchesSearch && matchesCategory && matchesLevel;
-        }),
-        [allWords, searchTerm, category, level]
-    );
+    const filteredWords = useMemo(() => {
+        if (!debouncedSearchTerm && !category && !level) {
+            return allWords;
+        }
+
+        const searchLower = debouncedSearchTerm.toLowerCase();
+        return allWords.filter(w => {
+            if (debouncedSearchTerm &&
+                !w.polish.toLowerCase().includes(searchLower) &&
+                !w.english.toLowerCase().includes(searchLower)) {
+                return false;
+            }
+            if (category && w.category !== category) {
+                return false;
+            }
+            if (level && w.level !== level) {
+                return false;
+            }
+            return true;
+        });
+    }, [allWords, debouncedSearchTerm, category, level]);
 
     const totalPages = Math.ceil(filteredWords.length / pageSize);
 
@@ -78,36 +109,32 @@ const VocabularyPage = () => {
         [paginatedWords]
     );
 
-    // Initialize all categories as expanded/collapsed based on screen size
+    // Initialize categories as collapsed by default for better performance
     useEffect(() => {
         const categories = Object.keys(groupedWords);
         if (categories.length > 0) {
-            const initialState = {};
-            const isDesktop = window.innerWidth > 768;
-            categories.forEach(cat => {
-                initialState[cat] = isDesktop;
+            setExpandedCategories(prev => {
+                const newState = { ...prev };
+                categories.forEach(cat => {
+                    if (!(cat in newState)) {
+                        newState[cat] = false;
+                    }
+                });
+                return newState;
             });
-            setExpandedCategories(initialState);
-            setAllExpanded(isDesktop);
         }
     }, [groupedWords]);
 
-    const toggleCategory = (cat) => {
+    const toggleCategory = useCallback((cat) => {
         setExpandedCategories(prev => {
-            const newState = {
-                ...prev,
-                [cat]: !prev[cat]
-            };
-            // Check if all categories have the same state
+            const newState = { ...prev, [cat]: !prev[cat] };
             const allSame = Object.values(newState).every(val => val === newState[cat]);
-            if (allSame) {
-                setAllExpanded(newState[cat]);
-            }
+            setAllExpanded(allSame ? newState[cat] : false);
             return newState;
         });
-    };
+    }, []);
 
-    const toggleAllCategories = () => {
+    const toggleAllCategories = useCallback(() => {
         const newState = !allExpanded;
         const categories = Object.keys(groupedWords);
         const updatedState = {};
@@ -116,7 +143,22 @@ const VocabularyPage = () => {
         });
         setExpandedCategories(updatedState);
         setAllExpanded(newState);
-    };
+    }, [allExpanded, groupedWords]);
+
+    const handleSearchChange = useCallback((e) => {
+        setSearchTerm(e.target.value);
+        setCurrentPage(1);
+    }, []);
+
+    const handleCategoryChange = useCallback((value) => {
+        setCategory(value);
+        setCurrentPage(1);
+    }, []);
+
+    const handleLevelChange = useCallback((value) => {
+        setLevel(value);
+        setCurrentPage(1);
+    }, []);
 
     if (loading) {
         return <div className="loading">Loading vocabulary...</div>;
@@ -138,27 +180,18 @@ const VocabularyPage = () => {
                     type="text"
                     placeholder="🔍 Search Polish or English..."
                     value={searchTerm}
-                    onChange={(e) => {
-                        setSearchTerm(e.target.value);
-                        setCurrentPage(1);
-                    }}
+                    onChange={handleSearchChange}
                 />
                 <FilterDropdown
                     options={uniqueCategories}
                     selected={category}
-                    onChange={(value) => {
-                        setCategory(value);
-                        setCurrentPage(1);
-                    }}
+                    onChange={handleCategoryChange}
                     placeholder="All Categories"
                 />
                 <FilterDropdown
                     options={uniqueLevels}
                     selected={level}
-                    onChange={(value) => {
-                        setLevel(value);
-                        setCurrentPage(1);
-                    }}
+                    onChange={handleLevelChange}
                     placeholder="All Levels"
                 />
             </div>
