@@ -1,0 +1,211 @@
+/* =================== CSS =================== */
+:root {
+    --primary-color: #dc2626;
+    --bg-color: #f9f9fb;
+    --header-bg: #eef2ff;
+    --row-bg: #f3f4f6;
+    --border-color: #e5e7eb;
+    --example-bg: #fff0f0;
+    --motion-bg: #fff4e6;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: #333;
+}
+
+.tense-container {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+.tense-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+}
+
+/* ... (other standard styles retained) ... */
+
+.tense-conjugation-section {
+    margin-bottom: 40px;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #fefefe;
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.tense-conjugation-section h3 {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid #e0e7ff;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+}
+
+.tense-conjugation-section h4 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin: 15px 0 10px 0;
+}
+
+/* 🟢 FIX: Switch to CSS Grid for reliable column separation */
+.conjugation-and-examples-grid {
+    display: grid;
+    /* Divide space into three parts: 1 for endings table, 2 for examples */
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.conjugation-table-wrapper {
+    /* Allow grid to control width. Removed `min-width: 250px;` */
+    overflow-x: auto;
+    /* Ensures horizontal scroll if table content is too wide */
+}
+
+.examples-container {
+    /* Grid handles the 2fr width */
+}
+
+.example-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* --- Endings Table Styles --- */
+.verb-table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Removed fixed min-width, it will take up 100% of its grid column */
+    margin-bottom: 0;
+}
+
+.verb-table th,
+.verb-table td {
+    padding: 10px 14px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.verb-table th {
+    background-color: var(--header-bg);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.verb-table tbody tr:nth-child(even) {
+    background-color: var(--row-bg);
+}
+
+.ending {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* --- Example Table Styles (No major changes needed here) --- */
+.example-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.example-table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.1rem;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+.example-table td {
+    padding: 6px 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.example-table tbody tr:nth-child(even) {
+    background-color: var(--row-bg);
+}
+
+.example-table .pronoun-col {
+    font-weight: normal;
+    width: 35%;
+    text-align: right;
+}
+
+.example-table .form-col {
+    font-weight: 500;
+    text-align: left;
+}
+
+/* --- Motion Verbs Section --- */
+.motion-verbs-section {
+    padding: 15px;
+    border-radius: 12px;
+    background-color: var(--motion-bg);
+    box-shadow: 0 4px 12px var(--shadow-color);
+    margin-bottom: 30px;
+}
+
+.motion-verbs-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid #ffcc80;
+    padding-bottom: 6px;
+}
+
+.motion-verbs-section .motion-verbs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* --- Responsive Fixes --- */
+@media (max-width: 768px) {
+    .tense-container {
+        padding: 15px;
+    }
+
+    /* ... (other media query styles retained) ... */
+
+    /* 🟢 FIX: Stack columns vertically on small screens */
+    .conjugation-and-examples-grid {
+        grid-template-columns: 1fr;
+        /* One column only */
+        gap: 20px;
+    }
+
+    /* The original flex-direction column setting for small screens is now handled by the grid-template-columns change. */
+    .conjugation-table-wrapper,
+    .examples-container {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .verb-table th,
+    .verb-table td,
+    .example-table th,
+    .example-table td {
+        padding: 6px 8px;
+        font-size: 0.9rem;
+    }
+}
