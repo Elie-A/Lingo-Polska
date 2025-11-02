@@ -1,32 +1,49 @@
 import express from "express";
 import cors from "cors";
+import compression from "compression";
+import helmet from "helmet";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import cookieParser from "cookie-parser";
+import vocabularyRoutes from "./routes/vocabularyRoutes.js"; // ✅ Keep only one
 import contactRoutes from "./routes/contactRoutes.js";
-import vocabularyRoutes from "./routes/vocabularyRoutes.js";
 import practiceRoutes from "./routes/practiceRoutes.js";
 
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 8080;
-const MONGO_URI = process.env.MONGO_URI;
+const PORT = process.env.PORT || 5000;
 
+// Security middleware
+app.use(helmet());
+
+// Compression middleware
+app.use(
+  compression({
+    filter: (req, res) => {
+      if (req.headers["x-no-compression"]) {
+        return false;
+      }
+      return compression.filter(req, res);
+    },
+    level: 6,
+  })
+);
+
+// CORS
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:5173",
-  "https://lingo-polska.vercel.app",
-];
+  process.env.FRONTEND_URL,
+].filter(Boolean);
 
-// ⚡ Apply CORS globally BEFORE routes
 app.use(
   cors({
     origin: (origin, callback) => {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true); // allow
+      if (!origin) return callback(null, true);
+      if (allowedOrigins.includes(origin)) {
+        callback(null, true);
       } else {
-        callback(null, true); // ⚠️ important: always return true for preflight, do NOT throw
+        callback(null, true);
       }
     },
     credentials: true,
@@ -35,29 +52,67 @@ app.use(
   })
 );
 
-// Handle OPTIONS preflight for all routes
 app.options("*", cors());
 
-app.use(express.json());
-app.use(cookieParser());
+// Body parsing
+app.use(express.json({ limit: "10mb" }));
+app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 
-// Connect to MongoDB
-mongoose
-  .connect(MONGO_URI)
-  .then(() => console.log("✅ Connected to MongoDB Atlas"))
-  .catch((err) => console.error("❌ MongoDB connection error:", err.message));
+// Add debug logging for practice routes
+app.use("/api/practice", (req, res, next) => {
+  console.log(`📍 Practice route: ${req.method} ${req.url}`);
+  next();
+});
 
-// Test route
-app.get("/", (req, res) => res.send("Backend is running!"));
-
-// Contact form route
+// API Routes
+app.use("/api/vocabulary", vocabularyRoutes);
+app.use("/api/practice", practiceRoutes);
 app.use("/api/contact", contactRoutes);
 
-// Vocabulary form route
-app.use("/api/vocabulary", vocabularyRoutes);
+// Health check
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "OK", timestamp: new Date().toISOString() });
+});
 
-// Practice from route
-app.use("/api/practice", practiceRoutes);
+// 404 handler
+app.use((req, res) => {
+  res.status(404).json({ message: "Route not found", path: req.path });
+});
 
-// Start server
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+// Global error handler
+app.use((err, req, res, next) => {
+  console.error("Global error handler:", err);
+  res.status(err.statusCode || 500).json({
+    message: err.message || "Internal server error",
+    ...(process.env.NODE_ENV === "development" && { stack: err.stack }),
+  });
+});
+
+// MongoDB Connection
+mongoose
+  .connect(process.env.MONGO_URI || process.env.MONGODB_URI, {
+    maxPoolSize: 10,
+    minPoolSize: 2,
+    socketTimeoutMS: 45000,
+    serverSelectionTimeoutMS: 5000,
+  })
+  .then(() => {
+    console.log("✅ Connected to MongoDB");
+
+    app.listen(PORT, () => {
+      console.log(`🚀 Server running on port ${PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.error("❌ MongoDB connection error:", err);
+    process.exit(1);
+  });
+
+// Graceful shutdown
+process.on("SIGINT", async () => {
+  console.log("\n🛑 Shutting down gracefully...");
+  await mongoose.connection.close();
+  process.exit(0);
+});
+
+export default app;
