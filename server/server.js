@@ -58,12 +58,6 @@ app.options("*", cors());
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 
-// Add debug logging for practice routes
-app.use("/api/practice", (req, res, next) => {
-  console.log(`📍 Practice route: ${req.method} ${req.url}`);
-  next();
-});
-
 // API Routes
 app.use("/api/vocabulary", vocabularyRoutes);
 app.use("/api/practice", practiceRoutes);

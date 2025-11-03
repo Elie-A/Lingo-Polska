@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import PropTypes from "prop-types";
 import "./QuestionCard.css";
 
@@ -14,6 +14,26 @@ const QuestionCard = ({ question, onAnswer }) => {
         setUserAnswer("");
         setIsSubmitted(false);
         setShowHint(false);
+    }, [question]);
+
+    // Normalize strings for comparison
+    const normalize = (str) =>
+        str
+            .trim()
+            .toLowerCase()
+            .replace(/\s+/g, " ")
+            .replace(/[–—-]/g, "-")
+            .replace(/[.,;:!?]/g, "")  // remove punctuation
+            .normalize("NFKC");
+
+    const answers = useMemo(() => {
+        if (!question.answers && question.options) {
+            return question.options.map((text) => ({
+                text,
+                isCorrect: normalize(question.answer).includes(normalize(text)) || normalize(text).includes(normalize(question.answer)),
+            }));
+        }
+        return question.answers || [];
     }, [question]);
 
     const handleMultipleChoice = (answer, index) => {
@@ -32,10 +52,7 @@ const QuestionCard = ({ question, onAnswer }) => {
 
         setIsSubmitted(true);
 
-        const normalizedUserAnswer = userAnswer.trim().toLowerCase();
-        const normalizedCorrectAnswer = question.answer.trim().toLowerCase();
-
-        const isCorrect = normalizedUserAnswer === normalizedCorrectAnswer;
+        const isCorrect = normalize(userAnswer) === normalize(question.answer);
 
         setTimeout(() => {
             onAnswer(isCorrect);
@@ -91,8 +108,8 @@ const QuestionCard = ({ question, onAnswer }) => {
     const getTextInputClassName = () => {
         if (!isSubmitted) return "text-answer-input";
 
-        const isCorrect = userAnswer.trim().toLowerCase() === question.answer.trim().toLowerCase();
-        return `text-answer-input ${isCorrect ? "input-correct" : "input-incorrect"}`;
+        const isCorrect = normalize(userAnswer) === normalize(question.answer);
+        return `text - answer - input ${isCorrect ? "input-correct" : "input-incorrect"} `;
     };
 
     return (
@@ -107,10 +124,10 @@ const QuestionCard = ({ question, onAnswer }) => {
 
             {renderQuestionContent()}
 
-            {/* Multiple Choice */}
-            {question.type === 'multiple-choice' && question.answers && (
+            {/* Multiple Choice & Matching */}
+            {['matching', 'multiple-choice'].includes(question.type) && answers.length > 0 && (
                 <div className="answers-container">
-                    {question.answers.map((answer, index) => (
+                    {answers.map((answer, index) => (
                         <button
                             key={index}
                             onClick={() => handleMultipleChoice(answer, index)}
@@ -137,17 +154,17 @@ const QuestionCard = ({ question, onAnswer }) => {
                     <button
                         type="submit"
                         disabled={isSubmitted || !userAnswer.trim()}
-                        className={`submit-btn ${isSubmitted ? "submit-disabled" : ""}`}
+                        className={`submit - btn ${isSubmitted ? "submit-disabled" : ""} `}
                     >
                         {isSubmitted ? "Submitted" : "Submit Answer"}
                     </button>
 
                     {isSubmitted && (
-                        <div className={`feedback ${userAnswer.trim().toLowerCase() === question.answer.trim().toLowerCase()
-                                ? "feedback-correct"
-                                : "feedback-incorrect"
-                            }`}>
-                            {userAnswer.trim().toLowerCase() === question.answer.trim().toLowerCase() ? (
+                        <div className={`feedback ${normalize(userAnswer) === normalize(question.answer)
+                            ? "feedback-correct"
+                            : "feedback-incorrect"
+                            } `}>
+                            {normalize(userAnswer) === normalize(question.answer) ? (
                                 <span className="feedback-icon">✓ Correct!</span>
                             ) : (
                                 <div>
@@ -165,6 +182,7 @@ const QuestionCard = ({ question, onAnswer }) => {
             {!isSubmitted && renderHints()}
         </div>
     );
+
 };
 
 QuestionCard.propTypes = {
@@ -178,6 +196,7 @@ QuestionCard.propTypes = {
                 isCorrect: PropTypes.bool.isRequired,
             })
         ),
+        options: PropTypes.arrayOf(PropTypes.string),
         hints: PropTypes.arrayOf(PropTypes.string),
         text: PropTypes.string,
     }).isRequired,
