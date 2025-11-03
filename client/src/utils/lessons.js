@@ -25,6 +25,8 @@ import createPluralNounFormRegularNouns from "../data/lessons/grammar/create-plu
 import createPluralNounFormIrregularNouns from "../data/lessons/grammar/create-plural-noun-form-irregular-nouns.json";
 import personalAndReflexivePronouns from "../data/lessons/grammar/personal-and-reflexive-pronouns.json";
 
+import conditionalMix from "../data/lessons/conditional/conditional-mix.json";
+
 const lessons = [
   {
     title: "Present Tense",
@@ -81,7 +83,7 @@ With clear examples and interactive exercises, you'll gain the ability to speak 
     intro: `The Conditional Tense lesson will teach you how to talk about hypothetical scenarios, wishes, possibilities, and polite requests in Polish. 
 You'll learn the formation of conditional sentences, how to conjugate verbs appropriately, and the nuances of expressing “would” and “could” in different contexts. 
 With examples and exercises, you'll gain confidence in speaking about situations that are not real but imagined, enhancing your fluency and expressive range.`,
-    classes: [],
+    classes: [conditionalMix],
   },
   {
     title: "Conjugation",

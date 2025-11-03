@@ -1,4 +1,3 @@
-// seed/seedExercises.js
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import Exercise from "../models/Exercise.js";
@@ -25,6 +24,7 @@ const topicLevels = {
   adjectives: "A2",
   phrases: "A1",
   prepositions: "B1",
+  conditional: "A2", // default if no level provided
 };
 
 // Load your exercises JSON file with proper path resolution
@@ -48,9 +48,9 @@ const connectAndSeed = async () => {
         exercises.map((exercise) => ({
           ...exercise,
           topic,
-          // Use the level from the question, or fall back to topic default
+          // Keep question level if provided, otherwise fallback to topic default
           level: exercise.level || topicLevels[topic] || "A1",
-          // Use the type from the question, or default to fill-in-the-blank
+          // Default type if not provided
           type: exercise.type || "fill-in-the-blank",
         }))
     );
