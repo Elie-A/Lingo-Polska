@@ -33,18 +33,27 @@ app.use(
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:5173",
-  process.env.FRONTEND_URL,
+  process.env.FRONTEND_URL, // e.g., https://lingo-polska.vercel.app
 ].filter(Boolean);
 
 app.use(
   cors({
     origin: (origin, callback) => {
-      if (!origin) return callback(null, true);
-      if (allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(null, true);
+      if (!origin) {
+        // Allow requests with no origin (e.g., mobile apps, Postman)
+        return callback(null, true);
       }
+
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+
+      if (!allowedOrigins.includes(origin)) {
+        console.warn(`Blocked CORS request from origin: ${origin}`);
+        return callback(new Error(`CORS policy: Origin ${origin} not allowed`));
+      }
+      // Explicitly reject other origins
+      return callback(new Error(`CORS policy: Origin ${origin} not allowed`));
     },
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
