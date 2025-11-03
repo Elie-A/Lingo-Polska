@@ -124,8 +124,8 @@ const QuestionCard = ({ question, onAnswer }) => {
 
             {renderQuestionContent()}
 
-            {/* Multiple Choice & Matching */}
-            {['matching', 'multiple-choice'].includes(question.type) && answers.length > 0 && (
+            {/* Multiple Choice, Matching, True or False */}
+            {['matching', 'multiple-choice', 'true-false'].includes(question.type) && answers.length > 0 && (
                 <div className="answers-container">
                     {answers.map((answer, index) => (
                         <button
@@ -154,7 +154,7 @@ const QuestionCard = ({ question, onAnswer }) => {
                     <button
                         type="submit"
                         disabled={isSubmitted || !userAnswer.trim()}
-                        className={`submit - btn ${isSubmitted ? "submit-disabled" : ""} `}
+                        className={`submit-btn ${isSubmitted ? "submit-disabled" : ""} `}
                     >
                         {isSubmitted ? "Submitted" : "Submit Answer"}
                     </button>

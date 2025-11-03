@@ -2820,5 +2820,407 @@
                 "Complex prepositional phrase"
             ]
         }
+    ],
+    "conditional": [
+        {
+            "question": "Gdybym ___ (mieć) więcej czasu, pojechałbym na wakacje.",
+            "answer": "miał",
+            "topic": "conditional",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Conditional mood",
+                "Masculine form of 'mieć' + bym"
+            ]
+        },
+        {
+            "question": "Gdybyś ___ odpowiedź, powiedziałbyś mi?",
+            "answer": "wiedział",
+            "topic": "conditional",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "wiedział",
+                "wiesz",
+                "znałeś",
+                "wiedziałeś"
+            ],
+            "hints": [
+                "Second person singular conditional",
+                "Past stem + byś"
+            ]
+        },
+        {
+            "question": "Ona ___ (pójść) na spacer, gdyby nie padało.",
+            "answer": "poszłaby",
+            "topic": "conditional",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Conditional feminine form",
+                "Past stem + łaby"
+            ]
+        },
+        {
+            "question": "My ___ to inaczej, gdybyśmy mieli więcej informacji.",
+            "answer": "zrobilibyśmy",
+            "topic": "conditional",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "zrobilibyśmy",
+                "robimy",
+                "zrobimy",
+                "robilibyśmy"
+            ],
+            "hints": [
+                "First person plural conditional",
+                "Past stem + libyśmy"
+            ]
+        },
+        {
+            "question": "Gdyby oni ___ (być) bogatsi, kupiliby dom nad morzem.",
+            "answer": "byli",
+            "topic": "conditional",
+            "type": "fill-in-the-blank",
+            "level": "B2",
+            "hints": [
+                "Third person plural conditional",
+                "Past stem + by"
+            ]
+        },
+        {
+            "question": "Gdybym nie ___ kluczy, nie spóźniłbym się.",
+            "answer": "zapomniał",
+            "topic": "conditional",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "zapomniał",
+                "zapomnę",
+                "zapominałbym",
+                "zapomniałbym"
+            ],
+            "hints": [
+                "Perfective aspect",
+                "Masculine past stem + bym"
+            ]
+        },
+        {
+            "question": "Gdybyś tylko ___ (posłuchać) mnie, uniknąłbyś błędu.",
+            "answer": "posłuchał",
+            "topic": "conditional",
+            "type": "fill-in-the-blank",
+            "level": "C1",
+            "hints": [
+                "Perfective conditional",
+                "Second person singular + byś"
+            ]
+        },
+        {
+            "question": "Nie zdążyłbym, gdybyś mnie nie ___.",
+            "answer": "pomógł",
+            "topic": "conditional",
+            "type": "multiple-choice",
+            "level": "C1",
+            "options": [
+                "pomógł",
+                "pomagasz",
+                "pomagałbyś",
+                "pomógłbyś"
+            ],
+            "hints": [
+                "Complex conditional sentence",
+                "Masculine perfective form + bym"
+            ]
+        },
+        {
+            "question": "Gdyby nie ona, nie ___ (wydarzyć się) ten wypadek.",
+            "answer": "wydarzyłby się",
+            "topic": "conditional",
+            "type": "fill-in-the-blank",
+            "level": "C2",
+            "hints": [
+                "Reflexive construction",
+                "Masculine singular conditional"
+            ]
+        },
+        {
+            "question": "Niechby tylko ___, a zobaczyłby, że to możliwe.",
+            "answer": "spróbował",
+            "topic": "conditional",
+            "type": "multiple-choice",
+            "level": "C2",
+            "options": [
+                "spróbował",
+                "próbowałby",
+                "spróbuje",
+                "próbuje"
+            ],
+            "hints": [
+                "Hypothetical wish form",
+                "Past stem + by"
+            ]
+        },
+        {
+            "question": "Gdybyś ___ (przyjść) wcześniej, moglibyśmy pójść razem.",
+            "answer": "przyszedł",
+            "topic": "conditional",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Perfective past stem",
+                "Masculine form + byś"
+            ]
+        },
+        {
+            "question": "Gdyby oni ___ więcej ćwiczyli, byliby zdrowsi.",
+            "answer": "ćwiczyli",
+            "topic": "conditional",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "ćwiczyli",
+                "ćwiczą",
+                "ćwiczyli by",
+                "ćwiczyliśmy"
+            ],
+            "hints": [
+                "Imperfective aspect",
+                "Third person plural conditional"
+            ]
+        },
+        {
+            "question": "Gdybym to ___ (wiedzieć) wcześniej, wszystko byłoby inaczej.",
+            "answer": "wiedział",
+            "topic": "conditional",
+            "type": "fill-in-the-blank",
+            "level": "B2",
+            "hints": [
+                "Past knowledge verb",
+                "Masculine singular + bym"
+            ]
+        },
+        {
+            "question": "Ona by to zrobiła, gdyby ___ więcej odwagi.",
+            "answer": "miała",
+            "topic": "conditional",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "miała",
+                "ma",
+                "mieć",
+                "miałaby"
+            ],
+            "hints": [
+                "Conditional with missing auxiliary",
+                "Feminine form"
+            ]
+        },
+        {
+            "question": "Gdybyś mnie o to nie ___, (spytać) nie powiedziałbym nic.",
+            "answer": "spytał",
+            "topic": "conditional",
+            "type": "fill-in-the-blank",
+            "level": "C1",
+            "hints": [
+                "Perfective conditional",
+                "Masculine form + byś"
+            ]
+        },
+        {
+            "question": "Gdybyśmy tylko ___ więcej pieniędzy, pojechalibyśmy w góry.",
+            "answer": "mieli",
+            "topic": "conditional",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "mieli",
+                "mamy",
+                "mieć",
+                "mielibyśmy"
+            ],
+            "hints": [
+                "First person plural conditional",
+                "Simple past stem"
+            ]
+        },
+        {
+            "question": "On by nie spał, gdyby ___ (wypić) kawę wieczorem.",
+            "answer": "wypił",
+            "topic": "conditional",
+            "type": "fill-in-the-blank",
+            "level": "B2",
+            "hints": [
+                "Perfective aspect",
+                "Masculine singular + by"
+            ]
+        },
+        {
+            "question": "Gdybyś ___, że to takie trudne, nie zaczynałbyś.",
+            "answer": "wiedział",
+            "topic": "conditional",
+            "type": "multiple-choice",
+            "level": "C1",
+            "options": [
+                "wiedział",
+                "znał",
+                "rozumiał",
+                "znałbyś"
+            ],
+            "hints": [
+                "Verb 'wiedzieć' in conditional",
+                "Second person singular"
+            ]
+        },
+        {
+            "question": "Gdybyśmy nie ___ (pośpieszyć się), byłoby za późno.",
+            "answer": "pośpieszyli się",
+            "topic": "conditional",
+            "type": "fill-in-the-blank",
+            "level": "C2",
+            "hints": [
+                "Reflexive perfective verb",
+                "Plural conditional form"
+            ]
+        },
+        {
+            "question": "Gdyby to ___ ode mnie, zrobiłbym to od razu.",
+            "answer": "zależało",
+            "topic": "conditional",
+            "type": "multiple-choice",
+            "level": "C2",
+            "options": [
+                "zależało",
+                "zależy",
+                "zależałoby",
+                "zależało by"
+            ],
+            "hints": [
+                "Imperfective past",
+                "Conditional clause with 'gdyby'"
+            ]
+        },
+        {
+            "question": "Kawiarnia „Mała czarna” zaprasza codziennie od 10.00 do 22.00. Dzisiaj ciastka w promocyjnej cenie. Do ciastek herbata gratis. Dziś w tej kawiarni...",
+            "answer": "ciastka kosztują mniej",
+            "topic": "reading_comprehension_everyday",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "nie płaci się za kawę.",
+                "ciastka kosztują mniej.",
+                "nie będzie herbaty."
+            ]
+        },
+        {
+            "question": "Proszę bilet normalny na pociąg do Krakowa. Pasażer chce...",
+            "answer": "kupić bilet normalny",
+            "topic": "reading_comprehension_everyday",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "kupić bilet ulgowy.",
+                "kupić bilet normalny.",
+                "sprzedać bilet."
+            ]
+        },
+        {
+            "question": "W sobotę jadę w góry. Co robi ta osoba?",
+            "answer": "jedzie w góry",
+            "topic": "reading_comprehension_everyday",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "chodzi po górach.",
+                "jedzie w góry.",
+                "mieszka w górach."
+            ]
+        },
+        {
+            "question": "Jutro mam egzamin. Dziś...",
+            "answer": "uczę się",
+            "topic": "reading_comprehension_everyday",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "uczę się.",
+                "piszę egzamin.",
+                "odpoczywam."
+            ]
+        },
+        {
+            "question": "Moja mama lubi kwiaty. Co jej kupisz na urodziny?",
+            "answer": "kwiaty",
+            "topic": "reading_comprehension_everyday",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "książkę.",
+                "kwiaty.",
+                "czekoladki."
+            ]
+        },
+        {
+            "question": "Pada deszcz, a Kasia wychodzi bez parasola. Kasia...",
+            "answer": "zmoknie",
+            "topic": "logical_comprehension_context",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "zmoknie.",
+                "wyschnie.",
+                "siedzi w domu."
+            ]
+        },
+        {
+            "question": "Adam jest głodny. Co zrobi?",
+            "answer": "zje coś",
+            "topic": "logical_comprehension_context",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "zje coś.",
+                "śpi.",
+                "pije wodę."
+            ]
+        },
+        {
+            "question": "Basia ma jutro urodziny. Dziś Basia...",
+            "answer": "przygotowuje się do urodzin",
+            "topic": "logical_comprehension_context",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "świętuje.",
+                "przygotowuje się do urodzin.",
+                "miała urodziny."
+            ]
+        },
+        {
+            "question": "Jestem zmęczony, bo...",
+            "answer": "dużo pracowałem",
+            "topic": "logical_comprehension_context",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "dużo pracowałem.",
+                "dużo śpię.",
+                "odpoczywam."
+            ]
+        },
+        {
+            "question": "Nie mam dziś czasu, bo...",
+            "answer": "mam dużo pracy",
+            "topic": "logical_comprehension_context",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "mam dużo pracy.",
+                "odpoczywam.",
+                "nic nie robię."
+            ]
+        }
     ]
 }

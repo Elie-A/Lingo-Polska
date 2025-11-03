@@ -1,0 +1,50 @@
+{
+    "class": "Conditional Mood (Tryb przypuszczający)",
+    "exercises": [
+        {
+            "exercise": "Exercise 01 - Conditional Constructions",
+            "rows": [
+                {
+                    "polish": "1. Chcielibyśmy wiedzieć, co powiedział.",
+                    "english": "We'd (he + she) like to know what he said.",
+                    "stem": "chcieć",
+                    "ending": "libyśmy",
+                    "case": "Conditional, 1st Pl. (Masc. personal)",
+                    "explanation": "‘We’ refers to a mixed-gender group (he + she), requiring the masculine plural form. The conditional mood combines the past stem *chcieli-* with the particle *-by-* and the personal ending *-śmy*. The correct fused form is *chcielibyśmy* (not *chcieli byśmy*), because the entire verb carries the conditional meaning ‘would like.’"
+                },
+                {
+                    "polish": "2. Nie wiem, co bym zrobił bez ciebie.",
+                    "english": "I (he) don't know what I'd do without you. (friend)",
+                    "stem": "zrobić",
+                    "ending": "bym",
+                    "case": "Conditional, 1st Sg. Masc.",
+                    "explanation": "The speaker is male (‘I’ = he). The pronoun *bym* marks the 1st person singular conditional. It can appear before or after the verb (*byłbym / bym był*), though it usually follows. The phrase *bez ciebie* uses the genitive of *ty* (‘you’) because of the preposition *bez*."
+                },
+                {
+                    "polish": "3. Czy mogłaby mi Pani pomóc?",
+                    "english": "Could you (woman, formal) help me?",
+                    "stem": "móc",
+                    "ending": "łaby",
+                    "case": "Conditional, 3rd Sg. Fem.",
+                    "explanation": "The addressee is a woman addressed formally (*Pani*). The verb *móc* (can) takes the conditional marker *-by*, forming *mogłaby*. The 3rd person conditional forms (*mógłby, mogłaby, mogliby, etc.*) do not include personal endings like *-m*, *-ś*, *-śmy*, *-ście*, so they remain a single, inseparable word."
+                },
+                {
+                    "polish": "4. Co byś zrobiła, Kasia, gdybyś wygrała na loterii?",
+                    "english": "What would you do, Kasia, if you won the lottery?",
+                    "stem": "zrobić / wygrać",
+                    "ending": "byś / ła",
+                    "case": "Conditional, 2nd Sg. Fem.",
+                    "explanation": "*Byś* marks the 2nd person singular conditional (informal). Because Kasia is female, the verbs *zrobiła* and *wygrała* use feminine endings. In both clauses, *byś* can be placed before or after the verb: *co zrobiłabyś* / *co byś zrobiła* are equivalent."
+                },
+                {
+                    "polish": "5. Byłoby bardzo miło, gdybyśmy mogli się spotkać w Londynie.",
+                    "english": "It would be very nice if we (mixed group) could meet in London.",
+                    "stem": "być / móc",
+                    "ending": "łoby / byśmy",
+                    "case": "Conditional, 3rd Sg. Neut. / 1st Pl. Masc.",
+                    "explanation": "*Byłoby* expresses the impersonal conditional (‘it would be’), while *gdybyśmy mogli* expresses the conditional wish (‘if we could’). The group ‘we’ is mixed-gender, requiring masculine plural agreement. When *by* attaches to a complete verb form (e.g., *chcielibyśmy*, *mogłaby*), it must remain fused; when it is part of a movable ending (*byśmy*, *bym*), it may separate from the verb."
+                }
+            ]
+        }
+    ]
+}
