@@ -3222,5 +3222,263 @@
                 "nic nie robię."
             ]
         }
+    ],
+    "reading": [
+        {
+            "question": "Kawiarnia „Mała czarna” zaprasza codziennie od 10.00 do 22.00. Dzisiaj ciastka w promocyjnej cenie. Do ciastek herbata gratis. Dziś w tej kawiarni...",
+            "answer": "ciastka kosztują mniej",
+            "topic": "reading_comprehension_everyday",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "nie płaci się za kawę.",
+                "ciastka kosztują mniej.",
+                "nie będzie herbaty."
+            ],
+            "hints": [
+                "Look for 'promocyjna cena'",
+                "What does 'gratis' mean?"
+            ]
+        },
+        {
+            "question": "Proszę bilet normalny na pociąg do Krakowa. Pasażer chce...",
+            "answer": "kupić bilet normalny",
+            "topic": "reading_comprehension_everyday",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "kupić bilet ulgowy.",
+                "kupić bilet normalny.",
+                "sprzedać bilet."
+            ],
+            "hints": [
+                "What type of ticket is requested?",
+                "Is the person buying or selling?"
+            ]
+        },
+        {
+            "question": "W sobotę jadę w góry. Co robi ta osoba?",
+            "answer": "jedzie w góry",
+            "topic": "reading_comprehension_everyday",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "chodzi po górach.",
+                "jedzie w góry.",
+                "mieszka w górach."
+            ],
+            "hints": [
+                "Focus on the verb 'jadę'",
+                "When does this happen?"
+            ]
+        },
+        {
+            "question": "Jutro mam egzamin. Dziś...",
+            "answer": "uczę się",
+            "topic": "reading_comprehension_everyday",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "uczę się.",
+                "piszę egzamin.",
+                "odpoczywam."
+            ],
+            "hints": [
+                "The exam is tomorrow",
+                "What do you do before an exam?"
+            ]
+        },
+        {
+            "question": "Moja mama lubi kwiaty. Co jej kupisz na urodziny?",
+            "answer": "kwiaty",
+            "topic": "reading_comprehension_everyday",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "książkę.",
+                "kwiaty.",
+                "czekoladki."
+            ],
+            "hints": [
+                "What does she like?",
+                "Choose a logical gift"
+            ]
+        },
+        {
+            "question": "Pada deszcz, a Kasia wychodzi bez parasola. Kasia...",
+            "answer": "zmoknie",
+            "topic": "logical_comprehension_context",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "zmoknie.",
+                "wyschnie.",
+                "siedzi w domu."
+            ],
+            "hints": [
+                "It's raining",
+                "She has no umbrella"
+            ]
+        },
+        {
+            "question": "Adam jest głodny. Co zrobi?",
+            "answer": "zje coś",
+            "topic": "logical_comprehension_context",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "zje coś.",
+                "śpi.",
+                "pije wodę."
+            ],
+            "hints": [
+                "He is hungry",
+                "What solves hunger?"
+            ]
+        },
+        {
+            "question": "Basia ma jutro urodziny. Dziś Basia...",
+            "answer": "przygotowuje się do urodzin",
+            "topic": "logical_comprehension_context",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "świętuje.",
+                "przygotowuje się do urodzin.",
+                "miała urodziny."
+            ],
+            "hints": [
+                "Birthday is tomorrow",
+                "What happens today?"
+            ]
+        },
+        {
+            "question": "Jestem zmęczony, bo...",
+            "answer": "dużo pracowałem",
+            "topic": "logical_comprehension_context",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "dużo pracowałem.",
+                "dużo śpię.",
+                "odpoczywam."
+            ],
+            "hints": [
+                "Cause and effect",
+                "What makes you tired?"
+            ]
+        },
+        {
+            "question": "Nie mam dziś czasu, bo...",
+            "answer": "mam dużo pracy",
+            "topic": "logical_comprehension_context",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "mam dużo pracy.",
+                "odpoczywam.",
+                "nic nie robię."
+            ],
+            "hints": [
+                "Why no time?",
+                "Logical reasoning"
+            ]
+        },
+        {
+            "question": "Jesteś teraz u weterynarza? Świetnie! Co się teraz dzieje z naszym pieskiem?",
+            "answer": "Właśnie bada go weterynarz.",
+            "topic": "reading_comprehension_grammar_context",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "Właśnie bada weterynarza.",
+                "Właśnie się bada.",
+                "Właśnie bada go weterynarz."
+            ],
+            "hints": [
+                "Who is examining whom?",
+                "The vet is the subject"
+            ]
+        },
+        {
+            "question": "Już tak późno?! Za chwilę mam spotkanie z Piotrkiem. Na pewno się spóźnię.",
+            "answer": "Napisz do niego, na pewno zaczeka.",
+            "topic": "reading_comprehension_grammar_context",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "Napisz do niego, na pewno zaczeka.",
+                "Piszesz do niego, na pewno zaczeka.",
+                "Napisałbyś do niego, na pewno zaczeka."
+            ],
+            "hints": [
+                "What's the appropriate mood?",
+                "Giving advice in urgent situation"
+            ]
+        },
+        {
+            "question": "Mamo, idę grać na konsoli, tak jak się umawiałyśmy.",
+            "answer": "A posprzątałaś już swój pokój?",
+            "topic": "reading_comprehension_grammar_context",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "A sprzątasz już swój pokój?",
+                "A nie sprzątałaś już pokoju?",
+                "A posprzątałaś już swój pokój?"
+            ],
+            "hints": [
+                "Has the task been completed?",
+                "Perfective or imperfective?"
+            ]
+        },
+        {
+            "question": "Cześć, podobno masz do mnie jakieś pytanie. - Tak, chciałbym zabrać Anię na randkę do kina.",
+            "answer": "Wiesz, czy widziałaś już ten film?",
+            "topic": "reading_comprehension_grammar_context",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "Wiesz, czy widziałem już ten film?",
+                "Wiesz, czy widziałeś już ten film?",
+                "Wiesz, czy widziałaś już ten film?"
+            ],
+            "hints": [
+                "Who is being asked?",
+                "Ania is female"
+            ]
+        },
+        {
+            "question": "Co myślisz o tej książce?",
+            "answer": "Jest ok. Dobrze się ją czytało.",
+            "topic": "reading_comprehension_grammar_context",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "Jest ok. Dobrze ją czytałam.",
+                "Jest ok. Dobrze się ją czytało.",
+                "Jest ok. Dobrze się czytała."
+            ],
+            "hints": [
+                "Impersonal construction",
+                "General readability"
+            ]
+        },
+        {
+            "question": "Kasiu, poczekaj! A gdzie masło? Na kanapkach musi być masło! A ty, Michale, co o tym myślisz?",
+            "answer": "Sam nie wiem. Trzeba posmarować masłem.",
+            "topic": "reading_comprehension_grammar_context",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "Sam nie wiem. Trzeba posmarować masłem.",
+                "Sam nie wiem. Można posmarować masłem.",
+                "Sam nie wiem. Musisz posmarować masłem."
+            ],
+            "hints": [
+                "Necessity vs. possibility",
+                "Impersonal obligation"
+            ]
+        }
     ]
 }
