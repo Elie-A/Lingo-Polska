@@ -1,7 +1,7 @@
 {
     "grammar": [
         {
-            "question": "Ja ___ (to eat) jabłko.",
+            "question": "Ja ___ (to eat) jabłko",
             "answer": "jem",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -12,7 +12,7 @@
             ]
         },
         {
-            "question": "Ty ___ (to read) książkę.",
+            "question": "Ty ___ (to read) książkę",
             "answer": "czytasz",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -23,7 +23,7 @@
             ]
         },
         {
-            "question": "On ___ (to write) list.",
+            "question": "On ___ (to write) list",
             "answer": "pisze",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -34,7 +34,7 @@
             ]
         },
         {
-            "question": "My ___ (to speak) po polsku.",
+            "question": "My ___ (to speak) po polsku",
             "answer": "mówimy",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -45,7 +45,7 @@
             ]
         },
         {
-            "question": "Oni ___ (to have) dom.",
+            "question": "Oni ___ (to have) dom",
             "answer": "mają",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -56,7 +56,7 @@
             ]
         },
         {
-            "question": "Complete the sentence: Ja ___ dobrze.",
+            "question": "Complete the sentence: Ja ___ dobrze",
             "answer": "śpię",
             "topic": "grammar",
             "type": "multiple-choice",
@@ -73,7 +73,7 @@
             ]
         },
         {
-            "question": "Ona ___ (to drink) wodę.",
+            "question": "Ona ___ (to drink) wodę",
             "answer": "pije",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -84,7 +84,7 @@
             ]
         },
         {
-            "question": "Wy ___ (to know) odpowiedź.",
+            "question": "Wy ___ (to know) odpowiedź",
             "answer": "wiecie",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -95,7 +95,7 @@
             ]
         },
         {
-            "question": "Ja ___ (to love) muzykę.",
+            "question": "Ja ___ (to love) muzykę",
             "answer": "kocham",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -106,7 +106,7 @@
             ]
         },
         {
-            "question": "Which form is correct? Ty ___ w biurze.",
+            "question": "Which form is correct? Ty ___ w biurze",
             "answer": "pracujesz",
             "topic": "grammar",
             "type": "multiple-choice",
@@ -123,7 +123,7 @@
             ]
         },
         {
-            "question": "Ona ___ (to study) medycynę.",
+            "question": "Ona ___ (to study) medycynę",
             "answer": "studiuje",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -134,7 +134,7 @@
             ]
         },
         {
-            "question": "My ___ (to go) do kina.",
+            "question": "My ___ (to go) do kina",
             "answer": "idziemy",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -145,7 +145,7 @@
             ]
         },
         {
-            "question": "Oni ___ (to play) w piłkę.",
+            "question": "Oni ___ (to play) w piłkę",
             "answer": "grają",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -156,7 +156,7 @@
             ]
         },
         {
-            "question": "Ja ___ (to want) kawę.",
+            "question": "Ja ___ (to want) kawę",
             "answer": "chcę",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -178,7 +178,7 @@
             ]
         },
         {
-            "question": "Select the correct form: Ona ___ szybko.",
+            "question": "Select the correct form: Ona ___ szybko",
             "answer": "biega",
             "topic": "grammar",
             "type": "multiple-choice",
@@ -195,7 +195,7 @@
             ]
         },
         {
-            "question": "My ___ (to see) film.",
+            "question": "My ___ (to see) film",
             "answer": "widzimy",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -206,7 +206,7 @@
             ]
         },
         {
-            "question": "Oni ___ (to buy) chleb.",
+            "question": "Oni ___ (to buy) chleb",
             "answer": "kupują",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -217,7 +217,7 @@
             ]
         },
         {
-            "question": "Ja ___ (to live) w Warszawie.",
+            "question": "Ja ___ (to live) w Warszawie",
             "answer": "mieszkam",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -228,7 +228,7 @@
             ]
         },
         {
-            "question": "Ty ___ (to listen) muzyki.",
+            "question": "Ty ___ (to listen) muzyki",
             "answer": "słuchasz",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -239,7 +239,7 @@
             ]
         },
         {
-            "question": "Gdybym ___ (to have - conditional) czas, poszedłbym tam.",
+            "question": "Gdybym ___ (to have - conditional) czas, poszedłbym tam",
             "answer": "miał",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -250,7 +250,7 @@
             ]
         },
         {
-            "question": "Film, który wczoraj ___ (to see - past), był interesujący.",
+            "question": "Film, który wczoraj ___ (to see - past), był interesujący",
             "answer": "widziałem",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -261,7 +261,7 @@
             ]
         },
         {
-            "question": "Książka została ___ (to write - passive) przez znanego autora.",
+            "question": "Książka została ___ (to write - passive) przez znanego autora",
             "answer": "napisana",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -272,7 +272,7 @@
             ]
         },
         {
-            "question": "Zanim on ___ (to arrive - future perfective), wszystko będzie gotowe.",
+            "question": "Zanim on ___ (to arrive - future perfective), wszystko będzie gotowe",
             "answer": "przyjedzie",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -283,7 +283,7 @@
             ]
         },
         {
-            "question": "Mimo że ___ (to rain - imperfective past), wyszliśmy na spacer.",
+            "question": "Mimo że ___ (to rain - imperfective past), wyszliśmy na spacer",
             "answer": "padało",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -294,7 +294,7 @@
             ]
         },
         {
-            "question": "Nie zdążyłbym na pociąg, gdyby nie to, że ona mnie ___ (to drive - past perfective).",
+            "question": "Nie zdążyłbym na pociąg, gdyby nie to, że ona mnie ___ (to drive - past perfective)",
             "answer": "podwiozła",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -305,7 +305,7 @@
             ]
         },
         {
-            "question": "To najciekawsza książka, jaką kiedykolwiek ___ (to read - past perfective).",
+            "question": "To najciekawsza książka, jaką kiedykolwiek ___ (to read - past perfective)",
             "answer": "przeczytałem",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -316,7 +316,7 @@
             ]
         },
         {
-            "question": "Niechby sobie ___ (to do - imperative 3rd person), co chcą.",
+            "question": "Niechby sobie ___ (to do - imperative 3rd person), co chcą",
             "answer": "robili",
             "topic": "grammar",
             "type": "fill-in-the-blank",
@@ -2823,7 +2823,7 @@
     ],
     "conditional": [
         {
-            "question": "Gdybym ___ (mieć) więcej czasu, pojechałbym na wakacje.",
+            "question": "Gdybym ___ (mieć) więcej czasu, pojechałbym na wakacje",
             "answer": "miał",
             "topic": "conditional",
             "type": "fill-in-the-blank",
@@ -2851,7 +2851,7 @@
             ]
         },
         {
-            "question": "Ona ___ (pójść) na spacer, gdyby nie padało.",
+            "question": "Ona ___ (pójść) na spacer, gdyby nie padało",
             "answer": "poszłaby",
             "topic": "conditional",
             "type": "fill-in-the-blank",
@@ -2862,7 +2862,7 @@
             ]
         },
         {
-            "question": "My ___ to inaczej, gdybyśmy mieli więcej informacji.",
+            "question": "My ___ to inaczej, gdybyśmy mieli więcej informacji",
             "answer": "zrobilibyśmy",
             "topic": "conditional",
             "type": "multiple-choice",
@@ -2879,7 +2879,7 @@
             ]
         },
         {
-            "question": "Gdyby oni ___ (być) bogatsi, kupiliby dom nad morzem.",
+            "question": "Gdyby oni ___ (być) bogatsi, kupiliby dom nad morzem",
             "answer": "byli",
             "topic": "conditional",
             "type": "fill-in-the-blank",
@@ -2890,7 +2890,7 @@
             ]
         },
         {
-            "question": "Gdybym nie ___ kluczy, nie spóźniłbym się.",
+            "question": "Gdybym nie ___ kluczy, nie spóźniłbym się",
             "answer": "zapomniał",
             "topic": "conditional",
             "type": "multiple-choice",
@@ -2907,7 +2907,7 @@
             ]
         },
         {
-            "question": "Gdybyś tylko ___ (posłuchać) mnie, uniknąłbyś błędu.",
+            "question": "Gdybyś tylko ___ (posłuchać) mnie, uniknąłbyś błędu",
             "answer": "posłuchał",
             "topic": "conditional",
             "type": "fill-in-the-blank",
@@ -2918,7 +2918,7 @@
             ]
         },
         {
-            "question": "Nie zdążyłbym, gdybyś mnie nie ___.",
+            "question": "Nie zdążyłbym, gdybyś mnie nie ___",
             "answer": "pomógł",
             "topic": "conditional",
             "type": "multiple-choice",
@@ -2935,7 +2935,7 @@
             ]
         },
         {
-            "question": "Gdyby nie ona, nie ___ (wydarzyć się) ten wypadek.",
+            "question": "Gdyby nie ona, nie ___ (wydarzyć się) ten wypadek",
             "answer": "wydarzyłby się",
             "topic": "conditional",
             "type": "fill-in-the-blank",
@@ -2946,7 +2946,7 @@
             ]
         },
         {
-            "question": "Niechby tylko ___, a zobaczyłby, że to możliwe.",
+            "question": "Niechby tylko ___, a zobaczyłby, że to możliwe",
             "answer": "spróbował",
             "topic": "conditional",
             "type": "multiple-choice",
@@ -2963,7 +2963,7 @@
             ]
         },
         {
-            "question": "Gdybyś ___ (przyjść) wcześniej, moglibyśmy pójść razem.",
+            "question": "Gdybyś ___ (przyjść) wcześniej, moglibyśmy pójść razem",
             "answer": "przyszedł",
             "topic": "conditional",
             "type": "fill-in-the-blank",
@@ -2974,7 +2974,7 @@
             ]
         },
         {
-            "question": "Gdyby oni ___ więcej ćwiczyli, byliby zdrowsi.",
+            "question": "Gdyby oni ___ więcej ćwiczyli, byliby zdrowsi",
             "answer": "ćwiczyli",
             "topic": "conditional",
             "type": "multiple-choice",
@@ -2991,7 +2991,7 @@
             ]
         },
         {
-            "question": "Gdybym to ___ (wiedzieć) wcześniej, wszystko byłoby inaczej.",
+            "question": "Gdybym to ___ (wiedzieć) wcześniej, wszystko byłoby inaczej",
             "answer": "wiedział",
             "topic": "conditional",
             "type": "fill-in-the-blank",
@@ -3002,7 +3002,7 @@
             ]
         },
         {
-            "question": "Ona by to zrobiła, gdyby ___ więcej odwagi.",
+            "question": "Ona by to zrobiła, gdyby ___ więcej odwagi",
             "answer": "miała",
             "topic": "conditional",
             "type": "multiple-choice",
@@ -3019,7 +3019,7 @@
             ]
         },
         {
-            "question": "Gdybyś mnie o to nie ___, (spytać) nie powiedziałbym nic.",
+            "question": "Gdybyś mnie o to nie ___, (spytać) nie powiedziałbym nic",
             "answer": "spytał",
             "topic": "conditional",
             "type": "fill-in-the-blank",
@@ -3030,7 +3030,7 @@
             ]
         },
         {
-            "question": "Gdybyśmy tylko ___ więcej pieniędzy, pojechalibyśmy w góry.",
+            "question": "Gdybyśmy tylko ___ więcej pieniędzy, pojechalibyśmy w góry",
             "answer": "mieli",
             "topic": "conditional",
             "type": "multiple-choice",
@@ -3047,7 +3047,7 @@
             ]
         },
         {
-            "question": "On by nie spał, gdyby ___ (wypić) kawę wieczorem.",
+            "question": "On by nie spał, gdyby ___ (wypić) kawę wieczorem",
             "answer": "wypił",
             "topic": "conditional",
             "type": "fill-in-the-blank",
@@ -3058,7 +3058,7 @@
             ]
         },
         {
-            "question": "Gdybyś ___, że to takie trudne, nie zaczynałbyś.",
+            "question": "Gdybyś ___, że to takie trudne, nie zaczynałbyś",
             "answer": "wiedział",
             "topic": "conditional",
             "type": "multiple-choice",
@@ -3075,7 +3075,7 @@
             ]
         },
         {
-            "question": "Gdybyśmy nie ___ (pośpieszyć się), byłoby za późno.",
+            "question": "Gdybyśmy nie ___ (pośpieszyć się), byłoby za późno",
             "answer": "pośpieszyli się",
             "topic": "conditional",
             "type": "fill-in-the-blank",
@@ -3086,7 +3086,7 @@
             ]
         },
         {
-            "question": "Gdyby to ___ ode mnie, zrobiłbym to od razu.",
+            "question": "Gdyby to ___ ode mnie, zrobiłbym to od razu",
             "answer": "zależało",
             "topic": "conditional",
             "type": "multiple-choice",
@@ -3101,139 +3101,19 @@
                 "Imperfective past",
                 "Conditional clause with 'gdyby'"
             ]
-        },
-        {
-            "question": "Kawiarnia „Mała czarna” zaprasza codziennie od 10.00 do 22.00. Dzisiaj ciastka w promocyjnej cenie. Do ciastek herbata gratis. Dziś w tej kawiarni...",
-            "answer": "ciastka kosztują mniej",
-            "topic": "reading_comprehension_everyday",
-            "type": "multiple-choice",
-            "level": "A2",
-            "options": [
-                "nie płaci się za kawę.",
-                "ciastka kosztują mniej.",
-                "nie będzie herbaty."
-            ]
-        },
-        {
-            "question": "Proszę bilet normalny na pociąg do Krakowa. Pasażer chce...",
-            "answer": "kupić bilet normalny",
-            "topic": "reading_comprehension_everyday",
-            "type": "multiple-choice",
-            "level": "A1",
-            "options": [
-                "kupić bilet ulgowy.",
-                "kupić bilet normalny.",
-                "sprzedać bilet."
-            ]
-        },
-        {
-            "question": "W sobotę jadę w góry. Co robi ta osoba?",
-            "answer": "jedzie w góry",
-            "topic": "reading_comprehension_everyday",
-            "type": "multiple-choice",
-            "level": "A1",
-            "options": [
-                "chodzi po górach.",
-                "jedzie w góry.",
-                "mieszka w górach."
-            ]
-        },
-        {
-            "question": "Jutro mam egzamin. Dziś...",
-            "answer": "uczę się",
-            "topic": "reading_comprehension_everyday",
-            "type": "multiple-choice",
-            "level": "A2",
-            "options": [
-                "uczę się.",
-                "piszę egzamin.",
-                "odpoczywam."
-            ]
-        },
-        {
-            "question": "Moja mama lubi kwiaty. Co jej kupisz na urodziny?",
-            "answer": "kwiaty",
-            "topic": "reading_comprehension_everyday",
-            "type": "multiple-choice",
-            "level": "A1",
-            "options": [
-                "książkę.",
-                "kwiaty.",
-                "czekoladki."
-            ]
-        },
-        {
-            "question": "Pada deszcz, a Kasia wychodzi bez parasola. Kasia...",
-            "answer": "zmoknie",
-            "topic": "logical_comprehension_context",
-            "type": "multiple-choice",
-            "level": "A2",
-            "options": [
-                "zmoknie.",
-                "wyschnie.",
-                "siedzi w domu."
-            ]
-        },
-        {
-            "question": "Adam jest głodny. Co zrobi?",
-            "answer": "zje coś",
-            "topic": "logical_comprehension_context",
-            "type": "multiple-choice",
-            "level": "A1",
-            "options": [
-                "zje coś.",
-                "śpi.",
-                "pije wodę."
-            ]
-        },
-        {
-            "question": "Basia ma jutro urodziny. Dziś Basia...",
-            "answer": "przygotowuje się do urodzin",
-            "topic": "logical_comprehension_context",
-            "type": "multiple-choice",
-            "level": "A2",
-            "options": [
-                "świętuje.",
-                "przygotowuje się do urodzin.",
-                "miała urodziny."
-            ]
-        },
-        {
-            "question": "Jestem zmęczony, bo...",
-            "answer": "dużo pracowałem",
-            "topic": "logical_comprehension_context",
-            "type": "multiple-choice",
-            "level": "B1",
-            "options": [
-                "dużo pracowałem.",
-                "dużo śpię.",
-                "odpoczywam."
-            ]
-        },
-        {
-            "question": "Nie mam dziś czasu, bo...",
-            "answer": "mam dużo pracy",
-            "topic": "logical_comprehension_context",
-            "type": "multiple-choice",
-            "level": "A2",
-            "options": [
-                "mam dużo pracy.",
-                "odpoczywam.",
-                "nic nie robię."
-            ]
         }
     ],
     "reading": [
         {
-            "question": "Kawiarnia „Mała czarna” zaprasza codziennie od 10.00 do 22.00. Dzisiaj ciastka w promocyjnej cenie. Do ciastek herbata gratis. Dziś w tej kawiarni...",
+            "question": "Kawiarnia „Mała czarna” zaprasza codziennie od 10.00 do 22.00. Dzisiaj ciastka w promocyjnej cenie. Do ciastek herbata gratis. Dziś w tej kawiarni..",
             "answer": "ciastka kosztują mniej",
             "topic": "reading_comprehension_everyday",
             "type": "multiple-choice",
             "level": "A2",
             "options": [
-                "nie płaci się za kawę.",
-                "ciastka kosztują mniej.",
-                "nie będzie herbaty."
+                "nie płaci się za kawę",
+                "ciastka kosztują mniej",
+                "nie będzie herbaty"
             ],
             "hints": [
                 "Look for 'promocyjna cena'",
@@ -3241,15 +3121,15 @@
             ]
         },
         {
-            "question": "Proszę bilet normalny na pociąg do Krakowa. Pasażer chce...",
+            "question": "Proszę bilet normalny na pociąg do Krakowa. Pasażer chce..",
             "answer": "kupić bilet normalny",
             "topic": "reading_comprehension_everyday",
             "type": "multiple-choice",
             "level": "A2",
             "options": [
-                "kupić bilet ulgowy.",
-                "kupić bilet normalny.",
-                "sprzedać bilet."
+                "kupić bilet ulgowy",
+                "kupić bilet normalny",
+                "sprzedać bilet"
             ],
             "hints": [
                 "What type of ticket is requested?",
@@ -3263,9 +3143,9 @@
             "type": "multiple-choice",
             "level": "A2",
             "options": [
-                "chodzi po górach.",
-                "jedzie w góry.",
-                "mieszka w górach."
+                "chodzi po górach",
+                "jedzie w góry",
+                "mieszka w górach"
             ],
             "hints": [
                 "Focus on the verb 'jadę'",
@@ -3273,15 +3153,15 @@
             ]
         },
         {
-            "question": "Jutro mam egzamin. Dziś...",
+            "question": "Jutro mam egzamin. Dziś..",
             "answer": "uczę się",
             "topic": "reading_comprehension_everyday",
             "type": "multiple-choice",
             "level": "A2",
             "options": [
-                "uczę się.",
-                "piszę egzamin.",
-                "odpoczywam."
+                "uczę się",
+                "piszę egzamin",
+                "odpoczywam"
             ],
             "hints": [
                 "The exam is tomorrow",
@@ -3295,9 +3175,9 @@
             "type": "multiple-choice",
             "level": "A2",
             "options": [
-                "książkę.",
-                "kwiaty.",
-                "czekoladki."
+                "książkę",
+                "kwiaty",
+                "czekoladki"
             ],
             "hints": [
                 "What does she like?",
@@ -3305,15 +3185,15 @@
             ]
         },
         {
-            "question": "Pada deszcz, a Kasia wychodzi bez parasola. Kasia...",
+            "question": "Pada deszcz, a Kasia wychodzi bez parasola. Kasia..",
             "answer": "zmoknie",
             "topic": "logical_comprehension_context",
             "type": "multiple-choice",
             "level": "A2",
             "options": [
-                "zmoknie.",
-                "wyschnie.",
-                "siedzi w domu."
+                "zmoknie",
+                "wyschnie",
+                "siedzi w domu"
             ],
             "hints": [
                 "It's raining",
@@ -3327,9 +3207,9 @@
             "type": "multiple-choice",
             "level": "A1",
             "options": [
-                "zje coś.",
-                "śpi.",
-                "pije wodę."
+                "zje coś",
+                "śpi",
+                "pije wodę"
             ],
             "hints": [
                 "He is hungry",
@@ -3337,15 +3217,15 @@
             ]
         },
         {
-            "question": "Basia ma jutro urodziny. Dziś Basia...",
+            "question": "Basia ma jutro urodziny. Dziś Basia..",
             "answer": "przygotowuje się do urodzin",
             "topic": "logical_comprehension_context",
             "type": "multiple-choice",
             "level": "A2",
             "options": [
-                "świętuje.",
-                "przygotowuje się do urodzin.",
-                "miała urodziny."
+                "świętuje",
+                "przygotowuje się do urodzin",
+                "miała urodziny"
             ],
             "hints": [
                 "Birthday is tomorrow",
@@ -3353,15 +3233,15 @@
             ]
         },
         {
-            "question": "Jestem zmęczony, bo...",
+            "question": "Jestem zmęczony, bo..",
             "answer": "dużo pracowałem",
             "topic": "logical_comprehension_context",
             "type": "multiple-choice",
             "level": "A2",
             "options": [
-                "dużo pracowałem.",
-                "dużo śpię.",
-                "odpoczywam."
+                "dużo pracowałem",
+                "dużo śpię",
+                "odpoczywam"
             ],
             "hints": [
                 "Cause and effect",
@@ -3369,15 +3249,15 @@
             ]
         },
         {
-            "question": "Nie mam dziś czasu, bo...",
+            "question": "Nie mam dziś czasu, bo..",
             "answer": "mam dużo pracy",
             "topic": "logical_comprehension_context",
             "type": "multiple-choice",
             "level": "A2",
             "options": [
-                "mam dużo pracy.",
-                "odpoczywam.",
-                "nic nie robię."
+                "mam dużo pracy",
+                "odpoczywam",
+                "nic nie robię"
             ],
             "hints": [
                 "Why no time?",
@@ -3386,14 +3266,14 @@
         },
         {
             "question": "Jesteś teraz u weterynarza? Świetnie! Co się teraz dzieje z naszym pieskiem?",
-            "answer": "Właśnie bada go weterynarz.",
+            "answer": "Właśnie bada go weterynarz",
             "topic": "reading_comprehension_grammar_context",
             "type": "multiple-choice",
             "level": "B1",
             "options": [
-                "Właśnie bada weterynarza.",
-                "Właśnie się bada.",
-                "Właśnie bada go weterynarz."
+                "Właśnie bada weterynarza",
+                "Właśnie się bada",
+                "Właśnie bada go weterynarz"
             ],
             "hints": [
                 "Who is examining whom?",
@@ -3401,15 +3281,15 @@
             ]
         },
         {
-            "question": "Już tak późno?! Za chwilę mam spotkanie z Piotrkiem. Na pewno się spóźnię.",
-            "answer": "Napisz do niego, na pewno zaczeka.",
+            "question": "Już tak późno?! Za chwilę mam spotkanie z Piotrkiem. Na pewno się spóźnię",
+            "answer": "Napisz do niego, na pewno zaczeka",
             "topic": "reading_comprehension_grammar_context",
             "type": "multiple-choice",
             "level": "B1",
             "options": [
-                "Napisz do niego, na pewno zaczeka.",
-                "Piszesz do niego, na pewno zaczeka.",
-                "Napisałbyś do niego, na pewno zaczeka."
+                "Napisz do niego, na pewno zaczeka",
+                "Piszesz do niego, na pewno zaczeka",
+                "Napisałbyś do niego, na pewno zaczeka"
             ],
             "hints": [
                 "What's the appropriate mood?",
@@ -3417,7 +3297,7 @@
             ]
         },
         {
-            "question": "Mamo, idę grać na konsoli, tak jak się umawiałyśmy.",
+            "question": "Mamo, idę grać na konsoli, tak jak się umawiałyśmy",
             "answer": "A posprzątałaś już swój pokój?",
             "topic": "reading_comprehension_grammar_context",
             "type": "multiple-choice",
@@ -3433,7 +3313,7 @@
             ]
         },
         {
-            "question": "Cześć, podobno masz do mnie jakieś pytanie. - Tak, chciałbym zabrać Anię na randkę do kina.",
+            "question": "Cześć, podobno masz do mnie jakieś pytanie. - Tak, chciałbym zabrać Anię na randkę do kina",
             "answer": "Wiesz, czy widziałaś już ten film?",
             "topic": "reading_comprehension_grammar_context",
             "type": "multiple-choice",
@@ -3450,14 +3330,14 @@
         },
         {
             "question": "Co myślisz o tej książce?",
-            "answer": "Jest ok. Dobrze się ją czytało.",
+            "answer": "Jest ok. Dobrze się ją czytało",
             "topic": "reading_comprehension_grammar_context",
             "type": "multiple-choice",
             "level": "B2",
             "options": [
-                "Jest ok. Dobrze ją czytałam.",
-                "Jest ok. Dobrze się ją czytało.",
-                "Jest ok. Dobrze się czytała."
+                "Jest ok. Dobrze ją czytałam",
+                "Jest ok. Dobrze się ją czytało",
+                "Jest ok. Dobrze się czytała"
             ],
             "hints": [
                 "Impersonal construction",
@@ -3466,14 +3346,14 @@
         },
         {
             "question": "Kasiu, poczekaj! A gdzie masło? Na kanapkach musi być masło! A ty, Michale, co o tym myślisz?",
-            "answer": "Sam nie wiem. Trzeba posmarować masłem.",
+            "answer": "Sam nie wiem. Trzeba posmarować masłem",
             "topic": "reading_comprehension_grammar_context",
             "type": "multiple-choice",
             "level": "B2",
             "options": [
-                "Sam nie wiem. Trzeba posmarować masłem.",
-                "Sam nie wiem. Można posmarować masłem.",
-                "Sam nie wiem. Musisz posmarować masłem."
+                "Sam nie wiem. Trzeba posmarować masłem",
+                "Sam nie wiem. Można posmarować masłem",
+                "Sam nie wiem. Musisz posmarować masłem"
             ],
             "hints": [
                 "Necessity vs. possibility",
