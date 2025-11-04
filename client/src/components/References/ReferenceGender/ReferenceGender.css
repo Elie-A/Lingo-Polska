@@ -1,5 +1,5 @@
 /* Grid Section */
-.alphabet-grid {
+.gender-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
@@ -8,7 +8,7 @@
     border-radius: 0.75rem;
 }
 
-.alphabet-page h1 {
+.gender-page h1 {
     font-size: 2.25rem;
     font-weight: 800;
     color: #b91c1c;
@@ -17,8 +17,8 @@
     transition: color 0.3s ease;
 }
 
-/* Alphabet Cards */
-.alphabet-card {
+/* gender Cards */
+.gender-card {
     background: linear-gradient(145deg, #ffffff, #fff1f1);
     border-radius: 0.75rem;
     padding: 1.5rem;
@@ -29,26 +29,26 @@
     border: 1px solid #eee;
 }
 
-.alphabet-card:hover {
+.gender-card:hover {
     transform: translateY(-6px) scale(1.02);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
     background: linear-gradient(145deg, #fff6f6, #ffeaea);
     border-color: #f87171;
 }
 
-.alphabet-card h3 {
+.gender-card h3 {
     color: #b91c1c;
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
     text-shadow: 0 0 5px rgba(185, 28, 28, 0.3);
 }
 
-.alphabet-card p {
+.gender-card p {
     font-size: 0.95rem;
     color: #444;
 }
 
-.alphabet-card h3 {
+.gender-card h3 {
     color: #b91c1c;
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
@@ -98,7 +98,7 @@
 }
 
 /* Tables */
-.alphabet-table {
+.gender-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1.5rem;
@@ -108,23 +108,23 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.alphabet-table th,
-.alphabet-table td {
+.gender-table th,
+.gender-table td {
     padding: 0.85rem 1rem;
     text-align: left;
 }
 
-.alphabet-table thead {
+.gender-table thead {
     background: #b91c1c;
     color: #fff;
     font-weight: 600;
 }
 
-.alphabet-table tbody tr:nth-child(even) {
+.gender-table tbody tr:nth-child(even) {
     background-color: #fafafa;
 }
 
-.alphabet-table tbody tr:hover {
+.gender-table tbody tr:hover {
     background-color: #ffe4e4;
     transition: background-color 0.3s ease;
 }
@@ -163,6 +163,30 @@
     color: #333;
 }
 
+.exceptions,
+.tips {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-left: 4px solid #b91c1c;
+    background-color: #fff1f1;
+    border-radius: 0.5rem;
+}
+
+.exceptions h3,
+.tips h3 {
+    margin-bottom: 0.5rem;
+    color: #b91c1c;
+}
+
+.exceptions ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.tips p {
+    margin: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
     .modal-content {
@@ -170,12 +194,12 @@
         padding: 1.5rem;
     }
 
-    .alphabet-card h3 {
+    .gender-card h3 {
         font-size: 1.1rem;
     }
 
-    .alphabet-table th,
-    .alphabet-table td {
+    .gender-table th,
+    .gender-table td {
         padding: 0.7rem;
     }
 
@@ -183,12 +207,12 @@
 }
 
 @media (max-width: 600px) {
-    .alphabet-grid {
+    .gender-grid {
         grid-template-columns: 1fr;
         padding: 1rem;
     }
 
-    .alphabet-card {
+    .gender-card {
         padding: 1.25rem;
     }
 
@@ -200,7 +224,7 @@
         border-radius: 0.75rem;
     }
 
-    .alphabet-table {
+    .gender-table {
         font-size: 0.85rem;
     }
 

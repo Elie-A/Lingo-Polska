@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import ReferenceIntroduction from "./ReferenceIntroduction/ReferenceIntroduction";
 import ReferenceAlphabet from "./ReferenceAlphabet/ReferenceAlphabet";
 import ReferenceNumber from "./ReferenceNumber/ReferenceNumber";
+import ReferenceGender from "./ReferenceGender/ReferenceGender";
 import './Reference.css';
 
 const sections = [
     { id: 'introduction', title: 'Introduction', component: <ReferenceIntroduction /> },
     { id: 'Polish Alphabet', title: 'Polish Alphabet', component: <ReferenceAlphabet /> },
     { id: 'Polish Numbers', title: 'Polish Numbers', component: <ReferenceNumber /> },
+    { id: 'Polish Genders', title: 'Polish Genders', component: <ReferenceGender /> },
 ];
 
 const ReferencePage = () => {
