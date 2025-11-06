@@ -1,0 +1,142 @@
+/* ===== Layout Container ===== */
+.reference-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+/* ===== Sidebar Menu (Desktop) ===== */
+.reference-menu {
+    min-width: 220px;
+    position: sticky;
+    top: 2rem;
+    border-radius: 0.5rem;
+    background: #f8f8f8;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
+}
+
+.reference-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.reference-menu button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 0.25rem;
+    width: 100%;
+    text-align: left;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+}
+
+.reference-menu button:hover {
+    color: #b91c1c;
+    background: rgba(220, 38, 38, 0.1);
+}
+
+.reference-menu button.active {
+    color: #dc2626;
+    font-weight: 600;
+    background: rgba(220, 38, 38, 0.15);
+}
+
+/* ===== Content Area ===== */
+.reference-content {
+    flex: 1;
+    min-width: 300px;
+    transition: opacity 0.3s ease;
+}
+
+.reference-section {
+    padding: 4rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* ===== Fade Animations ===== */
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+/* ===== Mobile Dropdown ===== */
+.reference-dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 50;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.reference-dropdown select {
+    width: 80%;
+    max-width: 340px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.75rem;
+    background: #fff;
+    color: #333;
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, #dc2626 50%),
+        linear-gradient(135deg, #dc2626 50%, transparent 50%);
+    background-position: calc(100% - 1.1rem) calc(1rem + 2px),
+        calc(100% - 0.8rem) calc(1rem + 2px);
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.25s ease;
+}
+
+.reference-dropdown select:hover {
+    border-color: #dc2626;
+}
+
+.reference-dropdown select:focus {
+    outline: none;
+    border-color: #dc2626;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+    .reference-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .reference-section {
+        padding: 2rem 0;
+    }
+
+    .reference-menu {
+        display: none;
+        /* Hide sidebar on mobile */
+    }
+
+    .reference-content {
+        min-width: 100%;
+    }
+}

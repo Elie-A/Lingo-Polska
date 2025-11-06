@@ -79,6 +79,7 @@ export const getExerciseById = async (req, res) => {
 };
 
 // Get random exercise(s) - OPTIMIZED
+// Get random exercise(s) - OPTIMIZED
 export const getRandomExercise = async (req, res) => {
   try {
     const { topic, type, level, limit = 1 } = req.query;
@@ -103,10 +104,7 @@ export const getRandomExercise = async (req, res) => {
         .json({ success: false, message: "No exercises found" });
     }
 
-    // Return single object if limit=1, array otherwise
-    const data = numLimit === 1 ? exercises[0] : exercises;
-
-    res.status(200).json({ success: true, data });
+    res.status(200).json({ success: true, data: exercises });
   } catch (error) {
     console.error(error);
     res.status(500).json({ success: false, message: "Server Error" });

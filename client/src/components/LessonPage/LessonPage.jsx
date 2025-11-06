@@ -4,6 +4,7 @@ import Collapse from "../Collapse/Collapse";
 import VocabularyPage from "../Vocabulary/VocabularyPage";
 import PracticePage from "../Practice/PracticePage";
 import ConjugationPage from "../Conjugation/ConjugationPage";
+import ReferencePage from "../References/ReferencePage";
 
 import "./LessonPage.css";
 
@@ -79,6 +80,10 @@ const LessonPage = ({ lessonTitle, classes, lessonFolder }) => {
 
     if (lessonFolder == "conjugation") {
         return <ConjugationPage />;
+    }
+
+    if (lessonFolder == "references") {
+        return <ReferencePage />;
     }
 
     // Determine how to display the icon

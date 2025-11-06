@@ -1,0 +1,57 @@
+/* reference.css */
+
+.reference-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.reference-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #b91c1c;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.reference-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.reference-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.reference-list li {
+    margin-bottom: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .reference-section {
+        padding: 15px;
+    }
+
+    .reference-title {
+        font-size: 1.5rem;
+    }
+
+    .reference-content {
+        font-size: 0.95rem;
+    }
+
+    .reference-list {
+        padding-left: 15px;
+    }
+}
