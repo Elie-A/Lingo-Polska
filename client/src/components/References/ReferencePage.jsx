@@ -9,6 +9,9 @@ import ReferenceCases from "./ReferenceCases/ReferenceCases";
 import ReferencePossessivePronouns from "./ReferencePossessivePronouns/ReferencePossessivePronouns";
 import ReferencePersonalPronouns from "./ReferencePersonalPronouns/ReferencePersonalPronouns";
 import ReferenceVerbs from "./ReferenceVerbs/ReferenceVerbs";
+import ReferencePrefixesMovements from './ReferencePrefixesMovements/ReferencePrefixesMovements';
+import ReferencePrepositions from './ReferencePrepositions/ReferencePrepositions';
+
 import './Reference.css';
 
 const sections = [
@@ -22,6 +25,8 @@ const sections = [
     { id: 'Polish Possessive Pronouns', title: '🏷️ Polish Possessive Pronouns', component: <ReferencePossessivePronouns /> },
     { id: 'Polish Personal Pronouns', title: '🆔 Polish Personal Pronouns', component: <ReferencePersonalPronouns /> },
     { id: 'Polish Verbs', title: '🎬 Polish Verbs', component: <ReferenceVerbs /> },
+    { id: 'Polish Prefixes Movements', title: '🏃🏻‍♂️ Polish Prefixes Movements', component: <ReferencePrefixesMovements /> },
+    { id: 'Polish Prepositions', title: '⛓️ Polish Prepositions', component: <ReferencePrepositions /> },
 ];
 
 const ReferencePage = () => {
