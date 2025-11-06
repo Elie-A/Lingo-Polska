@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReferenceIntroduction from "./ReferenceIntroduction/ReferenceIntroduction";
 import ReferenceAlphabet from "./ReferenceAlphabet/ReferenceAlphabet";
 import ReferenceNumber from "./ReferenceNumber/ReferenceNumber";
@@ -31,25 +31,56 @@ const sections = [
 
 const ReferencePage = () => {
     const [activeSection, setActiveSection] = useState('introduction');
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [fade, setFade] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const handleSectionChange = (id) => {
+        setFade(true);
+        setTimeout(() => {
+            setActiveSection(id);
+            setFade(false);
+        }, 200);
+    };
 
     return (
         <div className="reference-container">
-            <nav className="reference-menu">
-                <ul>
-                    {sections.map(section => (
-                        <li key={section.id}>
-                            <button
-                                className={activeSection === section.id ? 'active' : ''}
-                                onClick={() => setActiveSection(section.id)}
-                            >
+            {isMobile ? (
+                <div className="reference-dropdown">
+                    <select
+                        value={activeSection}
+                        onChange={(e) => handleSectionChange(e.target.value)}
+                    >
+                        {sections.map((section) => (
+                            <option key={section.id} value={section.id}>
                                 {section.title}
-                            </button>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+                            </option>
+                        ))}
+                    </select>
+                </div>
+            ) : (
+                <nav className="reference-menu">
+                    <ul>
+                        {sections.map(section => (
+                            <li key={section.id}>
+                                <button
+                                    className={activeSection === section.id ? 'active' : ''}
+                                    onClick={() => handleSectionChange(section.id)}
+                                >
+                                    {section.title}
+                                </button>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+            )}
 
-            <div className="reference-content">
+            <div className={`reference-content ${fade ? 'fade-out' : 'fade-in'}`}>
                 {sections.map(section =>
                     activeSection === section.id && (
                         <section key={section.id} className="reference-section">

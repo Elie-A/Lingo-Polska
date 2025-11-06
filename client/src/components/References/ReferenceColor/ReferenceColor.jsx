@@ -32,27 +32,29 @@ const ReferenceColor = () => {
                             &times;
                         </span>
                         <h2>{colorsData[activeModal].modalTitle}</h2>
-                        <table className="colors-table">
-                            <thead>
-                                <tr>
-                                    {colorsData[activeModal].columns.map((col, i) => (
-                                        <th key={i}>{col}</th>
-                                    ))}
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {colorsData[activeModal].rows.map((row, index) => (
-                                    <tr
-                                        key={index}
-                                        className={colorsData[activeModal].customRowClass?.(index) || ''}
-                                    >
-                                        {row.map((cell, i) => (
-                                            <td key={i}>{cell}</td>
+                        <div class="table-wrapper">
+                            <table className="colors-table">
+                                <thead>
+                                    <tr>
+                                        {colorsData[activeModal].columns.map((col, i) => (
+                                            <th key={i}>{col}</th>
                                         ))}
                                     </tr>
-                                ))}
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    {colorsData[activeModal].rows.map((row, index) => (
+                                        <tr
+                                            key={index}
+                                            className={colorsData[activeModal].customRowClass?.(index) || ''}
+                                        >
+                                            {row.map((cell, i) => (
+                                                <td key={i}>{cell}</td>
+                                            ))}
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
                         {colorsData[activeModal].footerText && (
                             <p>
                                 <strong>

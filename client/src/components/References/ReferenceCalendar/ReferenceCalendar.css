@@ -108,6 +108,14 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
 .calendar-table th,
 .calendar-table td {
     padding: 0.85rem 1rem;
@@ -269,5 +277,19 @@
 }
 
 .modal::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(185, 28, 28, 0.6);
+}
+
+.table-wrapper::-webkit-scrollbar {
+    height: 6px;
+    /* Width is for vertical, Height is for horizontal */
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(185, 28, 28, 0.4);
+    border-radius: 6px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
     background-color: rgba(185, 28, 28, 0.6);
 }

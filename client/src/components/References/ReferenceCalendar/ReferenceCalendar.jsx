@@ -48,6 +48,7 @@ const ReferenceCalendar = () => {
 
                                     {/* Render basic sections (days, months) */}
                                     {current.rows && (
+
                                         <table className="calendar-table">
                                             <thead>
                                                 <tr>
@@ -101,24 +102,26 @@ const ReferenceCalendar = () => {
                                             <div className="time-subsection">
                                                 <h3>{current.grammarSection.heading}</h3>
                                                 <p>{current.grammarSection.explanation}</p>
-                                                <table className="calendar-table">
-                                                    <thead>
-                                                        <tr>
-                                                            {current.grammarSection.columns.map((col, i) => (
-                                                                <th key={i}>{col}</th>
-                                                            ))}
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        {current.grammarSection.rows.map((row, index) => (
-                                                            <tr key={index}>
-                                                                {row.map((cell, i) => (
-                                                                    <td key={i}>{cell}</td>
+                                                <div class="table-wrapper">
+                                                    <table className="calendar-table">
+                                                        <thead>
+                                                            <tr>
+                                                                {current.grammarSection.columns.map((col, i) => (
+                                                                    <th key={i}>{col}</th>
                                                                 ))}
                                                             </tr>
-                                                        ))}
-                                                    </tbody>
-                                                </table>
+                                                        </thead>
+                                                        <tbody>
+                                                            {current.grammarSection.rows.map((row, index) => (
+                                                                <tr key={index}>
+                                                                    {row.map((cell, i) => (
+                                                                        <td key={i}>{cell}</td>
+                                                                    ))}
+                                                                </tr>
+                                                            ))}
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
 
                                             {/* Sentence Section */}
@@ -129,24 +132,26 @@ const ReferenceCalendar = () => {
                                                     {current.sentenceSection.exampleQuestion}
                                                 </p>
                                                 <p>{current.sentenceSection.explanation}</p>
-                                                <table className="calendar-table">
-                                                    <thead>
-                                                        <tr>
-                                                            {current.sentenceSection.columns.map((col, i) => (
-                                                                <th key={i}>{col}</th>
-                                                            ))}
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        {current.sentenceSection.rows.map((row, index) => (
-                                                            <tr key={index}>
-                                                                {row.map((cell, i) => (
-                                                                    <td key={i}>{cell}</td>
+                                                <div className="table-wrapper">
+                                                    <table className="calendar-table">
+                                                        <thead>
+                                                            <tr>
+                                                                {current.sentenceSection.columns.map((col, i) => (
+                                                                    <th key={i}>{col}</th>
                                                                 ))}
                                                             </tr>
-                                                        ))}
-                                                    </tbody>
-                                                </table>
+                                                        </thead>
+                                                        <tbody>
+                                                            {current.sentenceSection.rows.map((row, index) => (
+                                                                <tr key={index}>
+                                                                    {row.map((cell, i) => (
+                                                                        <td key={i}>{cell}</td>
+                                                                    ))}
+                                                                </tr>
+                                                            ))}
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
                                     )}

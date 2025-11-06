@@ -46,24 +46,26 @@ const ReferenceCases = () => {
                         {activeSection.tables.map((table, idx) => (
                             <div key={idx} className="table-section">
                                 <h3>{table.title}</h3>
-                                <table className={`case-table ${activeSection.id}`}>
-                                    <thead>
-                                        <tr>
-                                            {table.columns.map((col, i) => (
-                                                <th key={i}>{col}</th>
-                                            ))}
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {table.rows.map((row, rowIdx) => (
-                                            <tr key={rowIdx}>
-                                                {row.map((cell, cellIdx) => (
-                                                    <td key={cellIdx}>{cell}</td>
+                                <div className='table-wrapper'>
+                                    <table className={`case-table ${activeSection.id}`}>
+                                        <thead>
+                                            <tr>
+                                                {table.columns.map((col, i) => (
+                                                    <th key={i}>{col}</th>
                                                 ))}
                                             </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
+                                        </thead>
+                                        <tbody>
+                                            {table.rows.map((row, rowIdx) => (
+                                                <tr key={rowIdx}>
+                                                    {row.map((cell, cellIdx) => (
+                                                        <td key={cellIdx}>{cell}</td>
+                                                    ))}
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         ))}
 
