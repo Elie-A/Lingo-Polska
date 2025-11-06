@@ -1,203 +1,272 @@
+/* === Overlay === */
 .modal-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+/* === Modal Container === */
+.modal-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    padding: 40px 60px;
+    width: 80%;
+    max-width: 900px;
+    max-height: 85vh;
+    overflow-y: auto;
+    /* scroll only when needed */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.4) transparent;
+    animation: scaleIn 0.25s ease;
+}
+
+/* Scrollbar (mobile or overflow only) */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* === Close Button === */
+.modal-close-button {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.modal-close-button:hover {
+    color: #ff7070;
+    transform: scale(1.2);
+}
+
+/* === Title === */
+.modal-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
-}
-
-.modal-content {
-    background-color: #ffffff;
-    padding: 3rem 2rem;
-    max-width: 700px;
-    width: 90%;
-    border-radius: 1rem;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    /* keep blobs inside */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-}
-
-.modal-close-button {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    border: none;
+    gap: 10px;
     font-size: 2rem;
-    cursor: pointer;
-    z-index: 20;
-}
-
-.modal-title,
-.modal-subtitle {
-    font-weight: 900;
-    background: linear-gradient(to right, #b91c1c, #dc2626, #991b1b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 1rem;
-}
-
-.modal-title {
-    font-size: 2rem;
-}
-
-.modal-subtitle {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #dc2626;
+    margin-bottom: 25px;
 }
 
 .modal-flag {
-    width: 2rem;
+    width: 45px;
     height: auto;
-    margin-right: 0.5rem;
-    vertical-align: middle;
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.7));
 }
 
+/* === Description === */
 .modal-description {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: #f2f2f2;
+    margin-bottom: 35px;
 }
 
-/* Blobs */
+/* === Footer === */
+.about-footer {
+    text-align: center;
+    font-style: italic;
+    color: #dc2626;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.heart {
+    color: #ff4d4d;
+    font-size: 1.2rem;
+}
+
+/* === Animated Blobs === */
 .blob {
     position: absolute;
-    width: 15rem;
-    height: 15rem;
     border-radius: 50%;
     filter: blur(80px);
-    opacity: 0.4;
-    animation: blob 7s infinite ease-in-out;
-    z-index: 1;
+    opacity: 0.25;
+    z-index: -1;
+    animation: float 8s ease-in-out infinite alternate;
 }
 
 .blob1 {
-    top: 5rem;
-    left: -5rem;
-    background-color: #fca5a5;
+    width: 350px;
+    height: 350px;
+    background: #ff4d4d;
+    top: -80px;
+    left: -100px;
+    animation-delay: 0s;
 }
 
 .blob2 {
-    top: 10rem;
-    right: -5rem;
-    background-color: #f87171;
+    width: 250px;
+    height: 250px;
+    background: #ffa6a6;
+    bottom: -60px;
+    right: -70px;
     animation-delay: 2s;
 }
 
 .blob3 {
-    bottom: -5rem;
+    width: 200px;
+    height: 200px;
+    background: #ffd3d3;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #fca5a5;
     animation-delay: 4s;
 }
 
-@keyframes blob {
-
-    0%,
-    100% {
-        transform: translate(0, 0) scale(1);
-    }
-
-    33% {
-        transform: translate(30px, -50px) scale(1.1);
-    }
-
-    66% {
-        transform: translate(-20px, 20px) scale(0.9);
-    }
-}
-
-.about-footer {
-    text-align: center;
-    font-style: italic;
-    color: #777;
-    margin-top: 1.8rem;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    animation: fadeIn 1.5s ease-in;
-}
-
-.heart {
-    color: #e25555;
-    margin: 0 0.2rem;
-    transition: transform 0.3s ease;
-}
-
-.heart:hover {
-    transform: scale(1.15);
-}
-
-.modal-description p {
-    margin-bottom: 1rem;
-    color: #333;
-    line-height: 1.6;
-}
-
+/* === Animations === */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(10px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
+@keyframes scaleIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
 
-/* Responsive */
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(-20px) scale(1.05);
+    }
+}
+
+/* === Responsive === */
 @media (max-width: 768px) {
     .modal-content {
-        padding: 2rem 1rem;
+        padding: 25px 20px;
+        width: 90%;
+        max-height: 90vh;
     }
 
     .modal-title {
-        font-size: 1.75rem;
-    }
-
-    .modal-subtitle {
-        font-size: 1.25rem;
+        font-size: 1.6rem;
     }
 
     .modal-description {
         font-size: 0.95rem;
     }
-
-    .blob {
-        width: 12rem;
-        height: 12rem;
-        filter: blur(60px);
-    }
 }
 
-@media (max-width: 480px) {
-    .modal-title {
-        font-size: 1.5rem;
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 20px 18px;
+        width: 92%;
+        border-radius: 14px;
     }
 
-    .modal-subtitle {
-        font-size: 1.1rem;
+    .modal-title {
+        font-size: 1.4rem;
     }
 
     .modal-description {
         font-size: 0.9rem;
+        line-height: 1.6;
     }
 
-    .blob {
-        width: 10rem;
-        height: 10rem;
-        filter: blur(50px);
+    .about-footer {
+        font-size: 0.9rem;
+    }
+
+    .modal-close-button {
+        font-size: 1.6rem;
+        top: 12px;
+        right: 16px;
+    }
+}
+
+/* === Small Phones (≤ 480px) === */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 95%;
+        padding: 18px 15px;
+        border-radius: 12px;
+        max-height: 92vh;
+    }
+
+    .modal-title {
+        font-size: 1.25rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .modal-flag {
+        width: 30px;
+        margin-bottom: 6px;
+    }
+
+    .modal-description {
+        font-size: 0.88rem;
+    }
+
+    .about-footer {
+        font-size: 0.85rem;
+    }
+}
+
+/* === Extra Small Phones (≤ 360px) === */
+@media (max-width: 360px) {
+    .modal-content {
+        width: 96%;
+        padding: 15px 12px;
+    }
+
+    .modal-title {
+        font-size: 1.1rem;
+    }
+
+    .modal-description {
+        font-size: 0.8rem;
+    }
+
+    .modal-close-button {
+        font-size: 1.4rem;
+    }
+
+    .about-footer {
+        font-size: 0.8rem;
     }
 }
