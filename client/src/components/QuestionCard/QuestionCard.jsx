@@ -109,7 +109,7 @@ const QuestionCard = ({ question, onAnswer }) => {
         if (!isSubmitted) return "text-answer-input";
 
         const isCorrect = normalize(userAnswer) === normalize(question.answer);
-        return `text - answer - input ${isCorrect ? "input-correct" : "input-incorrect"} `;
+        return `text-answer-input ${isCorrect ? "input-correct" : "input-incorrect"}`;
     };
 
     return (
@@ -154,7 +154,7 @@ const QuestionCard = ({ question, onAnswer }) => {
                     <button
                         type="submit"
                         disabled={isSubmitted || !userAnswer.trim()}
-                        className={`submit-btn ${isSubmitted ? "submit-disabled" : ""} `}
+                        className={`submit-btn ${isSubmitted ? "submit-disabled" : ""}`}
                     >
                         {isSubmitted ? "Submitted" : "Submit Answer"}
                     </button>
@@ -163,7 +163,7 @@ const QuestionCard = ({ question, onAnswer }) => {
                         <div className={`feedback ${normalize(userAnswer) === normalize(question.answer)
                             ? "feedback-correct"
                             : "feedback-incorrect"
-                            } `}>
+                            }`}>
                             {normalize(userAnswer) === normalize(question.answer) ? (
                                 <span className="feedback-icon">✓ Correct!</span>
                             ) : (
