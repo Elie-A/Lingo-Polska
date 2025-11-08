@@ -13,9 +13,9 @@ const ReferencePrepositions = () => {
 
     return (
         <div className="prep-page">
+            <h1>⛓️ {prepositionsData.prepositions.title}</h1>
             {/* Hero Section */}
             <section id="prep-hero" className="prep hero">
-                <h2>{prepositionsData.prepositions.title}</h2>
                 <p>{prepositionsData.prepositions.description}</p>
             </section>
 

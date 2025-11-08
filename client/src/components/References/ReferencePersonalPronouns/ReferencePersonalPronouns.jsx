@@ -13,7 +13,7 @@ const ReferencePersonalPronouns = () => {
 
     return (
         <div className="pronouns-cases-page">
-            <h1>📝 Polish Personal Pronouns</h1>
+            <h1>🆔 Polish Personal Pronouns</h1>
 
             {/* Pronouns Grid */}
             <section className="pronouns-cases-grid">

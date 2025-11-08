@@ -8,12 +8,15 @@ import LessonCard from "./components/LessonCard/LessonCard";
 import LessonPage from "./components/LessonPage/LessonPage";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
-import lessons from "./utils/lessons"
+import lessons from "./utils/lessons";
+
+import LoginPage from "./components/Admin/LoginPage/LoginPage";
+import AdminDashboard from "./components/Admin/AdminDashboard/AdminDashboard";
+import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 
 import "./App.css";
 
 export default function App() {
-
   return (
     <Router>
       <div className="app-container">
@@ -49,16 +52,31 @@ export default function App() {
             <Route
               key={idx}
               path={lesson.path}
-              element={<LessonPage
-                lessonTitle={lesson.title}
-                lessonIntro={lesson.intro}
-                classes={lesson.classes}
-                lessonFolder={lesson.folder}
-              />}
+              element={
+                <LessonPage
+                  lessonTitle={lesson.title}
+                  lessonIntro={lesson.intro}
+                  classes={lesson.classes}
+                  lessonFolder={lesson.folder}
+                />
+              }
             />
           ))}
 
           <Route path="/contact" element={<Contact />} />
+
+          {/* Admin routes */}
+          <Route path="/panel" element={<LoginPage />} />
+
+          {/* Protected admin dashboard */}
+          <Route
+            path="/admin"
+            element={
+              <ProtectedRoute>
+                <AdminDashboard />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
         <Footer />
         <Analytics />
