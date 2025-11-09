@@ -12,17 +12,33 @@
     gap: 1.5rem;
     padding: 1rem;
     background-color: #f7f7f7;
+    width: 100%;
+    max-width: 100%;
 }
 
+/* Title */
 .manager-container h3 {
     color: #dc2626;
     font-size: 1.5rem;
 }
 
+/* Paragraphs */
 .manager-container p {
     font-size: 1rem;
     color: #6b7280;
     text-align: center;
+}
+
+/* Search Input */
+.manager-container input[type="text"][placeholder*="Search"] {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.6rem 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
 }
 
 /* Add Form */
@@ -35,10 +51,17 @@
     border-radius: 1rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     align-items: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.add-form input,
+.add-form .select-wrapper,
+.add-form button {
+    flex: 1 1 100%;
 }
 
 .add-form input {
-    flex: 1;
     padding: 0.6rem 1rem;
     border-radius: 0.75rem;
     border: 1px solid #d1d5db;
@@ -56,7 +79,8 @@
 .select-wrapper {
     position: relative;
     display: flex;
-    flex: 1;
+    flex: 1 1 100%;
+    min-width: 0;
 }
 
 .select-wrapper select {
@@ -109,11 +133,21 @@
     transform: translateY(-2px);
 }
 
+/* Vocab Group */
+.vocab-group {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 /* Vocabulary List */
 .vocab-list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 100%;
 }
 
 .vocab-list h4 {
@@ -125,6 +159,7 @@
 }
 
 .vocab-item {
+    width: 100%;
     padding: 1rem 1.5rem;
     background: #fff;
     border-radius: 1rem;
@@ -162,42 +197,6 @@
 .vocab-item button:hover {
     background: #b91c1c;
     transform: translateY(-2px);
-}
-
-/* Pagination */
-.pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.pagination button {
-    background: #f3f4f6;
-    border: none;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.75rem;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.pagination button:hover {
-    background: #e5e7eb;
-    transform: translateY(-1px);
-}
-
-.pagination button.active {
-    background: #dc2626;
-    color: #fff;
-}
-
-.pagination button:disabled {
-    background: #f9fafb;
-    color: #9ca3af;
-    cursor: not-allowed;
 }
 
 /* Inline edit form */
@@ -239,44 +238,49 @@
     border-radius: 0.5rem;
 }
 
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    background: #f3f4f6;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.pagination button:hover {
+    background: #e5e7eb;
+    transform: translateY(-1px);
+}
+
+.pagination button.active {
+    background: #dc2626;
+    color: #fff;
+}
+
+.pagination button:disabled {
+    background: #f9fafb;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
 
-    .add-form input {
-        flex: 100%;
-        min-width: 100%;
-    }
-
-    .select-wrapper select {
-        padding: 0.5rem 2rem 0.5rem 0.8rem;
-        font-size: 0.95rem;
-        border-radius: 0.5rem;
-    }
-
-    .select-wrapper::after {
-        right: 0.8rem;
-        font-size: 0.8rem;
-    }
-
-    .add-form button,
-    .vocab-item button {
-        padding: 0.45rem 0.8rem;
-        font-size: 0.9rem;
-    }
-
-    .add-form input {
-        padding: 0.5rem 1rem;
-    }
-
-    .edit-form .select-wrapper select {
-        padding: 0.4rem 2rem 0.4rem 0.8rem;
-        font-size: 0.9rem;
-        border-radius: 0.5rem;
-    }
-
-    .edit-form .select-wrapper::after {
-        font-size: 0.8rem;
-        right: 0.8rem;
+    .add-form input,
+    .add-form .select-wrapper,
+    .add-form button {
+        flex: 1 1 100%;
     }
 }
 
@@ -291,18 +295,6 @@
         width: 100%;
     }
 
-    .edit-form .select-wrapper select {
-        padding: 0.4rem 2rem 0.4rem 0.8rem;
-        font-size: 0.9rem;
-        border-radius: 0.5rem;
-    }
-
-    .select-wrapper::after,
-    .edit-form .select-wrapper::after {
-        font-size: 0.8rem;
-        right: 0.8rem;
-    }
-
     .edit-buttons {
         justify-content: flex-start;
     }
@@ -313,14 +305,12 @@
     }
 }
 
-/* Extra small screens: fine-tune select arrow and make compact */
 @media (max-width: 480px) {
 
     .select-wrapper select,
     .edit-form .select-wrapper select {
         padding: 0.4rem 1.8rem 0.4rem 0.8rem;
         font-size: 0.85rem;
-        min-height: auto;
     }
 
     .select-wrapper::after,

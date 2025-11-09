@@ -163,43 +163,45 @@ export default function VocabularyManager() {
             {/* Vocabulary List */}
             {loading ? <p>Loading...</p> : filteredVocabularies.length === 0 ? <p>No vocabulary found.</p> :
                 filteredVocabularies.map(group => (
-                    <div key={group._id}>
-                        <h4>{group._id}</h4>
-                        <div className="vocab-list">
-                            {group.words.map(vocab => (
-                                <div key={vocab._id} className="vocab-item">
-                                    {editingId === vocab._id ? (
-                                        <div className="edit-form">
-                                            <input type="text" value={editingValues.polish} onChange={(e) => setEditingValues({ ...editingValues, polish: e.target.value })} placeholder="Polish" />
-                                            <input type="text" value={editingValues.english} onChange={(e) => setEditingValues({ ...editingValues, english: e.target.value })} placeholder="English" />
-                                            <input type="text" value={editingValues.category} onChange={(e) => setEditingValues({ ...editingValues, category: e.target.value })} placeholder="Category" />
-                                            <div className="select-wrapper">
-                                                <select value={editingValues.level} onChange={(e) => setEditingValues({ ...editingValues, level: e.target.value })}>
-                                                    <option value="">Select Level</option>
-                                                    <option value="A1">A1</option>
-                                                    <option value="A2">A2</option>
-                                                    <option value="B1">B1</option>
-                                                    <option value="B2">B2</option>
-                                                    <option value="C1">C1</option>
-                                                    <option value="C2">C2</option>
-                                                </select>
+                    <div key={group._id} className="vocab-group">
+                        <div key={group._id}>
+                            <h4>{group._id}</h4>
+                            <div className="vocab-list">
+                                {group.words.map(vocab => (
+                                    <div key={vocab._id} className="vocab-item">
+                                        {editingId === vocab._id ? (
+                                            <div className="edit-form">
+                                                <input type="text" value={editingValues.polish} onChange={(e) => setEditingValues({ ...editingValues, polish: e.target.value })} placeholder="Polish" />
+                                                <input type="text" value={editingValues.english} onChange={(e) => setEditingValues({ ...editingValues, english: e.target.value })} placeholder="English" />
+                                                <input type="text" value={editingValues.category} onChange={(e) => setEditingValues({ ...editingValues, category: e.target.value })} placeholder="Category" />
+                                                <div className="select-wrapper">
+                                                    <select value={editingValues.level} onChange={(e) => setEditingValues({ ...editingValues, level: e.target.value })}>
+                                                        <option value="">Select Level</option>
+                                                        <option value="A1">A1</option>
+                                                        <option value="A2">A2</option>
+                                                        <option value="B1">B1</option>
+                                                        <option value="B2">B2</option>
+                                                        <option value="C1">C1</option>
+                                                        <option value="C2">C2</option>
+                                                    </select>
+                                                </div>
+                                                <div className="edit-buttons">
+                                                    <button onClick={() => saveEditing(vocab._id)}>Save</button>
+                                                    <button onClick={cancelEditing}>Cancel</button>
+                                                </div>
                                             </div>
-                                            <div className="edit-buttons">
-                                                <button onClick={() => saveEditing(vocab._id)}>Save</button>
-                                                <button onClick={cancelEditing}>Cancel</button>
-                                            </div>
-                                        </div>
-                                    ) : (
-                                        <>
-                                            <span><strong>{vocab.polish}</strong> — {vocab.english} ({vocab.level})</span>
-                                            <div className="edit-buttons">
-                                                <button onClick={() => startEditing(vocab)}>Edit</button>
-                                                <button onClick={() => deleteVocab(vocab._id)}>Delete</button>
-                                            </div>
-                                        </>
-                                    )}
-                                </div>
-                            ))}
+                                        ) : (
+                                            <>
+                                                <span><strong>{vocab.polish}</strong> — {vocab.english} ({vocab.level})</span>
+                                                <div className="edit-buttons">
+                                                    <button onClick={() => startEditing(vocab)}>Edit</button>
+                                                    <button onClick={() => deleteVocab(vocab._id)}>Delete</button>
+                                                </div>
+                                            </>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 ))
