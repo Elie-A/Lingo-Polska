@@ -28,19 +28,19 @@ export const login = async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    const admin = await Admin.findOne({ email });
+    const user = await User.findOne({ email });
 
-    if (!admin) {
+    if (!user) {
       return res.status(400).json({ message: "Invalid credentials" });
     }
 
-    const isMatch = await admin.matchPassword(password);
+    const isMatch = await user.matchPassword(password);
     if (!isMatch) {
       return res.status(400).json({ message: "Invalid credentials" });
     }
 
     const token = jwt.sign(
-      { id: admin._id, email: admin.email },
+      { id: user._id, email: user.email },
       process.env.JWT_SECRET,
       { expiresIn: "8h" }
     );
