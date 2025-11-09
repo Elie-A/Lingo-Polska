@@ -1,0 +1,61 @@
+.manager-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 2rem;
+    background-color: #f9fafb;
+}
+
+.manager-card {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.emoji {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.manager-card .status {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #dc2626;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.footer {
+    font-size: 0.875rem;
+    color: #6b7280;
+}

@@ -13,6 +13,7 @@ import lessons from "./utils/lessons";
 import LoginPage from "./components/Admin/LoginPage/LoginPage";
 import AdminDashboard from "./components/Admin/AdminDashboard/AdminDashboard";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
+import NotFound from "./components/NotFound/NotFound";
 
 import "./App.css";
 
@@ -77,6 +78,7 @@ export default function App() {
               </ProtectedRoute>
             }
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
         <Analytics />

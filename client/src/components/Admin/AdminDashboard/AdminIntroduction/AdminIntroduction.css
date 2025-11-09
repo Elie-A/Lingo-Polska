@@ -1,0 +1,177 @@
+.intro-tab {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    font-family: 'Inter', Arial, sans-serif;
+    text-align: center;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.intro-tab h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #b91c1c;
+    margin-bottom: 1rem;
+}
+
+.intro-tab p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+/* Grid layout for cards */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+    margin-bottom: 2rem;
+}
+
+/* Card container & hover effects */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-glow-hover {
+    position: absolute;
+    inset: 0;
+    background-color: #dc2626;
+    border-radius: 1rem;
+    opacity: 0;
+    filter: blur(20px);
+    transition: opacity 0.5s ease;
+    z-index: 0;
+}
+
+.card-container:hover .card-glow-hover {
+    opacity: 0.1;
+}
+
+.card-decorative-bg {
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+    width: 6rem;
+    height: 6rem;
+    background-color: #fef2f2;
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.card-base {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid #e5e7eb;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.card-container:hover .card-base {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    border-color: #f87171;
+}
+
+.card-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.card-icon-container {
+    display: inline-block;
+    background-color: #fee2e2;
+    color: #dc2626;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.card-container:hover .card-icon-container {
+    transform: scale(1.1) rotate(3deg);
+    color: #b91c1c;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.card-container:hover .card-title {
+    color: #dc2626;
+}
+
+.card-description {
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .intro-tab {
+        padding: 2rem 1rem;
+    }
+
+    .intro-tab h3 {
+        font-size: 1.75rem;
+    }
+
+    .intro-tab p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-tab {
+        padding: 1.5rem 1rem;
+    }
+
+    .intro-tab h3 {
+        font-size: 1.5rem;
+    }
+
+    .intro-tab p,
+    .card-description {
+        font-size: 0.95rem;
+    }
+}

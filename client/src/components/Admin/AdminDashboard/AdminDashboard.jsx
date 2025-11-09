@@ -1,23 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FaUserShield } from "react-icons/fa";
+import VocabularyManager from "./VocabularyManager/VocabularyManager";
+import AdminIntroduction from "./AdminIntroduction/AdminIntroduction";
+import ExerciseManager from "./ExerciseManager/ExerciseManager";
+
 import "./AdminDashboard.css";
 
 export default function AdminDashboard() {
-    const [vocabularies, setVocabularies] = useState([]);
+    const [activeTab, setActiveTab] = useState("intro");
     const navigate = useNavigate();
-
-    const fetchData = async () => {
-        const token = localStorage.getItem("adminToken");
-        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/vocabulary`, {
-            headers: { Authorization: `Bearer ${token}` },
-        });
-        const data = await res.json();
-        setVocabularies(data);
-    };
-
-    useEffect(() => {
-        fetchData();
-    }, []);
 
     const logout = () => {
         localStorage.removeItem("adminToken");
@@ -28,21 +20,36 @@ export default function AdminDashboard() {
     return (
         <div className="dashboard-container">
             <header className="dashboard-header">
-                <h2>Vocabulary Manager</h2>
-                <button onClick={logout} className="logout-btn">
-                    Logout
-                </button>
+                <h2><FaUserShield /> Admin Panel</h2>
+                <button onClick={logout} className="logout-btn">Logout</button>
             </header>
 
-            <div className="vocab-list">
-                {vocabularies.map((vocab) => (
-                    <div key={vocab._id} className="vocab-item">
-                        <p>
-                            <strong>{vocab.word}</strong> — {vocab.translation}
-                        </p>
-                    </div>
-                ))}
-            </div>
+            <nav className="dashboard-nav">
+                <button
+                    className={activeTab === "intro" ? "active" : ""}
+                    onClick={() => setActiveTab("intro")}
+                >
+                    Introduction
+                </button>
+                <button
+                    className={activeTab === "vocab" ? "active" : ""}
+                    onClick={() => setActiveTab("vocab")}
+                >
+                    Vocabulary
+                </button>
+                <button
+                    className={activeTab === "exercise" ? "active" : ""}
+                    onClick={() => setActiveTab("exercise")}
+                >
+                    Exercises
+                </button>
+            </nav>
+
+            <main className="dashboard-content">
+                {activeTab === "intro" && <AdminIntroduction setActiveTab={setActiveTab} />}
+                {activeTab === "vocab" && <VocabularyManager />}
+                {activeTab === "exercise" && <ExerciseManager />}
+            </main>
         </div>
     );
 }
