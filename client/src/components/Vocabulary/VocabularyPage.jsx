@@ -42,7 +42,7 @@ const VocabularyPage = () => {
             setError("");
             try {
                 const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/api/vocabulary`);
-                setVocabularies(data);
+                setVocabularies(data.data.data || []);
             } catch (err) {
                 setError(err.response?.data?.message || err.message || "Failed to load vocabulary");
             } finally {
@@ -52,15 +52,22 @@ const VocabularyPage = () => {
         fetchVocabularies();
     }, []);
 
-    const allWords = useMemo(() =>
-        vocabularies.flatMap(v => (v.words || []).map(w => ({ ...w, category: v._id }))),
-        [vocabularies]
-    );
+    const allWords = useMemo(() => {
+        if (!Array.isArray(vocabularies)) return [];
+
+        return vocabularies.flatMap(v => {
+            if (v.words && Array.isArray(v.words)) {
+                return v.words.map(w => ({ ...w, category: v._id }));
+            }
+            return [];
+        });
+    }, [vocabularies]);
 
     const uniqueCategories = useMemo(() => {
-        const cats = new Set(allWords.map(w => w.category?.trim() || "Uncategorized"));
-        return ["", ...Array.from(cats).sort()];
-    }, [allWords]);
+        if (!Array.isArray(vocabularies)) return [""];
+        const cats = vocabularies.map(v => v._id).filter(Boolean);
+        return ["", ...cats.sort()];
+    }, [vocabularies]);
 
     const uniqueLevels = ["", "A1", "A2", "B1", "B2", "C1", "C2"];
 

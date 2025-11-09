@@ -30,7 +30,7 @@ export default function VocabularyManager() {
         try {
             setLoading(true);
             const { data } = await api.get("/", { params: { page, limit: itemsPerPage } });
-            setVocabularies(data.data || []);
+            setVocabularies(data.data.data || []);
             setTotalPages(data.pagination ? data.pagination.totalPages : 1);
             setCurrentPage(page);
             setLoading(false);
