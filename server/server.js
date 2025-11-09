@@ -8,6 +8,7 @@ import vocabularyRoutes from "./routes/vocabularyRoutes.js";
 import contactRoutes from "./routes/contactRoutes.js";
 import practiceRoutes from "./routes/practiceRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
+import exercisesRoutes from "./routes/exercisesRoutes.js";
 
 dotenv.config();
 
@@ -73,6 +74,7 @@ app.use("/api/vocabulary", vocabularyRoutes);
 app.use("/api/practice", practiceRoutes);
 app.use("/api/contact", contactRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/exercises", exercisesRoutes);
 
 // Health check
 app.get("/health", (req, res) => {

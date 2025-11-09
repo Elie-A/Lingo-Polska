@@ -16,13 +16,13 @@ const vocabularySchema = new mongoose.Schema(
       type: String,
       required: true,
       trim: true,
-      index: true, // Index for faster filtering
+      index: true,
     },
     level: {
       type: String,
       required: true,
       enum: ["A1", "A2", "B1", "B2", "C1", "C2"],
-      index: true, // Index for faster filtering
+      index: true,
     },
   },
   {
@@ -37,6 +37,12 @@ vocabularySchema.index({ polish: 1, english: 1 }); // For search queries
 
 // Text index for full-text search (optional but very powerful)
 vocabularySchema.index({ polish: "text", english: "text" });
+
+// Compound unique index to prevent exact duplicate entries
+vocabularySchema.index(
+  { polish: 1, english: 1, category: 1, level: 1 },
+  { unique: true, name: "unique_polish_english_category_level" }
+);
 
 const Vocabulary = mongoose.model("Vocabulary", vocabularySchema);
 
