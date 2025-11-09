@@ -16,6 +16,7 @@ import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import NotFound from "./components/NotFound/NotFound";
 
 import "./App.css";
+import About from "./components/About/About";
 
 export default function App() {
   return (
@@ -64,6 +65,7 @@ export default function App() {
             />
           ))}
 
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
 
           {/* Admin routes */}

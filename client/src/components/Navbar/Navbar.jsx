@@ -2,20 +2,16 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
 import "./Navbar.css";
-
 import PolandFlag from "../../assets/poland-flag.svg";
-import AboutModal from "../About/AboutModal";
 
-const FLAGS = {
-    PL: PolandFlag,
-};
+const FLAGS = { PL: PolandFlag };
 
 export default function Navbar({ lessons }) {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [lessonsOpen, setLessonsOpen] = useState(false);
     const [tensesOpen, setTensesOpen] = useState(false);
-    const [isAboutOpen, setIsAboutOpen] = useState(false);
+
     const dropdownRef = useRef(null);
     const tensesRef = useRef(null);
     const closeTimeout = useRef(null);
@@ -46,7 +42,6 @@ export default function Navbar({ lessons }) {
         return <span className="navbar-lesson-icon">{icon}</span>;
     };
 
-    // Separate lessons by type
     const tenseLessons = lessons.filter((l) =>
         ["Present Tense", "Past Tense", "Future Tense", "Conditional Tense"].includes(l.title)
     );
@@ -60,126 +55,104 @@ export default function Navbar({ lessons }) {
     };
 
     const handleMouseLeaveTenses = () => {
-        closeTimeout.current = setTimeout(() => {
-            setTensesOpen(false);
-        }, 200);
+        closeTimeout.current = setTimeout(() => setTensesOpen(false), 200);
     };
 
     return (
-        <>
-            <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-                <div className="nav-container">
-                    <Link to="/" className="nav-logo" onClick={() => setIsOpen(false)}>
-                        🇵🇱 Lingo<span className="highlight-red">Polska</span>
-                    </Link>
+        <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+            <div className="nav-container">
+                <Link to="/" className="nav-logo" onClick={() => setIsOpen(false)}>
+                    🇵🇱 Lingo<span className="highlight-red">Polska</span>
+                </Link>
 
-                    <button className="nav-toggle" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
-                        {isOpen ? <X size={28} /> : <Menu size={28} />}
-                    </button>
+                <button className="nav-toggle" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+                    {isOpen ? <X size={28} /> : <Menu size={28} />}
+                </button>
 
-                    <ul className={`nav-links ${isOpen ? "open" : ""}`}>
-                        <li>
-                            <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
-                        </li>
+                <ul className={`nav-links ${isOpen ? "open" : ""}`}>
+                    <li>
+                        <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+                    </li>
 
-                        <li
-                            className="nav-item-dropdown"
-                            ref={dropdownRef}
-                            onMouseEnter={() => window.innerWidth > 768 && setLessonsOpen(true) && handleMouseEnterTenses()}
-                            onMouseLeave={() => {
-                                if (window.innerWidth > 768 && handleMouseLeaveTenses()) {
-                                    setLessonsOpen(false);
-                                    setTensesOpen(false);
-                                }
-                            }}
-                        >
-                            <span className="dropdown-title" onClick={() => setLessonsOpen((p) => !p)}>
-                                Lessons <ChevronDown size={14} />
-                            </span>
+                    <li
+                        className="nav-item-dropdown"
+                        ref={dropdownRef}
+                        onMouseEnter={() => window.innerWidth > 768 && setLessonsOpen(true) && handleMouseEnterTenses()}
+                        onMouseLeave={() => {
+                            if (window.innerWidth > 768) {
+                                handleMouseLeaveTenses();
+                                setLessonsOpen(false);
+                                setTensesOpen(false);
+                            }
+                        }}
+                    >
+                        <span className="dropdown-title" onClick={() => setLessonsOpen((p) => !p)}>
+                            Lessons <ChevronDown size={14} />
+                        </span>
 
-                            <ul className={`dropdown-menu ${lessonsOpen ? "open" : ""}`}>
-                                {/* Submenu: Tenses */}
-                                <li
-                                    className="nav-subitem-dropdown"
-                                    ref={tensesRef}
-                                    onMouseEnter={() => window.innerWidth > 768 && setTensesOpen(true)}
-                                    onMouseLeave={() => window.innerWidth > 768 && setTensesOpen(false)}
+                        <ul className={`dropdown-menu ${lessonsOpen ? "open" : ""}`}>
+                            <li
+                                className="nav-subitem-dropdown"
+                                ref={tensesRef}
+                                onMouseEnter={() => window.innerWidth > 768 && setTensesOpen(true)}
+                                onMouseLeave={() => window.innerWidth > 768 && setTensesOpen(false)}
+                            >
+                                <span
+                                    className="dropdown-subtitle"
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        setTensesOpen((prev) => !prev);
+                                    }}
                                 >
-                                    <span
-                                        className="dropdown-subtitle"
-                                        onClick={(e) => {
-                                            e.stopPropagation();
-                                            setTensesOpen((prev) => !prev);
+                                    📅 Tenses <ChevronRight size={12} className="chevron-right" />
+                                </span>
+                                <ul className={`dropdown-submenu ${tensesOpen ? "open" : ""}`}>
+                                    {tenseLessons.map((lesson, idx) => (
+                                        <li key={idx}>
+                                            <Link
+                                                to={lesson.path}
+                                                state={{ icon: lesson.icon }}
+                                                onClick={() => {
+                                                    setIsOpen(false);
+                                                    setLessonsOpen(false);
+                                                    setTensesOpen(false);
+                                                }}
+                                            >
+                                                {renderIcon(lesson.icon)} {lesson.title}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </li>
+
+                            {otherLessons.map((lesson, idx) => (
+                                <li key={idx}>
+                                    <Link
+                                        to={lesson.path}
+                                        state={{ icon: lesson.icon }}
+                                        onClick={() => {
+                                            setIsOpen(false);
+                                            setLessonsOpen(false);
                                         }}
                                     >
-                                        📅 Tenses <ChevronRight size={12} className="chevron-right" />
-                                    </span>
-                                    <ul className={`dropdown-submenu ${tensesOpen ? "open" : ""}`}>
-                                        {tenseLessons.map((lesson, idx) => (
-                                            <li key={idx}>
-                                                <Link
-                                                    to={lesson.path}
-                                                    state={{ icon: lesson.icon }}
-                                                    onClick={() => {
-                                                        setIsOpen(false);
-                                                        setLessonsOpen(false);
-                                                        setTensesOpen(false);
-                                                    }}
-                                                >
-                                                    {renderIcon(lesson.icon)} {lesson.title}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
+                                        {renderIcon(lesson.icon)} {lesson.title}
+                                    </Link>
                                 </li>
+                            ))}
+                        </ul>
+                    </li>
 
-                                {/* Other lessons */}
-                                {otherLessons.map((lesson, idx) => (
-                                    <li key={idx}>
-                                        <Link
-                                            to={lesson.path}
-                                            state={{ icon: lesson.icon }}
-                                            onClick={() => {
-                                                setIsOpen(false);
-                                                setLessonsOpen(false);
-                                            }}
-                                        >
-                                            {renderIcon(lesson.icon)} {lesson.title}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </li>
+                    <li>
+                        <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
+                    </li>
 
-                        <li>
-                            <span
-                                className="nav-about"
-                                onClick={() => {
-                                    setIsAboutOpen(true);
-                                    setIsOpen(false);
-                                    setLessonsOpen(false);
-                                }}
-                            >
-                                About
-                            </span>
-                        </li>
-
-                        <li>
-                            <Link
-                                to="/contact"
-                                onClick={() => {
-                                    setIsOpen(false);
-                                    setLessonsOpen(false);
-                                }}
-                            >
-                                Contact
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            {isAboutOpen && <AboutModal onClose={() => setIsAboutOpen(false)} />}
-        </>
+                    <li>
+                        <Link to="/contact" onClick={() => { setIsOpen(false); setLessonsOpen(false); }}>
+                            Contact
+                        </Link>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     );
 }

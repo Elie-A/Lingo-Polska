@@ -1,0 +1,153 @@
+/* === About Page Container === */
+.about-page {
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* === Content Box (formerly modal-content) === */
+.about-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    padding: 40px 60px;
+    width: 80%;
+    max-width: 900px;
+    margin-bottom: 60px;
+}
+
+/* === Title and Flag === */
+.about-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #dc2626;
+    margin-bottom: 25px;
+}
+
+.about-flag {
+    width: 45px;
+    height: auto;
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.7));
+}
+
+/* === Description === */
+.about-description {
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: #3b3a3a;
+    /* readable light gray */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    /* subtle shadow for clarity */
+    margin-bottom: 35px;
+}
+
+/* === Footer === */
+.about-footer {
+    text-align: center;
+    font-style: italic;
+    color: #dc2626;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.heart {
+    color: #ff4d4d;
+    font-size: 1.2rem;
+}
+
+/* === Animated Blobs === */
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.25;
+    z-index: -1;
+    animation: float 8s ease-in-out infinite alternate;
+}
+
+.blob1 {
+    width: 350px;
+    height: 350px;
+    background: #ff4d4d;
+    top: -80px;
+    left: -100px;
+}
+
+.blob2 {
+    width: 250px;
+    height: 250px;
+    background: #ffa6a6;
+    bottom: -60px;
+    right: -70px;
+}
+
+.blob3 {
+    width: 200px;
+    height: 200px;
+    background: #ffd3d3;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* === Blob Animation === */
+@keyframes float {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(-20px) scale(1.05);
+    }
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 25px 20px;
+        width: 90%;
+    }
+
+    .about-title {
+        font-size: 1.6rem;
+    }
+
+    .about-description {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content {
+        width: 95%;
+        padding: 18px 15px;
+    }
+
+    .about-title {
+        font-size: 1.25rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-flag {
+        width: 30px;
+        margin-bottom: 6px;
+    }
+
+    .about-description {
+        font-size: 0.88rem;
+    }
+}
