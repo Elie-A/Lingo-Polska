@@ -30,15 +30,21 @@ export default function VocabularyManager() {
         try {
             setLoading(true);
             const { data } = await api.get("/", { params: { page, limit: itemsPerPage } });
-            setVocabularies(data.data.data || []);
-            setTotalPages(data.pagination ? data.pagination.totalPages : 1);
-            setCurrentPage(page);
-            setLoading(false);
+
+            // Adjusted according to your backend response shape
+            const vocabData = data.data?.data || [];
+            const pagination = data.data?.pagination;
+
+            setVocabularies(vocabData);
+            setTotalPages(pagination?.totalPages || 1);
+            setCurrentPage(pagination?.currentPage || 1);
         } catch (err) {
             console.error("Failed to fetch vocabularies:", err);
+        } finally {
             setLoading(false);
         }
     };
+
 
     useEffect(() => { fetchVocab(); }, []);
 
