@@ -9,6 +9,8 @@ import {
   bulkDeleteVocabulary,
 } from "../controllers/vocabularyController.js";
 
+import { verifyAdmin } from "../middleware/auth/authMiddleware.js";
+
 const router = express.Router();
 
 // GET routes
@@ -17,13 +19,13 @@ router.get("/search", searchVocabulary);
 router.get("/categories", getCategories);
 
 // POST routes
-router.post("/", addVocabulary);
+router.post("/", verifyAdmin, addVocabulary);
 
 // PUT routes
-router.put("/:id", updateVocabulary);
+router.put("/:id", verifyAdmin, updateVocabulary);
 
 // DELETE routes
-router.delete("/bulk", bulkDeleteVocabulary);
-router.delete("/:id", deleteVocabulary);
+router.delete("/bulk", verifyAdmin, bulkDeleteVocabulary);
+router.delete("/:id", verifyAdmin, deleteVocabulary);
 
 export default router;

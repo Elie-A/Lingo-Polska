@@ -3,6 +3,16 @@
     padding: 2rem;
 }
 
+.conj-page h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #b91c1c;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+
 /* Hero Section */
 .conj.hero {
     text-align: center;

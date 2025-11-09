@@ -52,6 +52,10 @@ Header
     color: #6b7280;
 }
 
+.no-results p {
+    color: #b91c1c;
+}
+
 /* ==============================
 Controls (Search & Filters)
 ============================== */

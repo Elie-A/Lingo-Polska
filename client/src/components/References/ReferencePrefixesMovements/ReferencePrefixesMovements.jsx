@@ -13,7 +13,7 @@ const ReferencePrefixesMovements = () => {
 
     return (
         <div className="pref-mov-page">
-            <h1>📝 Polish Prefixes Movements</h1>
+            <h1>🏃🏻‍♂️ Polish Prefixes Movements</h1>
 
             {/* Prefixes Movements Grid */}
             <section className="pref-mov-grid">

@@ -19,6 +19,7 @@ const ReferenceVerbs = () => {
 
     return (
         <div className="verbs-page">
+            <h1>🎬 Polish Verbs</h1>
             {/* Most Common Verbs Section */}
             <section id="most-common-hero" className="most-common hero">
                 <h2>{verbsData.mostCommon.title}</h2>

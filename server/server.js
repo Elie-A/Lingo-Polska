@@ -4,9 +4,11 @@ import compression from "compression";
 import helmet from "helmet";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import vocabularyRoutes from "./routes/vocabularyRoutes.js"; // ✅ Keep only one
+import vocabularyRoutes from "./routes/vocabularyRoutes.js";
 import contactRoutes from "./routes/contactRoutes.js";
 import practiceRoutes from "./routes/practiceRoutes.js";
+import authRoutes from "./routes/authRoutes.js";
+import exercisesRoutes from "./routes/exercisesRoutes.js";
 
 dotenv.config();
 
@@ -33,7 +35,7 @@ app.use(
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:5173",
-  process.env.FRONTEND_URL, // e.g., https://lingo-polska.vercel.app
+  process.env.FRONTEND_URL,
 ].filter(Boolean);
 
 app.use(
@@ -71,6 +73,8 @@ app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 app.use("/api/vocabulary", vocabularyRoutes);
 app.use("/api/practice", practiceRoutes);
 app.use("/api/contact", contactRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/exercises", exercisesRoutes);
 
 // Health check
 app.get("/health", (req, res) => {

@@ -13,9 +13,9 @@ const ReferenceConjunctions = () => {
 
     return (
         <div className="conj-page">
+            <h1>⚡ {conjunctionsData.conjunctions.title}</h1>
             {/* Hero Section */}
             <section id="conj-hero" className="conj hero">
-                <h2>{conjunctionsData.conjunctions.title}</h2>
                 <p dangerouslySetInnerHTML={{ __html: conjunctionsData.conjunctions.description }}></p>
             </section>
 

@@ -1,5 +1,11 @@
 import Vocabulary from "../models/Vocabulary.js";
+import {
+  handleSuccess,
+  handleError,
+  handleNotFound,
+} from "../utils/responseHandler.js";
 
+// Validation
 const validateVocabulary = ({ polish, english, category, level }) => {
   if (!polish || !english || !category || !level) {
     const error = new Error("All fields are required");
@@ -11,115 +17,54 @@ const validateVocabulary = ({ polish, english, category, level }) => {
 /** GET /api/vocabulary */
 export const getAllVocabularies = async (req, res) => {
   try {
-    const { level, page, limit } = req.query;
-
-    // Build match stage
-    const match = {};
-    if (level) match.level = level;
-
-    // If pagination is requested
-    if (page && limit) {
-      const pageNum = parseInt(page, 10);
-      const limitNum = parseInt(limit, 10);
-      const skip = (pageNum - 1) * limitNum;
-
-      const [groupedVocab, totalCount] = await Promise.all([
-        Vocabulary.aggregate([
-          { $match: match },
-          { $sort: { category: 1, polish: 1 } },
-          { $skip: skip },
-          { $limit: limitNum },
-          {
-            $group: {
-              _id: "$category",
-              words: {
-                $push: {
-                  _id: "$_id",
-                  polish: "$polish",
-                  english: "$english",
-                  level: "$level",
-                  createdAt: "$createdAt",
-                },
-              },
-            },
-          },
-          { $sort: { _id: 1 } },
-        ]).allowDiskUse(true),
-        Vocabulary.countDocuments(match),
-      ]);
-
-      return res.status(200).json({
-        data: groupedVocab,
-        pagination: {
-          currentPage: pageNum,
-          totalPages: Math.ceil(totalCount / limitNum),
-          totalItems: totalCount,
-          itemsPerPage: limitNum,
-        },
-      });
-    }
-
-    // Default behavior - return all grouped by category
-    const groupedVocab = await Vocabulary.aggregate([
-      { $match: match },
-      {
-        $project: {
-          _id: 1,
-          polish: 1,
-          english: 1,
-          level: 1,
-          category: 1,
-          createdAt: 1,
-        },
-      },
-      { $sort: { category: 1, polish: 1 } },
-      {
-        $group: {
-          _id: "$category",
-          words: {
-            $push: {
-              _id: "$_id",
-              polish: "$polish",
-              english: "$english",
-              level: "$level",
-              createdAt: "$createdAt",
-            },
-          },
-        },
-      },
-      { $sort: { _id: 1 } },
-    ]).allowDiskUse(true);
-
-    // Set cache headers for better performance
-    res.set("Cache-Control", "public, max-age=300"); // Cache for 5 minutes
-    res.status(200).json(groupedVocab);
-  } catch (error) {
-    console.error("Error fetching vocabulary:", error);
-    res
-      .status(error.statusCode || 500)
-      .json({ message: error.message || "Failed to fetch vocabulary" });
-  }
-};
-
-/** GET /api/vocabulary/search - Optimized search endpoint */
-export const searchVocabulary = async (req, res) => {
-  try {
-    const { q, level, category, page = 1, limit = 50 } = req.query;
-
+    const { page = 1, limit = 50 } = req.query;
     const pageNum = parseInt(page, 10);
     const limitNum = parseInt(limit, 10);
     const skip = (pageNum - 1) * limitNum;
 
-    // Build match stage
-    const match = {};
+    const totalCount = await Vocabulary.countDocuments({});
+    const vocab = await Vocabulary.find({})
+      .sort({ category: 1, polish: 1 })
+      .skip(skip)
+      .limit(limitNum)
+      .lean();
 
-    if (q) {
+    // Optional grouping
+    const groupedVocab = vocab.reduce((acc, word) => {
+      const group = acc.find((g) => g._id === word.category);
+      if (group) group.words.push(word);
+      else acc.push({ _id: word.category, words: [word] });
+      return acc;
+    }, []);
+
+    handleSuccess(res, {
+      data: groupedVocab,
+      pagination: {
+        currentPage: pageNum,
+        totalPages: Math.ceil(totalCount / limitNum),
+        totalItems: totalCount,
+        itemsPerPage: limitNum,
+      },
+    });
+  } catch (error) {
+    handleError(res, error, "Failed to fetch vocabularies");
+  }
+};
+
+/** GET /api/vocabulary/search */
+export const searchVocabulary = async (req, res) => {
+  try {
+    const { q, level, category, page = 1, limit = 50 } = req.query;
+    const pageNum = parseInt(page, 10);
+    const limitNum = parseInt(limit, 10);
+    const skip = (pageNum - 1) * limitNum;
+
+    const match = {};
+    if (q)
       match.$or = [
         { polish: { $regex: q, $options: "i" } },
         { english: { $regex: q, $options: "i" } },
       ];
-    }
-
     if (level) match.level = level;
     if (category) match.category = category;
 
@@ -133,8 +78,8 @@ export const searchVocabulary = async (req, res) => {
       Vocabulary.countDocuments(match),
     ]);
 
-    res.set("Cache-Control", "public, max-age=60"); // Cache for 1 minute
-    res.status(200).json({
+    res.set("Cache-Control", "public, max-age=60"); // 1 minute cache
+    handleSuccess(res, {
       data: results,
       pagination: {
         currentPage: pageNum,
@@ -144,23 +89,18 @@ export const searchVocabulary = async (req, res) => {
       },
     });
   } catch (error) {
-    console.error("Error searching vocabulary:", error);
-    res
-      .status(error.statusCode || 500)
-      .json({ message: error.message || "Failed to search vocabulary" });
+    handleError(res, error, "Failed to search vocabulary");
   }
 };
 
-/** GET /api/vocabulary/categories - Get all unique categories */
+/** GET /api/vocabulary/categories */
 export const getCategories = async (req, res) => {
   try {
     const categories = await Vocabulary.distinct("category");
-
-    res.set("Cache-Control", "public, max-age=600"); // Cache for 10 minutes
-    res.status(200).json(categories.sort());
+    res.set("Cache-Control", "public, max-age=600"); // 10 minutes cache
+    handleSuccess(res, categories.sort());
   } catch (error) {
-    console.error("Error fetching categories:", error);
-    res.status(500).json({ message: "Failed to fetch categories" });
+    handleError(res, error, "Failed to fetch categories");
   }
 };
 
@@ -168,37 +108,55 @@ export const getCategories = async (req, res) => {
 export const addVocabulary = async (req, res) => {
   try {
     validateVocabulary(req.body);
+    const { polish, english, category, level } = req.body;
+
+    const existingWord = await Vocabulary.findOne({
+      polish,
+      english,
+      category,
+      level,
+    });
+    if (existingWord)
+      return res
+        .status(409)
+        .json({ message: "This translation already exists for this word" });
+
     const savedWord = await Vocabulary.create(req.body);
-    res.status(201).json(savedWord);
+    handleSuccess(res, savedWord, 201);
   } catch (error) {
-    console.error("Error adding vocabulary:", error);
-    res
-      .status(error.statusCode || 500)
-      .json({ message: error.message || "Failed to add vocabulary" });
+    handleError(res, error, "Failed to add vocabulary");
   }
 };
 
-/** PUT /api/vocabulary/:id - Update vocabulary */
+/** PUT /api/vocabulary/:id */
 export const updateVocabulary = async (req, res) => {
   try {
     validateVocabulary(req.body);
+    const { polish, english, category, level } = req.body;
+
+    const duplicateCheck = await Vocabulary.findOne({
+      _id: { $ne: req.params.id },
+      polish,
+      english,
+      category,
+      level,
+    });
+
+    if (duplicateCheck)
+      return res
+        .status(409)
+        .json({ message: "This translation already exists for this word" });
 
     const updated = await Vocabulary.findByIdAndUpdate(
       req.params.id,
       req.body,
       { new: true, runValidators: true }
     );
+    if (!updated) return handleNotFound(res, "Word not found");
 
-    if (!updated) {
-      return res.status(404).json({ message: "Word not found" });
-    }
-
-    res.status(200).json(updated);
+    handleSuccess(res, updated);
   } catch (error) {
-    console.error("Error updating vocabulary:", error);
-    res
-      .status(error.statusCode || 500)
-      .json({ message: error.message || "Failed to update vocabulary" });
+    handleError(res, error, "Failed to update vocabulary");
   }
 };
 
@@ -206,13 +164,11 @@ export const updateVocabulary = async (req, res) => {
 export const deleteVocabulary = async (req, res) => {
   try {
     const deleted = await Vocabulary.findByIdAndDelete(req.params.id);
-    if (!deleted) {
-      return res.status(404).json({ message: "Word not found" });
-    }
-    res.status(200).json({ message: "Word deleted successfully" });
+    if (!deleted) return handleNotFound(res, "Word not found");
+
+    handleSuccess(res, { message: "Word deleted successfully" });
   } catch (error) {
-    console.error("Error deleting vocabulary:", error);
-    res.status(500).json({ message: "Failed to delete vocabulary" });
+    handleError(res, error, "Failed to delete vocabulary");
   }
 };
 
@@ -220,19 +176,18 @@ export const deleteVocabulary = async (req, res) => {
 export const bulkDeleteVocabulary = async (req, res) => {
   try {
     const { ids } = req.body;
-
     if (!ids || !Array.isArray(ids) || ids.length === 0) {
-      return res.status(400).json({ message: "Array of IDs is required" });
+      const error = new Error("Array of IDs is required");
+      error.statusCode = 400;
+      throw error;
     }
 
     const result = await Vocabulary.deleteMany({ _id: { $in: ids } });
-
-    res.status(200).json({
+    handleSuccess(res, {
       message: `${result.deletedCount} word(s) deleted successfully`,
       deletedCount: result.deletedCount,
     });
   } catch (error) {
-    console.error("Error bulk deleting vocabulary:", error);
-    res.status(500).json({ message: "Failed to delete vocabulary" });
+    handleError(res, error, "Failed to delete vocabulary");
   }
 };

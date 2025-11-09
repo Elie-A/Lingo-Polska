@@ -7,9 +7,9 @@ const ReferenceExternalResources = () => {
 
     return (
         <div className="external-resources-page">
+            <h1>🗂️ {externalResourcesData.resources.title}</h1>
             {/* Hero Section */}
             <section className="resources-hero">
-                <h1>{externalResourcesData.resources.title}</h1>
                 <p>{externalResourcesData.resources.description}</p>
             </section>
 
