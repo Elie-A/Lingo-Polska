@@ -14,9 +14,7 @@ const useDebounce = (value, delay) => {
             setDebouncedValue(value);
         }, delay);
 
-        return () => {
-            clearTimeout(handler);
-        };
+        return () => clearTimeout(handler);
     }, [value, delay]);
 
     return debouncedValue;
@@ -24,10 +22,15 @@ const useDebounce = (value, delay) => {
 
 const VocabularyPage = () => {
     const [vocabularies, setVocabularies] = useState([]);
+    const [pagination, setPagination] = useState({
+        currentPage: 1,
+        totalPages: 1,
+        totalItems: 0,
+        itemsPerPage: pageSize,
+    });
     const [searchTerm, setSearchTerm] = useState("");
     const [category, setCategory] = useState("");
     const [level, setLevel] = useState("");
-    const [currentPage, setCurrentPage] = useState(1);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
     const [expandedCategories, setExpandedCategories] = useState({});
@@ -36,96 +39,80 @@ const VocabularyPage = () => {
     // Debounce search term for better performance
     const debouncedSearchTerm = useDebounce(searchTerm, 300);
 
-    useEffect(() => {
-        const fetchVocabularies = async () => {
+    // ✅ Fetch vocabularies from backend with pagination
+    const fetchVocabularies = useCallback(
+        async (page = 1) => {
             setLoading(true);
             setError("");
+
             try {
-                const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/api/vocabulary`);
+                const params = {
+                    page,
+                    limit: pageSize,
+                };
+
+                // Add filters if any
+                if (debouncedSearchTerm) params.q = debouncedSearchTerm;
+                if (category) params.category = category;
+                if (level) params.level = level;
+
+                const { data } = await axios.get(
+                    `${import.meta.env.VITE_API_URL}/api/vocabulary/search`,
+                    { params }
+                );
+
+                // Update vocabularies and pagination
                 setVocabularies(data.data.data || []);
+                setPagination(data.data.pagination || {
+                    currentPage: 1,
+                    totalPages: 1,
+                    totalItems: 0,
+                    itemsPerPage: pageSize,
+                });
             } catch (err) {
-                setError(err.response?.data?.message || err.message || "Failed to load vocabulary");
+                setError(
+                    err.response?.data?.message ||
+                    err.message ||
+                    "Failed to load vocabulary"
+                );
             } finally {
                 setLoading(false);
             }
-        };
-        fetchVocabularies();
-    }, []);
+        },
+        [debouncedSearchTerm, category, level]
+    );
 
-    const allWords = useMemo(() => {
-        if (!Array.isArray(vocabularies)) return [];
+    // Initial load
+    useEffect(() => {
+        fetchVocabularies(1);
+    }, [fetchVocabularies]);
 
-        return vocabularies.flatMap(v => {
-            if (v.words && Array.isArray(v.words)) {
-                return v.words.map(w => ({ ...w, category: v._id }));
-            }
-            return [];
-        });
-    }, [vocabularies]);
+    // Re-fetch when search or filters change
+    useEffect(() => {
+        fetchVocabularies(1);
+    }, [debouncedSearchTerm, category, level]);
 
-    const uniqueCategories = useMemo(() => {
-        if (!Array.isArray(vocabularies)) return [""];
-        const cats = vocabularies.map(v => v._id).filter(Boolean);
-        return ["", ...cats.sort()];
-    }, [vocabularies]);
+    const groupedWords = useMemo(
+        () =>
+            vocabularies.reduce((acc, w) => {
+                const cat = w.category || "Uncategorized";
+                if (!acc[cat]) acc[cat] = [];
+                acc[cat].push(w);
+                return acc;
+            }, {}),
+        [vocabularies]
+    );
 
     const uniqueLevels = ["", "A1", "A2", "B1", "B2", "C1", "C2"];
 
-    const filteredWords = useMemo(() => {
-        if (!debouncedSearchTerm && !category && !level) {
-            return allWords;
-        }
-
-        const searchLower = debouncedSearchTerm.toLowerCase();
-        return allWords.filter(w => {
-            if (debouncedSearchTerm &&
-                !w.polish.toLowerCase().includes(searchLower) &&
-                !w.english.toLowerCase().includes(searchLower)) {
-                return false;
-            }
-            if (category && w.category !== category) {
-                return false;
-            }
-            if (level && w.level !== level) {
-                return false;
-            }
-            return true;
-        });
-    }, [allWords, debouncedSearchTerm, category, level]);
-
-    const totalPages = Math.ceil(filteredWords.length / pageSize);
-
-    const paginatedWords = useMemo(() =>
-        filteredWords.slice((currentPage - 1) * pageSize, currentPage * pageSize),
-        [filteredWords, currentPage]
-    );
-
-    useEffect(() => {
-        if (currentPage > totalPages && totalPages > 0) {
-            setCurrentPage(1);
-        }
-    }, [currentPage, totalPages]);
-
-    const groupedWords = useMemo(() =>
-        paginatedWords.reduce((acc, w) => {
-            const cat = w.category || "Uncategorized";
-            if (!acc[cat]) acc[cat] = [];
-            acc[cat].push(w);
-            return acc;
-        }, {}),
-        [paginatedWords]
-    );
-
-    // Initialize categories as collapsed by default for better performance
+    // Manage category expand/collapse
     useEffect(() => {
         const categories = Object.keys(groupedWords);
         if (categories.length > 0) {
-            setExpandedCategories(prev => {
+            setExpandedCategories((prev) => {
                 const newState = { ...prev };
-                categories.forEach(cat => {
-                    if (!(cat in newState)) {
-                        newState[cat] = false;
-                    }
+                categories.forEach((cat) => {
+                    if (!(cat in newState)) newState[cat] = false;
                 });
                 return newState;
             });
@@ -133,9 +120,11 @@ const VocabularyPage = () => {
     }, [groupedWords]);
 
     const toggleCategory = useCallback((cat) => {
-        setExpandedCategories(prev => {
+        setExpandedCategories((prev) => {
             const newState = { ...prev, [cat]: !prev[cat] };
-            const allSame = Object.values(newState).every(val => val === newState[cat]);
+            const allSame = Object.values(newState).every(
+                (val) => val === newState[cat]
+            );
             setAllExpanded(allSame ? newState[cat] : false);
             return newState;
         });
@@ -145,7 +134,7 @@ const VocabularyPage = () => {
         const newState = !allExpanded;
         const categories = Object.keys(groupedWords);
         const updatedState = {};
-        categories.forEach(cat => {
+        categories.forEach((cat) => {
             updatedState[cat] = newState;
         });
         setExpandedCategories(updatedState);
@@ -154,26 +143,18 @@ const VocabularyPage = () => {
 
     const handleSearchChange = useCallback((e) => {
         setSearchTerm(e.target.value);
-        setCurrentPage(1);
     }, []);
 
     const handleCategoryChange = useCallback((value) => {
         setCategory(value);
-        setCurrentPage(1);
     }, []);
 
     const handleLevelChange = useCallback((value) => {
         setLevel(value);
-        setCurrentPage(1);
     }, []);
 
-    if (loading) {
-        return <div className="loading">Loading vocabulary...</div>;
-    }
-
-    if (error) {
-        return <div className="error">{error}</div>;
-    }
+    if (loading) return <div className="loading">Loading vocabulary...</div>;
+    if (error) return <div className="error">{error}</div>;
 
     return (
         <div className="vocab-page">
@@ -190,7 +171,7 @@ const VocabularyPage = () => {
                     onChange={handleSearchChange}
                 />
                 <FilterDropdown
-                    options={uniqueCategories}
+                    options={["", ...Object.keys(groupedWords).sort()]}
                     selected={category}
                     onChange={handleCategoryChange}
                     placeholder="All Categories"
@@ -208,12 +189,15 @@ const VocabularyPage = () => {
                     <button
                         className="expand-collapse-btn"
                         onClick={toggleAllCategories}
-                        aria-label={allExpanded ? "Collapse all categories" : "Expand all categories"}
+                        aria-label={
+                            allExpanded ? "Collapse all categories" : "Expand all categories"
+                        }
                     >
                         {allExpanded ? "▼ Collapse All" : "▶ Expand All"}
                     </button>
                     <span className="vocab-count">
-                        {filteredWords.length} word{filteredWords.length !== 1 ? 's' : ''} found
+                        {pagination.totalItems} word
+                        {pagination.totalItems !== 1 ? "s" : ""} found
                     </span>
                 </div>
             )}
@@ -227,32 +211,34 @@ const VocabularyPage = () => {
                     Object.entries(groupedWords).map(([cat, words]) => (
                         <div key={cat} className="vocab-group">
                             <h2
-                                className={`category-toggle ${expandedCategories[cat] ? 'open' : ''}`}
+                                className={`category-toggle ${expandedCategories[cat] ? "open" : ""
+                                    }`}
                                 onClick={() => toggleCategory(cat)}
                                 role="button"
                                 tabIndex={0}
                                 onKeyPress={(e) => {
-                                    if (e.key === 'Enter' || e.key === ' ') {
-                                        toggleCategory(cat);
-                                    }
+                                    if (e.key === "Enter" || e.key === " ") toggleCategory(cat);
                                 }}
                                 aria-expanded={expandedCategories[cat]}
                                 aria-label={`${cat} category with ${words.length} words`}
                             >
-                                <span>{cat} ({words.length})</span>
+                                <span>
+                                    {cat} ({words.length})
+                                </span>
                                 <span className="arrow">
-                                    {expandedCategories[cat] ? '▼' : '▶'}
+                                    {expandedCategories[cat] ? "▼" : "▶"}
                                 </span>
                             </h2>
-                            <ul className={`category-container ${expandedCategories[cat] ? 'expanded' : ''}`}>
+                            <ul
+                                className={`category-container ${expandedCategories[cat] ? "expanded" : ""
+                                    }`}
+                            >
                                 {words.map((w) => (
                                     <li key={w._id || `${w.polish}-${w.english}`}>
                                         <span className="word-pair">
                                             <strong>{w.polish}</strong> — {w.english}
                                         </span>
-                                        <span className="word-level">
-                                            {w.level || "–"}
-                                        </span>
+                                        <span className="word-level">{w.level || "–"}</span>
                                     </li>
                                 ))}
                             </ul>
@@ -261,15 +247,19 @@ const VocabularyPage = () => {
                 )}
             </div>
 
-            {totalPages > 1 && (
+            {pagination.totalPages > 1 && (
                 <div className="pagination">
-                    {Array.from({ length: totalPages }, (_, i) => (
+                    {Array.from({ length: pagination.totalPages }, (_, i) => (
                         <button
                             key={i + 1}
-                            className={currentPage === i + 1 ? "active" : ""}
-                            onClick={() => setCurrentPage(i + 1)}
+                            className={
+                                pagination.currentPage === i + 1 ? "active" : ""
+                            }
+                            onClick={() => fetchVocabularies(i + 1)}
                             aria-label={`Go to page ${i + 1}`}
-                            aria-current={currentPage === i + 1 ? "page" : undefined}
+                            aria-current={
+                                pagination.currentPage === i + 1 ? "page" : undefined
+                            }
                         >
                             {i + 1}
                         </button>
