@@ -18,7 +18,7 @@ const QuestionCard = ({ question, onAnswer }) => {
 
     // Normalize strings for comparison
     const normalize = (str) =>
-        str
+        (str || "")
             .trim()
             .toLowerCase()
             .replace(/\s+/g, " ")
@@ -27,10 +27,14 @@ const QuestionCard = ({ question, onAnswer }) => {
             .normalize("NFKC");
 
     const answers = useMemo(() => {
+        if (!question) return [];
+
         if (!question.answers && question.options) {
             return question.options.map((text) => ({
                 text,
-                isCorrect: normalize(question.answer).includes(normalize(text)) || normalize(text).includes(normalize(question.answer)),
+                isCorrect:
+                    normalize(question.answer).includes(normalize(text)) ||
+                    normalize(text).includes(normalize(question.answer)),
             }));
         }
         return question.answers || [];
@@ -60,7 +64,7 @@ const QuestionCard = ({ question, onAnswer }) => {
     };
 
     const renderQuestionContent = () => {
-        if (question.text) {
+        if (question?.text) {
             return (
                 <div className="reading-text">
                     <p>{question.text}</p>
@@ -71,7 +75,7 @@ const QuestionCard = ({ question, onAnswer }) => {
     };
 
     const renderHints = () => {
-        if (!question.hints || question.hints.length === 0) return null;
+        if (!question?.hints?.length) return null;
 
         return (
             <div className="hints-container">
@@ -96,7 +100,7 @@ const QuestionCard = ({ question, onAnswer }) => {
         if (selectedIndex === null) return "answer-btn";
 
         const isSelected = index === selectedIndex;
-        const isCorrect = answer.isCorrect;
+        const isCorrect = answer?.isCorrect;
 
         if (isSelected && isCorrect) return "answer-btn answer-correct";
         if (isSelected && !isCorrect) return "answer-btn answer-incorrect";
@@ -116,16 +120,18 @@ const QuestionCard = ({ question, onAnswer }) => {
         <div className="question-card">
             <div className="question-type-badge">
                 <span className="badge">
-                    {question.type.replace(/-/g, ' ').toUpperCase()}
+                    {question?.type
+                        ? question.type.replace(/-/g, " ").toUpperCase()
+                        : "UNKNOWN"}
                 </span>
             </div>
 
-            <h2 className="question-title">{question.question}</h2>
+            <h2 className="question-title">{question?.question || "No question text"}</h2>
 
             {renderQuestionContent()}
 
             {/* Multiple Choice, Matching, True or False */}
-            {['matching', 'multiple-choice', 'true-false'].includes(question.type) && answers.length > 0 && (
+            {['matching', 'multiple-choice', 'true-false'].includes(question?.type) && answers.length > 0 && (
                 <div className="answers-container">
                     {answers.map((answer, index) => (
                         <button
@@ -134,14 +140,14 @@ const QuestionCard = ({ question, onAnswer }) => {
                             disabled={selectedIndex !== null}
                             className={getAnswerClassName(answer, index)}
                         >
-                            {answer.text}
+                            {answer?.text || ""}
                         </button>
                     ))}
                 </div>
             )}
 
             {/* Short Answer & Fill in the Blank */}
-            {(question.type === 'short-answer' || question.type === 'fill-in-the-blank') && (
+            {['short-answer', 'fill-in-the-blank'].includes(question?.type) && (
                 <form onSubmit={handleTextSubmit} className="text-answer-form">
                     <input
                         type="text"
@@ -160,17 +166,19 @@ const QuestionCard = ({ question, onAnswer }) => {
                     </button>
 
                     {isSubmitted && (
-                        <div className={`feedback ${normalize(userAnswer) === normalize(question.answer)
-                            ? "feedback-correct"
-                            : "feedback-incorrect"
-                            }`}>
+                        <div
+                            className={`feedback ${normalize(userAnswer) === normalize(question.answer)
+                                ? "feedback-correct"
+                                : "feedback-incorrect"
+                                }`}
+                        >
                             {normalize(userAnswer) === normalize(question.answer) ? (
                                 <span className="feedback-icon">✓ Correct!</span>
                             ) : (
                                 <div>
                                     <span className="feedback-icon">✗ Incorrect</span>
                                     <div className="correct-answer">
-                                        The correct answer is: <strong>{question.answer}</strong>
+                                        The correct answer is: <strong>{question.answer || "N/A"}</strong>
                                     </div>
                                 </div>
                             )}
@@ -182,24 +190,23 @@ const QuestionCard = ({ question, onAnswer }) => {
             {!isSubmitted && renderHints()}
         </div>
     );
-
 };
 
 QuestionCard.propTypes = {
     question: PropTypes.shape({
-        question: PropTypes.string.isRequired,
-        answer: PropTypes.string.isRequired,
-        type: PropTypes.string.isRequired,
+        question: PropTypes.string,
+        answer: PropTypes.string,
+        type: PropTypes.string,
         answers: PropTypes.arrayOf(
             PropTypes.shape({
-                text: PropTypes.string.isRequired,
-                isCorrect: PropTypes.bool.isRequired,
+                text: PropTypes.string,
+                isCorrect: PropTypes.bool,
             })
         ),
         options: PropTypes.arrayOf(PropTypes.string),
         hints: PropTypes.arrayOf(PropTypes.string),
         text: PropTypes.string,
-    }).isRequired,
+    }),
     onAnswer: PropTypes.func.isRequired,
 };
 

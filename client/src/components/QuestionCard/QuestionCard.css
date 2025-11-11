@@ -163,6 +163,7 @@ Text Answer Form
 
 .submit-btn:hover:not(:disabled) {
     background-color: var(--primary-dark);
+    cursor: not-allowed;
 }
 
 .submit-btn:disabled {

@@ -1,0 +1,111 @@
+[
+    {
+        "title": "Jerzy Sosnowski",
+        "topic": "reading-comprehension",
+        "level": "A2",
+        "text": "Nazywam się Jerzy Sosnowski. Mam 30 lat. Urodziłem się w Poznaniu i tam chodziłem do szkoły. Skończyłem studia na Politechnice Wrocławskiej. Jestem inżynierem w fabryce mebli biurowych. Moja żona uczy fizyki w liceum. Nasza córka ma 6 lat i już uczy się w szkole muzycznej. Teraz mieszkamy w Elblągu. Czytam dużo książek podróżniczych. Codziennie chodzę na basen. Lubimy domowe jedzenie. Kiedy pracujemy, żona gotuje tylko zupy. W soboty i niedziele sam z przyjemnością gotuję dla całej rodziny. Najczęściej jemy wtedy kotlety z warzyw. Chcę pokazać innym, jak szybko można je zrobić. Zapraszam ekipę telewizyjną do mnie w każdą letnią sobotę.",
+        "questions": [
+            {
+                "type": "short-answer",
+                "question": "Gdzie urodził się Jerzy Sosnowski?",
+                "answer": "W Poznaniu"
+            },
+            {
+                "type": "short-answer",
+                "question": "Gdzie obecnie mieszka Jerzy?",
+                "answer": "W Elblągu"
+            },
+            {
+                "type": "short-answer",
+                "question": "Gdzie studiował Jerzy?",
+                "answer": "Na Politechnice Wrocławskiej"
+            },
+            {
+                "type": "short-answer",
+                "question": "Jaki ma zawód Jerzy?",
+                "answer": "Inżynier w fabryce mebli biurowych"
+            },
+            {
+                "type": "short-answer",
+                "question": "Co robi żona Jerzego?",
+                "answer": "Uczy fizyki w liceum"
+            },
+            {
+                "type": "short-answer",
+                "question": "Jaki sport uprawia Jerzy?",
+                "answer": "Chodzi na basen"
+            },
+            {
+                "type": "short-answer",
+                "question": "Jakie jedzenie lubi jego rodzina?",
+                "answer": "Domowe jedzenie"
+            },
+            {
+                "type": "short-answer",
+                "question": "Co gotuje Jerzy w weekendy?",
+                "answer": "Kotlety z warzyw"
+            },
+            {
+                "type": "short-answer",
+                "question": "Na jaką okazję zaprasza ekipę telewizyjną?",
+                "answer": "Na każdą letnią sobotę"
+            }
+        ],
+        "tags": [
+            "Polish",
+            "family",
+            "food",
+            "A2"
+        ]
+    },
+    {
+        "title": "Moje życie",
+        "topic": "reading-comprehension",
+        "level": "A2",
+        "text": "Mam na imię Ola. Niektórzy mówią na mnie Aleksandra. Mam 30 lat. Mam brata, ale nie mam siostry. Mieszkam w Warszawie. To stolica Polski. Urodziłam się tu. Mieszkam w samym centrum. Idąc do pracy, przechodzę obok zamku. Lubię oglądać zabytki. Nie mam dzieci, ale mój brat ma dwójkę dzieci. Czasem bawię się z nimi. Lubię odwiedzać rodzinę. Prawie cała moja rodzina też mieszka w Warszawie. Czasem odwiedzają mnie rodzice. Staram się wtedy przygotować pyszne jedzenie. Podczas wizyty dużo rozmawiamy. Miło jest spędzać tak czas. Bardzo lubię konie. Niestety mieszkam w mieście, więc nie mogę ich hodować. Gdybym mieszkała na wsi, chciałabym mieć konia. Jeżdżenie na koniu jest przyjemne. Mam swojego węża. Jest bardzo ładny i nie jest groźny. Ale nie da się na nim jeździć jak na koniu. Pracuję przy komputerze. Pomagam innym ludziom. Pomaganie innym jest ważne. Ludzie uśmiechają się, gdy im pomogę i dziękują. Każdy powinien być miły i pomocny. Bardzo lubię biegać. Bieganie jest dobre dla zdrowia. Można spotkać miłych ludzi biegając. Jeśli nie biegaliście do tej pory – spróbujcie.",
+        "questions": [
+            {
+                "type": "true-false",
+                "question": "Ola ma siostrę.",
+                "answer": false
+            },
+            {
+                "type": "short-answer",
+                "question": "Gdzie mieszka Ola?",
+                "answer": "W Warszawie"
+            },
+            {
+                "type": "multiple-choice",
+                "question": "Co lubi robić Ola w wolnym czasie?",
+                "options": [
+                    "Gotować",
+                    "Biegać",
+                    "Tańczyć",
+                    "Śpiewać"
+                ],
+                "answer": "Biegać"
+            },
+            {
+                "type": "short-answer",
+                "question": "Jakie zwierzę ma Ola?",
+                "answer": "Węża"
+            },
+            {
+                "type": "true-false",
+                "question": "Ola ma dzieci.",
+                "answer": false
+            },
+            {
+                "type": "short-answer",
+                "question": "Czym zajmuje się Ola w pracy?",
+                "answer": "Pomaga innym ludziom"
+            }
+        ],
+        "tags": [
+            "A2",
+            "everyday life",
+            "family",
+            "animals"
+        ]
+    }
+]
