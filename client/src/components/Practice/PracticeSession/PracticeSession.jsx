@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import QuestionCard from "../QuestionCard/QuestionCard";
-import ScoreBoard from "../Scoreboard/ScoreBoard";
+import QuestionCard from "../../QuestionCard/QuestionCard";
+import ScoreBoard from "../../Scoreboard/ScoreBoard";
 
 import "./PracticeSession.css";
 

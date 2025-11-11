@@ -28,7 +28,7 @@ const topicLevels = {
 };
 
 // Load your exercises JSON file with proper path resolution
-const exercisesPath = path.resolve(__dirname, "../seed/exercises.json");
+const exercisesPath = path.resolve(__dirname, "../seed/data/exercises.json");
 const exercisesData = JSON.parse(fs.readFileSync(exercisesPath, "utf-8"));
 
 const connectAndSeed = async () => {
