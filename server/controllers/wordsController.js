@@ -9,7 +9,7 @@ import {
   buildSearchQuery,
   buildStatsAggregation,
   buildLemmaQuery,
-} from "../utils/wordQueries.js";
+} from "../utils/word/wordQueries.js";
 import { groupVerbForms, groupNominalForms } from "../utils/word/wordsUtils.js";
 
 const cache = new NodeCache({ stdTTL: 3600 });
