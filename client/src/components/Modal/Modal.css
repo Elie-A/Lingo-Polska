@@ -1,4 +1,4 @@
-.modal-overlay {
+.modals-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -14,13 +14,13 @@
     z-index: 1000;
 }
 
-.modal-overlay.show {
+.modals-overlay.show {
     background: rgba(0, 0, 0, 0.5);
     opacity: 1;
     pointer-events: auto;
 }
 
-.modal-content {
+.modals-contents {
     background: #fff;
     padding: 2rem;
     border-radius: 1rem;
@@ -33,18 +33,18 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.modal-overlay.show .modal-content {
+.modals-overlay.show .modals-contents {
     transform: translateY(0);
     opacity: 1;
 }
 
-.modal-actions {
+.modals-actions {
     margin-top: 1.5rem;
     display: flex;
     justify-content: space-around;
 }
 
-.modal-confirm {
+.modals-confirm {
     background: #dc2626;
     color: #fff;
     padding: 0.5rem 1rem;
@@ -55,12 +55,12 @@
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.modal-confirm:hover {
+.modals-confirm:hover {
     background: #b91c1c;
     transform: translateY(-2px);
 }
 
-.modal-cancel {
+.modals-cancel {
     background: #f3f4f6;
     color: #374151;
     padding: 0.5rem 1rem;
@@ -71,7 +71,7 @@
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.modal-cancel:hover {
+.modals-cancel:hover {
     background: #e5e7eb;
     transform: translateY(-2px);
 }

@@ -10,6 +10,7 @@ import practiceRoutes from "./routes/practiceRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 import exercisesRoutes from "./routes/exercisesRoutes.js";
 import readingComprehensionExercisesRoutes from "./routes/readingComprehensionExercisesRoutes.js";
+import wordsRoutes from "./routes/wordsRoutes.js";
 
 dotenv.config();
 
@@ -77,6 +78,7 @@ app.use("/api/contact", contactRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/exercises", exercisesRoutes);
 app.use("/api/reading", readingComprehensionExercisesRoutes);
+app.use("/api/words", wordsRoutes);
 
 // Health check
 app.get("/health", (req, res) => {
