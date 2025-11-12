@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import "./LoginPage.css";
 
 export default function LoginPage() {
@@ -13,21 +14,27 @@ export default function LoginPage() {
         setError("");
 
         try {
-            const res = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/login`, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ email, password }),
-            });
+            const response = await axios.post(
+                `${import.meta.env.VITE_API_URL}/api/auth/login`,
+                { email, password },
+                { headers: { "Content-Type": "application/json" } }
+            );
 
-            const data = await res.json();
+            // Axios automatically parses JSON
+            const data = response.data;
 
-            if (!res.ok) throw new Error(data.message || "Login failed");
-
+            // Save token and user info
             localStorage.setItem("adminToken", data.token);
             localStorage.setItem("adminUser", JSON.stringify(data.user));
+
             navigate("/admin");
         } catch (err) {
-            setError(err.message);
+            // Axios error handling
+            if (err.response && err.response.data && err.response.data.message) {
+                setError(err.response.data.message);
+            } else {
+                setError(err.message || "Login failed");
+            }
         }
     };
 
