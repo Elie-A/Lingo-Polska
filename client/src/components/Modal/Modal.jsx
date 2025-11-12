@@ -14,13 +14,13 @@ export default function Modal({ title, message, onConfirm, onCancel }) {
     };
 
     return (
-        <div className={`modal-overlay ${visible ? "show" : ""}`}>
-            <div className="modal-content">
+        <div className={`modals-overlay ${visible ? "show" : ""}`}>
+            <div className="modals-content">
                 <h3>{title}</h3>
                 <p>{message}</p>
-                <div className="modal-actions">
-                    <button className="modal-confirm" onClick={onConfirm}>Confirm</button>
-                    <button className="modal-cancel" onClick={handleClose}>Cancel</button>
+                <div className="modals-actions">
+                    <button className="modals-confirm" onClick={onConfirm}>Confirm</button>
+                    <button className="modals-cancel" onClick={handleClose}>Cancel</button>
                 </div>
             </div>
         </div>
