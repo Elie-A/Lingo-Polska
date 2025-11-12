@@ -28,10 +28,7 @@ function printProgress(current, total, elapsed) {
 
 async function importWords(filePath, estimatedTotalLines) {
   try {
-    await mongoose.connect(
-      "mongodb+srv://LingoPolskaDbUsr:OD73mKz%261K8%40S%5E4BqA%23%40@lingopolskacluster.ftmi9fj.mongodb.net/LingoPolska?retryWrites=true&w=majority&appName=LingoPolskaCluster",
-      { maxPoolSize: 50 }
-    );
+    await mongoose.connect(process.env.MONGO_URI, { maxPoolSize: 50 });
     console.log("✅ Connected to MongoDB");
 
     const batchSize = 30000;
@@ -100,8 +97,7 @@ async function importWords(filePath, estimatedTotalLines) {
 }
 
 // Path to your large file
-const filePath =
-  "C:/Users/eliea/Documents/vscode-projects/Lingo-Polska/server/seed/data/pol";
+const filePath = "../server/seed/data/pol";
 
 // Provide an estimated total lines for progress bar (~14M in your case)
 const estimatedTotalLines = 14096560;
