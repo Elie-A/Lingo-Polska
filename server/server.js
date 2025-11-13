@@ -1,15 +1,21 @@
+// server.js
 import express from "express";
 import cors from "cors";
 import compression from "compression";
 import helmet from "helmet";
-import mongoose from "mongoose";
 import dotenv from "dotenv";
+
+// Import Sequelize instance
+import sequelize from "./config/database.js";
+
+// Import routes
 import vocabularyRoutes from "./routes/vocabularyRoutes.js";
 import contactRoutes from "./routes/contactRoutes.js";
 import practiceRoutes from "./routes/practiceRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 import exercisesRoutes from "./routes/exercisesRoutes.js";
 import readingComprehensionExercisesRoutes from "./routes/readingComprehensionExercisesRoutes.js";
+import path from "path";
 import wordsRoutes from "./routes/wordsRoutes.js";
 
 dotenv.config();
@@ -17,23 +23,21 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Security middleware
+// ===== Security middleware =====
 app.use(helmet());
 
-// Compression middleware
+// ===== Compression middleware =====
 app.use(
   compression({
     filter: (req, res) => {
-      if (req.headers["x-no-compression"]) {
-        return false;
-      }
+      if (req.headers["x-no-compression"]) return false;
       return compression.filter(req, res);
     },
     level: 6,
   })
 );
 
-// CORS
+// ===== CORS =====
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:5173",
@@ -43,20 +47,9 @@ const allowedOrigins = [
 app.use(
   cors({
     origin: (origin, callback) => {
-      if (!origin) {
-        // Allow requests with no origin (e.g., mobile apps, Postman)
-        return callback(null, true);
-      }
-
-      if (allowedOrigins.includes(origin)) {
-        return callback(null, true);
-      }
-
-      if (!allowedOrigins.includes(origin)) {
-        console.warn(`Blocked CORS request from origin: ${origin}`);
-        return callback(new Error(`CORS policy: Origin ${origin} not allowed`));
-      }
-      // Explicitly reject other origins
+      if (!origin) return callback(null, true); // allow Postman or mobile apps
+      if (allowedOrigins.includes(origin)) return callback(null, true);
+      console.warn(`Blocked CORS request from origin: ${origin}`);
       return callback(new Error(`CORS policy: Origin ${origin} not allowed`));
     },
     credentials: true,
@@ -67,11 +60,11 @@ app.use(
 
 app.options("*", cors());
 
-// Body parsing
+// ===== Body parsing =====
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 
-// API Routes
+// ===== API Routes =====
 app.use("/api/vocabulary", vocabularyRoutes);
 app.use("/api/practice", practiceRoutes);
 app.use("/api/contact", contactRoutes);
@@ -80,17 +73,17 @@ app.use("/api/exercises", exercisesRoutes);
 app.use("/api/reading", readingComprehensionExercisesRoutes);
 app.use("/api/words", wordsRoutes);
 
-// Health check
+// ===== Health check =====
 app.get("/health", (req, res) => {
   res.status(200).json({ status: "OK", timestamp: new Date().toISOString() });
 });
 
-// 404 handler
+// ===== 404 handler =====
 app.use((req, res) => {
   res.status(404).json({ message: "Route not found", path: req.path });
 });
 
-// Global error handler
+// ===== Global error handler =====
 app.use((err, req, res, next) => {
   console.error("Global error handler:", err);
   res.status(err.statusCode || 500).json({
@@ -99,30 +92,31 @@ app.use((err, req, res, next) => {
   });
 });
 
-// MongoDB Connection
-mongoose
-  .connect(process.env.MONGO_URI || process.env.MONGODB_URI, {
-    maxPoolSize: 10,
-    minPoolSize: 2,
-    socketTimeoutMS: 45000,
-    serverSelectionTimeoutMS: 5000,
-  })
-  .then(() => {
-    console.log("✅ Connected to MongoDB");
+// ===== PostgreSQL Connection & Server Start =====
+const startServer = async () => {
+  try {
+    await sequelize.authenticate();
+    console.log("✅ Connected to PostgreSQL");
+
+    // Sync all models (creates tables if they don't exist)
+    // await sequelize.sync({ alter: true });
+    console.log("✅ Tables synced successfully");
 
     app.listen(PORT, () => {
       console.log(`🚀 Server running on port ${PORT}`);
     });
-  })
-  .catch((err) => {
-    console.error("❌ MongoDB connection error:", err);
+  } catch (error) {
+    console.error("❌ PostgreSQL connection error:", error);
     process.exit(1);
-  });
+  }
+};
 
-// Graceful shutdown
+startServer();
+
+// ===== Graceful shutdown =====
 process.on("SIGINT", async () => {
   console.log("\n🛑 Shutting down gracefully...");
-  await mongoose.connection.close();
+  await sequelize.close();
   process.exit(0);
 });
 

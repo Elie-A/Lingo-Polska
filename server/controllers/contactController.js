@@ -1,3 +1,4 @@
+// controllers/contactController.js
 import Contact from "../models/Contact.js";
 import resend from "../config/email.js";
 
@@ -12,7 +13,7 @@ export const sendContactEmail = async (req, res) => {
       });
     }
 
-    // Save to database
+    // Save to PostgreSQL
     const contact = await Contact.create({ name, email, message });
 
     // Admin email

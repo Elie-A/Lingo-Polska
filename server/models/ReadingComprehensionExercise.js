@@ -1,68 +1,81 @@
-import mongoose from "mongoose";
+import { DataTypes, Model } from "sequelize";
+import sequelize from "../config/database.js"; // your Sequelize instance
 
-const questionSchema = new mongoose.Schema(
+class ReadingComprehensionExercise extends Model {}
+ReadingComprehensionExercise.init(
   {
-    type: {
-      type: String,
-      required: true,
-      enum: [
-        "multiple-choice",
-        "true-false",
-        "fill-in-the-blank",
-        "short-answer",
-      ],
-      index: true,
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
-    question: { type: String, required: true },
-    options: [{ type: String }], // For MCQ or fill-in options
-    answer: { type: mongoose.Schema.Types.Mixed, required: true },
-    // can be string, array, or boolean (for flexibility)
-    hints: [{ type: String }],
-  },
-  { _id: false }
-);
-
-const readingComprehensionExerciseSchema = new mongoose.Schema(
-  {
-    title: { type: String, required: true },
-    topic: { type: String, required: true, index: true },
+    topic: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     level: {
-      type: String,
-      required: true,
-      enum: ["A1", "A2", "B1", "B2", "C1", "C2"],
-      index: true,
+      type: DataTypes.ENUM("A1", "A2", "B1", "B2", "C1", "C2"),
+      allowNull: false,
     },
-    text: { type: String, required: true },
-    questions: {
-      type: [questionSchema],
-      validate: {
-        validator: (arr) => arr.length > 0,
-        message: "At least one question is required",
-      },
+    text: {
+      type: DataTypes.TEXT,
+      allowNull: false,
     },
-    tags: [{ type: String }], // optional — for search or classification
+    tags: {
+      type: DataTypes.ARRAY(DataTypes.STRING),
+      defaultValue: [],
+    },
   },
   {
+    sequelize,
+    modelName: "ReadingComprehensionExercise",
+    tableName: "reading_comprehension_exercises",
     timestamps: true,
-    collation: { locale: "en", strength: 2 }, // case-insensitive comparisons
   }
 );
 
-// Compound indexes for efficient lookups
-readingComprehensionExerciseSchema.index({ topic: 1, level: 1 });
-readingComprehensionExerciseSchema.index({
-  topic: 1,
-  level: 1,
-  "questions.type": 1,
-});
-readingComprehensionExerciseSchema.index({ createdAt: -1 });
-
-// Optional text index for full-text search in future
-// readingComprehensionExerciseSchema.index({ title: "text", text: "text", "questions.question": "text" });
-
-const ReadingComprehensionExercise = mongoose.model(
-  "ReadingComprehensionExercise",
-  readingComprehensionExerciseSchema
+class Question extends Model {}
+Question.init(
+  {
+    type: {
+      type: DataTypes.ENUM(
+        "multiple-choice",
+        "true-false",
+        "fill-in-the-blank",
+        "short-answer"
+      ),
+      allowNull: false,
+    },
+    question: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    options: {
+      type: DataTypes.ARRAY(DataTypes.STRING),
+      defaultValue: [],
+    },
+    answer: {
+      type: DataTypes.JSONB, // supports string, array, boolean
+      allowNull: false,
+    },
+    hints: {
+      type: DataTypes.ARRAY(DataTypes.STRING),
+      defaultValue: [],
+    },
+  },
+  {
+    sequelize,
+    modelName: "Question",
+    tableName: "questions",
+    timestamps: false,
+  }
 );
 
-export default ReadingComprehensionExercise;
+// Associations
+ReadingComprehensionExercise.hasMany(Question, {
+  foreignKey: "exerciseId",
+  as: "questions",
+  onDelete: "CASCADE",
+});
+Question.belongsTo(ReadingComprehensionExercise, { foreignKey: "exerciseId" });
+
+export { ReadingComprehensionExercise, Question };

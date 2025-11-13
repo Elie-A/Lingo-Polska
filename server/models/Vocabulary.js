@@ -1,49 +1,44 @@
-import mongoose from "mongoose";
+import { DataTypes } from "sequelize";
+import sequelize from "../config/database.js";
 
-const vocabularySchema = new mongoose.Schema(
+const Vocabulary = sequelize.define(
+  "Vocabulary",
   {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     polish: {
-      type: String,
-      required: true,
-      trim: true,
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     english: {
-      type: String,
-      required: true,
-      trim: true,
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     category: {
-      type: String,
-      required: true,
-      trim: true,
-      index: true,
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     level: {
-      type: String,
-      required: true,
-      enum: ["A1", "A2", "B1", "B2", "C1", "C2"],
-      index: true,
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        isIn: [["A1", "A2", "B1", "B2", "C1", "C2"]],
+      },
     },
   },
   {
+    tableName: "vocabulary",
     timestamps: true,
+    indexes: [
+      { fields: ["category"] },
+      { fields: ["level"] },
+      { fields: ["polish", "english"] },
+      { unique: true, fields: ["polish", "english", "category", "level"] },
+    ],
   }
 );
-
-// Compound indexes for common query patterns
-vocabularySchema.index({ category: 1, polish: 1 }); // For sorted category views
-vocabularySchema.index({ level: 1, category: 1 }); // For level + category filtering
-vocabularySchema.index({ polish: 1, english: 1 }); // For search queries
-
-// Text index for full-text search (optional but very powerful)
-vocabularySchema.index({ polish: "text", english: "text" });
-
-// Compound unique index to prevent exact duplicate entries
-vocabularySchema.index(
-  { polish: 1, english: 1, category: 1, level: 1 },
-  { unique: true, name: "unique_polish_english_category_level" }
-);
-
-const Vocabulary = mongoose.model("Vocabulary", vocabularySchema);
 
 export default Vocabulary;

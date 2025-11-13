@@ -1,39 +1,60 @@
-import mongoose from "mongoose";
+// models/Exercise.js
+import { DataTypes } from "sequelize";
+import sequelize from "../config/database.js";
 
-const exerciseSchema = new mongoose.Schema(
+const Exercise = sequelize.define(
+  "Exercise",
   {
-    question: { type: String, required: true },
-    answer: { type: String, required: true },
-    topic: { type: String, required: true, index: true }, // Add index
-    type: { type: String, required: true, index: true }, // Add index
-    level: {
-      type: String,
-      required: true,
-      enum: ["A1", "A2", "B1", "B2", "C1", "C2"],
-      index: true, // Add index
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
     },
-    options: [{ type: String }],
-    hints: [{ type: String }],
-    text: { type: String },
+    question: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    answer: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    topic: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    type: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    level: {
+      type: DataTypes.ENUM("A1", "A2", "B1", "B2", "C1", "C2"),
+      allowNull: false,
+    },
+    options: {
+      type: DataTypes.ARRAY(DataTypes.TEXT), // array of strings
+      defaultValue: [],
+    },
+    hints: {
+      type: DataTypes.ARRAY(DataTypes.TEXT),
+      defaultValue: [],
+    },
+    text: {
+      type: DataTypes.TEXT,
+    },
   },
   {
+    tableName: "exercises",
     timestamps: true,
-    // Optimize for read-heavy operations
-    collation: { locale: "en", strength: 2 }, // Case-insensitive by default
+    indexes: [
+      { fields: ["topic"] },
+      { fields: ["type"] },
+      { fields: ["level"] },
+      { fields: ["topic", "level"] },
+      { fields: ["topic", "type"] },
+      { fields: ["topic", "level", "type"] },
+      { fields: ["createdAt"], order: [["createdAt", "DESC"]] },
+    ],
   }
 );
-
-// Compound indexes for common query patterns
-exerciseSchema.index({ topic: 1, level: 1 });
-exerciseSchema.index({ topic: 1, type: 1 });
-exerciseSchema.index({ topic: 1, level: 1, type: 1 });
-
-// Index for sorting by creation date
-exerciseSchema.index({ createdAt: -1 });
-
-// Text index for search functionality (if needed in future)
-// exerciseSchema.index({ question: 'text', answer: 'text' });
-
-const Exercise = mongoose.model("Exercise", exerciseSchema);
 
 export default Exercise;

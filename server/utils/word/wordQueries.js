@@ -1,4 +1,6 @@
-// Build MongoDB query dynamically from request body
+import { Op } from "sequelize";
+
+// Build dynamic WHERE clause for Sequelize
 export const buildSearchQuery = (body) => {
   const {
     lemma,
@@ -10,54 +12,38 @@ export const buildSearchQuery = (body) => {
     person,
     mood,
   } = body;
-  const query = {};
-  if (lemma) query.lemma = lemma;
-  if (partOfSpeech) query.partOfSpeech = partOfSpeech.toUpperCase();
-  if (caseValue) query.case = caseValue;
-  if (number) query.number = number;
-  if (gender) query.gender = gender;
-  if (tense) query.tense = tense;
-  if (person) query.person = person;
-  if (mood) query.mood = mood;
-  return query;
+
+  const where = {};
+  if (lemma) where.lemma = lemma;
+  if (partOfSpeech) where.partOfSpeech = partOfSpeech.toUpperCase();
+  if (caseValue) where.case = caseValue;
+  if (number) where.number = number;
+  if (gender) where.gender = gender;
+  if (tense) where.tense = tense;
+  if (person) where.person = person;
+  if (mood) where.mood = mood;
+
+  return where;
 };
 
-// Build aggregation pipeline for statistics
-export const buildStatsAggregation = () => [
-  {
-    $group: {
-      _id: "$partOfSpeech",
-      totalForms: { $sum: 1 },
-      uniqueLemmas: { $addToSet: "$lemma" },
-    },
-  },
-  {
-    $project: {
-      partOfSpeech: "$_id",
-      totalForms: 1,
-      uniqueLemmas: { $size: "$uniqueLemmas" },
-    },
-  },
-];
-
-// Build lemma query and aggregation
+// Lemma search
 export const buildLemmaQuery = (queryParams) => {
   const { search, pos, limit = 50 } = queryParams;
-  const query = {};
-  if (search) query.lemma = { $regex: search, $options: "i" };
-  if (pos) query.partOfSpeech = pos.toUpperCase();
+  const where = {};
 
-  const pipeline = [
-    { $match: query },
-    {
-      $group: {
-        _id: { lemma: "$lemma", pos: "$partOfSpeech" },
-        count: { $sum: 1 },
-      },
-    },
-    { $sort: { "_id.lemma": 1 } },
-    { $limit: parseInt(limit, 10) },
-  ];
+  if (search) where.lemma = { [Op.iLike]: `%${search}%` };
+  if (pos) where.partOfSpeech = pos.toUpperCase();
 
-  return { query, pipeline };
+  return { where, limit: parseInt(limit, 10) };
 };
+
+// Stats query (raw SQL for performance)
+export const buildStatsQuery = () => `
+  SELECT 
+    "partOfSpeech" AS "partOfSpeech",
+    COUNT(*) AS "totalForms",
+    COUNT(DISTINCT "lemma") AS "uniqueLemmas"
+  FROM "Words"
+  GROUP BY "partOfSpeech"
+  ORDER BY "partOfSpeech" ASC;
+`;

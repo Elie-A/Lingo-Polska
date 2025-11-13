@@ -1,11 +1,27 @@
 import fs from "fs";
 import readline from "readline";
+import path from "path";
+import { fileURLToPath } from "url";
+import dotenv from "dotenv";
+import sequelize from "../config/database.js";
+import Word from "../models/word.js";
 
-// Parse UniMorph features into structured object
-export function parseFeatures(featureString) {
-  const features = featureString.split(";");
+dotenv.config({ path: path.resolve("server/.env") });
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const polPath = path.resolve(__dirname, "../seed/data/pol");
+
+/**
+ * Parse UniMorph features into structured object
+ */
+function parseFeatures(featureString) {
+  const features = featureString.split(";").map((f) => f.trim());
+  const featureSet = new Set(features);
+
   const parsed = {
-    partOfSpeech: null,
+    partOfSpeech: "OTHER",
     tense: null,
     person: null,
     mood: null,
@@ -20,89 +36,126 @@ export function parseFeatures(featureString) {
     polarity: null,
   };
 
-  if (features.includes("V")) parsed.partOfSpeech = "VERB";
-  else if (features.includes("N")) parsed.partOfSpeech = "NOUN";
-  else if (features.includes("ADJ")) parsed.partOfSpeech = "ADJECTIVE";
-  else parsed.partOfSpeech = "OTHER";
+  // Part-of-speech
+  if (featureSet.has("V")) parsed.partOfSpeech = "VERB";
+  else if (featureSet.has("N")) parsed.partOfSpeech = "NOUN";
+  else if (featureSet.has("ADJ")) parsed.partOfSpeech = "ADJECTIVE";
 
-  const tenseMap = { PST: "past", PRS: "present", FUT: "future" };
-  const personMap = { 1: "first", 2: "second", 3: "third" };
-  const moodMap = {
-    IND: "indicative",
-    IMP: "imperative",
-    COND: "conditional",
-    SBJV: "subjunctive",
+  // Feature mappings
+  const featureMaps = {
+    tense: { PST: "past", PRS: "present", FUT: "future" },
+    person: { 1: "first", 2: "second", 3: "third" },
+    mood: {
+      IND: "indicative",
+      IMP: "imperative",
+      COND: "conditional",
+      SBJV: "subjunctive",
+    },
+    aspect: { PFV: "perfective", IPFV: "imperfective" },
+    voice: { ACT: "active", PASS: "passive" },
+    case: {
+      NOM: "nominative",
+      GEN: "genitive",
+      DAT: "dative",
+      ACC: "accusative",
+      INS: "instrumental",
+      LOC: "locative",
+      VOC: "vocative",
+    },
+    number: { SG: "singular", PL: "plural" },
+    gender: { MASC: "masculine", FEM: "feminine", NEUT: "neuter" },
+    animacy: { ANIM: "animate", INAN: "inanimate", HUM: "human" },
+    degree: { POS: "positive", CMPR: "comparative", SPRL: "superlative" },
+    polarity: { NEG: "negative", POS: "positive" },
   };
-  const aspectMap = { PFV: "perfective", IPFV: "imperfective" };
-  const voiceMap = { ACT: "active", PASS: "passive" };
 
-  const caseMap = {
-    NOM: "nominative",
-    GEN: "genitive",
-    DAT: "dative",
-    ACC: "accusative",
-    INS: "instrumental",
-    LOC: "locative",
-    VOC: "vocative",
-  };
-  const numberMap = { SG: "singular", PL: "plural" };
-  const genderMap = { MASC: "masculine", FEM: "feminine", NEUT: "neuter" };
-  const animacyMap = { ANIM: "animate", INAN: "inanimate", HUM: "human" };
-  const degreeMap = {
-    POS: "positive",
-    CMPR: "comparative",
-    SPRL: "superlative",
-  };
-  const polarityMap = { NEG: "negative", POS: "positive" };
-
-  features.forEach((f) => {
-    if (tenseMap[f]) parsed.tense = tenseMap[f];
-    if (personMap[f]) parsed.person = personMap[f];
-    if (moodMap[f]) parsed.mood = moodMap[f];
-    if (aspectMap[f]) parsed.aspect = aspectMap[f];
-    if (voiceMap[f]) parsed.voice = voiceMap[f];
-    if (caseMap[f]) parsed.case = caseMap[f];
-    if (numberMap[f]) parsed.number = numberMap[f];
-    if (genderMap[f]) parsed.gender = genderMap[f];
-    if (animacyMap[f]) parsed.animacy = animacyMap[f];
-    if (degreeMap[f]) parsed.degree = degreeMap[f];
-    if (polarityMap[f]) parsed.polarity = polarityMap[f];
-  });
+  for (const f of features) {
+    for (const [key, map] of Object.entries(featureMaps)) {
+      if (map[f]) parsed[key] = map[f];
+    }
+  }
 
   return parsed;
 }
 
-export async function parseUnimorphFile(filePath) {
-  const words = [];
-  const fileStream = fs.createReadStream(filePath);
-  const rl = readline.createInterface({
-    input: fileStream,
-    crlfDelay: Infinity,
-  });
+/**
+ * Import UniMorph TSV file into PostgreSQL
+ */
+export async function importUnimorphFile(filePath, batchSize = 10000) {
+  try {
+    await sequelize.authenticate();
+    console.log("✅ Connected to PostgreSQL");
 
-  let lineCount = 0;
-  for await (const line of rl) {
-    lineCount++;
-    if (!line.trim()) continue;
+    const fileStream = fs.createReadStream(filePath);
+    const rl = readline.createInterface({
+      input: fileStream,
+      crlfDelay: Infinity,
+    });
 
-    const parts = line.split("\t");
-    if (parts.length < 3) {
-      console.warn(`Skipping malformed line ${lineCount}: ${line}`);
-      continue;
+    let batch = [];
+    let totalProcessed = 0;
+    let insertedCount = 0;
+
+    for await (const line of rl) {
+      totalProcessed++;
+      if (!line.trim()) continue;
+
+      const [lemma, inflectedForm, features] = line.split("\t");
+      if (!lemma || !inflectedForm || !features) continue;
+
+      const featureSet = new Set(features.split(";"));
+      if (
+        !featureSet.has("V") &&
+        !featureSet.has("N") &&
+        !featureSet.has("ADJ")
+      )
+        continue;
+
+      const parsedFeatures = parseFeatures(features);
+
+      batch.push({
+        lemma: lemma.trim(),
+        inflectedForm: inflectedForm.trim(),
+        features: features.trim(),
+        partOfSpeech: parsedFeatures.partOfSpeech,
+        tense: parsedFeatures.tense,
+        person: parsedFeatures.person,
+        mood: parsedFeatures.mood,
+        aspect: parsedFeatures.aspect,
+        voice: parsedFeatures.voice,
+        gramCase: parsedFeatures.case,
+        number: parsedFeatures.number,
+        gender: parsedFeatures.gender,
+        animacy: parsedFeatures.animacy,
+        degree: parsedFeatures.degree,
+        definiteness: parsedFeatures.definiteness,
+        polarity: parsedFeatures.polarity,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      });
+
+      if (batch.length >= batchSize) {
+        await Word.bulkCreate(batch, { ignoreDuplicates: true });
+        insertedCount += batch.length;
+        batch = [];
+        process.stdout.write(`\rInserted ${insertedCount} words...`);
+      }
     }
 
-    const [lemma, inflectedForm, features] = parts;
-    if (!features.match(/\b(V|N|ADJ)\b/)) continue;
+    if (batch.length > 0) {
+      await Word.bulkCreate(batch, { ignoreDuplicates: true });
+      insertedCount += batch.length;
+    }
 
-    const parsedFeatures = parseFeatures(features);
-
-    words.push({
-      lemma: lemma.trim(),
-      inflectedForm: inflectedForm.trim(),
-      features: features.trim(),
-      ...parsedFeatures,
-    });
+    console.log(
+      `\n🎉 Import complete. Processed: ${totalProcessed}, Inserted: ${insertedCount}`
+    );
+  } catch (err) {
+    console.error("❌ Import failed:", err);
+  } finally {
+    await sequelize.close();
   }
-
-  return words;
 }
+
+// Run
+importUnimorphFile(polPath, 30000);

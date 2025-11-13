@@ -6,16 +6,12 @@ export const register = async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    // Check if user already exists
-    const existing = await User.findOne({ email });
+    const existing = await User.findOne({ where: { email } });
     if (existing) {
       return res.status(400).json({ message: "Admin user already exists" });
     }
 
-    // The password will be hashed automatically by the pre-save hook
-    const user = new User({ email, password });
-    await user.save();
-
+    await User.create({ email, password });
     res.status(201).json({ message: "Admin User created successfully" });
   } catch (error) {
     console.error(error);
@@ -28,8 +24,7 @@ export const login = async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    const user = await User.findOne({ email });
-
+    const user = await User.findOne({ where: { email } });
     if (!user) {
       return res.status(400).json({ message: "Invalid credentials" });
     }
@@ -40,7 +35,7 @@ export const login = async (req, res) => {
     }
 
     const token = jwt.sign(
-      { id: user._id, email: user.email },
+      { id: user.id, email: user.email },
       process.env.JWT_SECRET,
       { expiresIn: "8h" }
     );

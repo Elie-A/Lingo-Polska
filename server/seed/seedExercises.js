@@ -1,19 +1,17 @@
-import mongoose from "mongoose";
+// seedExercises.js
 import dotenv from "dotenv";
-import Exercise from "../models/Exercise.js";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import sequelize from "../config/database.js";
+import Exercise from "../models/Exercise.js";
 
-// Get the directory name in ES modules
+dotenv.config({ path: path.resolve("server/.env") });
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-dotenv.config();
-
-const MONGO_URI = process.env.MONGO_URI;
-
-// Default levels for topics (fallback if question doesn't have level)
+// Default levels for topics (fallback if exercise doesn't have level)
 const topicLevels = {
   grammar: "A1",
   numbers: "A1",
@@ -24,22 +22,23 @@ const topicLevels = {
   adjectives: "A2",
   phrases: "A1",
   prepositions: "B1",
-  conditional: "A2", // default if no level provided
+  conditional: "A2",
 };
 
-// Load your exercises JSON file with proper path resolution
+// Load exercises JSON file
 const exercisesPath = path.resolve(__dirname, "../seed/data/exercises.json");
 const exercisesData = JSON.parse(fs.readFileSync(exercisesPath, "utf-8"));
 
-const connectAndSeed = async () => {
+const seedExercises = async () => {
   try {
-    await mongoose.connect(MONGO_URI, {
-      dbName: "LingoPolska",
-    });
-    console.log("✅ Connected to MongoDB");
+    await sequelize.authenticate();
+    console.log("✅ Connected to PostgreSQL");
+
+    // Optional: sync model (create table if not exists)
+    await Exercise.sync({ alter: true });
 
     // Clear existing exercises
-    await Exercise.deleteMany({});
+    await Exercise.destroy({ where: {} });
     console.log("🗑 Cleared existing exercises");
 
     // Flatten and enrich exercises
@@ -48,15 +47,17 @@ const connectAndSeed = async () => {
         exercises.map((exercise) => ({
           ...exercise,
           topic,
-          // Keep question level if provided, otherwise fallback to topic default
           level: exercise.level || topicLevels[topic] || "A1",
-          // Default type if not provided
           type: exercise.type || "fill-in-the-blank",
+          options: exercise.options || [],
+          hints: exercise.hints || [],
         }))
     );
 
-    // Insert data
-    const inserted = await Exercise.insertMany(allExercises);
+    // Insert data in bulk
+    const inserted = await Exercise.bulkCreate(allExercises, {
+      returning: true,
+    });
     console.log(`✅ Inserted ${inserted.length} exercises`);
 
     // Log level distribution
@@ -64,7 +65,6 @@ const connectAndSeed = async () => {
       acc[ex.level] = (acc[ex.level] || 0) + 1;
       return acc;
     }, {});
-
     console.log("\n📊 Exercises by level:");
     Object.entries(levelCounts)
       .sort(([a], [b]) => a.localeCompare(b))
@@ -77,17 +77,16 @@ const connectAndSeed = async () => {
       acc[ex.type] = (acc[ex.type] || 0) + 1;
       return acc;
     }, {});
-
     console.log("\n📝 Exercises by type:");
     Object.entries(typeCounts).forEach(([type, count]) => {
       console.log(`   ${type}: ${count} exercises`);
     });
 
-    await mongoose.disconnect();
-    console.log("\n✅ Disconnected from MongoDB");
+    await sequelize.close();
+    console.log("\n✅ Disconnected from PostgreSQL");
   } catch (err) {
-    console.error("❌ Error:", err);
+    console.error("❌ Error seeding exercises:", err);
   }
 };
 
-connectAndSeed();
+seedExercises();

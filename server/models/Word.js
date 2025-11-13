@@ -1,34 +1,42 @@
-import mongoose from "mongoose";
+import { DataTypes } from "sequelize";
+import sequelize from "../config/database.js";
 
-const wordSchema = new mongoose.Schema({
-  lemma: { type: String, required: true, index: true },
-  inflectedForm: { type: String, required: true },
-  features: { type: String, required: true },
-  partOfSpeech: { type: String, required: true, index: true }, // V, N, ADJ
+const Word = sequelize.define(
+  "Word",
+  {
+    lemma: { type: DataTypes.STRING, allowNull: false },
+    inflectedForm: { type: DataTypes.STRING, allowNull: false },
+    features: { type: DataTypes.STRING, allowNull: false },
+    partOfSpeech: { type: DataTypes.STRING, allowNull: false },
+    tense: { type: DataTypes.STRING },
+    person: { type: DataTypes.STRING },
+    mood: { type: DataTypes.STRING },
+    aspect: { type: DataTypes.STRING },
+    voice: { type: DataTypes.STRING },
+    gramCase: { type: DataTypes.STRING, field: "case" },
+    number: { type: DataTypes.STRING },
+    gender: { type: DataTypes.STRING },
+    animacy: { type: DataTypes.STRING },
+    degree: { type: DataTypes.STRING },
+    definiteness: { type: DataTypes.STRING },
+    polarity: { type: DataTypes.STRING },
+  },
+  {
+    tableName: "words",
+    indexes: [
+      { fields: ["lemma"], name: "idx_words_lemma" },
+      { fields: ["partOfSpeech"], name: "idx_words_part_of_speech" },
+      {
+        fields: ["lemma", "partOfSpeech"],
+        name: "idx_words_lemma_part_of_speech",
+      },
+      {
+        fields: ["partOfSpeech", "case"],
+        name: "idx_words_part_of_speech_case",
+      },
+      { fields: ["lemma", "features"], name: "idx_words_lemma_features" },
+    ],
+  }
+);
 
-  // Verb features
-  tense: String,
-  person: String,
-  mood: String,
-  aspect: String,
-  voice: String,
-
-  // Noun/Adjective features
-  case: String, // NOM, GEN, DAT, ACC, INS, LOC, VOC
-  number: String, // SG, PL
-  gender: String, // MASC, FEM, NEUT
-  animacy: String, // ANIM, INAN, HUM
-
-  // Additional features
-  degree: String, // POS, CMPR, SPRL (positive, comparative, superlative)
-  definiteness: String,
-  polarity: String, // NEG, POS
-});
-
-// Compound indexes for efficient queries
-wordSchema.index({ lemma: 1, partOfSpeech: 1 });
-wordSchema.index({ partOfSpeech: 1, case: 1 });
-wordSchema.index({ lemma: 1, features: 1 });
-
-const Word = mongoose.model("Word", wordSchema);
 export default Word;
