@@ -1,5 +1,13 @@
+// controllers/wordController.js
 import NodeCache from "node-cache";
-import Word from "../models/Word.js";
+import {
+  VerbWord,
+  NounWord,
+  AdjectiveWord,
+  AdverbWord,
+  PronounWord,
+  NumeralWord,
+} from "../models/Word.js";
 import {
   handleSuccess,
   handleError,
@@ -10,22 +18,61 @@ import {
   buildStatsAggregation,
   buildLemmaQuery,
 } from "../utils/word/wordQueries.js";
-import { groupVerbForms, groupNominalForms } from "../utils/word/wordsUtils.js";
+import {
+  groupVerbForms,
+  groupNominalForms,
+  groupOtherForms,
+} from "../utils/word/wordsUtils.js";
 
 const cache = new NodeCache({ stdTTL: 3600 });
 
-// Get all unique lemmas (for search/autocomplete)
+// POS → model mapping
+const posModelMap = {
+  VERB: VerbWord,
+  NOUN: NounWord,
+  ADJECTIVE: AdjectiveWord,
+  ADVERB: AdverbWord,
+  PRONOUN: PronounWord,
+  NUMERAL: NumeralWord,
+};
+
+// ---------------- Helper functions ---------------- //
+
+// Search all models for a lemma (parallel)
+const findFormsByLemma = async (lemma) => {
+  const promises = Object.values(posModelMap).map((model) =>
+    model.find({ lemma })
+  );
+  const results = await Promise.all(promises);
+  return results.find((arr) => arr.length) || [];
+};
+
+// Search for an inflected form (parallel)
+const findLemmaByInflected = async (word) => {
+  const promises = Object.values(posModelMap).map((model) =>
+    model.findOne({ inflectedForm: word })
+  );
+  const results = await Promise.all(promises);
+  const found = results.find((r) => r);
+  return found ? found.lemma : null;
+};
+
+// ---------------- Controllers ---------------- //
+
+// Get all unique lemmas (for autocomplete/search)
 export const getLemmas = async (req, res) => {
   try {
-    // Create a cache key based on query params
     const cacheKey = `lemmas:${JSON.stringify(req.query)}`;
     const cached = cache.get(cacheKey);
-    if (cached) {
-      return handleSuccess(res, cached, "Cached lemmas");
-    }
+    if (cached) return handleSuccess(res, cached, "Cached lemmas");
 
     const { pipeline } = buildLemmaQuery(req.query);
-    const lemmas = await Word.aggregate(pipeline);
+
+    const aggPromises = Object.values(posModelMap).map((model) =>
+      model.aggregate(pipeline)
+    );
+    const aggResults = await Promise.all(aggPromises);
+    const lemmas = aggResults.flat();
 
     const data = lemmas.map((l) => ({
       lemma: l._id.lemma,
@@ -33,49 +80,37 @@ export const getLemmas = async (req, res) => {
       formCount: l.count,
     }));
 
-    // Store in cache
     cache.set(cacheKey, data);
-
     handleSuccess(res, data, "Lemmas fetched successfully");
   } catch (error) {
     handleError(res, error);
   }
 };
 
-// Main lookup: Get full declension/conjugation (auto-detects lemma or inflected form)
+// Get full declension/conjugation for a word
 export const getInflections = async (req, res) => {
   try {
     let { word } = req.params;
-    word = word.trim().toLowerCase(); // normalize input
+    word = word.trim().toLowerCase();
 
-    // Check cache first
     const cached = cache.get(word);
-    if (cached) {
-      return handleSuccess(res, cached, "Cached result");
-    }
+    if (cached) return handleSuccess(res, cached, "Cached result");
 
-    // Try to find lemma directly
-    let forms = await Word.find({ lemma: word });
+    let forms = await findFormsByLemma(word);
 
     // If not found, try as inflected form
     if (!forms.length) {
-      const inflected = await Word.findOne({ inflectedForm: word });
-      if (inflected) {
-        word = inflected.lemma;
-        forms = await Word.find({ lemma: word });
-      }
+      const lemma = await findLemmaByInflected(word);
+      if (lemma) forms = await findFormsByLemma(lemma);
+      word = lemma || word;
     }
 
-    // Not found → 404
-    if (!forms.length) {
+    if (!forms.length)
       return handleNotFound(res, `No forms found for '${word}'`);
-    }
 
-    // Detect part of speech
     const partOfSpeech = forms[0].partOfSpeech;
-
-    // Group forms
     let inflections;
+
     switch (partOfSpeech) {
       case "VERB":
         inflections = groupVerbForms(forms);
@@ -85,7 +120,7 @@ export const getInflections = async (req, res) => {
         inflections = groupNominalForms(forms);
         break;
       default:
-        inflections = { other: forms };
+        inflections = groupOtherForms(forms);
     }
 
     const responseData = {
@@ -95,10 +130,7 @@ export const getInflections = async (req, res) => {
       inflections,
     };
 
-    // Store in cache
     cache.set(word, responseData);
-
-    // Return
     handleSuccess(
       res,
       responseData,
@@ -109,23 +141,31 @@ export const getInflections = async (req, res) => {
   }
 };
 
-// Search inflected forms by morphological features
+// Search forms by morphological features
 export const searchForms = async (req, res) => {
   try {
-    // Create a cache key based on search body
     const cacheKey = `search:${JSON.stringify(req.body)}`;
     const cached = cache.get(cacheKey);
-    if (cached) {
-      return handleSuccess(res, cached, "Cached search results");
-    }
+    if (cached) return handleSuccess(res, cached, "Cached search results");
 
     const query = buildSearchQuery(req.body);
-    const results = await Word.find(query).limit(100);
 
-    // Store in cache
-    cache.set(cacheKey, results);
+    const searchPromises = Object.values(posModelMap).map((model) =>
+      model.find(query).limit(100)
+    );
+    const resultsArrays = await Promise.all(searchPromises);
+    const results = resultsArrays.flat();
 
-    handleSuccess(res, results, "Search results");
+    // Optional: group by POS if needed for UI
+    const groupedByPOS = results.reduce((acc, f) => {
+      const pos = f.partOfSpeech || "OTHER";
+      acc[pos] = acc[pos] || [];
+      acc[pos].push(f);
+      return acc;
+    }, {});
+
+    cache.set(cacheKey, groupedByPOS);
+    handleSuccess(res, groupedByPOS, "Search results");
   } catch (error) {
     handleError(res, error);
   }
@@ -136,16 +176,17 @@ export const getStats = async (req, res) => {
   try {
     const cacheKey = "stats";
     const cached = cache.get(cacheKey);
-    if (cached) {
-      return handleSuccess(res, cached, "Cached statistics");
-    }
+    if (cached) return handleSuccess(res, cached, "Cached statistics");
 
     const pipeline = buildStatsAggregation();
-    const stats = await Word.aggregate(pipeline);
 
-    // Store in cache with TTL (e.g., 6 hours = 21600 seconds)
-    cache.set(cacheKey, stats, 21600);
+    const statsPromises = Object.values(posModelMap).map((model) =>
+      model.aggregate(pipeline)
+    );
+    const statsArrays = await Promise.all(statsPromises);
+    const stats = statsArrays.flat();
 
+    cache.set(cacheKey, stats, 21600); // 6 hours
     handleSuccess(res, stats, "Statistics fetched successfully");
   } catch (error) {
     handleError(res, error);

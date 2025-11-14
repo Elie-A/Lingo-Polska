@@ -117,7 +117,7 @@ const Collapse = ({ data }) => {
                                                                     row.polish || "",
                                                                     row.stem || "",
                                                                     row.ending || "",
-                                                                    row.polishRest || ""
+                                                                    // row.polishRest || ""
                                                                 )}
                                                             </td>
                                                             <td>{row.english || "-"}</td>
