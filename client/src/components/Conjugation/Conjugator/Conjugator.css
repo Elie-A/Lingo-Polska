@@ -134,6 +134,7 @@ body {
 .table-wrapper {
     overflow-x: auto;
     margin-top: 0.5rem;
+    max-height: 500px;
 }
 
 .inflection-table {

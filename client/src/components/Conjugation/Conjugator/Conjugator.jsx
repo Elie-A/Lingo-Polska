@@ -3,22 +3,12 @@ import axios from "axios";
 import "./Conjugator.css";
 
 const posOptions = ["VERB", "NOUN", "ADJECTIVE", "ADVERB", "PRONOUN", "NUMERAL"];
-const pronounOrder = ["ja", "ty", "on/ona/ono", "my", "wy", "oni/one"];
+const pronounOrder = ["ja", "ty", "on", "ona", "ono", "my", "wy", "oni", "one", "oni, one"];
 const nounCases = ["nominative", "genitive", "dative", "accusative", "instrumental", "locative", "vocative"];
 const genders = ["m", "f", "n"];
 const numbers = ["singular", "plural"];
 
 // --------- Utility Functions ---------
-
-const pronounFrom = (f) => {
-    if (f.person === "first" && f.number === "singular") return "ja";
-    if (f.person === "second" && f.number === "singular") return "ty";
-    if (f.person === "third" && f.number === "singular") return "on/ona/ono";
-    if (f.person === "first" && f.number === "plural") return "my";
-    if (f.person === "second" && f.number === "plural") return "wy";
-    if (f.person === "third" && f.number === "plural") return "oni/one";
-    return "-";
-};
 
 const detectGenderFromForm = (form) => {
     if (!form) return "-";
@@ -29,41 +19,96 @@ const detectGenderFromForm = (form) => {
     return "-";
 };
 
+const pronounFrom = (f, pluralGender) => {
+    if (f.person === "first" && f.number === "singular") return "ja";
+    if (f.person === "second" && f.number === "singular") return "ty";
+    if (f.person === "third" && f.number === "singular") {
+        if (f.gender === "m") return "on";
+        if (f.gender === "f") return "ona";
+        if (f.gender === "n") return "ono";
+        return "on/ona/ono";
+    }
+    if (f.person === "first" && f.number === "plural") return "my";
+    if (f.person === "second" && f.number === "plural") return "wy";
+    if (f.person === "third" && f.number === "plural") {
+        if (pluralGender === "m") return "oni";
+        if (pluralGender === "f") return "one";
+        if (pluralGender === "mixed") return "oni, one";
+        return "oni/one";
+    }
+    return "-";
+};
+
+// --------- Aggregation ---------
+
+const mapVerbFormToPronoun = (formObj) => {
+    const person = formObj.person || "third";
+    const number = formObj.number || "singular";
+    const gender = formObj.gender?.[0] || detectGenderFromForm(formObj.form);
+
+    return {
+        pronoun: pronounFrom({ person, number, gender }),
+        form: formObj.form,
+        person,
+        number,
+        gender,
+    };
+};
+
 const aggregateRows = (rows) => {
+    // Detect plural third-person gender
+    const pluralThird = rows.filter(r => r.person === "third" && r.number === "plural");
+    let pluralGender = null;
+    if (pluralThird.length) {
+        const gendersSet = new Set(pluralThird.map(r => r.gender).filter(g => g !== "-"));
+        pluralGender = gendersSet.size === 1 ? [...gendersSet][0] : "mixed";
+    }
+
     const map = new Map();
-    rows.forEach((r) => {
-        const key = `${r.pronoun}|${r.gender}`;
-        if (!map.has(key)) map.set(key, []);
-        map.get(key).push(r.form);
+    rows.forEach(r => {
+        let pronoun = r.pronoun;
+        if (pronoun === "oni/one") pronoun = pronounFrom({ ...r, number: "plural", person: "third" }, pluralGender);
+        if (!pronoun || pronoun === "-") pronoun = "__no_pronoun__";
+        if (!map.has(pronoun)) map.set(pronoun, []);
+        map.get(pronoun).push(r.form);
     });
+
     return Array.from(map.entries())
-        .map(([key, forms]) => {
-            const [pronoun, gender] = key.split("|");
-            return { pronoun, gender, form: forms.join(", ") };
-        })
-        .sort((a, b) => pronounOrder.indexOf(a.pronoun) - pronounOrder.indexOf(b.pronoun));
+        .map(([pronoun, forms]) => ({
+            pronoun: pronoun === "__no_pronoun__" ? "-" : pronoun,
+            form: forms.join(", "),
+        }))
+        .sort((a, b) => {
+            const indexA = pronounOrder.indexOf(a.pronoun);
+            const indexB = pronounOrder.indexOf(b.pronoun);
+            if (indexA === -1) return 1;
+            if (indexB === -1) return -1;
+            return indexA - indexB;
+        });
 };
 
 // --------- Table Component ---------
 
-const Table = ({ rows, columns, rowKeyLabel = "Case" }) => (
+const Table = ({ rows, columns, rowKeyLabel = "Case", showPronounColumn = false }) => (
     <div className="table-wrapper">
         <table className="inflection-table">
             <thead>
                 <tr>
-                    <th>{rowKeyLabel}</th>
-                    {columns.map((col) => (
-                        <th key={col.key}>{col.label}</th>
-                    ))}
+                    {rowKeyLabel && <th>{rowKeyLabel}</th>}
+                    {columns.map((col) => {
+                        if (!showPronounColumn && col.key === "pronoun") return null;
+                        return <th key={col.key}>{col.label}</th>;
+                    })}
                 </tr>
             </thead>
             <tbody>
                 {rows.map((r, i) => (
                     <tr key={i}>
-                        <td>{r.case || r.label || r.pronoun}</td>
-                        {columns.map((col) => (
-                            <td key={col.key}>{r.forms?.[col.key] || r.form || "-"}</td>
-                        ))}
+                        {rowKeyLabel && <td>{r.case || r.label || r.pronoun}</td>}
+                        {columns.map((col) => {
+                            if (!showPronounColumn && col.key === "pronoun") return null;
+                            return <td key={col.key}>{r[col.key] ?? r.forms?.[col.key] ?? "-"}</td>;
+                        })}
                     </tr>
                 ))}
             </tbody>
@@ -93,7 +138,10 @@ const Conjugator = () => {
     const toggle = (key) => setOpen((prev) => ({ ...prev, [key]: !prev[key] }));
 
     const handleFetch = async () => {
-        if (!word.trim()) return;
+        if (!word.trim()) {
+            setError("Please enter a word before fetching.");
+            return;
+        }
         setLoading(true);
         setError("");
         setResults(null);
@@ -109,35 +157,23 @@ const Conjugator = () => {
         }
     };
 
-    // --------- Mapping Functions ---------
-
     const mapVerbForms = (inflections) => {
         const mapped = { present: [], past: [], future: [], unspecified: {} };
         ["present", "past", "future"].forEach((tense) => {
             if (!inflections[tense]) return;
             Object.entries(inflections[tense]).forEach(([mood, items]) => {
-                const rows = items
-                    .filter((i) => i.form)
-                    .map((i) => ({
-                        pronoun: pronounFrom(i),
-                        gender: i.gender?.[0] || detectGenderFromForm(i.form),
-                        form: i.form,
-                    }));
+                const rows = items.filter(i => i.form).map(mapVerbFormToPronoun);
                 mapped[tense].push({ mood, forms: aggregateRows(rows) });
             });
         });
+
         if (inflections.unspecified) {
             Object.entries(inflections.unspecified).forEach(([mood, items]) => {
-                const rows = items
-                    .filter((i) => i.form)
-                    .map((i) => ({
-                        pronoun: pronounFrom(i),
-                        gender: i.gender?.[0] || detectGenderFromForm(i.form),
-                        form: i.form,
-                    }));
+                const rows = items.filter(i => i.form).map(mapVerbFormToPronoun);
                 mapped.unspecified[mood] = aggregateRows(rows);
             });
         }
+
         return mapped;
     };
 
@@ -154,9 +190,7 @@ const Conjugator = () => {
                             (g === "n" && (!f.gender || f.gender === "unspecified"))
                     );
                     forms[`${n}_${g}`] =
-                        filtered.length > 0
-                            ? filtered.map((f) => f.form).join(", ")
-                            : "-";
+                        filtered.length > 0 ? filtered.map((f) => f.form).join(", ") : "-";
                 });
             });
             rows.push({ case: c, forms });
@@ -173,8 +207,6 @@ const Conjugator = () => {
         return {};
     };
 
-    // --------- Rendering ---------
-
     const renderVerbTense = (label, groups, key) => (
         <div className="tense-section">
             <button className="tense-toggle" onClick={() => toggle(key)}>
@@ -189,9 +221,10 @@ const Conjugator = () => {
                             rows={g.forms}
                             columns={[
                                 { label: "Pronoun", key: "pronoun" },
-                                { label: "Gender", key: "gender" },
                                 { label: "Form", key: "form" },
                             ]}
+                            rowKeyLabel=""
+                            showPronounColumn={true}
                         />
                     </div>
                 ))}
@@ -220,9 +253,10 @@ const Conjugator = () => {
                                             rows={rows}
                                             columns={[
                                                 { label: "Pronoun", key: "pronoun" },
-                                                { label: "Gender", key: "gender" },
                                                 { label: "Form", key: "form" },
                                             ]}
+                                            rowKeyLabel=""
+                                            showPronounColumn={true}
                                         />
                                     </div>
                                 ) : null
@@ -236,7 +270,7 @@ const Conjugator = () => {
             return <Table rows={m} columns={genderColumns} rowKeyLabel="Case" />;
         }
         if (pos === "ADVERB") {
-            return <div>{m.length ? <p>{m.join(", ")}</p> : <p className="muted">No forms</p>}</div>;
+            return <div>{m.length ? <p>{m.map(f => f?.form || "-").join(", ")}</p> : <p className="muted">No forms</p>}</div>;
         }
         return null;
     };
