@@ -1,0 +1,101 @@
+{
+    "class": "Polish Adverbs - Adjective to Adverb Transformations",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "polish": "Dzisiaj jest brzydki dzień.",
+                    "transformed": "Jest brzydko.",
+                    "adjective": "brzydki",
+                    "change type": "Adjective → Adverb (Impersonal)",
+                    "english": "Today is an ugly day. - It is ugly/nasty."
+                },
+                {
+                    "polish": "Wczoraj był zimny wieczór.",
+                    "transformed": "Było zimno.",
+                    "adjective": "zimny",
+                    "change type": "Adjective → Adverb (Impersonal)",
+                    "english": "Yesterday was a cold evening. - It was cold."
+                },
+                {
+                    "polish": "W tym roku lato będzie bardzo gorące.",
+                    "transformed": "Będzie gorąco.",
+                    "adjective": "gorący",
+                    "change type": "Adjective → Adverb (Impersonal)",
+                    "english": "This year summer will be very hot. - It will be hot."
+                },
+                {
+                    "polish": "Jutro będzie ładna pogoda.",
+                    "transformed": "Będzie ładnie.",
+                    "adjective": "ładny",
+                    "change type": "Adjective → Adverb (Impersonal)",
+                    "english": "Tomorrow the weather will be nice. - It will be nice."
+                },
+                {
+                    "polish": "Jego prezentacja była bardzo interesująca.",
+                    "transformed": "On mówił interesująco.",
+                    "adjective": "interesujący",
+                    "change type": "Adjective → Adverb",
+                    "english": "His presentation was very interesting. - He spoke interestingly."
+                },
+                {
+                    "polish": "Twój polski jest bardzo dobry.",
+                    "transformed": "Mówisz po polsku dobrze.",
+                    "adjective": "dobry",
+                    "change type": "Adjective → Adverb",
+                    "english": "Your Polish is very good. - You speak Polish well."
+                },
+                {
+                    "polish": "Ten samochód jest bardzo szybki.",
+                    "transformed": "Ten samochód jeździ bardzo szybko.",
+                    "adjective": "szybki",
+                    "change type": "Adjective → Adverb",
+                    "english": "This car is very fast. - This car drives very fast."
+                },
+                {
+                    "polish": "Nasze mieszkanie jest małe. Mamy za mało miejsca na książki.",
+                    "adjective": "mały",
+                    "change type": "Adjective (Nominative) / Quantifier",
+                    "english": "Our apartment is small. We have too little space for books."
+                },
+                {
+                    "polish": "Japonki wyglądają młodo, choć nie zawsze są młode.",
+                    "adjective": "młody",
+                    "change type": "Adverb / Adjective (Plural Fem.)",
+                    "english": "Japanese women look young (adv.), though they aren't always young (adj.)."
+                },
+                {
+                    "polish": "Adam dużo maluje. Ten duży obraz w salonie to prezent od niego.",
+                    "adjective": "duży",
+                    "change type": "Adverb (Quantity) / Adjective (Nominative)",
+                    "english": "Adam paints a lot. That big painting in the living room is a gift from him."
+                },
+                {
+                    "polish": "Nie gotuję dobrze, ale moja rodzina mówi, że robię bardzo dobre pierogi.",
+                    "adjective": "dobry",
+                    "change type": "Adverb / Adjective (Plural Accusative)",
+                    "english": "I don't cook well, but my family says I make very good pierogi."
+                },
+                {
+                    "polish": "Ta sukienka jest piękna! Wyglądasz w niej naprawdę pięknie!",
+                    "adjective": "piękny",
+                    "change type": "Adjective (Nominative) / Adverb",
+                    "english": "This dress is beautiful (adj.)! You look really beautifully (adv.) in it!"
+                },
+                {
+                    "polish": "Źle zrobiłeś ten projekt. Podałeś złe dane.",
+                    "adjective": "zły",
+                    "change type": "Adverb / Adjective (Plural Accusative)",
+                    "english": "You did this project badly (adv.). You provided bad (adj.) data."
+                },
+                {
+                    "polish": "Bardzo lubię \"Gazetę Codzienną\". Czytam ją codziennie.",
+                    "adjective": "codzienny",
+                    "change type": "Adjective (Accusative) / Adverb",
+                    "english": "I really like the \"Daily (Newspaper)\". I read it daily (adv.)."
+                }
+            ]
+        }
+    ]
+}

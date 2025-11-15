@@ -1,0 +1,52 @@
+{
+    "class": "Polish Adverbs - Identify the Adverb",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "polish": "Był to przyjemnie spędzony czas.",
+                    "adverb": "przyjemnie",
+                    "modifies": "spędzony",
+                    "english": "It was time pleasantly spent."
+                },
+                {
+                    "polish": "Musisz zacząć mądrze oszczędzać i rozsądnie wydawać pieniądze.",
+                    "adverb": "mądrze, rozsądnie",
+                    "modifies": "oszczędzać, wydawać",
+                    "english": "You must start saving wisely and spending money sensibly."
+                },
+                {
+                    "polish": "Uprzejmie proszę o udzielenie informacji.",
+                    "adverb": "Uprzejmie",
+                    "modifies": "proszę",
+                    "english": "I kindly ask for information."
+                },
+                {
+                    "polish": "Michalina niechcący wyrzuciła swój pierścionek zaręczynowy.",
+                    "adverb": "niechcący",
+                    "modifies": "wyrzuciła",
+                    "english": "Michalina accidentally threw away her engagement ring."
+                },
+                {
+                    "polish": "Krzysztof ukradkiem spojrzał na Janinę.",
+                    "adverb": "ukradkiem",
+                    "modifies": "spojrzał",
+                    "english": "Krzysztof furtively looked at Janina."
+                },
+                {
+                    "polish": "Trudno mi powiedzieć, czy będę mógł przyjść.",
+                    "adverb": "Trudno",
+                    "modifies": "powiedzieć",
+                    "english": "It's difficult for me to say if I will be able to come."
+                },
+                {
+                    "polish": "Twoje słowa całkowicie zmieniają sytuację.",
+                    "adverb": "całkowicie",
+                    "modifies": "zmieniają",
+                    "english": "Your words completely change the situation."
+                }
+            ]
+        }
+    ]
+}

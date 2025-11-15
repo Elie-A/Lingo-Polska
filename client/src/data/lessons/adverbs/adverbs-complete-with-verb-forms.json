@@ -1,0 +1,34 @@
+{
+    "class": "Polish Adverbs - Complete with Verb Forms",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "prompt": "(My) [mówić] po francusku. [Uczyć się] polskiego. [Rozumieć] już [a little] po polsku",
+                    "polish": "Mówimy po francusku. Uczymy się polskiego. Rozumiemy już trochę po polsku.",
+                    "english": "We speak French. We are learning Polish. We already understand a little Polish.",
+                    "notes": "My (Nominative), po francusku (Locative), polskiego (Genitive after uczyć się), po polsku (Locative)"
+                },
+                {
+                    "prompt": "(Ja) [mówić] [fluently] po niemiecku. [Rozumieć] [a lot] po polsku. [Znać] też [very well] francuski i angielski",
+                    "polish": "Mówię płynnie po niemiecku. Rozumiem dużo po polsku. Znam też bardzo dobrze francuski i angielski.",
+                    "english": "I speak German fluently. I understand a lot of Polish. I also know French and English very well.",
+                    "notes": "Ja (Nominative), po niemiecku (Locative), po polsku (Locative), francuski (Accusative), angielski (Accusative)"
+                },
+                {
+                    "prompt": "Beata i jej brat [mówić] [extremely well] po włosku. [Znać] [quite well] rosyjski i [rozumieć] po hiszpańsku.",
+                    "polish": "Beata i jej brat mówią wyjątkowo dobrze po włosku. Znają całkiem dobrze rosyjski i rozumieją po hiszpańsku.",
+                    "english": "Beata and her brother speak Italian extremely well. They know Russian quite well and understand Spanish.",
+                    "notes": "Beata (Nominative), brat (Nominative), po włosku (Locative), rosyjski (Accusative), po hiszpańsku (Locative)"
+                },
+                {
+                    "prompt": "Peter [znać] tylko angielski. Teraz [uczyć się] polskiego. Już [rozumieć] gramatykę, ale jeszcze nie [mówić] po polsku [too well]",
+                    "polish": "Peter zna tylko angielski. Teraz uczy się polskiego. Już rozumie gramatykę, ale jeszcze nie mówi po polsku za dobrze.",
+                    "english": "Peter only knows English. Now he is learning Polish. He already understands grammar, but he doesn't speak Polish too well yet.",
+                    "notes": "Peter (Nominative), angielski (Accusative), polskiego (Genitive after uczyć się), gramatykę (Accusative), po polsku (Locative)"
+                }
+            ]
+        }
+    ]
+}

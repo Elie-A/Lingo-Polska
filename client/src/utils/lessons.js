@@ -27,6 +27,14 @@ import personalAndReflexivePronouns from "../data/lessons/grammar/personal-and-r
 
 import conditionalMix from "../data/lessons/conditional/conditional-mix.json";
 
+import adverbsSelectCategory from "../data/lessons/adverbs/adverbs-select-category.json";
+import adjectiveAdverbTransform from "../data/lessons/adverbs/adjective-adverb-tarnsform.json";
+import adverbsComparative from "../data/lessons/adverbs/adverbs-comparative.json";
+import adverbsIdentification from "../data/lessons/adverbs/adverbs-identification.json";
+import adverbsDialogue from "../data/lessons/adverbs/adverbs-dialogue.json";
+import adverbsCompleteWithVerbForms from "../data/lessons/adverbs/adverbs-complete-with-verb-forms.json";
+import adverbsComparativeSuperlative from "../data/lessons/adverbs/adverbs-comparative-superlative.json";
+
 const lessons = [
   {
     title: "Present Tense",
@@ -142,6 +150,26 @@ A strong grammar foundation will make learning verbs, cases, and more advanced t
       createPluralNounFormRegularNouns,
       createPluralNounFormIrregularNouns,
       personalAndReflexivePronouns,
+    ],
+  },
+  {
+    title: "Adverbs",
+    description:
+      "Learn how Polish adverbs work, how they are formed, and how to use them correctly to describe actions, intensity, manner, time, and frequency.",
+    icon: "💥",
+    path: "lessons/adverbs",
+    folder: "adverbs",
+    intro: `In this lesson, you will explore how Polish adverbs function within a sentence. 
+You'll learn how to form adverbs from adjectives, how to modify verbs and other parts of speech, and how to express time, manner, degree, and frequency. 
+Mastering adverbs will help you build more natural, fluent, and expressive sentences in Polish.`,
+    classes: [
+      adverbsSelectCategory,
+      adjectiveAdverbTransform,
+      adverbsComparative,
+      adverbsIdentification,
+      adverbsDialogue,
+      adverbsCompleteWithVerbForms,
+      adverbsComparativeSuperlative,
     ],
   },
   {

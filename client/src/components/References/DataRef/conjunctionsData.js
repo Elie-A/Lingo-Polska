@@ -2,7 +2,7 @@ const conjunctionsData = {
   conjunctions: {
     title: "Polish Conjunctions",
     description:
-      "Conjunctions (spójniki) connect words, phrases, and clauses. They are indeclinable — never changing form but can influence word order, verb mood, and punctuation. Below are the main categories with detailed examples and grammar notes.",
+      "Conjunctions (spójniki) connect words, phrases, and clauses. They are indeclinable — never changing form but can influence word order, verb mood, and punctuation. Below are the main categories with detailed examples and grammar_notes.",
     sections: [
       {
         id: "coordinating",
@@ -17,7 +17,7 @@ const conjunctionsData = {
           "Meaning",
           "Example (Polish)",
           "Translation",
-          "Grammar Notes",
+          "grammar_notes",
         ],
         rows: [
           [
@@ -77,7 +77,7 @@ const conjunctionsData = {
           "Meaning",
           "Example (Polish)",
           "Translation",
-          "Grammar Notes",
+          "grammar_notes",
         ],
         rows: [
           [
