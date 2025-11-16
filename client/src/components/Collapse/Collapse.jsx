@@ -151,17 +151,13 @@ const Collapse = ({ data }) => {
 
         let result = prompt;
 
-        // Highlight subject pronouns in parentheses (My), (Ja), etc.
         result = result.replace(/\(([^)]+)\)/g,
             '<span class="prompt-parenthesis">($1)</span>');
 
-        // Highlight verb infinitives and English hints in brackets
         result = result.replace(/\[([^\]]+)\]/g, (match, content) => {
-            // Check if it's an English hint (lowercase, common words)
             if (/^(a little|a lot|very well|fluently|quite well|too well|extremely well|well)$/i.test(content.trim())) {
                 return `<span class="english-hint">[${content}]</span>`;
             }
-            // Otherwise it's a verb infinitive
             return `<span class="verb-infinitive">[${content}]</span>`;
         });
 
@@ -185,6 +181,69 @@ const Collapse = ({ data }) => {
         return <span dangerouslySetInnerHTML={{ __html: result }} />;
     };
 
+    const highlightDegrees = (polish, baseForm) => {
+        if (!polish) return polish;
+
+        const irregularForms = ['lepiej', 'najlepiej', 'więcej', 'najwięcej', 'mniej', 'najmniej', 'gorzej', 'najgorzej', 'dalej', 'najdalej'];
+
+        let result = polish;
+
+        // Highlight superlatives (naj- prefix)
+        result = result.replace(/\b(naj\w+iej)\b/gi, (match) => {
+            const isIrregular = irregularForms.includes(match.toLowerCase());
+            const className = isIrregular ? 'irregular-inline superlative-inline' : 'superlative-inline';
+            return `<span class="${className}">${match}</span>`;
+        });
+
+        // Highlight irregular superlatives without -iej
+        ['najlepiej', 'najwięcej', 'najmniej', 'najgorzej', 'najdalej'].forEach(word => {
+            const regex = new RegExp(`\\b${word}\\b`, 'gi');
+            result = result.replace(regex, (match) => {
+                if (result.indexOf(`<span`) !== -1 && result.indexOf(match) > result.lastIndexOf(`<span`)) {
+                    return match;
+                }
+                return `<span class="irregular-inline superlative-inline">${match}</span>`;
+            });
+        });
+
+        // Highlight comparatives (words ending in -iej but not starting with naj-)
+        result = result.replace(/\b(?!naj)(\w+iej)\b/gi, (match) => {
+            if (result.indexOf(match) > 0 && result.substring(result.indexOf(match) - 50, result.indexOf(match)).includes('<span')) {
+                return match;
+            }
+            const isIrregular = irregularForms.includes(match.toLowerCase());
+            const className = isIrregular ? 'irregular-inline comparative-inline' : 'comparative-inline';
+            return `<span class="${className}">${match}</span>`;
+        });
+
+        // Highlight irregular comparatives
+        ['lepiej', 'więcej', 'mniej', 'gorzej', 'dalej', 'bliżej'].forEach(word => {
+            const regex = new RegExp(`\\b${word}\\b`, 'gi');
+            result = result.replace(regex, (match) => {
+                if (result.indexOf(`<span`) !== -1 && result.indexOf(match) > result.lastIndexOf(`<span`)) {
+                    return match;
+                }
+                return `<span class="irregular-inline comparative-inline">${match}</span>`;
+            });
+        });
+
+        // Highlight base forms if provided
+        if (baseForm) {
+            const baseForms = baseForm.split(',').map(b => b.trim());
+            baseForms.forEach(base => {
+                const regex = new RegExp(`\\b${base}\\b`, 'gi');
+                result = result.replace(regex, (match) => {
+                    if (result.indexOf(`<span`) !== -1 && result.indexOf(match) > result.lastIndexOf(`<span`)) {
+                        return match;
+                    }
+                    return `<span class="base-inline">${match}</span>`;
+                });
+            });
+        }
+
+        return <span className="polish-with-degrees" dangerouslySetInnerHTML={{ __html: result }} />;
+    };
+
     return (
         <div className="collapse-container">
             {exercises.map((exerciseData, idx) => {
@@ -202,13 +261,15 @@ const Collapse = ({ data }) => {
                 );
 
                 const hasStemData = rows.some((r) => r.stem);
+                const isPluralExercise = exerciseData.goal === "plural";
 
                 // Check for different exercise types
                 const hasTransformations = rows.some((r) => r["change type"]);
                 const hasComparatives = rows.some((r) => r.comparative);
                 const hasAdverbIdentification = rows.some((r) => r.adverb && r.modifies);
                 const isDialogue = rows.some((r) => r.speaker);
-                const hasCompleteForms = rows.some((r) => r.prompt && r.notes);
+                const hasCompleteForms = rows.some((r) => r.prompt && r.grammar_notes);
+                const hasDegrees = rows.some((r) => r["base form"]);
 
                 return (
                     <div className="collapse" key={idx}>
@@ -286,7 +347,7 @@ const Collapse = ({ data }) => {
                                 <>
                                     <div className="exercise-instructions">
                                         <strong>Instructions:</strong> Complete the sentences by conjugating the verbs in brackets
-                                        and translating the English words. Use the notes to check your case usage.
+                                        and translating the English words. Use the grammar notes to check your case usage.
                                     </div>
 
                                     <div className="complete-forms-legend">
@@ -300,7 +361,7 @@ const Collapse = ({ data }) => {
                                         </div>
                                         <div className="legend-item">
                                             <div className="legend-color grammar"></div>
-                                            <span>notes</span>
+                                            <span>Grammar Notes</span>
                                         </div>
                                         <div className="legend-item">
                                             <span className="prompt-parenthesis">(Subject)</span>
@@ -311,10 +372,38 @@ const Collapse = ({ data }) => {
                                 </>
                             )}
 
+                            {/* Degrees Legend */}
+                            {hasDegrees && openIndex === idx && (
+                                <>
+                                    <div className="degrees-info-box">
+                                        <strong>Degrees of Comparison:</strong> This exercise shows adverbs in their positive (base),
+                                        comparative, and superlative forms. Hover over highlighted words to see their degree.
+                                    </div>
+
+                                    <div className="degrees-legend">
+                                        <div className="legend-item">
+                                            <span className="legend-sample base">dobrze</span>
+                                            <span>Positive (Base)</span>
+                                        </div>
+                                        <div className="legend-item">
+                                            <span className="legend-sample comparative">lepiej</span>
+                                            <span>Comparative</span>
+                                        </div>
+                                        <div className="legend-item">
+                                            <span className="legend-sample superlative">najlepiej</span>
+                                            <span>Superlative</span>
+                                        </div>
+                                        <div className="legend-item">
+                                            <span className="legend-sample irregular">więcej</span>
+                                            <span>Irregular Form</span>
+                                        </div>
+                                    </div>
+                                </>
+                            )}
+
                             {/* Dialogue Rendering */}
                             {isDialogue && openIndex === idx ? (
                                 <>
-                                    {/* Dialogue Legend */}
                                     <div className="dialogue-legend">
                                         <span style={{ fontWeight: 600, marginRight: '0.5rem' }}>Speakers:</span>
                                         {[...new Set(rows.map(r => r.speaker).filter(Boolean))].map((speaker, sIdx) => (
@@ -327,7 +416,6 @@ const Collapse = ({ data }) => {
                                         ))}
                                     </div>
 
-                                    {/* Dialogue Container */}
                                     <div className="dialogue-container">
                                         {rows.map((row, rIdx) => {
                                             const speakerClass = getSpeakerClass(row.speaker);
@@ -355,7 +443,6 @@ const Collapse = ({ data }) => {
                                     </div>
                                 </>
                             ) : (
-                                /* Regular Table Rendering */
                                 <div className="exercise-card">
                                     <div className="exercise-card-content">
                                         <div className="table-wrapper">
@@ -369,7 +456,7 @@ const Collapse = ({ data }) => {
                                                                 {col[0].toUpperCase() + col.slice(1)}
                                                             </th>
                                                         ))}
-                                                        {hasStemData && <th>Plural</th>}
+                                                        {isPluralExercise && hasStemData && <th>Plural</th>}
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -377,12 +464,15 @@ const Collapse = ({ data }) => {
                                                         rows.map((row, rIdx) => (
                                                             <tr key={rIdx}>
                                                                 <td className={`polish ${row.adverb ? "polish-with-adverb-highlight" : ""} ${row.prompt ? "answer-cell" : ""}`}>
-                                                                    {row.adverb ?
-                                                                        highlightAdverbsInText(row.polish || "", row.adverb, row.modifies) :
-                                                                        highlightStemEnding(
-                                                                            row.polish || "",
-                                                                            row.stem || "",
-                                                                            row.ending || ""
+                                                                    {row["base form"] ?
+                                                                        highlightDegrees(row.polish || "", row["base form"]) :
+                                                                        (row.adverb ?
+                                                                            highlightAdverbsInText(row.polish || "", row.adverb, row.modifies) :
+                                                                            highlightStemEnding(
+                                                                                row.polish || "",
+                                                                                row.stem || "",
+                                                                                row.ending || ""
+                                                                            )
                                                                         )
                                                                     }
                                                                 </td>
@@ -413,9 +503,11 @@ const Collapse = ({ data }) => {
                                                                     } else if (col === "prompt") {
                                                                         cellClass = "prompt-cell";
                                                                         cellContent = parsePrompt(row[col]);
-                                                                    } else if (col === "notes") {
+                                                                    } else if (col === "grammar_notes") {
                                                                         cellClass = "grammar-notes-cell";
                                                                         cellContent = parseGrammarNotes(row[col]);
+                                                                    } else if (col === "base form") {
+                                                                        cellClass = "base-form-reference-cell";
                                                                     }
 
                                                                     return (
@@ -424,7 +516,7 @@ const Collapse = ({ data }) => {
                                                                         </td>
                                                                     );
                                                                 })}
-                                                                {hasStemData && (
+                                                                {isPluralExercise && hasStemData && (
                                                                     <td className="polish">
                                                                         <span className="stem">{row.stem || ""}</span>
                                                                         <span className="ending">{row.ending || ""}</span>
@@ -436,7 +528,7 @@ const Collapse = ({ data }) => {
                                                         <tr>
                                                             <td
                                                                 colSpan={
-                                                                    2 + extraColumns.length + (hasStemData ? 1 : 0)
+                                                                    2 + extraColumns.length + (isPluralExercise && hasStemData ? 1 : 0)
                                                                 }
                                                                 style={{ textAlign: "center" }}
                                                             >

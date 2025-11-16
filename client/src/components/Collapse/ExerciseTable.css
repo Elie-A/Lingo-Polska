@@ -1098,3 +1098,244 @@
     border: 1px solid #fda4af;
     font-style: italic;
 }
+
+/* ========== COMPARATIVE AND SUPERLATIVE FORMS STYLES ========== */
+
+/* Base form cell */
+.collapse-container .exercise-table .base-form-reference-cell,
+.exercise-table .base-form-reference-cell {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%) !important;
+    color: #4b5563;
+    font-weight: 600;
+    border-left: 3px solid #9ca3af;
+    padding: 0.7rem !important;
+    font-size: 0.9rem;
+}
+
+/* Badge for base form */
+.collapse-container .exercise-table .base-form-reference-cell::before,
+.exercise-table .base-form-reference-cell::before {
+    content: "BASE";
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    background-color: #6b7280;
+    color: white;
+    font-size: 0.6rem;
+    padding: 0.15rem 0.3rem;
+    border-radius: 3px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.collapse-container .exercise-table .base-form-reference-cell,
+.exercise-table .base-form-reference-cell {
+    position: relative;
+}
+
+/* Inline highlighting for comparative forms */
+.comparative-inline {
+    background: linear-gradient(120deg, #dbeafe 0%, #93c5fd 100%);
+    color: #1e40af;
+    font-weight: 700;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    border: 2px solid #3b82f6;
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+    position: relative;
+    display: inline-block;
+}
+
+.comparative-inline::after {
+    content: "COMP";
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 0.5rem;
+    padding: 0.1rem 0.25rem;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* Inline highlighting for superlative forms */
+.superlative-inline {
+    background: linear-gradient(120deg, #fef3c7 0%, #fbbf24 100%);
+    color: #92400e;
+    font-weight: 700;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    border: 2px solid #f59e0b;
+    box-shadow: 0 2px 4px rgba(245, 158, 11, 0.2);
+    position: relative;
+    display: inline-block;
+}
+
+.superlative-inline::after {
+    content: "SUP";
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    background-color: #f59e0b;
+    color: white;
+    font-size: 0.5rem;
+    padding: 0.1rem 0.25rem;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* Inline highlighting for base forms in context */
+.base-inline {
+    background: linear-gradient(120deg, #f3f4f6 0%, #d1d5db 100%);
+    color: #374151;
+    font-weight: 700;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    border: 2px solid #9ca3af;
+    box-shadow: 0 2px 4px rgba(107, 114, 128, 0.2);
+    position: relative;
+    display: inline-block;
+}
+
+.base-inline::after {
+    content: "BASE";
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    background-color: #6b7280;
+    color: white;
+    font-size: 0.5rem;
+    padding: 0.1rem 0.25rem;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* Special highlighting for irregular comparatives/superlatives */
+.irregular-inline {
+    background: linear-gradient(120deg, #fce7f3 0%, #f9a8d4 100%);
+    color: #9f1239;
+    font-weight: 700;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    border: 2px solid #ec4899;
+    box-shadow: 0 2px 4px rgba(236, 72, 153, 0.2);
+    position: relative;
+    display: inline-block;
+}
+
+.irregular-inline::after {
+    content: "IRR";
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    background-color: #ec4899;
+    color: white;
+    font-size: 0.5rem;
+    padding: 0.1rem 0.25rem;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* Degrees legend */
+.degrees-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f9fafb 0%, #ede9fe 100%);
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+}
+
+.degrees-legend .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.7rem;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.degrees-legend .legend-sample {
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border: 2px solid;
+}
+
+.degrees-legend .legend-sample.base {
+    background: linear-gradient(120deg, #f3f4f6 0%, #d1d5db 100%);
+    color: #374151;
+    border-color: #9ca3af;
+}
+
+.degrees-legend .legend-sample.comparative {
+    background: linear-gradient(120deg, #dbeafe 0%, #93c5fd 100%);
+    color: #1e40af;
+    border-color: #3b82f6;
+}
+
+.degrees-legend .legend-sample.superlative {
+    background: linear-gradient(120deg, #fef3c7 0%, #fbbf24 100%);
+    color: #92400e;
+    border-color: #f59e0b;
+}
+
+.degrees-legend .legend-sample.irregular {
+    background: linear-gradient(120deg, #fce7f3 0%, #f9a8d4 100%);
+    color: #9f1239;
+    border-color: #ec4899;
+}
+
+/* Polish text with highlighted degrees */
+.polish-with-degrees {
+    line-height: 2;
+    padding: 0.5rem 0;
+}
+
+/* Hover effects for inline highlights */
+.comparative-inline:hover,
+.superlative-inline:hover,
+.base-inline:hover,
+.irregular-inline:hover {
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+    cursor: help;
+}
+
+/* Info box for degrees */
+.degrees-info-box {
+    background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+    border: 2px solid #8b5cf6;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #5b21b6;
+}
+
+.degrees-info-box strong {
+    color: #4c1d95;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    .comparative-inline::after,
+    .superlative-inline::after,
+    .base-inline::after,
+    .irregular-inline::after {
+        font-size: 0.45rem;
+        padding: 0.05rem 0.2rem;
+    }
+}

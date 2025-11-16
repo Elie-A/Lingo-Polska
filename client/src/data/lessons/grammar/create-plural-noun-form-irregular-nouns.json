@@ -3,6 +3,7 @@
     "exercises": [
         {
             "exercise": "Exercise 01",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "mężczyzna",
@@ -68,6 +69,7 @@
         },
         {
             "exercise": "Exercise 02",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "koń",
@@ -133,6 +135,7 @@
         },
         {
             "exercise": "Exercise 03",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "dziadek",
@@ -198,6 +201,7 @@
         },
         {
             "exercise": "Exercise 04",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "garnek",
