@@ -44,8 +44,8 @@
                 {
                     "polish": "grzebień",
                     "english": "comb",
-                    "stem": "grzebieni",
-                    "ending": ""
+                    "stem": "grzebie",
+                    "ending": "ni"
                 },
                 {
                     "polish": "ogórek",
@@ -56,8 +56,8 @@
                 {
                     "polish": "zwierzę",
                     "english": "animal",
-                    "stem": "zwierząt",
-                    "ending": ""
+                    "stem": "zwierz",
+                    "ending": "ąt"
                 },
                 {
                     "polish": "zbiór",
@@ -80,7 +80,7 @@
                 {
                     "polish": "broń",
                     "english": "weapon",
-                    "stem": "broni",
+                    "stem": "broń",
                     "ending": ""
                 },
                 {
@@ -158,8 +158,8 @@
                 {
                     "polish": "dłoń",
                     "english": "hand",
-                    "stem": "dłoni",
-                    "ending": ""
+                    "stem": "dłon",
+                    "ending": "ie"
                 },
                 {
                     "polish": "mąż",
@@ -189,13 +189,13 @@
                     "polish": "ucho",
                     "english": "ear",
                     "stem": "usz",
-                    "ending": "a"
+                    "ending": "y"
                 },
                 {
                     "polish": "oko",
                     "english": "eye",
                     "stem": "ocz",
-                    "ending": "a"
+                    "ending": "y"
                 }
             ]
         },
@@ -212,8 +212,8 @@
                 {
                     "polish": "sąsiad",
                     "english": "neighbor",
-                    "stem": "sąsiad",
-                    "ending": "zi"
+                    "stem": "sąsi",
+                    "ending": "edzi"
                 },
                 {
                     "polish": "imię",
@@ -225,13 +225,13 @@
                     "polish": "professor",
                     "english": "professor",
                     "stem": "professor",
-                    "ending": "s"
+                    "ending": "owie"
                 },
                 {
                     "polish": "Polak",
                     "english": "Pole",
-                    "stem": "Polak",
-                    "ending": "i"
+                    "stem": "Pola",
+                    "ending": "cy"
                 },
                 {
                     "polish": "wujek",
@@ -241,9 +241,15 @@
                 },
                 {
                     "polish": "pilot",
-                    "english": "pilot",
+                    "english": "Tv Remote",
                     "stem": "pilot",
                     "ending": "y"
+                },
+                {
+                    "polish": "pilot",
+                    "english": "pilot",
+                    "stem": "pilo",
+                    "ending": "ci"
                 },
                 {
                     "polish": "stół",

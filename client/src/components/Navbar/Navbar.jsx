@@ -151,6 +151,18 @@ export default function Navbar({ lessons }) {
                             Contact
                         </Link>
                     </li>
+
+                    <li>
+                        <a
+                            href="https://buymeacoffee.com/lingopolska"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bmc-button"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            🍕 Buy Me a Pizza Slice
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>

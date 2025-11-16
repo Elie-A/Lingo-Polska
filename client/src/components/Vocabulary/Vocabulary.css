@@ -484,6 +484,7 @@ Pagination
     flex-wrap: wrap;
     gap: 0.5rem;
     margin: 2rem 0;
+    color: #374151;
 }
 
 .page-btn,
