@@ -1,5 +1,14 @@
+// controllers/wordController.js
 import NodeCache from "node-cache";
-import Word from "../models/Word.js";
+import {
+  VerbWord,
+  NounWord,
+  AdjectiveWord,
+  AdverbWord,
+  PronounWord,
+  NumeralWord,
+} from "../models/Word.js";
+import { LemmaCache } from "../models/LemmaCache.js";
 import {
   handleSuccess,
   handleError,
@@ -8,144 +17,222 @@ import {
 import {
   buildSearchQuery,
   buildStatsAggregation,
-  buildLemmaQuery,
 } from "../utils/word/wordQueries.js";
-import { groupVerbForms, groupNominalForms } from "../utils/word/wordsUtils.js";
+import {
+  groupVerbForms,
+  groupNominalForms,
+  groupOtherForms,
+} from "../utils/word/wordsUtils.js";
 
 const cache = new NodeCache({ stdTTL: 3600 });
 
-// Get all unique lemmas (for search/autocomplete)
+// ---------------- POS Collections ---------------- //
+const posCollections = [
+  {
+    model: VerbWord,
+    pos: "VERB",
+    fields: ["tense", "mood", "person", "number"],
+  },
+  { model: NounWord, pos: "NOUN", fields: ["case", "number", "gender"] },
+  {
+    model: AdjectiveWord,
+    pos: "ADJECTIVE",
+    fields: ["case", "number", "gender"],
+  },
+  { model: AdverbWord, pos: "ADVERB", fields: [] },
+  { model: PronounWord, pos: "PRONOUN", fields: ["case", "number", "gender"] },
+  { model: NumeralWord, pos: "NUMERAL", fields: ["number", "gender"] },
+];
+
+// ---------------- Helper Functions ---------------- //
+
+// Project only needed fields to reduce memory
+const projectionFields = [
+  "lemma",
+  "inflectedForm",
+  "partOfSpeech",
+  "tense",
+  "mood",
+  "person",
+  "number",
+  "case",
+  "gender",
+];
+
+// Generic aggregation helper for lemma or inflected form
+const aggregateAcrossPOS = async ({ matchField, value, limitOne = false }) => {
+  let agg = posCollections[0].model.aggregate([
+    { $match: { [matchField]: value } },
+    { $project: projectionFields.reduce((a, f) => ({ ...a, [f]: 1 }), {}) },
+    ...(limitOne ? [{ $limit: 1 }] : []),
+  ]);
+
+  for (const col of posCollections.slice(1)) {
+    agg = agg.unionWith({
+      coll: col.model.collection.name,
+      pipeline: [
+        { $match: { [matchField]: value } },
+        { $project: projectionFields.reduce((a, f) => ({ ...a, [f]: 1 }), {}) },
+        ...(limitOne ? [{ $limit: 1 }] : []),
+      ],
+    });
+  }
+
+  return agg;
+};
+
+// Group forms according to POS
+const groupFormsByPOS = (forms) => {
+  if (!forms.length) return {};
+  const pos = forms[0].partOfSpeech;
+  switch (pos) {
+    case "VERB":
+      return groupVerbForms(forms);
+    case "NOUN":
+    case "ADJECTIVE":
+      return groupNominalForms(forms);
+    default:
+      return groupOtherForms(forms);
+  }
+};
+
+// ---------------- Controllers ---------------- //
+
+// 1️⃣ Get lemmas (autocomplete)
 export const getLemmas = async (req, res) => {
   try {
-    // Create a cache key based on query params
     const cacheKey = `lemmas:${JSON.stringify(req.query)}`;
     const cached = cache.get(cacheKey);
-    if (cached) {
-      return handleSuccess(res, cached, "Cached lemmas");
-    }
+    if (cached) return handleSuccess(res, cached, "Cached lemmas");
 
-    const { pipeline } = buildLemmaQuery(req.query);
-    const lemmas = await Word.aggregate(pipeline);
+    const { prefix = "", limit = 50 } = req.query;
 
-    const data = lemmas.map((l) => ({
-      lemma: l._id.lemma,
-      partOfSpeech: l._id.pos,
-      formCount: l.count,
-    }));
+    const query = prefix
+      ? { lemma: { $regex: `^${prefix}`, $options: "i" } }
+      : {};
 
-    // Store in cache
-    cache.set(cacheKey, data);
+    const lemmas = await LemmaCache.find(query)
+      .select("lemma partOfSpeech totalForms")
+      .sort({ lemma: 1 })
+      .limit(Number(limit))
+      .lean();
 
-    handleSuccess(res, data, "Lemmas fetched successfully");
+    cache.set(cacheKey, lemmas);
+    handleSuccess(res, lemmas, "Lemmas fetched successfully");
   } catch (error) {
     handleError(res, error);
   }
 };
 
-// Main lookup: Get full declension/conjugation (auto-detects lemma or inflected form)
+// 2️⃣ Get full inflections for a lemma or inflected form
 export const getInflections = async (req, res) => {
   try {
     let { word } = req.params;
-    word = word.trim().toLowerCase(); // normalize input
+    word = decodeURIComponent(word.trim().toLowerCase());
 
-    // Check cache first
     const cached = cache.get(word);
-    if (cached) {
-      return handleSuccess(res, cached, "Cached result");
-    }
+    if (cached) return handleSuccess(res, cached, "Cached result");
 
-    // Try to find lemma directly
-    let forms = await Word.find({ lemma: word });
+    // Try lemma first
+    let forms = await aggregateAcrossPOS({ matchField: "lemma", value: word });
 
     // If not found, try as inflected form
     if (!forms.length) {
-      const inflected = await Word.findOne({ inflectedForm: word });
-      if (inflected) {
-        word = inflected.lemma;
-        forms = await Word.find({ lemma: word });
-      }
+      const lemmaAgg = await aggregateAcrossPOS({
+        matchField: "inflectedForm",
+        value: word,
+        limitOne: true,
+      });
+      const lemma = lemmaAgg.length ? lemmaAgg[0].lemma : null;
+      if (lemma)
+        forms = await aggregateAcrossPOS({ matchField: "lemma", value: lemma });
+      word = lemma || word;
     }
 
-    // Not found → 404
-    if (!forms.length) {
+    if (!forms.length)
       return handleNotFound(res, `No forms found for '${word}'`);
-    }
-
-    // Detect part of speech
-    const partOfSpeech = forms[0].partOfSpeech;
-
-    // Group forms
-    let inflections;
-    switch (partOfSpeech) {
-      case "VERB":
-        inflections = groupVerbForms(forms);
-        break;
-      case "NOUN":
-      case "ADJECTIVE":
-        inflections = groupNominalForms(forms);
-        break;
-      default:
-        inflections = { other: forms };
-    }
 
     const responseData = {
       lemma: word,
-      partOfSpeech,
+      partOfSpeech: forms[0].partOfSpeech,
       totalForms: forms.length,
-      inflections,
+      inflections: groupFormsByPOS(forms),
     };
 
-    // Store in cache
     cache.set(word, responseData);
-
-    // Return
     handleSuccess(
       res,
       responseData,
-      `All forms for '${word}' (${partOfSpeech})`
+      `All forms for '${word}' (${forms[0].partOfSpeech})`
     );
   } catch (error) {
     handleError(res, error);
   }
 };
 
-// Search inflected forms by morphological features
+// 3️⃣ Search forms by morphological features
 export const searchForms = async (req, res) => {
   try {
-    // Create a cache key based on search body
     const cacheKey = `search:${JSON.stringify(req.body)}`;
     const cached = cache.get(cacheKey);
-    if (cached) {
-      return handleSuccess(res, cached, "Cached search results");
-    }
+    if (cached) return handleSuccess(res, cached, "Cached search results");
 
     const query = buildSearchQuery(req.body);
-    const results = await Word.find(query).limit(100);
 
-    // Store in cache
-    cache.set(cacheKey, results);
+    let agg = posCollections[0].model.aggregate([{ $match: query }]);
+    for (const col of posCollections.slice(1)) {
+      agg = agg.unionWith({
+        coll: col.model.collection.name,
+        pipeline: [{ $match: query }],
+      });
+    }
 
-    handleSuccess(res, results, "Search results");
+    const results = await agg;
+
+    // Group results by lemma and POS
+    const grouped = {};
+    results.forEach((f) => {
+      const lemma = f.lemma;
+      const pos = f.partOfSpeech || "OTHER";
+      grouped[lemma] = grouped[lemma] || {};
+      grouped[lemma][pos] = grouped[lemma][pos] || [];
+      grouped[lemma][pos].push(f);
+    });
+
+    const structured = Object.entries(grouped)
+      .map(([lemma, posMap]) =>
+        Object.entries(posMap).map(([pos, forms]) => ({
+          lemma,
+          partOfSpeech: pos,
+          totalForms: forms.length,
+          inflections: groupFormsByPOS(forms),
+        }))
+      )
+      .flat();
+
+    cache.set(cacheKey, structured);
+    handleSuccess(res, structured, "Search results");
   } catch (error) {
     handleError(res, error);
   }
 };
 
-// Statistics endpoint
+// 4️⃣ Statistics endpoint
 export const getStats = async (req, res) => {
   try {
     const cacheKey = "stats";
     const cached = cache.get(cacheKey);
-    if (cached) {
-      return handleSuccess(res, cached, "Cached statistics");
-    }
+    if (cached) return handleSuccess(res, cached, "Cached statistics");
 
     const pipeline = buildStatsAggregation();
-    const stats = await Word.aggregate(pipeline);
 
-    // Store in cache with TTL (e.g., 6 hours = 21600 seconds)
-    cache.set(cacheKey, stats, 21600);
+    let agg = posCollections[0].model.aggregate(pipeline);
+    for (const col of posCollections.slice(1)) {
+      agg = agg.unionWith({ coll: col.model.collection.name, pipeline });
+    }
 
+    const stats = await agg;
+    cache.set(cacheKey, stats, 21600); // 6 hours
     handleSuccess(res, stats, "Statistics fetched successfully");
   } catch (error) {
     handleError(res, error);
