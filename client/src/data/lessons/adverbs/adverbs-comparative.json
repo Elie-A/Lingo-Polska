@@ -1,0 +1,30 @@
+{
+    "class": "Polish Adverbs - Comparative Adverbs",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "polish": "Mówię dobrze. Rozumiem dużo.",
+                    "comparative": "Mówię lepiej. Rozumiem więcej.",
+                    "english": "I speak better. I understand more."
+                },
+                {
+                    "polish": "Mamy mało pracy.",
+                    "comparative": "Mamy mniej pracy.",
+                    "english": "We have less work."
+                },
+                {
+                    "polish": "Dzisiaj jest zimno.",
+                    "comparative": "Dzisiaj jest zimniej.",
+                    "english": "Today it is colder."
+                },
+                {
+                    "polish": "Łatwo jest czytać po polsku – mówić jest trudno.",
+                    "comparative": "Łatwiej jest czytać po polsku – mówić jest trudniej.",
+                    "english": "It is easier to read in Polish – it is harder to speak."
+                }
+            ]
+        }
+    ]
+}

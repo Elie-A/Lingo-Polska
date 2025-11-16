@@ -3,6 +3,7 @@
     "exercises": [
         {
             "exercise": "Exercise 01",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "radio",
@@ -68,6 +69,7 @@
         },
         {
             "exercise": "Exercise 02",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "zlew",
@@ -133,6 +135,7 @@
         },
         {
             "exercise": "Exercise 03",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "gniazdo",
@@ -198,6 +201,7 @@
         },
         {
             "exercise": "Exercise 04",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "torba",
@@ -263,6 +267,7 @@
         },
         {
             "exercise": "Exercise 05",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "głośnik",
@@ -328,6 +333,7 @@
         },
         {
             "exercise": "Exercise 06",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "maszyna",
@@ -393,6 +399,7 @@
         },
         {
             "exercise": "Exercise 07",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "lustro",
@@ -458,6 +465,7 @@
         },
         {
             "exercise": "Exercise 08",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "ciasto",
@@ -523,6 +531,7 @@
         },
         {
             "exercise": "Exercise 09",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "zdanie",
@@ -588,6 +597,7 @@
         },
         {
             "exercise": "Exercise 10",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "łóżko",
@@ -653,6 +663,7 @@
         },
         {
             "exercise": "Exercise 11",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "budzik",
@@ -718,6 +729,7 @@
         },
         {
             "exercise": "Exercise 12",
+            "goal": "plural",
             "rows": [
                 {
                     "polish": "maska",
