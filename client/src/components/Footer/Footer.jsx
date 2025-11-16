@@ -27,6 +27,15 @@ export default function Footer() {
                     <Link to="/contact" className="footer-link">
                         Contact
                     </Link>
+
+                    <a
+                        href="https://buymeacoffee.com/lingopolska"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="footer-link bmc-footer"
+                    >
+                        🍕 Buy Me a Pizza Slice
+                    </a>
                 </div>
             </div>
 

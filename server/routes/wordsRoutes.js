@@ -18,6 +18,6 @@ router.post("/search", searchForms);
 router.get("/stats", getStats);
 
 // Main universal route: lookup by word or lemma
-router.get("/:word", getInflections);
+router.get("/inflections/:word", getInflections);
 
 export default router;
