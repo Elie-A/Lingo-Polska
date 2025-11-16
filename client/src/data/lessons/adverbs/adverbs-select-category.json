@@ -1,0 +1,90 @@
+{
+    "class": "Polish Adverbs - Adverb Categories",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "category": "Jak? (How?)",
+                    "polish": "jasno",
+                    "english": "clearly, brightly"
+                },
+                {
+                    "category": "Jak? (How?)",
+                    "polish": "ciepło",
+                    "english": "warmly"
+                },
+                {
+                    "category": "Jak? (How?)",
+                    "polish": "słonecznie",
+                    "english": "sunnily"
+                },
+                {
+                    "category": "Jak? (How?)",
+                    "polish": "cierpliwie",
+                    "english": "patiently"
+                },
+                {
+                    "category": "Jak? (How?)",
+                    "polish": "głośno",
+                    "english": "loudly"
+                },
+                {
+                    "category": "Jak? (How?)",
+                    "polish": "porządnie",
+                    "english": "properly, tidily"
+                },
+                {
+                    "category": "Jak? (How?)",
+                    "polish": "nisko",
+                    "english": "low"
+                },
+                {
+                    "category": "Gdzie? (Where?)",
+                    "polish": "nigdzie",
+                    "english": "nowhere"
+                },
+                {
+                    "category": "Gdzie? (Where?)",
+                    "polish": "blisko",
+                    "english": "near"
+                },
+                {
+                    "category": "Gdzie? (Where?)",
+                    "polish": "daleko",
+                    "english": "far"
+                },
+                {
+                    "category": "Gdzie? (Where?)",
+                    "polish": "wszędzie",
+                    "english": "everywhere"
+                },
+                {
+                    "category": "Kiedy? (When?)",
+                    "polish": "nigdy",
+                    "english": "never"
+                },
+                {
+                    "category": "Kiedy? (When?)",
+                    "polish": "jutro",
+                    "english": "tomorrow"
+                },
+                {
+                    "category": "Kiedy? (When?)",
+                    "polish": "dziś",
+                    "english": "today"
+                },
+                {
+                    "category": "Kiedy? (When?)",
+                    "polish": "zawsze",
+                    "english": "always"
+                },
+                {
+                    "category": "Kiedy? (When?)",
+                    "polish": "wczoraj",
+                    "english": "yesterday"
+                }
+            ]
+        }
+    ]
+}

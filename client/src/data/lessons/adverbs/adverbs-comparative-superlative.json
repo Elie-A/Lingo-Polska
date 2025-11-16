@@ -1,0 +1,100 @@
+{
+    "class": "Polish Adverbs - Comparative and Superlative Forms",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "polish": "Edward mówi po polsku bardzo dobrze, ale Agata mówi lepiej i rozumie więcej",
+                    "base form": "dobrze, dużo",
+                    "english": "Edward speaks Polish very well, but Agata speaks better and understands more"
+                },
+                {
+                    "polish": "Tutaj jest zimno. W Hiszpanii jest cieplej",
+                    "base form": "ciepło",
+                    "english": "It's cold here. In Spain it's warmer"
+                },
+                {
+                    "polish": "Monika wygląda najlepiej",
+                    "base form": "dobrze",
+                    "english": "Monika looks the best"
+                },
+                {
+                    "polish": "Afryka jest daleko stąd. Azja jest dalej, a Australia najdalej",
+                    "base form": "daleko",
+                    "english": "Africa is far from here. Asia is farther, and Australia is the farthest"
+                },
+                {
+                    "polish": "Szef wychodzi z pracy najwcześniej",
+                    "base form": "wcześnie",
+                    "english": "The boss leaves work the earliest"
+                },
+                {
+                    "polish": "Dzisiaj jest cieplej niż wczoraj",
+                    "base form": "ciepło",
+                    "english": "Today is warmer than yesterday"
+                },
+                {
+                    "polish": "W styczniu jest zawsze najzimniej",
+                    "base form": "zimno",
+                    "english": "In January it is always the coldest"
+                },
+                {
+                    "polish": "Mów trochę głośniej",
+                    "base form": "głośno",
+                    "english": "Speak a little louder"
+                },
+                {
+                    "polish": "Następnym razem muszę pójść trochę dalej",
+                    "base form": "daleko",
+                    "english": "Next time I have to go a little farther"
+                },
+                {
+                    "polish": "W dzisiejszych czasach coraz trudniej znaleźć prawdziwych przyjaciół",
+                    "base form": "trudno",
+                    "english": "Nowadays it's increasingly harder to find true friends"
+                },
+                {
+                    "polish": "Jeśli zrobisz dobre notatki, będzie ci się łatwo uczyło",
+                    "base form": "łatwo",
+                    "english": "If you make good notes, it will be easy for you to study"
+                },
+                {
+                    "polish": "Jeśli zrobisz dobre notatki, będzie ci się łatwiej uczyło",
+                    "base form": "łatwo",
+                    "english": "If you make good notes, it will be easier for you to study"
+                },
+                {
+                    "polish": "Muszę wstawać wcześniej, ciągle się spóźniam",
+                    "base form": "wcześnie",
+                    "english": "I have to get up earlier, I'm constantly late"
+                },
+                {
+                    "polish": "Na fotelu jest wygodniej niż na krześle",
+                    "base form": "wygodnie",
+                    "english": "It's more comfortable in the armchair than on the chair"
+                },
+                {
+                    "polish": "Najprzyjemniej jest latem, kiedy można siedzieć wieczorem w ogrodzie",
+                    "base form": "przyjemnie",
+                    "english": "It's most pleasant in summer, when you can sit in the garden in the evening"
+                },
+                {
+                    "polish": "Najwygodniej śpi się we własnym łóżku",
+                    "base form": "wygodnie",
+                    "english": "One sleeps most comfortably in one's own bed"
+                },
+                {
+                    "polish": "Lekarz kazał mi jeść trochę zdrowiej",
+                    "base form": "zdrowo",
+                    "english": "The doctor told me to eat a little healthier"
+                },
+                {
+                    "polish": "Kasia śpiewa najciszej z całego chóru",
+                    "base form": "cicho",
+                    "english": "Kasia sings the most quietly of the whole choir"
+                }
+            ]
+        }
+    ]
+}

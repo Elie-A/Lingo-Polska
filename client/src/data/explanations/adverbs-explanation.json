@@ -1,0 +1,297 @@
+{
+    "title": "Polish Adverbs - Full Lesson",
+    "sections": [
+        {
+            "heading": "Introduction",
+            "content": [
+                "Adverbs in Polish describe actions, qualities, or the circumstances of an action.",
+                "They modify verbs, adjectives, other adverbs, or whole sentences.",
+                "Understanding adverbs is essential for expressing manner, time, place, degree, and frequency correctly.",
+                "In this lesson, you'll learn how adverbs are formed, their types, placement rules, and nuances to make your sentences more natural and precise."
+            ]
+        },
+        {
+            "heading": "Overview of Adverbs",
+            "content": [
+                "Adverbs are words that provide more information about how, when, where, or to what extent something happens.",
+                "They can be formed from adjectives, nouns, numerals, and other parts of speech.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Category",
+                        "Description",
+                        "Examples"
+                    ],
+                    "rows": [
+                        [
+                            "Manner (sposób)",
+                            "Describe how an action is performed",
+                            "szybko (quickly), dokładnie (accurately), cicho (quietly)"
+                        ],
+                        [
+                            "Time (czas)",
+                            "Indicate when something happens",
+                            "dziś (today), wczoraj (yesterday), teraz (now)"
+                        ],
+                        [
+                            "Place (miejsce)",
+                            "Show where an action takes place",
+                            "tutaj (here), tam (there), wszędzie (everywhere)"
+                        ],
+                        [
+                            "Degree/Intensity (stopień)",
+                            "Express extent or intensity",
+                            "bardzo (very), trochę (a little), całkowicie (completely)"
+                        ],
+                        [
+                            "Frequency (częstotliwość)",
+                            "Describe how often something happens",
+                            "zawsze (always), czasami (sometimes), rzadko (rarely)"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Formation of Adverbs",
+            "content": [
+                "Most Polish adverbs are derived from adjectives, numerals, or nouns.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Base",
+                        "Adverb Formation",
+                        "Examples"
+                    ],
+                    "rows": [
+                        [
+                            "Adjective",
+                            "Add -o or -e to stem",
+                            "szybki → szybko (quick → quickly), głośny → głośno (loud → loudly)"
+                        ],
+                        [
+                            "Noun",
+                            "Use set adverbial forms",
+                            "dzień → dziennie (day → daily), noc → nocą (night → at night)"
+                        ],
+                        [
+                            "Numeral",
+                            "Combine numeral with - razy or - krot",
+                            "trzy → trzykrotnie (three → three times)"
+                        ]
+                    ],
+                    "border": true
+                },
+                "💡 Tip: Some adverbs are irregular and cannot be predicted from their base form."
+            ]
+        },
+        {
+            "heading": "Adverb Placement in Sentences",
+            "content": [
+                "Adverbs usually follow the verb they modify or appear at the beginning or end of the sentence for emphasis.",
+                "Placement rules vary depending on the type of adverb and sentence structure.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Adverb Type",
+                        "Typical Placement",
+                        "Example"
+                    ],
+                    "rows": [
+                        [
+                            "Manner",
+                            "After verb or at sentence end",
+                            "On mówi głośno. (He speaks loudly)"
+                        ],
+                        [
+                            "Time",
+                            "Beginning or end of sentence",
+                            "Dzisiaj idę do szkoły. (Today I go to school)"
+                        ],
+                        [
+                            "Place",
+                            "Before or after verb, or at end",
+                            "Siedzi tutaj. (He sits here)"
+                        ],
+                        [
+                            "Frequency",
+                            "Usually before main verb",
+                            "Zawsze piję kawę rano. (I always drink coffee in the morning)"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Comparison of Adverbs",
+            "content": [
+                "Many adverbs can be compared using forms analogous to adjectives: positive, comparative, and superlative.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Form",
+                        "Example",
+                        "Meaning"
+                    ],
+                    "rows": [
+                        [
+                            "Positive",
+                            "szybko",
+                            "quickly"
+                        ],
+                        [
+                            "Comparative",
+                            "szybciej",
+                            "more quickly"
+                        ],
+                        [
+                            "Superlative",
+                            "najszybciej",
+                            "most quickly"
+                        ]
+                    ],
+                    "border": true
+                },
+                "💡 Tip: Some adverbs are irregular and do not follow standard comparative forms, e.g., dobrze → lepiej → najlepiej (well → better → best)."
+            ]
+        },
+        {
+            "heading": "Adverbs with Verbs and Adjectives",
+            "content": [
+                "Adverbs modify verbs to show how an action is performed.",
+                "They can also modify adjectives or other adverbs to show intensity or degree.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Example",
+                        "Explanation"
+                    ],
+                    "rows": [
+                        [
+                            "Bardzo szybki biegacz",
+                            "Very fast runner (adverb 'bardzo' modifies adjective 'szybki')"
+                        ],
+                        [
+                            "Czyta uważnie",
+                            "Reads carefully (adverb 'uważnie' modifies verb 'czyta')"
+                        ],
+                        [
+                            "Niesamowicie szybko",
+                            "Incredibly fast (adverb 'niesamowicie' modifies adverb 'szybko')"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Common Irregular Adverbs",
+            "content": [
+                "Some adverbs do not follow predictable patterns and must be memorized.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Adverb",
+                        "Meaning",
+                        "Comparative",
+                        "Superlative"
+                    ],
+                    "rows": [
+                        [
+                            "dobrze",
+                            "well",
+                            "lepiej",
+                            "najlepiej"
+                        ],
+                        [
+                            "źle",
+                            "badly",
+                            "gorzej",
+                            "najgorzej"
+                        ],
+                        [
+                            "dużo",
+                            "a lot/much",
+                            "więcej",
+                            "najwięcej"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Adverbs of Time and Frequency",
+            "content": [
+                "These adverbs indicate when an action occurs and how often it happens.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Adverb",
+                        "Meaning",
+                        "Example"
+                    ],
+                    "rows": [
+                        [
+                            "zawsze",
+                            "always",
+                            "Zawsze piję kawę rano."
+                        ],
+                        [
+                            "czasami",
+                            "sometimes",
+                            "Czasami chodzę do kina."
+                        ],
+                        [
+                            "nigdy",
+                            "never",
+                            "Nigdy nie jem mięsa."
+                        ],
+                        [
+                            "wczoraj",
+                            "yesterday",
+                            "Wczoraj padał deszcz."
+                        ],
+                        [
+                            "jutro",
+                            "tomorrow",
+                            "Jutro pójdziemy na spacer."
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Practice Exercises",
+            "content": [
+                "Transform adjectives into adverbs and use them in sentences.",
+                "Identify the type of adverb in given sentences.",
+                "Rewrite sentences by changing the placement of adverbs.",
+                "Form comparative and superlative adverbs and use them in examples.",
+                "Practice irregular adverbs in context."
+            ]
+        },
+        {
+            "heading": "Usage Tips",
+            "content": [
+                "Memorize common adverbs with examples of usage rather than in isolation.",
+                "Pay attention to word order, especially with time and frequency adverbs.",
+                "Practice combining adverbs with adjectives and other adverbs for natural expression.",
+                "💡 Tip: Group adverbs by type (manner, time, place, degree, frequency) to reinforce learning patterns."
+            ]
+        },
+        {
+            "heading": "Common Mistakes",
+            "content": [
+                "Confusing adjective and adverb forms (e.g., szybki → szybki vs szybko).",
+                "Incorrect placement of adverbs in the sentence.",
+                "Overusing irregular adverbs incorrectly in comparative/superlative.",
+                "Misidentifying adverb type and modifying the wrong part of the sentence.",
+                "Forgetting that some adverbs are derived from nouns and numerals with unique forms."
+            ]
+        }
+    ]
+}

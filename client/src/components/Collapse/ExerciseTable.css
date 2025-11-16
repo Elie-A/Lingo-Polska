@@ -111,3 +111,1231 @@
     font-style: italic;
     cursor: help;
 }
+
+.collapse-container .exercise-table .change-type-cell,
+.exercise-table .change-type-cell {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem !important;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Impersonal constructions (jest zimno, było gorąco) */
+.collapse-container .exercise-table .type-impersonal,
+.exercise-table .type-impersonal {
+    background-color: #fef3c7 !important;
+    color: #92400e !important;
+    border-left: 3px solid #f59e0b;
+}
+
+/* Regular adjective to adverb */
+.collapse-container .exercise-table .type-adverb,
+.exercise-table .type-adverb {
+    background-color: #dbeafe !important;
+    color: #1e40af !important;
+    border-left: 3px solid #3b82f6;
+}
+
+/* Mixed usage (adjective + adverb in same sentence) */
+.collapse-container .exercise-table .type-mixed,
+.exercise-table .type-mixed {
+    background-color: #e9d5ff !important;
+    color: #6b21a8 !important;
+    border-left: 3px solid #a855f7;
+}
+
+/* Quantifier usage */
+.collapse-container .exercise-table .type-quantifier,
+.exercise-table .type-quantifier {
+    background-color: #d1fae5 !important;
+    color: #065f46 !important;
+    border-left: 3px solid #10b981;
+}
+
+/* Highlight the base adjective form */
+.collapse-container .exercise-table .adjective-base,
+.exercise-table .adjective-base {
+    background-color: #fef2f2;
+    color: #991b1b;
+    font-weight: 600;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    border: 1px solid #fecaca;
+}
+
+/* Highlight the transformed adverb */
+.collapse-container .exercise-table .adverb-form,
+.exercise-table .adverb-form {
+    background-color: #eff6ff;
+    color: #1e40af;
+    font-weight: 600;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    border: 1px solid #bfdbfe;
+}
+
+/* Transformation arrow indicator */
+.collapse-container .exercise-table .transformed-cell,
+.exercise-table .transformed-cell {
+    position: relative;
+    padding-left: 1.8rem !important;
+}
+
+.collapse-container .exercise-table .transformed-cell::before,
+.exercise-table .transformed-cell::before {
+    content: "→";
+    position: absolute;
+    left: 0.5rem;
+    color: #9ca3af;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Legend for transformation types */
+.transformation-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.legend-color.impersonal {
+    background-color: #fef3c7;
+    border-left: 3px solid #f59e0b;
+}
+
+.legend-color.adverb {
+    background-color: #dbeafe;
+    border-left: 3px solid #3b82f6;
+}
+
+.legend-color.mixed {
+    background-color: #e9d5ff;
+    border-left: 3px solid #a855f7;
+}
+
+.legend-color.quantifier {
+    background-color: #d1fae5;
+    border-left: 3px solid #10b981;
+}
+
+.collapse-container .exercise-table .comparative-cell,
+.exercise-table .comparative-cell {
+    background: linear-gradient(90deg, #fef3c7 0%, #bfdbfe 100%) !important;
+    position: relative;
+    padding-left: 2rem !important;
+    font-weight: 600;
+    border-left: 4px solid #3b82f6;
+}
+
+/* Arrow indicator for comparative transformation */
+.collapse-container .exercise-table .comparative-cell::before,
+.exercise-table .comparative-cell::before {
+    content: "⇒";
+    position: absolute;
+    left: 0.5rem;
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlight comparative endings/changes */
+.collapse-container .exercise-table .comparative-highlight,
+.exercise-table .comparative-highlight {
+    background-color: #dbeafe;
+    color: #1e3a8a;
+    font-weight: 700;
+    padding: 0.15rem 0.35rem;
+    border-radius: 3px;
+    border: 1.5px solid #93c5fd;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Base form (positive degree) styling */
+.collapse-container .exercise-table .base-form-cell,
+.exercise-table .base-form-cell {
+    background-color: #f9fafb !important;
+    color: #4b5563;
+    font-weight: 500;
+    border-left: 3px solid #9ca3af;
+}
+
+/* Comparative legend specific styling */
+.comparative-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, #f0f9ff 0%, #fef3c7 100%);
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+}
+
+.comparative-legend .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.comparative-legend .legend-color {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+}
+
+.comparative-legend .legend-color.base {
+    background-color: #f9fafb;
+    border-left: 3px solid #9ca3af;
+}
+
+.comparative-legend .legend-color.comparative {
+    background: linear-gradient(90deg, #fef3c7 0%, #bfdbfe 100%);
+    border-left: 4px solid #3b82f6;
+}
+
+/* Irregular comparative forms (lepiej, więcej, mniej) */
+.collapse-container .exercise-table .irregular-comparative,
+.exercise-table .irregular-comparative {
+    background: linear-gradient(90deg, #fce7f3 0%, #ddd6fe 100%) !important;
+    color: #7c3aed;
+    font-weight: 700;
+    border-left: 4px solid #a855f7;
+    font-style: italic;
+}
+
+/* Special badge for irregular forms */
+.irregular-badge {
+    display: inline-block;
+    background-color: #fae8ff;
+    color: #86198f;
+    font-size: 0.7rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    margin-left: 0.4rem;
+    font-weight: 600;
+    border: 1px solid #d8b4fe;
+}
+
+/* Hover effects for comparative cells */
+.collapse-container .exercise-table .comparative-cell:hover,
+.exercise-table .comparative-cell:hover {
+    background: linear-gradient(90deg, #fde68a 0%, #93c5fd 100%) !important;
+    transform: translateX(2px);
+    transition: all 0.2s ease;
+}
+
+/* Pattern indicators for -iej endings */
+.pattern-iej {
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+/* Pattern indicators for vowel changes */
+.pattern-vowel-change {
+    background-color: #fef3c7;
+    color: #92400e;
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 0.9em;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #f59e0b;
+}
+
+.collapse-container .exercise-table .adverb-cell,
+.exercise-table .adverb-cell {
+    background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%) !important;
+    color: #92400e;
+    font-weight: 700;
+    border-left: 4px solid #f59e0b;
+    position: relative;
+    padding: 0.65rem 0.8rem !important;
+}
+
+/* Badge indicator for adverb cells */
+.collapse-container .exercise-table .adverb-cell::after,
+.exercise-table .adverb-cell::after {
+    content: "ADV";
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    background-color: #f59e0b;
+    color: white;
+    font-size: 0.6rem;
+    padding: 0.15rem 0.3rem;
+    border-radius: 3px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Modified word/phrase cell */
+.collapse-container .exercise-table .modifies-cell,
+.exercise-table .modifies-cell {
+    background: linear-gradient(135deg, #e0f2fe 0%, #bfdbfe 100%) !important;
+    color: #1e40af;
+    font-weight: 700;
+    border-left: 4px solid #3b82f6;
+    position: relative;
+    padding: 0.65rem 0.8rem !important;
+}
+
+/* Badge indicator for modified words */
+.collapse-container .exercise-table .modifies-cell::after,
+.exercise-table .modifies-cell::after {
+    content: "MOD";
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 0.6rem;
+    padding: 0.15rem 0.3rem;
+    border-radius: 3px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Connection indicator between adverb and modified word */
+.adverb-modifies-connector {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.adverb-modifies-connector::before {
+    content: "→";
+    color: #6b7280;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Multiple adverbs indicator */
+.multiple-adverbs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.adverb-item {
+    background-color: #fef3c7;
+    color: #92400e;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    border-left: 3px solid #f59e0b;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.adverb-item:not(:last-child)::after {
+    content: ",";
+    margin-left: 0.2rem;
+}
+
+/* Highlight adverbs within Polish sentence */
+.polish-with-adverb-highlight {
+    line-height: 1.8;
+}
+
+.highlighted-adverb {
+    background: linear-gradient(120deg, #fef3c7 0%, #fde68a 100%);
+    color: #92400e;
+    font-weight: 700;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    border: 2px solid #f59e0b;
+    box-shadow: 0 2px 4px rgba(245, 158, 11, 0.2);
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip effect on hover */
+.highlighted-adverb:hover::after {
+    content: attr(data-modifies);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1f2937;
+    color: white;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    margin-bottom: 0.3rem;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.highlighted-adverb:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: #1f2937;
+    margin-bottom: -5px;
+}
+
+/* Adverb identification legend */
+.adverb-identification-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #fff7ed 0%, #e0f2fe 100%);
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+}
+
+.adverb-identification-legend .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.7rem;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.adverb-identification-legend .legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.adverb-identification-legend .legend-color.adverb {
+    background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+    border-left: 4px solid #f59e0b;
+}
+
+.adverb-identification-legend .legend-color.adverb::after {
+    content: "ADV";
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #f59e0b;
+    color: white;
+    font-size: 0.5rem;
+    padding: 0.1rem 0.2rem;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.adverb-identification-legend .legend-color.modifies {
+    background: linear-gradient(135deg, #e0f2fe 0%, #bfdbfe 100%);
+    border-left: 4px solid #3b82f6;
+}
+
+.adverb-identification-legend .legend-color.modifies::after {
+    content: "MOD";
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 0.5rem;
+    padding: 0.1rem 0.2rem;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+/* Relationship arrow */
+.legend-arrow {
+    font-size: 1.2rem;
+    color: #6b7280;
+    font-weight: bold;
+    margin: 0 0.5rem;
+}
+
+/* Hover effects */
+.collapse-container .exercise-table .adverb-cell:hover,
+.exercise-table .adverb-cell:hover {
+    background: linear-gradient(135deg, #fde68a 0%, #fdba74 100%) !important;
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(245, 158, 11, 0.3);
+}
+
+.collapse-container .exercise-table .modifies-cell:hover,
+.exercise-table .modifies-cell:hover {
+    background: linear-gradient(135deg, #bfdbfe 0%, #93c5fd 100%) !important;
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+}
+
+/* Special styling for adverb types */
+.adverb-type-manner {
+    border-bottom: 2px dotted #f59e0b;
+}
+
+.adverb-type-degree {
+    border-bottom: 2px dotted #3b82f6;
+}
+
+.adverb-type-time {
+    border-bottom: 2px dotted #10b981;
+}
+
+.dialogue-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f0f9ff 0%, #fef3c7 100%);
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Individual dialogue entry */
+.dialogue-entry {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Alternate alignment for different speakers */
+.dialogue-entry.speaker-a {
+    flex-direction: row;
+}
+
+.dialogue-entry.speaker-b {
+    flex-direction: row-reverse;
+}
+
+/* Speaker avatar */
+.speaker-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: white;
+    flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+/* Different colors for different speakers */
+.speaker-avatar.speaker-a {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+}
+
+.speaker-avatar.speaker-b {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.speaker-avatar.speaker-c {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.speaker-avatar.speaker-d {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+/* Speaker name label */
+.speaker-name {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #6b7280;
+    white-space: nowrap;
+    background-color: white;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Speech bubble container */
+.speech-bubble-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 75%;
+}
+
+/* Speech bubble */
+.speech-bubble {
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.speech-bubble:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Polish text bubble */
+.speech-bubble.polish {
+    background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
+    border: 2px solid #e5e7eb;
+}
+
+.dialogue-entry.speaker-a .speech-bubble.polish {
+    border-left: 4px solid #3b82f6;
+}
+
+.dialogue-entry.speaker-b .speech-bubble.polish {
+    border-right: 4px solid #f59e0b;
+}
+
+/* English translation bubble */
+.speech-bubble.english {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border: 2px solid #fbbf24;
+    font-style: italic;
+    color: #78350f;
+    font-size: 0.9rem;
+}
+
+/* Speech bubble tail (pointer) */
+.speech-bubble.polish::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+}
+
+.dialogue-entry.speaker-a .speech-bubble.polish::before {
+    left: -18px;
+    border-right-color: #3b82f6;
+}
+
+.dialogue-entry.speaker-b .speech-bubble.polish::before {
+    right: -18px;
+    border-left-color: #f59e0b;
+}
+
+/* Text styling within bubbles */
+.bubble-text {
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.bubble-text.polish-text {
+    color: #1f2937;
+    font-weight: 500;
+}
+
+.bubble-text.english-text {
+    color: #78350f;
+}
+
+/* Dialogue legend */
+.dialogue-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #e0f2fe 0%, #fef3c7 100%);
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    align-items: center;
+}
+
+.dialogue-legend-speaker {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dialogue-legend-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.dialogue-legend-avatar.speaker-a {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+}
+
+.dialogue-legend-avatar.speaker-b {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.dialogue-legend-avatar.speaker-c {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.dialogue-legend-avatar.speaker-d {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+/* Toggle translation button */
+.toggle-translation-btn {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+    font-size: 0.85rem;
+}
+
+.toggle-translation-btn:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.4);
+}
+
+/* Hide translation by default (optional) */
+.speech-bubble.english.hidden {
+    display: none;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .speech-bubble-container {
+        max-width: 85%;
+    }
+
+    .speaker-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 0.95rem;
+    }
+
+    .dialogue-entry {
+        gap: 0.75rem;
+    }
+}
+
+/* Special highlighting for adverbs in dialogue (optional) */
+.dialogue-adverb-highlight {
+    background: linear-gradient(120deg, #fef3c7 0%, #fde68a 100%);
+    color: #92400e;
+    font-weight: 700;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    border-bottom: 2px dotted #f59e0b;
+}
+
+/* ========== COMPLETE WITH VERB FORMS STYLES ========== */
+
+/* Prompt cell with blank indicators */
+.collapse-container .exercise-table .prompt-cell,
+.exercise-table .prompt-cell {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%) !important;
+    color: #374151;
+    font-weight: 500;
+    border-left: 4px solid #6b7280;
+    position: relative;
+    padding: 0.8rem !important;
+    font-family: 'Courier New', monospace;
+    line-height: 1.7;
+}
+
+/* Highlight brackets in prompt */
+.prompt-bracket {
+    background-color: #fef3c7;
+    color: #92400e;
+    font-weight: 700;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    border: 1px solid #fbbf24;
+}
+
+/* Highlight parentheses (subject pronouns) */
+.prompt-parenthesis {
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-weight: 700;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    border: 1px solid #93c5fd;
+}
+
+/* Completed answer cell */
+.collapse-container .exercise-table .answer-cell,
+.exercise-table .answer-cell {
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%) !important;
+    color: #065f46;
+    font-weight: 600;
+    border-left: 4px solid #10b981;
+    position: relative;
+    padding: 0.8rem !important;
+}
+
+/* Badge for answer cell */
+.collapse-container .exercise-table .answer-cell::after,
+.exercise-table .answer-cell::after {
+    content: "✓";
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    background-color: #10b981;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.15rem 0.35rem;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+/* notes cell */
+.collapse-container .exercise-table .grammar-notes-cell,
+.exercise-table .grammar-notes-cell {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%) !important;
+    color: #78350f;
+    font-size: 0.85rem;
+    font-style: italic;
+    border-left: 3px solid #f59e0b;
+    padding: 0.7rem !important;
+    line-height: 1.6;
+}
+
+/* Badge for notes */
+.collapse-container .exercise-table .grammar-notes-cell::before,
+.exercise-table .grammar-notes-cell::before {
+    content: "📝";
+    margin-right: 0.4rem;
+    font-style: normal;
+}
+
+/* Highlight case names in notes */
+.case-highlight {
+    background-color: #fecaca;
+    color: #991b1b;
+    font-weight: 600;
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+    font-style: normal;
+}
+
+/* Complete forms legend */
+.complete-forms-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+}
+
+.complete-forms-legend .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.7rem;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.complete-forms-legend .legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.complete-forms-legend .legend-color.prompt {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    border-left: 4px solid #6b7280;
+}
+
+.complete-forms-legend .legend-color.answer {
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+    border-left: 4px solid #10b981;
+    position: relative;
+}
+
+.complete-forms-legend .legend-color.answer::after {
+    content: "✓";
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background-color: #10b981;
+    color: white;
+    font-size: 0.5rem;
+    padding: 0.1rem 0.25rem;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.complete-forms-legend .legend-color.grammar {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-left: 3px solid #f59e0b;
+}
+
+/* Instructions box */
+.exercise-instructions {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    border: 2px solid #3b82f6;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #1e40af;
+}
+
+.exercise-instructions strong {
+    color: #1e3a8a;
+}
+
+/* Hover effects */
+.collapse-container .exercise-table .prompt-cell:hover,
+.exercise-table .prompt-cell:hover {
+    background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%) !important;
+    transform: translateX(2px);
+    transition: all 0.2s ease;
+}
+
+.collapse-container .exercise-table .answer-cell:hover,
+.exercise-table .answer-cell:hover {
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%) !important;
+    transform: translateX(2px);
+    transition: all 0.2s ease;
+}
+
+/* Blank space indicator (for visual representation) */
+.blank-indicator {
+    display: inline-block;
+    background: repeating-linear-gradient(90deg,
+            #d1d5db,
+            #d1d5db 2px,
+            transparent 2px,
+            transparent 6px);
+    height: 2px;
+    width: 60px;
+    vertical-align: middle;
+    margin: 0 0.2rem;
+}
+
+/* Verb infinitive highlight */
+.verb-infinitive {
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-weight: 600;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    border: 1px solid #93c5fd;
+}
+
+/* English word in brackets */
+.english-hint {
+    background-color: #fce7f3;
+    color: #9f1239;
+    font-weight: 600;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    border: 1px solid #fda4af;
+    font-style: italic;
+}
+
+/* ========== COMPARATIVE AND SUPERLATIVE FORMS STYLES ========== */
+
+/* Base form cell */
+.collapse-container .exercise-table .base-form-reference-cell,
+.exercise-table .base-form-reference-cell {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%) !important;
+    color: #4b5563;
+    font-weight: 600;
+    border-left: 3px solid #9ca3af;
+    padding: 0.7rem !important;
+    font-size: 0.9rem;
+}
+
+/* Badge for base form */
+.collapse-container .exercise-table .base-form-reference-cell::before,
+.exercise-table .base-form-reference-cell::before {
+    content: "BASE";
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    background-color: #6b7280;
+    color: white;
+    font-size: 0.6rem;
+    padding: 0.15rem 0.3rem;
+    border-radius: 3px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.collapse-container .exercise-table .base-form-reference-cell,
+.exercise-table .base-form-reference-cell {
+    position: relative;
+}
+
+/* Inline highlighting for comparative forms */
+.comparative-inline {
+    background: linear-gradient(120deg, #dbeafe 0%, #93c5fd 100%);
+    color: #1e40af;
+    font-weight: 700;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    border: 2px solid #3b82f6;
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+    position: relative;
+    display: inline-block;
+}
+
+.comparative-inline::after {
+    content: "COMP";
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 0.5rem;
+    padding: 0.1rem 0.25rem;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* Inline highlighting for superlative forms */
+.superlative-inline {
+    background: linear-gradient(120deg, #fef3c7 0%, #fbbf24 100%);
+    color: #92400e;
+    font-weight: 700;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    border: 2px solid #f59e0b;
+    box-shadow: 0 2px 4px rgba(245, 158, 11, 0.2);
+    position: relative;
+    display: inline-block;
+}
+
+.superlative-inline::after {
+    content: "SUP";
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    background-color: #f59e0b;
+    color: white;
+    font-size: 0.5rem;
+    padding: 0.1rem 0.25rem;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* Inline highlighting for base forms in context */
+.base-inline {
+    background: linear-gradient(120deg, #f3f4f6 0%, #d1d5db 100%);
+    color: #374151;
+    font-weight: 700;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    border: 2px solid #9ca3af;
+    box-shadow: 0 2px 4px rgba(107, 114, 128, 0.2);
+    position: relative;
+    display: inline-block;
+}
+
+.base-inline::after {
+    content: "BASE";
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    background-color: #6b7280;
+    color: white;
+    font-size: 0.5rem;
+    padding: 0.1rem 0.25rem;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* Special highlighting for irregular comparatives/superlatives */
+.irregular-inline {
+    background: linear-gradient(120deg, #fce7f3 0%, #f9a8d4 100%);
+    color: #9f1239;
+    font-weight: 700;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    border: 2px solid #ec4899;
+    box-shadow: 0 2px 4px rgba(236, 72, 153, 0.2);
+    position: relative;
+    display: inline-block;
+}
+
+.irregular-inline::after {
+    content: "IRR";
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    background-color: #ec4899;
+    color: white;
+    font-size: 0.5rem;
+    padding: 0.1rem 0.25rem;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* Degrees legend */
+.degrees-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f9fafb 0%, #ede9fe 100%);
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+}
+
+.degrees-legend .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.7rem;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.degrees-legend .legend-sample {
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border: 2px solid;
+}
+
+.degrees-legend .legend-sample.base {
+    background: linear-gradient(120deg, #f3f4f6 0%, #d1d5db 100%);
+    color: #374151;
+    border-color: #9ca3af;
+}
+
+.degrees-legend .legend-sample.comparative {
+    background: linear-gradient(120deg, #dbeafe 0%, #93c5fd 100%);
+    color: #1e40af;
+    border-color: #3b82f6;
+}
+
+.degrees-legend .legend-sample.superlative {
+    background: linear-gradient(120deg, #fef3c7 0%, #fbbf24 100%);
+    color: #92400e;
+    border-color: #f59e0b;
+}
+
+.degrees-legend .legend-sample.irregular {
+    background: linear-gradient(120deg, #fce7f3 0%, #f9a8d4 100%);
+    color: #9f1239;
+    border-color: #ec4899;
+}
+
+/* Polish text with highlighted degrees */
+.polish-with-degrees {
+    line-height: 2;
+    padding: 0.5rem 0;
+}
+
+/* Hover effects for inline highlights */
+.comparative-inline:hover,
+.superlative-inline:hover,
+.base-inline:hover,
+.irregular-inline:hover {
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+    cursor: help;
+}
+
+/* Info box for degrees */
+.degrees-info-box {
+    background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+    border: 2px solid #8b5cf6;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #5b21b6;
+}
+
+.degrees-info-box strong {
+    color: #4c1d95;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    .comparative-inline::after,
+    .superlative-inline::after,
+    .base-inline::after,
+    .irregular-inline::after {
+        font-size: 0.45rem;
+        padding: 0.05rem 0.2rem;
+    }
+}

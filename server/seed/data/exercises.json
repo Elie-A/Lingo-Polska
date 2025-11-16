@@ -3222,5 +3222,847 @@
                 "nic nie robię."
             ]
         }
+    ],
+    "adverbs": [
+        {
+            "question": "On mówi ___ (wolno).",
+            "answer": "wolno",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "A1",
+            "hints": [
+                "Adverb of manner",
+                "Same form as adjective neuter"
+            ]
+        },
+        {
+            "question": "Ona biega ___.",
+            "answer": "szybko",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "szybko",
+                "szybki",
+                "szybka",
+                "szybcy"
+            ],
+            "hints": [
+                "Adverb of manner",
+                "How does she run?"
+            ]
+        },
+        {
+            "question": "Mieszkam ___ (blisko) centrum.",
+            "answer": "blisko",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Adverb of place",
+                "Describes proximity"
+            ]
+        },
+        {
+            "question": "Przychodzę do pracy ___.",
+            "answer": "codziennie",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "codziennie",
+                "każdy dzień",
+                "codzienny",
+                "dzień"
+            ],
+            "hints": [
+                "Adverb of frequency",
+                "Every day"
+            ]
+        },
+        {
+            "question": "To zadanie jest ___ (bardzo) trudne.",
+            "answer": "bardzo",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "A1",
+            "hints": [
+                "Adverb of degree",
+                "Intensifier"
+            ]
+        },
+        {
+            "question": "Ona śpiewa ___ ładnie niż ja.",
+            "answer": "ładniej",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "ładniej",
+                "ładnie",
+                "ładna",
+                "najładniej"
+            ],
+            "hints": [
+                "Comparative form",
+                "More beautifully"
+            ]
+        },
+        {
+            "question": "Muszę wstać ___ (wcześnie) jutro.",
+            "answer": "wcześnie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Adverb of time",
+                "Early"
+            ]
+        },
+        {
+            "question": "Z wszystkich on pracuje ___.",
+            "answer": "najciężej",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "najciężej",
+                "ciężko",
+                "ciężej",
+                "ciężki"
+            ],
+            "hints": [
+                "Superlative form",
+                "The hardest"
+            ]
+        },
+        {
+            "question": "Spotkajmy się ___ (gdzie) indziej.",
+            "answer": "gdzie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Interrogative adverb of place",
+                "Somewhere else"
+            ]
+        },
+        {
+            "question": "Ona mówi po polsku ___.",
+            "answer": "płynnie",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "płynnie",
+                "płynny",
+                "płynna",
+                "płynność"
+            ],
+            "hints": [
+                "Adverb of manner",
+                "Fluently"
+            ]
+        },
+        {
+            "question": "Zrobiłem to ___ (celowo), nie przypadkowo.",
+            "answer": "celowo",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "B2",
+            "hints": [
+                "Adverb from adjective 'celowy'",
+                "On purpose"
+            ]
+        },
+        {
+            "question": "Pracuje ___ intensywnie, odkąd dostał awans.",
+            "answer": "coraz",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "coraz",
+                "zawsze",
+                "więcej",
+                "bardziej"
+            ],
+            "hints": [
+                "Progressive change",
+                "Increasingly"
+            ]
+        },
+        {
+            "question": "Autobus przyjeżdża ___ (zwykle) o ósmej.",
+            "answer": "zwykle",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Adverb of frequency",
+                "Usually"
+            ]
+        },
+        {
+            "question": "On mieszka ___, ale pracuje w centrum.",
+            "answer": "daleko",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "daleko",
+                "daleki",
+                "blisko",
+                "wysoko"
+            ],
+            "hints": [
+                "Adverb of place",
+                "Far away"
+            ]
+        },
+        {
+            "question": "Mówi ___ (cicho), bo dziecko śpi.",
+            "answer": "cicho",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Adverb of manner",
+                "Quietly"
+            ]
+        },
+        {
+            "question": "On jeździ ___ szybciej niż jego brat.",
+            "answer": "dużo",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "dużo",
+                "duży",
+                "więcej",
+                "bardziej"
+            ],
+            "hints": [
+                "Intensifier with comparative",
+                "Much faster"
+            ]
+        },
+        {
+            "question": "Zadanie wykonałem ___ (starannie).",
+            "answer": "starannie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "B2",
+            "hints": [
+                "Adverb from 'staranny'",
+                "Carefully"
+            ]
+        },
+        {
+            "question": "Spotkaliśmy się ___ i porozmawialiśmy.",
+            "answer": "przypadkowo",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "przypadkowo",
+                "celowo",
+                "przypadek",
+                "przypadkowy"
+            ],
+            "hints": [
+                "Adverb of manner",
+                "By chance"
+            ]
+        },
+        {
+            "question": "To jest ___ (niewiarygodnie) piękne miejsce.",
+            "answer": "niewiarygodnie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "C1",
+            "hints": [
+                "Intensifying adverb",
+                "Unbelievably"
+            ]
+        },
+        {
+            "question": "Pomimo trudności, wykonał zadanie ___.",
+            "answer": "znakomicie",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "C1",
+            "options": [
+                "znakomicie",
+                "źle",
+                "znakomity",
+                "dobry"
+            ],
+            "hints": [
+                "Adverb of manner",
+                "Excellently"
+            ]
+        },
+        {
+            "question": "Chodzę do kina ___.",
+            "answer": "rzadko",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "rzadko",
+                "rzadki",
+                "często",
+                "zawsze"
+            ],
+            "hints": [
+                "Adverb of frequency",
+                "Rarely"
+            ]
+        },
+        {
+            "question": "Jestem ___ (bardzo) szczęśliwy.",
+            "answer": "bardzo",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "A1",
+            "hints": [
+                "Intensifier",
+                "Very"
+            ]
+        },
+        {
+            "question": "Ona tańczy ___.",
+            "answer": "pięknie",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "pięknie",
+                "piękna",
+                "piękny",
+                "piękno"
+            ],
+            "hints": [
+                "Adverb of manner",
+                "Beautifully"
+            ]
+        },
+        {
+            "question": "Przyjdę ___ (później).",
+            "answer": "później",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Comparative adverb of time",
+                "Later"
+            ]
+        },
+        {
+            "question": "Oni rozmawiają ___.",
+            "answer": "głośno",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "A1",
+            "options": [
+                "głośno",
+                "głośny",
+                "cicho",
+                "cichym"
+            ],
+            "hints": [
+                "Adverb of manner",
+                "Loudly"
+            ]
+        },
+        {
+            "question": "Muszę iść ___ (teraz).",
+            "answer": "teraz",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "A1",
+            "hints": [
+                "Adverb of time",
+                "Now"
+            ]
+        },
+        {
+            "question": "Ona wraca do domu ___.",
+            "answer": "późno",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "późno",
+                "późny",
+                "wcześnie",
+                "wczesny"
+            ],
+            "hints": [
+                "Adverb of time",
+                "Late"
+            ]
+        },
+        {
+            "question": "Ten film jest ___ (mało) interesujący.",
+            "answer": "mało",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Adverb of degree",
+                "Little/not very"
+            ]
+        },
+        {
+            "question": "Pracuję ___ efektywnie po odpoczynku.",
+            "answer": "bardziej",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "bardziej",
+                "więcej",
+                "bardzo",
+                "najlepiej"
+            ],
+            "hints": [
+                "Comparative form",
+                "More"
+            ]
+        },
+        {
+            "question": "Zrobiłem to ___ (dobrze).",
+            "answer": "dobrze",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "A1",
+            "hints": [
+                "Adverb of manner",
+                "Well"
+            ]
+        },
+        {
+            "question": "Dzieci bawią się ___.",
+            "answer": "wesoło",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "wesoło",
+                "wesołe",
+                "weseli",
+                "wesołość"
+            ],
+            "hints": [
+                "Adverb of manner",
+                "Cheerfully"
+            ]
+        },
+        {
+            "question": "Ona uczy się ___ (pilnie).",
+            "answer": "pilnie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Adverb of manner",
+                "Diligently"
+            ]
+        },
+        {
+            "question": "Jestem ___ zmęczony dzisiaj.",
+            "answer": "strasznie",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "strasznie",
+                "straszny",
+                "mało",
+                "trochę"
+            ],
+            "hints": [
+                "Intensifying adverb",
+                "Terribly"
+            ]
+        },
+        {
+            "question": "Powinniśmy spotkać się ___ (niedługo).",
+            "answer": "niedługo",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Adverb of time",
+                "Soon"
+            ]
+        },
+        {
+            "question": "Ona odpowiedziała ___ na pytanie.",
+            "answer": "trafnie",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "trafnie",
+                "trafny",
+                "nietrafnie",
+                "trafność"
+            ],
+            "hints": [
+                "Adverb of manner",
+                "Aptly/accurately"
+            ]
+        },
+        {
+            "question": "On zachowuje się ___ (dziwnie).",
+            "answer": "dziwnie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Adverb of manner",
+                "Strangely"
+            ]
+        },
+        {
+            "question": "Śpiewasz ___ lepiej niż rok temu.",
+            "answer": "znacznie",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "znacznie",
+                "znaczny",
+                "mało",
+                "trochę"
+            ],
+            "hints": [
+                "Intensifier with comparative",
+                "Significantly"
+            ]
+        },
+        {
+            "question": "To wydarzyło się ___ (niedawno).",
+            "answer": "niedawno",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Adverb of time",
+                "Recently"
+            ]
+        },
+        {
+            "question": "Ona potrafiała ___ wyjaśnić problem.",
+            "answer": "jasno",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "jasno",
+                "jasny",
+                "jasność",
+                "jasna"
+            ],
+            "hints": [
+                "Adverb of manner",
+                "Clearly"
+            ]
+        },
+        {
+            "question": "Zrobił to ___ (świadomie).",
+            "answer": "świadomie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "B2",
+            "hints": [
+                "Adverb of manner",
+                "Consciously"
+            ]
+        },
+        {
+            "question": "Ona reaguje ___ emocjonalnie.",
+            "answer": "nadmiernie",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "C1",
+            "options": [
+                "nadmiernie",
+                "normalnie",
+                "mało",
+                "czasami"
+            ],
+            "hints": [
+                "Adverb of degree",
+                "Excessively"
+            ]
+        },
+        {
+            "question": "Rozwiązanie znaleźliśmy ___ (nieoczekiwanie).",
+            "answer": "nieoczekiwanie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "C1",
+            "hints": [
+                "Adverb of manner",
+                "Unexpectedly"
+            ]
+        },
+        {
+            "question": "Film zakończył się ___.",
+            "answer": "nagle",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "nagle",
+                "nagły",
+                "powoli",
+                "później"
+            ],
+            "hints": [
+                "Adverb of manner",
+                "Suddenly"
+            ]
+        },
+        {
+            "question": "Musisz to zrobić ___ (natychmiast).",
+            "answer": "natychmiast",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "B2",
+            "hints": [
+                "Adverb of time",
+                "Immediately"
+            ]
+        },
+        {
+            "question": "Ona mówi po angielsku ___.",
+            "answer": "biegle",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "biegle",
+                "biegły",
+                "wolno",
+                "źle"
+            ],
+            "hints": [
+                "Adverb of manner",
+                "Proficiently"
+            ]
+        },
+        {
+            "question": "Przyjechaliśmy ___ (specjalnie) dla ciebie.",
+            "answer": "specjalnie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Adverb of purpose",
+                "Specially"
+            ]
+        },
+        {
+            "question": "On zachowuje się ___.",
+            "answer": "nienaturalnie",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "C1",
+            "options": [
+                "nienaturalnie",
+                "naturalnie",
+                "normalnie",
+                "naturalny"
+            ],
+            "hints": [
+                "Adverb of manner with negation",
+                "Unnaturally"
+            ]
+        },
+        {
+            "question": "Postanowiliśmy działać ___ (niezwłocznie).",
+            "answer": "niezwłocznie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "C2",
+            "hints": [
+                "Formal adverb of time",
+                "Without delay"
+            ]
+        },
+        {
+            "question": "Projekt został wykonany ___.",
+            "answer": "nienagannie",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "C2",
+            "options": [
+                "nienagannie",
+                "źle",
+                "nienaganny",
+                "normalnie"
+            ],
+            "hints": [
+                "Adverb of manner",
+                "Impeccably"
+            ]
+        },
+        {
+            "question": "Ona zawsze się ___ (punktualnie) pojawia.",
+            "answer": "punktualnie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Adverb of manner",
+                "Punctually"
+            ]
+        },
+        {
+            "question": "Dzieci uczą się ___ wolniej niż dorośli.",
+            "answer": "czasami",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "czasami",
+                "zawsze",
+                "nigdy",
+                "często"
+            ],
+            "hints": [
+                "Adverb of frequency",
+                "Sometimes"
+            ]
+        },
+        {
+            "question": "Ona traktuje wszystkich ___ (sprawiedliwie).",
+            "answer": "sprawiedliwie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "C1",
+            "hints": [
+                "Adverb of manner",
+                "Fairly/justly"
+            ]
+        },
+        {
+            "question": "On odpowiedział ___.",
+            "answer": "szczerze",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "szczerze",
+                "szczery",
+                "kłamliwie",
+                "szczerość"
+            ],
+            "hints": [
+                "Adverb of manner",
+                "Honestly"
+            ]
+        },
+        {
+            "question": "Należy postępować ___ (rozsądnie).",
+            "answer": "rozsądnie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "B2",
+            "hints": [
+                "Adverb of manner",
+                "Reasonably/sensibly"
+            ]
+        },
+        {
+            "question": "On mówił ___ przekonująco.",
+            "answer": "niezwykle",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "C1",
+            "options": [
+                "niezwykle",
+                "zwykle",
+                "mało",
+                "niezwykły"
+            ],
+            "hints": [
+                "Intensifying adverb",
+                "Extraordinarily"
+            ]
+        },
+        {
+            "question": "Problem został rozwiązany ___ (błyskawicznie).",
+            "answer": "błyskawicznie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "C2",
+            "hints": [
+                "Adverb of manner",
+                "Lightning-fast"
+            ]
+        },
+        {
+            "question": "Ona zachowuje się ___.",
+            "answer": "odpowiedzialnie",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "odpowiedzialnie",
+                "odpowiedzialny",
+                "nieodpowiedzialnie",
+                "odpowiedzialność"
+            ],
+            "hints": [
+                "Adverb of manner",
+                "Responsibly"
+            ]
+        },
+        {
+            "question": "Należy to zrobić ___ (ostrożnie).",
+            "answer": "ostrożnie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Adverb of manner",
+                "Carefully/cautiously"
+            ]
+        },
+        {
+            "question": "On uczy się ___.",
+            "answer": "systematycznie",
+            "topic": "adverbs",
+            "type": "multiple-choice",
+            "level": "B2",
+            "options": [
+                "systematycznie",
+                "systematyczny",
+                "czasami",
+                "system"
+            ],
+            "hints": [
+                "Adverb of manner",
+                "Systematically"
+            ]
+        },
+        {
+            "question": "Postanowiła działać ___ (samodzielnie).",
+            "answer": "samodzielnie",
+            "topic": "adverbs",
+            "type": "fill-in-the-blank",
+            "level": "B2",
+            "hints": [
+                "Adverb of manner",
+                "Independently"
+            ]
+        }
     ]
 }

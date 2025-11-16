@@ -1,0 +1,45 @@
+{
+    "class": "Polish Adverbs - Dialogue",
+    "exercises": [
+        {
+            "exercise": "Exercise 01",
+            "rows": [
+                {
+                    "speaker": "Peter",
+                    "polish": "Sąd tak dobrze znasz angielski?",
+                    "english": "Where do you know English so well from?"
+                },
+                {
+                    "speaker": "Wojtek",
+                    "polish": "W szkole musimy uczyć się języków obcych – angielskiego, niemieckiego, francuskiego, włoskiego albo rosyjskiego. Ja uczę się angielskiego, ale nie mówię jeszcze zbyt dobrze.",
+                    "english": "In school, we have to learn foreign languages – English, German, French, Italian, or Russian. I am learning English, but I don't speak too well yet."
+                },
+                {
+                    "speaker": "Peter",
+                    "polish": "Ależ skąd! Twój angielski jest świetny!",
+                    "english": "Not at all! Your English is great!"
+                },
+                {
+                    "speaker": "Wojtek",
+                    "polish": "Moja dziewczyna – Agnieszka – mówi po angielsku dużo lepiej. Zna też doskonale niemiecki i dużo rozumie po francusku.",
+                    "english": "My girlfriend – Agnieszka – speaks English much better. She also knows German perfectly and understands a lot of French."
+                },
+                {
+                    "speaker": "Peter",
+                    "polish": "Ja znam tylko angielski. Teraz, jak wiesz, uczę się polskiego. Mam podręcznik i już zaczynam rozumieć gramatykę, ale znam mało słów. Na przykład, mogę zapytać: „Przepraszam, gdzie jest poczta?, ale czasem nie rozumiem odpowiedzi. Muszę poszukać dobrego nauczyciela.",
+                    "english": "I only know English. Now, as you know, I'm learning Polish. I have a textbook and I'm already starting to understand the grammar, but I know few words. For example, I can ask: \"Excuse me, where is the post office?, but sometimes I don't understand the answer. I have to look for a good teacher."
+                },
+                {
+                    "speaker": "Wojtek",
+                    "polish": "Nie ma sprawy. Mamy tu Szkołę Języka i Kultury Polskiej. Mają kurs języka dla początkujących i kurs polskiego języka biznesu. Możesz też chyba brać lekcje prywatne. Nie wiem na pewno, ale mogę się dowiedzieć.",
+                    "english": "No problem. We have a School of Polish Language and Culture here. They have a language course for beginners and a business Polish language course. You can probably also take private lessons. I don't know for sure, but I can find out."
+                },
+                {
+                    "speaker": "Peter",
+                    "polish": "Wspaniale! Dziękuję.",
+                    "english": "Wonderful! Thank you."
+                }
+            ]
+        }
+    ]
+}
