@@ -12,6 +12,7 @@ import ReferenceVerbs from "./ReferenceVerbs/ReferenceVerbs";
 import ReferencePrefixesMovements from './ReferencePrefixesMovements/ReferencePrefixesMovements';
 import ReferencePrepositions from './ReferencePrepositions/ReferencePrepositions';
 import ReferenceConjunctions from './ReferenceConjuctions/ReferenceConjunctions';
+import ReferenceAdverbs from "./ReferenceAdverbs/ReferenceAdverbs";
 import ReferenceExternalResources from './ReferenceExternalResources/ReferenceExternalResources';
 
 import './Reference.css';
@@ -29,7 +30,8 @@ const sections = [
     { id: 'Polish Verbs', title: '🎬 Polish Verbs', component: <ReferenceVerbs /> },
     { id: 'Polish Prefixes Movements', title: '🏃🏻‍♂️ Polish Prefixes Movements', component: <ReferencePrefixesMovements /> },
     { id: 'Polish Prepositions', title: '⛓️ Polish Prepositions', component: <ReferencePrepositions /> },
-    { id: 'Polish Conjuctoins', title: '⚡ Polish Conjuctions', component: <ReferenceConjunctions /> },
+    { id: 'Polish Conjuctions', title: '⚡ Polish Conjuctions', component: <ReferenceConjunctions /> },
+    { id: 'Polish Adverbs', title: '💥 Polish Adverbs', component: <ReferenceAdverbs /> },
     { id: 'Polish External Resources', title: '🗂️ Polish External Resources', component: <ReferenceExternalResources /> },
 ];
 
