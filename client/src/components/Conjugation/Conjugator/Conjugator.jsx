@@ -278,6 +278,7 @@ const Conjugator = () => {
     return (
         <div className="conjugator-container">
             <h1 className="title">🛠️ Conjugator Workbench</h1>
+            <h2 className="warning">⚠️ The conjugator may return erroneous data due to the predefined dataset provided by the API. We’re actively working on resolving this issue. Please keep in mind that the dataset contains over 14 million records, so thorough checking is required.</h2>
             <div className="controls">
                 <input
                     value={word}

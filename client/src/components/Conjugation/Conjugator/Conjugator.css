@@ -21,6 +21,17 @@ body {
     background: #f9f9f9;
 }
 
+.warning {
+    text-align: center;
+    color: #b39003;
+    margin-bottom: 1rem;
+    font-style: italic;
+    border-style: solid groove;
+    background-color: bisque;
+    border-radius: 10px;
+    font-size: medium;
+}
+
 .conjugator-container {
     max-width: 900px;
     margin: auto;
