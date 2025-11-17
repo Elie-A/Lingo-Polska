@@ -184,6 +184,17 @@ You'll practice conjugating verbs, forming sentences, and using vocabulary in co
 Through consistent practice, you'll improve both your comprehension and fluency, preparing you for real-life communication in Polish.`,
   },
   {
+    title: "Polish Validator",
+    description:
+      "Instantly check your Polish text for grammar, vocabulary, and style accuracy, with AI-powered feedback tailored to your proficiency level.",
+    icon: "🧠",
+    path: "lessons/validator",
+    folder: "validator",
+    intro: `The Polish Validator lets you test your written Polish and receive detailed, level-appropriate feedback. 
+You can select your proficiency or let the system auto-detect it, then analyze grammar, vocabulary, and sentence structure. 
+This tool is designed to help you learn from your mistakes, refine your writing, and gain confidence in using Polish in real-life contexts.`,
+  },
+  {
     title: "References",
     description:
       "Access a curated list of external resources, dictionaries, and tools to continue your Polish learning journey.",
