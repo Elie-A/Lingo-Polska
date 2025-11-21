@@ -1,0 +1,143 @@
+/* src/components/PolishValidator/PolishValidator.css */
+/* (This is the container CSS — keep minimal globals, component-specific styles are in other files) */
+
+.polish-validator {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f9fafb;
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #374151;
+}
+
+/* Header */
+.validator-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.validator-header h2 {
+    margin: 0;
+    color: #b91c1c;
+}
+
+.role-badge {
+    background: #dc2626;
+    color: white;
+    padding: 0.45rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Input section (shared) */
+.input-section {
+    margin-bottom: 1.5rem;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.input-section textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #dc2626;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.validate-btn,
+.clear-btn {
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.validate-btn {
+    background: #dc2626;
+    color: white;
+    flex: 1;
+}
+
+.clear-btn {
+    background: #ef4444;
+    color: white;
+}
+
+/* Error / Rate / Loading reused from earlier design (slimmed) */
+.error-message {
+    padding: 0.85rem;
+    background: #fee2e2;
+    border-left: 4px solid #dc2626;
+    border-radius: 0.5rem;
+    color: #b91c1c;
+    margin-bottom: 1rem;
+}
+
+.rate-limit-info {
+    padding: 0.6rem;
+    background: #fef2f2;
+    border-left: 4px solid #dc2626;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.loading-indicator {
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.validate-btn:disabled {
+    background: #fca5a5 !important;
+    cursor: not-allowed !important;
+    opacity: 0.7;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #dc2626;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 0.8rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .polish-validator {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+}

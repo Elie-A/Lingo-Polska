@@ -5,6 +5,7 @@ import VocabularyPage from "../Vocabulary/VocabularyPage";
 import PracticePage from "../Practice/PracticePage";
 import ConjugationPage from "../Conjugation/ConjugationPage";
 import ReferencePage from "../References/ReferencePage";
+import PolishValidator from "../PolishValidator/PolishValidator";
 
 import "./LessonPage.css";
 
@@ -84,6 +85,10 @@ const LessonPage = ({ lessonTitle, classes, lessonFolder }) => {
 
     if (lessonFolder == "references") {
         return <ReferencePage />;
+    }
+
+    if (lessonFolder == "validator") {
+        return <PolishValidator />
     }
 
     // Determine how to display the icon

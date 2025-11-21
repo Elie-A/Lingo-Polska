@@ -11,6 +11,7 @@ import authRoutes from "./routes/authRoutes.js";
 import exercisesRoutes from "./routes/exercisesRoutes.js";
 import readingComprehensionExercisesRoutes from "./routes/readingComprehensionExercisesRoutes.js";
 import wordsRoutes from "./routes/wordsRoutes.js";
+import polishValidationRoutes from "./routes/polishValidationRoutes.js";
 
 dotenv.config();
 
@@ -79,6 +80,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/exercises", exercisesRoutes);
 app.use("/api/reading", readingComprehensionExercisesRoutes);
 app.use("/api/words", wordsRoutes);
+app.use("/api/polish-validation", polishValidationRoutes);
 
 // Health check
 app.get("/health", (req, res) => {
