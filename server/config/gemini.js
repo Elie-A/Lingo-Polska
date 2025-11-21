@@ -9,14 +9,15 @@ if (!process.env.GEMINI_API_KEY) {
 // Initialize Gemini AI
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-// Default configuration
+// Default configuration with increased token limit
 const geminiConfig = {
-  model: "models/gemini-flash-latest",
+  model: "models/gemini-flash-latest", // Updated model name
   generationConfig: {
     temperature: 0.7,
     topK: 40,
     topP: 0.95,
-    maxOutputTokens: 2048,
+    maxOutputTokens: 16000,
+    candidateCount: 1,
   },
   safetySettings: [
     {
@@ -25,6 +26,14 @@ const geminiConfig = {
     },
     {
       category: "HARM_CATEGORY_HATE_SPEECH",
+      threshold: "BLOCK_MEDIUM_AND_ABOVE",
+    },
+    {
+      category: "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      threshold: "BLOCK_MEDIUM_AND_ABOVE",
+    },
+    {
+      category: "HARM_CATEGORY_DANGEROUS_CONTENT",
       threshold: "BLOCK_MEDIUM_AND_ABOVE",
     },
   ],
@@ -45,7 +54,8 @@ export const getModel = (customConfig = {}) => {
 export const testConnection = async () => {
   try {
     const model = getModel();
-    await model.generateContent("Test");
+    const result = await model.generateContent("Test");
+    const response = await result.response;
     console.log("✓ Gemini AI connection successful");
     return true;
   } catch (error) {

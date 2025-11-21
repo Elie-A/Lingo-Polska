@@ -3,6 +3,7 @@ import {
   validatePolishText,
   detectLevel,
   healthCheck,
+  continueAnalysis,
 } from "../controllers/polishValidatorController.js";
 
 import {
@@ -37,6 +38,14 @@ router.post(
   aiValidationLimiter,
   rateLimitInfo,
   validatePolishText
+);
+
+router.post(
+  "/continue-analysis",
+  speedLimiter,
+  aiValidationLimiter,
+  rateLimitInfo,
+  continueAnalysis
 );
 
 /**

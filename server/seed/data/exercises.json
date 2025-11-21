@@ -1725,6 +1725,446 @@
                 "Simultaneous action",
                 "Ends in -ąc"
             ]
+        },
+        {
+            "question": "O szóstej ___ jem kolację.",
+            "answer": "zjem",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Perfective form of 'jeść'",
+                "Prefix meaning: complete the action"
+            ]
+        },
+        {
+            "question": "Mama ___ gotowała zupę.",
+            "answer": "ugotowała",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Perfective form of 'gotować'",
+                "Prefix: u-"
+            ]
+        },
+        {
+            "question": "Pan Adam nam coś ___ grał.",
+            "answer": "zagrał",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Perfective of 'grać'",
+                "Prefix indicates completion"
+            ]
+        },
+        {
+            "question": "Czy mogę ___ prosić o szklankę wody?",
+            "answer": "poprosić",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Perfective of 'prosić'",
+                "Prefix: po-"
+            ]
+        },
+        {
+            "question": "Kiedy ___ kończysz czytać?",
+            "answer": "skończysz",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Perfective of 'kończyć'",
+                "Prefix: s-"
+            ]
+        },
+        {
+            "question": "Klaro, ___ rób mi sweter.",
+            "answer": "zrób",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Perfective of 'robić'",
+                "Used for commands"
+            ]
+        },
+        {
+            "question": "Stefcia ___ piła herbatę.",
+            "answer": "wypiła",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Perfective of 'pić'",
+                "Prefix: wy-"
+            ]
+        },
+        {
+            "question": "Muszę ___ pakować walizkę.",
+            "answer": "spakować",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Perfective of 'pakować'",
+                "Prefix: s-"
+            ]
+        },
+        {
+            "question": "Marysia chce ___ znać go.",
+            "answer": "poznać",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Perfective of 'znać'",
+                "Prefix: po-"
+            ]
+        },
+        {
+            "question": "To ci nie ___ szkodzi.",
+            "answer": "zaszkodzi",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Perfective of 'szkodzić'",
+                "Prefix: za-"
+            ]
+        },
+        {
+            "question": "Kazia ___ kosztowała zupy.",
+            "answer": "skosztowała",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Perfective of 'kosztować'",
+                "Prefix: s-"
+            ]
+        },
+        {
+            "question": "Jacuś ___ psuł zabawkę.",
+            "answer": "zepsuł",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Perfective of 'psuć'",
+                "Prefix: ze-"
+            ]
+        },
+        {
+            "question": "Fryzjerka ___ czesała mnie.",
+            "answer": "uczesala",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Perfective of 'czesać'",
+                "Prefix: u-"
+            ]
+        },
+        {
+            "question": "Raptownie ___ bolał go ząb.",
+            "answer": "zabolał",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Prefix expresses sudden onset",
+                "Perfective of 'boleć'"
+            ]
+        },
+        {
+            "question": "Gienia ___ rodziła syna.",
+            "answer": "urodziła",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Perfective of 'rodzić'",
+                "Prefix: u-"
+            ]
+        },
+        {
+            "question": "Pani Aniela ___ stawiała róże na stół.",
+            "answer": "postawiła",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Perfective of 'stawiać'",
+                "Prefix: po-"
+            ]
+        },
+        {
+            "question": "Rajmund ___ rezerwował miejsca.",
+            "answer": "zarezerwował",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Prefix adds completion",
+                "Perfective of 'rezerwować'"
+            ]
+        },
+        {
+            "question": "Rysiek ___ hamował za szybko.",
+            "answer": "zahmował",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Prefix: za-",
+                "Perfective of 'hamować'"
+            ]
+        },
+        {
+            "question": "Basia ___ szyła sobie sukienkę.",
+            "answer": "uszyła",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Perfective of 'szyć'",
+                "Prefix: u-"
+            ]
+        },
+        {
+            "question": "Józek i Hania ___ żyli wojnę.",
+            "answer": "przeżyli",
+            "topic": "aspect/prefixes",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Prefix: prze-",
+                "Means 'to survive'"
+            ]
+        },
+        {
+            "question": "Wy spróbujecie — which infinitive?",
+            "answer": "spróbować",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A2",
+            "hints": [
+                "Perfective infinitive has prefix s-",
+                "Compare: próbować vs spróbować"
+            ]
+        },
+        {
+            "question": "Oni dowiadują się — which infinitive?",
+            "answer": "dowiedzieć się",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "B1",
+            "hints": [
+                "Imperfective: dowiadywać się",
+                "Perfective: dowiedzieć się"
+            ]
+        },
+        {
+            "question": "Ona kupi — which infinitive?",
+            "answer": "kupić",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A1",
+            "hints": [
+                "Stem: kup-",
+                "Perfective form"
+            ]
+        },
+        {
+            "question": "My oszczędzamy — which infinitive?",
+            "answer": "oszczędzać",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A2",
+            "hints": [
+                "Imperfective present",
+                "Ends with -ać"
+            ]
+        },
+        {
+            "question": "Ty posuniesz — which infinitive?",
+            "answer": "posunąć",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "B1",
+            "hints": [
+                "Perfective verb",
+                "Movement-related"
+            ]
+        },
+        {
+            "question": "Ja ruszam — which infinitive?",
+            "answer": "ruszać",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A1",
+            "hints": [
+                "Imperfective",
+                "Continuous meaning"
+            ]
+        },
+        {
+            "question": "On puści — which infinitive?",
+            "answer": "puścić",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A2",
+            "hints": [
+                "Perfective",
+                "Short action"
+            ]
+        },
+        {
+            "question": "One staną — which infinitive?",
+            "answer": "stanąć",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A2",
+            "hints": [
+                "Means: to stand (complete action)",
+                "Perfective"
+            ]
+        },
+        {
+            "question": "Ja uderzam — which infinitive?",
+            "answer": "uderzać",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A1",
+            "hints": [
+                "Imperfective",
+                "Repeated action"
+            ]
+        },
+        {
+            "question": "Ona zachęca — which infinitive?",
+            "answer": "zachęcać",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A2",
+            "hints": [
+                "Imperfective",
+                "Verbose form"
+            ]
+        },
+        {
+            "question": "Wy wymienicie — which infinitive?",
+            "answer": "wymienić",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A2",
+            "hints": [
+                "Perfective",
+                "Stem: -mieni-"
+            ]
+        },
+        {
+            "question": "Oni znajdą — which infinitive?",
+            "answer": "znaleźć",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A2",
+            "hints": [
+                "Perfective",
+                "Irregular spelling change"
+            ]
+        },
+        {
+            "question": "Ona ustępuje — which infinitive?",
+            "answer": "ustępować",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A2",
+            "hints": [
+                "Imperfective",
+                "Prefix: u-"
+            ]
+        },
+        {
+            "question": "My pozdrawiamy — which infinitive?",
+            "answer": "pozdrawiać",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A1",
+            "hints": [
+                "Imperfective form",
+                "Regular -ać conjugation"
+            ]
+        },
+        {
+            "question": "Ty wracasz — which infinitive?",
+            "answer": "wracać",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A1",
+            "hints": [
+                "Imperfective",
+                "Common everyday verb"
+            ]
+        },
+        {
+            "question": "Ja łapię — which infinitive?",
+            "answer": "łapać",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A1",
+            "hints": [
+                "Verb of action",
+                "Imperfective"
+            ]
+        },
+        {
+            "question": "On poleży — which infinitive?",
+            "answer": "poleżeć",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A2",
+            "hints": [
+                "Perfective",
+                "Meaning: 'lie for a while'"
+            ]
+        },
+        {
+            "question": "One dotkną — which infinitive?",
+            "answer": "dotknąć",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A2",
+            "hints": [
+                "Perfective",
+                "Momentary action"
+            ]
+        },
+        {
+            "question": "Wy traficie — which infinitive?",
+            "answer": "trafić",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A2",
+            "hints": [
+                "Perfective",
+                "Hit/arrive"
+            ]
+        },
+        {
+            "question": "Ono dokucza — which infinitive?",
+            "answer": "dokuczać",
+            "topic": "verb stems",
+            "type": "multiple-choice",
+            "level": "A2",
+            "hints": [
+                "Imperfective",
+                "Repeated annoyance"
+            ]
         }
     ],
     "pronouns": [

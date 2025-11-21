@@ -1,0 +1,88 @@
+/* src/components/PolishValidator/LevelSelector.css */
+
+.level-selection {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #fee2e2;
+}
+
+.level-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.level-header h3 {
+    margin: 0;
+    color: #b91c1c;
+    font-size: 1.1rem;
+}
+
+.auto-detect-btn {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 0.45rem 0.9rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.auto-detect-btn:disabled {
+    background: #f3f3f3;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+.level-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.level-card {
+    background: #fff;
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    border: 1px solid #fee2e2;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.level-card:hover {
+    transform: translateY(-3px);
+}
+
+.level-card.active {
+    border-color: #dc2626;
+    background: #fff5f5;
+    box-shadow: 0 6px 12px rgba(220, 38, 38, 0.08);
+}
+
+.level-icon {
+    font-size: 2rem;
+}
+
+.level-info h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1rem;
+}
+
+.level-info p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.85rem;
+}
+
+.current-level-info {
+    text-align: center;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    background: #fff;
+}

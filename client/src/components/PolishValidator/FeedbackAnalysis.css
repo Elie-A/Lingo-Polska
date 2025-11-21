@@ -1,0 +1,368 @@
+/* =====================================
+   MAIN CONTAINER
+===================================== */
+.feedback-section {
+    background: #ffffff;
+    padding: 1.2rem;
+    border-radius: 0.75rem;
+    border: 1px solid #fee2e2;
+    margin-top: 1rem;
+    max-height: 80vh;
+    overflow-y: auto;
+    font-family: 'Inter', sans-serif;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+.feedback-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #b91c1c;
+}
+
+.feedback-level-badge {
+    background: #dc2626;
+    color: #fff;
+    padding: 0.25rem 0.6rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+/* =====================================
+   TRUNCATION WARNING
+===================================== */
+.truncation-warning {
+    background: #fef3c7;
+    border: 1px solid #f59e0b;
+    border-left: 4px solid #d97706;
+    color: #92400e;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.truncation-warning strong {
+    color: #b45309;
+}
+
+/* =====================================
+   ORIGINAL TEXT / FEEDBACK BLOCK
+===================================== */
+.original-text,
+.ai-feedback {
+    background: #fff;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+.original-text {
+    border-left: 4px solid #b91c1c;
+}
+
+.ai-feedback {
+    border-left: 4px solid #dc2626;
+}
+
+.original-text p {
+    margin-top: 0.4rem;
+    color: #374151;
+    font-style: italic;
+}
+
+/* =====================================
+   CONTENT STYLES
+===================================== */
+.feedback-content {
+    margin-top: 0.6rem;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.feedback-content p {
+    margin: 0.4rem 0;
+}
+
+/* Fix table spacing and styling */
+.feedback-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    display: table;
+    overflow-x: auto;
+}
+
+.feedback-content thead {
+    background-color: #fee2e2;
+}
+
+.feedback-content th {
+    border: 1px solid #dc2626;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    text-align: left;
+    font-weight: 600;
+    color: #991b1b;
+    background-color: #fee2e2;
+}
+
+.feedback-content td {
+    border: 1px solid #fecaca;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    text-align: left;
+    color: #374151;
+    vertical-align: top;
+}
+
+.feedback-content tbody tr:nth-child(even) {
+    background-color: #fef2f2;
+}
+
+.feedback-content tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.feedback-content tbody tr:hover {
+    background-color: #fef2f2;
+}
+
+/* Make sure bold text in tables is visible */
+.feedback-content table strong,
+.feedback-content table b {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+/* Make sure italic text in tables is visible */
+.feedback-content table em,
+.feedback-content table i {
+    font-style: italic;
+    color: #b91c1c;
+}
+
+/* =====================================
+   HEADINGS & BOLD TEXT
+===================================== */
+.feedback-content h1,
+.feedback-content h2,
+.feedback-content h3 {
+    margin-top: 1.2rem;
+    margin-bottom: 0.6rem;
+    color: #dc2626;
+    font-weight: 700;
+}
+
+.feedback-content h1 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #dc2626;
+    padding-bottom: 0.4rem;
+}
+
+.feedback-content h2 {
+    font-size: 1.25rem;
+    border-bottom: 1px solid #fecaca;
+    padding-bottom: 0.3rem;
+}
+
+.feedback-content h3 {
+    font-size: 1.1rem;
+}
+
+.feedback-content strong,
+.feedback-content b {
+    font-weight: 700;
+    color: #991b1b;
+}
+
+/* Special formatting for section headers like "1. Overall Assessment" */
+.feedback-content p strong:first-child {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #dc2626;
+    border-bottom: 1px solid #fee2e2;
+    padding-bottom: 0.3rem;
+}
+
+/* =====================================
+   LISTS
+===================================== */
+.feedback-content ul,
+.feedback-content ol {
+    margin: 0.5rem 0 0.5rem 1.2rem;
+    padding-left: 0;
+}
+
+.feedback-content li {
+    margin: 0.3rem 0;
+    line-height: 1.6;
+}
+
+/* =====================================
+   CODE BLOCKS
+===================================== */
+.feedback-content code {
+    background: #f3f4f6;
+    padding: 0.15rem 0.4rem;
+    border-radius: 0.25rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: #dc2626;
+}
+
+.feedback-content pre {
+    background: #1f2937;
+    color: #f9fafb;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 0.8rem 0;
+}
+
+.feedback-content pre code {
+    background: transparent;
+    color: #f9fafb;
+    padding: 0;
+}
+
+/* =====================================
+   BLOCKQUOTE
+===================================== */
+.feedback-content blockquote {
+    margin: 0.8rem 0;
+    padding: 0.6rem 0.8rem;
+    border-left: 4px solid #dc2626;
+    background: #fef2f2;
+    border-radius: 0.25rem;
+    font-style: italic;
+    color: #991b1b;
+}
+
+/* =====================================
+   FOOTER & BUTTONS
+===================================== */
+.feedback-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #fee2e2;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.timestamp {
+    font-size: 0.85rem;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.footer-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.close-feedback-btn,
+.copy-feedback-btn,
+.toggle-feedback-btn {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.close-feedback-btn {
+    background: #dc2626;
+}
+
+.close-feedback-btn:hover {
+    background: #b91c1c;
+}
+
+.copy-feedback-btn {
+    background: #6b7280;
+}
+
+.copy-feedback-btn:hover {
+    background: #4b5563;
+}
+
+.copy-feedback-btn:active {
+    transform: scale(0.95);
+}
+
+.toggle-feedback-btn {
+    background: #6b7280;
+    margin-top: 0.75rem;
+    width: 100%;
+}
+
+.toggle-feedback-btn:hover {
+    background: #4b5563;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+@media (max-width: 640px) {
+    .feedback-section {
+        padding: 1rem;
+        max-height: 85vh;
+    }
+
+    .feedback-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .feedback-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .timestamp {
+        order: 3;
+        text-align: center;
+    }
+
+    .footer-actions {
+        order: 1;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .close-feedback-btn,
+    .copy-feedback-btn {
+        width: 100%;
+    }
+
+    /* Make tables scrollable on mobile */
+    .feedback-content table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}

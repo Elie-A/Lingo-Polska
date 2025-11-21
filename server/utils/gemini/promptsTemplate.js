@@ -1,92 +1,230 @@
 /**
- * Prompt templates for Polish text validation
+ * Gemini AI Prompts for Polish Language Validation
  */
-
-export const getBeginnerPrompt = (text, userRole) => `
-You are a patient Polish language teacher working with a BEGINNER student. Analyze this Polish text:
-
-Text: "${text}"
-
-Please provide feedback that is:
-1. **Very Encouraging**: Start with positive aspects, even if small
-2. **Basic Grammar**: Focus on fundamental errors (verb conjugation, noun cases, basic sentence structure)
-3. **Simple Explanations**: Use simple language to explain mistakes. Avoid complex grammatical terminology
-4. **Basic Vocabulary**: Suggest common, everyday alternatives for better word choices
-5. **Practical Examples**: Give 2–3 simple example sentences showing correct usage
-6. ${
-  userRole === "teacher"
-    ? "**Teaching Strategy**: Suggest activities or exercises for this beginner level"
-    : "**Learning Path**: Suggest what to study next (flashcards, basic exercises)"
-}
-
-Keep feedback simple, supportive, and actionable. Use English explanations for clarity.
-`;
-
-export const getIntermediatePrompt = (text, userRole) => `
-You are a Polish language instructor working with an INTERMEDIATE student. Analyze this Polish text:
-
-Text: "${text}"
-
-Provide balanced feedback covering:
-1. **Strengths**: Acknowledge what's done well (grammar, vocabulary usage)
-2. **Grammar Refinement**: Focus on intermediate-level issues (aspect pairs, complex cases, participles, conditional mood)
-3. **Style & Flow**: Suggest improvements for more natural-sounding Polish
-4. **Vocabulary Expansion**: Offer more sophisticated synonyms or expressions
-5. **Common Mistakes**: Point out typical intermediate-level errors
-6. ${
-  userRole === "teacher"
-    ? "**Teaching Approach**: Recommend exercises to solidify intermediate concepts"
-    : "**Progress Tips**: Suggest resources or practice areas to reach advanced level"
-}
-
-Be constructive but thorough. Mix Polish and English in explanations.
-`;
-
-export const getAdvancedPrompt = (text, userRole) => `
-You are a Polish language expert working with an ADVANCED student. Analyze this Polish text with high standards:
-
-Text: "${text}"
-
-Provide professional-level feedback:
-1. **Nuanced Analysis**: Identify subtle grammatical or stylistic issues
-2. **Advanced Grammar**: Focus on complex structures (gerunds, passive voice, subjunctive mood)
-3. **Idiomatic Expression**: Suggest native-like phrases and idioms
-4. **Register & Tone**: Assess formality/informality
-5. **Cultural Context**: Note cultural or contextual improvements
-6. **Polish Literature/Media**: Reference examples where relevant
-7. ${
-  userRole === "teacher"
-    ? "**Advanced Teaching**: Suggest discussion topics or authentic materials"
-    : "**Native-Level Path**: Recommend advanced resources (literature, podcasts, formal writing practice)"
-}
-
-Be thorough and expect near-native proficiency. Provide explanations primarily in Polish with English clarifications when necessary.
-`;
-
-export const getLevelDetectionPrompt = (text) => `
-Analyze this Polish text and determine the proficiency level of the writer. Respond with ONLY ONE WORD: "beginner", "intermediate", or "advanced".
-
-Text: "${text}"
-
-Consider:
-- Grammar complexity and accuracy
-- Vocabulary range
-- Sentence structure sophistication
-- Use of complex tenses and cases
-
-Response (one word only):
-`;
 
 /**
- * Choose the right prompt template based on level
+ * Get validation prompt based on user role and level
+ * @param {string} text - Polish text to validate
+ * @param {string} userRole - 'student' or 'teacher'
+ * @param {string} level - 'beginner', 'intermediate', or 'advanced'
+ * @returns {string} Formatted prompt
  */
 export const getPromptForLevel = (text, userRole, level) => {
-  const prompts = {
-    beginner: getBeginnerPrompt,
-    intermediate: getIntermediatePrompt,
-    advanced: getAdvancedPrompt,
+  const basePrompt = `You are an expert Polish language teacher analyzing text written by a ${userRole} at ${level} level.
+
+IMPORTANT INSTRUCTIONS:
+- Provide COMPLETE analysis with no truncation
+- If you reach token limits, prioritize: 1) Grammar corrections, 2) Key improvements, 3) Examples
+- Use concise markdown formatting
+- End with "--- Analysis Complete ---" when finished
+
+Text to analyze:
+"${text}"
+
+${getLevelSpecificGuidance(level, userRole)}
+
+Format your response in markdown with these sections:
+1. **Overall Assessment** (2-3 sentences)
+2. **Grammar & Corrections** (table format)
+3. **Key Improvements** (bullet points, max 5)
+4. **Example Corrections** (max 3)
+
+Keep your response focused and complete. End with "--- Analysis Complete ---"`;
+
+  return basePrompt;
+};
+
+/**
+ * Get level-specific guidance
+ */
+const getLevelSpecificGuidance = (level, userRole) => {
+  const guidance = {
+    beginner: {
+      student: `Focus on:
+- Basic spelling and simple grammar
+- Common verb conjugations
+- Sentence structure basics
+- Encouragement and practical tips`,
+      teacher: `Provide:
+- Fundamental grammar points for teaching
+- Common student mistakes at this level
+- Teaching suggestions
+- Simple correction examples`,
+    },
+    intermediate: {
+      student: `Analyze:
+- Complex sentence structures
+- Case usage (all 7 cases)
+- Verb aspects (perfective/imperfective)
+- Vocabulary richness
+- Style improvements`,
+      teacher: `Deliver:
+- Detailed grammatical analysis
+- Advanced teaching points
+- Student proficiency indicators
+- Pedagogical recommendations`,
+    },
+    advanced: {
+      student: `Examine:
+- Stylistic nuances
+- Idiomatic expressions
+- Register appropriateness
+- Advanced grammar subtleties
+- Native-like fluency markers`,
+      teacher: `Assess:
+- Near-native proficiency markers
+- Subtle errors that persist at high levels
+- Advanced pedagogical strategies
+- Cultural and contextual appropriateness`,
+    },
   };
 
-  const selectedPrompt = prompts[level] || prompts.intermediate;
-  return selectedPrompt(text, userRole);
+  return guidance[level]?.[userRole] || guidance.intermediate.student;
+};
+
+/**
+ * Level detection prompt
+ * @param {string} text - Polish text to analyze
+ * @returns {string} Level detection prompt
+ */
+export const getLevelDetectionPrompt = (text) => {
+  return `You are a Polish language expert. Analyze this text and determine the writer's proficiency level.
+
+Text:
+"${text}"
+
+Analyze based on:
+1. **Vocabulary**: Range and sophistication
+2. **Grammar**: Complexity and accuracy (case usage, verb aspects, etc.)
+3. **Sentence Structure**: Simple vs. complex constructions
+4. **Orthography**: Spelling and punctuation accuracy
+5. **Fluency**: Natural flow and idiomaticity
+
+RESPOND WITH ONLY ONE WORD:
+- "beginner" (A1-A2): Basic vocabulary, simple sentences, frequent errors
+- "intermediate" (B1-B2): Varied vocabulary, complex sentences, occasional errors
+- "advanced" (C1-C2): Rich vocabulary, sophisticated structures, rare errors
+
+Your response (one word only):`;
+};
+
+/**
+ * Concise validation prompt for faster responses
+ * Use this if you're experiencing timeouts
+ */
+export const getConcisePrompt = (text, userRole, level) => {
+  return `Analyze this Polish text (${level} ${userRole}):
+
+"${text}"
+
+Provide:
+1. 2-3 sentence assessment
+2. Top 3 corrections (table: Error | Correction | Explanation)
+3. One example improvement
+
+Be concise and complete. Use markdown.`;
+};
+
+/**
+ * Prompt templates for specific error types
+ */
+export const getErrorSpecificPrompt = (text, errorType) => {
+  const errorPrompts = {
+    grammar: `Focus ONLY on grammatical errors in this Polish text:
+"${text}"
+
+List corrections in this format:
+| Error | Correction | Rule |
+|-------|-----------|------|
+
+Limit to 5 most important errors.`,
+
+    spelling: `Check ONLY spelling and orthography in this Polish text:
+"${text}"
+
+List:
+1. Misspelled words
+2. Correct spelling
+3. Common mistake note`,
+
+    style: `Analyze ONLY stylistic improvements for this Polish text:
+"${text}"
+
+Suggest:
+- Better word choices (max 3)
+- Flow improvements (max 2)
+- Tone adjustments`,
+  };
+
+  return (
+    errorPrompts[errorType] || getConcisePrompt(text, "student", "intermediate")
+  );
+};
+
+/**
+ * Progressive prompt - breaks analysis into chunks
+ * Returns array of prompts for sequential processing
+ */
+export const getProgressivePrompts = (text, level) => {
+  return [
+    {
+      step: 1,
+      prompt: `Part 1: Quick assessment of this ${level} Polish text:
+"${text}"
+
+Provide: Overall level confirmation + top 3 grammar issues (table format only).`,
+    },
+    {
+      step: 2,
+      prompt: `Part 2: For the same text, provide:
+"${text}"
+
+3 key vocabulary/style improvements (bullet points).`,
+    },
+    {
+      step: 3,
+      prompt: `Part 3: For the same text:
+"${text}"
+
+One corrected example showing improvements.`,
+    },
+  ];
+};
+
+/**
+ * Streaming-friendly prompt
+ * Optimized for progressive rendering
+ */
+export const getStreamingPrompt = (text, userRole, level) => {
+  return `Polish text analysis (${level} ${userRole}):
+
+"${text}"
+
+Provide analysis, in English, in this exact order:
+## Assessment
+[2-3 sentences]
+
+## Corrections
+| Original | Fixed | Why |
+|----------|-------|-----|
+[Max 5 rows]
+
+## Improvements
+- [Point 1]
+- [Point 2]
+- [Point 3]
+
+## Example
+[One before/after]
+
+Keep concise. Use markdown.`;
+};
+
+export default {
+  getPromptForLevel,
+  getLevelDetectionPrompt,
+  getConcisePrompt,
+  getErrorSpecificPrompt,
+  getProgressivePrompts,
+  getStreamingPrompt,
 };

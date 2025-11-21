@@ -75,6 +75,22 @@ class AIService {
     };
   }
 
+  async continueAnalysis(text, previousFeedback, userRole, level, getPromptFn) {
+    const prompt =
+      getPromptFn(text, userRole, level, previousFeedback) +
+      "Please only provide the new portion of the feedback that wasn't in the previous response.";
+
+    const feedback = await this.generateContent(prompt);
+
+    return {
+      originalText: text,
+      feedback: feedback.trim(),
+      level,
+      userRole,
+      timestamp: new Date().toISOString(),
+    };
+  }
+
   /**
    * Handle AI-specific errors
    * @param {Error} error - Error object
