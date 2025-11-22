@@ -43,10 +43,10 @@ export default function Navbar({ lessons }) {
     };
 
     const tenseLessons = lessons.filter((l) =>
-        ["Present Tense", "Past Tense", "Future Tense", "Conditional Tense"].includes(l.title)
+        ["Present Tense", "Past Tense", "Future Tense", "Conditional Mood", "Modal Verbs"].includes(l.title)
     );
     const otherLessons = lessons.filter(
-        (l) => !["Present Tense", "Past Tense", "Future Tense", "Conditional Tense"].includes(l.title)
+        (l) => !["Present Tense", "Past Tense", "Future Tense", "Conditional Mood", "Modal Verbs"].includes(l.title)
     );
 
     const handleMouseEnterTenses = () => {
@@ -104,7 +104,7 @@ export default function Navbar({ lessons }) {
                                         setTensesOpen((prev) => !prev);
                                     }}
                                 >
-                                    📅 Tenses <ChevronRight size={12} className="chevron-right" />
+                                    📅 Verbs <ChevronRight size={12} className="chevron-right" />
                                 </span>
                                 <ul className={`dropdown-submenu ${tensesOpen ? "open" : ""}`}>
                                     {tenseLessons.map((lesson, idx) => (
