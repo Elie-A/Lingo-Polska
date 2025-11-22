@@ -35,6 +35,8 @@ import adverbsDialogue from "../data/lessons/adverbs/adverbs-dialogue.json";
 import adverbsCompleteWithVerbForms from "../data/lessons/adverbs/adverbs-complete-with-verb-forms.json";
 import adverbsComparativeSuperlative from "../data/lessons/adverbs/adverbs-comparative-superlative.json";
 
+import modalVerbsMix from "../data/lessons/modal-verbs/modal-verbs-mix.json";
+
 const lessons = [
   {
     title: "Present Tense",
@@ -82,16 +84,29 @@ With clear examples and interactive exercises, you'll gain the ability to speak 
     ],
   },
   {
-    title: "Conditional Tense",
+    title: "Conditional Mood",
     description:
       "Learn to express hypothetical situations, wishes, and polite requests in Polish.",
     icon: "🔮",
     path: "lessons/conditional",
     folder: "conditional",
-    intro: `The Conditional Tense lesson will teach you how to talk about hypothetical scenarios, wishes, possibilities, and polite requests in Polish. 
+    intro: `The Conditional Mood lesson will teach you how to talk about hypothetical scenarios, wishes, possibilities, and polite requests in Polish. 
 You'll learn the formation of conditional sentences, how to conjugate verbs appropriately, and the nuances of expressing “would” and “could” in different contexts. 
 With examples and exercises, you'll gain confidence in speaking about situations that are not real but imagined, enhancing your fluency and expressive range.`,
     classes: [conditionalMix],
+  },
+  {
+    title: "Modal Verbs",
+    description:
+      "Learn how to express ability, permission, possibility, obligation, and preference using Polish modal verbs.",
+    icon: "🎛️",
+    path: "lessons/modal-verbs",
+    folder: "modal-verbs",
+    intro: `The Modal Verbs lesson introduces the essential Polish verbs used to express ability, permission, obligation, preference, and intention. 
+You will learn how verbs such as 'móc', 'umieć', 'potrafić', 'musieć', 'chcieć', 'powinien', and 'woleć' function in real conversational contexts, including how they pair with infinitives and how their conjugations affect sentence structure. 
+With clear rules, comparisons (e.g., 'móc' vs. 'umieć'), and practical examples, you will gain confidence in expressing “can,” “must,” “should,” “want to,” and similar meanings in everyday Polish. 
+Through exercises and contextual explanations, you will improve your fluency and accuracy when describing abilities, obligations, preferences, and situational possibilities.`,
+    classes: [modalVerbsMix],
   },
   {
     title: "Conjugation",

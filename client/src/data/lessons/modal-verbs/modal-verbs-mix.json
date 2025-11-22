@@ -1,0 +1,218 @@
+{
+    "class": "Modal Verbs (Czasowniki modalne: móc, umieć, musieć, chcieć, woleć, powinien)",
+    "exercises": [
+        {
+            "exercise": "Exercise 01 - Basic Translations with Modal Verbs",
+            "rows": [
+                {
+                    "polish": "1. Muszę kupić plan Warszawy / Krakowa.",
+                    "english": "I must buy a map of Warsaw / Kraków.",
+                    "verb": "musieć",
+                    "form": "muszę",
+                    "case": "1st Sg.",
+                    "explanation": "The verb *musieć* expresses necessity. The 1st person singular form is *muszę*. No aspect change is needed because the modal verb governs the infinitive (*kupić*)."
+                },
+                {
+                    "polish": "2. Musimy uczyć się języków obcych.",
+                    "english": "We must learn foreign languages.",
+                    "verb": "musieć",
+                    "form": "musimy",
+                    "case": "1st Pl.",
+                    "explanation": "*Musimy* expresses obligation for a group. Both *uczyć się* (imperfective) and *nauczyć się* (perfective) are acceptable depending on meaning; the imperfective highlights learning as a process."
+                },
+                {
+                    "polish": "3. Wy musicie mówić po polsku.",
+                    "english": "You (friends) must speak Polish.",
+                    "verb": "musieć",
+                    "form": "musicie",
+                    "case": "2nd Pl.",
+                    "explanation": "The modal verb *musieć* is conjugated for the subject (*wy*). The infinitive *mówić* remains unchanged."
+                },
+                {
+                    "polish": "4. Czy możemy czekać?",
+                    "english": "Can we wait?",
+                    "verb": "móc",
+                    "form": "możemy",
+                    "case": "1st Pl.",
+                    "explanation": "The verb *móc* expresses possibility or permission. *Możemy* is the 1st person plural form used in polite questions introduced by *czy*."
+                },
+                {
+                    "polish": "5. Czy możesz poczekać chwilę?",
+                    "english": "Can you wait a moment?",
+                    "verb": "móc",
+                    "form": "możesz",
+                    "case": "2nd Sg.",
+                    "explanation": "*Możesz* expresses situational ability or permission. Addressed informally to a friend."
+                },
+                {
+                    "polish": "6. Czy mogę się przedstawić?",
+                    "english": "May I introduce myself?",
+                    "verb": "móc",
+                    "form": "mogę",
+                    "case": "1st Sg.",
+                    "explanation": "*Mogę* expresses asking for permission. The reflexive pronoun *się* follows the infinitive *przedstawić*."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02 - Distinguishing 'móc' vs. 'umieć'",
+            "rows": [
+                {
+                    "polish": "1. Donald Trump nie umie mówić po polsku (ani po angielsku).",
+                    "english": "Donald Trump cannot speak Polish (or English).",
+                    "verb": "umieć",
+                    "form": "nie umie",
+                    "case": "3rd Sg.",
+                    "explanation": "*Umieć* expresses an acquired ability or skill (speaking languages). Used here humorously. The negation *nie* precedes the verb."
+                },
+                {
+                    "polish": "2. Nie mogę rozmawiać, bo jadę samochodem.",
+                    "english": "I can't talk because I'm driving.",
+                    "verb": "móc",
+                    "form": "nie mogę",
+                    "case": "1st Sg.",
+                    "explanation": "*Móc* indicates situational impossibility — the speaker cannot talk while driving. This is not a skill-related limitation."
+                },
+                {
+                    "polish": "3. Czy może Pani napisać to słowo na tablicy?",
+                    "english": "Can you (ma'am) write this word on the board?",
+                    "verb": "móc",
+                    "form": "może",
+                    "case": "3rd Sg. (formal)",
+                    "explanation": "Formal *Pani* always takes 3rd person singular. *Może* expresses a polite request or inquiry about possibility, not skill."
+                },
+                {
+                    "polish": "4. Możecie kupić tę książkę online.",
+                    "english": "You can buy this book online.",
+                    "verb": "móc",
+                    "form": "możecie",
+                    "case": "2nd Pl.",
+                    "explanation": "*Możecie* expresses possibility or availability (online purchase is available)."
+                },
+                {
+                    "polish": "5. Dlaczego nie umiesz pływać? Mieszkasz w Barcelonie!",
+                    "english": "Why can't you swim? You live in Barcelona!",
+                    "verb": "umieć",
+                    "form": "umiesz",
+                    "case": "2nd Sg.",
+                    "explanation": "*Umieć* refers to a learned skill — swimming. The contrast with living near the sea is rhetorical."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03 - Filling Modal Verb Forms",
+            "rows": [
+                {
+                    "polish": "1. Chcę zmienić pracę.",
+                    "english": "I want to change jobs.",
+                    "verb": "chcieć",
+                    "form": "chcę",
+                    "case": "1st Sg.",
+                    "explanation": "*Chcę* expresses desire. It governs the infinitive *zmienić* (perfective, emphasizing a completed change)."
+                },
+                {
+                    "polish": "2. Nie mogę iść do kina, bo jestem chora.",
+                    "english": "I can't go to the cinema because I'm sick.",
+                    "verb": "móc",
+                    "form": "nie mogę",
+                    "case": "1st Sg.",
+                    "gender": "feminine speaker",
+                    "explanation": "*Nie mogę* expresses situational impossibility caused by illness. The infinitive *iść* stays in its base form."
+                },
+                {
+                    "polish": "3. Musisz uczyć się angielskiego, żeby mieć dobrą pracę.",
+                    "english": "You must study English to get a good job.",
+                    "verb": "musieć",
+                    "form": "musisz",
+                    "case": "2nd Sg.",
+                    "explanation": "*Musisz* expresses necessity or obligation directed at the listener."
+                },
+                {
+                    "polish": "4. Jeśli chcecie, możecie kupić jej kwiaty.",
+                    "english": "If you want, you can buy her flowers.",
+                    "verb": "móc",
+                    "form": "możecie",
+                    "case": "2nd Pl.",
+                    "explanation": "*Możecie* expresses permission/possibility for a group. The conditional clause uses *chcecie* (present desire)."
+                },
+                {
+                    "polish": "5. Państwo Nowakowie mogą kupić nowe mieszkanie, bo dobrze zarabiają.",
+                    "english": "Mr. and Mrs. Nowak can buy a new apartment because they earn well.",
+                    "verb": "móc",
+                    "form": "mogą",
+                    "case": "3rd Pl.",
+                    "explanation": "*Państwo* + surname is a polite plural form requiring 3rd person plural agreement (*mogą*)."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04 - Mixed Modal Verbs in Context",
+            "rows": [
+                {
+                    "polish": "1. Umiemy pływać, ale teraz nie możemy, bo nie mamy czasu.",
+                    "english": "We know how to swim, but right now we can't because we don't have time.",
+                    "verb": "umieć / móc",
+                    "form": "umiemy / nie możemy",
+                    "case": "1st Pl.",
+                    "explanation": "*Umiemy* expresses a learned skill; *nie możemy* expresses situational impossibility. Polish distinguishes these clearly."
+                },
+                {
+                    "polish": "2. Powinnaś wypić coś ciepłego. Wolisz kawę czy herbatę?",
+                    "english": "You should drink something warm. Do you prefer coffee or tea?",
+                    "verb": "powinien / woleć",
+                    "form": "powinnaś / wolisz",
+                    "case": "2nd Sg. Fem.",
+                    "explanation": "*Powinnaś* expresses advice to a woman; *wolisz* asks about preference. Gender agreement applies for *powinieneś/powinnaś*."
+                },
+                {
+                    "polish": "3. Muszę iść do sklepu, bo nie mamy mleka. Chcesz coś?",
+                    "english": "I must go to the store because we don’t have milk. Do you want anything?",
+                    "verb": "musieć / chcieć",
+                    "form": "muszę / chcesz",
+                    "case": "1st Sg. / 2nd Sg.",
+                    "explanation": "*Muszę* expresses necessity; *chcesz* expresses a simple request about the listener’s preference."
+                },
+                {
+                    "polish": "4. Wczoraj chciałam pożyczyć twój samochód, ale nie mogłam znaleźć kluczyków.",
+                    "english": "Yesterday I wanted to borrow your car, but I couldn't find the keys.",
+                    "verb": "chcieć / móc",
+                    "form": "chciałam / nie mogłam",
+                    "case": "1st Sg. Fem.",
+                    "explanation": "Both verbs are in the past tense. Feminine endings *-łam* reflect the gender of the speaker. *Nie mogłam* expresses past situational impossibility."
+                },
+                {
+                    "polish": "5. Nie powinieneś iść do pracy, kiedy jesteś chory. Musisz iść do lekarza!",
+                    "english": "You shouldn't go to work when you're sick. You must go to the doctor!",
+                    "verb": "powinien / musieć",
+                    "form": "nie powinieneś / musisz",
+                    "case": "2nd Sg. Masc.",
+                    "explanation": "*Nie powinieneś* gives strong advice; *musisz* expresses necessity. *Możesz* (from the prompt) would be weaker and illogical in this context."
+                },
+                {
+                    "polish": "6. Musicie uważać, bo możecie się przewrócić.",
+                    "english": "You must be careful because you might fall.",
+                    "verb": "musieć / móc",
+                    "form": "musicie / możecie",
+                    "case": "2nd Pl.",
+                    "explanation": "*Musicie* expresses necessity; *możecie* expresses possibility of an unwanted event. Reflexive *się* follows the verb."
+                },
+                {
+                    "polish": "7. Rok temu musieliśmy zdać egzamin z języka polskiego, chcieliśmy uczyć się bardzo dużo.",
+                    "english": "A year ago we had to pass a Polish exam, and we wanted to study a lot.",
+                    "verb": "musieć / chcieć",
+                    "form": "musieliśmy / chcieliśmy",
+                    "case": "1st Pl. Masc.",
+                    "explanation": "Both verbs take masculine-personal plural endings (*-liśmy*). *Musieliśmy* expresses obligation; *chcieliśmy* expresses past desire."
+                },
+                {
+                    "polish": "8. Kiedy byłem dzieckiem, wolałem sport niż naukę. Chciałem zostać profesjonalnym piłkarzem.",
+                    "english": "When I was a child, I preferred sports to studying. I wanted to become a professional football player.",
+                    "verb": "woleć / chcieć",
+                    "form": "wolałem / chciałem",
+                    "case": "1st Sg. Masc.",
+                    "explanation": "Masculine past endings *-łem*. *Wolałem* expresses preference; *chciałem* expresses desire or ambition."
+                }
+            ]
+        }
+    ]
+}

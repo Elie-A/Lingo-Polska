@@ -1729,7 +1729,7 @@
         {
             "question": "O szóstej ___ jem kolację.",
             "answer": "zjem",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "A2",
             "hints": [
@@ -1740,7 +1740,7 @@
         {
             "question": "Mama ___ gotowała zupę.",
             "answer": "ugotowała",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "A2",
             "hints": [
@@ -1751,7 +1751,7 @@
         {
             "question": "Pan Adam nam coś ___ grał.",
             "answer": "zagrał",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "A2",
             "hints": [
@@ -1762,7 +1762,7 @@
         {
             "question": "Czy mogę ___ prosić o szklankę wody?",
             "answer": "poprosić",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "A2",
             "hints": [
@@ -1773,7 +1773,7 @@
         {
             "question": "Kiedy ___ kończysz czytać?",
             "answer": "skończysz",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "A2",
             "hints": [
@@ -1784,7 +1784,7 @@
         {
             "question": "Klaro, ___ rób mi sweter.",
             "answer": "zrób",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "A2",
             "hints": [
@@ -1795,7 +1795,7 @@
         {
             "question": "Stefcia ___ piła herbatę.",
             "answer": "wypiła",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "A2",
             "hints": [
@@ -1806,7 +1806,7 @@
         {
             "question": "Muszę ___ pakować walizkę.",
             "answer": "spakować",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "A2",
             "hints": [
@@ -1817,7 +1817,7 @@
         {
             "question": "Marysia chce ___ znać go.",
             "answer": "poznać",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "A2",
             "hints": [
@@ -1828,7 +1828,7 @@
         {
             "question": "To ci nie ___ szkodzi.",
             "answer": "zaszkodzi",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "B1",
             "hints": [
@@ -1839,7 +1839,7 @@
         {
             "question": "Kazia ___ kosztowała zupy.",
             "answer": "skosztowała",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "B1",
             "hints": [
@@ -1850,7 +1850,7 @@
         {
             "question": "Jacuś ___ psuł zabawkę.",
             "answer": "zepsuł",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "A2",
             "hints": [
@@ -1861,7 +1861,7 @@
         {
             "question": "Fryzjerka ___ czesała mnie.",
             "answer": "uczesala",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "B1",
             "hints": [
@@ -1872,7 +1872,7 @@
         {
             "question": "Raptownie ___ bolał go ząb.",
             "answer": "zabolał",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "A2",
             "hints": [
@@ -1883,7 +1883,7 @@
         {
             "question": "Gienia ___ rodziła syna.",
             "answer": "urodziła",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "B1",
             "hints": [
@@ -1894,7 +1894,7 @@
         {
             "question": "Pani Aniela ___ stawiała róże na stół.",
             "answer": "postawiła",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "A2",
             "hints": [
@@ -1905,7 +1905,7 @@
         {
             "question": "Rajmund ___ rezerwował miejsca.",
             "answer": "zarezerwował",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "B1",
             "hints": [
@@ -1916,7 +1916,7 @@
         {
             "question": "Rysiek ___ hamował za szybko.",
             "answer": "zahmował",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "B1",
             "hints": [
@@ -1927,7 +1927,7 @@
         {
             "question": "Basia ___ szyła sobie sukienkę.",
             "answer": "uszyła",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "A2",
             "hints": [
@@ -1938,7 +1938,7 @@
         {
             "question": "Józek i Hania ___ żyli wojnę.",
             "answer": "przeżyli",
-            "topic": "aspect/prefixes",
+            "topic": "verb-aspect-prefixes",
             "type": "fill-in-the-blank",
             "level": "B1",
             "hints": [
@@ -1952,6 +1952,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A2",
+            "options": [
+                "spróbować",
+                "próbować",
+                "sprawdzić",
+                "spróbować się"
+            ],
             "hints": [
                 "Perfective infinitive has prefix s-",
                 "Compare: próbować vs spróbować"
@@ -1963,6 +1969,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "B1",
+            "options": [
+                "dowiedzieć się",
+                "dowiadywać się",
+                "wiedzieć",
+                "dowiedzać się"
+            ],
             "hints": [
                 "Imperfective: dowiadywać się",
                 "Perfective: dowiedzieć się"
@@ -1974,6 +1986,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A1",
+            "options": [
+                "kupić",
+                "kupować",
+                "kupieć",
+                "kupować się"
+            ],
             "hints": [
                 "Stem: kup-",
                 "Perfective form"
@@ -1985,6 +2003,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A2",
+            "options": [
+                "oszczędzać",
+                "oszczędzić",
+                "oszczędzać się",
+                "oszczędność"
+            ],
             "hints": [
                 "Imperfective present",
                 "Ends with -ać"
@@ -1996,6 +2020,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "B1",
+            "options": [
+                "posunąć",
+                "posuwać",
+                "pchnąć",
+                "ruszać"
+            ],
             "hints": [
                 "Perfective verb",
                 "Movement-related"
@@ -2007,6 +2037,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A1",
+            "options": [
+                "ruszać",
+                "ruszyć",
+                "ruch",
+                "przesuwać"
+            ],
             "hints": [
                 "Imperfective",
                 "Continuous meaning"
@@ -2018,6 +2054,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A2",
+            "options": [
+                "puścić",
+                "puszczać",
+                "podać",
+                "przepuścić"
+            ],
             "hints": [
                 "Perfective",
                 "Short action"
@@ -2029,6 +2071,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A2",
+            "options": [
+                "stanąć",
+                "stawać",
+                "stać",
+                "postawić"
+            ],
             "hints": [
                 "Means: to stand (complete action)",
                 "Perfective"
@@ -2040,6 +2088,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A1",
+            "options": [
+                "uderzać",
+                "uderzyć",
+                "bić",
+                "uderzać się"
+            ],
             "hints": [
                 "Imperfective",
                 "Repeated action"
@@ -2051,6 +2105,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A2",
+            "options": [
+                "zachęcać",
+                "zachęcić",
+                "namawiać",
+                "przekonywać"
+            ],
             "hints": [
                 "Imperfective",
                 "Verbose form"
@@ -2062,6 +2122,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A2",
+            "options": [
+                "wymienić",
+                "wymieniać",
+                "zmienić",
+                "przemienić"
+            ],
             "hints": [
                 "Perfective",
                 "Stem: -mieni-"
@@ -2073,6 +2139,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A2",
+            "options": [
+                "znaleźć",
+                "znajdować",
+                "odnaleźć",
+                "znaleźć się"
+            ],
             "hints": [
                 "Perfective",
                 "Irregular spelling change"
@@ -2084,6 +2156,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A2",
+            "options": [
+                "ustępować",
+                "ustąpić",
+                "ustawiać",
+                "cofać się"
+            ],
             "hints": [
                 "Imperfective",
                 "Prefix: u-"
@@ -2095,6 +2173,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A1",
+            "options": [
+                "pozdrawiać",
+                "pozdrowić",
+                "witać",
+                "przywitać"
+            ],
             "hints": [
                 "Imperfective form",
                 "Regular -ać conjugation"
@@ -2106,6 +2190,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A1",
+            "options": [
+                "wracać",
+                "wrócić",
+                "powracać",
+                "odchodzić"
+            ],
             "hints": [
                 "Imperfective",
                 "Common everyday verb"
@@ -2117,6 +2207,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A1",
+            "options": [
+                "łapać",
+                "złapać",
+                "chwytąć",
+                "łapać się"
+            ],
             "hints": [
                 "Verb of action",
                 "Imperfective"
@@ -2128,6 +2224,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A2",
+            "options": [
+                "poleżeć",
+                "leżeć",
+                "położyć się",
+                "przeleżeć"
+            ],
             "hints": [
                 "Perfective",
                 "Meaning: 'lie for a while'"
@@ -2139,6 +2241,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A2",
+            "options": [
+                "dotknąć",
+                "dotykać",
+                "chwycić",
+                "uchwycić"
+            ],
             "hints": [
                 "Perfective",
                 "Momentary action"
@@ -2150,6 +2258,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A2",
+            "options": [
+                "trafić",
+                "trafiać",
+                "uderzyć",
+                "dosięgnąć"
+            ],
             "hints": [
                 "Perfective",
                 "Hit/arrive"
@@ -2161,6 +2275,12 @@
             "topic": "verb stems",
             "type": "multiple-choice",
             "level": "A2",
+            "options": [
+                "dokuczać",
+                "dokuczyć",
+                "przeszkadzać",
+                "dokuczać się"
+            ],
             "hints": [
                 "Imperfective",
                 "Repeated annoyance"
