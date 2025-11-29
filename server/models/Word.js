@@ -35,22 +35,21 @@ const wordSchema = new mongoose.Schema(
 
 /**
  * Recommended indexes:
- *  - unique compound index to enforce deduplication on (lemma, inflectedForm, POS)
+ *  - unique compound index to enforce deduplication on (lemma, inflectedForm, POS, features)
  *  - inflectedForm search
  *  - combined grammatical index for common queries
  */
 
-// Unique dedupe index
+// 🔹 Unique dedupe index including features
 wordSchema.index(
-  { lemma: 1, inflectedForm: 1, partOfSpeech: 1 },
-  { unique: true, name: "uniq_lemma_form_pos" }
+  { lemma: 1, inflectedForm: 1, partOfSpeech: 1, features: 1 },
+  { unique: true, name: "uniq_lemma_form_pos_features" }
 );
 
-// Fast search by surface form
+// 🔹 Fast search by surface form
 wordSchema.index({ inflectedForm: 1 }, { name: "idx_inflectedForm" });
 
-// Combined grammatical index used by queries like
-// find verbs where tense=past && gender=feminine, etc.
+// 🔹 Combined grammatical index for common queries
 wordSchema.index(
   {
     partOfSpeech: 1,
