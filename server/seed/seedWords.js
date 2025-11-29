@@ -4,6 +4,7 @@ import fs from "fs";
 import readline from "readline";
 import path from "path";
 import { fileURLToPath } from "url";
+
 import {
   VerbWord,
   NounWord,
@@ -12,11 +13,15 @@ import {
   PronounWord,
   NumeralWord,
 } from "../models/Word.js";
-import { parseFeatures } from "./unimorphParser.js";
-import { env } from "process";
 
-const MONGO_URI = env.process.MONGO_URI;
+import { parseFeatures } from "./unimorphParser.js";
+
+const MONGO_URI = process.env.MONGO_URI;
 const BATCH_SIZE = 30000;
+
+// ------------------------------
+// Utilities
+// ------------------------------
 
 function formatTime(ms) {
   const totalSeconds = Math.floor(ms / 1000);
@@ -32,12 +37,17 @@ function printProgress(current, total, elapsed) {
   const barLength = 40;
   const filledLength = Math.floor((current / total) * barLength);
   const bar = "█".repeat(filledLength) + "-".repeat(barLength - filledLength);
+
   process.stdout.write(
     `\r[${bar}] ${percentage}% | ${current.toLocaleString()}/${total.toLocaleString()} lines | ${linesPerSecond} lines/s | ETA: ${formatTime(
       etaMs
     )}`
   );
 }
+
+// ------------------------------
+// Flush batched bulk ops
+// ------------------------------
 
 async function flushBatches(batches) {
   const ops = [];
@@ -53,18 +63,23 @@ async function flushBatches(batches) {
   for (const pos of Object.keys(batches)) {
     const batch = batches[pos];
     if (!batch || batch.length === 0) continue;
-    const model = models[pos];
 
+    const model = models[pos];
     ops.push(
       model.collection.bulkWrite(batch, { ordered: false }).catch((err) => {
         console.error(`[bulkWrite ${pos}] failed:`, err?.message);
       })
     );
+
     batches[pos] = [];
   }
 
   if (ops.length > 0) await Promise.all(ops);
 }
+
+// ------------------------------
+// Main import function
+// ------------------------------
 
 export async function importWords(filePath, estimatedTotalLines) {
   if (!fs.existsSync(filePath)) {
@@ -77,6 +92,20 @@ export async function importWords(filePath, estimatedTotalLines) {
   await mongoose.connect(MONGO_URI, { maxPoolSize: 50 });
   console.log("✅ Connected to MongoDB");
 
+  // Drop existing collections
+  const collections = [
+    VerbWord,
+    NounWord,
+    AdjectiveWord,
+    AdverbWord,
+    PronounWord,
+    NumeralWord,
+  ];
+  await Promise.all(
+    collections.map((model) => model.collection.drop().catch(() => {}))
+  );
+  console.log("🧹 All collections dropped. Fresh import starting...");
+
   const batches = {
     VERB: [],
     NOUN: [],
@@ -85,6 +114,7 @@ export async function importWords(filePath, estimatedTotalLines) {
     PRONOUN: [],
     NUMERAL: [],
   };
+
   let totalProcessed = 0;
   let skippedEmpty = 0;
   let skippedParts = 0;
@@ -103,16 +133,19 @@ export async function importWords(filePath, estimatedTotalLines) {
       skippedEmpty++;
       continue;
     }
+
     const parts = line.split("\t");
     if (parts.length < 3) {
       skippedParts++;
       continue;
     }
+
     const [lemmaRaw, inflectedRaw, featureStringRaw] = parts;
     const lemma = lemmaRaw.trim();
     const inflectedForm = inflectedRaw.trim();
     const featureString = featureStringRaw.trim();
 
+    // Pre-check POS
     if (!/^(V|N|ADJ|ADV|PRON|NUM)(\.|;|$)/.test(featureString)) {
       skippedPOS++;
       continue;
@@ -137,15 +170,20 @@ export async function importWords(filePath, estimatedTotalLines) {
     const compact = {};
     for (const [k, v] of Object.entries(parsed)) {
       if (v === null || v === false || v === undefined) continue;
+      if (k === "otherTags" && v.length === 0) continue;
       compact[k] = v;
     }
 
-    if (compact.otherTags?.length === 0) delete compact.otherTags;
-
+    // 🔥 Use updateOne + upsert to prevent exact duplicates
     const op = {
       updateOne: {
-        filter: { lemma, inflectedForm, partOfSpeech: pos },
-        update: { $setOnInsert: { features: featureString, ...compact } },
+        filter: {
+          lemma,
+          inflectedForm,
+          partOfSpeech: pos,
+          features: featureString,
+        },
+        update: { $setOnInsert: { ...compact } },
         upsert: true,
       },
     };
@@ -163,27 +201,25 @@ export async function importWords(filePath, estimatedTotalLines) {
     }
   }
 
+  // Final batch
   await flushBatches(batches);
 
-  const finalVerbCount = await VerbWord.estimatedDocumentCount();
-  const finalNounCount = await NounWord.estimatedDocumentCount();
-  const finalAdjCount = await AdjectiveWord.estimatedDocumentCount();
-  const finalAdvCount = await AdverbWord.estimatedDocumentCount();
-  const finalPronCount = await PronounWord.estimatedDocumentCount();
-  const finalNumCount = await NumeralWord.estimatedDocumentCount();
-
-  const totalInserted =
-    finalVerbCount +
-    finalNounCount +
-    finalAdjCount +
-    finalAdvCount +
-    finalPronCount +
-    finalNumCount;
+  // Report counts
+  const counts = await Promise.all([
+    VerbWord.estimatedDocumentCount(),
+    NounWord.estimatedDocumentCount(),
+    AdjectiveWord.estimatedDocumentCount(),
+    AdverbWord.estimatedDocumentCount(),
+    PronounWord.estimatedDocumentCount(),
+    NumeralWord.estimatedDocumentCount(),
+  ]);
+  const totalInserted = counts.reduce((a, b) => a + b, 0);
 
   printProgress(totalInserted, estimatedTotalLines, Date.now() - startTime);
   console.log("\n🎉 Import complete.");
+
   console.table({
-    "Processed (inserted/upserted)": totalInserted,
+    "Processed (inserted)": totalInserted,
     "Skipped (empty lines)": skippedEmpty,
     "Skipped (invalid parts count)": skippedParts,
     "Skipped (pre-POS check)": skippedPOS,
@@ -193,23 +229,16 @@ export async function importWords(filePath, estimatedTotalLines) {
       (totalInserted + skippedEmpty + skippedParts + skippedPOS),
   });
 
-  console.log("🧱 Ensuring indexes...");
-  await Promise.all([
-    VerbWord.createIndexes(),
-    NounWord.createIndexes(),
-    AdjectiveWord.createIndexes(),
-    AdverbWord.createIndexes(),
-    PronounWord.createIndexes(),
-    NumeralWord.createIndexes(),
-  ]);
+  console.log("🧱 Creating indexes...");
+  await Promise.all(collections.map((model) => model.createIndexes()));
   console.log("✅ Indexes created.");
 
   await mongoose.disconnect();
 }
 
-// =========================
-// Run only when executing this file directly
-// =========================
+// ------------------------------
+// Execute directly
+// ------------------------------
 
 const __filename = fileURLToPath(import.meta.url);
 
