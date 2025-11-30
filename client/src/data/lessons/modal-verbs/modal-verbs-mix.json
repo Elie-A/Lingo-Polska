@@ -213,6 +213,280 @@
                     "explanation": "Masculine past endings *-łem*. *Wolałem* expresses preference; *chciałem* expresses desire or ambition."
                 }
             ]
+        },
+        {
+            "exercise": "Exercise 06 - Impersonal Modal Expressions (można / wolno / warto / należy / trzeba)",
+            "rows": [
+                {
+                    "polish": "1. Czy tu można płacić kartą?",
+                    "english": "Can one pay with a card here?",
+                    "verb": "można",
+                    "form": "można",
+                    "case": "Impersonal",
+                    "explanation": "*Można* expresses general possibility or permission. It does not change form because it is impersonal."
+                },
+                {
+                    "polish": "2. To jest przedział dla niepalących – tutaj nie wolno palić!",
+                    "english": "This is a non-smoking compartment — it is not allowed to smoke here!",
+                    "verb": "nie wolno",
+                    "form": "nie wolno",
+                    "case": "Impersonal",
+                    "explanation": "*Nie wolno* expresses prohibition — something is forbidden. Stronger than simply “not recommended.”"
+                },
+                {
+                    "polish": "3. Po wizycie u dentysty nie wolno jeść przez godzinę.",
+                    "english": "After a visit to the dentist, it is not allowed to eat for an hour.",
+                    "verb": "nie wolno",
+                    "form": "nie wolno",
+                    "case": "Impersonal",
+                    "explanation": "*Nie wolno* is used for strict rules or prohibitions, often issued by professionals (doctor, dentist, institutions)."
+                },
+                {
+                    "polish": "4. Idę do sklepu, czy warto coś kupić?",
+                    "english": "I'm going to the store, is it worth buying something?",
+                    "verb": "warto",
+                    "form": "warto",
+                    "case": "Impersonal",
+                    "explanation": "*Warto* expresses value or benefit — whether something is worth doing. It never changes its form."
+                },
+                {
+                    "polish": "5. To słaba książka, nie warto jej czytać.",
+                    "english": "This is a poor book, it is not worth reading it.",
+                    "verb": "nie warto",
+                    "form": "nie warto",
+                    "case": "Impersonal",
+                    "explanation": "*Nie warto* means there is no benefit/value in doing something. Opposite of *warto*."
+                },
+                {
+                    "polish": "6. To niezła sztuka, warto ją obejrzeć.",
+                    "english": "This is a good play, it is worth seeing it.",
+                    "verb": "warto",
+                    "form": "warto",
+                    "case": "Impersonal",
+                    "explanation": "*Warto* again expresses positive recommendation or value in doing the action."
+                },
+                {
+                    "polish": "7. Powinno się często chodzić na spacery, bo ruch to zdrowie!",
+                    "english": "One should often go for walks, because movement means health!",
+                    "verb": "powinno się",
+                    "form": "powinno się",
+                    "case": "Impersonal",
+                    "explanation": "*Powinno się* expresses a general recommendation for people in general — not directed at any specific person."
+                },
+                {
+                    "polish": "8. Dzieci, którym wszystko wolno robić, są kapryśne i samolubne.",
+                    "english": "Children who are allowed to do everything are capricious and selfish.",
+                    "verb": "wolno",
+                    "form": "wolno",
+                    "case": "Impersonal",
+                    "explanation": "*Wolno* expresses permission. In this sentence, it describes a general rule for children in a given situation."
+                },
+                {
+                    "polish": "9. W czasie odwiedzin w szpitalu należy / trzeba zakładać obuwie ochronne.",
+                    "english": "During hospital visits, one must put on protective footwear.",
+                    "verb": "należy / trzeba",
+                    "form": "należy / trzeba",
+                    "case": "Impersonal",
+                    "explanation": "*Należy* and *trzeba* express obligation or necessity. *Trzeba* is slightly stronger and more commonly used in speech."
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 07 - Professions and Qualities (powinien/powinna/powinni być)",
+            "rows": [
+                {
+                    "polish": "1. Polityk powinien być uczciwy i odpowiedzialny.",
+                    "english": "A politician should be honest and responsible.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "*Powinien być* expresses what qualities a man in this role should have."
+                },
+                {
+                    "polish": "2. Lekarz powinien być kompetentny i empatyczny.",
+                    "english": "A doctor should be competent and empathetic.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Default generic masculine form for professions unless specified otherwise."
+                },
+                {
+                    "polish": "3. Prezydent powinien być charyzmatyczny i mądry.",
+                    "english": "A president should be charismatic and wise.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Standard expectation phrased with *powinien być*."
+                },
+                {
+                    "polish": "4. Student powinien być pilny i ciekawy.",
+                    "english": "A student should be diligent and curious.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Masculine form used generically for the profession/student role."
+                },
+                {
+                    "polish": "5. Nauczyciel powinien być cierpliwy i kreatywny.",
+                    "english": "A teacher should be patient and creative.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Teachers are usually referenced in masculine form unless specified."
+                },
+                {
+                    "polish": "6. Barman powinien być towarzyski i szybki.",
+                    "english": "A barman should be sociable and quick.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Describes expected qualities of a service profession."
+                },
+                {
+                    "polish": "7. Dentysta powinien być dokładny i delikatny.",
+                    "english": "A dentist should be precise and gentle.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Qualities expected for medical precision work."
+                },
+                {
+                    "polish": "8. Ksiądz powinien być pobożny i wyrozumiały.",
+                    "english": "A priest should be pious and understanding.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Moral qualities expected of clergy."
+                },
+                {
+                    "polish": "9. Policjant powinien być stanowczy i odważny.",
+                    "english": "A police officer should be firm and brave.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Masculine personal form aligns with the role."
+                },
+                {
+                    "polish": "10. Tłumacz powinien być precyzyjny i dwujęzyczny.",
+                    "english": "A translator should be precise and bilingual.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Focus on accuracy and language competence."
+                },
+                {
+                    "polish": "11. Poeta powinien być wrażliwy i oryginalny.",
+                    "english": "A poet should be sensitive and original.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Describes artistic temperament expectations."
+                },
+                {
+                    "polish": "12. Pisarz powinien być kreatywny i pomysłowy.",
+                    "english": "A writer should be creative and imaginative.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Expresses desirable qualities for writing professions."
+                },
+                {
+                    "polish": "13. Psychiatra powinien być dyskretny i słuchający.",
+                    "english": "A psychiatrist should be discreet and attentive.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Emphasizes confidentiality and listening skills."
+                },
+                {
+                    "polish": "14. Informatyk powinien być logiczny i analityczny.",
+                    "english": "An IT specialist should be logical and analytical.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Standard expectations for technical roles."
+                },
+                {
+                    "polish": "15. Dziennikarz powinien być dociekliwy i obiektywny.",
+                    "english": "A journalist should be inquisitive and objective.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Highlights investigative and neutral traits."
+                },
+                {
+                    "polish": "16. Adwokat powinien być przekonujący i rzetelny.",
+                    "english": "A lawyer should be persuasive and reliable.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Describes courtroom and ethical expectations."
+                },
+                {
+                    "polish": "17. Sędzia powinien być sprawiedliwy i bezstronny.",
+                    "english": "A judge should be fair and impartial.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Neutrality and fairness are key qualities."
+                },
+                {
+                    "polish": "18. Kelner powinien być uprzejmy i zorganizowany.",
+                    "english": "A waiter should be courteous and organized.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Focuses on service professionalism."
+                },
+                {
+                    "polish": "19. Rolnik powinien być pracowity i cierpliwy.",
+                    "english": "A farmer should be hardworking and patient.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Traits essential in agricultural work."
+                },
+                {
+                    "polish": "20. Listonosz powinien być punktualny i wytrzymały.",
+                    "english": "A postman should be punctual and tough.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Emphasizes physical endurance and reliability."
+                },
+                {
+                    "polish": "21. Hydraulik powinien być sprawny i doświadczony.",
+                    "english": "A plumber should be efficient and experienced.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Traits needed for manual technical work."
+                },
+                {
+                    "polish": "22. Mechanik powinien być dokładny i fachowy.",
+                    "english": "A mechanic should be precise and skilled.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Precision and craftsmanship are essential."
+                },
+                {
+                    "polish": "23. Kucharz powinien być utalentowany i kreatywny.",
+                    "english": "A cook should be talented and creative.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Highlights creative skills required in cooking."
+                },
+                {
+                    "polish": "24. Pilot powinien być odpowiedzialny i opanowany.",
+                    "english": "A pilot should be responsible and composed.",
+                    "verb": "powinien",
+                    "form": "powinien być",
+                    "case": "3rd Sg. Masc.",
+                    "explanation": "Describes qualities necessary for aviation safety."
+                }
+            ]
         }
     ]
 }
