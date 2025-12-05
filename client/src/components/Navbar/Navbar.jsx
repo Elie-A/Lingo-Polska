@@ -43,10 +43,10 @@ export default function Navbar({ lessons }) {
     };
 
     const tenseLessons = lessons.filter((l) =>
-        ["Present Tense", "Past Tense", "Future Tense", "Conditional Mood", "Modal Verbs"].includes(l.title)
+        ["Present Tense", "Past Tense", "Future Tense", "Conditional Mood", "Modal Verbs", "Adjectival Verbs"].includes(l.title)
     );
     const otherLessons = lessons.filter(
-        (l) => !["Present Tense", "Past Tense", "Future Tense", "Conditional Mood", "Modal Verbs"].includes(l.title)
+        (l) => !["Present Tense", "Past Tense", "Future Tense", "Conditional Mood", "Modal Verbs", "Adjectival Verbs"].includes(l.title)
     );
 
     const handleMouseEnterTenses = () => {

@@ -1,0 +1,230 @@
+{
+    "class": "Adjectival Verbs (Participles)",
+    "exercises": [
+        {
+            "exercise": "Exercise 01 - Active Participles",
+            "rows": [
+                {
+                    "stem": "pisz",
+                    "ending": "ący",
+                    "polishRest": " student odrabia pracę domową.",
+                    "polish": "Piszący student odrabia pracę domową.",
+                    "english": "The student **who is writing** is doing homework.",
+                    "infinitive": "pisać – to write"
+                },
+                {
+                    "stem": "śpiew",
+                    "ending": "ający",
+                    "polishRest": " chłopak śpiewa piosenkę.",
+                    "polish": "Śpiewający chłopak śpiewa piosenkę.",
+                    "english": "The boy **who is singing** is singing a song.",
+                    "infinitive": "śpiewać – to sing"
+                },
+                {
+                    "stem": "czyt",
+                    "ending": "ający",
+                    "polishRest": " nauczyciel czyta książkę.",
+                    "polish": "Czytający nauczyciel czyta książkę.",
+                    "english": "The teacher **who is reading** is reading a book.",
+                    "infinitive": "czytać – to read"
+                },
+                {
+                    "stem": "bieg",
+                    "ending": "ający",
+                    "polishRest": " chłopiec jest szybki.",
+                    "polish": "Biegający chłopiec jest szybki.",
+                    "english": "The **running** boy is fast.",
+                    "infinitive": "biegać – to run"
+                },
+                {
+                    "stem": "uczą",
+                    "ending": "cy",
+                    "polishRest": " się dzieci są pilne.",
+                    "polish": "Uczący się dzieci są pilne.",
+                    "english": "The children **who are studying** are diligent.",
+                    "infinitive": "uczyć się – to study/learn"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 02 - Passive Participles",
+            "rows": [
+                {
+                    "stem": "napis",
+                    "ending": "any",
+                    "polishRest": " list jest gotowy do wysłania.",
+                    "polish": "Napisany list jest gotowy do wysłania.",
+                    "english": "The **written** letter is ready to send.",
+                    "infinitive": "napisać – to write"
+                },
+                {
+                    "stem": "złam",
+                    "ending": "any",
+                    "polishRest": " stół wymaga naprawy.",
+                    "polish": "Złamany stół wymaga naprawy.",
+                    "english": "The **broken** table needs repair.",
+                    "infinitive": "złamać – to break"
+                },
+                {
+                    "stem": "zrob",
+                    "ending": "ione",
+                    "polishRest": " zadanie jest trudne.",
+                    "polish": "Zrobione zadanie jest trudne.",
+                    "english": "The **completed** task is difficult.",
+                    "infinitive": "zrobić – to do/make"
+                },
+                {
+                    "stem": "napraw",
+                    "ending": "iony",
+                    "polishRest": " samochód działa poprawnie.",
+                    "polish": "Naprawiony samochód działa poprawnie.",
+                    "english": "The **repaired** car works correctly.",
+                    "infinitive": "naprawić – to repair"
+                },
+                {
+                    "stem": "zjedz",
+                    "ending": "ony",
+                    "polishRest": " obiad był pyszny.",
+                    "polish": "Zjedzony obiad był pyszny.",
+                    "english": "The **eaten** dinner was delicious.",
+                    "infinitive": "zjeść – to eat"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 03 - Declension (Gender & Number)",
+            "rows": [
+                {
+                    "stem": "zmęczon",
+                    "ending": "y",
+                    "polishRest": " mężczyzna odpoczywa.",
+                    "polish": "Zmęczony mężczyzna odpoczywa.",
+                    "english": "The **tired** man is resting.",
+                    "infinitive": "zmęczyć – to tire"
+                },
+                {
+                    "stem": "zmęczon",
+                    "ending": "a",
+                    "polishRest": " kobieta odpoczywa.",
+                    "polish": "Zmęczona kobieta odpoczywa.",
+                    "english": "The **tired** woman is resting.",
+                    "infinitive": "zmęczyć – to tire"
+                },
+                {
+                    "stem": "zmęczon",
+                    "ending": "e",
+                    "polishRest": " dziecko śpi.",
+                    "polish": "Zmęczone dziecko śpi.",
+                    "english": "The **tired** child is sleeping.",
+                    "infinitive": "zmęczyć – to tire"
+                },
+                {
+                    "stem": "zajęt",
+                    "ending": "i",
+                    "polishRest": " mężczyźni pracują.",
+                    "polish": "Zajęci mężczyźni pracują.",
+                    "english": "The **busy** men are working.",
+                    "infinitive": "zająć – to occupy"
+                },
+                {
+                    "stem": "zajęt",
+                    "ending": "e",
+                    "polishRest": " kobiety rozmawiają.",
+                    "polish": "Zajęte kobiety rozmawiają.",
+                    "english": "The **busy** women are talking.",
+                    "infinitive": "zająć – to occupy"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 04 - Common Irregulars",
+            "rows": [
+                {
+                    "stem": "przyzwyczajon",
+                    "ending": "y",
+                    "polishRest": " do zimy, choć jest chłodno.",
+                    "polish": "Przyzwyczajony do zimy, choć jest chłodno.",
+                    "english": "**He is accustomed** to winter, although it is cold.",
+                    "infinitive": "przyzwyczaić – to get used to"
+                },
+                {
+                    "stem": "przyzwyczajon",
+                    "ending": "a",
+                    "polishRest": " do wczesnego wstawania.",
+                    "polish": "Przyzwyczajona do wczesnego wstawania.",
+                    "english": "**She is used** to waking up early.",
+                    "infinitive": "przyzwyczaić – to get used to"
+                },
+                {
+                    "stem": "zaskoczon",
+                    "ending": "y",
+                    "polishRest": " jego nagłą decyzją.",
+                    "polish": "Zaskoczony jego nagłą decyzją.",
+                    "english": "**He was surprised** by his sudden decision.",
+                    "infinitive": "zaskoczyć – to surprise"
+                },
+                {
+                    "stem": "gotow",
+                    "ending": "a",
+                    "polishRest": " do wyjazdu.",
+                    "polish": "Gotowa do wyjazdu.",
+                    "english": "**She is ready** to leave.",
+                    "infinitive": "przygotować – to prepare"
+                },
+                {
+                    "stem": "pewn",
+                    "ending": "y",
+                    "polishRest": " siebie w działaniu.",
+                    "polish": "Pewny siebie w działaniu.",
+                    "english": "**He is confident** in his actions.",
+                    "infinitive": "upewnić – to assure"
+                }
+            ]
+        },
+        {
+            "exercise": "Exercise 05 - Active + Passive Mixed",
+            "rows": [
+                {
+                    "stem": "czyt",
+                    "ending": "ający",
+                    "polishRest": " list jest interesujący.",
+                    "polish": "Czytający list jest interesujący.",
+                    "english": "The person **who is reading** the letter is interesting. (The agent)",
+                    "infinitive": "czytać – to read"
+                },
+                {
+                    "stem": "napis",
+                    "ending": "any",
+                    "polishRest": " list wywołał emocje.",
+                    "polish": "Napisany list wywołał emocje.",
+                    "english": "The **written** letter caused emotions.",
+                    "infinitive": "napisać – to write"
+                },
+                {
+                    "stem": "śpiew",
+                    "ending": "ający",
+                    "polishRest": " zespół był wspaniały.",
+                    "polish": "Śpiewający zespół był wspaniały.",
+                    "english": "The **singing** band was amazing.",
+                    "infinitive": "śpiewać – to sing"
+                },
+                {
+                    "stem": "zrob",
+                    "ending": "ione",
+                    "polishRest": " zadanie było trudne.",
+                    "polish": "Zrobione zadanie było trudne.",
+                    "english": "The **completed** task was difficult.",
+                    "infinitive": "zrobić – to do/make"
+                },
+                {
+                    "stem": "bieg",
+                    "ending": "ający",
+                    "polishRest": " chłopiec był zmęczony.",
+                    "polish": "Biegający chłopiec był zmęczony.",
+                    "english": "The **running** boy was tired.",
+                    "infinitive": "biegać – to run"
+                }
+            ]
+        }
+    ]
+}

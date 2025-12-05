@@ -37,6 +37,8 @@ import adverbsComparativeSuperlative from "../data/lessons/adverbs/adverbs-compa
 
 import modalVerbsMix from "../data/lessons/modal-verbs/modal-verbs-mix.json";
 
+import adjectivalVerbsMix from "../data/lessons/adjectival-verbs/adjectival-verbs-mix.json";
+
 const lessons = [
   {
     title: "Present Tense",
@@ -107,6 +109,17 @@ You will learn how verbs such as 'móc', 'umieć', 'potrafić', 'musieć', 'chci
 With clear rules, comparisons (e.g., 'móc' vs. 'umieć'), and practical examples, you will gain confidence in expressing “can,” “must,” “should,” “want to,” and similar meanings in everyday Polish. 
 Through exercises and contextual explanations, you will improve your fluency and accuracy when describing abilities, obligations, preferences, and situational possibilities.`,
     classes: [modalVerbsMix],
+  },
+  {
+    title: "Adjectival Verbs",
+    description:
+      "Learn how Polish adjectival verbs (imiesłowy przymiotnikowe) describe nouns using verb-based forms that express ongoing or completed actions.",
+    icon: "🌟",
+    path: "lessons/adjectival-verbs",
+    folder: "adjectival-verbs",
+    intro:
+      "The Adjectival Verbs lesson explains how Polish uses verb-derived adjective forms—known as imiesłowy przymiotnikowe—to describe nouns through ongoing actions (active participles) or completed/received actions (passive participles). You will learn how forms like 'piszący', 'śpiewająca', 'złamany', and 'zrobione' function grammatically, how they agree with nouns in case, number, and gender, and how they differ from normal adjectives. With clear formation rules, comparison of active vs. passive meanings, usage examples, and common mistakes, this lesson builds a strong understanding of how adjectival verbs connect verbal meaning with adjectival grammar. Through guided explanations and exercises, you will improve your ability to form, recognize, and use adjectival participles naturally in real Polish sentences.",
+    classes: [adjectivalVerbsMix],
   },
   {
     title: "Conjugation",

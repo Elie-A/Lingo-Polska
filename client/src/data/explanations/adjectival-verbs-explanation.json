@@ -1,0 +1,306 @@
+{
+    "title": "Polish Adjectival Verbs (Imiesłowy Przymiotnikowe) - Full Lesson",
+    "sections": [
+        {
+            "heading": "Introduction",
+            "content": [
+                "Adjectival verbs in Polish (imiesłowy przymiotnikowe) are verb-derived forms that function as adjectives.",
+                "They describe nouns by expressing an ongoing action (active) or a completed/received action (passive).",
+                "They decline like adjectives but retain verbal meaning, such as agency, aspect, and transitivity.",
+                "In this lesson, you will learn how adjectival verbs are formed, the two types, their meanings, usage rules, and common pitfalls."
+            ]
+        },
+        {
+            "heading": "Overview of Adjectival Verbs",
+            "content": [
+                "Polish adjectival verbs are participle forms that behave like adjectives while originating from verbs.",
+                "They agree with nouns in gender, number, and case, but carry action-related meaning.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Type",
+                        "Description",
+                        "Examples"
+                    ],
+                    "rows": [
+                        [
+                            "Active Adjectival Participle (imiesłów przymiotnikowy czynny)",
+                            "Describes a noun performing an action (formed from imperfective verbs only)",
+                            "płaczący (crying), piszący (writing), śpiewający (singing)"
+                        ],
+                        [
+                            "Passive Adjectival Participle (imiesłów przymiotnikowy bierny)",
+                            "Describes a noun receiving an action (formed from transitive verbs)",
+                            "złamany (broken), napisany (written), zjedzony (eaten)"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Formation of Active Adjectival Participles",
+            "content": [
+                "Active adjectival participles are formed only from imperfective verbs.",
+                "They take the endings -ący (masc.), -ąca (fem.), -ące (neut.).",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Verb (Imperfective)",
+                        "Formation",
+                        "Example"
+                    ],
+                    "rows": [
+                        [
+                            "biegać",
+                            "stem + ący/ąca/ące",
+                            "biegający (running)"
+                        ],
+                        [
+                            "pisać",
+                            "stem + ący/ąca/ące",
+                            "piszący (writing)"
+                        ],
+                        [
+                            "płakać",
+                            "stem + ący/ąca/ące",
+                            "płaczący (crying)"
+                        ]
+                    ],
+                    "border": true
+                },
+                "💡 Tip: These forms describe ongoing, habitual, or continuous actions."
+            ]
+        },
+        {
+            "heading": "Formation of Passive Adjectival Participles",
+            "content": [
+                "Passive adjectival participles describe the result of an action performed on someone or something.",
+                "They are formed from transitive verbs and work with both imperfective and perfective verbs.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Verb Type",
+                        "Ending Pattern",
+                        "Example"
+                    ],
+                    "rows": [
+                        [
+                            "-ać verbs",
+                            "-any / -ana / -ane",
+                            "złamać → złamany (broken)"
+                        ],
+                        [
+                            "-ić / -yć verbs",
+                            "-ty / -ta / -te",
+                            "zrobić → zrobiony (done)"
+                        ],
+                        [
+                            "-eć verbs",
+                            "-ony / -ona / -one",
+                            "zjeść → zjedzony (eaten)"
+                        ]
+                    ],
+                    "border": true
+                },
+                "💡 Tip: Passive participles describe a completed action or resulting state."
+            ]
+        },
+        {
+            "heading": "Adjectival Verb Agreement and Declension",
+            "content": [
+                "Adjectival participles decline like adjectives and must match the noun in gender, number, and case.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Case",
+                        "Masculine",
+                        "Feminine",
+                        "Neuter"
+                    ],
+                    "rows": [
+                        [
+                            "Nominative",
+                            "złamany",
+                            "złamana",
+                            "złamane"
+                        ],
+                        [
+                            "Genitive",
+                            "złamanego",
+                            "złamanej",
+                            "złamanego"
+                        ],
+                        [
+                            "Dative",
+                            "złamanemu",
+                            "złamanej",
+                            "złamanemu"
+                        ],
+                        [
+                            "Accusative",
+                            "złamany",
+                            "złamaną",
+                            "złamane"
+                        ],
+                        [
+                            "Instrumental",
+                            "złamanym",
+                            "złamaną",
+                            "złamanym"
+                        ],
+                        [
+                            "Locative",
+                            "złamanym",
+                            "złamanej",
+                            "złamanym"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Usage in Sentences",
+            "content": [
+                "Adjectival verbs modify nouns and combine verbal meaning with adjectival syntax.",
+                "They may appear before or after the noun depending on emphasis.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Type",
+                        "Typical Usage",
+                        "Example"
+                    ],
+                    "rows": [
+                        [
+                            "Active",
+                            "Describes a noun performing an action",
+                            "Płaczące dziecko śpi. (The crying child is sleeping.)"
+                        ],
+                        [
+                            "Passive",
+                            "Describes a noun that has received an action",
+                            "Naprawiony samochód działa dobrze. (The repaired car works well.)"
+                        ],
+                        [
+                            "Both",
+                            "Can take adverbs for intensity or manner",
+                            "Bardzo zmęczony człowiek. (A very tired person.)"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Active vs Passive Meaning",
+            "content": [
+                "Active participles describe ongoing or habitual actions performed by the noun.",
+                "Passive participles describe actions experienced by the noun, often giving a sense of result.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Verb",
+                        "Active Meaning",
+                        "Passive Meaning"
+                    ],
+                    "rows": [
+                        [
+                            "pisać",
+                            "piszący chłopiec (boy who is writing)",
+                            "pisana książka (book being written)"
+                        ],
+                        [
+                            "czytać",
+                            "czytający student (student who is reading)",
+                            "czytana książka (book being read)"
+                        ],
+                        [
+                            "malować",
+                            "malujący artysta (artist who is painting)",
+                            "pomalowana ściana (painted wall)"
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Comparison and Modification",
+            "content": [
+                "Like adjectives, adjectival participles can be modified by degree adverbs.",
+                "Comparative forms are possible but rare and mostly stylistic.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Example",
+                        "Explanation"
+                    ],
+                    "rows": [
+                        [
+                            "bardzo zmęczony człowiek",
+                            "Degree adverb 'bardzo' modifies the participle."
+                        ],
+                        [
+                            "niesamowicie błyszczący samochód",
+                            "Adverb modifies an active participle describing the car."
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Common Irregularities",
+            "content": [
+                "Not all participles follow predictable formations, especially those from irregular verbs.",
+                {
+                    "type": "table",
+                    "headers": [
+                        "Verb",
+                        "Passive Form",
+                        "Notes"
+                    ],
+                    "rows": [
+                        [
+                            "brać",
+                            "brany",
+                            "Irregular stem change."
+                        ],
+                        [
+                            "widzieć",
+                            "widziany",
+                            "Stem alternation occurs."
+                        ],
+                        [
+                            "mieć",
+                            "miany (rare)",
+                            "Extremely rare and stylistic form."
+                        ]
+                    ],
+                    "border": true
+                }
+            ]
+        },
+        {
+            "heading": "Common Mistakes",
+            "content": [
+                "Using perfective verbs to create active participles (e.g., *napiszący* ❌).",
+                "Incorrect gender/case agreement with nouns.",
+                "Confusing active and passive roles (e.g., *czytający książka* instead of *czytana książka*).",
+                "Trying to form passive participles from intransitive verbs (e.g., *śpić* → *śpiany* ❌)."
+            ]
+        },
+        {
+            "heading": "Practice Exercises",
+            "content": [
+                "Form active participles from imperfective verbs and use them in sentences.",
+                "Create passive participles from perfective verbs.",
+                "Identify whether the participle is active or passive in given examples.",
+                "Rewrite full relative clauses using adjectival verbs.",
+                "Decline participles for gender, number, and case."
+            ]
+        }
+    ]
+}
