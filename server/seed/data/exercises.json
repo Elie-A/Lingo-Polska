@@ -4624,5 +4624,297 @@
                 "Independently"
             ]
         }
+    ],
+    "adjectival-verbs": [
+        {
+            "question": "Zmęczony — which infinitive?",
+            "answer": "zmęczyć",
+            "topic": "adjectival verbs",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "zmęczyć",
+                "męczyć",
+                "zmęczać",
+                "męczyć się"
+            ],
+            "hints": [
+                "Passive participle formed from perfective verb",
+                "Means 'tired'"
+            ]
+        },
+        {
+            "question": "Czytający — which infinitive?",
+            "answer": "czytać",
+            "topic": "adjectival verbs",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "czytać",
+                "przeczytać",
+                "czytować",
+                "czytać się"
+            ],
+            "hints": [
+                "Active participle",
+                "Describes someone currently reading"
+            ]
+        },
+        {
+            "question": "Zrobione zadanie jest trudne — which infinitive?",
+            "answer": "zrobić",
+            "topic": "adjectival verbs",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "zrobić",
+                "robić",
+                "wykonać",
+                "robić się"
+            ],
+            "hints": [
+                "Passive participle",
+                "Perfective form of 'to do/make'"
+            ]
+        },
+        {
+            "question": "Przyzwyczajona do zimy, choć jest chłodno — which infinitive?",
+            "answer": "przyzwyczaić",
+            "topic": "adjectival verbs",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "przyzwyczaić",
+                "przyzwyczajać",
+                "przyzwyczaić się",
+                "zwyczaić"
+            ],
+            "hints": [
+                "Passive participle",
+                "Used with feminine singular"
+            ]
+        },
+        {
+            "question": "Biegający chłopiec ___ szybko do szkoły.",
+            "answer": "idzie",
+            "topic": "adjectival verbs",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Active participle describes the subject",
+                "Verb must match singular masculine subject"
+            ]
+        },
+        {
+            "question": "Złamane krzesło ___ w salonie.",
+            "answer": "stoi",
+            "topic": "adjectival verbs",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Passive participle",
+                "Third person singular neuter agreement"
+            ]
+        },
+        {
+            "question": "Zmęczeni pracownicy ___ w biurze.",
+            "answer": "są",
+            "topic": "adjectival verbs",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Plural masculine subject",
+                "Passive participle agreement"
+            ]
+        },
+        {
+            "question": "Przyzwyczajona do hałasu, ___ spać w nocy.",
+            "answer": "potrafi",
+            "topic": "adjectival verbs",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Reflexive/adjective describes the subject",
+                "Verb indicates ability"
+            ]
+        },
+        {
+            "question": "Zadowolone dzieci ___ w ogrodzie.",
+            "answer": "bawią się",
+            "topic": "adjectival verbs",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Plural feminine subject",
+                "Verb must agree with participle 'zadowolone'"
+            ]
+        },
+        {
+            "question": "Czy jesteście ___ z wyników egzaminu?",
+            "answer": "zadowoleni",
+            "topic": "adjectival verbs",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Adjectival verb 'zadowolony' in plural masculine form",
+                "Used with verb 'jesteście'"
+            ]
+        },
+        {
+            "question": "Zaskoczona wiadomością, ___ nie mogła mówić.",
+            "answer": "ona",
+            "topic": "adjectival verbs",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Passive participle describes feminine singular subject",
+                "Subject pronoun needed before verb"
+            ]
+        },
+        {
+            "question": "Czytający list chłopiec ___ uśmiecha się.",
+            "answer": "się",
+            "topic": "adjectival verbs",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Active participle describes subject",
+                "Reflexive pronoun for verb 'uśmiechać się'"
+            ]
+        },
+        {
+            "question": "Naprawiony komputer ___ działa poprawnie.",
+            "answer": "teraz",
+            "topic": "adjectival verbs",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Passive participle describes the subject",
+                "Adverb 'teraz' emphasizes current state"
+            ]
+        },
+        {
+            "question": "Przygotowany posiłek jest smaczny — which infinitive?",
+            "answer": "przygotować",
+            "topic": "adjectival verbs",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "przygotować",
+                "gotować",
+                "przygotowywać",
+                "ugotować"
+            ],
+            "hints": [
+                "Passive participle",
+                "Perfective action completed before the present"
+            ]
+        },
+        {
+            "question": "Ubrana dziewczyna — which infinitive?",
+            "answer": "ubrać",
+            "topic": "adjectival verbs",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "ubrać",
+                "ubierać",
+                "ubierać się",
+                "przygotować"
+            ],
+            "hints": [
+                "Passive participle",
+                "Reflexive action completed on the girl"
+            ]
+        },
+        {
+            "question": "Śpiewający ptak — which infinitive?",
+            "answer": "śpiewać",
+            "topic": "adjectival verbs",
+            "type": "multiple-choice",
+            "level": "A2",
+            "options": [
+                "śpiewać",
+                "zaśpiewać",
+                "śpiewać się",
+                "śpiewować"
+            ],
+            "hints": [
+                "Active participle",
+                "Describes a bird that is currently singing"
+            ]
+        },
+        {
+            "question": "Zaskoczony — which infinitive?",
+            "answer": "zaskoczyć",
+            "topic": "adjectival verbs",
+            "type": "multiple-choice",
+            "level": "B1",
+            "options": [
+                "zaskoczyć",
+                "zaskakiwać",
+                "zaskoczyć się",
+                "szokować"
+            ],
+            "hints": [
+                "Passive participle",
+                "Means 'surprised'"
+            ]
+        },
+        {
+            "question": "Biegająca dziewczynka ___ w parku.",
+            "answer": "idzie",
+            "topic": "adjectival verbs",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Active participle describes the subject",
+                "Verb must agree with singular feminine subject"
+            ]
+        },
+        {
+            "question": "Złamany stół ___ w warsztacie.",
+            "answer": "leży",
+            "topic": "adjectival verbs",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Passive participle describes the subject",
+                "Third person singular verb"
+            ]
+        },
+        {
+            "question": "Zmęczona kobieta ___ w salonie.",
+            "answer": "odpoczywa",
+            "topic": "adjectival verbs",
+            "type": "fill-in-the-blank",
+            "level": "A2",
+            "hints": [
+                "Passive participle feminine singular",
+                "Verb must agree with subject"
+            ]
+        },
+        {
+            "question": "Biegający chłopiec i jego pies ___ do szkoły.",
+            "answer": "idą",
+            "topic": "adjectival verbs",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Active participle",
+                "Plural subject requires third person plural verb"
+            ]
+        },
+        {
+            "question": "Przygotowane przez mamę ciasto ___ smaczne.",
+            "answer": "jest",
+            "topic": "adjectival verbs",
+            "type": "fill-in-the-blank",
+            "level": "B1",
+            "hints": [
+                "Passive participle describes neuter singular subject",
+                "Verb 'jest' used for singular third person"
+            ]
+        }
     ]
 }
